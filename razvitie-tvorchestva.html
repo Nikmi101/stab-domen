@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="canonical" href="https://vnutriapps.ru/razvitie-tvorchestva" />
+    <link rel="alternate" hreflang="ru" href="https://vnutriapps.ru/razvitie-tvorchestva" />
+    
+    <title>Творчество: Пламя внутри — приложение для раскрытия творческого потенциала</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Творчество: Пламя внутри — приложение, которое помогает услышать свой внутренний огонь и научиться давать ему форму. Пошаговый путь, практики, статьи, дневник и цитаты помогут превратить вдохновение в опору.">
+
+    <!-- Цвет статус-бара -->
+    <meta name="theme-color" content="#1d1d1d">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Творчество: Пламя внутри — приложение для внутреннего огня" />
+    <meta property="og:description" content="Это приложение помогает услышать свой внутренний огонь и превратить его в источник силы. 7 шагов, практики, дневник, статьи и цитаты помогут разжечь вдохновение и обрести внутреннюю свободу." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://vnutriapps.ru/images/image_tvorchestvo.jpg" />
+    <meta property="og:url" content="https://vnutriapps.ru/razvitie-tvorchestva" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Творчество: Пламя внутри",
+      "url": "https://www.rustore.ru/catalog/app/ru.vnutriapps.tvorchestvo",
+      "sameAs": "https://www.rustore.ru/catalog/app/ru.vnutriapps.tvorchestvo",
+      "operatingSystem": "Android",
+      "applicationCategory": "HealthApplication",
+      "description": "Творчество: Пламя внутри — это приложение для тех, кто хочет услышать свой внутренний огонь и научиться давать ему форму. Путь из 7 шагов, практики, дневник и цитаты помогают разжечь вдохновение и обрести опору.",
+      "image": "https://vnutriapps.ru/images/image_tvorchestvo.jpg",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Vnutri Apps",
+        "url": "https://vnutriapps.ru/"
+      }
+    }
+    </script>
+
+    <style>
+/* Текст */
+.content, .content p, .content li {
+    color: #eaeaea;
+    line-height: 1.8;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+.wrapper h1 {
+    color: #585858;
+}
+.content h2 {
+    color: #ffffff;
+    margin-top: 1.5em;
+    margin-bottom: 0.7em;
+}
+.content h3 {
+    color: #ffd9b3; /* тёплый оттенок для акцентов */
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+}
+.content strong {
+    color: #fff0e0;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.content ul {
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+#footer, #footer p, #footer a {
+    color: #ccc;
+}
+/* Шапка приложения */
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 600px;
+}
+.app-header img {
+    width: 85px;
+    height: 85px;
+    border-radius: 10px;
+}
+.app-header h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+.app-header .download-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: #ff6a00;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.app-header .download-btn img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+/* Галерея */
+.screenshots-wrapper {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.screenshots {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+}
+.screenshots img {
+  height: 180px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  cursor: pointer;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease;
+}
+.screenshots img:hover {
+  transform: scale(1.05);
+}
+.lightbox { display: none; position: fixed; z-index: 9999; padding-top: 50px;
+  left: 0; top: 0; width: 100%; height: 100%; overflow: auto;
+  background: rgba(0,0,0,0.9); }
+.lightbox-content { margin: auto; display: block; max-width: 90%; max-height: 80%; }
+.close { position: absolute; top: 20px; right: 40px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; }
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header id="header" class="alt">
+    <div class="logo"><a href="index.html">Vnutri Apps</a></div>
+    <a href="#menu">Меню</a>
+</header>
+
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        <li><a href="index.html">Главная</a></li>
+        <li>
+            <a href="#apps">Приложения</a>
+            <ul class="submenu">
+                <li><a href="brosit-kurit.html">Курил-бросил: бросить курить</a></li>
+                <li><a href="snizit-trevogu.html">Нет тревоге: путь к спокойствию</a></li>
+                <li><a href="kak-borotsya-s-odinochestvom.html">Одиночество: Точки опоры</a></li>
+                <li><a href="razvitie-tvorchestva.html">Творчество: Пламя внутри</a></li>
+            </ul>
+        </li>
+        <li><a href="#about">О проекте</a></li>
+    </ul>
+</nav>
+
+<!-- Banner -->
+<section class="banner half">
+    <article>
+        <img src="images/slide02.jpg" alt="Творчество, вдохновение, пламя внутри" />
+        <div class="inner">
+            <header>
+                <p>Вдохновение</p>
+                <h2>Разжечь огонь</h2>
+            </header>
+        </div>
+    </article>
+    <article>
+        <img src="images/slide04.jpg" alt="Мастерская души" />
+        <div class="inner">
+            <header>
+                <p>Путь к свету</p>
+                <h2>Пламя внутри</h2>
+            </header>
+        </div>
+    </article>
+</section>
+
+<!-- One: Приложение -->
+<section id="apps" class="wrapper">
+    <div class="inner">
+        <header class="align-center">
+            <h1>Творчество: Пламя внутри — приложение для тех, кто хочет услышать свой внутренний огонь и дать ему форму</h1>
+        </header>
+        
+        <div>
+            <div class="inner">
+              
+ <!-- Шапка приложения -->
+  <div class="app-header">
+    <img src="images/icons/ic_tvorchestvo.png" alt="Творчество: Пламя внутри иконка">
+    <div>
+      <h2>Творчество: Пламя внутри</h2>
+      <a href="https://www.rustore.ru/catalog/app/ru.vnutriapps.tvorchestvo" target="_blank" class="download-btn">
+        <img src="images/rustore-icon.png" alt=""> Скачать на RuStore
+      </a>
+    </div>
+  </div>
+
+              <div class="content">
+  <header class="align-center">
+    <h2>Творчество — это дыхание, а не обязанность</h2>
+  </header>
+
+  <p><strong>«Творчество: Пламя внутри»</strong> — это приложение для тех, кто чувствует, что <strong>вдохновения не хватает</strong>, <strong>идеи пугают</strong> или <strong>сложно верить в себя</strong>. Оно помогает встретиться со своим внутренним светом и разжечь огонь, который не угаснет.</p>
+
+  <h3>📍 Что внутри</h3>
+  <ul>
+    <li><strong>Путь из 7 шагов</strong> — структурированный маршрут от первых искр вдохновения к внутренней опоре. Каждый шаг включает аудио, статью, практики, мифы, аффирмации и чеклист.</li>
+    <li><strong>Дневник</strong> — пространство для записей мыслей, образов и открытий.</li>
+    <li><strong>Цитаты</strong> — тёплые и вдохновляющие фразы, напоминающие: творчество — это энергия, а не только результат.</li>
+    <li><strong>Практики</strong> — телесные, письменные и образные упражнения для пробуждения воображения и свободы.</li>
+  </ul>
+
+  <h3>💡 Почему это работает</h3>
+  <p>
+    ❌ Это не курс «как стать успешным художником».<br>
+    ❌ Это не мотивационные лозунги.<br>
+    ❌ Это не техника «придумывать больше идей».<br><br>
+    ✅ Это маршрут, который помогает освободить пространство для творчества.<br>
+    ✅ Это опыт, к которому можно возвращаться, когда огонь кажется слабым.<br>
+    ✅ Это способ почувствовать глубину в каждом шаге.
+  </p>
+
+  <h3>🎯 Для кого подойдёт</h3>
+  <ul>
+    <li>Для тех, кто хочет начать творить, но не знает, с чего.</li>
+    <li>Для тех, кто устал от давления и хочет вернуть радость процесса.</li>
+    <li>Для тех, кто ищет опору в самовыражении.</li>
+    <li>Для тех, кто хочет, чтобы творчество стало источником силы, а не тревоги.</li>
+  </ul>
+
+  <h3>🔥 Для чего использовать</h3>
+  <ul>
+    <li>Чтобы разжечь вдохновение и бережно поддерживать его.</li>
+    <li>Чтобы перестать сравнивать себя с другими и услышать свой ритм.</li>
+    <li>Чтобы развивать контакт с воображением и телом.</li>
+    <li>Чтобы чувствовать творческую свободу в любой момент.</li>
+  </ul>
+
+  <p><strong>«Творчество: Пламя внутри»</strong> — это внутренняя мастерская, где есть место и для игры, и для тишины. Пространство, куда можно вернуться снова, чтобы встретиться с огнём внутри.</p>
+
+  <footer class="align-center">
+    <a href="index.html#apps" class="details-button" target="_blank">Все приложения</a>
+    <a href="https://www.rustore.ru/catalog/app/ru.vnutriapps.tvorchestvo" class="rustore-button" target="_blank">
+      <img src="images/rustore-icon.png" alt="RuStore скачать Творчество" class="rustore-icon">
+      Скачать на RuStore
+    </a>
+  </footer>
+</div>
+
+      </div>
+    </div>
+</section>
+
+<!-- Two: О проекте -->
+<section id="about" class="wrapper style3">
+  <div class="inner">
+    <header class="align-center">
+      <h2>О проекте Vnutri Apps</h2>
+      <p><strong>Vnutri Apps</strong> — это живое пространство, где психология превращается в практику.<br>Каждое приложение — свой путь внутрь: к спокойствию, вдохновению, свободе и внутренней опоре.</p>
+    </header>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <ul class="icons">
+            <li>
+                <a href="mailto:vnutri_apps@mail.ru" class="icon fa-envelope" 
+                   title="Email поддержки Vnutri Apps — помощь, психологическая поддержка">
+                    <span class="label">Email</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/+s2L_SFaP0_o3ZjMy" class="icon fa-brands fa-telegram" 
+                   title="Телеграм канал Vnutri Apps — психология, поддержка, развитие">
+                    <span class="label">Telegram</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://m.vk.com/vnutriapps" class="icon fa-vk" 
+                   title="VK Vnutri Apps — психология, медитации, внутренняя опора">
+                    <span class="label">VK</span>
+                </a>
+            </li>
+        </ul>
+
+        <p class="copyright">&copy; Vnutri Apps, Россия. Все права защищены.</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js" defer></script>
+<script src="assets/js/jquery.scrollex.min.js" defer></script>
+<script src="assets/js/skel.min.js" defer></script>
+<script src="assets/js/util.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
