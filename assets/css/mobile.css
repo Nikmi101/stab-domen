@@ -1,0 +1,61 @@
+/* =======================================================
+   Vnutri Apps — мобильная адаптация
+   Только медиа-запросы, ПК не тронут
+======================================================= */
+
+/* Планшеты и небольшие ноутбуки */
+@media screen and (max-width: 1024px) {
+    .grid-style {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 90%;
+    }
+     .banner .inner h2 {
+        font-size: 2.0em;
+    }
+    .banner .inner p {
+        font-size: 1.0em;
+    }
+}
+
+/* Планшеты и большие телефоны */
+@media screen and (max-width: 768px) {
+    .grid-style {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 90%;
+    }
+    .banner .inner h2 {
+        font-size: 2.0em;
+    }
+    .banner .inner p {
+        font-size: 1.0em;
+    }
+}
+
+/* Мелкие телефоны */
+@media screen and (max-width: 480px) {
+    .grid-style {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner .inner header {
+        padding: 10px;
+        margin-top: -60px;
+    }
+    .banner .inner h2 {
+        font-size: 0.9em;
+    }
+    .banner .inner p {
+        font-size: 0.85em;
+    }
+  
+    .button.alt {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}

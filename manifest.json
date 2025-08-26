@@ -1,0 +1,21 @@
+{
+  "name": "Vnutri Apps — твои внутренние пути",
+  "short_name": "Vnutri Apps",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1d1d1d",
+  "theme_color": "#1d1d1d",
+  "icons": [
+    {
+      "src": "/images/favicon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

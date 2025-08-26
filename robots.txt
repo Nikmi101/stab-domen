@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /images/
+Disallow: /tmp/
+
+Allow: /
+
+Sitemap: https://vnutriapps.ru/sitemap.xml
+Host: https://vnutriapps.ru
+
