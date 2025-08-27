@@ -9,6 +9,14 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Страница о Vnutri Apps -->
+  <url>
+    <loc>https://vnutriapps.ru/about-vnutri-apps</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Приложение Курил-бросил -->
   <url>
     <loc>https://vnutriapps.ru/brosit-kurit</loc>
