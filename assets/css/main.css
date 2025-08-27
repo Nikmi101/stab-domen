@@ -4606,3 +4606,14 @@ margin-bottom: 1rem;
   text-decoration: none;
   font-weight: bold;
 }
+
+
+:target {
+  scroll-margin-top: 60px; /* отступ сверху при скролле к якорю */
+}
+
+@media screen and (max-width: 980px) {
+  :target {
+    scroll-margin-top: 50px; /* чуть меньше для мобильной версии */
+  }
+}
