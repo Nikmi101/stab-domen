@@ -4617,3 +4617,42 @@ margin-bottom: 1rem;
     scroll-margin-top: 50px; /* чуть меньше для мобильной версии */
   }
 }
+.wrapper.social-block h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.wrapper.social-block .social-list {
+    border-left: 6px solid;
+    border-image: linear-gradient(
+        to bottom,
+        #0088cc 0%,      /* Telegram */
+        #4c75a3 14%,     /* VK */
+        #ff0000 28%,     /* Яндекс.Дзен */
+        #ed820e 42%,     /* Одноклассники */
+        #d44638 57%,     /* Mail.ru */
+        #69c9d0 71%,     /* TikTok */
+        #f2f2f2 100%     /* Email */
+    ) 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.wrapper.social-block .social-list a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+.wrapper.social-block .social-list a i {
+    font-size: 28px;
+}
