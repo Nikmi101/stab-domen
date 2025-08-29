@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="/assets/css/main.css" />
   <link rel="stylesheet" href="/assets/css/mobile.css" />
   <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/blog.css" />
 </head>
 <body>
+  <!-- Хедер сайта -->
   <header id="header" class="alt">
     <div class="logo">
       <a href="/index.html">
@@ -22,10 +24,35 @@
     <a href="/links.html">Ссылки</a>
   </header>
 
-  <main class="wrapper" style="max-width:1200px;margin:0 auto;padding:20px;">
-    {{ content }}
+  <!-- Хедер статьи (баннер) -->
+  <section class="blog-header-banner" style="background-image: url('{{ page.banner | default: '/assets/images/blog-banner.jpg' }}');">
+    <h1>{{ page.title }}</h1>
+  </section>
+
+  <!-- Основной контент -->
+  <main class="blog-container">
+    <article class="blog-article">
+      {{ content }}
+
+      <!-- Автор -->
+      <div class="blog-author">
+        <p>Статью написал: <strong>Никита Митяев</strong>, автор и разработчик Vnutri Apps</p>
+      </div>
+    </article>
+
+    <!-- Навигация к другим статьям / категориям -->
+    {% if page.categories %}
+    <section class="blog-post-category">
+      <p>Категория: 
+        {% for cat in page.categories %}
+          <a href="/blog/{{ cat | downcase }}/">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </p>
+    </section>
+    {% endif %}
   </main>
 
+  <!-- Футер -->
   <footer id="footer">
     <div class="container">
       <p class="copyright">© Vnutri Apps</p>
