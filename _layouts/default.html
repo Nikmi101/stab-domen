@@ -43,18 +43,42 @@
   <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
 </head>
 <body>
-  <header id="header" class="alt">
+<!-- Header -->
+<header id="header" class="alt">
     <div class="logo">
-      <a href="/index.html">
-        <img src="/images/icons/ic_vnutriapps_withouttext.png" alt="Vnutri Apps" style="height:24px; vertical-align:middle; margin-right:8px;">
-        Vnutri Apps
-      </a>
+        <a href="index.html">
+            <img src="images/icons/ic_vnutriapps_withouttext.png" 
+                 alt="Vnutri Apps" 
+                 style="height:24px; vertical-align:middle; margin-right:8px;">
+            Vnutri Apps
+        </a>
     </div>
-    <a href="/links.html">Ссылки</a>
-  </header>
+    <a href="#menu">Меню</a>
+</header>
 
-  <main class="wrapper">
-    <!-- Хедер-баннер статьи -->
+    
+
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        <li><a href="index.html">Главная</a></li>
+        <li>
+            <a href="#apps">Приложения</a>
+            <ul class="submenu">
+     
+                <li><a href="brosit-kurit.html">Курил-бросил: бросить курить</a></li>
+                <li><a href="snizit-trevogu.html">Нет тревоге: путь к спокойствию</a></li>
+                <li><a href="kak-borotsya-s-odinochestvom.html">Одиночество: Точки опоры</a></li>
+                <li><a href="razvitie-tvorchestva.html">Творчество: Пламя внутри</a></li>
+            </ul>
+        </li>
+        <li><a href="about-vnutri-apps.html">О проекте</a></li>
+    </ul>
+</nav>
+
+<!-- Banner -->
+<section>
+ <!-- Хедер-баннер статьи -->
     {% if page.banner.image %}
     <div class="blog-header-banner" 
          style="background-image: url('{{ page.banner.image | absolute_url }}');"
@@ -64,6 +88,12 @@
     {% else %}
     <h1 class="blog-title">{{ page.title }}</h1>
     {% endif %}
+</section>
+
+
+
+  <main class="wrapper">
+    
 
     <!-- Основное содержимое -->
     <article class="blog-article">
@@ -157,4 +187,5 @@
   </footer>
 </body>
 </html>
+
 
