@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .blog-header-banner::after {
