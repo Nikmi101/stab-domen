@@ -58,12 +58,14 @@
     </article>
 
     <!-- Автор и дата -->
+    {% if page.author %}
     <div class="blog-author" style="margin-top:2rem; font-size:0.95rem; color:#666;">
       Статью написал: <strong>Никита Митяев</strong>, автор и разработчик Vnutri Apps
       {% if page.date %}
       — {{ page.date | date: "%d.%m.%Y" }}
       {% endif %}
     </div>
+     {% endif %}
 
     <!-- Рекомендуемое приложение -->
     {% if page.recommended_app %}
@@ -109,3 +111,4 @@
   </footer>
 </body>
 </html>
+
