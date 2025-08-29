@@ -26,19 +26,23 @@
 }
 
 /* ========== Баннер хедера ========== */
+
+
 .blog-header-banner {
   width: 100%;
-  height: 350px;
-  background-image: url('/images/blog-banner.jpg');
   background-size: cover;
   background-position: center;
+  background-image: url('/images/blog-banner.jpg');
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  aspect-ratio: 4 / 1; /* твоё соотношение */
 }
+
+
 
 .blog-header-banner::after {
   content: "";
@@ -204,6 +208,7 @@
   .blog-header-banner h1 {
     font-size: 1.8rem;
     padding: 0 1rem;
+    aspect-ratio: 2 / 1;  
   }
 }
 
@@ -232,6 +237,7 @@
 
   .blog-header-banner h1 {
     font-size: 1.5rem;
+    aspect-ratio: 2 / 1; 
   }
 
   .blog-app-recommend {
