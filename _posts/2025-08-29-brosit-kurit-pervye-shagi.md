@@ -14,7 +14,7 @@ recommended_app:
   icon: "/images/icons/ic_kurilbrosil.png"
   description: "Приложение поможет вам постепенно отказаться от курения и следить за прогрессом."
   rustore_link: "https://rustore.ru/app/kuril-brosil"
-  landing_link: "/brosit-kurit.html"
+  landing_link: "https://vnutriapps.ru/brosit-kurit.html"
 ---
 
 # Введение
@@ -36,6 +36,7 @@ recommended_app:
 Найдите альтернативные действия для замены курения: прогулка, дыхательные упражнения, стакан воды.
 
 ---
+
 
 
 
