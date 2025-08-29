@@ -4,22 +4,22 @@ description: "Практическое руководство о том, как 
 date: 2025-08-29
 categories: [habits]
 banner:
-  image: "/assets/images/articles/stop-smoking-banner.jpg"
+  image: "/images/blog-images/test.jpg"
   alt: "Бросаем курить легко"
   title: "Бросить курить без стресса"
 recommended_app:
-  name: "Курил-Бросил"
-  icon: "/assets/images/apps/kuril-brosil-icon.png"
+  name: "Курил-Бросил: бросить курить"
+  icon: "/images/icons/ic_kurilbrosil.png"
   description: "Приложение поможет вам постепенно отказаться от курения и следить за прогрессом."
   rustore_link: "https://rustore.ru/app/kuril-brosil"
-  landing_link: "/apps/kuril-brosil"
+  landing_link: "brosit-kurit.html"
 ---
 
 # Введение
 
 Бросить курить непросто, особенно если это часть привычки, связанной с ежедневным стрессом. В этой статье мы разберём несколько проверенных стратегий, которые помогут сделать процесс легче.
 
-![Пример картинки]( /assets/images/articles/stop-smoking-example.jpg "Путь к свободе от никотина")
+![Пример картинки]( /images/image_kurilbrosil.jpg "Путь к свободе от никотина")
 
 ## Стратегия 1: Постепенное сокращение
 
@@ -36,4 +36,5 @@ recommended_app:
 ---
 
 **Статью написал:** Никита Митяев, автор и разработчик Vnutri Apps
+
 
