@@ -1,7 +1,7 @@
 /* ========== Общая обертка блога ========== */
 .blog-container {
   max-width: 900px;
- margin: 0 auto;
+  margin: 0 auto;
   padding: 2rem 1rem;
   font-family: "Arial", sans-serif;
   color: #222;
@@ -26,23 +26,18 @@
 }
 
 /* ========== Баннер хедера ========== */
-
-
 .blog-header-banner {
   width: 100%;
+  height: 350px;
   background-size: cover;
   background-position: center;
-  background-image: url('/images/blog-banner.jpg');
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  margin-bottom: 1.5rem;
-  aspect-ratio: 4 / 1; /* твоё соотношение */
+  margin-bottom: 2rem;
 }
-
-
 
 .blog-header-banner::after {
   content: "";
@@ -59,6 +54,7 @@
   font-size: 2rem;
   text-align: center;
   padding: 0 1rem;
+  margin: 0; /* убираем лишние отступы */
 }
 
 /* ========== Категории блога (карточки) ========== */
@@ -182,78 +178,53 @@
   color: #555;
 }
 
-/* ========== Мобильная адаптация ========== */
-@media (max-width: 768px) {
-  .blog-card {
-    padding: 1.2rem;
-  }
-
-  .blog-icon {
-    font-size: 1.8rem;
-    margin-right: 0.7rem;
-  }
-
-  .blog-text h2 {
-    font-size: 1.15rem;
-  }
-
-  .blog-text p {
-    font-size: 0.9rem;
-  }
-
-  .blog-header-banner {
-    height: 280px;
-  }
-
-  .blog-header-banner h1 {
-    font-size: 1.8rem;
-    padding: 0 1rem;
-    aspect-ratio: 2 / 1;  
-  }
+/* ========== Статья ========== */
+.blog-article {
+  /* Убираем margin у первого заголовка */
 }
 
-@media (max-width: 480px) {
-  .blog-categories {
-    grid-template-columns: 1fr;
-  }
-
-  .blog-posts li {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .blog-posts .date {
-    margin-left: 0;
-    margin-top: 0.3rem;
-  }
-
-  .blog-container {
-    padding: 2rem 0.8rem;
-  }
-
-  .blog-header-banner {
-    height: 220px;
-  }
-
-  .blog-header-banner h1 {
-    font-size: 1.5rem;
-    aspect-ratio: 2 / 1; 
-  }
-
-  .blog-app-recommend {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .blog-app-recommend img {
-    margin-bottom: 0.7rem;
-  }
+.blog-article h1:first-child,
+.blog-article h2:first-child {
+  margin-top: 0;
 }
 
+/* Изображения в статье */
 .blog-article img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   display: block;
   margin: 1.5rem auto;
+}
+
+/* ========== Мобильная адаптация ========== */
+@media (max-width: 768px) {
+  .blog-card { padding: 1.2rem; }
+  .blog-icon { font-size: 1.8rem; margin-right: 0.7rem; }
+  .blog-text h2 { font-size: 1.15rem; }
+  .blog-text p { font-size: 0.9rem; }
+
+  .blog-header-banner { height: 280px; }
+  .blog-header-banner h1 { font-size: 1.8rem; }
+
+  .blog-article h1:first-child,
+  .blog-article h2:first-child {
+    margin-top: 0; /* для мобильных */
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-categories { grid-template-columns: 1fr; }
+  .blog-posts li { flex-direction: column; align-items: flex-start; }
+  .blog-posts .date { margin-left: 0; margin-top: 0.3rem; }
+  .blog-container { padding: 2rem 0.8rem; }
+
+  .blog-header-banner { height: 220px; }
+  .blog-header-banner h1 { font-size: 1.5rem; }
+
+  .blog-app-recommend { flex-direction: column; align-items: flex-start; }
+  .blog-app-recommend img { margin-bottom: 0.7rem; }
+
+  .blog-article h1:first-child,
+  .blog-article h2:first-child { margin-top: 0; }
 }
