@@ -16,6 +16,9 @@
   {% if page.banner.image %}
   <meta property="og:image" content="{{ page.banner.image | absolute_url }}">
   <meta property="og:image:alt" content="{{ page.banner.alt | default: page.title }}">
+  {% if page.banner.title %}
+  <meta property="og:image:title" content="{{ page.banner.title }}">
+  {% endif %}
   {% endif %}
 
   <!-- Twitter Card -->
@@ -24,6 +27,14 @@
   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
   {% if page.banner.image %}
   <meta name="twitter:image" content="{{ page.banner.image | absolute_url }}">
+  {% if page.banner.title %}
+  <meta name="twitter:image:title" content="{{ page.banner.title }}">
+  {% endif %}
+  {% endif %}
+
+  <!-- Schema.org itemprops -->
+  {% if page.banner.title %}
+  <meta itemprop="name" content="{{ page.banner.title }}">
   {% endif %}
 
   <!-- CSS -->
@@ -45,7 +56,9 @@
   <main class="wrapper" style="max-width:900px;margin:0 auto;padding:20px;">
     <!-- Хедер-баннер статьи -->
     {% if page.banner.image %}
-    <div class="blog-header-banner" style="background-image: url('{{ page.banner.image | absolute_url }}');">
+    <div class="blog-header-banner" 
+         style="background-image: url('{{ page.banner.image | absolute_url }}');"
+         title="{{ page.banner.title | default: page.title }}">
       <h1>{{ page.title }}</h1>
     </div>
     {% else %}
@@ -102,6 +115,39 @@
     }
     </script>
     {% endif %}
+
+    <!-- JSON-LD для статьи -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ page.title }}",
+      {% if page.banner.title %}
+      "alternativeHeadline": "{{ page.banner.title }}",
+      {% endif %}
+      "description": "{{ page.description | default: site.description }}",
+      "author": {
+        "@type": "Person",
+        "name": "Никита Митяев"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Vnutri Apps",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ '/images/icons/ic_vnutriapps_withouttext.png' | absolute_url }}"
+        }
+      },
+      {% if page.banner.image %}
+      "image": "{{ page.banner.image | absolute_url }}",
+      {% endif %}
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.url | absolute_url }}"
+      }
+    }
+    </script>
   </main>
 
   <footer id="footer">
@@ -111,5 +157,3 @@
   </footer>
 </body>
 </html>
-
-
