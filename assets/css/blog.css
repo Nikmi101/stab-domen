@@ -29,10 +29,9 @@
 .blog-header-banner {
   width: 100%;
   height: 350px;
-  background-image: url('/assets/images/blog-banner.jpg');
+  background-image: url('/images/blog-banner.jpg');
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
   position: relative;
   display: flex;
   align-items: center;
