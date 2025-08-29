@@ -109,19 +109,23 @@
     </div>
      {% endif %}
 
-    <!-- Рекомендуемое приложение -->
+  <!-- Рекомендуемое приложение -->
 {% if page.recommended_app %}
 <section class="recommended-app" style="margin-top:3rem; padding:1rem; border:1px solid #eee; border-radius:12px; display:flex; align-items:center;">
   {% if page.recommended_app.icon %}
   <div class="app-icon" style="margin-right:1rem;">
- <img src="{{ site.baseurl }}/images/icons/ic_kurilbrosil.png" alt="{{ page.recommended_app.name }}" style="width:64px; height:64px; border-radius:12px;">
+    <img src="{{ page.recommended_app.icon | absolute_url }}" 
+         alt="{{ page.recommended_app.name }}" 
+         style="width:64px; height:64px; border-radius:12px;">
   </div>
   {% endif %}
   
   <div class="app-info">
     <h2 style="margin:0 0 0.3rem;">
       Рекомендуемое приложение: 
-      <a href="{{ page.recommended_app.landing_link }}" target="_blank">{{ page.recommended_app.name }}</a>
+      <a href="{{ page.recommended_app.landing_link }}" target="_blank">
+        {{ page.recommended_app.name }}
+      </a>
     </h2>
     
     {% if page.recommended_app.rustore_link %}
@@ -137,24 +141,25 @@
 </section>
 {% endif %}
 
-    <!-- JSON-LD для рекомендованного приложения -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "{{ page.recommended_app.name }}",
-      "url": "{{ page.recommended_app.landing }}",
-      {% if page.recommended_app.rustore %}
-      "offers": {
-        "@type": "Offer",
-        "url": "{{ page.recommended_app.rustore }}"
-      },
-      {% endif %}
-      "applicationCategory": "HealthApplication",
-      "description": "{{ page.recommended_app.description | default: 'Приложение Vnutri Apps' }}"
-    }
-    </script>
-    {% endif %}
+<!-- JSON-LD для рекомендованного приложения -->
+{% if page.recommended_app %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "{{ page.recommended_app.name }}",
+  "url": "{{ page.recommended_app.landing_link }}",
+  {% if page.recommended_app.rustore_link %}
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ page.recommended_app.rustore_link }}"
+  },
+  {% endif %}
+  "applicationCategory": "HealthApplication",
+  "description": "{{ page.recommended_app.description | default: 'Приложение Vnutri Apps' }}"
+}
+</script>
+{% endif %}
 
     <!-- JSON-LD для статьи -->
     <script type="application/ld+json">
@@ -197,6 +202,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
