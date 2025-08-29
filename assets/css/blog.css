@@ -1,0 +1,131 @@
+/* ========== Общая обертка блога ========== */
+.blog-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: "Arial", sans-serif;
+  color: #222;
+}
+
+/* Заголовки */
+.blog-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.all-posts-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 3rem 0 1.5rem;
+}
+
+/* ========== Категории блога (карточки) ========== */
+.blog-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.blog-card {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.2rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.blog-icon {
+  font-size: 2rem;
+  margin-right: 0.9rem;
+  line-height: 1;
+}
+
+.blog-text h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+}
+
+.blog-text p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #555;
+  margin: 0;
+}
+
+/* ========== Список статей ========== */
+.blog-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-posts li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-posts li:last-child {
+  border-bottom: none;
+}
+
+.blog-posts a {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.blog-posts a:hover {
+  text-decoration: underline;
+}
+
+.blog-posts .date {
+  font-size: 0.85rem;
+  color: #888;
+  margin-left: 1rem;
+  white-space: nowrap;
+}
+
+/* ========== Мобильная адаптация ========== */
+@media (max-width: 600px) {
+  .blog-card {
+    padding: 1rem;
+  }
+
+  .blog-icon {
+    font-size: 1.6rem;
+    margin-right: 0.7rem;
+  }
+
+  .blog-text h2 {
+    font-size: 1rem;
+  }
+
+  .blog-text p {
+    font-size: 0.85rem;
+  }
+
+  .blog-title {
+    font-size: 1.8rem;
+  }
+
+  .all-posts-title {
+    font-size: 1.3rem;
+  }
+}
