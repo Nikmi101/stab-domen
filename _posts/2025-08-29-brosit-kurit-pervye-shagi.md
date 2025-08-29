@@ -5,7 +5,7 @@ author: "yes"
 date: 2025-08-29
 categories: [habits]
 banner:
-  image: "/images/blog-images/test.jpg"
+  image: "/images/blog-images/test-img.jpg"
   alt: "Бросаем курить легко"
   title: "Бросить курить без стресса"
 recommended_app:
@@ -35,6 +35,7 @@ recommended_app:
 Найдите альтернативные действия для замены курения: прогулка, дыхательные упражнения, стакан воды.
 
 ---
+
 
 
 
