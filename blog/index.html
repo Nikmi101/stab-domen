@@ -4,14 +4,60 @@ title: Блог Vnutri Apps
 description: Статьи о привычках, эмоциях, творчестве и философии.
 ---
 
-# Блог
+<h1 class="text-3xl font-bold mb-6">Блог Vnutri Apps</h1>
 
-- [Привычки и изменения](/blog/habits/)
-- [Эмоции и состояние](/blog/emotions/)
-- [Творчество и развитие](/blog/creativity/)
-- [Философия и глубина](/blog/philosophy/)
+<div class="grid gap-4 md:grid-cols-2">
+  <!-- Карточка 1 -->
+  <a href="/blog/habits/" class="flex items-center p-4 rounded-xl shadow-md hover:shadow-lg transition bg-white">
+    <div class="flex-shrink-0 w-12 h-12 bg-blue-100 flex items-center justify-center rounded-full text-blue-600 text-2xl">
+      🚬
+    </div>
+    <div class="ml-4">
+      <h2 class="text-lg font-semibold">Привычки и изменения</h2>
+      <p class="text-sm text-gray-600">Как справляться с зависимостями и внедрять новые привычки.</p>
+    </div>
+  </a>
 
-## Все статьи
-{% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d.%m.%Y" }}
-{% endfor %}
+  <!-- Карточка 2 -->
+  <a href="/blog/emotions/" class="flex items-center p-4 rounded-xl shadow-md hover:shadow-lg transition bg-white">
+    <div class="flex-shrink-0 w-12 h-12 bg-pink-100 flex items-center justify-center rounded-full text-pink-600 text-2xl">
+      💓
+    </div>
+    <div class="ml-4">
+      <h2 class="text-lg font-semibold">Эмоции и состояние</h2>
+      <p class="text-sm text-gray-600">Управление тревогой, стрессом и внутренним равновесием.</p>
+    </div>
+  </a>
+
+  <!-- Карточка 3 -->
+  <a href="/blog/creativity/" class="flex items-center p-4 rounded-xl shadow-md hover:shadow-lg transition bg-white">
+    <div class="flex-shrink-0 w-12 h-12 bg-yellow-100 flex items-center justify-center rounded-full text-yellow-600 text-2xl">
+      🔥
+    </div>
+    <div class="ml-4">
+      <h2 class="text-lg font-semibold">Творчество и развитие</h2>
+      <p class="text-sm text-gray-600">О вдохновении, креативности и личностном росте.</p>
+    </div>
+  </a>
+
+  <!-- Карточка 4 -->
+  <a href="/blog/philosophy/" class="flex items-center p-4 rounded-xl shadow-md hover:shadow-lg transition bg-white">
+    <div class="flex-shrink-0 w-12 h-12 bg-purple-100 flex items-center justify-center rounded-full text-purple-600 text-2xl">
+      🧠
+    </div>
+    <div class="ml-4">
+      <h2 class="text-lg font-semibold">Философия и глубина</h2>
+      <p class="text-sm text-gray-600">Размышления о культуре, психологии и смысле жизни.</p>
+    </div>
+  </a>
+</div>
+
+<h2 class="text-2xl font-bold mt-10 mb-4">Все статьи</h2>
+<ul class="space-y-2">
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}" class="text-blue-600 hover:underline">{{ post.title }}</a>
+    <span class="text-gray-500 text-sm">— {{ post.date | date: "%d.%m.%Y" }}</span>
+  </li>
+  {% endfor %}
+</ul>
