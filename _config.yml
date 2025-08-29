@@ -1,0 +1,16 @@
+title: Vnutri Apps
+url: https://vnutriapps.ru
+lang: ru
+description: Психологические приложения и статьи о самопомощи, тревоге, привычках и творчестве.
+theme: minima
+
+# Красивые URL постов: /blog/категория/название/
+permalink: /blog/:categories/:title/
+
+# Плагины, которые поддерживает GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Чтобы категории были «чистыми» слагами (рекомендую латиницу для путей)
+collections: {}

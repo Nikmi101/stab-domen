@@ -1,0 +1,17 @@
+---
+layout: default
+title: Блог Vnutri Apps
+description: Статьи о привычках, эмоциях, творчестве и философии.
+---
+
+# Блог
+
+- [Привычки и изменения](/blog/habits/)
+- [Эмоции и состояние](/blog/emotions/)
+- [Творчество и развитие](/blog/creativity/)
+- [Философия и глубина](/blog/philosophy/)
+
+## Все статьи
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d.%m.%Y" }}
+{% endfor %}
