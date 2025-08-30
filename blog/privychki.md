@@ -11,8 +11,11 @@ banner:
 ## Привычки и изменения  
 (здоровые привычки, образ жизни, изменения в жизни)
 
+Статьи Vnutri Apps:
+
 {% assign items = site.posts | where_exp: "p", "p.categories contains 'privychki'" %}
 {% for post in items %}
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d.%m.%Y" }}
 {% endfor %}
+
 
