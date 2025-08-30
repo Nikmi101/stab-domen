@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog-category
 title: Статьи — Эмоции и состояние
 ---
 
@@ -10,4 +10,5 @@ title: Статьи — Эмоции и состояние
 {% for post in items %}
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d.%m.%Y" }}
 {% endfor %}
+
 
