@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Раздел — Эмоции и состояние
+title: "Раздел — Эмоции и состояние"
 description: "Все статьи Vnutri Apps про тревогу, стресс, настроение, поддержку, психологические практики "
 categories: [privychki]
 banner:
@@ -15,6 +15,7 @@ banner:
 {% for post in items %}
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d.%m.%Y" }}
 {% endfor %}
+
 
 
 
