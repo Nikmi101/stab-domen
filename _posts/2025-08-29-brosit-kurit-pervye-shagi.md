@@ -5,7 +5,7 @@ author: "yes"
 date: 2025-08-29
 categories: [privychki]
 banner:
-  image: "/images/blog-images/test-img.jpg"
+  image: "/images/blog-images/test-img.webp"
   alt: "для сео статьи"
   title: "для сео статьи"
 recommended_app:
@@ -35,6 +35,7 @@ recommended_app:
 Текст.
 
 ---
+
 
 
 
