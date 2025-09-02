@@ -8,39 +8,44 @@
   {% else %} {% assign category_title = category_name %}
 {% endcase %}
 
+{% assign pos = 1 %}
+
 <nav class="breadcrumbs" aria-label="Хлебные крошки" itemscope itemtype="https://schema.org/BreadcrumbList" style="color:#888; font-size:0.9rem; margin-bottom:0.5rem;">
   <!-- Главная -->
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <a itemprop="item" href="/">
       <span itemprop="name">Vnutri Apps</span>
     </a>
-    <meta itemprop="position" content="1" />
+    <meta itemprop="position" content="{{ pos }}" />
   </span>
+
+  {% assign pos = pos | plus: 1 %}
   →
   <!-- Блог -->
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <a itemprop="item" href="/blog/">
       <span itemprop="name">Статьи от Vnutri Apps</span>
     </a>
-    <meta itemprop="position" content="2" />
+    <meta itemprop="position" content="{{ pos }}" />
   </span>
+
   {% if category_name %}
-  →
-  <!-- Категория -->
-  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a itemprop="item" href="/blog/{{ category_name }}/">
-      <span itemprop="name">{{ category_title }}</span>
-    </a>
-    <meta itemprop="position" content="3" />
-  </span>
+    {% assign pos = pos | plus: 1 %}
+    →
+    <!-- Категория -->
+    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="/blog/{{ category_name }}/">
+        <span itemprop="name">{{ category_title }}</span>
+      </a>
+      <meta itemprop="position" content="{{ pos }}" />
+    </span>
   {% endif %}
+
+  {% assign pos = pos | plus: 1 %}
   →
   <!-- Статья -->
   <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <span itemprop="name">{{ page.title }}</span>
-    <meta itemprop="position" content="{% if category_name %}4{% else %}3{% endif %}" />
+    <meta itemprop="position" content="{{ pos }}" />
   </span>
-</nav>
-
-
 </nav>
