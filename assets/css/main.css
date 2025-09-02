@@ -4715,50 +4715,59 @@ margin-bottom: 1rem;
   }
 }
 
-.accordion {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.accordion-header {
+.accordion-button {
   width: 100%;
-  padding: 15px;
-  font-size: 18px;
-  font-weight: bold;
+  padding: 14px 18px;
   text-align: left;
-  background: #004d40;
+  background: #2e3b2e;
   color: #fff;
   border: none;
   outline: none;
+  font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 6px;
-  margin-top: 10px;
+  border-radius: 8px;
+  margin: 5px 0;
   transition: background 0.3s;
 }
 
-.accordion-header:hover {
-  background: #00695c;
+.accordion-button:hover {
+  background: #3d4d3d;
 }
 
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
-  background: #f5f5f5;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  padding: 0 15px;
+  background: #1f261f;
+  color: #f5f5f5;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  border-radius: 0 0 8px 8px;
+  padding: 0 18px;
 }
 
 .accordion-content p {
-  margin: 10px 0;
-  padding: 10px 0;
-  color: #333;
-  font-size: 16px;
+  margin: 12px 0;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.accordion-item.active .accordion-content {
-  max-height: 300px; /* можно увеличить под текст */
+/* Активное состояние */
+.accordion-button.active + .accordion-content {
+  max-height: 300px;
+  padding: 14px 18px;
 }
 
+/* 📱 Для мобильных */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  .accordion-button {
+    font-size: 1rem;
+    padding: 12px 14px;
+  }
+  .accordion-content p {
+    font-size: 0.95rem;
+  }
+}
