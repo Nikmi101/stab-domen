@@ -4719,6 +4719,10 @@ margin-bottom: 1rem;
   }
 }
 
+.accordion {
+	padding-bottom: 1em;
+}
+
 .accordion-button {
   width: 100%;
   padding: 14px 18px;
