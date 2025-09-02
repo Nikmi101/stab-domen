@@ -1,26 +1,46 @@
-<nav class="breadcrumbs" aria-label="Хлебные крошки">
-  <a href="{{ site.baseurl }}/">Vnutri Apps</a>
-   → <a href="{{ site.baseurl }}/blog/">Статьи от Vnutri Apps</a>
+{% assign category_name = page.categories[0] %}
+{% case category_name %}
+  {% when "privychki" %} {% assign category_title = "Привычки и изменения" %}
+  {% when "emotsii" %} {% assign category_title = "Эмоции и состояние" %}
+  {% when "tvorchestvo" %} {% assign category_title = "Творчество и саморазвитие" %}
+  {% when "filosofiya" %} {% assign category_title = "Философия и глубина" %}
+  {% when "VnutriApps" %} {% assign category_title = "Проект Vnutri Apps" %}
+  {% else %} {% assign category_title = category_name %}
+{% endcase %}
 
-  {% if page.category %}
-    {% assign category_name = page.category %}
-    {% case category_name %}
-      {% when "privychki" %}
-        {% assign category_title = "Привычки и изменения" %}
-      {% when "emotsii" %}
-        {% assign category_title = "Эмоции и состояние" %}
-      {% when "tvorchestvo" %}
-        {% assign category_title = "Творчество и саморазвитие" %}
-      {% when "filosofiya" %}
-        {% assign category_title = "Философия и глубина" %}
-      {% when "VnutriApps" %}
-        {% assign category_title = "Проект Vnutri Apps" %}
-      {% else %}
-        {% assign category_title = category_name %}
-    {% endcase %}
-
-    → <a href="{{ site.baseurl }}/blog/{{ category_name }}/">{{ category_title }}</a>
+<nav class="breadcrumbs" aria-label="Хлебные крошки" itemscope itemtype="https://schema.org/BreadcrumbList" style="color:#888; font-size:0.9rem; margin-bottom:0.5rem;">
+  <!-- Главная -->
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a itemprop="item" href="/">
+      <span itemprop="name">Vnutri Apps</span>
+    </a>
+    <meta itemprop="position" content="1" />
+  </span>
+  →
+  <!-- Блог -->
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a itemprop="item" href="/blog/">
+      <span itemprop="name">Статьи от Vnutri Apps</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </span>
+  {% if category_name %}
+  →
+  <!-- Категория -->
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a itemprop="item" href="/blog/{{ category_name }}/">
+      <span itemprop="name">{{ category_title }}</span>
+    </a>
+    <meta itemprop="position" content="3" />
+  </span>
   {% endif %}
+  →
+  <!-- Статья -->
+  <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <span itemprop="name">{{ page.title }}</span>
+    <meta itemprop="position" content="{% if category_name %}4{% else %}3{% endif %}" />
+  </span>
+</nav>
 
-  → <span>{{ page.title }}</span>
+
 </nav>
