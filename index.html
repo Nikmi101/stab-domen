@@ -828,6 +828,21 @@
 
 
 <!-- Scripts -->
+			<script>
+document.querySelectorAll(".accordion-header").forEach(button => {
+  button.addEventListener("click", () => {
+    const item = button.parentElement;
+    item.classList.toggle("active");
+
+    const content = item.querySelector(".accordion-content");
+    if (item.classList.contains("active")) {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } else {
+      content.style.maxHeight = null;
+    }
+  });
+});
+</script>
 <script src="assets/js/jquery.min.js" defer></script>
 <script src="assets/js/jquery.scrollex.min.js" defer></script>
 <script src="assets/js/skel.min.js" defer></script>
