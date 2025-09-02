@@ -229,3 +229,55 @@
   .blog-article h1:first-child,
   .blog-article h2:first-child { margin-top: 0; }
 }
+
+/* Легкие хлебные крошки */
+.breadcrumbs {
+  font-size: 0.8rem;      /* чуть меньше стандартного, легкий визуальный вес */
+  color: #777;             /* светло-серый, заметен, но не отвлекает */
+  margin-bottom: 0.4rem;  /* небольшой отступ до h1 */
+  line-height: 1.4;
+  display: flex;
+  flex-wrap: wrap;         /* перенос при узком экране */
+  gap: 0.2rem;             /* маленький промежуток между элементами */
+}
+
+.breadcrumbs span[itemprop="itemListElement"] {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs a {
+  color: #777;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumbs a:hover {
+  color: #555;            /* немного темнее при наведении */
+  text-decoration: underline;
+}
+
+/* стрелки между элементами */
+.breadcrumbs span[itemprop="itemListElement"] + span[itemprop="itemListElement"]::before {
+  content: "→"; 
+  margin: 0 0.3rem;
+  color: #bbb;            /* еще светлее, чтобы не бросалось в глаза */
+  font-size: 0.75rem;
+}
+
+/* Адаптив для мобильных устройств */
+@media (max-width: 768px) {
+  .breadcrumbs {
+    font-size: 0.7rem;
+    gap: 0.15rem;
+  }
+
+  .breadcrumbs span[itemprop="itemListElement"] + span[itemprop="itemListElement"]::before {
+    margin: 0 0.2rem;
+    font-size: 0.7rem;
+  }
+}
+
+
+
+
