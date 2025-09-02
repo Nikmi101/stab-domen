@@ -4659,12 +4659,13 @@ margin-bottom: 1rem;
 
 /* Секция со списком приложений */
 .apps-section {
-  background-color: #0d1f17; /* почти черный зеленый */
+  background-color: #030806; /* почти черный зеленый */
   color: #ffffff;
-   margin-top: 1px;
- margin-bottom: 1px;
+   
   padding: 2em 1em;
-   /* красиво на десктопе */
+ align-items: center;
+  justify-content: center;
+  
 }
 
 .apps-section p {
