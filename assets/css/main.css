@@ -3158,6 +3158,7 @@ margin-bottom: 1rem;
   display: flex;
   align-items: flex-start;
   gap: 1.5em;
+	padding-top: 1em;
   max-width: 1000px;
   margin: 0 auto;
 }
