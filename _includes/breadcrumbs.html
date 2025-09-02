@@ -1,0 +1,26 @@
+<nav class="breadcrumbs" aria-label="Хлебные крошки">
+  <a href="{{ site.baseurl }}/">Vnutri Apps</a>
+   → <a href="{{ site.baseurl }}/blog/">Статьи от Vnutri Apps</a>
+
+  {% if page.category %}
+    {% assign category_name = page.category %}
+    {% case category_name %}
+      {% when "privychki" %}
+        {% assign category_title = "Привычки и изменения" %}
+      {% when "emotsii" %}
+        {% assign category_title = "Эмоции и состояние" %}
+      {% when "tvorchestvo" %}
+        {% assign category_title = "Творчество и саморазвитие" %}
+      {% when "filosofiya" %}
+        {% assign category_title = "Философия и глубина" %}
+      {% when "VnutriApps" %}
+        {% assign category_title = "Проект Vnutri Apps" %}
+      {% else %}
+        {% assign category_title = category_name %}
+    {% endcase %}
+
+    → <a href="{{ site.baseurl }}/blog/{{ category_name }}/">{{ category_title }}</a>
+  {% endif %}
+
+  → <span>{{ page.title }}</span>
+</nav>
