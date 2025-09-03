@@ -32,6 +32,37 @@
   {% endif %}
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vnutri Apps",
+  "url": "https://vnutriapps.ru/",
+  "logo": "https://vnutriapps.ru/images/favicon.png",
+  "sameAs": [
+    "https://t.me/vnutriapps",
+    "https://vk.com/vnutriapps",
+    "https://www.youtube.com/@VnutriApps",
+    "https://dzen.ru/vnutriapps",
+    "https://ok.ru/group/70000039792868",
+    "https://boosty.to/vnutri_apps",
+    "https://www.instagram.com/vnutriapps/"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "vnutri_apps@mail.ru",
+    "contactType": "customer support",
+    "availableLanguage": "ru"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Никита Митяев",
+    "jobTitle": "Автор и разработчик приложений Vnutri Apps",
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  }
+}
+</script>
+  
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/main.css" />
   <link rel="stylesheet" href="/assets/css/blog.css" />
@@ -109,56 +140,18 @@
      {% endif %}
 
   <!-- Рекомендуемое приложение -->
-{% if page.recommended_app %}
-<section class="recommended-app" style="margin-top:3rem; padding:1rem; border:1px solid #eee; border-radius:12px; display:flex; align-items:center;">
-  {% if page.recommended_app.icon %}
-  <div class="app-icon" style="margin-right:1rem;">
-    <img src="{{ page.recommended_app.icon | absolute_url }}" 
-         alt="{{ page.recommended_app.name }}" 
-         style="width:64px; height:64px; border-radius:12px;">
-  </div>
-  {% endif %}
-  
-  <div class="app-info">
-    <h2 style="margin:0 0 0.3rem;">
-      Рекомендуемое приложение: 
-      <a href="{{ page.recommended_app.landing_link }}" target="_blank">
-        {{ page.recommended_app.name }}
-      </a>
-    </h2>
-    
-    {% if page.recommended_app.rustore_link %}
-    <p style="margin:0.3rem 0 0;">
-      Скачать на <a href="{{ page.recommended_app.rustore_link }}" target="_blank">RuStore</a>
-    </p>
-    {% endif %}
-    
-    {% if page.recommended_app.description %}
-    <p style="margin:0.3rem 0 0;">{{ page.recommended_app.description }}</p>
-    {% endif %}
-  </div>
-</section>
-{% endif %}
-
-<!-- JSON-LD для рекомендованного приложения -->
-{% if page.recommended_app %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "{{ page.recommended_app.name }}",
-  "url": "{{ page.recommended_app.landing_link }}",
-  {% if page.recommended_app.rustore_link %}
-  "offers": {
-    "@type": "Offer",
-    "url": "{{ page.recommended_app.rustore_link }}"
-  },
-  {% endif %}
-  "applicationCategory": "HealthApplication",
-  "description": "{{ page.recommended_app.description | default: 'Приложение Vnutri Apps' }}"
-}
-</script>
-{% endif %}
+{% for app in page.recommended_apps %}
+  {% case app %}
+    {% when "brosit_kurit" %}
+      {% include app_brosit_kurit.html %}
+    {% when "net_trevogu" %}
+      {% include app_net_trevogu.html %}
+    {% when "odinochestvo" %}
+      {% include app_odinochestvo.html %}
+    {% when "tvorchestvo" %}
+      {% include app_tvorchestvo.html %}
+  {% endcase %}
+{% endfor %}
 
     <!-- JSON-LD для статьи -->
     <script type="application/ld+json">
@@ -209,6 +202,7 @@
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 
