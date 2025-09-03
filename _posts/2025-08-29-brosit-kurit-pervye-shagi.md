@@ -9,10 +9,10 @@ banner:
   alt: "для сео статьи"
   title: "для сео статьи"
 recommended_apps:
-- brosit-kurit
-- odinochestvo
-- tvorchestvo
-- trevoga
+- "brosit-kurit"
+- "odinochestvo"
+- "tvorchestvo"
+- "trevoga"
   
 ---
 
@@ -35,6 +35,7 @@ recommended_apps:
 Текст.
 
 ---
+
 
 
 
