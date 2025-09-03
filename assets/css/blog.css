@@ -280,14 +280,22 @@
 
 
 .recommendedApp-card {
-    display: flex;
-    gap: 16px;
+    width: 100%;
+    max-width: 500px;
     background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 16px;
-    margin: 1rem 0;
-    max-width: 500px;
+    margin: 1rem auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.recommendedApp-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .recommendedApp-icon {
@@ -297,26 +305,20 @@
     flex-shrink: 0;
 }
 
-.recommendedApp-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
 .recommendedApp-title {
-    margin: 0 0 8px 0;
+    margin: 0;
     font-size: 1.2rem;
 }
 
 .recommendedApp-divider {
+    margin: 12px 0;
     border: none;
     border-top: 1px solid #ddd;
-    margin: 4px 0 8px 0;
 }
 
 .recommendedApp-description {
     font-size: 0.95rem;
-    margin: 0 0 8px 0;
+    margin: 0 0 12px 0;
     line-height: 1.4;
 }
 
