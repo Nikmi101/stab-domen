@@ -99,16 +99,16 @@
       {{ content }}
     </article>
 
-    <!-- Автор и дата
+    <!-- Автор и дата -->
     {% if page.author %}
-    <div class="blog-author" style="margin-top:2rem; font-size:0.95rem; color:#666;">
-      Статью написал: <strong>Никита Митяев</strong>, автор и разработчик Vnutri Apps
+    <div class="blog-author">
+      Никита Митяев, <br>автор и разработчик <strong>Vnutri Apps</strong>
       {% if page.date %}
       — {{ page.date | date: "%d.%m.%Y" }}
       {% endif %}
     </div>
      {% endif %}
- -->
+
 
  <h1 class="blog-title">Решения от<br> Vnutri Apps:</h1>       
   <!-- Рекомендуемое приложение -->
@@ -170,6 +170,7 @@
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 
