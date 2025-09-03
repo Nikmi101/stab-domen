@@ -109,8 +109,9 @@
     </div>
      {% endif %}
 
-
- <h1 class="blog-title">Решения от<br> Vnutri Apps:</h1>       
+{% if page.recommended_apps and page.recommended_apps.size > 0 %}
+  <h1 class="blog-title">Решения от<br> Vnutri Apps:</h1>
+{% endif %}   
   <!-- Рекомендуемое приложение -->
 {% for app in page.recommended_apps %}
   {% case app %}
@@ -170,6 +171,7 @@
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 
