@@ -10,8 +10,6 @@ banner:
   title: "для сео статьи"
 recommended_apps:
   - brosit_kurit
-  - odinochestvo
-  - tvorchestvo
   - trevoga
   
 ---
@@ -35,6 +33,7 @@ recommended_apps:
 Текст.
 
 ---
+
 
 
 
