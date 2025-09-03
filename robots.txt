@@ -2,7 +2,7 @@ User-agent: *
 Disallow: /assets/
 Disallow: /images/
 Disallow: /tmp/
-
+Disallow: /blog/
 Allow: /
 
 Sitemap: https://vnutriapps.ru/sitemap.xml
