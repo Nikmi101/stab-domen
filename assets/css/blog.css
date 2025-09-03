@@ -242,7 +242,7 @@
 .breadcrumbs {
   font-size: 0.8rem;      /* чуть меньше стандартного, легкий визуальный вес */
   color: #777;             /* светло-серый, заметен, но не отвлекает */
-  margin-bottom: 0.4rem;  /* небольшой отступ до h1 */
+  margin-bottom: 0.7rem;  /* небольшой отступ до h1 */
   line-height: 1.4;
   display: flex;
   flex-wrap: wrap;         /* перенос при узком экране */
