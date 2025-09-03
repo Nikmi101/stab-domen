@@ -14,3 +14,11 @@ plugins:
 
 # Чтобы категории были «чистыми» слагами (рекомендую латиницу для путей)
 collections: {}
+
+# Markdown / Kramdown
+markdown: kramdown
+kramdown:
+  input: GFM          # GitHub-flavored Markdown
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
