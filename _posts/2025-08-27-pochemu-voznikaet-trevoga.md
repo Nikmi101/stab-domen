@@ -5,7 +5,7 @@ author: "yes"
 date: 2025-08-27
 categories: [emotsii]
 banner:
-  image: "/images/blog-images/anxiety-nature.jpg"
+  image: "/images/blog-images/blog-header.webp"
   alt: "что такое тревога"
   title: "Что такое тревога"
 recommended_apps:
@@ -89,5 +89,6 @@ recommended_apps:
 👉 Именно для этого создано приложение **«Нет тревоге: Путь к спокойствию»**. Оно ведёт через 7 этапов работы с тревожностью: от понимания её природы до обретения внутреннего спокойствия.
 
 ---
+
 
 
