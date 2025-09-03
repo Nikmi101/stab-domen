@@ -81,8 +81,7 @@
          title="{{ page.banner.title | default: page.title }}">
       
     </div>
-    {% else %}
-    <h1 class="blog-title">{{ page.title }}</h1>
+
     {% endif %}
 </section>
 
@@ -110,7 +109,7 @@
      {% endif %}
 
 {% if page.recommended_apps and page.recommended_apps.size > 0 %}
-  <h1 class="blog-title">Решения от<br> Vnutri Apps:</h1>
+  <h2 class="blog-title">Решения от<br> Vnutri Apps:</h2>
 {% endif %}   
   <!-- Рекомендуемое приложение -->
 {% for app in page.recommended_apps %}
@@ -166,6 +165,7 @@
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 
