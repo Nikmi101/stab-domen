@@ -2,7 +2,7 @@ title: Vnutri Apps
 url: https://vnutriapps.ru
 lang: ru
 description: Психологические приложения и статьи о самопомощи, тревоге, привычках и творчестве.
-theme: minima
+theme: jekyll-theme-cayman
 
 # Красивые URL постов: /blog/категория/название/
 permalink: /blog/:categories/:title/
@@ -22,3 +22,4 @@ kramdown:
   syntax_highlighter_opts:
     span:
       line_numbers: false
+
