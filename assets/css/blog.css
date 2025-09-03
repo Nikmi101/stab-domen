@@ -311,7 +311,11 @@
   font-size: 0.95rem;
   color: #555;
 }
-
-
-
-
+.recommendedApp-links {
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+.recommendedApp-links a {
+  text-decoration: underline;
+  color: #0073e6;
+}
