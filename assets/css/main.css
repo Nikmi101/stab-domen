@@ -4755,6 +4755,10 @@ margin-bottom: 1rem;
 }
 
 .accordion-content p {
+  color: #0a0a0a !important;
+}
+
+.accordion-content p {
   margin: 12px 0;
   font-size: 1rem;
   line-height: 1.5;
