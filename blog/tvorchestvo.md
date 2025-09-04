@@ -1,6 +1,6 @@
 ---
 layout: blog-category
-title: "Раздел — Творчество и саморазвитие"
+title: "Vnutri Apps про творчество и саморазвитие"
 description: "Все статьи Vnutri Apps про творчество, вдохновение и личностный рост"
 categories: [tvorchestvo]
 banner:
@@ -15,3 +15,4 @@ banner:
 {% for post in items %}
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d.%m.%Y" }}
 {% endfor %}
+
