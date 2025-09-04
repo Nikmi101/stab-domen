@@ -1,6 +1,6 @@
 ---
 layout: blog-category
-title: "Раздел — Привычки и изменения"
+title: "Vnutri Apps про образ жизни и внутренние изменения"
 description: "Все статьи Vnutri Apps про привычки, здоровые изменения и личные ритуалы"
 categories: [privychki]
 banner:
@@ -16,6 +16,7 @@ banner:
 {% for post in items %}
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d.%m.%Y" }}
 {% endfor %}
+
 
 
 
