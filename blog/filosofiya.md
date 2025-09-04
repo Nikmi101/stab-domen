@@ -1,6 +1,6 @@
 ---
 layout: blog-category
-title: "Раздел — Философия и глубина"
+title: "Vnutri Apps о философии, идеях, мыслях"
 description: "Все статьи Vnutri Apps про философию, размышления и психологические концепции"
 categories: [filosofiya]
 banner:
@@ -15,3 +15,4 @@ banner:
 {% for post in items %}
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d.%m.%Y" }}
 {% endfor %}
+
