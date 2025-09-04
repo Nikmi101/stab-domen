@@ -40,24 +40,62 @@
     <meta property="og:url" content="https://vnutriapps.ru/razvitie-tvorchestva" />
 
     <!-- JSON-LD -->
-    <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Vnutri Apps",
+      "address": "Россия",
+      "telephone": "+7-000-000-00-00",
+      "url": "https://vnutriapps.ru/",
+      "logo": "https://vnutriapps.ru/images/favicon.png",
+      "sameAs": [
+        "https://t.me/vnutriapps",
+        "https://vk.com/vnutriapps",
+        "https://www.youtube.com/@VnutriApps",
+        "https://dzen.ru/vnutriapps",
+        "https://ok.ru/group/70000039792868",
+        "https://boosty.to/vnutri_apps",
+        "https://www.instagram.com/vnutriapps/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "vnutri_apps@mail.ru",
+        "contactType": "customer support",
+        "availableLanguage": "ru"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Никита Митяев",
+        "jobTitle": "Автор и разработчик приложений Vnutri Apps",
+        "url": "https://vnutriapps.ru/about-vnutri-apps"
+      }
+    },
+    {
       "@type": "MobileApplication",
       "name": "Творчество: Пламя внутри",
+      "operatingSystem": "ANDROID",
+      "applicationCategory": "https://schema.org/HealthApplication",
+      "image": "https://vnutriapps.ru/images/image_tvorchestvo.webp",
       "url": "https://www.rustore.ru/catalog/app/ru.vnutriapps.tvorchestvo_vnutri_apps",
-      "sameAs": "https://www.rustore.ru/catalog/app/ru.vnutriapps.tvorchestvo_vnutri_apps",
-      "operatingSystem": "Android",
-      "applicationCategory": "HealthApplication",
-      "description": "Творчество: Пламя внутри — это приложение для тех, кто хочет услышать свой внутренний огонь и научиться давать ему форму. Путь из 7 шагов, практики, дневник и цитаты помогают разжечь вдохновение и обрести опору.",
-      "image": "https://vnutriapps.ru/images/image_tvorchestvo.jpg",
+      "description": "Приложение помогает раскрыть творческий потенциал, вдохновляет и развивает креативность.",
       "publisher": {
         "@type": "Organization",
         "name": "Vnutri Apps",
         "url": "https://vnutriapps.ru/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB",
+        "url": "https://www.rustore.ru/catalog/app/ru.vnutriapps.tvorchestvo_vnutri_apps"
       }
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
 /* Текст */
