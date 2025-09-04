@@ -40,24 +40,69 @@
     <meta property="og:url" content="https://vnutriapps.ru/kak-borotsya-s-odinochestvom" />
 
     <!-- JSON-LD -->
-    <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Vnutri Apps",
+      "address": "Россия",
+      "telephone": "+7-000-000-00-00",
+      "url": "https://vnutriapps.ru/",
+      "logo": "https://vnutriapps.ru/images/favicon.png",
+      "sameAs": [
+        "https://t.me/vnutriapps",
+        "https://vk.com/vnutriapps",
+        "https://www.youtube.com/@VnutriApps",
+        "https://dzen.ru/vnutriapps",
+        "https://ok.ru/group/70000039792868",
+        "https://boosty.to/vnutri_apps",
+        "https://www.instagram.com/vnutriapps/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "vnutri_apps@mail.ru",
+        "contactType": "customer support",
+        "availableLanguage": "ru"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Никита Митяев",
+        "jobTitle": "Автор и разработчик приложений Vnutri Apps",
+        "url": "https://vnutriapps.ru/about-vnutri-apps"
+      }
+    },
+   {
       "@type": "MobileApplication",
       "name": "Одиночество: Точки опоры",
       "url": "https://www.rustore.ru/catalog/app/ru.vnutriapps.odinochestvo_vnutri_apps",
-      "sameAs": "https://www.rustore.ru/catalog/app/ru.vnutriapps.odinochestvo_vnutri_apps",
       "operatingSystem": "Android",
-      "applicationCategory": "HealthApplication",
+      "applicationCategory": "https://schema.org/HealthApplication",
       "description": "Одиночество: Точки опоры — приложение, которое помогает встретить одиночество и превратить его в пространство внутренней силы. Пошаговый путь, упражнения, дыхание, дневник и цитаты помогают найти глубину и опору.",
       "image": "https://vnutriapps.ru/images/image_odinochestvo.jpg",
       "publisher": {
         "@type": "Organization",
         "name": "Vnutri Apps",
         "url": "https://vnutriapps.ru/"
-      }
-    }
-    </script>
+      },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "RUB",
+    "url": "https://www.rustore.ru/catalog/app/ru.vnutriapps.odinochestvo_vnutri_apps"
+  },
+  "sameAs": [
+    "https://play.google.com/store/apps/details?id=ru.vnutriapps.odinochestvo_vnutri_apps",
+    "https://www.rustore.ru/catalog/app/ru.vnutriapps.odinochestvo_vnutri_apps"
+  ]
+	}
+  ]
+}
+</script>
+
+
+
 
     <style>
 /* Основной текст контента */
