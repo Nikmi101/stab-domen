@@ -4747,15 +4747,15 @@ margin-bottom: 1rem;
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  background: #8ec665;
-  color: #0a0a0a;
+  background: #0f2318;
+  color: #c4f5ab;
   transition: max-height 0.4s ease, padding 0.3s ease;
   border-radius: 0 0 8px 8px;
   padding: 0 18px;
 }
 
 .accordion-content p {
-  color: #0a0a0a !important;
+  color: #c4f5ab !important;
 }
 
 .accordion-content p {
