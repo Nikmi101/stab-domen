@@ -1,0 +1,66 @@
+<!-- JSON-LD для статьи с автоматической лемматизацией + ручными ключевыми словами -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title }}"{% if page.banner.title %},
+  "alternativeHeadline": "{{ page.banner.title }}"{% endif %},
+  "description": "{{ page.description | default: site.description }}",
+  "author": {
+    "@type": "Person",
+    "name": "Никита Митяев"
+  },
+  "publisher": {
+    "@id": "https://vnutriapps.ru/#organization"
+  }{% if page.banner.image %},
+  "image": "{{ page.banner.image | absolute_url }}"{% endif %},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }},
+  "articleBody": {{ page.content | strip_html | strip_newlines | jsonify }},
+  "keywords": [
+    {% assign words = page.content | strip_html | strip_newlines | downcase | split: " " %}
+    {% assign stopwords = "и,в,на,с,что,как,к,за,по,от,для,но,или,о,не,у,же,бы,так,ещё,ли,да,нет" | split: "," %}
+    {% assign freq = {} %}
+
+    {% comment %}
+    Автоматическая лемматизация через обрезку типичных русских окончаний
+    {% endcomment %}
+    {% for word in words %}
+      {% assign clean = word | replace: ",", "" | replace: ".", "" | replace: "!", "" | replace: "?", "" | replace: ":", "" | replace: ";", "" %}
+      {% unless clean.size < 3 or stopwords contains clean %}
+        {% assign lemma = clean %}
+        {% if lemma endswith "ать" or lemma endswith "ять" or lemma endswith "ить" or lemma endswith "еть" or lemma endswith "овать" or lemma endswith "ывать" %}
+          {% assign lemma = lemma | slice: 0, -3 %}
+        {% elsif lemma endswith "ый" or lemma endswith "ий" or lemma endswith "ая" or lemma endswith "ое" or lemma endswith "ые" %}
+          {% assign lemma = lemma | slice: 0, -2 %}
+        {% elsif lemma endswith "а" or lemma endswith "я" or lemma endswith "ы" or lemma endswith "и" or lemma endswith "о" or lemma endswith "е" or lemma endswith "у" or lemma endswith "ю" %}
+          {% assign lemma = lemma | slice: 0, -1 %}
+        {% endif %}
+        {% assign freq = freq | merge: {{ lemma | jsonify }}: {{ freq[lemma] | default: 0 | plus: 1 }} %}
+      {% endunless %}
+    {% endfor %}
+
+    {% assign sorted = freq | sort: "last" | reverse %}
+    {% assign auto_keywords = "" %}
+    {% for pair in sorted limit:5 %}
+      {% assign auto_keywords = auto_keywords | append: '"' | append: pair[0] | append: '"' %}
+      {% if forloop.last == false %}, {% assign auto_keywords = auto_keywords | append: ", " %}{% endif %}
+    {% endfor %}
+
+    {% comment %}
+    Добавляем ручные ключевые слова, если они определены в YAML фронтматтере статьи
+    {% endcomment %}
+    {% assign manual_keywords = page.manual_keywords | default: "" %}
+    {% if manual_keywords != "" %}
+      {% assign combined_keywords = auto_keywords | append: ", " | append: manual_keywords | jsonify %}
+      {{ combined_keywords }}
+    {% else %}
+      {{ auto_keywords }}
+    {% endif %}
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}
+</script>
