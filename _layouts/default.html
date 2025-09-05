@@ -170,6 +170,7 @@
   }{% if page.banner.image %},
   "image": "{{ page.banner.image | absolute_url }}"{% endif %},
   "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "articleBody": {{ page.content | strip_html | strip_newlines | jsonify }},
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ page.url | absolute_url }}"
@@ -274,6 +275,7 @@
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 
