@@ -15,8 +15,12 @@
   }{% if page.banner.image %},
   "image": "{{ page.banner.image | absolute_url }}"{% endif %},
   "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {% if page.tema %},
+  "datePublished": "{{ page.dateUpdated }}"{% endif %},
   "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }},
   "articleBody": {{ page.content | strip_html | strip_newlines | jsonify }},
+  {% if page.tema %},
+  "articleSection": {{page.tema}}{% endif %},
   "wordCount": {{ page.content | strip_html | strip_newlines | split: " " | size }},
   "keywords": [{% for tag in page.tags %}"{{ tag }}"{% if forloop.last == false %}, {% endif %}{% endfor %}],
   "mainEntityOfPage": {
