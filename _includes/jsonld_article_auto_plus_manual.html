@@ -1,7 +1,6 @@
 {% comment %}
-  _includes/jsonld-article.html
   Требования:
-  - Страница имеет фронт-маттер с title, description, date, (опц.) banner.image/width/height, (опц.) dateUpdated, (опц.) tema, (опц.) tags.
+  - фронт-маттер: title, description, date, (опц.) banner.image/width/height, (опц.) dateUpdated, (опц.) tema/articleSection, (опц.) tags, (опц.) sources (массив ссылок)
 {% endcomment %}
 
 {% assign img_url = page.banner.image | default: nil %}
@@ -21,8 +20,10 @@
   "isAccessibleForFree": true,
   "author": {
     "@type": "Person",
-    "name": "Никита Митяев",
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "name": {{ page.author.name | default: "Vnutri Apps" | jsonify }},
+    {% if page.author.url %}"url": {{ page.author.url | jsonify }},{% endif %}
+    {% if page.author.title %}"jobTitle": {{ page.author.title | jsonify }},{% endif %}
+    "@id": {{ page.author.url | default: page.url | absolute_url | jsonify }}
   },
   "publisher": { "@id": "https://vnutriapps.ru/#organization" },
   {% if has_img > 0 %}
@@ -35,17 +36,15 @@
   "thumbnailUrl": "{{ img_url | absolute_url }}",
   {% endif %}
   "url": "{{ page.url | absolute_url }}",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ page.url | absolute_url }}"
-  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
   "datePublished": "{{ page.date | date_to_xmlschema }}"{% if page.dateUpdated %},
   "dateModified": "{{ page.dateUpdated | date_to_xmlschema }}"{% endif %},
   "articleBody": {{ page.content | strip_html | strip_newlines | jsonify }},
-  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }}{% if page.tema %},
-  "articleSection": {{ page.tema | jsonify }}{% endif %},
+  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }}{% if page.articleSection or page.tema %},
+  "articleSection": {{ page.articleSection | default: page.tema | jsonify }}{% endif %},
   "wordCount": {{ page.content | strip_html | strip_newlines | split: " " | size }}{% if page.tags and page.tags.size > 0 %},
   "keywords": [{% for tag in page.tags %}{{ tag | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.faq and page.faq.size > 0 %},
-  "hasPart": { "@id": "{{ page.url | absolute_url }}#faq" }{% endif %}
+  "hasPart": { "@id": "{{ page.url | absolute_url }}#faq" }{% endif %}{% if page.sources and page.sources.size > 0 %},
+  "citation": [{% for s in page.sources %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}
 }
 </script>
