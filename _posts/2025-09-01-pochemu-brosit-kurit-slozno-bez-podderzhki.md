@@ -6,8 +6,8 @@ date: 2025-09-01
 categories: [privychki]
 banner:
   image: "/images/blog-images/blog-header.webp"
-  alt: "мифы и правда о никотине"
-  title: "Никотиновая зависимость"
+  alt: "бросить курить с поддержкой"
+  title: "Почему бросить курить сложно без поддержки"
 recommended_apps:
   - brosit_kurit
 
@@ -196,6 +196,7 @@ recommended_apps:
 
 **❓ Стоит ли переходить на электронные сигареты?**  
 Нет. Это не избавляет от зависимости, а лишь меняет её форму.  
+
 
 
 
