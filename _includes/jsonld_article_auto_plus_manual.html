@@ -1,31 +1,40 @@
-<!-- JSON-LD для статьи -->
+<!-- JSON-LD для статьи (универсальный) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
+  "@id": "{{ page.url | absolute_url }}#article",
   "headline": "{{ page.title }}"{% if page.banner.title %},
   "alternativeHeadline": "{{ page.banner.title }}"{% endif %},
   "description": "{{ page.description | default: site.description }}",
+  "inLanguage": "ru-RU",
+  "isAccessibleForFree": true,
   "author": {
     "@type": "Person",
-    "name": "Никита Митяев"
+    "name": "Никита Митяев",
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
   },
   "publisher": {
     "@id": "https://vnutriapps.ru/#organization"
   }{% if page.banner.image %},
-  "image": "{{ page.banner.image | absolute_url }}"{% endif %},
-  "datePublished": "{{ page.date | date_to_xmlschema }}",
-  {% if page.dateUpdated %},
-  "dateModified": "{{ page.dateUpdated }}"{% endif %},
-  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }},
-  "articleBody": {{ page.content | strip_html | strip_newlines | jsonify }},
-  {% if page.tema %},
-  "articleSection": {{page.tema}}{% endif %},
-  "wordCount": {{ page.content | strip_html | strip_newlines | split: " " | size }},
-  "keywords": [{% for tag in page.tags %}"{{ tag }}"{% if forloop.last == false %}, {% endif %}{% endfor %}],
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ page.banner.image | absolute_url }}",
+    "width": {{ page.banner.width | default: 1200 }},
+    "height": {{ page.banner.height | default: 630 }}
+  },
+  "thumbnailUrl": "{{ page.banner.image | absolute_url }}"{% endif %},
+  "url": "{{ page.url | absolute_url }}",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ page.url | absolute_url }}"
-  }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}"{% if page.dateUpdated %},
+  "dateModified": "{{ page.dateUpdated | date_to_xmlschema }}"{% endif %},
+  "articleBody": {{ page.content | strip_html | strip_newlines | jsonify }},
+  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }}{% if page.tema %},
+  "articleSection": "{{ page.tema }}"{% endif %},
+  "wordCount": {{ page.content | strip_html | strip_newlines | split: " " | size }},
+  "keywords": [{% for tag in page.tags %}"{{ tag }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]
 }
 </script>
