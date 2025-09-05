@@ -21,7 +21,7 @@ tags:
   - синдром отмены
   - поддержка при отказе
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "https://vnutriapps.ru/images/blog-images/blog-header.webp"
   alt: "бросить курить с поддержкой"
   width: 1200
   height: 630
@@ -215,6 +215,7 @@ recommended_apps:
 
 **❓ Стоит ли переходить на электронные сигареты?**  
 Нет. Это не избавляет от зависимости, а лишь меняет её форму.  
+
 
 
 
