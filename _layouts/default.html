@@ -154,29 +154,9 @@
 {% endfor %}
 
   <!-- JSON-LD для статьи -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ page.title }}"{% if page.banner.title %},
-  "alternativeHeadline": "{{ page.banner.title }}"{% endif %},
-  "description": "{{ page.description | default: site.description }}",
-  "author": {
-    "@type": "Person",
-    "name": "Никита Митяев"
-  },
-  "publisher": {
-    "@id": "https://vnutriapps.ru/#organization"
-  }{% if page.banner.image %},
-  "image": "{{ page.banner.image | absolute_url }}"{% endif %},
-  "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "articleBody": {{ page.content | strip_html | strip_newlines | jsonify }},
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ page.url | absolute_url }}"
-  }
-}
-</script>
+{% include jsonld_article_auto_plus_manual.html %}
+
+       
      </div>
   </main>
 
@@ -275,6 +255,7 @@
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 
