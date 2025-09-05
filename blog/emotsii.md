@@ -2,7 +2,7 @@
 layout: blog-category
 title: "Vnutri Apps про эмоции и внутреннее состояние"
 description: "Все статьи Vnutri Apps про тревогу, стресс, настроение, поддержку, психологические практики "
-categories: [privychki]
+categories: [emotsii]
 banner:
   image: "/images/blog-images/test-img.jpg"
   alt: "Статьи блог Vnutri Apps"
