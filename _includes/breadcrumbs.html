@@ -1,49 +1,25 @@
-{% assign category_name = page.categories[0] %}
+{% assign category_name = page.categories | first %}
 {% case category_name %}
-  {% when "privychki" %} {% assign category_title = "Привычки и изменения" %}
-  {% when "emotsii" %}   {% assign category_title = "Эмоции и состояние" %}
-  {% when "tvorchestvo" %} {% assign category_title = "Творчество и саморазвитие" %}
-  {% when "filosofiya" %}  {% assign category_title = "Философия и глубина" %}
-  {% when "VnutriApps" %}  {% assign category_title = "Проект Vnutri Apps" %}
-  {% else %} {% assign category_title = category_name %}
+  {% when "privychki" %}{% assign category_title = "Привычки и изменения" %}
+  {% when "emotsii" %}{% assign category_title = "Эмоции и состояние" %}
+  {% when "tvorchestvo" %}{% assign category_title = "Творчество и саморазвитие" %}
+  {% when "filosofiya" %}{% assign category_title = "Философия и глубина" %}
+  {% when "VnutriApps" %}{% assign category_title = "Проект Vnutri Apps" %}
+  {% else %}{% assign category_title = category_name %}
 {% endcase %}
 
-<ol class="breadcrumbs"
-    aria-label="Хлебные крошки"
-    itemscope itemtype="https://schema.org/BreadcrumbList"
-    style="color:#888;font-size:0.9rem;margin-bottom:0.5rem;list-style:none;padding:0;display:flex;gap:.5rem;flex-wrap:wrap">
-
-  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" style="display:inline">
-    <a itemprop="item" href="/"><span itemprop="name">Vnutri Apps</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-
+<ol class="breadcrumbs" aria-label="Хлебные крошки">
+  <li><a href="/">Vnutri Apps</a></li>
   <li aria-hidden="true">→</li>
-
-  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" style="display:inline">
-    <a itemprop="item" href="/blog/"><span itemprop="name">Статьи от Vnutri Apps</span></a>
-    <meta itemprop="position" content="2" />
-  </li>
+  <li><a href="/blog/">Статьи от Vnutri Apps</a></li>
 
   {% if category_name %}
     <li aria-hidden="true">→</li>
-    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" style="display:inline">
-      <a itemprop="item" href="/blog/{{ category_name }}/">
-        <span itemprop="name">{{ category_title }}</span>
-      </a>
-      <meta itemprop="position" content="3" />
-    </li>
-
+    <li><a href="/blog/{{ category_name }}/">{{ category_title }}</a></li>
     <li aria-hidden="true">→</li>
-    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" style="display:inline">
-      <span itemprop="name">{{ page.title }}</span>
-      <meta itemprop="position" content="4" />
-    </li>
+    <li><span>{{ page.title }}</span></li>
   {% else %}
     <li aria-hidden="true">→</li>
-    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" style="display:inline">
-      <span itemprop="name">{{ page.title }}</span>
-      <meta itemprop="position" content="3" />
-    </li>
+    <li><span>{{ page.title }}</span></li>
   {% endif %}
 </ol>
