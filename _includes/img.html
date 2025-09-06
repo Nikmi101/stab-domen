@@ -1,0 +1,14 @@
+<figure class="content-image" style="margin:1rem 0">
+  <img
+    src="{{ include.src }}"
+    alt="{{ include.alt }}"
+    {% if include.title %}title="{{ include.title }}"{% endif %}
+    width="{{ include.width }}" height="{{ include.height }}"
+    loading="lazy" decoding="async" style="height:auto"
+  >
+  {% if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
+  {% else %}
+    <figcaption class="visually-hidden">{{ include.alt }}</figcaption>
+  {% endif %}
+</figure>
