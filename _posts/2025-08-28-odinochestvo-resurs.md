@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
 medical_disclaimer: true
 date: 2025-08-28
-dateUpdated: 2025-08-28
+dateUpdated: 2025-09-06
 articleSection: "Философия и психология"
 preload_images:
   - /images/blog-images/cennost-odinochestva.webp
@@ -221,3 +221,4 @@ permalink: "/blog/filosofiya/odinochestvo-resurs/"
 👉 Именно этому посвящено приложение **«Одиночество: Точки опоры»**. Оно помогает прожить одиночество осознанно и превратить его в ресурс внутреннего развития.
 
 ---
+
