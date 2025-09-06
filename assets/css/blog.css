@@ -1,407 +1,97 @@
-/* ========== Общая обертка блога ========== */
-.blog-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem;
-  font-family: "Arial", sans-serif;
-  color: #222;
-  background: #fff;
+/* ===== UX/типографика: мягче и контрастнее ===== */
+.blog-container{
+  font-size: 17px;                 /* базовый размер текста */
+  line-height: 1.7;                /* комфортное межстрочное */
+  color:#222;
 }
 
-/* Заголовки */
-.blog-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-align: left;
+/* Заголовки в статье */
+.blog-article h1{
+  font-size: clamp(1.9rem, 2.2vw + 1rem, 2.5rem); /* ~30–40px адаптивно */
   line-height: 1.2;
-  color: #000;
+  margin: 0.4rem 0 1.0rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color:#111;                      /* поярче, чем #222 */
 }
-
-.all-posts-title {
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin: 3rem 0 1.5rem;
-  text-align: center;
+.blog-article h2{
+  font-size: clamp(1.35rem, 1.1vw + 1rem, 1.8rem);
   line-height: 1.3;
+  margin: 1.6rem 0 .8rem;
+  font-weight: 700;
+  color:#111;
+}
+.blog-article h3{
+  font-size: clamp(1.1rem, .6vw + 1rem, 1.3rem);
+  line-height: 1.35;
+  margin: 1.2rem 0 .5rem;
+  font-weight: 700;
+  color:#222;
 }
 
-/* ========== Баннер хедера ========== */
-.blog-header-banner {
-  width: 100%;
-  height: 350px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  margin-bottom: 0;
+/* Текст и списки в статье */
+.blog-article p{ margin: .75rem 0; }
+.blog-article ul,
+.blog-article ol{ margin: .6rem 0 .9rem; padding-left: 1.2rem; }
+.blog-article li{ margin: .25rem 0; }
+.blog-article blockquote{
+  margin: 1rem 0;
+  padding: .6rem .9rem;
+  border-left: 3px solid #ddd;
+  background: #fafafa;
+  color:#333;
+}
+.blog-article hr{
+  border: 0; height: 1px;
+  background: linear-gradient(90deg,#eee, #ddd, #eee);
+  margin: 1.3rem 0;
 }
 
-.blog-header-banner::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.35);
-  border-radius: 12px;
+/* Картинки в статье — чуть компактнее отступы на мобилке */
+.blog-article img{ margin: 1.2rem auto; }
+@media (max-width: 480px){
+  .blog-container{ font-size: 16px; }
+  .blog-article img{ margin: .9rem auto; }
 }
 
-.blog-header-banner h1 {
-  position: relative;
-  z-index: 1;
-  font-size: 2rem;
-  text-align: center;
-  padding: 0 1rem;
-  margin: 0; /* убираем лишние отступы */
-}
-
-/* ========== Категории блога (карточки) ========== */
-.blog-categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 3rem;
-}
-
-.blog-card {
-  display: flex;
-  align-items: flex-start;
-  background: #fff;
-  border-radius: 14px;
-  padding: 1.4rem 1.2rem;
-  text-decoration: none;
-  color: inherit;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.blog-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-}
-
-.blog-icon {
-  font-size: 2rem;
-  margin-right: 0.9rem;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.blog-text h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0 0 0.3rem;
-}
-
-.blog-text p {
-  font-size: 0.95rem;
-  line-height: 1.45;
-  color: #555;
-  margin: 0;
-}
-.blog-author {
-    text-align: right;       /* Выравнивание текста по правому краю */
-    color: #888888;          /* Серый цвет текста */
-    font-size: 0.8em;        /* Размер шрифта 0.8 */
-    font-style: italic;      /* Курсив */
-    line-height: 1.4;        /* Немного увеличенная высота строки для читаемости */
-    margin-bottom: 12px;        /* Отступ сверху */
-}
-
-/* ========== Список статей ========== */
-.blog-posts {
-  list-style: none;
+/* ===== Хлебные крошки: чисто и без нумерации ===== */
+.breadcrumbs{
+  list-style: none !important;     /* убираем нумерацию <ol> */
   padding: 0;
-  margin: 0;
-}
-
-.blog-posts li {
-  padding: 0.9rem 0;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background 0.2s ease;
-}
-
-.blog-posts li:hover {
-  background: #f9f9f9;
-}
-
-.blog-posts li:last-child {
-  border-bottom: none;
-}
-
-.blog-posts a {
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-  color: #0073e6;
-  transition: color 0.2s ease;
-}
-
-.blog-posts a:hover {
-  color: #005bb5;
-  text-decoration: underline;
-}
-
-.blog-posts .date {
-  font-size: 0.85rem;
-  color: #888;
-  margin-left: 1rem;
-  white-space: nowrap;
-}
-
-/* ========== Блок рекомендуемого приложения ========== */
-.blog-app-recommend {
-  display: flex;
-  align-items: center;
-  margin: 2rem 0;
-  padding: 1.2rem;
-  border-radius: 12px;
-  background: #f5f5f5;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-
-.blog-app-recommend img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-right: 1rem;
-  flex-shrink: 0;
-}
-
-.blog-app-recommend .app-info h3 {
-  margin: 0 0 0.3rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.blog-app-recommend .app-info p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* ========== Статья ========== */
-.blog-article {
-  /* Убираем margin у первого заголовка */
-}
-
-.blog-article h1:first-child,
-.blog-article h2:first-child {
-  margin-top: 0;
-}
-
-/* Изображения в статье */
-.blog-article img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-  margin: 1.5rem auto;
-}
-
-/* ========== Мобильная адаптация ========== */
-@media (max-width: 768px) {
-  .blog-card { padding: 1.2rem; }
-  .blog-icon { font-size: 1.8rem; margin-right: 0.7rem; }
-  .blog-text h2 { font-size: 1.15rem; }
-  .blog-text p { font-size: 0.9rem; }
-
-  .blog-header-banner { height: 280px; }
-  .blog-header-banner h1 { font-size: 1.8rem; }
-
-  .blog-article h1:first-child,
-  .blog-article h2:first-child {
-    margin-top: 0; /* для мобильных */
-  }
-}
-
-@media (max-width: 480px) {
-  .blog-categories { grid-template-columns: 1fr; }
-  .blog-posts li { flex-direction: column; align-items: flex-start; }
-  .blog-posts .date { margin-left: 0; margin-top: 0.3rem; }
-  .blog-container { padding: 1rem 1rem; }
-
-  .blog-header-banner { height: 220px; }
-  .blog-header-banner h1 { font-size: 1.5rem; }
-
-  .blog-app-recommend { flex-direction: column; align-items: flex-start; }
-  .blog-app-recommend img { margin-bottom: 0.7rem; }
-
-  .blog-article h1:first-child,
-  .blog-article h2:first-child { margin-top: 0; }
-}
-
-/* Легкие хлебные крошки */
-.breadcrumbs {
-  font-size: 0.8rem;      /* чуть меньше стандартного, легкий визуальный вес */
-  color: #777;             /* светло-серый, заметен, но не отвлекает */
-  margin-bottom: 0.7rem;  /* небольшой отступ до h1 */
+  margin: 0 0 .75rem;
+  display: flex; flex-wrap: wrap;
+  gap: .35rem;
+  font-size: .9rem;
+  color:#777;
   line-height: 1.4;
-  display: flex;
-  flex-wrap: wrap;         /* перенос при узком экране */
-  gap: 0.2rem;             /* маленький промежуток между элементами */
 }
-
-.breadcrumbs span[itemprop="itemListElement"] {
-  display: flex;
-  align-items: center;
+.breadcrumbs > li{
+  display: inline-flex; align-items: center;
 }
-
-.breadcrumbs a {
-  color: #777;
-  text-decoration: none;
-  transition: color 0.2s;
+.breadcrumbs > li + li::before{
+  content: "→";
+  margin: 0 .35rem;
+  color:#b8b8b8;
 }
-
-.breadcrumbs a:hover {
-  color: #555;            /* немного темнее при наведении */
-  text-decoration: underline;
+.breadcrumbs a{
+  color: inherit; text-decoration: none; transition: color .2s;
 }
-
-/* стрелки между элементами */
-.breadcrumbs span[itemprop="itemListElement"] + span[itemprop="itemListElement"]::before {
-  content: "→"; 
-  margin: 0 0.3rem;
-  color: #bbb;            /* еще светлее, чтобы не бросалось в глаза */
-  font-size: 0.75rem;
-}
-
-/* Адаптив для мобильных устройств */
-@media (max-width: 768px) {
-  .breadcrumbs {
-    font-size: 0.7rem;
-    gap: 0.15rem;
-  }
-
-  .breadcrumbs span[itemprop="itemListElement"] + span[itemprop="itemListElement"]::before {
-    margin: 0 0.2rem;
-    font-size: 0.7rem;
-  }
-}
-
-
-.recommendedApp-card {
-    display: flex;
-    align-items: flex-start; /* ! важное изменение */
-    gap: 16px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 16px;
-    margin: 1rem 0;
-    max-width: 500px;
-}
-
-.recommendedApp-icon {
-    width: 64px;
-    height: 64px;
-    border-radius: 12px;
-    flex-shrink: 0;
-}
-
-.recommendedApp-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.recommendedApp-title {
-    margin: 0 0 8px 0;
-    font-size: 1.2rem;
-}
-
-.recommendedApp-divider {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 4px 0 8px 0;
-}
-
-.recommendedApp-description {
-    font-size: 0.95rem;
-    margin: 0 0 8px 0;
-    line-height: 1.4;
-}
-
-.recommendedApp-links a {
-    text-decoration: underline;
-    color: #0073e6;
-    font-size: 0.95rem;
-}
-
-/* ===== Article Hero (clean) ===== */
-.blog-hero{
-  width: 100%;
-  margin: 0 0 1.25rem;
-}
-
-.blog-header-banner{
-  position: relative;
-  width: 100%;
-  /* контролируемую высоту делаем из ширины: не слишком мало/много */
-  height: clamp(240px, 42vw, 520px);
-  overflow: hidden;
-}
-
-.blog-hero-img{
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;      /* аккуратно заполняет контейнер */
-  object-position: center;
-}
-
-/* Если нужен легкий затемняющий слой (опционально) */
-/*
-.blog-header-banner::after{
-  content:"";
-  position:absolute; inset:0;
-  background: rgba(0,0,0,.28);
-  pointer-events:none;
-}
-*/
-
-/* ===== Вариант «на весь экран» по желанию ===== */
-.blog-hero.is-fullvh .blog-header-banner{
-  height: 100svh;           /* full viewport; svh — корректно на мобайле */
-  min-height: 420px;        /* чтобы на десктопе не было слишком мало */
-}
-.blog-hero.is-fullvh .blog-hero-img{
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* Мобилка: чуть компактнее, но без дерганий */
+.breadcrumbs a:hover{ color:#555; text-decoration: underline; }
+.breadcrumbs [aria-current="page"], .breadcrumbs li span{ color:#555; }
 @media (max-width: 768px){
-  .blog-header-banner{ height: clamp(200px, 48vw, 380px); }
+  .breadcrumbs{ font-size: .8rem; gap: .25rem; }
 }
 
-/* === Full-bleed hero, без правого зазора и без горизонтального скролла === */
-.blog-hero{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  margin-bottom: 1.25rem;
-}
-.blog-header-banner{
-  position: relative;
-  height: clamp(240px, 42vw, 520px); /* адаптивная высота */
-  overflow: hidden;
-}
-.blog-header-banner img{
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center; /* можно менять на '50% 30%' если нужно сместить фокус */
-}
+/* На всякий случай гасим старые правила крошек со span[itemprop] */
+.breadcrumbs span[itemprop="itemListElement"]{ display: contents; }
+.breadcrumbs span[itemprop="itemListElement"] + span[itemprop="itemListElement"]::before{ content: none; }
 
-/* подстрахуемся от редкого 1px переполнения */
-html, body { overflow-x: hidden; }
+/* ===== Hero: оставляем full-bleed, без зазора справа ===== */
+.blog-hero{ width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); margin-bottom: 1.25rem; }
+.blog-header-banner{ position: relative; height: clamp(240px, 42vw, 520px); overflow: hidden; }
+.blog-hero-img{ width: 100%; height: 100%; object-fit: cover; object-position: center; }
+@media (max-width: 768px){ .blog-header-banner{ height: clamp(200px, 48vw, 380px); } }
+
+/* Мелочи для карточек и «рекомендовано» — чутка воздуха */
+.recommendedApp-card{ max-width: 560px; }
+.recommendedApp-description{ line-height: 1.5; }
