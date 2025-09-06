@@ -1,18 +1,15 @@
 {% assign cat = page.categories | first %}
+{% case cat %}
+  {% when "privychki" %}{% assign cat_name = "Привычки и изменения" %}
+  {% when "emotsii" %}{% assign cat_name = "Эмоции и состояние" %}
+  {% when "tvorchestvo" %}{% assign cat_name = "Творчество и саморазвитие" %}
+  {% when "filosofiya" %}{% assign cat_name = "Философия и глубина" %}
+  {% when "VnutriApps" %}{% assign cat_name = "Проект Vnutri Apps" %}
+  {% else %}{% assign cat_name = cat %}
+{% endcase %}
 
-{% comment %}
-Приводим человекочитаемое имя категории.
-Добавь сюда свои мэппинги при необходимости.
-{% endcomment %}
 {% if cat %}
-  {% case cat %}
-    {% when "privychki" %}{% assign cat_name = "Привычки и изменения" %}
-    {% when "emotsii" %}{% assign cat_name = "Эмоции и состояние" %}
-    {% when "tvorchestvo" %}{% assign cat_name = "Творчество и саморазвитие" %}
-    {% when "filosofiya" %}{% assign cat_name = "Философия и глубина" %}
-    {% when "VnutriApps" %}{% assign cat_name = "Проект Vnutri Apps" %}
-    {% else %}{% assign cat_name = cat %}
-  {% endcase %}
+  {% capture cat_url %}{{ "/blog/" | append: cat | append: "/" | absolute_url }}{% endcapture %}
 {% endif %}
 
 <script type="application/ld+json">
@@ -36,7 +33,7 @@
       "@type": "ListItem",
       "position": 3,
       "name": {{ cat_name | jsonify }},
-      "item": {{ ("/blog/" | append: cat | append: "/") | absolute_url | jsonify }}
+      "item": {{ cat_url | jsonify }}
     },
     {
       "@type": "ListItem",
