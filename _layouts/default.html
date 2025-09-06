@@ -78,9 +78,7 @@
   {% if page.banner.title %}<meta name="twitter:image:title" content="{{ page.banner.title }}">{% endif %}
   {% endif %}
 
-  {% if page.banner.image %}
-  <link rel="preload" as="image" href="{{ page.banner.image | absolute_url }}">
-  {% endif %}
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/main.css" />
@@ -267,3 +265,4 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
