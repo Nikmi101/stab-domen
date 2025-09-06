@@ -334,3 +334,54 @@
     color: #0073e6;
     font-size: 0.95rem;
 }
+
+/* ===== Blog hero: full-bleed и правильное наложение ===== */
+
+/* Растягиваем секцию на всю ширину вьюпорта, вне сетки темы */
+.blog-hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: calc(-50vw);
+  margin-right: calc(-50vw);
+  /* небольшой отступ вниз, чтобы контент не лип к баннеру */
+  margin-bottom: 1.25rem;
+  z-index: 0; /* ниже фикс-хедера, но выше фона */
+}
+
+/* Сбрасываем возможные ограничения ширины у figure */
+.blog-header-banner {
+  margin: 0;
+  max-width: none;
+}
+
+/* Само изображение: занимает всю ширину, обрезается по cover */
+.blog-hero-img {
+  display: block;
+  width: 100%;
+  /* высота на адаптив: ~400px на десктопе, ниже на мобилках */
+  height: clamp(220px, 42vw, 420px);
+  object-fit: cover;
+  aspect-ratio: 1200 / 630; /* помогает браузеру зарезервировать место */
+}
+
+/* Если в теме были спец-правила для #banner, они часто сдвигают .wrapper вверх.
+   Нейтрализуем для нашего случая: */
+.blog-hero + .wrapper {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* На всякий случай убираем возможные negative margins у первых контейнеров после hero */
+.wrapper:first-of-type,
+.blog-container:first-of-type {
+  margin-top: 0 !important;
+}
+
+/* Вариант на полный экран (если захочешь): просто добавь .is-fullvh на .blog-hero */
+.blog-hero.is-fullvh .blog-hero-img {
+  height: 100vh;        /* на весь экран */
+  min-height: 420px;    /* но не меньше десктопной высоты */
+}
+
