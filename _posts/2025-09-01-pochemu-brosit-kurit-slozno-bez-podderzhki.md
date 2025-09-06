@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
 medical_disclaimer: true
 date: 2025-09-01
-dateUpdated: 2025-09-01
+dateUpdated: 2025-09-06
 articleSection: "Бросить курить с поддержкой"
 preload_images:
   - /images/blog-images/podderzka-kurenie.webp
@@ -225,6 +225,7 @@ permalink: "/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/"
 
 **❓ Стоит ли переходить на электронные сигареты?**  
 Нет. Это не избавляет от зависимости, а лишь меняет её форму.  
+
 
 
 
