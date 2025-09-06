@@ -95,7 +95,6 @@
       <link rel="preload"
             as="image"
             href="{{ img | absolute_url }}"
-            imagesizes="(max-width: 900px) 100vw, 900px"
             {% if __img_ext == 'webp' %}type="image/webp"{% elsif __img_ext == 'jpg' or __img_ext == 'jpeg' %}type="image/jpeg"{% elsif __img_ext == 'png' %}type="image/png"{% endif %}>
     {% endfor %}
   {% endif %}
@@ -139,7 +138,7 @@
                 <li><a href="/brosit-kurit"><span>- Курил-бросил: бросить курить</span></a></li>
                 <li><a href="/snizit-trevogu"><span>- Нет тревоге: путь к спокойствию</span></a></li>
                 <li><a href="/kak-borotsya-s-odinochestvom"><span>- Одиночество: Точки опоры</span></a></li>
-                <li><a href="/razvitie-творчества"><span>- Творчество: Пламя внутри</span></a></li>
+                <li><a href="/razvitie-tvorchestva"><span>- Творчество: Пламя внутри</span></a></li>
             </ul>
         </li>
         <li>
@@ -284,3 +283,4 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
