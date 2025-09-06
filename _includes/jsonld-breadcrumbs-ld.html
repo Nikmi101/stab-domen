@@ -1,18 +1,55 @@
 {% assign cat = page.categories | first %}
-{% assign home_url = site.url | append: "/" | default: "https://vnutriapps.ru/" %}
-{% assign blog_url = site.url | append: "/blog/" | default: "https://vnutriapps.ru/blog/" %}
-{% assign cat_url = site.url | append: "/blog/" | append: cat | append: "/" | default: "https://vnutriapps.ru/blog/" | append: cat | append: "/" %}
+
+{% comment %}
+Приводим человекочитаемое имя категории.
+Добавь сюда свои мэппинги при необходимости.
+{% endcomment %}
+{% if cat %}
+  {% case cat %}
+    {% when "privychki" %}{% assign cat_name = "Привычки и изменения" %}
+    {% when "emotsii" %}{% assign cat_name = "Эмоции и состояние" %}
+    {% when "tvorchestvo" %}{% assign cat_name = "Творчество и саморазвитие" %}
+    {% when "filosofiya" %}{% assign cat_name = "Философия и глубина" %}
+    {% when "VnutriApps" %}{% assign cat_name = "Проект Vnutri Apps" %}
+    {% else %}{% assign cat_name = cat %}
+  {% endcase %}
+{% endif %}
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"BreadcrumbList",
-  "itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Vnutri Apps","item":"{{ home_url }}"},
-    {"@type":"ListItem","position":2,"name":"Статьи от Vnutri Apps","item":"{{ blog_url }}"}{% if cat %},
-    {"@type":"ListItem","position":3,"name":"{{ cat | replace: 'privychki', 'Привычки и изменения' }}","item":"{{ cat_url }}"},
-    {"@type":"ListItem","position":4,"name":"{{ page.title }}","item":"{{ page.url | absolute_url }}"}{% else %},
-    {"@type":"ListItem","position":3,"name":"{{ page.title }}","item":"{{ page.url | absolute_url }}"}{% endif %}
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Vnutri Apps",
+      "item": {{ "/" | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Статьи от Vnutri Apps",
+      "item": {{ "/blog/" | absolute_url | jsonify }}
+    }{% if cat %},
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ cat_name | jsonify }},
+      "item": {{ ("/blog/" | append: cat | append: "/") | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": {{ page.title | jsonify }},
+      "item": {{ page.url | absolute_url | jsonify }}
+    }{% else %},
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ page.title | jsonify }},
+      "item": {{ page.url | absolute_url | jsonify }}
+    }{% endif %}
   ]
 }
 </script>
