@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
 medical_disclaimer: true
 date: 2025-08-26
-dateUpdated: 2025-08-26
+dateUpdated: 2025-09-06
 articleSection: "Привычки и изменения"
 preload_images:
   - /images/blog-images/petlya-privychki.webp
@@ -162,3 +162,4 @@ permalink: "/blog/privychki/psihologiya-zavisimosti/"
 👉 Приложение **«Курил-бросил»** создано именно для этого. Оно помогает шаг за шагом двигаться от зависимости к свободе, фиксировать прогресс и находить новые источники мотивации.
 
 ---
+
