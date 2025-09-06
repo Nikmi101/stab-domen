@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
 medical_disclaimer: true
 date: 2025-08-30
-dateUpdated: 2025-08-30
+dateUpdated: 2025-09-06
 articleSection: "Зависимости и привычки"
 preload_images:
   - /images/blog-images/kurenie-mify.webp
@@ -254,4 +254,5 @@ permalink: "/blog/privychki/nikotinovaya-zavisimost/"
 👉 Именно для этого создано приложение **«Курил-бросил»**. Оно помогает пройти путь отказа от сигарет шаг за шагом: от первых тяжёлых дней до закрепления новой жизни без зависимости.  
 
 ---
+
 
