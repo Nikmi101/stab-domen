@@ -178,7 +178,7 @@
     <div class="blog-author" itemscope itemtype="https://schema.org/Person">
       <strong itemprop="name">{{ page.author.name | default: "Vnutri Apps" }}</strong>
       {% if page.author.title %}<span itemprop="jobTitle"> · {{ page.author.title }}</span>{% endif %}
-      {% if page.author.url %} · <a href="{{ page.author.url }}" itemprop="url" rel="author">Профиль</a>{% endif %}
+      {% if page.author.url %} · <a href="{{ page.author.url }}" itemprop="url" rel="author">О проекте</a>{% endif %}
       {% if page.date %}<br>{{ page.date | date: "%d.%m.%Y" }}{% endif %}
       {% if page.medical_disclaimer %}
       <p class="disclaimer">Материал носит информационный характер и не заменяет консультацию специалиста.</p>
@@ -283,4 +283,5 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
