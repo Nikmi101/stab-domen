@@ -385,3 +385,21 @@
   min-height: 420px;    /* но не меньше десктопной высоты */
 }
 
+.blog-hero.is-fullvh{
+  min-height: 100svh;           /* на весь экран */
+  display: grid;
+}
+
+.blog-hero.is-fullvh .blog-header-banner{
+  grid-area: 1 / 1;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-hero.is-fullvh .blog-header-banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* растяжение без искажений */
+  object-position: center;       /* центрируем 1600×400 */
+}
+
