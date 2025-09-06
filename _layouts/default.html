@@ -78,7 +78,29 @@
   {% if page.banner.title %}<meta name="twitter:image:title" content="{{ page.banner.title }}">{% endif %}
   {% endif %}
 
-{% include jsonld-organization.html %}
+  {%- comment -%} ===== Preload для hero + опционально для важных картинок из фронт-маттера ===== {%- endcomment -%}
+  {% if page.banner and page.banner.image %}
+    {% assign __url_no_q = page.banner.image | split:'?' | first %}
+    {% assign __ext = __url_no_q | split:'.' | last | downcase %}
+    <link rel="preload"
+          as="image"
+          href="{{ page.banner.image | absolute_url }}"
+          imagesizes="100vw"
+          {% if __ext == 'webp' %}type="image/webp"{% elsif __ext == 'jpg' or __ext == 'jpeg' %}type="image/jpeg"{% elsif __ext == 'png' %}type="image/png"{% endif %}>
+  {% endif %}
+  {% if page.preload_images and page.preload_images.size > 0 %}
+    {% for img in page.preload_images %}
+      {% assign __img_no_q = img | split:'?' | first %}
+      {% assign __img_ext = __img_no_q | split:'.' | last | downcase %}
+      <link rel="preload"
+            as="image"
+            href="{{ img | absolute_url }}"
+            imagesizes="(max-width: 900px) 100vw, 900px"
+            {% if __img_ext == 'webp' %}type="image/webp"{% elsif __img_ext == 'jpg' or __img_ext == 'jpeg' %}type="image/jpeg"{% elsif __img_ext == 'png' %}type="image/png"{% endif %}>
+    {% endfor %}
+  {% endif %}
+
+  {% include jsonld-organization.html %}
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/main.css" />
@@ -117,7 +139,7 @@
                 <li><a href="/brosit-kurit"><span>- Курил-бросил: бросить курить</span></a></li>
                 <li><a href="/snizit-trevogu"><span>- Нет тревоге: путь к спокойствию</span></a></li>
                 <li><a href="/kak-borotsya-s-odinochestvom"><span>- Одиночество: Точки опоры</span></a></li>
-                <li><a href="/razvitie-tvorchestva"><span>- Творчество: Пламя внутри</span></a></li>
+                <li><a href="/razvitie-творчества"><span>- Творчество: Пламя внутри</span></a></li>
             </ul>
         </li>
         <li>
@@ -127,9 +149,6 @@
         </li>
     </ul>
 </nav>
-
-
-
 
   <!-- Hero (full-bleed) -->
 <section class="blog-hero">
@@ -143,7 +162,6 @@
       fetchpriority="high"
       decoding="async"
       class="blog-hero-img">
- 
   </figure>
   {% endif %}
 </section>
@@ -237,7 +255,6 @@
     </div>
 </footer>
 
-
    <!-- Yandex.Metrika -->
     <script type="text/javascript">
         (function(m,e,t,r,i,k,a){
@@ -267,9 +284,3 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
