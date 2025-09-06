@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
 medical_disclaimer: true
 date: 2025-08-31
-dateUpdated: 2025-08-31
+dateUpdated: 2025-09-06
 articleSection: "Философия и самопознание"
 preload_images:
   - /images/blog-images/samopoznanie.webp
@@ -150,3 +150,4 @@ permalink: "/blog/filosofiya/byt-interesnym-sebe/"
 А приложение **«Творчество: Пламя внутри»** показывает, как интерес к себе рождает новые идеи и вдохновение.  
 
 ---
+
