@@ -1,16 +1,6 @@
-{% assign cat = page.categories | first %}
-{% case cat %}
-  {% when "privychki" %}{% assign cat_name = "Привычки и изменения" %}
-  {% when "emotsii" %}{% assign cat_name = "Эмоции и состояние" %}
-  {% when "tvorchestvo" %}{% assign cat_name = "Творчество и саморазвитие" %}
-  {% when "filosofiya" %}{% assign cat_name = "Философия и глубина" %}
-  {% when "VnutriApps" %}{% assign cat_name = "Проект Vnutri Apps" %}
-  {% else %}{% assign cat_name = cat %}
-{% endcase %}
-
-{% if cat %}
-  {% capture cat_url %}{{ "/blog/" | append: cat | append: "/" | absolute_url }}{% endcapture %}
-{% endif %}
+{% capture home_url %}{{ "/" | absolute_url }}{% endcapture %}
+{% capture blog_url %}{{ "/blog/" | absolute_url }}{% endcapture %}
+{% capture page_url %}{{ page.url | absolute_url }}{% endcapture %}
 
 <script type="application/ld+json">
 {
@@ -21,32 +11,33 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Vnutri Apps",
-      "item": {{ "/" | absolute_url | jsonify }}
+      "item": {
+        "@type": "WebPage",
+        "url": {{ home_url | jsonify }},
+        "name": "Vnutri Apps"
+      }
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Статьи от Vnutri Apps",
-      "item": {{ "/blog/" | absolute_url | jsonify }}
-    }{% if cat %},
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": {{ cat_name | jsonify }},
-      "item": {{ cat_url | jsonify }}
+      "item": {
+        "@type": "WebPage",
+        "url": {{ blog_url | jsonify }},
+        "name": "Статьи от Vnutri Apps"
+      }
     },
     {
       "@type": "ListItem",
-      "position": 4,
-      "name": {{ page.title | jsonify }},
-      "item": {{ page.url | absolute_url | jsonify }}
-    }{% else %},
-    {
-      "@type": "ListItem",
       "position": 3,
       "name": {{ page.title | jsonify }},
-      "item": {{ page.url | absolute_url | jsonify }}
-    }{% endif %}
+      "item": {
+        "@type": "WebPage",
+        "url": {{ page_url | jsonify }},
+        "name": {{ page.title | jsonify }}
+      }
+    }
   ]
 }
 </script>
+
