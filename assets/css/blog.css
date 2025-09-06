@@ -382,3 +382,26 @@
 @media (max-width: 768px){
   .blog-header-banner{ height: clamp(200px, 48vw, 380px); }
 }
+
+/* === Full-bleed hero, без правого зазора и без горизонтального скролла === */
+.blog-hero{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-bottom: 1.25rem;
+}
+.blog-header-banner{
+  position: relative;
+  height: clamp(240px, 42vw, 520px); /* адаптивная высота */
+  overflow: hidden;
+}
+.blog-header-banner img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* можно менять на '50% 30%' если нужно сместить фокус */
+}
+
+/* подстрахуемся от редкого 1px переполнения */
+html, body { overflow-x: hidden; }
