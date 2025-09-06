@@ -335,71 +335,50 @@
     font-size: 0.95rem;
 }
 
-/* ===== Blog hero: full-bleed и правильное наложение ===== */
+/* ===== Article Hero (clean) ===== */
+.blog-hero{
+  width: 100%;
+  margin: 0 0 1.25rem;
+}
 
-/* Растягиваем секцию на всю ширину вьюпорта, вне сетки темы */
-.blog-hero {
+.blog-header-banner{
   position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: calc(-50vw);
-  margin-right: calc(-50vw);
-  /* небольшой отступ вниз, чтобы контент не лип к баннеру */
-  margin-bottom: 1.25rem;
-  z-index: 0; /* ниже фикс-хедера, но выше фона */
+  width: 100%;
+  /* контролируемую высоту делаем из ширины: не слишком мало/много */
+  height: clamp(240px, 42vw, 520px);
+  overflow: hidden;
 }
 
-/* Сбрасываем возможные ограничения ширины у figure */
-.blog-header-banner {
-  margin: 0;
-  max-width: none;
-}
-
-/* Само изображение: занимает всю ширину, обрезается по cover */
-.blog-hero-img {
+.blog-hero-img{
   display: block;
   width: 100%;
-  /* высота на адаптив: ~400px на десктопе, ниже на мобилках */
-  height: clamp(220px, 42vw, 420px);
-  object-fit: cover;
-  aspect-ratio: 1200 / 630; /* помогает браузеру зарезервировать место */
+  height: 100%;
+  object-fit: cover;      /* аккуратно заполняет контейнер */
+  object-position: center;
 }
 
-/* Если в теме были спец-правила для #banner, они часто сдвигают .wrapper вверх.
-   Нейтрализуем для нашего случая: */
-.blog-hero + .wrapper {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+/* Если нужен легкий затемняющий слой (опционально) */
+/*
+.blog-header-banner::after{
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(0,0,0,.28);
+  pointer-events:none;
 }
+*/
 
-/* На всякий случай убираем возможные negative margins у первых контейнеров после hero */
-.wrapper:first-of-type,
-.blog-container:first-of-type {
-  margin-top: 0 !important;
-}
-
-/* Вариант на полный экран (если захочешь): просто добавь .is-fullvh на .blog-hero */
-.blog-hero.is-fullvh .blog-hero-img {
-  height: 100vh;        /* на весь экран */
-  min-height: 420px;    /* но не меньше десктопной высоты */
-}
-
-.blog-hero.is-fullvh{
-  min-height: 100svh;           /* на весь экран */
-  display: grid;
-}
-
+/* ===== Вариант «на весь экран» по желанию ===== */
 .blog-hero.is-fullvh .blog-header-banner{
-  grid-area: 1 / 1;
-  width: 100%;
+  height: 100svh;           /* full viewport; svh — корректно на мобайле */
+  min-height: 420px;        /* чтобы на десктопе не было слишком мало */
+}
+.blog-hero.is-fullvh .blog-hero-img{
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.blog-hero.is-fullvh .blog-header-banner img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;             /* растяжение без искажений */
-  object-position: center;       /* центрируем 1600×400 */
+/* Мобилка: чуть компактнее, но без дерганий */
+@media (max-width: 768px){
+  .blog-header-banner{ height: clamp(200px, 48vw, 380px); }
 }
-
