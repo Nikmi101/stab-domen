@@ -10,16 +10,10 @@
 
 <ol class="breadcrumbs" aria-label="Хлебные крошки">
   <li><a href="/">Vnutri Apps</a></li>
-  <li aria-hidden="true">→</li>
   <li><a href="/blog/">Статьи от Vnutri Apps</a></li>
-
   {% if category_name %}
-    <li aria-hidden="true">→</li>
     <li><a href="/blog/{{ category_name }}/">{{ category_title }}</a></li>
-    <li aria-hidden="true">→</li>
-    <li><span>{{ page.title }}</span></li>
-  {% else %}
-    <li aria-hidden="true">→</li>
-    <li><span>{{ page.title }}</span></li>
   {% endif %}
+  <li aria-current="page"><span>{{ page.title }}</span></li>
 </ol>
+
