@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
 medical_disclaimer: true
 date: 2025-08-29
-dateUpdated: 2025-08-29
+dateUpdated: 2025-09-06
 articleSection: "Эмоции и психология"
 preload_images:
   - /images/blog-images/trevoga-i-stress.webp
@@ -217,3 +217,4 @@ permalink: "/blog/emotsii/trevoga-i-stress/"
 👉 Именно для работы с тревожностью создано приложение **«Нет тревоге: Путь к спокойствию»**. Оно помогает шаг за шагом снижать уровень тревоги, учиться жить в балансе и восстанавливать внутреннее спокойствие.
 
 ---
+
