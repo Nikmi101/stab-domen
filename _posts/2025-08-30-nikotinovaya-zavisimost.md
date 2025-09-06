@@ -54,7 +54,11 @@ permalink: "/blog/privychki/nikotinovaya-zavisimost/"
 
 ---
 
-![Курение и мифы](/images/blog-images/kurenie-mify.webp "Мифы о курении")
+{% include img.html
+   src="/images/blog-images/kurenie-mify.webp"
+   alt="Мифы о курении"
+   title="Мифы о курении"
+   width="1200" height="675" %}
 
 ---
 
@@ -250,3 +254,4 @@ permalink: "/blog/privychki/nikotinovaya-zavisimost/"
 👉 Именно для этого создано приложение **«Курил-бросил»**. Оно помогает пройти путь отказа от сигарет шаг за шагом: от первых тяжёлых дней до закрепления новой жизни без зависимости.  
 
 ---
+
