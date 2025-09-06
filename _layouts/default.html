@@ -176,8 +176,8 @@
     <!-- Автор и дата / E-E-A-T -->
     {% if page.author %}
     <div class="blog-author" itemscope itemtype="https://schema.org/Person">
-      <strong itemprop="name">{{ page.author.name | default: "Vnutri Apps" }}</strong>
-      {% if page.author.title %}<span itemprop="jobTitle"> · {{ page.author.title }}</span>{% endif %}
+      <strong itemprop="name">{{ page.author.name | default: "Vnutri Apps" }}<br></strong>
+      {% if page.author.title %}<span itemprop="jobTitle"> · {{ page.author.title }}<br></span>{% endif %}
       {% if page.author.url %} · <a href="{{ page.author.url }}" itemprop="url" rel="author">О проекте</a>{% endif %}
       {% if page.date %}<br>{{ page.date | date: "%d.%m.%Y" }}{% endif %}
       {% if page.medical_disclaimer %}
@@ -283,5 +283,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
