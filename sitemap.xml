@@ -64,27 +64,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  
+  <url>
+    <loc>https://vnutriapps.ru/blog/tvorchestvo/</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
   <url>
     <loc>https://vnutriapps.ru/blog/privychki/</loc>
-    <lastmod>2025-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vnutriapps.ru/blog/privychki/nikotinovaya-zavisimost/</loc>
-    <lastmod>2025-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vnutriapps.ru/blog/privychki/malenkie-shagi/</loc>
-    <lastmod>2025-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vnutriapps.ru/blog/privychki/psihologiya-zavisimosti/</loc>
     <lastmod>2025-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -96,49 +85,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://vnutriapps.ru/blog/emotsii/pochemu-trevogu-nelzya-otognat/</loc>
-    <lastmod>2025-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vnutriapps.ru/blog/emotsii/trevoga-i-stress/</loc>
-    <lastmod>2025-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vnutriapps.ru/blog/emotsii/pochemu-voznikaet-trevoga/</loc>
-    <lastmod>2025-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://vnutriapps.ru/blog/tvorchestvo/</loc>
-    <lastmod>2025-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vnutriapps.ru/blog/tvorchestvo/sindrom-samozvanca/</loc>
-    <lastmod>2025-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vnutriapps.ru/blog/tvorchestvo/poisk-vdohnoveniya/</loc>
-    <lastmod>2025-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vnutriapps.ru/blog/tvorchestvo/chto-meshaet-tvorchestvu/</loc>
-    <lastmod>2025-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
   <url>
     <loc>https://vnutriapps.ru/blog/filosofiya/</loc>
@@ -146,23 +92,90 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+   <url>
+    <loc>https://vnutriapps.ru/blog/privychki/nikotinovaya-zavisimost/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vnutriapps.ru/blog/privychki/malenkie-shagi/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vnutriapps.ru/blog/privychki/psihologiya-zavisimosti/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vnutriapps.ru/blog/emotsii/pochemu-trevogu-nelzya-otognat/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vnutriapps.ru/blog/emotsii/trevoga-i-stress/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vnutriapps.ru/blog/emotsii/pochemu-voznikaet-trevoga/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vnutriapps.ru/blog/tvorchestvo/sindrom-samozvanca/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vnutriapps.ru/blog/tvorchestvo/poisk-vdohnoveniya/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vnutriapps.ru/blog/tvorchestvo/chto-meshaet-tvorchestvu/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://vnutriapps.ru/blog/filosofiya/byt-interesnym-sebe/</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://vnutriapps.ru/blog/filosofiya/chelovek-odinok/</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://vnutriapps.ru/blog/filosofiya/odinochestvo-resurs/</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+ <url>
+    <loc>https://vnutriapps.ru/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/</loc>
+    <lastmod>2025-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  
 
 </urlset>
