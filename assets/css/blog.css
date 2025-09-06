@@ -241,53 +241,104 @@
   .blog-article h2:first-child { margin-top: 0; }
 }
 
-/* Легкие хлебные крошки */
-.breadcrumbs {
-  font-size: 0.8rem;      /* чуть меньше стандартного, легкий визуальный вес */
-  color: #777;            /* светло-серый, заметен, но не отвлекает */
-  margin-bottom: 0.7rem;  /* небольшой отступ до h1 */
+/* ===== UX/типографика: мягче и контрастнее ===== */
+.blog-container{
+  font-size: 17px;                 /* базовый размер текста */
+  line-height: 1.7;                /* комфортное межстрочное */
+  color:#222;
+}
+
+/* Заголовки в статье */
+.blog-article h1{
+  font-size: clamp(1.9rem, 2.2vw + 1rem, 2.5rem); /* ~30–40px адаптивно */
+  line-height: 1.2;
+  margin: 0.4rem 0 1.0rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color:#111;                      /* поярче, чем #222 */
+}
+.blog-article h2{
+  font-size: clamp(1.35rem, 1.1vw + 1rem, 1.8rem);
+  line-height: 1.3;
+  margin: 1.6rem 0 .8rem;
+  font-weight: 700;
+  color:#111;
+}
+.blog-article h3{
+  font-size: clamp(1.1rem, .6vw + 1rem, 1.3rem);
+  line-height: 1.35;
+  margin: 1.2rem 0 .5rem;
+  font-weight: 700;
+  color:#222;
+}
+
+/* Текст и списки в статье */
+.blog-article p{ margin: .75rem 0; }
+.blog-article ul,
+.blog-article ol{ margin: .6rem 0 .9rem; padding-left: 1.2rem; }
+.blog-article li{ margin: .25rem 0; }
+.blog-article blockquote{
+  margin: 1rem 0;
+  padding: .6rem .9rem;
+  border-left: 3px solid #ddd;
+  background: #fafafa;
+  color:#333;
+}
+.blog-article hr{
+  border: 0; height: 1px;
+  background: linear-gradient(90deg,#eee, #ddd, #eee);
+  margin: 1.3rem 0;
+}
+
+/* Картинки в статье — чуть компактнее отступы на мобилке */
+.blog-article img{ margin: 1.2rem auto; }
+@media (max-width: 480px){
+  .blog-container{ font-size: 16px; }
+  .blog-article img{ margin: .9rem auto; }
+}
+
+/* ===== Хлебные крошки: чисто и без нумерации ===== */
+.breadcrumbs{
+  list-style: none !important;     /* убираем нумерацию <ol> */
+  padding: 0;
+  margin: 0 0 .75rem;
+  display: flex; flex-wrap: wrap;
+  gap: .35rem;
+  font-size: .9rem;
+  color:#777;
   line-height: 1.4;
-  display: flex;
-  flex-wrap: wrap;        /* перенос при узком экране */
-  gap: 0.2rem;            /* маленький промежуток между элементами */
 }
-
-.breadcrumbs span[itemprop="itemListElement"] {
-  display: flex;
-  align-items: center;
+.breadcrumbs > li{
+  display: inline-flex; align-items: center;
 }
-
-.breadcrumbs a {
-  color: #777;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.breadcrumbs a:hover {
-  color: #555;            /* немного темнее при наведении */
-  text-decoration: underline;
-}
-
-/* стрелки между элементами */
-.breadcrumbs span[itemprop="itemListElement"] + span[itemprop="itemListElement"]::before {
+.breadcrumbs > li + li::before{
   content: "→";
-  margin: 0 0.3rem;
-  color: #bbb;            /* еще светлее, чтобы не бросалось в глаза */
-  font-size: 0.75rem;
+  margin: 0 .35rem;
+  color:#b8b8b8;
+}
+.breadcrumbs a{
+  color: inherit; text-decoration: none; transition: color .2s;
+}
+.breadcrumbs a:hover{ color:#555; text-decoration: underline; }
+.breadcrumbs [aria-current="page"], .breadcrumbs li span{ color:#555; }
+@media (max-width: 768px){
+  .breadcrumbs{ font-size: .8rem; gap: .25rem; }
 }
 
-/* Адаптив для мобильных устройств */
-@media (max-width: 768px) {
-  .breadcrumbs {
-    font-size: 0.7rem;
-    gap: 0.15rem;
-  }
+/* На всякий случай гасим старые правила крошек со span[itemprop] */
+.breadcrumbs span[itemprop="itemListElement"]{ display: contents; }
+.breadcrumbs span[itemprop="itemListElement"] + span[itemprop="itemListElement"]::before{ content: none; }
 
-  .breadcrumbs span[itemprop="itemListElement"] + span[itemprop="itemListElement"]::before {
-    margin: 0 0.2rem;
-    font-size: 0.7rem;
-  }
-}
+/* ===== Hero: оставляем full-bleed, без зазора справа ===== */
+.blog-hero{ width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); margin-bottom: 1.25rem; }
+.blog-header-banner{ position: relative; height: clamp(240px, 42vw, 520px); overflow: hidden; }
+.blog-hero-img{ width: 100%; height: 100%; object-fit: cover; object-position: center; }
+@media (max-width: 768px){ .blog-header-banner{ height: clamp(200px, 48vw, 380px); } }
+
+/* Мелочи для карточек и «рекомендовано» — чутка воздуха */
+.recommendedApp-card{ max-width: 560px; }
+.recommendedApp-description{ line-height: 1.5; }
+
 
 .recommendedApp-card {
   display: flex;
