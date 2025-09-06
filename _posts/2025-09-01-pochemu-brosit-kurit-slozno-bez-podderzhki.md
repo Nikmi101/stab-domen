@@ -48,8 +48,11 @@ permalink: "/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/"
 Курение — это не просто привычка. Это комплексная зависимость, которая затрагивает тело, психику и социальное окружение. Поэтому и отказ от сигарет без помощи извне часто кажется невозможным.  
 
 ---
-
-![Поддержка при отказе от курения](/images/blog-images/podderzka-kurenie.webp "Поддержка при отказе от курения")
+{% include img.html
+   src="/images/blog-images/podderzka-kurenie.webp"
+   alt="Поддержка при отказе от курения"
+   title="Поддержка при отказе от курения"
+   width="1200" height="675" %}
 
 ## Никотиновая зависимость — больше, чем привычка
 
@@ -220,6 +223,7 @@ permalink: "/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/"
 
 **❓ Стоит ли переходить на электронные сигареты?**  
 Нет. Это не избавляет от зависимости, а лишь меняет её форму.  
+
 
 
 
