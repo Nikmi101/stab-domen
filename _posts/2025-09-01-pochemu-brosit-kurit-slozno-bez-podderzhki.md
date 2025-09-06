@@ -28,8 +28,8 @@ faq:
 banner:
   image: "https://vnutriapps.ru/images/blog-images/blog-header.webp"
   alt: "бросить курить с поддержкой"
-  width: 1200
-  height: 630
+  width: 1600
+  height: 400
   title: "Почему бросить курить сложно без поддержки"
 recommended_apps:
   - brosit_kurit
@@ -223,6 +223,7 @@ permalink: "/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/"
 
 **❓ Стоит ли переходить на электронные сигареты?**  
 Нет. Это не избавляет от зависимости, а лишь меняет её форму.  
+
 
 
 
