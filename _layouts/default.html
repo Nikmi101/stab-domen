@@ -78,7 +78,7 @@
   {% if page.banner.title %}<meta name="twitter:image:title" content="{{ page.banner.title }}">{% endif %}
   {% endif %}
 
-
+{% include jsonld-organization.html %}
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/main.css" />
@@ -265,4 +265,5 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
