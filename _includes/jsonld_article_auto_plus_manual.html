@@ -23,7 +23,6 @@
     "jobTitle": {{ page.author.jobTitle | default: 'Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps' | jsonify }},
     "url": {{ page.author.url | default: "https://vnutriapps.ru/about-vnutri-apps" | jsonify }},
     "@id": {{ page.author.url | default: page.url | absolute_url | jsonify }},
-    "qualification": {{ page.author.qualification | default: 'Гештальт-терапевт, психолог-консультант, специалист по экзистенциальной терапии, магистр организационной психологии' | jsonify }},
     "worksFor": {
       "@type": "Organization",
       "name": "Vnutri Apps",
@@ -31,7 +30,7 @@
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https://vnutriapps.ru/images/logo.png",
+      "url": "https://vnutriapps.ru/favicon192.png",
       "width": 192,
       "height": 192
     }
