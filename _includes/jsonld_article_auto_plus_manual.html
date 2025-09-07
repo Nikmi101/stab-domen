@@ -19,10 +19,15 @@
   "isAccessibleForFree": true,
   "author": {
     "@type": "Person",
-    "name": {{ page.author.name | default: "Vnutri Apps" | jsonify }},
+    "name": {{ page.author.name | default: "Никита Митяев" | jsonify }},
+    "jobTitle": "{{ page.author.title | default: 'Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Автор Vnutri Apps' | jsonify }}",
     {% if page.author.url %}"url": {{ page.author.url | jsonify }},{% endif %}
-    {% if page.author.title %}"jobTitle": {{ page.author.title | jsonify }},{% endif %}
-    "@id": {{ page.author.url | default: page.url | absolute_url | jsonify }}
+    "@id": {{ page.author.url | default: page.url | absolute_url | jsonify }},
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Vnutri Apps",
+      "url": "https://vnutriapps.ru"
+    }
   },
   "publisher": { "@id": "https://vnutriapps.ru/#organization" },
   {% if has_img > 0 %}
