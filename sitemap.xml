@@ -60,14 +60,14 @@
   <!-- Блог -->
   <url>
     <loc>https://vnutriapps.ru/blog/</loc>
-    <lastmod>2025-09-13</lastmod>
+    <lastmod>2025-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://vnutriapps.ru/blog/tvorchestvo/</loc>
-    <lastmod>2025-08-13</lastmod>
+    <lastmod>2025-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -81,7 +81,7 @@
 
   <url>
     <loc>https://vnutriapps.ru/blog/emotsii/</loc>
-    <lastmod>2025-08-13</lastmod>
+    <lastmod>2025-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -246,6 +246,36 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://vnutriapps.ru/blog/tvorchestvo/kak-nayti-svoye-tvorchestvo-esli-kazhetsya-chto-talanta-net/</loc>
+    <lastmod>2025-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+   <url>
+    <loc>https://vnutriapps.ru/blog/tvorchestvo/kreativnost-i-disciplina-vragi-ili-soyuzniki/</loc>
+    <lastmod>2025-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vnutriapps.ru/blog/tvorchestvo/tvorcheskiy-krizis-pochemu-voznikayet-i-kak-proyti/</loc>
+    <lastmod>2025-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vnutriapps.ru/blog/tvorchestvo/psihologiya-vdohnoveniya-pochemu-idei-prihodyat-v-neozhidannyy-moment/</loc>
+    <lastmod>2025-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  
 
   
 
