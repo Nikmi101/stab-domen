@@ -60,7 +60,7 @@
   <!-- Блог -->
   <url>
     <loc>https://vnutriapps.ru/blog/</loc>
-    <lastmod>2025-09-14</lastmod>
+    <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -88,7 +88,7 @@
 
   <url>
     <loc>https://vnutriapps.ru/blog/filosofiya/</loc>
-    <lastmod>2025-08-13</lastmod>
+    <lastmod>2025-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -282,11 +282,37 @@
     <priority>0.7</priority>
   </url>
 
+  
+  <url>
+    <loc>https://vnutriapps.ru/blog/filosofiya/pochemu-odinochestvo-estestvennaya-chast-zhizni/</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://vnutriapps.ru/blog/filosofiya/ot-fromma-do-kamyu-chto-filosofy-govorili-ob-odinochestve/</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  
+   <url>
+    <loc>https://vnutriapps.ru/blog/filosofiya/svoboda-i-razzedineniye-kak-odinochestvo-pomogaet-stat-soboy/</loc>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
  
-
-  
-
-  
+    
+   <url>
+    <loc>https://vnutriapps.ru/blog/filosofiya/geroy-i-odinochestvo-pochemu-put-vsegda-odinok/</loc>
+    <lastmod>2025-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   
 
