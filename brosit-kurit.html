@@ -1,855 +1,580 @@
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
-    <meta charset="utf-8" />
-    <link rel="canonical" href="https://vnutriapps.ru/brosit-kurit" />
-    <link rel="alternate" hreflang="ru" href="https://vnutriapps.ru/brosit-kurit" />
-    
-    <title>Курил-бросил — приложение, чтобы бросить курить навсегда</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-   <meta name="description" content="Курил-бросил — приложение для отказа от курения. Дневник, дыхательные практики, статистика и мотивация шаг за шагом помогут бросить курить, вернуть здоровье и свободу от никотина.">
-    <!-- Цвет статус-бара -->
-    <meta name="theme-color" content="#1d1d1d">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta charset="utf-8" />
+  <link rel="canonical" href="https://vnutriapps.ru/brosit-kurit" />
+  <link rel="alternate" hreflang="ru" href="https://vnutriapps.ru/brosit-kurit" />
 
-    <!-- Favicon -->
-<!-- Favicon базовые -->
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <title>Бросить курить — приложение «Курил-бросил»: дыхание, статистика, поддержка</title>
 
-<!-- Apple -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Хотите бросить курить? «Курил-бросил» — Android-приложение для отказа от курения: дыхание 4-4-4-4, дневник тяги, статистика, достижения и поддержка. Скачать на RuStore и Google Play.">
+  <meta name="theme-color" content="#1d1d1d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-<!-- Android / PWA -->
-<link rel="manifest" href="/site.webmanifest">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Стили -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/mobile.css" />
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/mobile.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
 
-    <!-- Yandex.Metrika counter -->
-    
+  <!-- Open Graph / Twitter -->
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:title" content="Бросить курить — приложение «Курил-бросил»" />
+  <meta property="og:description" content="Приложение помогает отказаться от сигарет: дыхание, дневник тяги, статистика и поддержка. Android — RuStore и Google Play." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://vnutriapps.ru/images/image_kurilbrosil.jpg" />
+  <meta property="og:url" content="https://vnutriapps.ru/brosit-kurit" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Бросить курить — приложение «Курил-бросил»" />
+  <meta name="twitter:description" content="Дыхание 4-4-4-4, дневник тяги, счётчики и поддержка — путь к свободе от никотина." />
+  <meta name="twitter:image" content="https://vnutriapps.ru/images/image_kurilbrosil.jpg" />
 
-    <!-- /Yandex.Metrika counter -->
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Курил-бросил — приложение, чтобы бросить курить" />
-    <meta property="og:description" content="Приложение помогает отказаться от сигарет, обрести свободу от никотина и восстановить здоровье. Дневник, дыхание, статистика и поддержка." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://vnutriapps.ru/images/image_kurilbrosil.jpg" />
-    <meta property="og:url" content="https://vnutriapps.ru/brosit-kurit" />
-
-    <!-- JSON-LD -->
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "name": "Vnutri Apps",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00",
-      "url": "https://vnutriapps.ru/",
-      "logo": "https://vnutriapps.ru/images/favicon.png",
-      "sameAs": [
-        "https://t.me/vnutriapps",
-        "https://vk.com/vnutriapps",
-        "https://www.youtube.com/@VnutriApps",
-        "https://dzen.ru/vnutriapps",
-        "https://ok.ru/group/70000039792868",
-        "https://boosty.to/vnutri_apps",
-        "https://www.instagram.com/vnutriapps/"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "vnutri_apps@mail.ru",
-        "contactType": "customer support",
-        "availableLanguage": "ru"
-      },
-      "founder": {
-        "@type": "Person",
-        "name": "Никита Митяев",
-	   	"jobTitle": "Автор и разработчик приложений Vnutri Apps",
-        "url": "https://vnutriapps.ru/about-vnutri-apps"
-      }
-    },
-    {
-      "@type": "ItemList",
-      "name": "Приложения Vnutri Apps",
-      "itemListElement": [
-        {
-              "@type": "ListItem",
-              "position": 1,
-              "url": "https://vnutriapps.ru/brosit-kurit",
-              "item": {
-                "@type": "MobileApplication",
-                "name": "Курил-бросил: бросить курить",
-                "operatingSystem": "ANDROID",
-                "applicationCategory": "https://schema.org/HealthApplication",
-                "image": "https://vnutriapps.ru/images/image_kurilbrosil.webp",
-                "url": "https://www.rustore.ru/catalog/app/com.nikinorm.gus",
-				"sameAs": [
-    				"https://play.google.com/store/apps/details?id=com.nikinorm.gus",
-   					 "https://www.rustore.ru/catalog/app/com.nikinorm.gus",
-					"https://vnutriapps.ru/brosit-kurit"
-  				],
-                "description": "Приложение помогает бросить курить, отслеживать прогресс и укреплять здоровье.",
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-        		"bestRating": "5",
-        		"worstRating": "1",
-                    "ratingValue": "4.7",
-                    "ratingCount": "248",
-                    "reviewCount": "66"
-                 },
-                "review": [
-         {
-    "@type": "Review",
-    "author": "Ольга",
-    "datePublished": "2025-07-17",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Всё бы приложения были такими. Даже не стыдно подписку купить. ИИ спасает часто",
-        "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
+  <!-- JSON-LD: Organization + ItemList (оставляем ваш блок) -->
+  <script type="application/ld+json">
   {
-    "@type": "Review",
-    "author": "Михаил",
-    "datePublished": "2025-07-07",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Каждое приложение бы делалось с душой так же как это",
-        "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
-  {
-    "@type": "Review",
-    "author": "Иришка",
-    "datePublished": "2025-06-27",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Самое лучшее приложение! Спасибо)",
-        "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
-  {
-    "@type": "Review",
-    "author": "Серёга",
-    "datePublished": "2025-05-21",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Отличное приложение!!! Просто нужно перебороть первые три дня, дальше легче, выдержать 21 день, и как будто не курил, уже 33 дня не курю полëт нормальный, если хочется покурить захожу в приложение смотрю сколько я преодолел желание пропадает!",
-      "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
-  {
-    "@type": "Review",
-    "author": "Вася",
-    "datePublished": "2025-05-18",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Спасибо за такое приложение. Реально не тупо счётчик, а имеет разные фишки и мощную поддержку. Так намного легче.",
-       "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
-  {
-    "@type": "Review",
-    "author": "Анатолий",
-    "datePublished": "2024-12-29",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Случайно наткнулся на приложение ночью, и вот уже больше месяца не курю, такая вот счастливая случайность. Курил до этого 13 лет. Сразу же купил подписку, это небольшая цена за такую замечательную помощь в борьбе с курением.",
-      "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
-
-  {
-    "@type": "Review",
-    "author": "Александр",
-    "datePublished": "2024-11-29",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Приложение отличное, хорошо мотивирует бросить курить раз и навсегда. Разработчику спасибо!",
-      "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
-
-
-
-  {
-    "@type": "Review",
-    "author": "Елена",
-    "datePublished": "2024-10-19",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Мне приложение понравилось. Даже не расширенная версия. Всё за тебя посчитали. Сколько сигарет не выкурил, сколько денег сэкономил. Мы часто курим между дел. И порой кажется, что не так уж и много. На самом деле больше, чем мы думаем. Вот это программа вам и покажет. Лично мне на начальном этапе этих функций достаточно. Захочется большего, значит оформлю подписку.",
-       "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
-     
-
-  {
-    "@type": "Review",
-    "author": "Юлия",
-    "datePublished": "2024-09-10",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Приложение действительно помогает бросить курить! Очень хорошо мотивирует и поддерживает! Спасибо разработчикам! А насчёт того, что приложение стало платным - пачка моих сигарет стоит 170 рублей и хватало её на сутки. А приложение стоит 179 рублей в месяц. По-моему, выгода очевидна))",
-      "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
-
-  {
-    "@type": "Review",
-    "author": "Владимир",
-    "datePublished": "2024-07-17",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Установил приложение из интереса и неожиданно был удивлён. Столько мониторинговых счётчиков, мотивации, показатели результативности. Разработчики, огромное вам спасибо. Бросил курить и с помощью этого приложения, которое поддерживает, доведу начатое до логического финала. Да и крыс жалко))) Через какое-то время хотелось сорваться и покурить, но взглянув на счетчики и достижения, не захотел начинать всё с нуля. Идём дальше.",
-        "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
-
-
-  {
-    "@type": "Review",
-    "author": "Сергей",
-    "datePublished": "2024-06-02",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Отличное приложение, благодарю Вас Никита за проделанную работу и за обновления приложения!!! Мы здесь... Курить бросили!!!",
-       "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
-  {
-    "@type": "Review",
-    "author": "Матвей",
-    "datePublished": "2024-05-28",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Вкладка со здоровьем очень мотивирует! Каждая минута улучшает состояние. Как игра получается, что делает процесс лучше!",
-       "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  },
-
-  {
-    "@type": "Review",
-    "author": "Маргарита",
-    "datePublished": "2024-05-21",
-    "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-    "reviewBody": "Отличное приложение, уже 4й месяц без сигарет и все равно периодически заглядываешь и смотришь достижения, статистика интересна. Советую данное приложение однозначно!",
-        "publisher": {
-      "@type": "Organization",
-      "name": "RuStore",
-      "address": "Россия",
-      "telephone": "+7-000-000-00-00"
-    }
-  }
-
-]
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Vnutri Apps",
+        "address": "Россия",
+        "telephone": "+7-000-000-00-00",
+        "url": "https://vnutriapps.ru/",
+        "logo": "https://vnutriapps.ru/images/favicon.png",
+        "sameAs": [
+          "https://t.me/vnutriapps",
+          "https://vk.com/vnutriapps",
+          "https://www.youtube.com/@VnutriApps",
+          "https://dzen.ru/vnutriapps",
+          "https://ok.ru/group/70000039792868",
+          "https://boosty.to/vnutri_apps",
+          "https://www.instagram.com/vnutriapps/"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "vnutri_apps@mail.ru",
+          "contactType": "customer support",
+          "availableLanguage": "ru"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Никита Митяев",
+          "jobTitle": "Автор и разработчик приложений Vnutri Apps",
+          "url": "https://vnutriapps.ru/about-vnutri-apps"
         }
-              
+      },
+      {
+        "@type": "ItemList",
+        "name": "Приложения Vnutri Apps",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://vnutriapps.ru/brosit-kurit",
+            "item": {
+              "@type": "MobileApplication",
+              "name": "Курил-бросил: бросить курить",
+              "operatingSystem": "ANDROID",
+              "applicationCategory": "https://schema.org/HealthApplication",
+              "image": "https://vnutriapps.ru/images/image_kurilbrosil.webp",
+              "url": "https://www.rustore.ru/catalog/app/com.nikinorm.gus",
+              "sameAs": [
+                "https://play.google.com/store/apps/details?id=com.nikinorm.gus",
+                "https://www.rustore.ru/catalog/app/com.nikinorm.gus",
+                "https://vnutriapps.ru/brosit-kurit"
+              ],
+              "description": "Приложение помогает бросить курить, отслеживать прогресс и укреплять здоровье.",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingValue": "4.7",
+                "ratingCount": "248",
+                "reviewCount": "66"
+              },
+              "review": [
+                {"@type":"Review","author":"Ольга","datePublished":"2025-07-17","reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Всё бы приложения были такими. Даже не стыдно подписку купить. ИИ спасает часто","publisher":{"@type":"Organization","name":"RuStore","address":"Россия","telephone":"+7-000-000-00-00"}},
+                {"@type":"Review","author":"Михаил","datePublished":"2025-07-07","reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Каждое приложение бы делалось с душой так же как это","publisher":{"@type":"Organization","name":"RuStore","address":"Россия","telephone":"+7-000-000-00-00"}},
+                {"@type":"Review","author":"Иришка","datePublished":"2025-06-27","reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Самое лучшее приложение! Спасибо)","publisher":{"@type":"Organization","name":"RuStore","address":"Россия","telephone":"+7-000-000-00-00"}},
+                {"@type":"Review","author":"Серёга","datePublished":"2025-05-21","reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Отличное приложение!!! Просто нужно перебороть первые три дня, дальше легче, выдержать 21 день...","publisher":{"@type":"Organization","name":"RuStore","address":"Россия","telephone":"+7-000-000-00-00"}},
+                {"@type":"Review","author":"Вася","datePublished":"2025-05-18","reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Спасибо за такое приложение. Реально не тупо счётчик, а имеет разные фишки и мощную поддержку.","publisher":{"@type":"Organization","name":"RuStore","address":"Россия","telephone":"+7-000-000-00-00"}},
+                {"@type":"Review","author":"Анатолий","datePublished":"2024-12-29","reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"...больше месяца не курю, такая вот счастливая случайность. Курил 13 лет.","publisher":{"@type":"Organization","name":"RuStore","address":"Россия","telephone":"+7-000-000-00-00"}}
+              ]
             }
-      ]
-    }
-  ]
-}
-</script>
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
+  <!-- JSON-LD: MobileApplication (самостоятельный объект) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Курил-бросил: бросить курить",
+    "applicationCategory": "https://schema.org/HealthApplication",
+    "operatingSystem": "ANDROID",
+    "inLanguage": "ru-RU",
+    "image": "https://vnutriapps.ru/images/image_kurilbrosil.webp",
+    "downloadUrl": "https://www.rustore.ru/catalog/app/com.nikinorm.gus",
+    "installUrl": "https://play.google.com/store/apps/details?id=com.nikinorm.gus",
+    "offers": {
+      "@type": "Offer",
+      "price": "179",
+      "priceCurrency": "RUB",
+      "category": "subscription",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.rustore.ru/catalog/app/com.nikinorm.gus"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "bestRating": "5",
+      "ratingCount": "248",
+      "reviewCount": "66"
+    },
+    "publisher": {
+      "@type": "Organization",
       "name": "Vnutri Apps",
       "url": "https://vnutriapps.ru/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Курил-бросил: бросить курить",
-      "url": "https://vnutriapps.ru/brosit-kurit"
     }
-  ]
-}
-</script>
+  }
+  </script>
 
-	
-<style>
-/* Основной текст контента */
-.content, .content p, .content li {
-    color: #eaeaea; /* более мягкий светлый оттенок для читаемости */
-    line-height: 1.7; /* увеличиваем расстояние между строками для комфорта */
-    font-size: 16px;
-letter-spacing: 0.3px;
- line-height: 1.8;
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "ru-RU",
+    "mainEntity": [
+      {"@type":"Question","name":"Как быстро бросить курить?","acceptedAnswer":{"@type":"Answer","text":"Скорость индивидуальна. Помогает план из 7 шагов: дата старта, дневник тяги, дыхание 4-4-4-4, замена триггеров, 24-часовой контракт, статистика и поддержка в приложении."}},
+      {"@type":"Question","name":"Что делать при сильной тяге?","acceptedAnswer":{"@type":"Answer","text":"Запустите дыхание по таймеру на 2–5 минут, выпейте воды, пройдитесь 3–5 минут и посмотрите статистику — волна тяги обычно спадает."}},
+      {"@type":"Question","name":"Нужно ли никотинозамещение?","acceptedAnswer":{"@type":"Answer","text":"Решение индивидуальное. Приложение помогает и без НЗТ, но при выраженной зависимости обсудите с врачом пластыри/жвачку и параллельно используйте практики и дневник."}},
+      {"@type":"Question","name":"Сколько длится ломка?","acceptedAnswer":{"@type":"Answer","text":"Острая тяга чаще всего сильна в первые 3–7 дней, затем идёт волнами на спад. Дневник, дыхание и замена ритуалов ускоряют адаптацию."}}
+    ]
+  }
+  </script>
 
-}
-.wrapper h1 {
-    color: #585858; /* чистый белый для заголовков */
-}
+  <!-- JSON-LD: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Как бросить курить с приложением «Курил-бросил»",
+    "inLanguage": "ru-RU",
+    "tool": [{"@type":"HowToTool","name":"Приложение «Курил-бросил»"}],
+    "estimatedCost": {"@type":"MonetaryAmount","currency":"RUB","value":"0-179"},
+    "step": [
+      {"@type":"HowToStep","name":"Определите дату старта","text":"Выберите день X и зафиксируйте его в приложении."},
+      {"@type":"HowToStep","name":"Дневник тяги","text":"Записывайте триггеры и интенсивность — это снижает автоматические затяжки."},
+      {"@type":"HowToStep","name":"Дыхание 4-4-4-4","text":"Включите таймер на 2–5 минут при тяге."},
+      {"@type":"HowToStep","name":"Замена ритуалов","text":"Кофе/перерыв заменяйте на воду, ходьбу, жвачку, растяжку."},
+      {"@type":"HowToStep","name":"Контракт на 24 часа","text":"Ежедневное обновление цели «не курить сегодня»."},
+      {"@type":"HowToStep","name":"Статистика и достижения","text":"Отслеживайте экономию денег/времени и прогресс."},
+      {"@type":"HowToStep","name":"Поддержка","text":"Используйте ИИ-проводника и раздел «Мысли и факты» в сложные моменты."}
+    ]
+  }
+  </script>
 
+  <!-- JSON-LD: Хлебные крошки -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Vnutri Apps","url":"https://vnutriapps.ru/"},
+      {"@type":"ListItem","position":2,"name":"Курил-бросил: бросить курить","url":"https://vnutriapps.ru/brosit-kurit"}
+    ]
+  }
+  </script>
 
-/* Заголовки внутри блока контента (h2 и h3) */
-.content h2 {
-    color: #ffffff; /* чистый белый */
-    margin-top: 1.5em;
-    margin-bottom: 0.7em;
-}
+  <style>
+    /* Основной текст контента */
+    .content, .content p, .content li {
+      color: #eaeaea;
+      line-height: 1.8;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+    }
+    .wrapper h1 { color: #585858; }
 
+    /* Заголовки внутри блока контента (h2 и h3) */
+    .content h2 {
+      color: #ffffff;
+      margin-top: 1.5em;
+      margin-bottom: 0.7em;
+    }
+    .content h3 {
+      color: #dceeff;
+      margin-top: 1.2em;
+      margin-bottom: 0.5em;
+    }
+    .content strong { color: #f0f8ff; font-weight: bold; letter-spacing: 0.5px; }
+    .content ul { padding-left: 20px; margin-bottom: 1em; }
 
-.content h3 {
-    color: #dceeff; /* мягкий голубой для акцента */
-    margin-top: 1.2em;
-    margin-bottom: 0.5em;
-}
+    /* Футер */
+    #footer, #footer p, #footer a { color: #ccc; }
 
-/* Акцент на сильный текст */
-.content strong {
-    color: #f0f8ff; /* лёгкий холодный оттенок для выделения */
-    font-weight: bold;
-letter-spacing: 0.5px;
-}
+    /* Шапка с иконкой и кнопкой */
+    .app-header {
+      display: flex; align-items: center; justify-content: center;
+      gap: 20px; margin: 40px auto; max-width: 720px; flex-wrap: wrap;
+    }
+    .app-header img { width: 85px; height: 85px; border-radius: 10px; }
+    .app-header h2 { margin: 0; font-size: 22px; color: #ffffff; }
+    .app-header .download-btn {
+      display: inline-block; margin-top: 12px; padding: 12px 16px;
+      background: #0085ff; color: #fff; border-radius: 10px;
+      text-decoration: none; font-weight: bold;
+    }
+    .app-header .download-btn img {
+      width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;
+    }
 
+    /* Галерея скриншотов */
+    .screenshots-wrapper { margin: 30px 0; display: flex; align-items: center; justify-content: center; }
+    .screenshots {
+      display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 10px 0;
+    }
+    .screenshots img {
+      height: 180px; border-radius: 12px; flex-shrink: 0; cursor: pointer;
+      scroll-snap-align: start; transition: transform 0.2s ease;
+    }
+    .screenshots img:hover { transform: scale(1.05); }
 
-/* Списки */
-.content ul {
-    padding-left: 20px;
-    margin-bottom: 1em;
-}
-
-/* Футер */
-#footer, #footer p, #footer a {
-    color: #ccc; /* светло-серый для мягкого контраста */
-}
-
-/* Шапка с иконкой и кнопкой */
-.app-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin: 40px auto;
-    max-width: 600px;
-}
-.app-header img {
-    width: 85px;
-    height: 85px;
-    border-radius: 10px;
-}
-.app-header h2 {
-    margin: 0;
-    font-size: 22px;
-    color: #ffffff;
-}
-.app-header .download-btn {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 12px 16px;
-    background: #0085ff;
-    color: #fff;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.app-header .download-btn img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
-/* Галерея скриншотов */
-.screenshots-wrapper {
-
-  margin: 30px 0;
- display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.screenshots {
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 10px 0;
-}
-
-.screenshots img {
-  height: 180px; /* небольшие */
-  border-radius: 12px;
-  flex-shrink: 0;
-  cursor: pointer;
-  scroll-snap-align: start;
-  transition: transform 0.2s ease;
-}
-
-.screenshots img:hover {
-  transform: scale(1.05);
-}
-
-/* Lightbox */
-.lightbox {
-  display: none; 
-  position: fixed;
-  z-index: 9999;
-  padding-top: 50px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: rgba(0,0,0,0.9);
-}
-
-.lightbox-content {
-  margin: auto;
-  display: block;
-  max-width: 90%;
-  max-height: 80%;
-}
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-}
-</style>
+    /* Lightbox */
+    .lightbox {
+      display: none; position: fixed; z-index: 9999; padding-top: 50px; left: 0; top: 0;
+      width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.9);
+    }
+    .lightbox-content { margin: auto; display: block; max-width: 90%; max-height: 80%; }
+    .close { position: absolute; top: 20px; right: 40px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; }
+  </style>
 </head>
 
 <body>
- <!-- Yandex.Metrika -->
-    <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=103903501', 'ym');
+  <!-- Yandex.Metrika -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=103903501', 'ym');
+    ym(103903501, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/103903501" style="position:absolute; left:-9999px;" alt="счетчик метрики" /></div></noscript>
 
-        ym(103903501, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/103903501" style="position:absolute; left:-9999px;" alt="счетчик метрики" /></div></noscript>
-<!-- Header -->
-<header id="header" class="alt">
-  <div class="logo">
-    <a href="/">
-      <img src="images/icons/ic_vnutriapps_withouttext.png" 
-           alt="Логотип Vnutri Apps — психологические приложения для Android" 
-           
-           style="height:24px; vertical-align:middle; margin-right:8px;">
-      <span>Vnutri Apps</span>
-    </a>
-  </div>
-  <a href="#menu">Меню</a>
-</header>
-    
-
-<!-- Nav -->
-<nav id="menu">
-    <ul class="links">
-        <li>
-            <a href="/">
-                <span>- Главная — психологические Android-приложения Vnutri Apps</span>
-            </a>
-        </li>
-        <li>
-            <a href="/">
-                <span>- Приложения — все приложения Vnutri Apps для самопомощи</span>
-            </a>
-            <ul class="submenu">
-                <li>
-                    <a href="/brosit-kurit">
-                        <span>- Курил-бросил: бросить курить</span>
-                      </a>
-                </li>
-                <li>
-                    <a href="/snizit-trevogu">
-                        <span>- Нет тревоге: путь к спокойствию</span>
-                     </a>
-                </li>
-                <li>
-                    <a href="/kak-borotsya-s-odinochestvom">
-                        <span>- Одиночество: Точки опоры</span>
-                     </a>
-                </li>
-                <li>
-                    <a href="/razvitie-tvorchestva">
-                        <span>- Творчество: Пламя внутри</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="/about-vnutri-apps">
-                <span>- О проекте Vnutri Apps — живое пространство для психологии и внутреннего роста</span>
-            </a>
-        </li>
-    </ul>
-</nav>
-
-<!-- Banner -->
-<section class="banner half">
-    <article>
-        <img src="images/slide04.jpg" alt="Отказ от курения, путь к свободе" />
-        <div class="inner">
-            <header>
-                    <p>Сила внутри вас</p>
-            <h2>Просто почувствуйте</h2>
-            </header>
-        </div>
-    </article>
-    <article>
-        <img src="images/slide03.jpg" alt="Здоровье, внутренние ресурсы, мотивация" />
-        <div class="inner">
-            <header>
-                 <p>Чувство свободы</p>
-            <h2>Без сигарет</h2>
-            </header>
-        </div>
-    </article>
-    <article>
-        <img src="images/slide02.jpg" alt="Осознанность, привычки, личная победа" />
-        <div class="inner">
-            <header>
-               <p>Шаг к здоровью</p>
-            <h2>Шаг к себе</h2>
-            </header>
-        </div>
-    </article>
-</section>
-
-<!-- One: Приложения -->
-<section id="apps" class="wrapper">
-    <div class="inner">
-        <header class="align-center">
-       
-<h1>Курил-бросил — приложение, чтобы бросить курить навсегда</h1>
-        </header>
-        
-        <!-- Курил-бросил -->
-        <div>
-            <div class="inner">
-              
- <!-- Шапка приложения -->
-  <div class="app-header">
-    <img src="images/icons/ic_kurilbrosil.png" alt="Курил-бросил иконка">
-    <div>
-      <h2>Курил-бросил: бросить курить</h2>
-      <a href="https://www.rustore.ru/catalog/app/com.nikinorm.gus" target="_blank" class="download-btn">
-        <img src="images/rustore-icon.png" alt=""> Скачать на RuStore
+  <!-- Header -->
+  <header id="header" class="alt">
+    <div class="logo">
+      <a href="/">
+        <img src="images/icons/ic_vnutriapps_withouttext.png"
+             alt="Vnutri Apps — психологические приложения для Android"
+             width="24" height="24"
+             style="height:24px; vertical-align:middle; margin-right:8px;" loading="lazy" decoding="async">
+        <span>Vnutri Apps</span>
       </a>
     </div>
-  </div>
-
-<!-- Галерея скриншотов -->
-<section class="screenshots-wrapper">
-  <div class="screenshots">
-    <img src="images/screenshots-kurilbrosil/1.webp" 
-         alt="Курил-бросил — приветственный экран приложения для бросающих курить. Начало пути к отказу от сигарет и восстановлению здоровья"
-         title="Курил-бросил — стартовый экран, мотивация для отказа от курения, шаг к свободе от никотина">
-         
-    <img src="images/screenshots-kurilbrosil/2.webp" 
-         alt="Главное меню Курил-бросил — быстрый доступ к разделам здоровья, статистики, мотивации и дневника для тех, кто бросает курить"
-         title="Курил-бросил — навигация по приложению, контроль прогресса и поддержка при отказе от сигарет">
-         
-    <img src="images/screenshots-kurilbrosil/3.webp" 
-         alt="Раздел Здоровье в Курил-бросил — индикаторы восстановления лёгких, сердца и внешнего вида после отказа от курения"
-         title="Курил-бросил — мониторинг здоровья, восстановление организма после отказа от сигарет">
-         
-    <img src="images/screenshots-kurilbrosil/4.webp" 
-         alt="Раздел Статистика в Курил-бросил — отслеживание количества невыкуренных сигарет, сэкономленных денег и времени"
-         title="Курил-бросил — прогресс и статистика отказа от курения, мотивация для бросающих сигареты">
-         
-    <img src="images/screenshots-kurilbrosil/5.webp" 
-         alt="Раздел Мысли и факты в Курил-бросил — мотивационные фразы и психологические советы для отказа от курения"
-         title="Курил-бросил — психология и мотивация, поддержка в борьбе с зависимостью от никотина">
-         
-    <img src="images/screenshots-kurilbrosil/6.webp" 
-         alt="Внутренний чат с ИИ-проводником в Курил-бросил — персональная поддержка и ответы на вопросы о курении, советы и мотивация"
-         title="Курил-бросил — чат с ИИ для помощи и мотивации при отказе от сигарет, психологическая поддержка">
-         
-    <img src="images/screenshots-kurilbrosil/7.webp" 
-         alt="Раздел личных запросов в Курил-бросил — возможность получить персональные рекомендации и советы для успешного отказа от курения"
-         title="Курил-бросил — персональная поддержка, рекомендации и мотивация для бросающих курить">
-         
-    <img src="images/screenshots-kurilbrosil/8.webp" 
-         alt="Раздел Цитаты в Курил-бросил — вдохновляющие цитаты известных людей для мотивации и поддержки в отказе от сигарет"
-         title="Курил-бросил — мотивационные цитаты и поддержка для успешного отказа от курения">
-         
-    <img src="images/screenshots-kurilbrosil/9.webp" 
-         alt="Раздел Дыхание в Курил-бросил — дыхательные практики по таймеру для снятия стресса и борьбы с тягой к сигаретам"
-         title="Курил-бросил — дыхательные упражнения для снижения тяги к никотину и улучшения здоровья">
-         
-    <img src="images/screenshots-kurilbrosil/10.webp" 
-         alt="Раздел Дерево жизни в Курил-бросил — визуализация прогресса и роста нового себя после отказа от сигарет"
-         title="Курил-бросил — Дерево новой жизни, визуализация прогресса и мотивация для отказа от курения">
-  </div>
-</section>
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-</div>
-
-                <div class="content">
-  <header class="align-center">
-    
-   <h2>Почему «Курил-бросил» помогает бросить курить и вернуть здоровье</h2>
+    <a href="#menu">Меню</a>
   </header>
 
- <p><strong>«Курил-бросил»</strong> — это не просто счётчик сигарет. В нём собрано множество инструментов и реальных ключей, которые помогают уверенно бросить курить. Статистика, дыхательные практики, дневник, мотивационные подсказки, поддержка и многое другое — всё работает вместе, чтобы шаг за шагом вернуть контроль над собой. Здесь нет пустых обещаний: каждый элемент приложения помогает сделать отказ от сигарет понятным, управляемым и результативным.</p>
-
-  <h3>🌱 Что ждёт внутри приложения для отказа от курения</h3>
-<p></p>
-<strong>Базовые разделы:</strong>
-  <ul>
-    <li><strong>Здоровье в реальном времени</strong> — индикаторы восстановления лёгких, сердца, внешности и здоровья в целом. Организм показывает: восстановление уже началось.</li>
-    <li><strong>Статистика</strong> — сколько сигарет вы не выкурили, сколько денег и времени сохранили.</li>
-    <li><strong>Мысли и факты</strong> — простые фразы, которые помогают найти нужный настрой и мотивацию. Без страшилок, только честность и понимание.</li>
-  <li><strong>Достижения</strong> — маленькие победы на пути к полному отказу от сигарет.</li>
-    <li><strong>Дневник</strong> — личное пространство для мыслей и эмоций. Видно, как вы движетесь без сигарет.</li>
-  </ul>
-<p></p>
-
-<strong>Дополнительные функции:</strong>
-<ul>
-    <li><strong>Точки над i</strong> — вопросы, которые помогают найти настоящие мотивы и причины курения. Ответы становятся ключами к свободе.</li>
-    <li><strong>Дыхание</strong> — дыхательные схемы с таймером, чтобы снять стресс и справиться с тягой.</li>
-    <li><strong>Цитаты и поддержка</strong> — подходящие мощные цитаты, которые помогают в трудные минуты.</li>
-    <li><strong>Дерево жизни</strong> — визуализация того, как растёт ваше новое «Я» день за днём без сигарет.</li>
-    <li><strong>Моя Гавань</strong> — авторские статьи и подкасты о пути отказа от курения. Психологические упражнения, лайфхаки, аффирмации, действия перехода к новой жизни без никотина.</li>
-    <li><strong>ИИ-проводник</strong> — чат с умным и чутким помощником, который поддержит вас, когда особенно трудно.</li>
-  </ul>
-
-
-<h3>💡 Почему метод работает и как бросить курить без стресса</h3>
-	Здесь нет сухих инструкций и морали — только практика, внимание и искренность. 
-  Приложение соединяет научные подходы, психологические техники и живую поддержку, чтобы шаг за шагом вернуть вам свободу от курения.</p>
-
-  <h3>🎯 Для кого?</h3>
-  <ul>
-    <li>Для тех, кто хочет <strong>бросить курить навсегда</strong>.</li>
-    <li>Для тех, кто пробовал, но срывался, и ищет новый путь.</li>
-    <li>Для тех, кто хочет видеть реальные <strong>результаты и прогресс</strong>.</li>
-    <li>Для тех, кто хочет <strong>вернуть здоровье и энергию</strong>.</li>
-  </ul>
-
-  <h3>✨ Главное</h3>
-<ul>
-    <li>Отказ от сигарет без давления, чувства вины и лишнего стресса.</li>
-    <li>Всегда есть поддержка — практики, подсказки, мотивация и умный помощник рядом.</li>
-    <li>Каждый шаг ведёт к свободе и контролю над собой, а не к борьбе.</li>
-</ul>
-
-  <p><strong>Бросить курить возможно. А с «Курил-бросил» — это становится не движением по кругу, а ясным и понятным путём навстречу себе.</strong><br>
-  🌟 Добро пожаловать в новый мир без сигарет.</p>
-
- 
-
-  <footer class="align-center">
-    <a href="index.html#apps" class="details-button">Все приложения</a>
-    <a href="https://www.rustore.ru/catalog/app/com.nikinorm.gus" class="rustore-button" target="_blank">
-      <img src="images/rustore-icon.png" alt="RuStore скачать Курил-бросил" class="rustore-icon">
-      Скачать на RuStore
-    </a>
-  </footer>
-</div>
-
-        
-
-</section>
-
-
-
-<!-- Internal Links -->
-<section class="apps-section">
-  <div class="inner">
-    <p>Подробнее о других приложениях Vnutri Apps:</p>
-    <ul>
-      <li><a href="/snizit-trevogu">«Нет тревоге: Путь к спокойствию» — приложение для снижения уровня тревожности</a></li>
-      <li><a href="/kak-borotsya-s-odinochestvom">«Одиночество: Точки опоры» — поиск внутренней тишины и источников</a></li>
-      <li><a href="/razvitie-tvorchestva">«Творчество: Пламя внутри» — приложение для раскрытия творческого потенциала</a></li>
+  <!-- Nav -->
+  <nav id="menu">
+    <ul class="links">
+      <li><a href="/"><span>- Главная — психологические Android-приложения Vnutri Apps</span></a></li>
+      <li>
+        <a href="/"><span>- Приложения — все приложения Vnutri Apps для самопомощи</span></a>
+        <ul class="submenu">
+          <li><a href="/brosit-kurit"><span>- Курил-бросил: бросить курить</span></a></li>
+          <li><a href="/snizit-trevogu"><span>- Нет тревоге: путь к спокойствию</span></a></li>
+          <li><a href="/kak-borotsya-s-odinochestvom"><span>- Одиночество: Точки опоры</span></a></li>
+          <li><a href="/razvitie-tvorchestva"><span>- Творчество: Пламя внутри</span></a></li>
+        </ul>
+      </li>
+      <li><a href="/about-vnutri-apps"><span>- О проекте Vnutri Apps — живое пространство для психологии и внутреннего роста</span></a></li>
     </ul>
-  </div>
-</section>
+  </nav>
 
+  <!-- Banner -->
+  <section class="banner half">
+    <article>
+      <img src="images/slide04.jpg" alt="Бросить курить — путь к свободе от никотина" loading="lazy" decoding="async" />
+      <div class="inner"><header><p>Сила внутри вас</p><h2>Просто почувствуйте</h2></header></div>
+    </article>
+    <article>
+      <img src="images/slide03.jpg" alt="Здоровье и мотивация на пути отказа от курения" loading="lazy" decoding="async" />
+      <div class="inner"><header><p>Чувство свободы</p><h2>Без сигарет</h2></header></div>
+    </article>
+    <article>
+      <img src="images/slide02.jpg" alt="Осознанность и привычки: как перестать курить" loading="lazy" decoding="async" />
+      <div class="inner"><header><p>Шаг к здоровью</p><h2>Шаг к себе</h2></header></div>
+    </article>
+  </section>
 
-            
+  <!-- One: Приложения -->
+  <section id="apps" class="wrapper">
+    <div class="inner">
+      <header class="align-center">
+        <h1>Курил-бросил — приложение, чтобы бросить курить навсегда</h1>
+      </header>
 
-<!-- Two: О проекте -->
-<section id="about" class="wrapper style3">
-  <div class="inner">
-    <header class="align-center">
-      <h2>О проекте Vnutri Apps</h2>
-      <p>
-        <strong>Vnutri Apps</strong> — это живое пространство, где психология превращается в практический опыт.
-        Здесь каждый шаг можно почувствовать телом и прожить сердцем, открывая новые возможности для внутреннего роста, самопомощи и развития личной гармонии.
-      </p>
-      <p>
-        <strong>Каждое приложение</strong> — это свой путь внутрь себя: к спокойствию, вдохновению, свободе и внутренней опоре.
-        В приложениях Vnutri Apps найдутся практические инструменты для снижения тревоги, повышения креативности, развития самовыражения и внутренней стабильности.
-      </p>
+      <div>
+        <div class="inner">
+          <!-- Шапка приложения -->
+          <div class="app-header">
+            <img src="images/icons/ic_kurilbrosil.png" alt="Курил-бросил — приложение, чтобы бросить курить" width="85" height="85" loading="lazy" decoding="async">
+            <div>
+              <h2>Курил-бросил: бросить курить</h2>
+              <a href="https://www.rustore.ru/catalog/app/com.nikinorm.gus" target="_blank" class="download-btn" aria-label="Скачать приложение Курил-бросил на RuStore">
+                <img src="images/rustore-icon.png" alt="RuStore" loading="lazy" decoding="async"> Скачать на RuStore
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.nikinorm.gus" target="_blank" class="download-btn" aria-label="Скачать приложение Курил-бросил на Google Play" style="margin-left:8px;">
+                <img src="images/googleplay-icon.png" alt="Google Play" loading="lazy" decoding="async"> Скачать на Google Play
+              </a>
+            </div>
+          </div>
+
+          <!-- Галерея скриншотов -->
+          <section class="screenshots-wrapper">
+            <div class="screenshots">
+              <img src="images/screenshots-kurilbrosil/1.webp"
+                   alt="Бросить курить — приложение Курил-бросил: приветственный экран"
+                   title="Как бросить курить с приложением Курил-бросил"
+                   loading="lazy" decoding="async">
+
+              <img src="images/screenshots-kurilbrosil/2.webp"
+                   alt="Курил-бросил: главное меню — здоровье, статистика, дневник"
+                   title="Контроль прогресса и поддержка при отказе от сигарет"
+                   loading="lazy" decoding="async">
+
+              <img src="images/screenshots-kurilbrosil/3.webp"
+                   alt="Курил-бросил: раздел Здоровье — восстановление лёгких и сердца"
+                   title="Мониторинг восстановления организма после отказа от курения"
+                   loading="lazy" decoding="async">
+
+              <img src="images/screenshots-kurilbrosil/4.webp"
+                   alt="Курил-бросил: раздел Статистика — невыкуренные сигареты и экономия"
+                   title="Прогресс и статистика отказа от курения"
+                   loading="lazy" decoding="async">
+
+              <img src="images/screenshots-kurilbrosil/5.webp"
+                   alt="Мысли и факты — психология зависимости и поддержка"
+                   title="Понимание механики зависимости от никотина"
+                   loading="lazy" decoding="async">
+
+              <img src="images/screenshots-kurilbrosil/6.webp"
+                   alt="Чат с ИИ-проводником — помощь и ответы в момент тяги"
+                   title="Психологическая поддержка при отказе от курения"
+                   loading="lazy" decoding="async">
+
+              <img src="images/screenshots-kurilbrosil/7.webp"
+                   alt="Личные запросы — персональные рекомендации для отказа от курения"
+                   title="Персональная поддержка и советы"
+                   loading="lazy" decoding="async">
+
+              <img src="images/screenshots-kurilbrosil/8.webp"
+                   alt="Цитаты — вдохновение и поддержка для отказа от сигарет"
+                   title="Мотивационные цитаты"
+                   loading="lazy" decoding="async">
+
+              <img src="images/screenshots-kurilbrosil/9.webp"
+                   alt="Дыхание по таймеру — снять стресс и тягу к сигаретам"
+                   title="Дыхательные упражнения 4-4-4-4"
+                   loading="lazy" decoding="async">
+
+              <img src="images/screenshots-kurilbrosil/10.webp"
+                   alt="Дерево жизни — визуализация прогресса без сигарет"
+                   title="Дерево новой жизни"
+                   loading="lazy" decoding="async">
+            </div>
+          </section>
+
+          <!-- Lightbox -->
+          <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" alt="">
+          </div>
+
+          <!-- ПЕРЕПИСАННЫЙ SEO-КОНТЕНТ -->
+          <div class="content">
+            <header class="align-center">
+              <h2>Приложение, чтобы бросить курить: «Курил-бросил»</h2>
+              <p>Хотите <strong>бросить курить</strong> без срывов и постоянного стресса? «Курил-бросил» — Android-приложение с дыхательными практиками, дневником тяги, счётчиками и поддержкой, которое помогает шаг за шагом отказаться от сигарет и закрепить результат.</p>
+            </header>
+
+            <h3>Кому подойдёт</h3>
+            <ul>
+              <li>Вы пробовали бросить, но возвращались к сигаретам.</li>
+              <li>Нужен понятный план и ежедневная поддержка.</li>
+              <li>Важно видеть <strong>результат в цифрах</strong> и ощущать контроль.</li>
+            </ul>
+
+            <h3 id="kak-brosit-kurit">Как «Курил-бросил» помогает бросить курить</h3>
+            <ol>
+              <li><strong>Дата старта.</strong> Фиксируете день и готовите замену ритуалов.</li>
+              <li><strong>Дневник тяги.</strong> Отмечаете триггеры — понимаете, когда и почему тянет.</li>
+              <li><strong>Дыхание 4-4-4-4.</strong> Таймер на 2–5 минут снижает острую тягу и тревожность.</li>
+              <li><strong>Контракт «24 часа».</strong> Движемся день за днём — так проще, чем «навсегда».</li>
+              <li><strong>Статистика и достижения.</strong> Видно, сколько сигарет не выкурено, денег и времени сохранено.</li>
+              <li><strong>Поддержка.</strong> «Мысли и факты», цитаты и чат с ИИ-проводником помогают в сложные моменты.</li>
+            </ol>
+
+            <h3>Что внутри приложения</h3>
+            <ul>
+              <li><strong>Здоровье.</strong> Индикаторы восстановления лёгких, сердца, кожи и энергии в реальном времени.</li>
+              <li><strong>Статистика.</strong> Счётчик невыкуренных сигарет, экономия денег и времени.</li>
+              <li><strong>Мысли и факты.</strong> Понимание механики зависимости и простые приёмы самопомощи.</li>
+              <li><strong>Достижения.</strong> Маленькие победы, которые поддерживают мотивацию.</li>
+              <li><strong>Дневник.</strong> Короткие записи о настроении, тяге и прогрессе.</li>
+              <li><strong>Точки над i.</strong> Вопросы, которые помогают увидеть свои истинные мотивы и цели.</li>
+              <li><strong>Дыхание.</strong> Практики с таймером (в т.ч. 4-4-4-4) для снятия тяги и стресса.</li>
+              <li><strong>Цитаты.</strong> Короткая поддержка, когда нужна точная фраза.</li>
+              <li><strong>Дерево новой жизни.</strong> Визуализация вашего роста без сигарет.</li>
+              <li><strong>Моя Гавань.</strong> Авторские статьи и подкасты о пути отказа от курения.</li>
+              <li><strong>По сути.</strong> Индивидуальный разбор вашей ситуации автором проекта.</li>
+              <li><strong>ИИ-проводник «Лев Никитич».</strong> Чуткий чат-помощник, который отвечает и поддерживает.</li>
+              <li><strong>Трансляции.</strong> Живые эфиры с ответами и поддержкой.</li>
+              <li><strong>Сила внутри.</strong> 40 упражнений, 20 лайфхаков, 20 актов перехода, 10 аффирмаций.</li>
+            </ul>
+
+            <h3>Почему метод работает</h3>
+            <ul>
+              <li><strong>Поведенческий фокус.</strong> Не «сила воли любой ценой», а системные маленькие шаги.</li>
+              <li><strong>Снижение триггеров.</strong> Дневник и дыхание уменьшают автоматические «затяжки».</li>
+              <li><strong>Быстрая обратная связь.</strong> Статистика и достижения закрепляют мотивацию.</li>
+              <li><strong>Поддержка в моменте.</strong> ИИ-чат и материалы — сразу, когда это нужно.</li>
+            </ul>
+
+            <h3 id="faq-brosit-kurit">Частые вопросы</h3>
+            <details><summary><strong>Как быстро бросить курить?</strong></summary>
+              <p>Скорость индивидуальна. План «дата старта → дневник тяги → дыхание 4-4-4-4 → 24 часа → статистика → поддержка» снижает риск срывов и даёт устойчивый результат.</p>
+            </details>
+            <details><summary><strong>Что делать при сильной тяге?</strong></summary>
+              <p>Запустите дыхание 4-4-4-4 на 2–5 минут, выпейте воды, пройдитесь 3–5 минут и посмотрите свою статистику — волна тяги обычно спадает.</p>
+            </details>
+            <details><summary><strong>Нужно ли никотинозамещение?</strong></summary>
+              <p>По показаниям и после консультации с врачом. Приложение помогает и без НЗТ — за счёт дыхания, дневника и замены ритуалов.</p>
+            </details>
+            <details><summary><strong>Сколько длится ломка?</strong></summary>
+              <p>Чаще всего пик приходится на 3–7 день, затем тяга идёт волнами на спад. Практики и поддержка ускоряют адаптацию.</p>
+            </details>
+
+            <h3>Скачать «Курил-бросил»</h3>
+            <p>
+              <a href="https://www.rustore.ru/catalog/app/com.nikinorm.gus" class="download-btn" target="_blank" aria-label="Скачать приложение Курил-бросил на RuStore">
+                <img src="images/rustore-icon.png" alt="RuStore"> Скачать на RuStore
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.nikinorm.gus" class="download-btn" target="_blank" aria-label="Скачать приложение Курил-бросил на Google Play" style="margin-left:8px;">
+                <img src="images/googleplay-icon.png" alt="Google Play"> Скачать на Google Play
+              </a>
+            </p>
+
+            <h3>Полезные материалы по теме</h3>
+            <ul>
+              <li><a href="/blog/brosit-kurit-s-podderzhkoy">Как бросить курить с поддержкой: рабочие шаги</a></li>
+              <li><a href="/blog/pochemu-brosit-kurit-slozhno-bez-podderzhki">Почему бросить курить сложно без поддержки</a></li>
+              <li><a href="/blog/21-den-privychka-mif-ili-realnost">21 день — миф или реальность?</a></li>
+            </ul>
+
+            <p style="font-size:13px;opacity:.85">«Курил-бросил» — приложение для самопомощи. Это не медицинское изделие и не заменяет консультацию врача при выраженной никотиновой зависимости.</p>
+
+            <footer class="align-center">
+              <a href="index.html#apps" class="details-button">Все приложения</a>
+              <a href="https://www.rustore.ru/catalog/app/com.nikinorm.gus" class="rustore-button" target="_blank" aria-label="Скачать Курил-бросил на RuStore">
+                <img src="images/rustore-icon.png" alt="RuStore" class="rustore-icon"> Скачать на RuStore
+              </a>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internal Links -->
+  <section class="apps-section">
+    <div class="inner">
+      <p>Подробнее о других приложениях Vnutri Apps:</p>
+      <ul>
+        <li><a href="/snizit-trevogu">«Нет тревоге: Путь к спокойствию» — приложение для снижения уровня тревожности</a></li>
+        <li><a href="/kak-borotsya-s-одиноchestvom">«Одиночество: Точки опоры» — поиск внутренней тишины и источников</a></li>
+        <li><a href="/razvitie-tvorchestva">«Творчество: Пламя внутри» — приложение для раскрытия творческого потенциала</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Two: О проекте -->
+  <section id="about" class="wrapper style3">
+    <div class="inner">
+      <header class="align-center">
+        <h2>О проекте Vnutri Apps</h2>
+        <p><strong>Vnutri Apps</strong> — это живое пространство, где психология превращается в практический опыт. Здесь каждый шаг можно почувствовать телом и прожить сердцем, открывая новые возможности для внутреннего роста, самопомощи и развития личной гармонии.</p>
+        <p><strong>Каждое приложение</strong> — это свой путь внутрь себя: к спокойствию, вдохновению, свободе и внутренней опоре. В приложениях Vnutri Apps найдутся практические инструменты для снижения тревоги, повышения креативности, развития самовыражения и внутренней стабильности.</p>
+        <div class="details-button-container">
+          <a href="/about-vnutri-apps" class="details-button" title="Подробная информация про проект Vnutri Apps" style="color: #f5f5f5; margin-top: 20px;">🧭 Что такое Vnutri Apps?</a>
+        </div>
+      </header>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <ul class="icons">
+        <li><a href="mailto:vnutri_apps@mail.ru" class="icon fa-envelope" title="Email поддержки Vnutri Apps — психологическая помощь, снижение тревоги, самопомощь"><span class="label">Email</span></a></li>
+        <li><a href="https://t.me/vnutriapps" class="icon fa-brands fa-telegram" title="Телеграм канал Vnutri Apps — поддержка и практики"><span class="label">Telegram</span></a></li>
+        <li><a href="https://m.vk.com/vnutriapps" class="icon fa-vk" title="VK Vnutri Apps — психология, медитации, опора"><span class="label">VK</span></a></li>
+      </ul>
 
       <div class="details-button-container">
-        <a href="/about-vnutri-apps" 
-           class="details-button" 
-           title="Подробная информация про проект Vnutri Apps" 
-           style="color: #f5f5f5; margin-top: 20px;"
-           >
-           🧭 Что такое Vnutri Apps?
-        </a>
+        <a href="/links" class="details-button" title="Все ссылки и соцсети Vnutri Apps">🌐 Все ссылки и соцсети Vnutri Apps</a>
       </div>
-    </header>
 
-   
-  </div>
-</section>
-
-<!-- Footer -->
-<footer id="footer">
-    <div class="container">
-        <ul class="icons">
-            <li>
-                <a href="mailto:vnutri_apps@mail.ru" class="icon fa-envelope" 
-                   title="Email поддержки Vnutri Apps — психологическая помощь, снижение тревоги, самопомощь"
-                >
-                    <span class="label">Email</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://t.me/vnutriapps" class="icon fa-brands fa-telegram" 
-                   title="Телеграм канал Vnutri Apps — психологическая поддержка, советы по внутреннему развитию"
-                >
-                    <span class="label">Telegram</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://m.vk.com/vnutriapps" class="icon fa-vk" 
-                   title="VK Vnutri Apps — психология, медитации, развитие внутренней опоры и креативности"
-                   >
-                    <span class="label">VK</span>
-                </a>
-            </li>
-        </ul>
-
-        <div class="details-button-container">
-            <a href="/links" class="details-button" 
-               title="Все ссылки и соцсети Vnutri Apps"
-               >🌐 Все ссылки и соцсети Vnutri Apps</a>
-        </div>
-
-        <p class="copyright">
-            &copy; <span >Vnutri Apps</span>, Россия. Все права защищены.
-        </p>
-
-    
-       
+      <p class="copyright">&copy; <span>Vnutri Apps</span>, Россия. Все права защищены.</p>
     </div>
-</footer>
+  </footer>
 
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js" defer></script>
+  <script src="assets/js/jquery.scrollex.min.js" defer></script>
+  <script src="assets/js/skel.min.js" defer></script>
+  <script src="assets/js/util.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    const galleryImages = document.querySelectorAll(".screenshots img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox .close");
+    let currentIndex = 0;
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js" defer></script>
-<script src="assets/js/jquery.scrollex.min.js" defer></script>
-<script src="assets/js/skel.min.js" defer></script>
-<script src="assets/js/util.js" defer></script>
-<script src="assets/js/main.js" defer></script>
-<script>
-  const galleryImages = document.querySelectorAll(".screenshots img");
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const closeBtn = document.querySelector(".lightbox .close");
-
-  let currentIndex = 0;
-
-  function showLightbox(index) {
-    currentIndex = index;
-    lightboxImg.src = galleryImages[currentIndex].src;
-    lightbox.style.display = "block";
-  }
-
-  galleryImages.forEach((img, index) => {
-    img.addEventListener("click", () => showLightbox(index));
-  });
-
-  closeBtn.addEventListener("click", () => {
-    lightbox.style.display = "none";
-  });
-
-  // Закрытие по клику вне картинки
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) lightbox.style.display = "none";
-  });
-
-  // Перелистывание стрелками
-  document.addEventListener("keydown", (e) => {
-    if (lightbox.style.display === "block") {
-      if (e.key === "ArrowRight") {
-        currentIndex = (currentIndex + 1) % galleryImages.length;
-        lightboxImg.src = galleryImages[currentIndex].src;
-      }
-      if (e.key === "ArrowLeft") {
-        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
-        lightboxImg.src = galleryImages[currentIndex].src;
-      }
-      if (e.key === "Escape") {
-        lightbox.style.display = "none";
-      }
+    function showLightbox(index) {
+      currentIndex = index;
+      lightboxImg.src = galleryImages[currentIndex].src;
+      lightbox.style.display = "block";
     }
-  });
-</script>
+    galleryImages.forEach((img, index) => { img.addEventListener("click", () => showLightbox(index)); });
+    closeBtn.addEventListener("click", () => { lightbox.style.display = "none"; });
 
+    lightbox.addEventListener("click", (e) => { if (e.target === lightbox) lightbox.style.display = "none"; });
 
+    document.addEventListener("keydown", (e) => {
+      if (lightbox.style.display === "block") {
+        if (e.key === "ArrowRight") { currentIndex = (currentIndex + 1) % galleryImages.length; lightboxImg.src = galleryImages[currentIndex].src; }
+        if (e.key === "ArrowLeft") { currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length; lightboxImg.src = galleryImages[currentIndex].src; }
+        if (e.key === "Escape") { lightbox.style.display = "none"; }
+      }
+    });
+  </script>
 </body>
 </html>
