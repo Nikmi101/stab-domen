@@ -191,10 +191,9 @@
     {% endif %}
 
     <!-- Рекомендуемое приложение 
-  
-        <!--  {% when "stress" %}
+       {% when "stress" %}
           {% include app_stress.html %}
-    -->-->
+    -->
     {% for app in page.recommended_apps %}
       {% case app %}
         {% when "brosit_kurit" %}
@@ -287,6 +286,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 
