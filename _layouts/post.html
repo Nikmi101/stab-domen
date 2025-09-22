@@ -3,6 +3,22 @@ layout: default
 ---
 
 {% include breadcrumbs.html %}
-{{ content }}
+
+{% raw %}{% assign _html = content %}
+
+{% if page.toc != false %}
+  {%- assign _parts = _html | split: '</h1>' -%}
+  {%- if _parts.size > 1 -%}
+    {{ _parts[0] }}</h1>
+    {% include toc.html html=_html h_min=2 h_max=3 title="Содержание" class="toc" ordered="false" %}
+    {{ _parts | slice: 1, _parts.size | join: '</h1>' }}
+  {%- else -%}
+    {#-- на всякий случай: если H1 нет, просто добавим TOC сверху --#}
+    {% include toc.html html=_html h_min=2 h_max=3 title="Содержание" class="toc" ordered="false" %}
+    {{ _html }}
+  {%- endif -%}
+{% else %}
+  {{ _html }}
+{% endif %}{% endraw %}
 
 
