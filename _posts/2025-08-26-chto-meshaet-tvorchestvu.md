@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-08-26
-dateUpdated: 2025-09-06
+dateUpdated: 2025-09-22
 articleSection: "Творчество"
 preload_images:
   - /images/blog-images/bloki-v-tvorchestve.webp
@@ -156,6 +156,7 @@ permalink: "/blog/tvorchestvo/chto-meshaet-tvorchestvu/"
 👉 В этом помогает приложение **«Творчество: Пламя внутри»**. Оно шаг за шагом снимает внутренние блоки, развивает креативное мышление и возвращает уверенность в себе.
 
 ---
+
 
 
 
