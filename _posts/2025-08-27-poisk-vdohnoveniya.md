@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-08-27
-dateUpdated: 2025-08-27
+dateUpdated: 2025-09-22
 articleSection: "Творчество"
 preload_images:
   - /images/blog-images/vdohnovenie.webp
@@ -161,5 +161,6 @@ permalink: "/blog/tvorchestvo/poisk-vdohnoveniya/"
 👉 Именно этому посвящено приложение **«Творчество: Пламя внутри»**. Оно помогает шаг за шагом развивать креативность, отслеживать прогресс и находить вдохновение в повседневной жизни.  
 
 ---
+
 
 
