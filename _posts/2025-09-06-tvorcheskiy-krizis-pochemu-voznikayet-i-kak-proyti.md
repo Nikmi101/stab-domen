@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 date: 2025-09-06
-dateUpdated: 2025-09-14
+dateUpdated: 2025-09-22
 articleSection: "Творчество и самовыражение"
 preload_images:
   - /images/blog-images/tvorcheskiy-krizis.webp
@@ -223,3 +223,4 @@ reading_time: "18"
 Начать с узкого круга или закрытого канала, показывать **фрагменты**, а не «готовую вещь». Вопрос формулировать заранее: «Как читается ритм?».
 
 ---
+
