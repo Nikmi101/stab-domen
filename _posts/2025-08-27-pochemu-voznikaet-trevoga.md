@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-08-27
-dateUpdated: 2025-09-06
+dateUpdated: 2025-09-22
 articleSection: "Эмоции и психология"
 preload_images:
   - /images/blog-images/psihologiya-trevoga.webp
@@ -174,6 +174,7 @@ permalink: "/blog/emotsii/pochemu-voznikaet-trevoga/"
 👉 Именно для этого создано приложение **«Нет тревоге: Путь к спокойствию»**. Оно ведёт через пошаговую работу с тревогой: от понимания её природы до формирования устойчивых навыков внутреннего спокойствия.
 
 ---
+
 
 
 
