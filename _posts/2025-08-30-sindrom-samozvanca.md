@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-08-30
-dateUpdated: 2025-09-13
+dateUpdated: 2025-09-22
 articleSection: "Творчество и креативность"
 preload_images:
   - /images/blog-images/sindrom-samozvanca.webp
@@ -161,6 +161,7 @@ permalink: "/blog/tvorchestvo/sindrom-samozvanca/"
 👉 Для этого создано приложение **[«Творчество: Пламя внутри»](/razvitie-tvorchestva)**. Оно помогает преодолеть внутренние блоки и почувствовать радость от создания нового.  
 
 ---
+
 
 
 
