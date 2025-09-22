@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-07
-dateUpdated: 2025-09-13
+dateUpdated: 2025-09-22
 articleSection: "Эмоции и психология"
 preload_images:
   - /images/blog-images/trevozhnoye-rasstroystvo.webp
@@ -227,4 +227,5 @@ reading_time: "15"
 
 **❓ К кому обращаться: психолог, психотерапевт или психиатр?**  
 Для первичной оценки подойдёт психолог/психотерапевт. При выраженных симптомах или вопросах о лекарствах — к психиатру.  
+
 
