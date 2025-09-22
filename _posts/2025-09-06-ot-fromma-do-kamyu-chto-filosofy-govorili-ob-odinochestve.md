@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 date: 2025-09-06
-dateUpdated: 2025-09-15
+dateUpdated: 2025-09-22
 articleSection: "Философия и глубина"
 preload_images:
   - /images/blog-images/philosophy-solitude.webp
@@ -190,3 +190,4 @@ reading_time: "17"
 Фромм «Иметь или быть?», Камю «Миф о Сизифе», Шопенгауэр «Афоризмы житейской мудрости», Сартр «Экзистенциализм — это гуманизм», Франкл «Сказать жизни „Да!“», Кьеркегор «Страх и трепет», Арендт «Vita activa». 
 
 ---
+
