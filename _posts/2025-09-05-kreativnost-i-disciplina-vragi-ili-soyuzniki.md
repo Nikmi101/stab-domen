@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 date: 2025-09-05
-dateUpdated: 2025-09-14
+dateUpdated: 2025-09-22
 articleSection: "Творчество и самовыражение"
 preload_images:
   - /images/blog-images/creativity-discipline.webp
@@ -240,4 +240,5 @@ reading_time: "17"
 
 **❓ Как совместить свободу и порядок?**  
 Определить форму (слот времени, ограничения), а содержание оставлять свободным — эксперименты внутри рамки.
+
 
