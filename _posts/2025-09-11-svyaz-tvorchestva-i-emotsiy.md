@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 date: 2025-09-11
-dateUpdated: 2025-09-14
+dateUpdated: 2025-09-22
 articleSection: "Творчество и самовыражение"
 preload_images:
   - /images/blog-images/creativity-emotions.webp
@@ -216,3 +216,4 @@ reading_time: "18"
 Да, но лучше по принципу «доминирующая + акцент»: одна ведущая эмоция и 10–20% контрастного оттенка для объёма.
 
 ---
+
