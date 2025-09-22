@@ -507,3 +507,10 @@ html, body { overflow-x: hidden; }
 /* Мелочи для карточек и «рекомендовано» — чутка воздуха */
 .recommendedApp-card{ max-width: 560px; }
 .recommendedApp-description{ line-height: 1.5; }
+
+.toc{margin:1rem 0 1.5rem; padding:1rem; border:1px solid #eee; border-radius:12px;}
+.toc-title{display:block; margin-bottom:.5rem;}
+.toc ol,.toc ul{margin:0; padding-left:1.25rem;}
+.toc li{margin:.125rem 0; line-height:1.4;}
+.toc a{text-decoration:none;}
+.toc a:focus,.toc a:hover{text-decoration:underline;}
