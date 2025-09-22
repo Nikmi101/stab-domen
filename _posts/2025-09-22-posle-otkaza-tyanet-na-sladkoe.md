@@ -189,7 +189,7 @@ reading_time: "20"
 - [Кофе и никотин: сладкая парочка, которую стоит разлучить](/blog/privychki/kofe-i-nikotin-razvesti-privychki/)  
 - [Алкоголь после отказа от сигарет: ловушки и как их обойти](/blog/privychki/alkogol-posle-otkaza-ot-sigaret/)  
 - [10 привычек, которые мешают отказаться от сигарет](/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/)
-- [Почему замена одной зависимости другой не решает проблему](/blog/privychki/zamena-odnoy-zavisimosti-drugoy/) — как не уйти в «сахар вместо сигарет».  
+- [Почему замена одной зависимости другой не решает проблему](/blog/privychki/pochemu-zamena-odnoj-zavisimosti-drugoj-ne-reshaet-problemu/) — как не уйти в «сахар вместо сигарет».  
 - [Как работает синдром отмены: что ждёт после отказа](/blog/privychki/sindrom-otmeny-nikotina/) — почему тяга усиливается в первые недели.  
 - [Как формируются новые привычки: 21 день или миф?](/blog/privychki/21-den-privychka-mif-ili-realnost/) — сколько времени реально нужно для закрепления ритуалов.
 - [Никотиновая зависимость: мифы и правда](/blog/privychki/nikotinovaya-zavisimost/)
@@ -222,3 +222,4 @@ reading_time: "20"
 
 **❓ Помогают ли диеты во время отказа от сигарет?**  
 Жёсткие диеты увеличивают вероятность срыва. Лучше мягкая структура питания и привычки, которые удерживают ритм без лишнего контроля.
+
