@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-08-31
-dateUpdated: 2025-09-13
+dateUpdated: 2025-09-22
 articleSection: "Эмоции и психология"
 preload_images:
   - /images/blog-images/prinyatie-emotsii.webp
@@ -198,6 +198,7 @@ permalink: "/blog/emotsii/pochemu-trevogu-nelzya-otognat/"
 👉 Именно на этом принципе построено приложение **[«Нет тревоге: Путь к спокойствию»](/snizit-trevogu)**. Оно ведёт через 7 этапов: от понимания природы тревоги до навыков принятия и обретения внутреннего спокойствия.  
 
 ---
+
 
 
 
