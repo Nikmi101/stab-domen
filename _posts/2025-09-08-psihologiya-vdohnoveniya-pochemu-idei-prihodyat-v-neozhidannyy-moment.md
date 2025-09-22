@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 date: 2025-09-08
-dateUpdated: 2025-09-14
+dateUpdated: 2025-09-22
 articleSection: "Творчество и самовыражение"
 preload_images:
   - /images/blog-images/idea-moment.webp
@@ -221,3 +221,4 @@ reading_time: "17"
 
 **❓ Как не утонуть в идеях?**  
 Один вход для фиксации, ежедневная пятиминутная сортировка и правило: **1 идея в работу**, остальные — в «банк».
+
