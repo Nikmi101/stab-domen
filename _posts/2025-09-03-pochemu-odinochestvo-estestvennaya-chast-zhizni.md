@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 date: 2025-09-03
-dateUpdated: 2025-09-15
+dateUpdated: 2025-09-22
 articleSection: "Философия и глубина"
 preload_images:
   - /images/blog-images/solitude-natural.webp
@@ -186,4 +186,5 @@ reading_time: "16"
 
 **❓ Как одиночество связано с творчеством?**  
 Тишина внимания — питательная среда для идей. Уединение увеличивает «слышимость» и помогает переводить внутренние смыслы в форму.
+
 
