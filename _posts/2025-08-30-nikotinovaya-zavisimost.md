@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-08-30
-dateUpdated: 2025-09-13
+dateUpdated: 2025-09-22
 articleSection: "Зависимости и привычки"
 preload_images:
   - /images/blog-images/kurenie-mify.webp
@@ -253,6 +253,7 @@ permalink: "/blog/privychki/nikotinovaya-zavisimost/"
 👉 Именно для этого создано приложение **[«Курил-бросил»](/brosit-kurit)**. Оно помогает пройти путь отказа от сигарет шаг за шагом: от первых тяжёлых дней до закрепления новой жизни без зависимости.  
 
 ---
+
 
 
 
