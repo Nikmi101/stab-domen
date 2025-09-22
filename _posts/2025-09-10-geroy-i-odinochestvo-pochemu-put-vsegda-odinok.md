@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 date: 2025-09-10
-dateUpdated: 2025-09-15
+dateUpdated: 2025-09-22
 articleSection: "Философия и глубина"
 preload_images:
   - /images/blog-images/hero-solitude.webp
@@ -212,3 +212,4 @@ reading_time: "18"
 Есть новая формулировка смысла, появилась энергия к действию и хотя бы один результат, которым можно поделиться с другими — пора интегрировать опыт в обычную жизнь.
 
 ---
+
