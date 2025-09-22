@@ -170,7 +170,7 @@ reading_time: "18"
 - [Почему замена одной зависимости другой не решает проблему](/blog/privychki/pochemu-zamena-odnoj-zavisimosti-drugoj-ne-reshaet-problemu/)
 - [10 привычек, которые мешают отказаться от сигарет](/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/) — про **социальные ритуалы** и автоматизмы.  
 - [Как работает синдром отмены: что ждёт после отказа](/blog/privychki/sindrom-otmeny-nikotina/) — чтобы понимать, почему «тянет» сильнее после алкоголя.  
-- [Почему бросить курить сложно без поддержки](/blog/privychki/pochemu-brosit-kurit-slozhno-bez-podderzhki/) — про опоры и план.
+- [Почему бросить курить сложно без поддержки](/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/) — про опоры и план.
 - [Никотиновая зависимость: мифы и правда](/blog/privychki/nikotinovaya-zavisimost/)
 
 ---
@@ -201,4 +201,5 @@ reading_time: "18"
 
 **❓ Когда безопаснее возвращать умеренный алкоголь?**  
 Когда новая жизнь без сигарет стабилизировалась: обычно после 4–8 недель. Возвращать постепенно и без старых «курительных» сценариев.
+
 
