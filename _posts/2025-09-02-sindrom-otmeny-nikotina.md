@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-02
-dateUpdated: 2025-09-13
+dateUpdated: 2025-09-22
 articleSection: "Бросить курить: синдром отмены"
 preload_images:
   - /images/blog-images/sindrom-otmeny.webp
@@ -270,6 +270,7 @@ reading_time: "14"
 Если срывы повторяются, симптомы мешают жить или есть серьёзные заболевания/тревога/депрессия — нужна очная консультация.
 
 ---
+
 
 
 
