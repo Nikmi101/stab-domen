@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-08-28
-dateUpdated: 2025-09-06
+dateUpdated: 2025-09-22
 articleSection: "Привычки и изменения"
 preload_images:
   - /images/blog-images/malenkie-shagi.webp
@@ -217,6 +217,7 @@ permalink: "/blog/privychki/malenkie-shagi/"
 👉 Именно на этом принципе построено приложение **«Курил-бросил»**: программа мягких шагов, поддержка, трекинг и видимый прогресс на каждом этапе.
 
 ---
+
 
 
 
