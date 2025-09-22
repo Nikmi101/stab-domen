@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-08-31
-dateUpdated: 2025-09-13
+dateUpdated: 2025-09-22
 articleSection: "Философия и самопознание"
 preload_images:
   - /images/blog-images/samopoznanie.webp
@@ -150,6 +150,7 @@ permalink: "/blog/filosofiya/byt-interesnym-sebe/"
 А приложение **[«Творчество: Пламя внутри»](/razvitie-tvorchestva)** показывает, как интерес к себе рождает новые идеи и вдохновение.  
 
 ---
+
 
 
 
