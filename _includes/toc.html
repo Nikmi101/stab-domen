@@ -1,0 +1,92 @@
+{%- comment -%}
+  Table of Contents (GitHub Pages friendly, no plugins/JS)
+
+  Параметры (все опциональны):
+    html   — исходный HTML; по умолчанию page.content
+    h_min  — минимальный уровень заголовков (2)
+    h_max  — максимальный уровень заголовков (3)
+    title  — заголовок оглавления ("Содержание")
+    class  — CSS-класс корневого <nav> ("toc")
+    ordered — "true" = <ol>, иначе <ul>
+{%- endcomment -%}
+
+{%- assign _html   = include.html | default: page.content -%}
+{%- assign _hmin   = include.h_min | default: 2 | plus: 0 -%}
+{%- assign _hmax   = include.h_max | default: 3 | plus: 0 -%}
+{%- assign _title  = include.title | default: "Содержание" -%}
+{%- assign _class  = include.class | default: "toc" -%}
+{%- assign _ordered = include.ordered | default: "false" -%}
+
+{%- assign _list_open  = "<ul>" -%}
+{%- if _ordered == "true" -%}{% assign _list_open = "<ol>" %}{%- endif -%}
+{%- assign _list_close = _list_open | replace: "<", "</" -%}
+
+{%- comment -%}
+  Разбиваем контент по тегам <hN …>…</hN>. Liquid не умеет в регэксп,
+  поэтому используем "split" по "<h" и фильтрами вытаскиваем id и текст.
+{%- endcomment -%}
+
+{%- assign _chunks = _html | split: "<h" -%}
+{%- assign _items = "" -%}
+{%- assign _level_prev = _hmin -%}
+{%- assign _started = false -%}
+{%- for c in _chunks -%}
+  {%- if forloop.first -%}{% continue %}{%- endif -%}
+
+  {%- assign _lvl = c | slice: 0, 1 | plus: 0 -%}
+  {%- if _lvl < _hmin or _lvl > _hmax -%}{% continue %}{%- endif -%}
+
+  {%- comment -%} Извлечём id (если есть) {%- endcomment -%}
+  {%- assign _after_id = c | split: 'id="' -%}
+  {%- assign _id = "" -%}
+  {%- if _after_id.size > 1 -%}
+    {%- assign _id = _after_id[1] | split: '"' | first -%}
+  {%- endif -%}
+
+  {%- comment -%} Извлечём видимый текст заголовка {%- endcomment -%}
+  {%- assign _after_gt = c | split: ">" -%}
+  {%- assign _inner = _after_gt | slice: 1, 999 | join: ">" -%}
+  {%- assign _text = _inner | split: "</h" | first
+                            | replace: "<code>", "" | replace: "</code>", ""
+                            | strip_newlines | strip -%}
+
+  {%- if _id == "" -%}
+    {%- comment -%} Если id нет, сделаем слуг из текста (примерно) {%- endcomment -%}
+    {%- assign _id = _text | downcase | replace: " ", "-" | replace: "—", "-"
+                          | replace: ".", "" | replace: ",", "" | replace: ":", ""
+                          | replace: ";", "" | replace: "?", "" | replace: "!", ""
+                          | replace: "(", "" | replace: ")", "" | replace: "«", "" | replace: "»", ""
+                          | replace: "–", "-" | replace: "__", "_" | replace: "---", "-" -%}
+  {%- endif -%}
+
+  {%- comment -%} Открываем корневую обёртку при первом пункте {%- endcomment -%}
+  {%- if _started == false -%}
+    {%- assign _items = _items | append: _list_open -%}
+    {%- assign _started = true -%}
+  {%- endif -%}
+
+  {%- comment -%} Управляем вложенностью списков в зависимости от уровня h2/h3 {%- endcomment -%}
+  {%- if _lvl > _level_prev -%}
+    {%- for i in ( _level_prev + 1 ).._lvl -%}
+      {%- assign _items = _items | append: _list_open -%}
+    {%- endfor -%}
+  {%- elsif _lvl < _level_prev -%}
+    {%- for i in ( _lvl + 1 ).._level_prev -%}
+      {%- assign _items = _items | append: _list_close -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- assign _level_prev = _lvl -%}
+
+  {%- assign _items = _items | append: "<li><a href=\"#" | append: _id | append: "\">"
+                              | append: _text | append: "</a></li>" -%}
+{%- endfor -%}
+
+{%- if _started -%}
+  {%- for i in _hmin.._level_prev -%}
+    {%- assign _items = _items | append: _list_close -%}
+  {%- endfor -%}
+  <nav class="{{ _class }}" aria-label="{{ _title | escape }}">
+    <strong class="{{ _class }}-title">{{ _title }}</strong>
+    {{ _items }}
+  </nav>
+{%- endif -%}
