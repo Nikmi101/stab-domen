@@ -18,8 +18,10 @@ collections: {}
 # Markdown / Kramdown
 markdown: kramdown
 kramdown:
-  input: GFM          # GitHub-flavored Markdown
-  syntax_highlighter_opts:
-    span:
-      line_numbers: false
+  input: GFM
+  auto_ids: true         # ← Автоматические id у H1–H6
+  toc_levels: 2..3       # ← Оглавление строим по H2–H3 (можно 2..4)
+  parse_block_html: true # ← Чтобы корректно парсить HTML-блоки в тексте
+  hard_wrap: false
+
 
