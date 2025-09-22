@@ -7,7 +7,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 date: 2025-09-04
-dateUpdated: 2025-09-14
+dateUpdated: 2025-09-22
 articleSection: "Творчество и самовыражение"
 preload_images:
   - /images/blog-images/find-creativity.webp
@@ -237,4 +237,5 @@ reading_time: "16"
 Лучше микро-публикации: частая, доброжелательная обратная связь ускоряет рост гораздо сильнее редких «перфектных» релизов.
 
 ---
+
 
