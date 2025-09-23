@@ -56,6 +56,7 @@ permalink: /rss.xml
 
         <!-- оригинальная дата публикации -->
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+
         <!-- дата обновления, если есть -->
         {%- if post.dateUpdated -%}
           <atom:updated>{{ post.dateUpdated | date_to_xmlschema }}</atom:updated>
@@ -66,19 +67,33 @@ permalink: /rss.xml
         {%- if post.description -%}
           <description>{{ post.description | strip_html | xml_escape }}</description>
         {%- else -%}
-          <description>{{ post.content | strip_html | truncate: 280 | xml_escape }}</description>
+          <description>{{ post.content | strip_html | normalize_whitespace | truncate: 280 | xml_escape }}</description>
         {%- endif -%}
 
-        <!-- полное содержимое (опционально, помогает ридерам) -->
+        <!-- полное содержимое: сначала markdown -> HTML, затем делаем ссылки абсолютными -->
         <content:encoded><![CDATA[
-          {{ post.content | replace: 'src="/', 'src="' | replace: 'href="/','href="' | markdownify }}
+{{ post.content
+   | markdownify
+   | replace: 'src="/', 'src="{{ site.url }}/'
+   | replace: 'href="/', 'href="{{ site.url }}/'
+   | replace: 'src="images/', 'src="{{ site.url }}/images/'
+   | replace: 'href="images/', 'href="{{ site.url }}/images/'
+   | replace: 'href="blog/', 'href="{{ site.url }}/blog/'
+}}
         ]]></content:encoded>
 
         {%- if post.categories and post.categories.size > 0 -%}
-          <category>{{ post.categories | join: ", " | xml_escape }}</category>
+          {%- for cat in post.categories -%}
+            <category>{{ cat | xml_escape }}</category>
+          {%- endfor -%}
         {%- endif -%}
 
-        {%- if post.author -%}<dc:creator>{{ post.author | xml_escape }}</dc:creator>{%- endif -%}
+        {%- if post.author -%}
+          <dc:creator><![CDATA[{{ post.author }}]]></dc:creator>
+        {%- endif -%}
+        {%- if post.author_email -%}
+          <author>{{ post.author_email }}{% if post.author %} ({{ post.author }}){% endif %}</author>
+        {%- endif -%}
       </item>
     {%- endfor -%}
   </channel>
