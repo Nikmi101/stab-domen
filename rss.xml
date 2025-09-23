@@ -5,16 +5,28 @@ permalink: /rss.xml
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ site.title | default: "Vnutri Apps — Блог" | xml_escape }}</title>
-    <link>{{ site.url }}{{ site.baseurl }}</link>
+    <link>{{ site.url }}{{ site.baseurl }}/blog/</link>
     <description>{{ site.description | default: "Статьи о привычках, эмоциях, творчестве и глубине" | xml_escape }}</description>
-    <lastBuildDate>
-      {%- assign latest = site.posts | where_exp: "p", "p.published != false" | first -%}
-      {%- if latest -%}{{ latest.date | date: "%a, %d %b %Y %H:%M:%S %z" }}{%- endif -%}
-    </lastBuildDate>
+
+    <!-- self-link для ридеров/вебмастера -->
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/rss.xml" rel="self" type="application/rss+xml" />
+
+    <!-- дата сборки фида = дата самого свежего поста -->
+    {%- assign latest = site.posts | where_exp: "p", "p.published != false" | first -%}
+    <lastBuildDate>{% if latest %}{{ latest.date | date: "%a, %d %b %Y %H:%M:%S %z" }}{% endif %}</lastBuildDate>
+
     <language>ru-RU</language>
+    <ttl>60</ttl>
+
+    <!-- логотип фида (опционально; поменяй путь к картинке или убери блок) -->
+    <image>
+      <url>{{ site.url }}{{ site.baseurl }}/images/logo-512.png</url>
+      <title>{{ site.title | default: "Vnutri Apps — Блог" | xml_escape }}</title>
+      <link>{{ site.url }}{{ site.baseurl }}/blog/</link>
+    </image>
 
     {%- assign posts = site.posts | where_exp: "p", "p.published != false" | limit: 50 -%}
     {%- for post in posts -%}
@@ -23,13 +35,17 @@ permalink: /rss.xml
         <link>{{ site.url }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+
         {%- if post.description -%}
           <description>{{ post.description | strip_html | xml_escape }}</description>
         {%- else -%}
           <description>{{ post.content | strip_html | truncate: 280 | xml_escape }}</description>
         {%- endif -%}
+
         {%- if post.categories and post.categories.size > 0 -%}
-          <category>{{ post.categories | join: ", " | xml_escape }}</category>
+          {%- for cat in post.categories -%}
+            <category>{{ cat | xml_escape }}</category>
+          {%- endfor -%}
         {%- endif -%}
       </item>
     {%- endfor -%}
