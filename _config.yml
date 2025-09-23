@@ -5,6 +5,8 @@ lang: ru
 description: Психологические приложения и статьи о самопомощи, тревоге, привычках и творчестве.
 theme: jekyll-theme-cayman
 
+future: false          # ← не публиковать посты с датой в будущем
+timezone: Europe/Moscow # ← чтобы отсчёт «наступила дата» шёл по Мск
 # Красивые URL постов: /blog/категория/название/
 permalink: /blog/:categories/:title/
 
@@ -24,6 +26,7 @@ kramdown:
   toc_levels: 2..3       # ← Оглавление строим по H2–H3 (можно 2..4)
   parse_block_html: true # ← Чтобы корректно парсить HTML-блоки в тексте
   hard_wrap: false
+
 
 
 
