@@ -3,54 +3,82 @@ layout: null
 sitemap: false
 permalink: /rss.xml
 ---
-
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>{{ site.title | default: "Vnutri Apps — Блог" | xml_escape }}</title>
-    <link>{{ site.url }}{{ site.baseurl }}/blog/</link>
-    <description>{{ site.description | default: "Статьи о привычках, эмоциях, творчестве и глубине" | xml_escape }}</description>
+    <title>{{ site.title | default: "Vnutri Apps" | xml_escape }}</title>
+    <link>{{ site.url }}/blog/</link>
+    <description>{{ site.description | default: "Психологические приложения и статьи о самопомощи, тревоге, привычках и творчестве." | xml_escape }}</description>
 
-    <!-- self-link для ридеров/вебмастера -->
-    <atom:link href="{{ site.url }}{{ site.baseurl }}/rss.xml" rel="self" type="application/rss+xml" />
+    <!-- self-link для валидности и Яндекс.Вебмастера -->
+    <atom:link href="{{ site.url }}/rss.xml" rel="self" type="application/rss+xml"/>
 
-    <!-- дата сборки фида = дата самого свежего поста -->
-    {%- assign latest = site.posts | where_exp: "p", "p.published != false" | first -%}
-    <lastBuildDate>{% if latest %}{{ latest.date | date: "%a, %d %b %Y %H:%M:%S %z" }}{% endif %}</lastBuildDate>
+    <!-- lastBuildDate = максимум из дат публикации/обновления по постам -->
+    {%- assign posts_all = site.posts | where_exp:"p","p.published != false" -%}
+    {%- assign dates = "" | split:"" -%}
+    {%- for p in posts_all -%}
+      {%- assign dpub = p.date | date: "%s" -%}
+      {%- assign dates = dates | push: dpub -%}
+      {%- if p.dateUpdated -%}
+        {%- assign dupd = p.dateUpdated | date: "%s" -%}
+        {%- assign dates = dates | push: dupd -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign max_ts = dates | sort | last | plus: 0 -%}
+    <lastBuildDate>{{ max_ts | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
 
     <language>ru-RU</language>
     <ttl>60</ttl>
 
- 
+    <!-- опционально, но красиво -->
     <image>
-      <url>{{ site.url }}{{ site.baseurl }}/images/vnutri-logo-feed-144.webp</url>
-      <title>{{ site.title | default: "Vnutri Apps — Блог" | xml_escape }}</title>
-      <link>{{ site.url }}{{ site.baseurl }}/blog/</link>
+      <url>{{ site.url }}/images/vnutri-logo-feed-144.webp</url>
+      <title>{{ site.title | xml_escape }}</title>
+      <link>{{ site.url }}/blog/</link>
       <width>144</width>
       <height>144</height>
     </image>
 
-   
+    <!-- доп. метаданные канала (по желанию) -->
+    {%- if site.email -%}<managingEditor>{{ site.email }}</managingEditor>{%- endif -%}
+    {%- if site.email -%}<webMaster>{{ site.email }}</webMaster>{%- endif -%}
+    <generator>Jekyll</generator>
 
-    {%- assign posts = site.posts | where_exp: "p", "p.published != false" | limit: 50 -%}
+    {%- assign posts = posts_all | limit: 50 -%}
     {%- for post in posts -%}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <link>{{ site.url }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 
+        <!-- оригинальная дата публикации -->
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <!-- дата обновления, если есть -->
+        {%- if post.dateUpdated -%}
+          <atom:updated>{{ post.dateUpdated | date_to_xmlschema }}</atom:updated>
+          <dc:date>{{ post.dateUpdated | date_to_xmlschema }}</dc:date>
+        {%- endif -%}
+
+        <!-- краткое описание -->
         {%- if post.description -%}
           <description>{{ post.description | strip_html | xml_escape }}</description>
         {%- else -%}
           <description>{{ post.content | strip_html | truncate: 280 | xml_escape }}</description>
         {%- endif -%}
 
+        <!-- полное содержимое (опционально, помогает ридерам) -->
+        <content:encoded><![CDATA[
+          {{ post.content | replace: 'src="/', 'src="' | replace: 'href="/','href="' | markdownify }}
+        ]]></content:encoded>
+
         {%- if post.categories and post.categories.size > 0 -%}
-          {%- for cat in post.categories -%}
-            <category>{{ cat | xml_escape }}</category>
-          {%- endfor -%}
+          <category>{{ post.categories | join: ", " | xml_escape }}</category>
         {%- endif -%}
+
+        {%- if post.author -%}<dc:creator>{{ post.author | xml_escape }}</dc:creator>{%- endif -%}
       </item>
     {%- endfor -%}
   </channel>
