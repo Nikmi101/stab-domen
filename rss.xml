@@ -13,10 +13,9 @@ permalink: /rss.xml
     <link>{{ site.url }}/blog/</link>
     <description>{{ site.description | default: "Психологические приложения и статьи о самопомощи, тревоге, привычках и творчестве." | xml_escape }}</description>
 
-    <!-- self-link для валидности и Яндекс.Вебмастера -->
+    <!-- self-link -->
     <atom:link href="{{ site.url }}/rss.xml" rel="self" type="application/rss+xml"/>
 
-    <!-- lastBuildDate = максимум из дат публикации/обновления по постам -->
     {%- assign posts_all = site.posts | where_exp:"p","p.published != false" -%}
     {%- assign dates = "" | split:"" -%}
     {%- for p in posts_all -%}
@@ -33,7 +32,6 @@ permalink: /rss.xml
     <language>ru-RU</language>
     <ttl>60</ttl>
 
-    <!-- опционально, но красиво -->
     <image>
       <url>{{ site.url }}/images/vnutri-logo-feed-144.webp</url>
       <title>{{ site.title | xml_escape }}</title>
@@ -42,7 +40,6 @@ permalink: /rss.xml
       <height>144</height>
     </image>
 
-    <!-- доп. метаданные канала (по желанию) -->
     {%- if site.email -%}<managingEditor>{{ site.email }}</managingEditor>{%- endif -%}
     {%- if site.email -%}<webMaster>{{ site.email }}</webMaster>{%- endif -%}
     <generator>Jekyll</generator>
@@ -54,31 +51,27 @@ permalink: /rss.xml
         <link>{{ site.url }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 
-        <!-- оригинальная дата публикации -->
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-
-        <!-- дата обновления, если есть -->
         {%- if post.dateUpdated -%}
           <atom:updated>{{ post.dateUpdated | date_to_xmlschema }}</atom:updated>
           <dc:date>{{ post.dateUpdated | date_to_xmlschema }}</dc:date>
         {%- endif -%}
 
-        <!-- краткое описание -->
         {%- if post.description -%}
           <description>{{ post.description | strip_html | xml_escape }}</description>
         {%- else -%}
-          <description>{{ post.content | strip_html | normalize_whitespace | truncate: 280 | xml_escape }}</description>
+          <description>{{ post.content | strip_html | truncate: 280 | xml_escape }}</description>
         {%- endif -%}
 
-        <!-- полное содержимое: сначала markdown -> HTML, затем делаем ссылки абсолютными -->
+        <!-- Полное содержимое (HTML) с абсолютными ссылками -->
         <content:encoded><![CDATA[
 {{ post.content
    | markdownify
-   | replace: 'src="/', 'src="{{ site.url }}/'
-   | replace: 'href="/', 'href="{{ site.url }}/'
-   | replace: 'src="images/', 'src="{{ site.url }}/images/'
-   | replace: 'href="images/', 'href="{{ site.url }}/images/'
-   | replace: 'href="blog/', 'href="{{ site.url }}/blog/'
+   | replace: 'src="/', 'src="https://vnutriapps.ru/'
+   | replace: 'href="/', 'href="https://vnutriapps.ru/'
+   | replace: 'src="images/', 'src="https://vnutriapps.ru/images/'
+   | replace: 'href="images/', 'href="https://vnutriapps.ru/images/'
+   | replace: 'href="blog/', 'href="https://vnutriapps.ru/blog/'
 }}
         ]]></content:encoded>
 
