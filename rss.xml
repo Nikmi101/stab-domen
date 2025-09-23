@@ -21,12 +21,16 @@ permalink: /rss.xml
     <language>ru-RU</language>
     <ttl>60</ttl>
 
-    <!-- логотип фида (опционально; поменяй путь к картинке или убери блок) -->
+ 
     <image>
-      <url>{{ site.url }}{{ site.baseurl }}/images/logo-512.png</url>
+      <url>{{ site.url }}{{ site.baseurl }}/images/vnutri-logo-feed-144.webp</url>
       <title>{{ site.title | default: "Vnutri Apps — Блог" | xml_escape }}</title>
       <link>{{ site.url }}{{ site.baseurl }}/blog/</link>
+      <width>144</width>
+      <height>144</height>
     </image>
+
+   
 
     {%- assign posts = site.posts | where_exp: "p", "p.published != false" | limit: 50 -%}
     {%- for post in posts -%}
