@@ -33,7 +33,7 @@ permalink: /rss.xml
     <ttl>60</ttl>
 
     <image>
-      <url>{{ site.url }}/images/vnutri-logo-feed-144.webp</url>
+      <url>{{ site.url }}/images/vnutri-logo-feed-144.png</url>
       <title>{{ site.title | xml_escape }}</title>
       <link>{{ site.url }}/blog/</link>
       <width>144</width>
