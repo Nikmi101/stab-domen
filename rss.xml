@@ -81,12 +81,12 @@ permalink: /rss.xml
           {%- endfor -%}
         {%- endif -%}
 
-        {%- if post.author -%}
-          <dc:creator><![CDATA[{{ post.author }}]]></dc:creator>
-        {%- endif -%}
-        {%- if post.author_email -%}
-          <author>{{ post.author_email }}{% if post.author %} ({{ post.author }}){% endif %}</author>
-        {%- endif -%}
+           {%- if post.author and post.author.name -%}
+  <dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
+{%- elsif post.author -%}
+  <dc:creator>{{ post.author | xml_escape }}</dc:creator>
+{%- endif -%}
+        
       </item>
     {%- endfor -%}
   </channel>
