@@ -50,12 +50,12 @@ permalink: "/blog/tvorchestvo/poisk-vdohnoveniya/"
 ---
 
 <figure class="content-image" style="margin:1rem 0">
-  <img src="/images/blog-images/vdohnovenie.webp"
-       alt="Вдохновение в творчестве"
-       title="Вдохновение в процессе"
-       width="1200" height="675"
-       loading="lazy" decoding="async" style="height:auto">
-  <figcaption class="visually-hidden">Вдохновение в творчестве</figcaption>
+<img src="/images/blog-images/vdohnovenie.webp"
+alt="Вдохновение в творчестве"
+title="Вдохновение в процессе"
+width="1200" height="675"
+loading="lazy" decoding="async" style="height:auto">
+<figcaption class="visually-hidden">Вдохновение в творчестве</figcaption>
 </figure>
 
 ---
@@ -164,6 +164,7 @@ permalink: "/blog/tvorchestvo/poisk-vdohnoveniya/"
 👉 Именно этому посвящено приложение **«Творчество: Пламя внутри»**. Оно помогает шаг за шагом развивать креативность, отслеживать прогресс и находить вдохновение в повседневной жизни.  
 
 ---
+
 
 
 
