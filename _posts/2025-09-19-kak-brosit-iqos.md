@@ -196,13 +196,14 @@ reading_time: "20"
 ## По теме
 
 - [Как работает синдром отмены: что ждёт после отказа](/blog/privychki/sindrom-otmeny-nikotina/)  
-- [Никотиновая зависимость: мифы и правда](/blog/privychki/nikotinovaya-zavisimost/)  
+- [Никотиновая зависимость: мифы и правда](/blog/privychki/nikotinovaya-zavisimost/)
+- [Первые 72 часа без сигарет: как пройти самый тяжёлый отрезок](/blog/privychki/pervye-72-chasa-bez-sigaret/)
 - [Кофе и никотин: сладкая парочка, которую стоит разлучить](/blog/privychki/kofe-i-nikotin-razvesti-privychki/)  
 - [Бросил курить — тянет на сладкое: как не поменять сигареты на сахар](/blog/privychki/posle-otkaza-tyanet-na-sladkoe/)
 
 <!--
 - [Первая неделя и первые 14 дней: чек-пойнты и ошибки](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
-- [Первые 72 часа без сигарет: как пройти самый тяжёлый отрезок](/blog/privychki/pervye-72-chasa-bez-sigaret/)
+
 -->
 ---
 
@@ -230,4 +231,5 @@ reading_time: "20"
 
 **❓ Что делать при срыве на один стик?**  
 Разобрать и понять триггер (место/эмоция/люди), обновить план замены и вернуться к отказу от никотина в течение 24 часов. Срыв — обратная связь, а не провал.
+
 
