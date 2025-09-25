@@ -199,12 +199,12 @@ reading_time: "20"
 - [Никотиновая зависимость: мифы и правда](/blog/privychki/nikotinovaya-zavisimost/)
 - [Кофе и никотин: сладкая парочка, которую стоит разлучить](/blog/privychki/kofe-i-nikotin-razvesti-privychki/)
 - [«IQOS и стики: как отказаться, если ритуал сильнее никотина»](/blog/privychki/kak-brosit-iqos/)
-- [Первые 72 часа без сигарет: как пройти самый тяжёлый отрезок](/blog/privychki/pervye-72-chasa-bez-sigaret/)  
+- [Первые 72 часа без сигарет: как пройти самый тяжёлый отрезок](/blog/privychki/pervye-72-chasa-bez-sigaret/)
 
 <!--
-- [Что происходит с организмом после отказа от курения: по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)  
+  [Что происходит с организмом после отказа от курения: по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)  
 
-- [Первая неделя и первые 14 дней без курения: чек-поинты и ошибки](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
+  [Первая неделя и первые 14 дней без курения: чек-поинты и ошибки](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
 -->
 ---
 
@@ -232,6 +232,7 @@ reading_time: "20"
 
 **❓ Что делать при срыве?**  
 Фиксировать событие, извлекать урок (какой триггер не был закрыт), возвращаться к плану в течение 24 часов. Срыв — не провал, а обратная связь.
+
 
 
 
