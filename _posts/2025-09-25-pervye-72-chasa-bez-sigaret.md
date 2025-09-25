@@ -215,11 +215,12 @@ reading_time: "20"
 ## По теме
 
 - [Как работает синдром отмены: что ждёт после отказа](/blog/privychki/sindrom-otmeny-nikotina/)
+- [Первая неделя и первые 14 дней без сигарет: опоры, ошибки и моменты правды](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
 - [Никотиновая зависимость: мифы и правда](/blog/privychki/nikotinovaya-zavisimost/)
 
 <!--
 - [Что происходит с организмом после отказа: по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)  
-- [Первая неделя и первые 14 дней: чек-пойнты и ошибки](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
+
 - [Дыхание вместо затяжки: микропрактики на 1–3 минуты](/blog/privychki/dyhanie-vmesto-zatyazhki/)  
 - [«Только одна» и другие когнитивные ловушки, которые возвращают к курению](/blog/privychki/lovushki-vozvrata-k-kureniyu/)
 -->
@@ -244,5 +245,6 @@ reading_time: "20"
 
 **❓ Что если произошёл срыв?**  
 Срыв — это сигнал, а не провал. Разобрать триггер (место/эмоция/люди), вернуть план в течение 24 часов и усилить замены. Поможет правило «ещё 24 часа без сигарет».
+
 
 
