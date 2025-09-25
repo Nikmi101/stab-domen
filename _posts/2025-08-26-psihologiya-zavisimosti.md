@@ -50,11 +50,16 @@ permalink: "/blog/privychki/psihologiya-zavisimosti/"
 
 ---
 
-{% include img.html
-   src="/images/blog-images/petlya-privychki.webp"
-   alt="Петля привычки"
-   title="Как формируются привычки"
-   width="1200" height="675" %}
+<figure class="content-image" style="margin:1rem 0">
+  <img
+    src="/images/blog-images/petlya-privychki.webp"
+    alt="Петля привычки"
+    title="Как формируются привычки"
+    width="1200" height="675"
+    loading="lazy" decoding="async" style="height:auto"
+  >
+  <figcaption class="visually-hidden">Петля привычки</figcaption>
+</figure>
 
 ---
 
@@ -163,6 +168,7 @@ permalink: "/blog/privychki/psihologiya-zavisimosti/"
 👉 Приложение **«Курил-бросил»** создано именно для этого. Оно помогает шаг за шагом двигаться от зависимости к свободе, фиксировать прогресс и находить новые источники мотивации.
 
 ---
+
 
 
 
