@@ -195,7 +195,9 @@ reading_time: "18"
 - [Алкоголь после отказа от сигарет: ловушки и как их обойти](/blog/privychki/alkogol-posle-otkaza-ot-sigaret/)  
 - [Бросил — тянет на сладкое: как не поменять сигареты на сахар](/blog/privychki/posle-otkaza-tyanet-na-sladkoe/)
 - [Никотиновая зависимость: мифы и правда](/blog/privychki/nikotinovaya-zavisimost/)
+- [Первые 72 часа без сигарет: как пройти самый тяжёлый отрезок](/blog/privychki/pervye-72-chasa-bez-sigaret/)
 
+  
 <!--
 - [Спорт после отказа: когда и как возвращаться к нагрузкам](/blog/privychki/sport-posle-otkaza/)  
 -->
