@@ -53,11 +53,16 @@ permalink: "/blog/emotsii/pochemu-voznikaet-trevoga/"
 
 ---
 
-{% include img.html
-   src="/images/blog-images/psihologiya-trevoga.webp"
-   alt="Природа тревоги"
-   title="Психология тревоги"
-   width="1200" height="675" %}
+<figure class="content-image" style="margin:1rem 0">
+  <img
+    src="/images/blog-images/psihologiya-trevoga.webp"
+    alt="Природа тревоги"
+    title="Психология тревоги"
+    width="1200" height="675"
+    loading="lazy" decoding="async" style="height:auto"
+  >
+  <figcaption class="visually-hidden">Природа тревоги</figcaption>
+</figure>
 
 ---
 
@@ -174,6 +179,7 @@ permalink: "/blog/emotsii/pochemu-voznikaet-trevoga/"
 👉 Именно для этого создано приложение **«Нет тревоге: Путь к спокойствию»**. Оно ведёт через пошаговую работу с тревогой: от понимания её природы до формирования устойчивых навыков внутреннего спокойствия.
 
 ---
+
 
 
 
