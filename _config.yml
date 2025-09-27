@@ -15,7 +15,8 @@ permalink: /blog/:categories/:title/
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate-v2   # ← добавлено для пагинации по /blog/
+  - jekyll-paginate   # ← legacy
+
 
 # Пагинация (jekyll-paginate-v2)
 pagination:
@@ -37,3 +38,4 @@ kramdown:
   toc_levels: 2..3       # ← Оглавление строим по H2–H3 (можно 2..4)
   parse_block_html: true # ← Корректный парсинг HTML-блоков в тексте
   hard_wrap: false
+
