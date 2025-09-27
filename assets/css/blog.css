@@ -1,6 +1,6 @@
 /* ========== Общая обертка блога ========== */
 .blog-container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 1.5rem 1rem;
   font-family: "Arial", sans-serif;
