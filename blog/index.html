@@ -8,10 +8,10 @@ banner:
   title: "Vnutri Apps - психологические android приложения для саморазвития и внутренней гармонии"
 # Закреплённые «корнерстоун»-материалы (редактируй список по мере надобности)
 pinned_slugs:
-  - /blog/privychki/kak-brosit-kurit-navsegda-gid/
-  - /blog/privychki/chto-proishodit-posle-otkaza-kalendar/
-  - /blog/emotsii/chto-takoe-hronicheskiy-stress/
-  - /blog/emotsii/pochemu-otpusk-ne-lechit-stress/
+  - /blog/privychki/kofe-i-nikotin-razvesti-privychki/
+  - /blog/privychki/alkogol-posle-otkaza-ot-sigaret/
+  - /blog/emotsii/trevoga-i-panicheskaya-ataka/
+  - /blog/emotsii/pochemu-trevogu-nelzya-otognat/
 ---
 
 <link rel="stylesheet" href="/assets/css/blog.css">
@@ -70,7 +70,7 @@ pinned_slugs:
 {% assign pinned = site.posts | where_exp: "p", "page.pinned_slugs contains p.url" %}
 {% if pinned and pinned.size > 0 %}
 <section class="pinned-section">
-  <h2 class="pinned-title">Главные лонгриды</h2>
+  <h2 class="pinned-title">Популярные статьи</h2>
   <div class="pinned-grid">
     {% for post in pinned %}
       {% assign desc = post.description | default: post.excerpt | strip_html | truncate: 160 %}
@@ -171,5 +171,6 @@ pinned_slugs:
   ]
 }
 </script>
+
 
 
