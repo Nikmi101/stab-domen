@@ -15,31 +15,31 @@
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="alternate" type="application/rss+xml" title="Vnutri Apps" href="https://vnutriapps.ru/rss.xml">
 
-  {%- comment -%}
-    Определяем: это статья или нет?
-    По умолчанию — статья. Можно переопределить во фронте: is_article: false
-  {%- endcomment -%}
-  {%- assign __is_article = true -%}
-  {%- if page.is_article == false -%}
-    {%- assign __is_article = false -%}
+{%- comment -%} Определяем: это статья или нет {%- endcomment -%}
+{%- assign __is_article = page.is_article -%}
+{%- if __is_article == nil -%}
+  {%- assign __is_article = false -%}
+  {%- if page.collection == 'posts' or page.layout == 'post' or page.layout == 'article' -%}
+    {%- assign __is_article = true -%}
   {%- endif -%}
+{%- endif -%}
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="{{ page.title }} — Vnutri Apps">
-  <meta property="og:description" content="{{ page.description | default: site.description }}">
-  <meta property="og:type" content="{{ page.og_type | default: (__is_article | default: true) | if: 'article','website' }}">
-  {%- comment -%}
-    Хитрость: Liquid не умеет тернарник прямо. Сделаем подстановку вручную.
-  {%- endcomment -%}
-  {%- if page.og_type -%}
-    <!-- og:type задан явно -->
+{%- comment -%} Итоговый og:type: приоритет у page.og_type {%- endcomment -%}
+{%- if page.og_type -%}
+  {%- assign __og_type = page.og_type -%}
+{%- else -%}
+  {%- if __is_article -%}
+    {%- assign __og_type = 'article' -%}
   {%- else -%}
-    {%- if __is_article -%}
-      <meta property="og:type" content="article">
-    {%- else -%}
-      <meta property="og:type" content="website">
-    {%- endif -%}
+    {%- assign __og_type = 'website' -%}
   {%- endif -%}
+{%- endif -%}
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ page.title }} — Vnutri Apps">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:type" content="{{ __og_type }}">
+
 
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:site_name" content="Vnutri Apps">
@@ -320,3 +320,4 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
