@@ -60,12 +60,23 @@
   margin: 0; /* убираем лишние отступы */
 }
 
+/* ========== Заголовок и интро ========== */
+.blog-title {
+  margin: 0 0 0.5rem;
+}
+.blog-intro {
+  margin: 0 0 2rem;
+  color: #444;
+  line-height: 1.6;
+  font-size: 1.02rem;
+}
+
 /* ========== Категории блога (карточки) ========== */
 .blog-categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .blog-card {
@@ -106,56 +117,169 @@
 }
 
 .blog-author {
-  text-align: right;       /* Выравнивание текста по правому краю */
-  color: #888888;          /* Серый цвет текста */
-  font-size: 0.8em;        /* Размер шрифта 0.8 */
-  font-style: italic;      /* Курсив */
-  line-height: 1.4;        /* Немного увеличенная высота строки для читаемости */
-  margin-bottom: 12px;     /* Отступ сверху */
+  text-align: right;
+  color: #888888;
+  font-size: 0.8em;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 12px;
 }
 
-/* ========== Список статей ========== */
+/* ========== Пин-секция (корнерстоун-лонгриды) ========== */
+.pinned-section {
+  margin: 1rem 0 2.5rem;
+}
+.pinned-title {
+  font-size: 1.35rem;
+  margin-bottom: 0.9rem;
+}
+.pinned-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.pinned-card {
+  background: #f8fbff;
+  border: 1px solid #e6f0ff;
+  border-radius: 12px;
+  padding: 1rem 1rem 0.9rem;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.pinned-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+.pinned-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.pinned-headline {
+  font-size: 1.05rem;
+  margin: 0 0 0.4rem;
+  color: #0a2463;
+}
+.pinned-desc {
+  margin: 0 0 0.6rem;
+  color: #444;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+.pinned-date {
+  display: inline-block;
+  color: #7a869a;
+  font-size: 0.84rem;
+}
+
+/* ========== Список статей (обогащённый) ========== */
+.all-posts-title {
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
+}
+
 .blog-posts {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.blog-posts li {
-  padding: 0.9rem 0;
+.post-item {
+  padding: 1rem 0;
   border-bottom: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   transition: background 0.2s ease;
 }
 
-.blog-posts li:hover {
-  background: #f9f9f9;
+.post-item:hover {
+  background: #fafafa;
 }
 
-.blog-posts li:last-child {
-  border-bottom: none;
+.post-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
-.blog-posts a {
-  font-size: 1rem;
-  font-weight: 500;
+.post-title {
+  font-size: 1.02rem;
+  font-weight: 600;
   text-decoration: none;
-  color: #0073e6;
+  color: #0a5bd9;
   transition: color 0.2s ease;
 }
 
-.blog-posts a:hover {
-  color: #005bb5;
+.post-title:hover {
+  color: #0848ad;
   text-decoration: underline;
 }
 
-.blog-posts .date {
+.post-desc {
+  margin: 0.35rem 0 0.5rem;
+  color: #444;
+  line-height: 1.55;
+  font-size: 0.97rem;
+}
+
+.date {
   font-size: 0.85rem;
   color: #888;
-  margin-left: 1rem;
   white-space: nowrap;
+}
+
+.post-mini-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.post-mini-links a {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #0a5bd9;
+  text-decoration: none;
+  background: #eef4ff;
+  border: 1px solid #e0e9ff;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s;
+}
+.post-mini-links a:hover {
+  background: #dfeaff;
+  border-color: #c6d9ff;
+  color: #0848ad;
+}
+
+/* ========== Пагинация ========== */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: center;
+  margin: 1.2rem 0 0.4rem;
+  flex-wrap: wrap;
+}
+.page-link {
+  text-decoration: none;
+  color: #0a5bd9;
+  border: 1px solid #e0e9ff;
+  background: #f6f9ff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s;
+}
+.page-link:hover {
+  background: #eaf1ff;
+  color: #0848ad;
+  border-color: #c6d9ff;
+}
+.page-meta {
+  color: #7a869a;
+  font-size: 0.9rem;
+}
+
+/* ========== Мелкие адаптивные правки ========== */
+@media (max-width: 560px) {
+  .post-main { align-items: flex-start; flex-direction: column; gap: 6px; }
+  .date { margin-left: 0; }
 }
 
 /* ========== Блок рекомендуемого приложения ========== */
