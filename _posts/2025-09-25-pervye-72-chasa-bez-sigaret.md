@@ -40,6 +40,11 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/pervye-72-chasa-bez-sigaret/"
 reading_time: "20"
+related:
+  - title: "Никотиновая зависимость"
+    url: "/blog/privychki/nikotinovaya-zavisimost/"
+  - title: "Первая неделя"
+    url: "/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/"
 ---
 
 # Первые 72 часа без сигарет: как пройти самый тяжёлый отрезок
@@ -245,6 +250,7 @@ reading_time: "20"
 
 **❓ Что если произошёл срыв?**  
 Срыв — это сигнал, а не провал. Разобрать триггер (место/эмоция/люди), вернуть план в течение 24 часов и усилить замены. Поможет правило «ещё 24 часа без сигарет».
+
 
 
 
