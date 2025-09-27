@@ -14,10 +14,33 @@
   <meta name="theme-color" content="#111111" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="alternate" type="application/rss+xml" title="Vnutri Apps" href="https://vnutriapps.ru/rss.xml">
+
+  {%- comment -%}
+    Определяем: это статья или нет?
+    По умолчанию — статья. Можно переопределить во фронте: is_article: false
+  {%- endcomment -%}
+  {%- assign __is_article = true -%}
+  {%- if page.is_article == false -%}
+    {%- assign __is_article = false -%}
+  {%- endif -%}
+
   <!-- Open Graph -->
   <meta property="og:title" content="{{ page.title }} — Vnutri Apps">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="{{ page.og_type | default: (__is_article | default: true) | if: 'article','website' }}">
+  {%- comment -%}
+    Хитрость: Liquid не умеет тернарник прямо. Сделаем подстановку вручную.
+  {%- endcomment -%}
+  {%- if page.og_type -%}
+    <!-- og:type задан явно -->
+  {%- else -%}
+    {%- if __is_article -%}
+      <meta property="og:type" content="article">
+    {%- else -%}
+      <meta property="og:type" content="website">
+    {%- endif -%}
+  {%- endif -%}
+
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:site_name" content="Vnutri Apps">
   <meta property="og:locale" content="ru_RU">
@@ -27,45 +50,57 @@
   <meta property="og:image:width" content="{{ page.banner.width | default: 1200 }}">
   <meta property="og:image:height" content="{{ page.banner.height | default: 630 }}">
   <meta property="og:image:alt" content="{{ page.banner.alt | default: page.title }}">
+  <!-- Дополнительно: указать тип картинки -->
+  {% assign __url_no_q = page.banner.image | split:'?' | first %}
+  {% assign __ext = __url_no_q | split:'.' | last | downcase %}
+  {% if __ext == 'webp' %}
+  <meta property="og:image:type" content="image/webp">
+  {% elsif __ext == 'jpg' or __ext == 'jpeg' %}
+  <meta property="og:image:type" content="image/jpeg">
+  {% elsif __ext == 'png' %}
+  <meta property="og:image:type" content="image/png">
+  {% endif %}
   {% endif %}
 
-  {%- comment -%} ---- Open Graph: article extras from front matter ---- {%- endcomment -%}
-  {%- if page.date -%}
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  {%- endif -%}
-  {%- if page.dateUpdated -%}
-  <meta property="article:modified_time" content="{{ page.dateUpdated | date_to_xmlschema }}">
-  {%- endif -%}
+  {%- comment -%} ---- Open Graph: article extras ---- {%- endcomment -%}
+  {%- if __is_article -%}
+    {%- if page.date -%}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    {%- endif -%}
+    {%- if page.dateUpdated -%}
+    <meta property="article:modified_time" content="{{ page.dateUpdated | date_to_xmlschema }}">
+    {%- endif -%}
 
-  {%- comment -%} Автор: URL если есть, иначе имя {%- endcomment -%}
-  {%- if page.author and page.author.url -%}
-  <meta property="article:author" content="{{ page.author.url }}">
-  {%- elsif page.author and page.author.name -%}
-  <meta property="article:author" content="{{ page.author.name }}">
-  {%- endif -%}
+    {%- comment -%} Автор: URL если есть, иначе имя {%- endcomment -%}
+    {%- if page.author and page.author.url -%}
+    <meta property="article:author" content="{{ page.author.url }}">
+    {%- elsif page.author and page.author.name -%}
+    <meta property="article:author" content="{{ page.author.name }}">
+    {%- endif -%}
 
-  {%- comment -%} Раздел: тема -> articleSection -> маппинг категории -> сырой слаг {%- endcomment -%}
-  {%- assign __section = page.tema | default: page.articleSection -%}
-  {%- if __section == nil or __section == "" -%}
-    {%- assign __cat = page.categories | first | default: "" -%}
-    {%- case __cat -%}
-      {%- when "privychki" -%}{%- assign __section = "Привычки и изменения" -%}
-      {%- when "emotsii" -%}{%- assign __section = "Эмоции и состояние" -%}
-      {%- when "tvorchestvo" -%}{%- assign __section = "Творчество и саморазвитие" -%}
-      {%- when "filosofiya" -%}{%- assign __section = "Философия и глубина" -%}
-      {%- when "VnutriApps" -%}{%- assign __section = "Проект Vnutri Apps" -%}
-      {%- else -%}{%- assign __section = __cat -%}
-    {%- endcase -%}
-  {%- endif -%}
-  {%- if __section and __section != "" -%}
-  <meta property="article:section" content="{{ __section }}">
-  {%- endif -%}
+    {%- comment -%} Раздел: тема -> articleSection -> маппинг категории {%- endcomment -%}
+    {%- assign __section = page.tema | default: page.articleSection -%}
+    {%- if __section == nil or __section == "" -%}
+      {%- assign __cat = page.categories | first | default: "" -%}
+      {%- case __cat -%}
+        {%- when "privychki" -%}{%- assign __section = "Привычки и изменения" -%}
+        {%- when "emotsii" -%}{%- assign __section = "Эмоции и состояние" -%}
+        {%- when "tvorchestvo" -%}{%- assign __section = "Творчество и саморазвитие" -%}
+        {%- when "filosofiya" -%}{%- assign __section = "Философия и глубина" -%}
+        {%- when "VnutriApps" -%}{%- assign __section = "Проект Vnutri Apps" -%}
+        {%- else -%}{%- assign __section = __cat -%}
+      {%- endcase -%}
+    {%- endif -%}
+    {%- if __section and __section != "" -%}
+    <meta property="article:section" content="{{ __section }}">
+    {%- endif -%}
 
-  {%- comment -%} Теги: выводим только если есть {%- endcomment -%}
-  {%- if page.tags and page.tags.size > 0 -%}
-    {%- for t in page.tags -%}
-  <meta property="article:tag" content="{{ t }}">
-    {%- endfor -%}
+    {%- comment -%} Теги {%- endcomment -%}
+    {%- if page.tags and page.tags.size > 0 -%}
+      {%- for t in page.tags -%}
+    <meta property="article:tag" content="{{ t }}">
+      {%- endfor -%}
+    {%- endif -%}
   {%- endif -%}
 
   <!-- Twitter Card -->
@@ -78,7 +113,7 @@
   {% if page.banner.title %}<meta name="twitter:image:title" content="{{ page.banner.title }}">{% endif %}
   {% endif %}
 
-  {%- comment -%} ===== Preload для hero + опционально для важных картинок из фронт-маттера ===== {%- endcomment -%}
+  {%- comment -%} ===== Preload для hero + опционально ещё изображений ===== {%- endcomment -%}
   {% if page.banner and page.banner.image %}
     {% assign __url_no_q = page.banner.image | split:'?' | first %}
     {% assign __ext = __url_no_q | split:'.' | last | downcase %}
@@ -174,7 +209,7 @@
     </article>
 
     <!-- Автор и дата / E-E-A-T -->
-    {% if page.author %}
+    {% if __is_article and page.author %}
     <div class="blog-author" itemscope itemtype="https://schema.org/Person">
       <strong itemprop="name">{{ page.author.name | default: "Vnutri Apps" }}<br></strong>
       {% if page.author.title %}<span itemprop="jobTitle"> · {{ page.author.title }}<br></span>{% endif %}
@@ -190,9 +225,7 @@
       <h2 class="blog-title">Решения от<br> Vnutri Apps:</h2>
     {% endif %}
 
-    <!-- Рекомендуемое приложение 
-       
-    -->
+    <!-- Рекомендуемое приложение -->
     {% for app in page.recommended_apps %}
       {% case app %}
         {% when "brosit_kurit" %}
@@ -207,8 +240,10 @@
     {% endfor %}
 
     <!-- JSON-LD -->
-    {% include jsonld_article_auto_plus_manual.html %}
-    {% include jsonld-faq.html %}
+    {% if __is_article %}
+      {% include jsonld_article_auto_plus_manual.html %}
+      {% include jsonld-faq.html %}
+    {% endif %}
     {% include jsonld-breadcrumbs-ld.html %}
   </div>
 </main>
@@ -285,13 +320,3 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
