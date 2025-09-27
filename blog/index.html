@@ -17,8 +17,8 @@ pinned_slugs:
 <link rel="stylesheet" href="/assets/css/blog.css">
 
 {%- comment -%}
-Каноникал, prev/next и noindex для пагинации
-Требуется jekyll-paginate-v2 или аналогичный плагин (paginator.*)
+canonical / prev / next. На GH Pages классический paginator недоступен для /blog/,
+поэтому блок ниже безопасен: если paginator отсутствует — просто ничего не вставится.
 {%- endcomment -%}
 <link rel="canonical" href="{{ '/blog/' | absolute_url }}">
 {% if paginator and paginator.previous_page %}
@@ -114,10 +114,6 @@ pinned_slugs:
         <p class="post-desc" itemprop="description">{{ desc }}</p>
       {% endif %}
 
-      {%- comment -%}
-      Лёгкая контекстная перелинковка по кластерам.
-      Добавляй/правь правила при необходимости.
-      {%- endcomment -%}
       <div class="post-mini-links">
         {% if post.categories contains "privychki" %}
           <a href="/blog/privychki/kak-brosit-kurit-navsegda-gid/">Полный гид</a>
@@ -150,7 +146,8 @@ pinned_slugs:
 </nav>
 {%- endif -%}
 
-{%- comment -%} JSON-LD: Blog + ItemList для текущей страницы {%- endcomment -%}
+{%- comment -%} JSON-LD: Blog + ItemList {%- endcomment -%}
+{%- assign collection = paginator.posts | default: site.posts -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -159,7 +156,6 @@ pinned_slugs:
   "url": "{{ '/blog/' | absolute_url }}",
   "description": "Статьи Vnutri Apps о психологии, саморазвитии, эмоциях, творчестве и философии.",
   "blogPost": [
-    {% assign collection = paginator.posts | default: site.posts %}
     {% for post in collection %}
     {
       "@type": "BlogPosting",
@@ -178,13 +174,8 @@ pinned_slugs:
   "@context": "https://schema.org",
   "@type": "ItemList",
   "itemListElement": [
-    {% assign collection = paginator.posts | default: site.posts %}
     {% for post in collection %}
-    {
-      "@type": "ListItem",
-      "position": {{ forloop.index }},
-      "url": "{{ post.url | absolute_url }}"
-    }{% unless forloop.last %},{% endunless %}
+    { "@type": "ListItem", "position": {{ forloop.index }}, "url": "{{ post.url | absolute_url }}" }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
 }
