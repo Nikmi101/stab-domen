@@ -16,19 +16,6 @@ pinned_slugs:
   - /blog/emotsii/pochemu-trevogu-nelzya-otognat/
 ---
 
-<link rel="stylesheet" href="/assets/css/blog.css">
-
-<link rel="canonical" href="{{ '/blog/' | absolute_url }}">
-{% if paginator and paginator.previous_page %}
-  <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
-{% endif %}
-{% if paginator and paginator.next_page %}
-  <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
-{% endif %}
-{% if paginator and paginator.page > 1 %}
-  <meta name="robots" content="noindex,follow">
-{% endif %}
-
 <h1 class="blog-title">Статьи от Vnutri Apps</h1>
 
 <p class="blog-intro">
@@ -173,6 +160,7 @@ pinned_slugs:
   ]
 }
 </script>
+
 
 
 
