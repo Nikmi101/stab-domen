@@ -73,7 +73,7 @@ pinned_slugs:
   <h2 class="pinned-title">Популярные статьи</h2>
   <div class="pinned-grid">
     {% for post in pinned %}
-      {% assign desc = post.description | default: post.excerpt | strip_html | truncate: 160 %}
+      {% assign desc = post.description | default: post.excerpt | strip_html %}
       <article class="pinned-card" itemscope itemtype="https://schema.org/BlogPosting">
         <a class="pinned-link" href="{{ post.url | relative_url }}" itemprop="url">
           <h3 class="pinned-headline" itemprop="headline">{{ post.title }}</h3>
@@ -171,6 +171,7 @@ pinned_slugs:
   ]
 }
 </script>
+
 
 
 
