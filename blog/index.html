@@ -93,7 +93,7 @@ pinned_slugs:
 <ul class="blog-posts">
   {% assign collection = paginator.posts | default: site.posts %}
   {% for post in collection %}
-    {% assign desc = post.description | default: post.excerpt | strip_html | truncate: 160 %}
+    {% assign desc = post.description | default: post.excerpt | strip_html %}
     <li class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
       <div class="post-main">
         <a class="post-title" href="{{ post.url | relative_url }}" itemprop="url">
@@ -171,6 +171,7 @@ pinned_slugs:
   ]
 }
 </script>
+
 
 
 
