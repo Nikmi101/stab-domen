@@ -109,22 +109,21 @@ pinned_slugs:
         <p class="post-desc" itemprop="description">{{ desc }}</p>
       {% endif %}
 
-      <div class="post-mini-links">
-        {% if post.categories contains "privychki" %}
-          <a href="/blog/privychki/kak-brosit-kurit-navsegda-gid/">Полный гид</a>
-          <a href="/blog/privychki/chto-proishodit-posle-otkaza-kalendar/">Календарь изменений</a>
-        {% endif %}
-        {% if post.categories contains "emotsii" %}
-          <a href="/blog/emotsii/chto-takoe-hronicheskiy-stress/">Хронический стресс</a>
-          <a href="/blog/emotsii/pochemu-otpusk-ne-lechit-stress/">Почему отпуск не лечит</a>
-        {% endif %}
-        {% if post.categories contains "tvorchestvo" %}
-          <a href="/blog/tvorchestvo/kreativnost-i-distsiplina/">Креативность и дисциплина</a>
-        {% endif %}
-        {% if post.categories contains "filosofiya" %}
-          <a href="/blog/filosofiya/pochemu-odinichestvo-estestvenno/">Одиночество — естественно</a>
-        {% endif %}
-      </div>
+     {% comment %}
+  Смежные материалы из фронта поста (ключ: related).
+  Берём до 3 ссылок, если заданы.
+{% endcomment %}
+{% if post.related and post.related.size > 0 %}
+  <div class="post-mini-links">
+    {% for link in post.related limit:3 %}
+      {% assign link_url = link.url | default: link.href %}
+      {% assign link_title = link.title | default: link.text %}
+      {% if link_url and link_title %}
+        <a href="{{ link_url | relative_url }}">{{ link_title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
     </li>
   {% endfor %}
 </ul>
@@ -174,3 +173,4 @@ pinned_slugs:
   ]
 }
 </script>
+
