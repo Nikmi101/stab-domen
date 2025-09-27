@@ -177,28 +177,37 @@
   font-size: 0.84rem;
 }
 
-/* ========== Список статей (обогащённый) ========== */
-.all-posts-title {
-  margin-top: 1rem;
-  margin-bottom: 0.6rem;
-}
-
+/* Карточки списка статей — «отдельные» и читаемые */
 .blog-posts {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;          /* равномерные промежутки */
+  gap: 12px;              /* расстояние между карточками */
 }
 
+/* Уберём линейные разделители и сделаем именно карточки */
 .post-item {
-  padding: 1rem 0;
-  border-bottom: 1px solid #eee;
-  transition: background 0.2s ease;
+  border: 1px solid #eceff5;           /* тонкая рамка вместо нижней линии */
+  border-radius: 12px;                 /* мягкие углы */
+  padding: 16px 18px;
+  background: #fff;                    /* белый, но с тенью и рамкой не сливается */
+  box-shadow: 0 1px 0 rgba(0,0,0,.03); /* едва заметный объём */
+  transition: box-shadow .2s ease, transform .06s ease, border-color .2s ease;
 }
 
-.post-item:hover {
-  background: #fafafa;
+/* если где-то остался старый разделитель — вырубим */
+.post-item { border-bottom: none; }
+
+/* Ховер/фокус — лёгкое «поднятие» */
+.post-item:hover,
+.post-item:focus-within {
+  border-color: #e2e8f0;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  transform: translateY(-1px);
 }
 
+/* Верхняя строка карточки ровнее */
 .post-main {
   display: flex;
   align-items: center;
@@ -206,52 +215,71 @@
   gap: 12px;
 }
 
+/* Заголовок — кликабельный и заметный */
 .post-title {
-  font-size: 1.02rem;
-  font-weight: 600;
-  text-decoration: none;
+  font-size: 1.04rem;
+  font-weight: 700;
   color: #0a5bd9;
-  transition: color 0.2s ease;
+  text-decoration: none;
 }
-
-.post-title:hover {
+.post-title:hover,
+.post-title:focus {
   color: #0848ad;
   text-decoration: underline;
 }
 
+/* Описание — чуть темнее и компактнее */
 .post-desc {
-  margin: 0.35rem 0 0.5rem;
-  color: #444;
-  line-height: 1.55;
+  margin: 0.45rem 0 0.6rem;
+  color: #3b3b3b;
+  line-height: 1.6;
   font-size: 0.97rem;
 }
 
+/* Дата — «чип», чтобы визуально отделялась */
 .date {
-  font-size: 0.85rem;
-  color: #888;
+  font-size: 0.82rem;
+  color: #475569;
+  background: #f1f5ff;
+  border: 1px solid #e4e9ff;
+  padding: 2px 8px;
+  border-radius: 999px;
   white-space: nowrap;
 }
 
+/* Мини-ссылки — компактные бейджи */
 .post-mini-links {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 .post-mini-links a {
-  display: inline-block;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: #0a5bd9;
-  text-decoration: none;
   background: #eef4ff;
   border: 1px solid #e0e9ff;
   padding: 4px 8px;
   border-radius: 8px;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s;
+  text-decoration: none;
+  transition: background .2s ease, border-color .2s ease, color .2s ease;
 }
 .post-mini-links a:hover {
   background: #dfeaff;
   border-color: #c6d9ff;
   color: #0848ad;
+}
+
+/* Мобильная мелочь — плотнее, но не тесно */
+@media (max-width: 640px) {
+  .blog-posts { gap: 10px; }
+  .post-item { padding: 14px 14px; border-radius: 10px; }
+  .post-main { gap: 10px; }
+  .post-title { font-size: 1rem; }
+}
+
+/* Уважение к сниженной анимации */
+@media (prefers-reduced-motion: reduce) {
+  .post-item { transition: none; }
 }
 
 /* ========== Пагинация ========== */
