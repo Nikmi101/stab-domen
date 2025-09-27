@@ -16,10 +16,6 @@ pinned_slugs:
 
 <link rel="stylesheet" href="/assets/css/blog.css">
 
-{%- comment -%}
-canonical / prev / next. На GH Pages классический paginator недоступен для /blog/,
-поэтому блок ниже безопасен: если paginator отсутствует — просто ничего не вставится.
-{%- endcomment -%}
 <link rel="canonical" href="{{ '/blog/' | absolute_url }}">
 {% if paginator and paginator.previous_page %}
   <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
@@ -73,7 +69,6 @@ canonical / prev / next. На GH Pages классический paginator нед
   </a>
 </div>
 
-{%- comment -%} Закреплённые пиллары сверху {%- endcomment -%}
 {% assign pinned = site.posts | where_exp: "p", "page.pinned_slugs contains p.url" %}
 {% if pinned and pinned.size > 0 %}
 <section class="pinned-section">
@@ -134,7 +129,7 @@ canonical / prev / next. На GH Pages классический paginator нед
   {% endfor %}
 </ul>
 
-{%- if paginator -%}
+{% if paginator %}
 <nav class="pagination">
   {% if paginator.previous_page %}
     <a class="page-link prev" href="{{ paginator.previous_page_path | relative_url }}">← Новее</a>
@@ -144,9 +139,8 @@ canonical / prev / next. На GH Pages классический paginator нед
     <a class="page-link next" href="{{ paginator.next_page_path | relative_url }}">Старее →</a>
   {% endif %}
 </nav>
-{%- endif -%}
+{% endif %}
 
-{%- comment -%} JSON-LD: Blog + ItemList {%- endcomment -%}
 {%- assign collection = paginator.posts | default: site.posts -%}
 <script type="application/ld+json">
 {
@@ -162,7 +156,7 @@ canonical / prev / next. На GH Pages классический paginator нед
       "headline": {{ post.title | jsonify }},
       "url": "{{ post.url | absolute_url }}",
       "datePublished": "{{ post.date | date_to_xmlschema }}",
-      "description": {{ (post.description | default: post.excerpt | strip_html | truncate: 160) | jsonify }}
+      "description": {{ post.description | default: post.excerpt | strip_html | truncate: 160 | jsonify }}
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
