@@ -5,22 +5,35 @@ lang: ru
 description: Психологические приложения и статьи о самопомощи, тревоге, привычках и творчестве.
 theme: jekyll-theme-cayman
 
-future: false
-timezone: Europe/Moscow
+future: false          # ← не публиковать посты с датой в будущем
+timezone: Europe/Moscow # ← чтобы отсчёт «наступила дата» шёл по Мск
 
+# Красивые URL постов: /blog/категория/название/
 permalink: /blog/:categories/:title/
 
+# Плагины
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  # jekyll-paginate-v2 — не поддерживается GitHub Pages, не подключаем
+  - jekyll-paginate-v2   # ← добавлено для пагинации по /blog/
 
+# Пагинация (jekyll-paginate-v2)
+pagination:
+  enabled: true
+  per_page: 12
+  title: ':title — страница :num'
+  permalink: '/blog/page/:num/'
+  sort_field: 'date'
+  sort_reverse: true
+
+# Чтобы категории были «чистыми» слагами (пути уже задаются в permalink)
 collections: {}
 
+# Markdown / Kramdown
 markdown: kramdown
 kramdown:
   input: GFM
-  auto_ids: true
-  toc_levels: 2..3
-  parse_block_html: true
+  auto_ids: true         # ← Автоматические id у H1–H6
+  toc_levels: 2..3       # ← Оглавление строим по H2–H3 (можно 2..4)
+  parse_block_html: true # ← Корректный парсинг HTML-блоков в тексте
   hard_wrap: false
