@@ -6,63 +6,186 @@ banner:
   image: "/images/blog-images/blog-header.webp"
   alt: "Vnutri Apps - психологические android приложения для саморазвития и внутренней гармонии"
   title: "Vnutri Apps - психологические android приложения для саморазвития и внутренней гармонии"
+# Закреплённые «корнерстоун»-материалы (редактируй список по мере надобности)
+pinned_slugs:
+  - /blog/privychki/kak-brosit-kurit-navsegda-gid/
+  - /blog/privychki/chto-proishodit-posle-otkaza-kalendar/
+  - /blog/emotsii/chto-takoe-hronicheskiy-stress/
+  - /blog/emotsii/pochemu-otpusk-ne-lechit-stress/
 ---
-
-
 
 <link rel="stylesheet" href="/assets/css/blog.css">
 
+{%- comment -%}
+Каноникал, prev/next и noindex для пагинации
+Требуется jekyll-paginate-v2 или аналогичный плагин (paginator.*)
+{%- endcomment -%}
+<link rel="canonical" href="{{ '/blog/' | absolute_url }}">
+{% if paginator and paginator.previous_page %}
+  <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
+{% endif %}
+{% if paginator and paginator.next_page %}
+  <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
+{% endif %}
+{% if paginator and paginator.page > 1 %}
+  <meta name="robots" content="noindex,follow">
+{% endif %}
 
-  <h1 class="blog-title">Статьи от Vnutri Apps</h1>
+<h1 class="blog-title">Статьи от Vnutri Apps</h1>
 
-  <div class="blog-categories">
-    <a href="/blog/privychki/" class="blog-card">
-      <div class="blog-icon">🚬</div>
-      <div class="blog-text">
-        <h2>Привычки и изменения</h2>
-        <p>Как избавиться от зависимостей и внедрить осознанные практики.</p>
-      </div>
-    </a>
+<p class="blog-intro">
+  Здесь — лонгриды о <strong>привычках и изменениях</strong>, работе с <strong>эмоциями и стрессом</strong>,
+  развитие <strong>творчества</strong> и тексты про <strong>философию и глубину</strong>. Мы пишем человеческим
+  языком, даём практики без «чудо-средств» и строим перелинковку так, чтобы быстро найти нужный ответ.
+</p>
 
-    <a href="/blog/emotsii/" class="blog-card">
-      <div class="blog-icon">💙</div>
-      <div class="blog-text">
-        <h2>Эмоции и состояние</h2>
-        <p>Работа с тревогой, стрессом и гармонией внутри.</p>
-      </div>
-    </a>
+<div class="blog-categories">
+  <a href="/blog/privychki/" class="blog-card">
+    <div class="blog-icon">🚬</div>
+    <div class="blog-text">
+      <h2>Привычки и изменения</h2>
+      <p>Как избавиться от зависимостей и внедрить осознанные практики.</p>
+    </div>
+  </a>
 
-    <a href="/blog/tvorchestvo/" class="blog-card">
-      <div class="blog-icon">🔥</div>
-      <div class="blog-text">
-        <h2>Творчество и саморазвитие</h2>
-        <p>О вдохновении, креативности и самореализации.</p>
-      </div>
-    </a>
+  <a href="/blog/emotsii/" class="blog-card">
+    <div class="blog-icon">💙</div>
+    <div class="blog-text">
+      <h2>Эмоции и состояние</h2>
+      <p>Работа с тревогой, стрессом и гармонией внутри.</p>
+    </div>
+  </a>
 
-    <a href="/blog/filosofiya/" class="blog-card">
-      <div class="blog-icon">🌌</div>
-      <div class="blog-text">
-        <h2>Философия и глубина</h2>
-        <p>Размышления о психологии, культуре и смысле.</p>
-      </div>
-    </a>
-  </div>
+  <a href="/blog/tvorchestvo/" class="blog-card">
+    <div class="blog-icon">🔥</div>
+    <div class="blog-text">
+      <h2>Творчество и саморазвитие</h2>
+      <p>О вдохновении, креативности и самореализации.</p>
+    </div>
+  </a>
 
-  <h2 class="all-posts-title">Все статьи</h2>
-  <ul class="blog-posts">
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <span class="date">{{ post.date | date: "%d.%m.%Y" }}</span>
-      </li>
+  <a href="/blog/filosofiya/" class="blog-card">
+    <div class="blog-icon">🌌</div>
+    <div class="blog-text">
+      <h2>Философия и глубина</h2>
+      <p>Размышления о психологии, культуре и смысле.</p>
+    </div>
+  </a>
+</div>
+
+{%- comment -%} Закреплённые пиллары сверху {%- endcomment -%}
+{% assign pinned = site.posts | where_exp: "p", "page.pinned_slugs contains p.url" %}
+{% if pinned and pinned.size > 0 %}
+<section class="pinned-section">
+  <h2 class="pinned-title">Главные лонгриды</h2>
+  <div class="pinned-grid">
+    {% for post in pinned %}
+      {% assign desc = post.description | default: post.excerpt | strip_html | truncate: 160 %}
+      <article class="pinned-card" itemscope itemtype="https://schema.org/BlogPosting">
+        <a class="pinned-link" href="{{ post.url | relative_url }}" itemprop="url">
+          <h3 class="pinned-headline" itemprop="headline">{{ post.title }}</h3>
+          {% if desc %}<p class="pinned-desc" itemprop="description">{{ desc }}</p>{% endif %}
+          <span class="pinned-date" itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%d.%m.%Y" }}
+          </span>
+        </a>
+      </article>
     {% endfor %}
-  </ul>
+  </div>
+</section>
+{% endif %}
 
+<h2 class="all-posts-title">Все статьи</h2>
 
+<ul class="blog-posts">
+  {% assign collection = paginator.posts | default: site.posts %}
+  {% for post in collection %}
+    {% assign desc = post.description | default: post.excerpt | strip_html | truncate: 160 %}
+    <li class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+      <div class="post-main">
+        <a class="post-title" href="{{ post.url | relative_url }}" itemprop="url">
+          <span itemprop="headline">{{ post.title }}</span>
+        </a>
+        <span class="date" itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%d.%m.%Y" }}
+        </span>
+      </div>
+      {% if desc %}
+        <p class="post-desc" itemprop="description">{{ desc }}</p>
+      {% endif %}
 
+      {%- comment -%}
+      Лёгкая контекстная перелинковка по кластерам.
+      Добавляй/правь правила при необходимости.
+      {%- endcomment -%}
+      <div class="post-mini-links">
+        {% if post.categories contains "privychki" %}
+          <a href="/blog/privychki/kak-brosit-kurit-navsegda-gid/">Полный гид</a>
+          <a href="/blog/privychki/chto-proishodit-posle-otkaza-kalendar/">Календарь изменений</a>
+        {% endif %}
+        {% if post.categories contains "emotsii" %}
+          <a href="/blog/emotsii/chto-takoe-hronicheskiy-stress/">Хронический стресс</a>
+          <a href="/blog/emotsii/pochemu-otpusk-ne-lechit-stress/">Почему отпуск не лечит</a>
+        {% endif %}
+        {% if post.categories contains "tvorchestvo" %}
+          <a href="/blog/tvorchestvo/kreativnost-i-distsiplina/">Креативность и дисциплина</a>
+        {% endif %}
+        {% if post.categories contains "filosofiya" %}
+          <a href="/blog/filosofiya/pochemu-odinichestvo-estestvenno/">Одиночество — естественно</a>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>
 
+{%- if paginator -%}
+<nav class="pagination">
+  {% if paginator.previous_page %}
+    <a class="page-link prev" href="{{ paginator.previous_page_path | relative_url }}">← Новее</a>
+  {% endif %}
+  <span class="page-meta">Страница {{ paginator.page }} из {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a class="page-link next" href="{{ paginator.next_page_path | relative_url }}">Старее →</a>
+  {% endif %}
+</nav>
+{%- endif -%}
 
+{%- comment -%} JSON-LD: Blog + ItemList для текущей страницы {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Блог Vnutri Apps",
+  "url": "{{ '/blog/' | absolute_url }}",
+  "description": "Статьи Vnutri Apps о психологии, саморазвитии, эмоциях, творчестве и философии.",
+  "blogPost": [
+    {% assign collection = paginator.posts | default: site.posts %}
+    {% for post in collection %}
+    {
+      "@type": "BlogPosting",
+      "headline": {{ post.title | jsonify }},
+      "url": "{{ post.url | absolute_url }}",
+      "datePublished": "{{ post.date | date_to_xmlschema }}",
+      "description": {{ (post.description | default: post.excerpt | strip_html | truncate: 160) | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
 
-
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {% assign collection = paginator.posts | default: site.posts %}
+    {% for post in collection %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": "{{ post.url | absolute_url }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
