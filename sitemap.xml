@@ -482,7 +482,54 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  
+
+  <url>
+    <loc>https://vnutriapps.ru/blog/privychki/dom-bez-dyma/</loc>
+    <lastmod>2025-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+   <url>
+    <loc>https://vnutriapps.ru/blog/privychki/vechernyaya-tyaga-pered-snom/</loc>
+    <lastmod>2025-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+   <url>
+    <loc>https://vnutriapps.ru/blog/privychki/ves-posle-otkaza-bez-diet/</loc>
+    <lastmod>2025-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+   <url>
+    <loc>https://vnutriapps.ru/blog/privychki/utrenniy-ritual-bez-sigarety/</loc>
+    <lastmod>2025-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+   <url>
+    <loc>https://vnutriapps.ru/blog/privychki/halt-chetyre-triggera/</loc>
+    <lastmod>2025-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+    <url>
+    <loc>https://vnutriapps.ru/blog/privychki/dyhanie-vmesto-zatyazhki/</loc>
+    <lastmod>2025-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+    <url>
+    <loc>https://vnutriapps.ru/blog/privychki/lovushki-vozvrata-k-kureniyu/</loc>
+    <lastmod>2025-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
 </urlset>
