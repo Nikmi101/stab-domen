@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-02
-dateUpdated: 2025-09-22
+dateUpdated: 2025-10-01
 articleSection: "Бросить курить: синдром отмены"
 preload_images:
   - /images/blog-images/sindrom-otmeny.webp
@@ -271,6 +271,17 @@ reading_time: "14"
 
 ---
 
+## Источники
+
+- Минздрав РФ — [minzdrav.gov.ru](https://minzdrav.gov.ru)  
+- Всемирная организация здравоохранения (ВОЗ) — [who.int](https://www.who.int)
+- Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ) — [nmic.ru](https://nmic.ru)  
+- Centers for Disease Control and Prevention (CDC) — [cdc.gov](https://www.cdc.gov)  
+- Национальный институт здоровья США (NIH) — [nih.gov](https://www.nih.gov)  
+- Клинические рекомендации РКО и НМИЦ кардиологии по профилактике и лечению заболеваний, связанных с курением  
+- Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
+
+---
 
 
 
