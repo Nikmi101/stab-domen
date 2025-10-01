@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-15
-dateUpdated: 2025-09-30
+dateUpdated: 2025-10-01
 articleSection: "Бросить курить с поддержкой"
 preload_images:
   - /images/blog-images/blog-header.webp
@@ -150,7 +150,7 @@ reading_time: "19"
 
 - [Первые 72 часа без сигарет](/blog/privychki/pervye-72-chasa-bez-sigaret/)  
 - [Как работает синдром отмены: что ждёт после отказа](/blog/privychki/sindrom-otmeny-nikotina/)
-- [Что происходит с организмом после отказа: по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
+- [Календарь отказа от курения: изменения и опоры по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
 - [Бросил курить — тянет на сладкое: как не поменять сигареты на сахар](/blog/privychki/posle-otkaza-tyanet-na-sladkoe/)
 - [«Утренний ритуал без сигареты»](/blog/privychki/utrenniy-ritual-bez-sigarety/)
 
@@ -181,4 +181,17 @@ reading_time: "19"
 **❓ Когда стоит обратиться к врачу в первые 1–2 недели?**  
 Если есть выраженная одышка, боль в груди, высокая температура, кровянистая мокрота, обмороки, неконтролируемая бессонница или обострение хронических заболеваний.
 
+---
+
+## Источники
+
+- Минздрав РФ — [minzdrav.gov.ru](https://minzdrav.gov.ru)  
+- Всемирная организация здравоохранения (ВОЗ) — [who.int](https://www.who.int)
+- Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ) — [nmic.ru](https://nmic.ru)  
+- Centers for Disease Control and Prevention (CDC) — [cdc.gov](https://www.cdc.gov)  
+- Национальный институт здоровья США (NIH) — [nih.gov](https://www.nih.gov)  
+- Клинические рекомендации РКО и НМИЦ кардиологии по профилактике и лечению заболеваний, связанных с курением  
+- Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
+
+---
 
