@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-20
-dateUpdated: 2025-09-23
+dateUpdated: 2025-10-01
 articleSection: "Бросить курить с поддержкой"
 preload_images:
   - /images/blog-images/blog-header.webp
@@ -112,7 +112,7 @@ reading_time: "20"
 - Срыв — разбор по чек-листу (ниже), **возврат в течение 24 часов**.
   
 
-Подробная карта общих ориентиров: [«Что происходит с организмом после отказа от курения: по дням, неделям и месяцам»](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/).
+Подробная карта общих ориентиров: [«Календарь отказа от курения: изменения и опоры по дням, неделям и месяцам»](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/).
 
 
 ---
@@ -191,7 +191,7 @@ reading_time: "20"
 - [«IQOS и стики: как отказаться, если ритуал сильнее никотина»](/blog/privychki/kak-brosit-iqos/)
 - [Первая неделя и первые 14 дней без сигарет: опоры, ошибки и моменты правды](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
 - [Первые 72 часа без сигарет: как пройти самый тяжёлый отрезок](/blog/privychki/pervye-72-chasa-bez-sigaret/)
-- [Что происходит с организмом после отказа от курения: по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
+- [Календарь отказа от курения: изменения и опоры по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
 
 ---
 
@@ -219,6 +219,7 @@ reading_time: "20"
 
 **❓ Что делать при срыве?**  
 Фиксировать событие, извлекать урок (какой триггер не был закрыт), возвращаться к плану в течение 24 часов. Срыв — не провал, а обратная связь.
+
 
 
 
