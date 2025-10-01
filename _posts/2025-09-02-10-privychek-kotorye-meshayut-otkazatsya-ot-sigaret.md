@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-02
-dateUpdated: 2025-09-22
+dateUpdated: 2025-10-01
 articleSection: "Бросить курить: привычки и триггеры"
 preload_images:
   - /images/blog-images/10-habits-smoking.webp
@@ -323,6 +323,22 @@ reading_time: "12"
 
 **❓ Можно ли курить «только по праздникам»?**  
 Это иллюзия контроля: у большинства быстро возвращается ежедневное курение. Лучше удерживать нулевую модель.
+
+---
+
+## Источники
+
+- Всемирная организация здравоохранения (ВОЗ) — [who.int](https://www.who.int)  
+- Centers for Disease Control and Prevention (CDC) — [cdc.gov](https://www.cdc.gov)  
+- Национальный институт здоровья США (NIH) — [nih.gov](https://www.nih.gov)  
+- Минздрав РФ — [minzdrav.gov.ru](https://minzdrav.gov.ru)  
+- Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ) — [nmic.ru](https://nmic.ru)  
+- Клинические рекомендации РКО и НМИЦ кардиологии по профилактике и лечению заболеваний, связанных с курением  
+- Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
+
+---
+
+
 
 
 
