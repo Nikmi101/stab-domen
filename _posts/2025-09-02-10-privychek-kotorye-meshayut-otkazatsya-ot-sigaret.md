@@ -328,15 +328,16 @@ reading_time: "12"
 
 ## Источники
 
-- Всемирная организация здравоохранения (ВОЗ) — [who.int](https://www.who.int)  
+- Минздрав РФ — [minzdrav.gov.ru](https://minzdrav.gov.ru)  
+- Всемирная организация здравоохранения (ВОЗ) — [who.int](https://www.who.int)
+- Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ) — [nmic.ru](https://nmic.ru)  
 - Centers for Disease Control and Prevention (CDC) — [cdc.gov](https://www.cdc.gov)  
 - Национальный институт здоровья США (NIH) — [nih.gov](https://www.nih.gov)  
-- Минздрав РФ — [minzdrav.gov.ru](https://minzdrav.gov.ru)  
-- Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ) — [nmic.ru](https://nmic.ru)  
 - Клинические рекомендации РКО и НМИЦ кардиологии по профилактике и лечению заболеваний, связанных с курением  
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
