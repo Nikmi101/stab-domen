@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-23
-dateUpdated: 2025-09-30
+dateUpdated: 2025-10-01
 articleSection: "Бросить курить с поддержкой"
 preload_images:
   - /images/blog-images/blog-header.webp
@@ -72,7 +72,7 @@ reading_time: "20"
 Если хочется «приглушить» кашель сразу, стоит помнить: чрезмерное подавление рефлекса мешает **естественному очищению**. Разумный выбор — **помогать телу очищаться** мягкими способами.
 
 🧭 Для контекста процесса: 
-= [«Что происходит с организмом после отказа: по дням, неделям и месяцам»](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/), 
+= [«Календарь отказа от курения: изменения и опоры по дням, неделям и месяцам»](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/), 
 - [«Как работает синдром отмены»](/blog/privychki/sindrom-otmeny-nikotina/).
 
 ---
@@ -176,7 +176,7 @@ reading_time: "20"
 
 - [Никотиновая зависимость: мифы и правда](/blog/privychki/nikotinovaya-zavisimost/)  
 - [Первые 72 часа без сигарет](/blog/privychki/pervye-72-chasa-bez-sigaret/)
-- [Что происходит с организмом после отказа: по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
+- [Календарь отказа от курения: изменения и опоры по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
 - [Первая неделя и первые 14 дней без сигарет: опоры, ошибки и моменты правды](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)
 - [Как очистить лёгкие после курения: что реально работает](/blog/privychki/ochistit-legkie-posle-kureniya/)
 - [Дыхание вместо затяжки: микропрактики на 1–3 минуты](/blog/privychki/dyhanie-vmesto-zatyazhki/)
@@ -210,6 +210,7 @@ reading_time: "20"
 
 **❓ Когда обязательно обращаться за медицинской помощью?**  
 При высокой температуре, свистящем дыхании, сильной боли в груди, выраженной одышке, обмороках или если кашель не уходит месяцами.
+
 
 
 
