@@ -35,7 +35,7 @@ faq:
   - q: "Когда обращаться к врачу?"
     a: "Если срывы повторяются, симптомы сильно мешают жить или есть хронические заболевания сердца/лёгких, тревога/депрессия."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "Синдром отмены никотина: как проходит адаптация"
   width: 1200
   height: 630
@@ -282,6 +282,7 @@ reading_time: "14"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
