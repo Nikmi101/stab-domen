@@ -37,7 +37,7 @@ faq:
   - q: "Можно ли курить «только по праздникам»?"
     a: "Это иллюзия контроля: у большинства это быстро возвращается к ежедневному курению. Лучше строить нулевую модель."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "10 привычек, которые мешают бросить курить"
   width: 1200
   height: 630
@@ -337,6 +337,7 @@ reading_time: "12"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
