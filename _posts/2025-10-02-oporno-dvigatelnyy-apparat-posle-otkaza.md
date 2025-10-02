@@ -31,7 +31,7 @@ faq:
   - q: "Какие симптомы — повод обратиться к врачу?"
     a: "Острая боль в суставе/мышце, отёк, ограничение движения, «щелчок» с болью, боль в груди, выраженная одышка — основания для очной оценки."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "выносливость и опорно-двигательный аппарат после отказа"
   width: 1200
   height: 630
@@ -184,5 +184,6 @@ reading_time: "21"
 - Cochrane Library: Smoking cessation and bone density — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
