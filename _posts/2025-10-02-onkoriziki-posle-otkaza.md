@@ -123,7 +123,7 @@ reading_time: "23"
 - [Восстановление здоровья: что меняется по системам](/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/)  
 - [Очистить лёгкие без «чудо-средств»](/blog/privychki/ochistit-legkie-posle-kureniya/)  
 - [Пассивное курение и дом без дыма](/blog/privychki/dom-bez-dyma/)  
-- [Обмен веществ и гормональный фон после отказа](/blog/privychki/obmen-veschestv-i-gormony-posle-otkaza/)
+- [Обмен веществ и гормональный фон после отказа](/blog/privychki/obmen-veshchestv-i-gormony-posle-otkaza/)
 
 ---
 
@@ -167,3 +167,4 @@ reading_time: "23"
 - Cochrane Library: Smoking cessation and cancer prevention — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
