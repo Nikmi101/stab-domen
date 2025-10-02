@@ -40,6 +40,7 @@
   margin-bottom: 0;
 }
 
+
 .blog-header-banner::after {
   content: "";
   position: absolute;
@@ -705,3 +706,27 @@ html, body { overflow-x: hidden; }
 .toc li{margin:.125rem 0; line-height:1.4;}
 .toc a{text-decoration:none;}
 .toc a:focus,.toc a:hover{text-decoration:underline;}
+
+.blog-header-banner {
+  position: relative;
+  width: 100%;
+  height: clamp(240px, 42vw, 520px);
+  overflow: hidden;
+  background-color: #111; /* тёмно-тёмно-серый фон */
+}
+
+.blog-header-banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* по умолчанию для мобилок */
+  object-position: center;
+}
+
+/* --- Для десктопа меняем стратегию --- */
+@media (min-width: 1024px) {
+  .blog-header-banner img {
+    object-fit: contain;   /* не обрезать */
+    background-color: #111;/* фон под картинку */
+  }
+}
