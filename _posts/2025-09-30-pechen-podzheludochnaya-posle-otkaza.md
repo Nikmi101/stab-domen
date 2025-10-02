@@ -32,7 +32,7 @@ faq:
   - q: "Какие сигналы — к врачу по печени/поджелудочной?"
     a: "Сильная или нарастающая боль, желтуха, тёмная моча и светлый стул, стойкая тошнота/рвота, резкая потеря веса, обострения в анамнезе."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "печень, поджелудочная и желчевыводящая система после отказа"
   width: 1200
   height: 630
@@ -175,4 +175,5 @@ reading_time: "22"
 - Cochrane Library: Smoking and pancreatic disorders — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
