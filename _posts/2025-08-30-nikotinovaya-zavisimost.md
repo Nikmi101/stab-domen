@@ -34,7 +34,7 @@ faq:
   - q: "Что делать, если произошёл срыв?"
     a: "Не обесценивать прогресс. Зафиксировать, что стало триггером, вернуть минимальные шаги и поддержку. Правило: «не два раза подряд» и перезапуск плана."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "мифы и правда о никотине"
   title: "Никотиновая зависимость"
 recommended_apps:
@@ -265,6 +265,7 @@ permalink: "/blog/privychki/nikotinovaya-zavisimost/"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
