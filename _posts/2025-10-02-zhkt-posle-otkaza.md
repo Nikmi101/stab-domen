@@ -32,7 +32,7 @@ faq:
   - q: "Когда обычно выравниваются аппетит и пищеварение?"
     a: "Часто ориентир — 2–8 недель. Сроки индивидуальны и зависят от стажа курения, стресса, сна и привычек питания."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "жкт после отказа от курения"
   width: 1200
   height: 630
@@ -168,4 +168,5 @@ reading_time: "22"
 - Cochrane Library: Smoking cessation and gut health — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
