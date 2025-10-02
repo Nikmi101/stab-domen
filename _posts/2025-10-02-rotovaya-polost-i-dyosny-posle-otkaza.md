@@ -32,7 +32,7 @@ faq:
   - q: "Какие симптомы — повод срочно обратиться к стоматологу?"
     a: "Сильная или нарастающая боль, выраженная кровоточивость, подвижность зубов, гной/припухлость, язвочки, не заживающие более 10–14 дней."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "зубы и дёсны после отказа от курения"
   width: 1200
   height: 630
@@ -174,5 +174,6 @@ reading_time: "20"
 - Cochrane Library: Smoking cessation and periodontal health — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
