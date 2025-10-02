@@ -32,7 +32,7 @@ faq:
   - q: "Запах табака в одежде и изо рта уйдёт сам?"
     a: "Источник запаха исчезает, и фон постепенно выветривается. Одежде и текстилю часто нужна стирка/чистка; в полости рта свежесть естественно возвращается при регулярной гигиене."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "восстановление внешности после отказа"
   width: 1200
   height: 630
@@ -177,5 +177,6 @@ reading_time: "24"
 - Cochrane Library: Smoking cessation and dermatological outcomes — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
