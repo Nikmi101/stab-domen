@@ -32,7 +32,7 @@ faq:
   - q: "Как связаны кофеин и водный баланс после отказа?"
     a: "Кофеин обладает умеренным мочегонным эффектом. Если увеличилась чувствительность, стоит подкорректировать вечерную дозу."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "почки и водный баланс после отказа от курения"
   width: 1200
   height: 630
@@ -163,3 +163,4 @@ reading_time: "20"
 - Cochrane Library: Smoking and pancreatic disorders — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
