@@ -162,7 +162,7 @@ reading_time: "24"
 
 - [Восстановление здоровья после отказа: по системам](/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/)  
 - [Обмен веществ и гормональный фон после отказа](/blog/privychki/obmen-veshchestv-i-gormony-posle-otkaza/)  
-- [Внешность после отказа: кожа, волосы, глаза и зубы](/blog/privychki/vneshnost-posle-otkaza/)  
+- [Внешность после отказа: кожа, волосы, глаза и зубы](/blog/privychki/vosstanovlenie-vneshnosti-posle-otkaza/)  
 - [Как очистить лёгкие после курения](/blog/privychki/ochistit-legkie-posle-kureniya/)  
 
 ---
@@ -206,3 +206,4 @@ reading_time: "24"
 - Cochrane Library: Smoking and micronutrient metabolism — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
