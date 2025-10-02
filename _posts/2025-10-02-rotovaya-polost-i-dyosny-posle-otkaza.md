@@ -81,7 +81,7 @@ reading_time: "20"
 
 **Вкус и цвет.** Постепенно **возвращается яркость вкусов**, а пигментированный налёт становится **легче удалять** — домашней гигиеной и профчисткой.
 
-🧭 Смежно: [«Восстановление внешности после отказа»](/blog/privychki/vneshnost-posle-otkaza/), 
+🧭 Смежно: [«Восстановление внешности после отказа»](/blog/privychki/vosstanovlenie-vneshnosti-posle-otkaza/), 
 
 [«Восстановление здоровья: по системам»](/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/)
 
@@ -130,7 +130,7 @@ reading_time: "20"
 ## По теме
 
 - [Восстановление здоровья: что меняется по системам](/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/)  
-- [Восстановление внешности: кожа, волосы, глаза, зубы](/blog/privychki/vneshnost-posle-otkaza/)  
+- [Восстановление внешности: кожа, волосы, глаза, зубы](/blog/privychki/vosstanovlenie-vneshnosti-posle-otkaza/)  
 - [Что происходит после отказа: календарь](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
 
 ---
@@ -174,3 +174,4 @@ reading_time: "20"
 - Cochrane Library: Smoking cessation and periodontal health — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
