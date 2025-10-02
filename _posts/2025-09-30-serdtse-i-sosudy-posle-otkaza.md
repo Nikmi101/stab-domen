@@ -32,7 +32,7 @@ faq:
   - q: "Нужно ли специально «чистить сосуды» после отказа?"
     a: "Организм сам снижает фоновую нагрузку при отсутствии дыма. Любые «чудо-методы» не заменяют базовых вещей: устойчивого отказа от сигарет, достаточного сна, движения и наблюдения за своим состоянием."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "сердце и сосуды после отказа от курения"
   width: 1200
   height: 630
@@ -173,4 +173,5 @@ reading_time: "22"
 - CDC: Smoking and Heart Disease — [cdc.gov](https://www.cdc.gov)
 
 ---
+
 
