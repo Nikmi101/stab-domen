@@ -32,7 +32,7 @@ faq:
   - q: "Станет ли чувствительность к кофеину выше?"
     a: "У многих — да. Привычная доза может бодрить сильнее и мешать сну; часто помогает временно уменьшить употребление кофе и пить его раньше."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "обмен веществ после отказа от курения"
   width: 1200
   height: 630
@@ -196,4 +196,5 @@ reading_time: "23"
 - Cochrane Library: Smoking cessation and weight gain — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
