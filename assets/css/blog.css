@@ -723,10 +723,16 @@ html, body { overflow-x: hidden; }
   object-position: center;
 }
 
-/* --- Для десктопа меняем стратегию --- */
-@media (min-width: 1024px) {
-  .blog-header-banner img {
-    object-fit: contain;   /* не обрезать */
-    background-color: #111;/* фон под картинку */
+
+
+@media (min-width: 1025px) {
+  .blog-header-banner {
+    background-color: #111; /* тёмно-серая подложка */
+  }
+  .blog-header-banner img,
+  .blog-hero-img {
+    object-fit: contain !important;   /* перекрываем cover */
+    object-position: center !important;
+    background-color: #111;
   }
 }
