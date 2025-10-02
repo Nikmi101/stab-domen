@@ -97,7 +97,7 @@ reading_time: "24"
 
 **Что меняется после отказа.** Исчезает постоянный раздражитель: **кровоснабжение дёсен улучшается**, воспаление замедляется, дыхание становится **свежее**. Уже появившееся окрашивание эмали само не «испарится», но **новое пятнение прекращается**, и профессиональная чистка даёт более стойкий результат.
 
-🗂️ Развёрнутая инфо-статья: **«Ротовая полость: дёсны и зубы после отказа»** (/blog/privychki/rotovaya-polost-i-dyosny-posle-otkaza/).
+🗂️ Развёрнутая инфо-статья: [«Ротовая полость: дёсны и зубы после отказа»](/blog/privychki/rotovaya-polost-i-dyosny-posle-otkaza/).
 
 ---
 
@@ -177,3 +177,4 @@ reading_time: "24"
 - Cochrane Library: Smoking cessation and dermatological outcomes — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
