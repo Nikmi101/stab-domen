@@ -32,7 +32,7 @@ faq:
   - q: "Как не спутать «нормальную адаптацию» со скрытым воспалением?"
     a: "Краткие волны насморка/першения/утреннего кашля в первые недели — норма. Стойкие или нарастающие симптомы, выраженная слабость и лихорадка — к врачу."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "иммунитет после отказа от курения"
   width: 1200
   height: 630
@@ -178,4 +178,5 @@ reading_time: "20"
 - Cochrane Tobacco Addiction Group — [cochranelibrary.com](https://www.cochranelibrary.com/topic/tobacco-addiction)  
 
 ---
+
 
