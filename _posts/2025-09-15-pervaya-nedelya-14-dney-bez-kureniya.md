@@ -32,7 +32,7 @@ faq:
   - q: "Когда стоит обратиться к врачу в первые 1–2 недели?"
     a: "Если есть выраженная одышка, боль в груди, высокая температура, кровянистая мокрота, обмороки, неконтролируемая бессонница или обострение хронических заболеваний."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "первая неделя и 14 дней без сигарет"
   width: 1200
   height: 630
@@ -194,4 +194,5 @@ reading_time: "19"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
