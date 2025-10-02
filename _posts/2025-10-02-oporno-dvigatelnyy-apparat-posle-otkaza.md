@@ -82,7 +82,7 @@ reading_time: "21"
 
 **Костная ткань.** Условия для **ремоделирования костей** становятся благоприятнее (это длительный процесс). На повседневном уровне это ощущается как **устойчивость** к бытовым нагрузкам и меньшая «ломкость» самочувствия — при регулярном движении и питании.
 
-🧭 Смежно: [«Сердце и сосуды после отказа»](/blog/privychki/serdce-i-sosudy-posle-otkaza/), 
+🧭 Смежно: [«Сердце и сосуды после отказа»](/blog/privychki/serdtse-i-sosudy-posle-otkaza/), 
 [«Что происходит после отказа: календарь»](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
 
 <!--
@@ -137,7 +137,7 @@ reading_time: "21"
 ## По теме
 
 - [Восстановление здоровья: что меняется по системам](/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/)  
-- [Сердце и сосуды после отказа](/blog/privychki/serdce-i-sosudy-posle-otkaza/)
+- [Сердце и сосуды после отказа](/blog/privychki/serdtse-i-sosudy-posle-otkaza/)
 
 <!--
 - [Когда возвращается выносливость: таймлайн](/blog/privychki/vynoslivost-i-dyhanie-taymlayn/)  
@@ -184,3 +184,4 @@ reading_time: "21"
 - Cochrane Library: Smoking cessation and bone density — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
