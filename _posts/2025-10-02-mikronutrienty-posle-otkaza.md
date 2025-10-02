@@ -32,7 +32,7 @@ faq:
   - q: "Через сколько нормализуется статус микронутриентов после отказа?"
     a: "Зависит от стажа, питания, сна и сопутствующих факторов: ориентир — недели–месяцы; у части людей дольше."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "микронутриенты после отказа от курения"
   width: 1200
   height: 630
@@ -206,4 +206,5 @@ reading_time: "24"
 - Cochrane Library: Smoking and micronutrient metabolism — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
