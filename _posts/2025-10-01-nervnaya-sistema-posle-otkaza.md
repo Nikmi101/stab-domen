@@ -90,7 +90,7 @@ reading_time: "22"
 
 Полезно отслеживать **триггеры** (HALT: голод, злость, одиночество, усталость) — именно они часто запускают пики раздражительности и тягу.
 
-🧭 По теме: [«HALT: четыре лица тяги»](/blog/privychki/halt-chetyre-lica-tyagi/), 
+🧭 По теме: [«HALT: четыре лица тяги»](/blog/privychki/halt-chetyre-triggera/), 
 
 [«„Только одна“ и другие когнитивные ловушки»](/blog/privychki/lovushki-vozvrata-k-kureniyu/).
 
@@ -108,7 +108,7 @@ reading_time: "22"
 
 В адаптационный период **вегетативная нервная система** может давать: ощущение сердцебиения, «волны жара», потливость, **головные боли** или лёгкое головокружение. Эти явления чаще **умеренные и проходящие**. При стойких, выраженных или тревожащих симптомах — лучше обсудить с врачом.
 
-🧭 Смежно: [«Бросил курить — давление скачет: что норма, а что к врачу»](/blog/privychki/davlenie-posle-otkaza-ot-kureniya/), [«Головные боли и туман в голове после отказа»](/blog/privychki/golovnaya-bol-posle-otkaza/).
+🧭 Смежно: [«Бросил курить — давление скачет: что норма, а что к врачу»](/blog/privychki/davlenie-posle-otkaza-ot-kureniya/)
 
 ---
 
@@ -145,7 +145,7 @@ reading_time: "22"
 ## По теме (перелинковка к кластеру)
 
 - [Восстановление здоровья после отказа: по системам](/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/)  
-- [HALT: четыре лица тяги](/blog/privychki/halt-chetyre-lica-tyagi/)  
+- [HALT: четыре лица тяги](/blog/privychki/halt-chetyre-triggera/)  
 - [Дыхание вместо затяжки](/blog/privychki/dyhanie-vmesto-zatyazhki/)  
 - [Первые 72 часа без сигарет](/blog/privychki/pervye-72-chasa-bez-sigaret/)
 
@@ -190,3 +190,4 @@ reading_time: "22"
 - Cochrane Library: Nicotine withdrawal and neurocognitive effects — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
