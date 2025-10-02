@@ -29,7 +29,7 @@ faq:
   - q: "Стоит ли переходить на электронные сигареты?"
     a: "Нет. Это не избавляет от зависимости, а лишь меняет её форму."
 banner:
-  image: "https://vnutriapps.ru/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "бросить курить с поддержкой"
   width: 1200
   height: 630
@@ -238,6 +238,7 @@ permalink: "/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
