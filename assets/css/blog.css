@@ -531,7 +531,7 @@
 /* ===== Article Hero (clean) ===== */
 .blog-hero{
   width: 100%;
-  margin: 0 0 1.25rem;
+  margin: 0;
 }
 
 .blog-header-banner{
