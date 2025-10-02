@@ -31,7 +31,7 @@ faq:
   - q: "Изменится ли чувствительность к кофеину после отказа?"
     a: "Да, у многих чувствительность к кофеину повышается: привычная доза может бодрить сильнее и мешать сну. Часто помогает временно снизить кофе."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "нервная система после отказа от курения"
   width: 1200
   height: 630
@@ -190,4 +190,5 @@ reading_time: "22"
 - Cochrane Library: Nicotine withdrawal and neurocognitive effects — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
