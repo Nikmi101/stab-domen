@@ -32,7 +32,7 @@ faq:
   - q: "Пассивное курение влияет на онкориски?"
     a: "Да, воздействие «чужого» дыма тоже связано с повышением ряда рисков. После отказа важно по возможности формировать «чистые зоны» дома и на работе."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "онкориски после отказа от курения"
   width: 1200
   height: 630
@@ -171,6 +171,7 @@ reading_time: "23"
 - Cochrane Library: Smoking cessation and cancer prevention — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
