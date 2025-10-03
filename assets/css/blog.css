@@ -1,6 +1,6 @@
 /* ========== Общая обертка блога ========== */
 .blog-container {
-  max-width: 1000px;
+  max-width: 940px;
   margin: 0 auto;
   padding: 1rem 1rem;
   font-family: "Arial", sans-serif;
@@ -733,6 +733,6 @@ html, body { overflow-x: hidden; }
   .blog-hero-img {
     object-fit: contain !important;   /* перекрываем cover */
     object-position: center !important;
-    background-color: #111;
+    background-color: #252525;
   }
 }
