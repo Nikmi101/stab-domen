@@ -310,6 +310,17 @@ reading_time: "14"
 
 ---
 
+## Еще статьи по теме
+
+- [Календарь отказа от курения: изменения и опоры по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
+- [Первая неделя и первые 14 дней без сигарет: опоры, ошибки и моменты правды](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
+- [Никотиновая зависимость: мифы и правда](/blog/privychki/nikotinovaya-zavisimost/)
+- [Дыхание вместо затяжки: микропрактики на 1–3 минуты](/blog/privychki/dyhanie-vmesto-zatyazhki/)
+- [Восстановление здоровья: что меняется по системам](/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/)  
+- [«Только одна» и другие когнитивные ловушки, которые возвращают к курению](/blog/privychki/lovushki-vozvrata-k-kureniyu/)
+
+---
+
 ## FAQ: часто задаваемые вопросы про синдром отмены никотина
 
 **❓ Сколько обычно длится синдром отмены никотина?**  
@@ -346,6 +357,7 @@ reading_time: "14"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
