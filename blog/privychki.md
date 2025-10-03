@@ -4,7 +4,7 @@ title: "Vnutri Apps про образ жизни и внутренние изм�
 description: "Все статьи Vnutri Apps про привычки, здоровые изменения и личные ритуалы"
 categories: [privychki]
 banner:
-  image: "/images/blog-images/test-img.jpg"
+  image: "/images/blog-images/blog-header.webp"
   alt: "Статьи блог Vnutri Apps"
   title: "Статьи блог Vnutri Apps"
 ---
@@ -16,6 +16,7 @@ banner:
 {% for post in items %}
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d.%m.%Y" }}
 {% endfor %}
+
 
 
 
