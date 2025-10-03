@@ -11,7 +11,7 @@ layout: default
   {% assign _parts = _html | split: H1CLOSE %}
   {% if _parts.size > 1 %}
     {{ _parts[0] }}{{ H1CLOSE }}
-    {% include toc.html html=_html h_min=2 h_max=3 title="Содержание" class="toc" ordered="false" %}
+    {% include toc.html html=_html h_min=2 h_max=2 title="Содержание" class="toc" ordered="false" %}
     {{ _parts | slice: 1, _parts.size | join: H1CLOSE }}
   {% else %}
     {% include toc.html html=_html h_min=2 h_max=2 title="Содержание" class="toc" ordered="false" %}
@@ -20,4 +20,5 @@ layout: default
 {% else %}
   {{ _html }}
 {% endif %}
+
 
