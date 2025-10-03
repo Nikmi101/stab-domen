@@ -35,7 +35,8 @@ markdown: kramdown
 kramdown:
   input: GFM
   auto_ids: true         # ← Автоматические id у H1–H6
-  toc_levels: 2..3       # ← Оглавление строим по H2–H3 (можно 2..4)
+  toc_levels: 2..2       # ← Оглавление строим по H2–H3 (можно 2..4)
   parse_block_html: true # ← Корректный парсинг HTML-блоков в тексте
   hard_wrap: false
+
 
