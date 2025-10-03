@@ -246,7 +246,7 @@ reading_time: "14"
 👉 Этот план помогает прожить самые сложные 2 недели без срывов.  
 
 Отдельные статьи:
-[«Первые 72 часа без сигарет: как пройти самый тяжёлый отрезок»](/blog/privychki/pervye-72-chasa-bez-sigaret/)
+[«Первые 72 часа без сигарет: как пройти самый тяжёлый отрезок»](/blog/privychki/pervye-72-chasa-bez-sigaret/), 
 [«Первая неделя и первые 14 дней без сигарет: опоры, ошибки и моменты правды»](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/).
 
 ---
@@ -357,6 +357,7 @@ reading_time: "14"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
