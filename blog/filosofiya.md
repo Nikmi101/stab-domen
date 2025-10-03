@@ -4,7 +4,7 @@ title: "Vnutri Apps о философии, идеях, мыслях"
 description: "Все статьи Vnutri Apps про философию, размышления и психологические концепции"
 categories: [filosofiya]
 banner:
-  image: "/images/blog-images/test-img.jpg"
+  image: "/images/blog-images/blog-header.webp"
   alt: "Статьи блог Vnutri Apps"
   title: "Статьи блог Vnutri Apps"
 ---
@@ -15,6 +15,7 @@ banner:
 {% for post in items %}
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d.%m.%Y" }}
 {% endfor %}
+
 
 
 
