@@ -11,6 +11,38 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="icon" href="/images/favicon.png" type="image/png" sizes="32x32" />
+
+  {% for app in page.recommended_apps %}
+      {% case app %}
+        {% when "brosit_kurit" %}
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-kurilbrosil.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-kurilbrosil.png">
+    <link rel="icon" type="image/x-icon" href="/favicon-kurilbrosil.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-kurilbrosil.png">
+        {% when "trevoga" %}
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        {% when "odinochestvo" %}
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        {% when "tvorchestvo" %}
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      {% endcase %}
+    {% endfor %}
+  
+
+  <!-- Favicon -->
+    
+
+
+  
   <meta name="theme-color" content="#111111" />
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="alternate" type="application/rss+xml" title="Vnutri Apps" href="https://vnutriapps.ru/rss.xml">
@@ -320,4 +352,5 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
