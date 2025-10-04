@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-20
-dateUpdated: 2025-09-22
+dateUpdated: 2025-10-05
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/blog-header.webp
@@ -211,6 +211,7 @@ reading_time: "18"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
