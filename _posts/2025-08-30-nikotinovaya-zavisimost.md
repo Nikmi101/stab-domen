@@ -41,7 +41,7 @@ faq:
   - q: "Что делать, если снова сорвался?"
     a: "Не вините себя и не начинайте заново с чувством поражения. Проанализируйте, что стало причиной тяги, обновите план действий и продолжайте. Главное — не останавливаться: путь приведёт желаемому к результату."
 banner:
-  image: "/images/blog-images/kurenie-mify.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "Мифы и правда о никотиновой зависимости: почему бросить курить трудно"
   width: 1200
   height: 675
@@ -428,6 +428,7 @@ reading_time: "12"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
