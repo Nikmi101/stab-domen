@@ -81,7 +81,9 @@
 }
 </script>
 
-    <script type="application/ld+json">
+
+      <!-- JSON-LD: Хлебные крошки -->
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -89,14 +91,18 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Vnutri Apps",
-      "url": "https://vnutriapps.ru/"
+      "item": {
+        "@id": "https://vnutriapps.ru/",
+        "name": "Vnutri Apps"
+      }
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Соцсети Vnutri Apps",
-      "url": "https://vnutriapps.ru/links"
+      "item": {
+        "@id": "https://vnutriapps.ru/links",
+        "name": "Соцсети Vnutri Apps"
+      }
     }
   ]
 }
@@ -366,6 +372,7 @@
 
 </body>
 </html>
+
 
 
 
