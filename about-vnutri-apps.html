@@ -132,7 +132,8 @@
 }
 </script>
 
-<script type="application/ld+json">
+
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -140,14 +141,18 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Vnutri Apps",
-      "url": "https://vnutriapps.ru/"
+      "item": {
+        "@id": "https://vnutriapps.ru/",
+        "name": "Vnutri Apps"
+      }
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "О Vnutri Apps",
-      "url": "https://vnutriapps.ru/about-vnutri-apps"
+      "item": {
+        "@id": "https://vnutriapps.ru/about-vnutri-apps",
+        "name": "О проекте Vnutri Apps"
+      }
     }
   ]
 }
