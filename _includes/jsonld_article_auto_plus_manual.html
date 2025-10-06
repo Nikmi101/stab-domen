@@ -35,13 +35,20 @@
       "height": 192
     }
   },
-  "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+  "publisher": {
+    "@id": "https://vnutriapps.ru/#organization",
+    "@type": "Organization",
+    "name": "Vnutri Apps",
+    "url": "https://vnutriapps.ru/"
+  },
   {% if has_img > 0 %}
   "image": {
     "@type": "ImageObject",
     "url": "{{ img_url | absolute_url }}",
+    "contentUrl": "{{ img_url | absolute_url }}",
     "width": {{ img_w }},
-    "height": {{ img_h }}
+    "height": {{ img_h }},
+    "caption": {{ page.banner.title | default: page.title | jsonify }}
   },
   "thumbnailUrl": "{{ img_url | absolute_url }}",
   {% endif %}
