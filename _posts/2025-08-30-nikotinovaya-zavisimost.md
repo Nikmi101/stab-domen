@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-08-30
-dateUpdated: 2025-10-05
+dateUpdated: 2025-10-07
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/kurenie-mify.webp
@@ -50,6 +50,37 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/nikotinovaya-zavisimost/"
 reading_time: "12"
+sources:
+  - "@type": "CreativeWork"
+    name: "Минздрав РФ"
+    url: "https://minzdrav.gov.ru"
+  - "@type": "CreativeWork"
+    name: "Всемирная организация здравоохранения (ВОЗ): Tobacco Free Initiative & Neuroscience of Addiction"
+    url: "https://www.who.int/health-topics/tobacco"
+  - "@type": "CreativeWork"
+    name: "Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ)"
+    url: "https://nmic.ru"
+  - "@type": "CreativeWork"
+    name: "Centers for Disease Control and Prevention (CDC): Smoking Cessation — The Science of Addiction"
+    url: "https://www.cdc.gov/tobacco/quit_smoking"
+  - "@type": "CreativeWork"
+    name: "National Institute on Drug Abuse (NIDA): Nicotine Addiction and the Brain"
+    url: "https://nida.nih.gov/publications/research-reports/tobacco-nicotine-e-cigarettes"
+  - "@type": "CreativeWork"
+    name: "Национальный институт здоровья США (NIH): Neurobiological basis of nicotine dependence"
+    url: "https://www.nih.gov"
+  - "@type": "CreativeWork"
+    name: "Cochrane Library: Psychological and behavioral interventions for smoking cessation"
+    url: "https://www.cochranelibrary.com"
+  - "@type": "CreativeWork"
+    name: "American Psychological Association (APA): Cognitive biases and self-justification in addiction"
+    url: "https://www.apa.org"
+  - "@type": "CreativeWork"
+    name: "European Network for Smoking and Tobacco Prevention (ENSP): Evidence-based strategies for tobacco cessation"
+    url: "https://ensp.network"
+  - "@type": "CreativeWork"
+    name: "Национальный институт здравоохранения Великобритании (NHS): Stop smoking — understanding addiction"
+    url: "https://www.nhs.uk/live-well/quit-smoking/"
 ---
 
 # Никотиновая зависимость: мифы, правда и как освободиться от иллюзий курения
@@ -348,36 +379,36 @@ reading_time: "12"
 
 ## FAQ: часто задаваемые вопросы о никотиновой зависимости
 
-**❓ Почему бросить курить кажется таким трудным?**  
+### **Почему бросить курить кажется таким трудным?**  
 Никотин влияет на дофаминовую систему мозга — формируется химическая и психологическая зависимость.  
 Без привычной дозы мозг подаёт сигналы тревоги, и кажется, что без сигареты нельзя расслабиться.  
 Это временное ощущение, связанное с перестройкой нервной системы, а не с «отсутствием силы воли».  
 
-**❓ Правда ли, что бросить курить резко опасно?**  
+### **Правда ли, что бросить курить резко опасно?**  
 Нет. Для большинства людей резкий отказ безопасен и может быть даже эффективнее постепенного, если есть поддержка и чёткий план действий.  
 Исключение — наличие серьёзных хронических заболеваний (сердечно-сосудистых, дыхательных и др.): в этом случае важно наблюдать своё состояние у врача и обсуждать план отказа от курения со специалистом.  
 Опасно не бросить резко, а постоянно возвращаться к курению и усиливать зависимость.  
 
-**❓ Курение действительно помогает при стрессе?**  
+### **Курение действительно помогает при стрессе?**  
 Нет. Сигарета снимает только симптомы отмены никотина, а не сам стресс.  
 После короткого облегчения тревога возвращается, и мозг снова требует дозу — так формируется замкнутый круг зависимости.  
 
-**❓ Лёгкие сигареты менее вредны?**  
+### **Лёгкие сигареты менее вредны?**  
 Это миф. Курильщики компенсируют низкое содержание никотина более глубокими затяжками,  
 в результате получают ту же дозу и не меньше токсинов.  
 Риски для сердца, сосудов и лёгких не снижаются — они просто маскируются под условную «мягкость» сигарет.  
 
-**❓ Электронные сигареты помогают бросить?**  
+### **Электронные сигареты помогают бросить?**  
 Чаще всего нет. Они сохраняют зависимость от никотина и привычные ритуалы — рука, вдох, выдох, пауза.  
 Это не шаг к свободе, а просто смена формы той же зависимости.  
 
-**❓ Сколько попыток нужно, чтобы бросить окончательно?**  
+### **Сколько попыток нужно, чтобы бросить окончательно?**  
 В среднем — 6–8 попыток, но у каждого свой путь.  
 Иногда требуется больше, и это не провал.  
 Каждая попытка помогает лучше понять свои триггеры и укрепить стратегию.  
 Каждый шаг — часть пути к свободе от сигарет.  
 
-**❓ Что делать, если снова сорвался?**  
+### **Что делать, если снова сорвался?**  
 Не вините себя и не начинайте заново с чувством поражения.  
 Проанализируйте, что стало причиной тяги, обновите план действий и продолжайте.  
 Главное — не останавливаться: путь приведёт желаемому к результату.
@@ -420,14 +451,18 @@ reading_time: "12"
 ## Источники
 
 - Минздрав РФ — [minzdrav.gov.ru](https://minzdrav.gov.ru)  
-- Всемирная организация здравоохранения (ВОЗ) — [who.int](https://www.who.int)
+- Всемирная организация здравоохранения (ВОЗ): *Tobacco Free Initiative & Neuroscience of Addiction* — [who.int](https://www.who.int/health-topics/tobacco)  
 - Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ) — [nmic.ru](https://nmic.ru)  
-- Centers for Disease Control and Prevention (CDC) — [cdc.gov](https://www.cdc.gov)  
-- Национальный институт здоровья США (NIH) — [nih.gov](https://www.nih.gov)  
-- Клинические рекомендации РКО и НМИЦ кардиологии по профилактике и лечению заболеваний, связанных с курением  
-- Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
+- Centers for Disease Control and Prevention (CDC): *Smoking Cessation — The Science of Addiction* — [cdc.gov/tobacco/quit_smoking](https://www.cdc.gov/tobacco/quit_smoking)  
+- National Institute on Drug Abuse (NIDA): *Nicotine Addiction and the Brain* — [nida.nih.gov](https://nida.nih.gov/publications/research-reports/tobacco-nicotine-e-cigarettes)  
+- Национальный институт здоровья США (NIH): *Neurobiological basis of nicotine dependence* — [nih.gov](https://www.nih.gov)  
+- Cochrane Library: *Psychological and behavioral interventions for smoking cessation* — [cochranelibrary.com](https://www.cochranelibrary.com)  
+- American Psychological Association (APA): *Cognitive biases and self-justification in addiction* — [apa.org](https://www.apa.org)  
+- European Network for Smoking and Tobacco Prevention (ENSP): *Evidence-based strategies for tobacco cessation* — [ensp.network](https://ensp.network)  
+- Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — understanding addiction* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
