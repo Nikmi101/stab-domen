@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-02
-dateUpdated: 2025-10-04
+dateUpdated: 2025-10-07
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/sindrom-otmeny.webp
@@ -48,6 +48,37 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/sindrom-otmeny-nikotina/"
 reading_time: "14"
+sources:
+  - "@type": "CreativeWork"
+    name: "Минздрав РФ"
+    url: "https://minzdrav.gov.ru"
+  - "@type": "CreativeWork"
+    name: "Всемирная организация здравоохранения (ВОЗ): Tobacco Free Initiative — Managing nicotine withdrawal and cessation symptoms"
+    url: "https://www.who.int/health-topics/tobacco"
+  - "@type": "CreativeWork"
+    name: "Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ)"
+    url: "https://nmic.ru"
+  - "@type": "CreativeWork"
+    name: "Centers for Disease Control and Prevention (CDC): Managing nicotine withdrawal and coping with cravings"
+    url: "https://www.cdc.gov/tobacco/quit_smoking"
+  - "@type": "CreativeWork"
+    name: "National Institute on Drug Abuse (NIDA): Withdrawal symptoms and recovery timeline after quitting smoking"
+    url: "https://nida.nih.gov/publications/research-reports/tobacco-nicotine-e-cigarettes"
+  - "@type": "CreativeWork"
+    name: "Национальный институт здоровья США (NIH): Neuroadaptation and nicotine withdrawal syndrome"
+    url: "https://www.nih.gov"
+  - "@type": "CreativeWork"
+    name: "Cochrane Library: Pharmacologic and behavioral interventions for managing nicotine withdrawal"
+    url: "https://www.cochranelibrary.com"
+  - "@type": "CreativeWork"
+    name: "American Psychological Association (APA): Coping strategies and behavioral support during nicotine withdrawal"
+    url: "https://www.apa.org"
+  - "@type": "CreativeWork"
+    name: "European Network for Smoking and Tobacco Prevention (ENSP): Guidelines for nicotine withdrawal management"
+    url: "https://ensp.network"
+  - "@type": "CreativeWork"
+    name: "Национальный институт здравоохранения Великобритании (NHS): Stop smoking — withdrawal symptoms and how to cope"
+    url: "https://www.nhs.uk/live-well/quit-smoking/"
 ---
 
 # Как работает синдром отмены: что ждёт после отказа от сигарет
@@ -323,25 +354,25 @@ reading_time: "14"
 
 ## FAQ: часто задаваемые вопросы про синдром отмены никотина
 
-**❓ Сколько обычно длится синдром отмены никотина?**  
+### **Сколько обычно длится синдром отмены никотина?**  
 Обычно остро ощущается 3–5 дней, заметно ощущается 1–2 недели, затем идёт спад; психологические триггеры могут всплывать до 1–3 месяцев.
 
-**❓ Какие симптомы синдрома отмены никотина самые частые?**  
+### **Какие симптомы синдрома отмены никотина самые частые?**  
 Раздражительность, тревога, нарушение сна, трудности с концентрацией, тяга к сигаретам, повышенный аппетит.
 
-**❓ Что помогает прямо в момент тяги к сигаретам?**  
+### **Что помогает прямо в момент тяги к сигаретам?**  
 Правило 90 секунд + дыхание 4-4-4-4, стакан воды, короткая прогулка/ходьба, осознанное переключение внимания.
 
-**❓ Стоит ли на время отказаться от алкоголя?**  
+### **Стоит ли на время отказаться от алкоголя?**  
 Да, лучше ограничить алкоголь минимум на 3–4 недели: алкоголь часто провоцирует срывы.
 
-**❓ Когда обращаться к врачу?**  
+### **Когда обращаться к врачу?**  
 Если срывы и возвраты к курению повторяются, симптомы сильно мешают жить или есть хронические заболевания сердца/лёгких, тревога/депрессия.
 
-**❓ Как пережить первые дни без сигарет?**  
+### **Как пережить первые дни без сигарет?**  
 Подготовьте для себя четкий план: вода, дыхание, соберите и зафиксируйте для себя готовые фразы отказа от курения, заранее постарайтесь наладить режим сна. Держите под рукой жвачку без сахара или орехи вместо сигарет.
 
-**❓ Чем заменить сигареты?**  
+### **Чем заменить сигареты?**  
 Жвачка без сахара, орехи (в меру), яблоки (в меру), эспандер или мяч-антистресс, короткая прогулка, дыхательные практики.
 
 ---
@@ -349,14 +380,18 @@ reading_time: "14"
 ## Источники
 
 - Минздрав РФ — [minzdrav.gov.ru](https://minzdrav.gov.ru)  
-- Всемирная организация здравоохранения (ВОЗ) — [who.int](https://www.who.int)
+- Всемирная организация здравоохранения (ВОЗ): *Tobacco Free Initiative — Managing nicotine withdrawal and cessation symptoms* — [who.int](https://www.who.int/health-topics/tobacco)  
 - Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ) — [nmic.ru](https://nmic.ru)  
-- Centers for Disease Control and Prevention (CDC) — [cdc.gov](https://www.cdc.gov)  
-- Национальный институт здоровья США (NIH) — [nih.gov](https://www.nih.gov)  
-- Клинические рекомендации РКО и НМИЦ кардиологии по профилактике и лечению заболеваний, связанных с курением  
-- Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
+- Centers for Disease Control and Prevention (CDC): *Managing nicotine withdrawal and coping with cravings* — [cdc.gov/tobacco/quit_smoking](https://www.cdc.gov/tobacco/quit_smoking)  
+- National Institute on Drug Abuse (NIDA): *Withdrawal symptoms and recovery timeline after quitting smoking* — [nida.nih.gov](https://nida.nih.gov/publications/research-reports/tobacco-nicotine-e-cigarettes)  
+- Национальный институт здоровья США (NIH): *Neuroadaptation and nicotine withdrawal syndrome* — [nih.gov](https://www.nih.gov)  
+- Cochrane Library: *Pharmacologic and behavioral interventions for managing nicotine withdrawal* — [cochranelibrary.com](https://www.cochranelibrary.com)  
+- American Psychological Association (APA): *Coping strategies and behavioral support during nicotine withdrawal* — [apa.org](https://www.apa.org)  
+- European Network for Smoking and Tobacco Prevention (ENSP): *Guidelines for nicotine withdrawal management* — [ensp.network](https://ensp.network)  
+- Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — withdrawal symptoms and how to cope* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
