@@ -8,7 +8,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-04
-dateUpdated: 2025-10-03
+dateUpdated: 2025-10-07
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/replacing-addiction.webp
@@ -46,6 +46,34 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/pochemu-zamena-odnoj-zavisimosti-drugoj-ne-reshaet-problemu/"
 reading_time: "14"
+sources:
+  - "@type": "CreativeWork"
+    name: "Минздрав РФ"
+    url: "https://minzdrav.gov.ru"
+  - "@type": "CreativeWork"
+    name: "Всемирная организация здравоохранения (ВОЗ): Tobacco Free Initiative & Noncommunicable diseases — addictions and behavior"
+    url: "https://www.who.int/health-topics/tobacco"
+  - "@type": "CreativeWork"
+    name: "Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ)"
+    url: "https://nmic.ru"
+  - "@type": "CreativeWork"
+    name: "Centers for Disease Control and Prevention (CDC): Smoking Cessation and Behavior Change"
+    url: "https://www.cdc.gov/tobacco/quit_smoking"
+  - "@type": "CreativeWork"
+    name: "Национальный институт здоровья США (NIH): Behavioral and cross-addiction mechanisms after nicotine withdrawal"
+    url: "https://www.nih.gov"
+  - "@type": "CreativeWork"
+    name: "Cochrane Library: Substitution behaviors and relapse prevention in smoking cessation"
+    url: "https://www.cochranelibrary.com"
+  - "@type": "CreativeWork"
+    name: "American Psychological Association (APA): Transfer of addictions and behavioral compensation after quitting smoking"
+    url: "https://www.apa.org"
+  - "@type": "CreativeWork"
+    name: "European Network for Smoking and Tobacco Prevention (ENSP): Managing behavioral replacement and relapse risks"
+    url: "https://ensp.network"
+  - "@type": "CreativeWork"
+    name: "Национальный институт здравоохранения Великобритании (NHS): Healthy substitutions and post-cessation behavior"
+    url: "https://www.nhs.uk/live-well/quit-smoking/"
 ---
 
 # Почему замена одной зависимости другой не помогает бросить курить
@@ -259,21 +287,25 @@ reading_time: "14"
 
 ---
 
-## FAQ: часто задаваемые вопросы
+## FAQ: часто задаваемые вопросы по отказу от никотиновой зависимости
 
-**❓ Почему после отказа от сигарет тянет на сладкое?**  
+### **Почему после отказа от сигарет тянет на сладкое?**  
 Мозг ищет быстрый дофамин-перенос: сахар временно снижает напряжение, но закрепляет новую зависимость.
 
-**❓ Нормально ли заменить курение спортом?**  
+
+### **Нормально ли заменить курение спортом?**  
 Да, если спорт дозирован, управляем и не вводит в уныние. Критерии — контроль, гибкость, польза, удовольствие.
 
-**❓ Поможет ли кофе вместо сигареты?**  
+
+### **Поможет ли кофе вместо сигареты?**  
 Кофеин может усилить тревожность и тягу. Лучше временно снизить потребление кофе, постараться хотя бы частично заменять кофе водой, дыханием и короткими прогулками.
 
-**❓ Стоит ли временно исключить алкоголь?**  
+
+### **Стоит ли временно исключить алкоголь?**  
 Да. На 3–4 недели лучше избегать алкоголя — это очень сильно помогает, резко снижает риск срыва.
 
-**❓ Как понять, что появилась новая зависимость?**  
+
+### **Как понять, что появилась новая зависимость?**  
 Рост дозы, потеря контроля, чувство вины, игнорирование важного, срыв настроения при ограничении.
 
 ---
@@ -281,12 +313,15 @@ reading_time: "14"
 ## Источники
 
 - Минздрав РФ — [minzdrav.gov.ru](https://minzdrav.gov.ru)  
-- Всемирная организация здравоохранения (ВОЗ) — [who.int](https://www.who.int)
+- Всемирная организация здравоохранения (ВОЗ): *Tobacco Free Initiative & Noncommunicable diseases — addictions and behavior* — [who.int](https://www.who.int/health-topics/tobacco)  
 - Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ) — [nmic.ru](https://nmic.ru)  
-- Centers for Disease Control and Prevention (CDC) — [cdc.gov](https://www.cdc.gov)  
-- Национальный институт здоровья США (NIH) — [nih.gov](https://www.nih.gov)  
-- Клинические рекомендации РКО и НМИЦ кардиологии по профилактике и лечению заболеваний, связанных с курением  
-- Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
+- Centers for Disease Control and Prevention (CDC): *Smoking Cessation and Behavior Change* — [cdc.gov/tobacco/quit_smoking](https://www.cdc.gov/tobacco/quit_smoking)  
+- Национальный институт здоровья США (NIH): *Behavioral and cross-addiction mechanisms after nicotine withdrawal* — [nih.gov](https://www.nih.gov)  
+- Cochrane Library: *Substitution behaviors and relapse prevention in smoking cessation* — [cochranelibrary.com](https://www.cochranelibrary.com)  
+- American Psychological Association (APA): *Transfer of addictions and behavioral compensation after quitting smoking* — [apa.org](https://www.apa.org)  
+- European Network for Smoking and Tobacco Prevention (ENSP): *Managing behavioral replacement and relapse risks* — [ensp.network](https://ensp.network)  
+- Национальный институт здравоохранения Великобритании (NHS): *Healthy substitutions and post-cessation behavior* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
