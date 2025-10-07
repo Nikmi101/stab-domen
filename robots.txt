@@ -5,6 +5,8 @@ Disallow: /tmp/
 
 Allow: /
 
+
 Sitemap: https://vnutriapps.ru/sitemap.xml
+Sitemap: https://vnutriapps.ru/sitemap-brosit-kurit.xml
 Host: https://vnutriapps.ru
 
