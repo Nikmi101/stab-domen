@@ -63,5 +63,16 @@
   "keywords": [{% for tag in page.tags %}{{ tag | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.faq and page.faq.size > 0 %},
   "hasPart": { "@id": "{{ page.url | absolute_url }}#faq" }{% endif %}{% if page.sources and page.sources.size > 0 %},
   "citation": [{% for s in page.sources %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}
+
+  {% comment %} --- ДОБАВЛЕНО: автоматический блок "about" и действие "ReadAction" --- {% endcomment %}
+  {% if page.about %}
+  , "about": [{% for a in page.about %}{{ a | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
+  {% elsif page.keywords and page.keywords.size > 0 %}
+  , "about": [{% for k in page.keywords %}{{ k | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
+  {% endif %}
+  , "potentialAction": {
+      "@type": "ReadAction",
+      "target": "{{ page.url | absolute_url }}"
+    }
 }
 </script>
