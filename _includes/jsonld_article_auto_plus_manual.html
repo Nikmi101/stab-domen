@@ -56,7 +56,7 @@
   "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
   "datePublished": "{{ page.date | date_to_xmlschema }}"{% if page.dateUpdated %},
   "dateModified": "{{ page.dateUpdated | date_to_xmlschema }}"{% endif %},
-  "articleBody": {{ page.content | strip_html | strip_newlines | jsonify }},
+  "articleBody": {{ page.content | strip_html | truncate: 2000 | strip_newlines | jsonify }},
   "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }}{% if page.articleSection or page.tema %},
   "articleSection": {{ page.articleSection | default: page.tema | jsonify }}{% endif %},
   "wordCount": {{ page.content | strip_html | strip_newlines | split: " " | size }}{% if page.tags and page.tags.size > 0 %},
