@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Онкориски после отказа от курения: как снижается риск рака со временем"
 description: "Информационная статья: как курение повышает онкологические риски и что обычно происходит с риском рака после отказа. Горизонты по времени, факторы, которые ускоряют пользу отказа от сигарет."
 author:
@@ -171,6 +172,7 @@ reading_time: "23"
 - Cochrane Library: Smoking cessation and cancer prevention — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
