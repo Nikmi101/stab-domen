@@ -28,9 +28,17 @@
  
 
     <!-- Стили -->
+	<!-- Font Awesome (быстрое подключение, не блокирует рендеринг) -->
+<link rel="preload" href="assets/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/font-awesome.min.css"></noscript>
+
+<!-- Google Fonts (с display=swap для мгновенного текста) -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
+
+<!-- Основной стиль -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/mobile.css" />
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
 
     <!-- Верификация Дзен -->
     <meta name="zen-verification" content="0eyCYbjLnbKtUW6gvBL4Kzip1SnqHc2BxwZ5D4SdwwvsitNhgxNQncYhuwF8vkzz">
