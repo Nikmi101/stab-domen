@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Как бросить электронную сигарету (вейп) без срывов"
 description: "Пошаговый план отказа от вейпа и электронных сигарет: как работает зависимость, что ждать в первые недели, чем заменить ритуалы и как снизить риск срыва."
 author:
@@ -229,6 +230,7 @@ reading_time: "20"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
