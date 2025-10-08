@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Нервная система после отказа от курения: внимание, сон и «туман»"
 description: "Информационный обзор: как никотин влияет на нервную систему и что обычно меняется после отказа. Концентрация и память, раздражительность и настроение, сон и вегетативные реакции — аккуратные ориентиры по времени."
 author:
@@ -190,5 +191,6 @@ reading_time: "22"
 - Cochrane Library: Nicotine withdrawal and neurocognitive effects — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
