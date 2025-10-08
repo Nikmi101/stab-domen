@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Восстановление внешности после отказа от курения: кожа, волосы, глаза, зубы"
 description: "Информационный обзор: как курение влияет на внешность и что обычно меняется после отказа. Кожа и цвет лица, волосы и глаза, зубы и дёсны, запах одежды и дыхания — примерные сроки и ориентиры."
 author:
@@ -177,6 +178,7 @@ reading_time: "24"
 - Cochrane Library: Smoking cessation and dermatological outcomes — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
