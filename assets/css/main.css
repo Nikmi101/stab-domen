@@ -7,3 +7,29 @@
   font-family: 'Font Awesome 5 Brands';
   font-display: swap;
 }
+.icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.icons li a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor; /* позволяет наследовать цвет текста */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icons a:hover .icon-svg {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
