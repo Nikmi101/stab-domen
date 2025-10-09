@@ -9,39 +9,68 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-26
-dateUpdated: 2025-09-30
-articleSection: "Бросить курить с поддержкой"
+dateUpdated: 2025-10-09
+articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/blog-header.webp
-tema: "Триггеры тяги: HALT"
+tema: "Бросить курить"
 categories: [privychki]
 tags:
   - HALT курение
+  - причины тяги к сигаретам
+  - психология зависимости
   - триггеры курения
-  - как распознать тягу
   - голод злость одиночество усталость
-  - дневник триггеров
+  - дневник триггеров курения
+  - осознанность при отказе от курения
+  - эмоциональные причины курения
+  - синдром отмены никаотина и эмоции
 faq:
   - q: "Что такое HALT и как это связано с тягой к сигарете?"
-    a: "HALT — акроним четырёх состояний, усиливающих тягу: Hunger (голод), Anger (злость), Loneliness (одиночество), Tiredness (усталость). Когда одно из них включается, мозг ищет быстрое и простое «решение» — привычную сигарету."
-  - q: "Как быстро понять, какая «часть HALT» включилась?"
-    a: "Задайте себе 4 вопроса: Я ел(а)? Я злюсь? Я один(одна)? Я устал(а)? Ответ «да» на любой — подсказка, что нужна не сигарета, а внимание к базовой потребности."
-  - q: "Что делать в моменте, когда тяга накрыла?"
-    a: "Стоп на 90 секунд, 2–5 минут дыхания 4–6, стакан воды, короткое движение. Затем целенаправленный шаг по нужной «грани» HALT: перекус, разговор, пауза, отдых."
-  - q: "Зачем вести дневник триггеров?"
-    a: "Повторяющиеся сцены становятся заметны на бумаге: время, место, чувство, действие. Видя паттерн, легче поставить защиту заранее."
-  - q: "Можно ли закрывать несколько «граней» HALT сразу?"
-    a: "Да. Часто смешаны усталость и голод, злость и одиночество. Помогает последовательность: вода → дыхание → базовый перекус/движение → контакт."
+    a: "HALT — акроним четырёх состояний, усиливающих тягу: Hunger (голод), Anger (злость), Loneliness (одиночество) и Tiredness (усталость). Когда одна из этих базовых потребностей не удовлетворена, мозг ищет быстрое «облегчение» — привычную сигарету."
+  - q: "Как понять, какая «часть HALT» включилась именно у меня?"
+    a: "Задайте себе 4 вопроса: Я ел(а)? Я злюсь? Я один(одна)? Я устал(а)? Ответ «да» на любой — подсказка, что тяга к сигарете прикрывает неудовлетворённую потребность, а не физическую зависимость."
+  - q: "Что делать, если тяга уже накрыла?"
+    a: "Пауза 90 секунд: стакан воды, 2–5 минут дыхания 4–6, короткое движение. Затем шаг по нужной «грани» HALT — перекус, разговор, отдых или пауза перед ответом."
+  - q: "Зачем вести дневник триггеров и эмоций?"
+    a: "Повторяющиеся сцены виднее на бумаге: время, место, чувство, реакция. Это помогает распознать закономерности и заранее ставить «защиту» в слабых местах."
+  - q: "Можно ли закрывать несколько граней HALT сразу?"
+    a: "Да. Часто сочетаются усталость и голод, злость и одиночество. Работает последовательность: вода → дыхание → базовый перекус или движение → контакт с человеком."
 banner:
   image: "/images/blog-images/blog-header-kurilbrosil.webp"
-  alt: "четыре лица тяги HALT"
+  alt: "HALT и тяга к курению"
   width: 1200
   height: 630
-  title: "HALT и тяга к курению"
+  title: "HALT: четыре лица тяги — голод, злость, одиночество, усталость"
 recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/halt-chetyre-triggera/"
 reading_time: "20"
+sources:
+  - "@type": "CreativeWork"
+    name: "Минздрав РФ"
+    url: "https://minzdrav.gov.ru"
+  - "@type": "CreativeWork"
+    name: "Всемирная организация здравоохранения (ВОЗ): Behavioral and emotional triggers in tobacco dependence"
+    url: "https://www.who.int/health-topics/tobacco"
+  - "@type": "CreativeWork"
+    name: "Centers for Disease Control and Prevention (CDC): Managing emotional triggers during smoking cessation"
+    url: "https://www.cdc.gov/tobacco/quit_smoking"
+  - "@type": "CreativeWork"
+    name: "National Institutes of Health (NIH): Stress, emotion and craving mechanisms in nicotine dependence"
+    url: "https://www.nih.gov"
+  - "@type": "CreativeWork"
+    name: "Cochrane Library: Psychological interventions for emotion-driven smoking and relapse prevention"
+    url: "https://www.cochranelibrary.com"
+  - "@type": "CreativeWork"
+    name: "American Psychological Association (APA): HALT model and emotional regulation in addiction recovery"
+    url: "https://www.apa.org"
+  - "@type": "CreativeWork"
+    name: "European Network for Smoking and Tobacco Prevention (ENSP): Recognizing stress and emotional triggers during cessation"
+    url: "https://ensp.network"
+  - "@type": "CreativeWork"
+    name: "Национальный институт здравоохранения Великобритании (NHS): Managing emotional triggers and habits after quitting smoking"
+    url: "https://www.nhs.uk/live-well/quit-smoking/"
 ---
 
 # HALT: четыре лица тяги — голод, злость, одиночество, усталость
@@ -185,19 +214,43 @@ HALT — простой способ видеть за тягой **живую �
 
 ## FAQ: часто задаваемые вопросы
 
-**❓ Что такое HALT и как это связано с тягой к сигарете?**  
-HALT — акроним четырёх состояний, усиливающих тягу: Hunger (голод), Anger (злость), Loneliness (одиночество), Tiredness (усталость). Когда одно из них включается, мозг ищет быстрое и простое «решение» — привычную сигарету.
+### **Что такое HALT и как это связано с тягой к сигарете?**  
+HALT — акроним четырёх состояний, усиливающих тягу: Hunger (голод), Anger (злость),  
+Loneliness (одиночество) и Tiredness (усталость).  
+Когда одна из этих базовых потребностей не удовлетворена, мозг ищет быстрое  
+«облегчение» — привычную сигарету.
 
-**❓ Как быстро понять, какая «часть HALT» включилась?**  
-Задайте себе 4 вопроса: Я ел(а)? Я злюсь? Я один(одна)? Я устал(а)? Ответ «да» на любой — подсказка, что нужна не сигарета, а внимание к базовой потребности.
+### **Как понять, какая «часть HALT» включилась именно у меня?**  
+Задайте себе 4 вопроса: Я ел(а)? Я злюсь? Я один(одна)? Я устал(а)?  
+Ответ «да» на любой — подсказка, что тяга к сигарете прикрывает неудовлетворённую потребность,  
+а не физическую зависимость.
 
-**❓ Что делать в моменте, когда тяга накрыла?**  
-Стоп на 90 секунд, 2–5 минут дыхания 4–6, стакан воды, короткое движение. Затем целенаправленный шаг по нужной «грани» HALT: перекус, разговор, пауза, отдых.
+### **Что делать, если тяга уже накрыла?**  
+Пауза 90 секунд: стакан воды, 2–5 минут дыхания 4–6, короткое движение.  
+Затем шаг по нужной «грани» HALT — перекус, разговор, отдых или пауза перед ответом.
 
-**❓ Зачем вести дневник триггеров?**  
-Повторяющиеся сцены становятся заметны на бумаге: время, место, чувство, действие. Видя паттерн, легче поставить защиту заранее.
+### **Зачем вести дневник триггеров и эмоций?**  
+Повторяющиеся сцены виднее на бумаге: время, место, чувство, реакция.  
+Это помогает распознать закономерности и заранее ставить «защиту» в слабых местах.
 
-**❓ Можно ли закрывать несколько «граней» HALT сразу?**  
-Да. Часто смешаны усталость и голод, злость и одиночество. Помогает последовательность: вода → дыхание → базовый перекус/движение → контакт.
+### **Можно ли закрывать несколько граней HALT сразу?**  
+Да. Часто сочетаются усталость и голод, злость и одиночество.  
+Работает последовательность: вода → дыхание → базовый перекус или движение → контакт с человеком.
+
+---
+
+## Источники
+
+- Минздрав РФ — [minzdrav.gov.ru](https://minzdrav.gov.ru)  
+- Всемирная организация здравоохранения (ВОЗ): *Behavioral and emotional triggers in tobacco dependence* — [who.int](https://www.who.int/health-topics/tobacco)  
+- Centers for Disease Control and Prevention (CDC): *Managing emotional triggers during smoking cessation* — [cdc.gov/tobacco/quit_smoking](https://www.cdc.gov/tobacco/quit_smoking)  
+- National Institutes of Health (NIH): *Stress, emotion and craving mechanisms in nicotine dependence* — [nih.gov](https://www.nih.gov)  
+- Cochrane Library: *Psychological interventions for emotion-driven smoking and relapse prevention* — [cochranelibrary.com](https://www.cochranelibrary.com)  
+- American Psychological Association (APA): *HALT model and emotional regulation in addiction recovery* — [apa.org](https://www.apa.org)  
+- European Network for Smoking and Tobacco Prevention (ENSP): *Recognizing stress and emotional triggers during cessation* — [ensp.network](https://ensp.network)  
+- Национальный институт здравоохранения Великобритании (NHS): *Managing emotional triggers and habits after quitting smoking* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
+
+---
+
 
 
