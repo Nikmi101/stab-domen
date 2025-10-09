@@ -7,29 +7,45 @@
   font-family: 'Font Awesome 5 Brands';
   font-display: swap;
 }
+/* Контейнер иконок */
 .icons {
   list-style: none;
-  padding: 0;
   display: flex;
-  gap: 1rem;
   justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 1.5rem 0;
 }
 
+/* Ссылки вокруг иконок */
 .icons li a {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
-  color: inherit;
+  color: #d3d3d3; /* базовый светло-серый */
+  transition: color 0.25s ease;
 }
 
+/* SVG сами по себе */
 .icon-svg {
-  width: 24px;
-  height: 24px;
-  fill: currentColor; /* позволяет наследовать цвет текста */
+  width: 26px;
+  height: 26px;
+  fill: currentColor; /* цвет наследуется от ссылки */
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.icons a:hover .icon-svg {
-  transform: scale(1.1);
-  opacity: 0.8;
+/* При наведении: чуть ярче и эффект свечения */
+.icons li a:hover {
+  color: #ffffff;
+}
+.icons li a:hover .icon-svg {
+  transform: scale(1.12);
+  opacity: 0.9;
+}
+
+/* Подписи (если хочешь оставить — можно скрыть) */
+.icons .label {
+  position: absolute;
+  left: -9999px;
 }
