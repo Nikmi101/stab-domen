@@ -43,20 +43,30 @@
   left: -9999px;
 }
 
+/* Иконка меню */
 .menu-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: #d3d3d3;
   transition: color 0.25s ease;
+  padding: 0.5rem;
 }
-.menu-icon:hover {
-  color: #ffffff;
-}
+
+/* Сам SVG */
 .menu-icon .icon-svg {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
+
+/* Наведение — свечение и плавное увеличение */
+.menu-icon:hover {
+  color: #ffffff;
+}
+
 .menu-icon:hover .icon-svg {
-  transform: scale(1.1);
+  transform: scale(1.12);
   opacity: 0.9;
 }
