@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "IQOS, glo и стики: как отказаться, если ритуал сильнее никотина"
 description: "План отказа от IQOS: как работает зависимость от нагреваемого табака, чем она отличается от сигарет/вейпа, что делать с ритуалами и как пройти первые недели без срывов."
 author:
@@ -230,6 +231,7 @@ reading_time: "20"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
