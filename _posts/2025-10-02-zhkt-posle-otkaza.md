@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "ЖКТ и пищеварение после отказа от курения: слизистые, кислотность, микробиота"
 description: "Информационный обзор: как курение влияет на желудочно-кишечный тракт (слизистая, кислотность, моторика, микробиота) и что обычно меняется после отказа. Ориентиры по времени и когда уместна консультация врача."
 author:
@@ -169,6 +170,7 @@ reading_time: "22"
 - Cochrane Library: Smoking cessation and gut health — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
