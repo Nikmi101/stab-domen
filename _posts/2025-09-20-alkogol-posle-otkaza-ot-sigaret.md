@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "Алкоголь после отказа от сигарет: ловушки и как их обойти"
 description: "Почему алкоголь повышает риск срыва после отказа от курения. Уязвимые сценарии, поведенческие стратегии, скрипты для общения и 30-дневный план безопасных решений."
 author:
@@ -221,6 +222,7 @@ reading_time: "18"
 - Национальный институт здравоохранения Великобритании (NHS): *Alcohol and relapse risk during smoking cessation* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
