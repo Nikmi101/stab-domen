@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "10 привычек, мешающих бросить курить: главные триггеры и как их заменить"
 description: "Почему привычки мешают бросить курить: 10 поведенческих триггеров, которые удерживают зависимость, и конкретные шаги, как заменить их на здоровые ритуалы без срывов."
 author:
@@ -658,6 +659,7 @@ sources:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking support and habit change techniques* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
