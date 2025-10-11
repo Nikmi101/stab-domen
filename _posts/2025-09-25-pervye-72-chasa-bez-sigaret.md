@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "Первые 72 часа без сигарет: синдром отмены, волны тяги и как пережить без срывов"
 description: "Симптомы синдрома отмены никотина и волны тяги в первые 72 часа после отказа от сигарет. Подробный план, что помогает, как пережить кризис и не сорваться."
 author:
@@ -399,5 +400,6 @@ sources:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — withdrawal symptoms and how to cope* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
