@@ -28,6 +28,7 @@ permalink: /rss.xml
     {%- endfor -%}
     {%- assign max_ts = dates | sort | last | plus: 0 -%}
     <lastBuildDate>{{ max_ts | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+    <atom:updated>{{ max_ts | date_to_xmlschema }}</atom:updated>
 
     <language>ru-RU</language>
     <ttl>60</ttl>
@@ -40,10 +41,18 @@ permalink: /rss.xml
       <height>144</height>
     </image>
 
+    <atom:icon>{{ site.url }}/images/vnutri-logo-feed-144.png</atom:icon>
+    <atom:logo>{{ site.url }}/images/vnutri-logo-feed-512.png</atom:logo>
+
     {%- if site.email -%}<managingEditor>{{ site.email }}</managingEditor>{%- endif -%}
     {%- if site.email -%}<webMaster>{{ site.email }}</webMaster>{%- endif -%}
     <generator>Jekyll</generator>
+    <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     <copyright>© {{ site.time | date: "%Y" }} Vnutri Apps. Все права защищены.</copyright>
+    <dc:rights>© {{ site.time | date: "%Y" }} Vnutri Apps. Все права защищены.</dc:rights>
+    <dc:publisher>Vnutri Apps</dc:publisher>
+    <dc:language>ru</dc:language>
+    <category>Психология, привычки, отказ от курения</category>
 
     {%- assign posts = posts_all | limit: 50 -%}
     {%- for post in posts -%}
