@@ -8,6 +8,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
+ready: yes
 date: 2025-08-26
 dateUpdated: 2025-09-22
 articleSection: "Привычки и изменения"
@@ -163,6 +164,7 @@ permalink: "/blog/privychki/psihologiya-zavisimosti/"
 👉 Приложение **[«Курил-бросил»](/brosit-kurit)** создано именно для этого. Оно помогает шаг за шагом двигаться от зависимости к свободе, фиксировать прогресс и находить новые источники мотивации.
 
 ---
+
 
 
 
