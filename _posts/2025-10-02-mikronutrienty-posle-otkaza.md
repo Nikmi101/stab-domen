@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "Микронутриенты после отказа от курения: витамины и минералы без мифов"
 description: "Информационный обзор: как курение связано со статусом витаминов и минералов (витамин C, фолаты, витамины группы B, витамин D, каротиноиды, магний, цинк, селен) и что обычно меняется после отказа. Аккуратные ориентиры по времени и когда уместны анализы."
 author:
@@ -207,6 +208,7 @@ reading_time: "24"
 - Cochrane Library: Smoking and micronutrient metabolism — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
