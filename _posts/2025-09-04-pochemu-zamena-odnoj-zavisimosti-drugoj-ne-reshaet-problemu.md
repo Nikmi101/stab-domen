@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "Замена одной зависимости другой после отказа от курения: сладкое, алкоголь, гаджеты"
 description: "Почему замена сигарет сладким, алкоголем, кофе или гаджетами не решает проблему. Опасность переноса зависимости и что делать вместо: план на 14 дней, чек-листы и практики."
 author:
@@ -324,6 +325,7 @@ sources:
 - Национальный институт здравоохранения Великобритании (NHS): *Healthy substitutions and post-cessation behavior* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
