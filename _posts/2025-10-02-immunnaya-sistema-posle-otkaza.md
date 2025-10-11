@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "Иммунитет после отказа от курения: воспаление низкой степени, частые простуды и что обычно меняется"
 description: "Информационный обзор: как курение влияет на иммунную систему и воспаление низкой степени, что обычно меняется после отказа и какие «волны» адаптации считать нормальными."
 author:
@@ -179,6 +180,7 @@ reading_time: "20"
 - Cochrane Tobacco Addiction Group — [cochranelibrary.com](https://www.cochranelibrary.com/topic/tobacco-addiction)  
 
 ---
+
 
 
 
