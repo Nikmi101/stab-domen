@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "Первая неделя и две недели без сигарет — симптомы, ошибки и как удержаться без срывов"
 description: "Симптомы и ощущения в первую неделю после отказа от курения. Что происходит с телом, когда проходит тяга, ошибки, стресс и как удержаться без срывов и никотина."
 author:
@@ -324,6 +325,7 @@ width="1200" height="675" %}
 - Национальный институт здравоохранения Великобритании (NHS): *What happens when you quit — first weeks timeline and coping strategies* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
