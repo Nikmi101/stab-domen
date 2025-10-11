@@ -45,7 +45,7 @@ banner:
   title: "Почему хочется курить: четыре эмоциональные причины тяги"
 recommended_apps:
   - brosit_kurit
-permalink: "/blog/privychki/pochemu-hochetsya-kurit-prichiny-tyagi/"
+permalink: "/blog/privychki/halt-chetyre-triggera/"
 reading_time: "16"
 sources:
   - "@type": "CreativeWork"
@@ -271,6 +271,7 @@ sources:
 - Национальный институт здравоохранения Великобритании (NHS): *Как управлять эмоциями и привычками после отказа от курения* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
