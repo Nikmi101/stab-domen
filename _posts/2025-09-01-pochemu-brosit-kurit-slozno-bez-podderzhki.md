@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "Почему бросить курить сложно без поддержки: психология зависимости и роль окружения"
 description: "Почему большинству людей трудно отказаться от сигарет в одиночку. Психологические и физиологические причины зависимости, синдром отмены и роль поддержки в отказе от курения."
 author:
@@ -365,6 +366,7 @@ sources:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking with support — how to find help that works* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
