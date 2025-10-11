@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "Бросил курить — тянет на сладкое: почему это происходит и как не набрать вес"
 description: "Почему после отказа от сигарет тянет на сладкое и как стабилизировать питание. Физиология, поведенческие причины, замещение никотина и 30-дневный план мягкой адаптации без набора веса."
 author:
@@ -273,4 +274,5 @@ sources:
 - Национальный институт здравоохранения Великобритании (NHS): *Managing appetite and sugar cravings after quitting smoking* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
