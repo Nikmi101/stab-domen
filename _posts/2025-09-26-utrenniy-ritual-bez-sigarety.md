@@ -13,7 +13,7 @@ date: 2025-09-26
 dateUpdated: 2025-09-30
 articleSection: "Бросить курить с поддержкой"
 preload_images:
-  - /images/blog-images/blog-header.webp
+  - /images/blog-images/utrenniy-ritual.webp
 tema: "Утро без сигареты"
 categories: [privychki]
 tags:
@@ -190,6 +190,7 @@ reading_time: "18"
 
 ### **Что делать, если сорвался утром?**  
 Разобрать сцену по шагам, подкорректировать утренний план на следующий день и усилить вечернюю подготовку (сон, вода, лёгкий ужин, план на утро) — без самобичевания.
+
 
 
 
