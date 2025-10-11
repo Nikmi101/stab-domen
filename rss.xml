@@ -43,6 +43,7 @@ permalink: /rss.xml
     {%- if site.email -%}<managingEditor>{{ site.email }}</managingEditor>{%- endif -%}
     {%- if site.email -%}<webMaster>{{ site.email }}</webMaster>{%- endif -%}
     <generator>Jekyll</generator>
+    <copyright>© {{ site.time | date: "%Y" }} Vnutri Apps. Все права защищены.</copyright>
 
     {%- assign posts = posts_all | limit: 50 -%}
     {%- for post in posts -%}
@@ -81,12 +82,12 @@ permalink: /rss.xml
           {%- endfor -%}
         {%- endif -%}
 
-           {%- if post.author and post.author.name -%}
-  <dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
-{%- elsif post.author -%}
-  <dc:creator>{{ post.author | xml_escape }}</dc:creator>
-{%- endif -%}
-        
+        {%- if post.author and post.author.name -%}
+          <dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
+        {%- elsif post.author -%}
+          <dc:creator>{{ post.author | xml_escape }}</dc:creator>
+        {%- endif -%}
+
       </item>
     {%- endfor -%}
   </channel>
