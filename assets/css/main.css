@@ -62,6 +62,8 @@
 .menu-icon .icon-svg {
   width: 24px;
   height: 24px;
+  vertical-align:middle;
+margin-top:8px;
   fill: currentColor;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
