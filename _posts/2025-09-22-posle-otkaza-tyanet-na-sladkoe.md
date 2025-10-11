@@ -13,7 +13,7 @@ date: 2025-09-22
 dateUpdated: 2025-10-09
 articleSection: "Бросить курить"
 preload_images:
-  - /images/blog-images/blog-header.webp
+  - /images/blog-images/sladkoe.webp
 tema: "Бросить курить"
 categories: [privychki]
 tags:
@@ -79,16 +79,13 @@ sources:
 
 Страх «поправиться после отказа от сигарет» — одна из частых причин откладывать решение бросить курить. Реальность проще: тяга к сладкому — **временный эффект перестройки**. Если вы заранее соберёте базовую структуру питания и ритуалов, прибавка веса не обязательна, а у многих её вовсе не происходит.
 
-<!--
+
 {% include img.html
-   src="/images/blog-images/blog-header.webp"
+   src="/images/blog-images/sladkoe.webp"
    alt="Как не поменять сигареты на сахар"
    title="Как не поменять сигареты на сахар"
    width="1200" height="675" %}
 
-
-<small>🔑 Ключи: *бросить курить и тянет на сладкое, замена зависимости едой, набор веса после отказа от курения, аппетит и никотин, культура питания*.</small>
--->
 ---
 
 ## Почему без сигарет тянет на сладкое: простая физиология и психология
@@ -274,5 +271,6 @@ sources:
 - Национальный институт здравоохранения Великобритании (NHS): *Managing appetite and sugar cravings after quitting smoking* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
