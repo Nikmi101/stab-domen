@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "Зубы и дёсны после отказа от курения: налёт, запах, сухость — что обычно меняется"
 description: "Информационная статья: как курение влияет на ротовую полость, почему после отказа может усилиться кровоточивость, что происходит с налётом, запахом и сухостью, и какие сигналы — к стоматологу."
 author:
@@ -175,6 +176,7 @@ reading_time: "20"
 - Cochrane Library: Smoking cessation and periodontal health — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
