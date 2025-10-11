@@ -49,9 +49,7 @@ permalink: /rss.xml
     <generator>Jekyll</generator>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     <copyright>© {{ site.time | date: "%Y" }} Vnutri Apps. Все права защищены.</copyright>
-    <dc:rights>© {{ site.time | date: "%Y" }} Vnutri Apps. Все права защищены.</dc:rights>
     <dc:publisher>Vnutri Apps</dc:publisher>
-    <dc:language>ru</dc:language>
     <category>Психология, привычки, отказ от курения</category>
 
     {%- assign posts = posts_all | limit: 50 -%}
@@ -64,7 +62,6 @@ permalink: /rss.xml
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         {%- if post.dateUpdated -%}
           <atom:updated>{{ post.dateUpdated | date_to_xmlschema }}</atom:updated>
-          <dc:date>{{ post.dateUpdated | date_to_xmlschema }}</dc:date>
         {%- endif -%}
 
         {%- if post.description -%}
