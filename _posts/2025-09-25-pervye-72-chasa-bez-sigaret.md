@@ -272,8 +272,6 @@ sources:
 > 💬 Срыв — это не откат, а тренировка устойчивости.  
 > Каждый возврат к курсу укрепляет мотивацию и понимание собственных слабых мест.
 
-🧭 Поддержит материал: [«Рецидив и возврат: как вернуться без чувства вины»](/blog/privychki/recidiv-i-vozvrat-na-kurs/)
-
 ---
 
 ## Сон и восстановление в первые трое суток
@@ -401,4 +399,5 @@ sources:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — withdrawal symptoms and how to cope* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
