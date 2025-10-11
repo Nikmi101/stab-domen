@@ -278,19 +278,24 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/103903501" style="position:absolute; left:-9999px;" alt="счетчик метрики" /></div></noscript>
 
-  <!-- Header -->
-  <header id="header" class="alt">
-    <div class="logo">
-      <a href="/">
-        <img src="images/icons/ic_vnutriapps_withouttext.png"
-             alt="Vnutri Apps — психологические приложения для Android"
-             width="24" height="24"
-             style="height:24px; vertical-align:middle; margin-right:8px;" loading="lazy" decoding="async">
-        <span>Vnutri Apps</span>
-      </a>
-    </div>
-    <a href="#menu">Меню</a>
-  </header>
+ <!-- Header -->
+<header id="header" class="alt">
+  <div class="logo">
+    <a href="/">
+      <img src="/images/icons/ic_vnutriapps_withouttext.webp" 
+           alt="Логотип Vnutri Apps — психологические приложения для Android" 
+           style="height:24px; vertical-align:middle; margin-right:8px;">
+      <span>Vnutri Apps</span>
+    </a>
+  </div>
+
+  <!-- Иконка меню (SVG вместо текста) -->
+  <a href="#menu" class="menu-icon" title="Открыть меню">
+    <img src="/images/icons/bars.svg" 
+         alt="Меню" 
+         class="icon-svg">
+  </a>
+</header>
 
   <!-- Nav -->
   <nav id="menu">
@@ -528,22 +533,55 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer id="footer">
+ <!-- Footer -->
+<footer id="footer">
     <div class="container">
-      <ul class="icons">
-        <li><a href="mailto:vnutri_apps@mail.ru" class="icon fa-envelope" title="Email поддержки Vnutri Apps — психологическая помощь, снижение тревоги, самопомощь"><span class="label">Email</span></a></li>
-        <li><a href="https://t.me/vnutriapps" class="icon fa-brands fa-telegram" title="Телеграм канал Vnutri Apps — поддержка и практики"><span class="label">Telegram</span></a></li>
-        <li><a href="https://m.vk.com/vnutriapps" class="icon fa-vk" title="VK Vnutri Apps — психология, медитации, опора"><span class="label">VK</span></a></li>
-      </ul>
+       <ul class="icons">
+  <li>
+    <a href="mailto:vnutri_apps@mail.ru"
+       title="Email поддержки Vnutri Apps — психологическая помощь, снижение тревоги, самопомощь">
+      <img src="/images/icons/envelope.svg"
+           alt="Email поддержки Vnutri Apps — психологическая помощь, снижение тревоги, самопомощь"
+           class="icon-svg">
+      <span class="label">Email</span>
+    </a>
+  </li>
 
-      <div class="details-button-container">
-        <a href="/links" class="details-button" title="Все ссылки и соцсети Vnutri Apps">🌐 Все ссылки и соцсети Vnutri Apps</a>
-      </div>
+  <li>
+    <a href="https://t.me/vnutriapps"
+       title="Телеграм канал Vnutri Apps — психологическая поддержка, советы по внутреннему развитию">
+      <img src="/images/icons/telegram.svg"
+           alt="Телеграм канал Vnutri Apps — психологическая поддержка, советы по внутреннему развитию"
+           class="icon-svg">
+      <span class="label">Telegram</span>
+    </a>
+  </li>
 
-      <p class="copyright">&copy; <span>Vnutri Apps</span>, Россия. Все права защищены.</p>
+  <li>
+    <a href="https://m.vk.com/vnutriapps"
+       title="VK Vnutri Apps — психология, медитации, развитие внутренней опоры и креативности">
+      <img src="/images/icons/vk.svg"
+           alt="VK Vnutri Apps — психология, медитации, развитие внутренней опоры и креативности"
+           class="icon-svg">
+      <span class="label">VK</span>
+    </a>
+  </li>
+</ul>
+
+        <div class="details-button-container">
+            <a href="/links" class="details-button" 
+               title="Все ссылки и соцсети Vnutri Apps"
+               >🌐 Все ссылки и соцсети Vnutri Apps</a>
+        </div>
+
+        <p class="copyright">
+            &copy; <span >Vnutri Apps</span>, Россия. Все права защищены.
+        </p>
+
+    
+       
     </div>
-  </footer>
+</footer>
 
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js" defer></script>
