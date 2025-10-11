@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "Кофе и никотин: как разорвать утреннюю связку и снизить тягу к сигаретам"
 description: "Почему кофе усиливает тягу к сигаретам и как мягко разорвать связку «кофе → сигарета». Простая физиология, главные триггеры, замены и 30-дневный план адаптации."
 author:
@@ -267,6 +268,7 @@ sources:
 - Национальный институт здравоохранения Великобритании (NHS): *Breaking daily smoking triggers — caffeine and morning habits* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
