@@ -1,5 +1,6 @@
 ---
 layout: post
+ready: yes
 title: "Кости, мышцы и выносливость после отказа от курения: что меняется в опорно-двигательном аппарате"
 description: "Информационный разбор: как курение влияет на костную плотность, мышцы, связки и выносливость; что обычно меняется после отказа, ориентиры по времени и когда стоит обратиться к врачу."
 author:
@@ -185,6 +186,7 @@ reading_time: "21"
 - Cochrane Library: Smoking cessation and bone density — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
