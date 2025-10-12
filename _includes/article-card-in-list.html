@@ -1,0 +1,41 @@
+{% comment %}
+Инклюд: карточка статьи по permalink
+Пример вызова:
+{% include article-card-in-list.html permalink="/blog/privychki/nikotinovaya-zavisimost/" %}
+{% endcomment %}
+
+{% assign post = site.posts | where: "url", include.permalink | first %}
+
+{% if post %}
+  {% assign desc = post.description | default: post.excerpt | strip_html %}
+  <li class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+    <div class="post-main">
+      <a class="post-title" href="{{ post.url | relative_url }}" itemprop="url">
+        <span itemprop="headline">{{ post.title }}</span>
+      </a>
+      <span class="date" itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%d.%m.%Y" }}
+      </span>
+    </div>
+
+    {% if desc %}
+      <p class="post-desc" itemprop="description">{{ desc }}</p>
+    {% endif %}
+
+    {% if post.related and post.related.size > 0 %}
+      <div class="post-mini-links">
+        {% for link in post.related limit:3 %}
+          {% assign link_url = link.url | default: link.href %}
+          {% assign link_title = link.title | default: link.text %}
+          {% if link_url and link_title %}
+            <a href="{{ link_url | relative_url }}">{{ link_title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </li>
+{% else %}
+  <li class="post-item missing">
+    ⚠️ Статья с url <code>{{ include.permalink }}</code> не найдена.
+  </li>
+{% endif %}
