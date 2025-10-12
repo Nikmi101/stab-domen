@@ -8,7 +8,7 @@
 
 {% if post %}
   {% assign desc = post.description | default: post.excerpt | strip_html %}
-  <li class="post-item" itemscope itemtype="https://schema.org/BlogPosting">
+  <li class="post-item" itemscope itemtype="https://schema.org/BlogPosting" markdown="0">
     <div class="post-main">
       <a class="post-title" href="{{ post.url | relative_url }}" itemprop="url">
         <span itemprop="headline">{{ post.title }}</span>
