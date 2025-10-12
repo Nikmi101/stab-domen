@@ -90,7 +90,7 @@ structured_data:
   name: "Энциклопедия отказа от курения"
   about: "Психология, тело, привычки и поддержка в отказе от курения"
   creator: "Vnutri Apps"
-  url: "https://vnutriapps.ru/blog/privychki/entsiklopediya-otkaza-ot-kureniya/"
+  url: "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   publisher: "Vnutri Apps"
 ---
 
