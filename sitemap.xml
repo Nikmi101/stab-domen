@@ -74,6 +74,16 @@
     <priority>0.8</priority>
   </url>
   
+<!-- Энциклопедия Курил-бросил -->
+  <url>
+    <loc>https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  
   <url>
     <loc>https://vnutriapps.ru/blog/tvorchestvo/</loc>
     <lastmod>2025-09-22</lastmod>
