@@ -7,7 +7,7 @@ banner:
   image: "/images/blog-images/blog-header.webp"
   alt: "Энциклопедия отказа от курения — Курил-бросил"
   title: "Энциклопедия отказа от курения"
-permalink: "/encyclopedia/brosit-kurit/"
+
 ---
 
 # 🧠 Энциклопедия отказа от курения  
