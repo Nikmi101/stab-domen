@@ -1,7 +1,9 @@
 {% capture home_url %}{{ "/" | absolute_url }}{% endcapture %}
 {% capture blog_url %}{{ "/blog/" | absolute_url }}{% endcapture %}
+{% capture encyclopedia_url %}{{ "/blog/encyclopedia-brosit-kurit/" | absolute_url }}{% endcapture %}
 {% capture page_url %}{{ page.url | absolute_url }}{% endcapture %}
 
+{% if page.recommended_apps contains "brosit_kurit" %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -20,7 +22,48 @@
       "position": 2,
       "item": {
         "@id": {{ blog_url | jsonify }},
-        "name": "Статьи от Vnutri Apps"
+        "name": "Блог"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": {{ encyclopedia_url | jsonify }},
+        "name": "Бросить курить: Энциклопедия отказа"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@id": {{ page_url | jsonify }},
+        "name": {{ page.title | jsonify }}
+      }
+    }
+  ]
+}
+</script>
+{% else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": {{ home_url | jsonify }},
+        "name": "Vnutri Apps"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": {{ blog_url | jsonify }},
+        "name": "Блог"
       }
     },
     {
@@ -34,3 +77,4 @@
   ]
 }
 </script>
+{% endif %}
