@@ -13,10 +13,11 @@
   <li><a href="/blog/">Блог</a></li>
 
   {% if page.recommended_apps contains "brosit_kurit" %}
-    <li><a href="/blog/privychki/entsiklopediya-otkaza-ot-kureniya/">Бросить курить: Энциклопедия отказа</a></li>
+    <li><a href="/blog/encyclopedia-brosit-kurit/">Бросить курить: Энциклопедия отказа</a></li>
   {% elsif category_name %}
     <li><a href="/blog/{{ category_name }}/">{{ category_title }}</a></li>
   {% endif %}
 
   <li aria-current="page"><span>{{ page.title }}</span></li>
 </ol>
+
