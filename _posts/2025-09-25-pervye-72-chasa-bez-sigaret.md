@@ -48,11 +48,6 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/pervye-72-chasa-bez-sigaret/"
 reading_time: "20"
-related:
-  - title: "Никотиновая зависимость"
-    url: "/blog/privychki/nikotinovaya-zavisimost/"
-  - title: "Первая неделя и 14 дней без сигарет"
-    url: "/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/"
 sources:
   - "@type": "CreativeWork"
     name: "Минздрав РФ"
@@ -400,6 +395,7 @@ sources:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — withdrawal symptoms and how to cope* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
