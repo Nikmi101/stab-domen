@@ -10,7 +10,7 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
-date: 2025-10-08
+date: 2025-10-12
 dateUpdated: 2025-10-12
 articleSection: "Бросить курить"
 preload_images:
