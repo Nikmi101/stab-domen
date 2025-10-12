@@ -64,7 +64,7 @@
 {%- assign __is_article = page.is_article -%}
 {%- if __is_article == nil -%}
   {%- assign __is_article = false -%}
-  {%- if page.collection == 'posts' or page.layout == 'post' or page.layout == 'article' -%}
+  {%- if page.collection == 'posts' or page.layout == 'post' or page.layout == 'encyclopedia-hub' -%}
     {%- assign __is_article = true -%}
   {%- endif -%}
 {%- endif -%}
