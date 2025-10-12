@@ -7,7 +7,7 @@ banner:
   image: "/images/blog-images/blog-header.webp"
   alt: "Энциклопедия отказа от курения — Курил-бросил"
   title: "Энциклопедия отказа от курения"
-
+permalink: "/encyclopedia/brosit-kurit/"
 ---
 
 # 🧠 Энциклопедия отказа от курения  
@@ -26,12 +26,14 @@ banner:
 Понимание этой структуры — первый шаг к свободе.  
 В этом разделе — статьи о механике зависимости и о том, почему «просто бросить» не работает.
 
-- [Никотиновая зависимость: мифы, правда и почему бросить курить кажется трудным](/blog/privychki/nikotinovaya-zavisimost/)  
-- [Почему бросить курить сложно без поддержки](/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/)  
-- [Психология зависимости: почему привычки так трудно менять](/blog/privychki/psihologiya-zavisimosti/)  
-- [Синдром отмены при отказе от курения: симптомы, сроки и как пережить без срывов](/blog/privychki/sindrom-otmeny-nikotina/)  
-- [10 привычек, мешающих бросить курить](/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/)  
-- [«Только одна» и другие когнитивные ловушки](/blog/privychki/lovushki-vozvrata-k-kureniyu/)
+<ul class="blog-posts">
+  {% include article-card-in-list.html permalink="/blog/privychki/nikotinovaya-zavisimost/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/psihologiya-zavisimosti/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/sindrom-otmeny-nikotina/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/lovushki-vozvrata-k-kureniyu/" %}
+</ul>
 
 ---
 
@@ -42,13 +44,15 @@ banner:
 Здесь — план и простые практики, которые помогают пройти  
 самые непростые первые недели после отказа от курения.
 
-- [Первые 72 часа без сигарет](/blog/privychki/pervye-72-chasa-bez-sigaret/)  
-- [Первая неделя и две недели без сигарет](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
-- [Календарь отказа от курения](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)  
-- [HALT: четыре лица тяги — голод, злость, одиночество, усталость](/blog/privychki/halt-chetyre-triggera/)  
-- [Дыхание вместо затяжки: микропрактики на 1–3 минуты](/blog/privychki/dyhanie-vmesto-zatyazhki/)  
-- [Ночное «хочу курить»](/blog/privychki/vechernyaya-tyaga-pered-snom/)  
-- [Утренний ритуал без сигареты](/blog/privychki/utrenniy-ritual-bez-sigarety/)
+<ul class="blog-posts">
+  {% include article-card-in-list.html permalink="/blog/privychki/pervye-72-chasa-bez-sigaret/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/chto-proishodit-posle-otkaza-kalendar/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/halt-chetyre-triggera/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/dyhanie-vmesto-zatyazhki/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/vechernyaya-tyaga-pered-snom/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/utrenniy-ritual-bez-sigarety/" %}
+</ul>
 
 ---
 
@@ -58,40 +62,44 @@ banner:
 Каждая система постепенно возвращается к естественному режиму.  
 Здесь — объяснение того, что реально происходит с организмом после того, как вы бросили курить.
 
-- [Восстановление здоровья после отказа от курения](/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/)  
-- [Кашель после отказа от сигарет](/blog/privychki/kashel-posle-otkaza-norma/)  
-- [Давление и пульс после отказа от курения](/blog/privychki/davlenie-posle-otkaza-ot-kureniya/)  
-- [Сердце и сосуды после отказа от курения](/blog/privychki/serdtse-i-sosudy-posle-otkaza/)  
-- [Как очистить лёгкие после курения](/blog/privychki/ochistit-legkie-posle-kureniya/)  
-- [Нервная система после отказа от курения](/blog/privychki/nervnaya-sistema-posle-otkaza/)  
-- [Обмен веществ и гормоны после отказа от курения](/blog/privychki/obmen-veshchestv-i-gormony-posle-otkaza/)  
-- [Иммунитет после отказа от курения](/blog/privychki/immunnaya-sistema-posle-otkaza/)  
-- [Почки и водный баланс после отказа от курения](/blog/privychki/pochki-i-vodnyj-balans-posle-otkaza/)  
-- [ЖКТ и пищеварение после отказа от курения](/blog/privychki/zhkt-posle-otkaza/)  
-- [Печень, поджелудочная и желчевыводящие пути](/blog/privychki/pechen-podzheludochnaya-posle-otkaza/)  
-- [Кости, мышцы и выносливость после отказа от курения](/blog/privychki/oporno-dvigatelnyy-apparat-posle-otkaza/)  
-- [Микронутриенты и витамины после отказа от курения](/blog/privychki/mikronutrienty-posle-otkaza/)  
-- [Онкориски после отказа от курения](/blog/privychki/onkoriziki-posle-otkaza/)  
-- [Восстановление внешности после отказа от курения](/blog/privychki/vosstanovlenie-vneshnosti-posle-otkaza/)  
-- [Зубы и дёсны после отказа от курения](/blog/privychki/rotovaya-polost-i-dyosny-posle-otkaza/)
+<ul class="blog-posts">
+  {% include article-card-in-list.html permalink="/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/kashel-posle-otkaza-norma/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/davlenie-posle-otkaza-ot-kureniya/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/serdtse-i-sosudy-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/ochistit-legkie-posle-kureniya/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/nervnaya-sistema-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/obmen-veshchestv-i-gormony-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/immunnaya-sistema-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/pochki-i-vodnyj-balans-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/zhkt-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/pechen-podzheludochnaya-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/oporno-dvigatelnyy-apparat-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/mikronutrienty-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/onkoriziki-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/vosstanovlenie-vneshnosti-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/rotovaya-polost-i-dyosny-posle-otkaza/" %}
+</ul>
 
 ---
 
 ## 🔹 Тяга, рецидивы и эмоциональные триггеры  
 
-Бросить курить — значит научиться жить с моментами,  
-когда «тянет». Это не слабость, а сигнал.  
+Бросить курить — значит научиться жить с моментами, когда «тянет».  
+Это не слабость, а сигнал.  
 Поняв, **что именно** запускает тягу, можно не сорваться,  
 а научиться обходить эти ловушки спокойно.
 
-- [Почему хочется курить после отказа: голод, злость, одиночество, усталость](/blog/privychki/halt-chetyre-triggera/)  
-- [Алкоголь после отказа: как избежать срыва](/blog/privychki/alkogol-posle-otkaza-ot-sigaret/)  
-- [Бросил курить — тянет на сладкое](/blog/privychki/posle-otkaza-tyanet-na-sladkoe/)  
-- [Как не сорваться: когнитивные ловушки и правило 90 секунд](/blog/privychki/lovushki-vozvrata-k-kureniyu/)  
-- [Кофе и никотин: как разорвать утреннюю связку](/blog/privychki/kofe-i-nikotin-razvesti-privychki/)  
-- [IQOS, glo и стики: как отказаться, если ритуал сильнее никотина](/blog/privychki/kak-brosit-iqos/)  
-- [Как бросить электронную сигарету (вейп)](/blog/privychki/kak-brosit-veip-bez-sryvov/)  
-- [Замена одной зависимости другой: сладкое, алкоголь, гаджеты](/blog/privychki/pochemu-zamena-odnoj-zavisimosti-drugoj-ne-reshaet-problemu/)
+<ul class="blog-posts">
+  {% include article-card-in-list.html permalink="/blog/privychki/halt-chetyre-triggera/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/alkogol-posle-otkaza-ot-sigaret/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/posle-otkaza-tyanet-na-sladkoe/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/lovushki-vozvrata-k-kureniyu/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/kofe-i-nikotin-razvesti-privychki/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/kak-brosit-iqos/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/kak-brosit-veip-bez-sryvov/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/pochemu-zamena-odnoj-zavisimosti-drugoj-ne-reshaet-problemu/" %}
+</ul>
 
 ---
 
@@ -102,10 +110,12 @@ banner:
 Этот раздел — о том, как создать пространство,  
 где дышится легче и нет поводов возвращаться к дыму.
 
-- [Пассивное курение и дом без дыма](/blog/privychki/dom-bez-dyma/)  
-- [Как создать поддерживающее окружение](/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/)  
-- [Границы и стресс: зачем говорить «нет»](/blog/emotsii/granitsy-i-stress-zachem-govorit-net/)  
-- [Стресс и отношения: как не потерять близость](/blog/emotsii/stress-i-otnosheniya-kak-ne-poteryat-blizost/)
+<ul class="blog-posts">
+  {% include article-card-in-list.html permalink="/blog/privychki/dom-bez-dyma/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/granitsy-i-stress-zachem-govorit-net/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/stress-i-otnosheniya-kak-ne-poteryat-blizost/" %}
+</ul>
 
 ---
 
@@ -116,15 +126,17 @@ banner:
 Этот раздел — о внимании, устойчивости, смысле и внутренней опоре,  
 которая делает жизнь без курения естественной, а не подвигом.
 
-- [Сила маленьких шагов: как закреплять изменения](/blog/privychki/malenkie-shagi/)  
-- [Как формируются новые привычки: 21 день или миф?](/blog/privychki/21-den-privychka-mif-ili-realnost/)  
-- [Почему отпуск не лечит стресс: как накапливать ресурс](/blog/emotsii/pochemu-otpusk-ne-lechit-stress/)  
-- [Как быстро снизить уровень стресса: что реально работает за 1–3 минуты](/blog/emotsii/kak-bystro-snizit-stress/)  
-- [Роль дыхания в снижении тревоги](/blog/emotsii/rol-dyhaniya-v-snizhenii-trevogi/)  
-- [Почему тревогу нельзя отогнать](/blog/emotsii/pochemu-trevogu-nelzya-otognat/)  
-- [Одиночество как ресурс](/blog/filosofiya/odinochestvo-resurs/)  
-- [Свобода и разъединение: как одиночество помогает стать собой](/blog/filosofiya/svoboda-i-razzedineniye-kak-odinochestvo-pomogaet-stat-soboy/)  
-- [Герой и одиночество: почему путь всегда одинок](/blog/filosofiya/geroy-i-odinochestvo-pochemu-put-vsegda-odinok/)
+<ul class="blog-posts">
+  {% include article-card-in-list.html permalink="/blog/privychki/malenkie-shagi/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/21-den-privychka-mif-ili-realnost/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-otpusk-ne-lechit-stress/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/kak-bystro-snizit-stress/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/rol-dyhaniya-v-snizhenii-trevogi/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevogu-nelzya-otognat/" %}
+  {% include article-card-in-list.html permalink="/blog/filosofiya/odinochestvo-resurs/" %}
+  {% include article-card-in-list.html permalink="/blog/filosofiya/svoboda-i-razzedineniye-kak-odinochestvo-pomogaet-stat-soboy/" %}
+  {% include article-card-in-list.html permalink="/blog/filosofiya/geroy-i-odinochestvo-pochemu-put-vsegda-odinok/" %}
+</ul>
 
 ---
 
@@ -134,9 +146,11 @@ banner:
 И это пространство — для смыслов, интереса к себе и жизни.  
 Здесь — тексты, которые возвращают вкус к бытию и глубину к простым вещам.
 
-- [Экзистенциальный взгляд: человек всегда один](/blog/filosofiya/chelovek-odinok/)  
-- [От Фромма до Камю: что философы говорили об одиночестве](/blog/filosofiya/ot-fromma-do-kamyu-chto-filosofy-govorili-ob-odinochestve/)  
-- [Почему важно учиться быть интересным самому себе](/blog/filosofiya/byt-interesnym-sebe/)
+<ul class="blog-posts">
+  {% include article-card-in-list.html permalink="/blog/filosofiya/chelovek-odinok/" %}
+  {% include article-card-in-list.html permalink="/blog/filosofiya/ot-fromma-do-kamyu-chto-filosofy-govorili-ob-odinochestve/" %}
+  {% include article-card-in-list.html permalink="/blog/filosofiya/byt-interesnym-sebe/" %}
+</ul>
 
 ---
 
