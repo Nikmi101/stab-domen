@@ -3,13 +3,13 @@ layout: null
 permalink: /all-posts.txt
 ---
 
-{% assign posts = site.posts | where_exp:"p","p.published != false" | reverse %}
+{% assign posts = site.posts | where_exp: "p", "p.published != false" | reverse %}
 {% assign counter = 0 %}
 
 {% for post in posts %}
 {% assign counter = counter | plus: 1 %}
 {{ counter }}. Title: "{{ post.title | strip }}"
-Description: "{{ post.description | strip | default: (post.content | strip_html | truncate: 180) }}"
+Description: "{% if post.description %}{{ post.description | strip }}{% else %}{{ post.content | strip_html | truncate: 180 }}{% endif %}"
 Ключи: {% if post.tags %}{{ post.tags | join: ", " }}{% else %}-{% endif %}
 URL: {{ site.url }}{{ post.url }}
 
