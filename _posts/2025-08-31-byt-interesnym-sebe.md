@@ -41,6 +41,21 @@ recommended_apps:
   - odinochestvo
   - tvorchestvo
 permalink: "/blog/filosofiya/byt-interesnym-sebe/"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Почему важно учиться быть интересным самому себе
@@ -152,6 +167,7 @@ permalink: "/blog/filosofiya/byt-interesnym-sebe/"
 А приложение **[«Творчество: Пламя внутри»](/razvitie-tvorchestva)** показывает, как интерес к себе рождает новые идеи и вдохновение.  
 
 ---
+
 
 
 
