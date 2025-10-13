@@ -12,9 +12,11 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "articleType": "EncyclopediaEntry",
+  "genre": ["Энциклопедия", "Руководство", "Гайд"],
   "@id": "{{ page.url | absolute_url }}#article",
   "headline": {{ page.title | jsonify }},
   {% if page.banner.title %}"alternativeHeadline": {{ page.banner.title | jsonify }},{% endif %}
+  "name": {{ page.title | jsonify }},
   "description": {{ page.description | default: site.description | jsonify }},
   "inLanguage": "ru-RU",
   "isAccessibleForFree": true,
@@ -41,6 +43,11 @@
     "@type": "Organization",
     "name": "Vnutri Apps",
     "url": "https://vnutriapps.ru/"
+  },
+  "copyrightHolder": {
+  "@type": "Organization",
+  "name": "Vnutri Apps",
+  "url": "https://vnutriapps.ru/"
   },
   {% if has_img > 0 %}
   "image": {
