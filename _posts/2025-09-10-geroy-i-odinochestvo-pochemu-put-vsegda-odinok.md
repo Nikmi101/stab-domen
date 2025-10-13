@@ -44,6 +44,21 @@ recommended_apps:
   - odinochestvo
 permalink: "/blog/filosofiya/geroy-i-odinochestvo-pochemu-put-vsegda-odinok/"
 reading_time: "18"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Герой и одиночество: почему путь всегда одинок
@@ -214,6 +229,7 @@ reading_time: "18"
 Есть новая формулировка смысла, появилась энергия к действию и хотя бы один результат, которым можно поделиться с другими — пора интегрировать опыт в обычную жизнь.
 
 ---
+
 
 
 
