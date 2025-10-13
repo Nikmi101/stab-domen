@@ -42,6 +42,21 @@ recommended_apps:
   - stress
 permalink: "/blog/emotsii/stress-i-otnosheniya-kak-ne-poteryat-blizost/"
 reading_time: "19"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Стресс и отношения: ссоры, обиды, молчание — как не потерять близость
@@ -188,6 +203,7 @@ reading_time: "19"
 
 ### **Когда стоит обратиться к семейному специалисту?**  
 Если конфликты повторяются по одному сценарию, разговоры превращаются в молчание/бойкот, есть унижение, страх обсуждать проблемы, затрагиваются дети — нужна очная помощь.
+
 
 
 
