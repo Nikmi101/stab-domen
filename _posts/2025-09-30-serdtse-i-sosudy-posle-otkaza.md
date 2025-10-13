@@ -43,6 +43,38 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/serdtse-i-sosudy-posle-otkaza/"
 reading_time: "22"
+sources:
+  - "@type": "CreativeWork"
+    name: "Минздрав РФ: Национальный проект «Здравоохранение»"
+    url: "https://minzdrav.gov.ru"
+  - "@type": "CreativeWork"
+    name: "Всемирная организация здравоохранения (ВОЗ): Tobacco Free Initiative"
+    url: "https://www.who.int/health-topics/tobacco"
+  - "@type": "CreativeWork"
+    name: "Национальный медицинский исследовательский центр профилактической медицины (НМИЦ)"
+    url: "https://nmic.ru"
+  - "@type": "CreativeWork"
+    name: "Национальные клинические рекомендации РФ по лечению никотиновой зависимости"
+  - "@type": "CreativeWork"
+    name: "Centers for Disease Control and Prevention (CDC): Smoking & Tobacco Use"
+    url: "https://www.cdc.gov/tobacco"
+  - "@type": "CreativeWork"
+    name: "Cochrane Tobacco Addiction Group"
+    url: "https://www.cochranelibrary.com/topic/tobacco-addiction"
+  - "@type": "CreativeWork"
+    name: "Всемирная организация здравоохранения (ВОЗ): Tobacco and cardiovascular diseases"
+    url: "https://www.who.int"
+  - "@type": "CreativeWork"
+    name: "European Society of Cardiology (ESC): Smoking and heart health"
+    url: "https://www.escardio.org"
+  - "@type": "CreativeWork"
+    name: "Минздрав РФ: Национальные рекомендации по артериальной гипертонии и профилактике ССЗ"
+  - "@type": "CreativeWork"
+    name: "Национальный медицинский исследовательский центр кардиологии Минздрава РФ"
+    url: "https://www.cardioweb.ru"
+  - "@type": "CreativeWork"
+    name: "Centers for Disease Control and Prevention (CDC): Smoking and Heart Disease"
+    url: "https://www.cdc.gov"
 isPartOf:
   "@type": ["CreativeWorkSeries", "WebPage"]
   "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
@@ -190,6 +222,7 @@ isPartOf:
 - CDC: Smoking and Heart Disease — [cdc.gov](https://www.cdc.gov)
 
 ---
+
 
 
 
