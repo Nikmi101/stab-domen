@@ -10,7 +10,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-30
-dateUpdated: 2025-09-30
+dateUpdated: 2025-10-13
 articleSection: "Бросить курить с поддержкой"
 preload_images:
   - /images/blog-images/blog-header.webp
@@ -221,6 +221,7 @@ isPartOf:
 - Cochrane Library: Smoking and pancreatic disorders — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
