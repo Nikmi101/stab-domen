@@ -43,6 +43,21 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/immunnaya-sistema-posle-otkaza/"
 reading_time: "20"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Иммунитет после отказа от курения: фоновое воспаление, частые простуды и что обычно меняется
@@ -180,6 +195,7 @@ reading_time: "20"
 - Cochrane Tobacco Addiction Group — [cochranelibrary.com](https://www.cochranelibrary.com/topic/tobacco-addiction)  
 
 ---
+
 
 
 
