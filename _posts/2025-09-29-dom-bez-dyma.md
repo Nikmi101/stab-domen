@@ -44,6 +44,21 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/dom-bez-dyma/"
 reading_time: "22"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Пассивное курение и дом без дыма: как перестроить пространство для жизни без сигарет
@@ -219,6 +234,7 @@ reading_time: "22"
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
