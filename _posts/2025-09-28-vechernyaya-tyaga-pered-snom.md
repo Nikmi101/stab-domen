@@ -44,6 +44,21 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/vechernyaya-tyaga-pered-snom/"
 reading_time: "20"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Ночное «хочу курить»: что делать, когда тянет курить перед сном
@@ -156,6 +171,7 @@ reading_time: "20"
 
 ### **Что точно не делать ночью при тяге?**  
 Не спорить с собой в голове и не «скроллить» ленту. Это только разгонит нервную систему. Лучше — короткие конкретные шаги-действия и мягкая смена сцены: вода, дыхание, свет потеплее, возвращение в постель.
+
 
 
 
