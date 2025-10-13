@@ -43,6 +43,21 @@ recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/rol-dyhaniya-v-snizhenii-trevogi/"
 reading_time: "15"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Роль дыхания в снижении тревоги
@@ -248,6 +263,7 @@ reading_time: "15"
 Уменьшить амплитуду вдоха, перейти на естественное дыхание, сделать паузу, добавить заземление (ощущение опоры стоп, взгляд вдаль). Если дискомфорт сохраняется — обсудить с врачом/специалистом.
 
 ---
+
 
 
 
