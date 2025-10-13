@@ -46,6 +46,21 @@ banner:
 recommended_apps:
   - odinochestvo
 permalink: "/blog/filosofiya/odinochestvo-resurs/"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Одиночество как ресурс: почему это не враг
@@ -224,6 +239,7 @@ permalink: "/blog/filosofiya/odinochestvo-resurs/"
 👉 Именно этому посвящено приложение **«Одиночество: Точки опоры»**. Оно помогает прожить одиночество осознанно и превратить его в ресурс внутреннего развития.
 
 ---
+
 
 
 
