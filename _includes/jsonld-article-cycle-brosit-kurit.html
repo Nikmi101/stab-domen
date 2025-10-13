@@ -64,7 +64,7 @@
   "wordCount": {{ page.content | strip_html | strip_newlines | split: " " | size }}{% if page.tags and page.tags.size > 0 %},
   "keywords": [{% for tag in page.tags %}{{ tag | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.faq and page.faq.size > 0 %},
   "hasPart": [
-  { "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#faq" },
+  { "@type": "FAQPage", "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#faq" },
   { "@type": "Article", "headline": "Никотиновая зависимость: мифы, правда и почему бросить курить кажется трудным", "url": "https://vnutriapps.ru/blog/privychki/nikotinovaya-zavisimost/" },
   { "@type": "Article", "headline": "Почему бросить курить сложно без поддержки: психология зависимости и роль окружения", "url": "https://vnutriapps.ru/blog/privychki/pochemu-brosit-kurit-slozhno-bez-podderzhki/" },
   { "@type": "Article", "headline": "Почему привычки так трудно менять: психология зависимости", "url": "https://vnutriapps.ru/blog/privychki/psihologiya-zavisimosti/" },
