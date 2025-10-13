@@ -10,7 +10,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-09-30
-dateUpdated: 2025-09-30
+dateUpdated: 2025-10-13
 articleSection: "Бросить курить с поддержкой"
 preload_images:
   - /images/blog-images/blog-header.webp
@@ -45,6 +45,27 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/"
 reading_time: "28"
+sources:
+  - "@type": "CreativeWork"
+    name: "Минздрав РФ: Клинические рекомендации по лечению табачной зависимости"
+  - "@type": "CreativeWork"
+    name: "Всемирная организация здравоохранения (ВОЗ): Effects of tobacco on health"
+    url: "https://www.who.int/health-topics/tobacco#tab=tab_2"
+  - "@type": "CreativeWork"
+    name: "European Society of Cardiology (ESC): Smoking and cardiovascular health"
+    url: "https://www.escardio.org"
+  - "@type": "CreativeWork"
+    name: "Национальный медицинский исследовательский центр кардиологии Минздрава РФ"
+    url: "https://www.cardioweb.ru"
+  - "@type": "CreativeWork"
+    name: "Centers for Disease Control and Prevention (CDC): Health Effects of Cigarette Smoking"
+    url: "https://www.cdc.gov/tobacco/basic_information/health_effects/"
+  - "@type": "CreativeWork"
+    name: "National Cancer Institute (NCI): Tobacco and Cancer"
+    url: "https://www.cancer.gov/about-cancer/causes-prevention/risk/tobacco"
+  - "@type": "CreativeWork"
+    name: "Cochrane Library: Smoking cessation and long-term health outcomes"
+    url: "https://www.cochranelibrary.com"
 isPartOf:
   "@type": ["CreativeWorkSeries", "WebPage"]
   "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
@@ -268,6 +289,7 @@ isPartOf:
 
 
 ---
+
 
 
 
