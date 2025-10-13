@@ -43,6 +43,21 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/utrenniy-ritual-bez-sigarety/"
 reading_time: "18"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Утренний ритуал без сигареты: как разорвать связку «кофе → затяжка» и не сорваться
@@ -190,6 +205,7 @@ reading_time: "18"
 
 ### **Что делать, если сорвался утром?**  
 Разобрать сцену по шагам, подкорректировать утренний план на следующий день и усилить вечернюю подготовку (сон, вода, лёгкий ужин, план на утро) — без самобичевания.
+
 
 
 
