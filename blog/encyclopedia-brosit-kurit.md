@@ -14,7 +14,7 @@ date: 2025-10-12
 dateUpdated: 2025-10-12
 articleSection: "Бросить курить"
 preload_images:
-  - /images/blog-images/blog-header.webp
+  - /images/blog-images/encyclopedia-kuril-brosil.webp
 tema: "Бросить курить — системный гид и энциклопедия отказа от сигарет"
 categories: [privychki]
 tags:
@@ -48,7 +48,7 @@ faq:
   - q: "Можно ли бросить курить самостоятельно без препаратов?"
     a: "Можно, если выстроить систему: наблюдать за триггерами, использовать дыхательные и психологические практики, а также опору на поддержку и трекеры. Это снижает риск срывов и делает процесс устойчивым."
 banner:
-  image: "/images/blog-images/blog-header.webp"
+  image: "/images/blog-images/encyclopedia-kuril-brosil.webp"
   alt: "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   width: 1200
   height: 675
