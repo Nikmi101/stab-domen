@@ -43,6 +43,21 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/serdtse-i-sosudy-posle-otkaza/"
 reading_time: "22"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Сердце и сосуды после отказа от курения: как снижается нагрузка и стабилизируется ритм
@@ -175,6 +190,7 @@ reading_time: "22"
 - CDC: Smoking and Heart Disease — [cdc.gov](https://www.cdc.gov)
 
 ---
+
 
 
 
