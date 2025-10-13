@@ -43,6 +43,35 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/pechen-podzheludochnaya-posle-otkaza/"
 reading_time: "22"
+sources:
+  - "@type": "CreativeWork"
+    name: "Минздрав РФ: Национальный проект «Здравоохранение»"
+    url: "https://minzdrav.gov.ru"
+  - "@type": "CreativeWork"
+    name: "Всемирная организация здравоохранения (ВОЗ): Tobacco Free Initiative"
+    url: "https://www.who.int/health-topics/tobacco"
+  - "@type": "CreativeWork"
+    name: "Национальный медицинский исследовательский центр профилактической медицины (НМИЦ)"
+    url: "https://nmic.ru"
+  - "@type": "CreativeWork"
+    name: "Национальные клинические рекомендации РФ по лечению никотиновой зависимости"
+  - "@type": "CreativeWork"
+    name: "Centers for Disease Control and Prevention (CDC): Smoking & Tobacco Use"
+    url: "https://www.cdc.gov/tobacco"
+  - "@type": "CreativeWork"
+    name: "Cochrane Tobacco Addiction Group"
+    url: "https://www.cochranelibrary.com/topic/tobacco-addiction"
+  - "@type": "CreativeWork"
+    name: "National Cancer Institute (NCI): Tobacco and liver/pancreatic health"
+    url: "https://www.cancer.gov"
+  - "@type": "CreativeWork"
+    name: "Всемирная организация здравоохранения (ВОЗ): Smoking and internal organs"
+    url: "https://www.who.int"
+  - "@type": "CreativeWork"
+    name: "Минздрав РФ: Национальные клинические рекомендации по гепатологии"
+  - "@type": "CreativeWork"
+    name: "Cochrane Library: Smoking and pancreatic disorders"
+    url: "https://www.cochranelibrary.com"
 isPartOf:
   "@type": ["CreativeWorkSeries", "WebPage"]
   "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
@@ -192,6 +221,7 @@ isPartOf:
 - Cochrane Library: Smoking and pancreatic disorders — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
