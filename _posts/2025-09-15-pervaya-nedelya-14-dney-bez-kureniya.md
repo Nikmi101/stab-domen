@@ -76,6 +76,21 @@ sources:
   - "@type": "CreativeWork"
     name: "Национальный институт здравоохранения Великобритании (NHS): What happens when you quit — first weeks timeline and coping strategies"
     url: "https://www.nhs.uk/live-well/quit-smoking/"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Первая неделя без сигарет: адаптация, симптомы и как удержаться без срывов
@@ -325,6 +340,7 @@ width="1200" height="675" %}
 - Национальный институт здравоохранения Великобритании (NHS): *What happens when you quit — first weeks timeline and coping strategies* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
