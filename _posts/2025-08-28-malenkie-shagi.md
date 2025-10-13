@@ -46,6 +46,21 @@ banner:
 recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/malenkie-shagi/"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Сила маленьких шагов: как закреплять изменения
@@ -217,6 +232,7 @@ permalink: "/blog/privychki/malenkie-shagi/"
 👉 Именно на этом принципе построено приложение **«Курил-бросил»**: уверенные шаги к свободе от никотина, поддержка, трекинг и видимый прогресс на каждом этапе.
 
 ---
+
 
 
 
