@@ -43,6 +43,21 @@ recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/ochistit-legkie-posle-kureniya/"
 reading_time: "18"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Как очистить лёгкие после курения: что реально работает (без «чудо-средств»)
@@ -188,6 +203,7 @@ reading_time: "18"
 
 ### **Когда нужно обратиться к врачу?**  
 Если появляется выраженная одышка в покое, боль в груди, высокая температура, свисты при дыхании или длительное ухудшение самочувствия.
+
 
 
 
