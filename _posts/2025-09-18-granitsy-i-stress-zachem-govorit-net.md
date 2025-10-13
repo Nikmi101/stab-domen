@@ -42,6 +42,21 @@ recommended_apps:
   - stress
 permalink: "/blog/emotsii/granitsy-i-stress-zachem-govorit-net/"
 reading_time: "19"
+isPartOf:
+  "@type": ["CreativeWorkSeries", "WebPage"]
+  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "name": "Энциклопедия отказа от курения — Курил-бросил"
+  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
+  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
+  "author":
+    "@type": "Person"
+    "name": "Никита Митяев"
+    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
+    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  "publisher":
+    "@type": "Organization"
+    "name": "Vnutri Apps"
+    "url": "https://vnutriapps.ru/"
 ---
 
 # Границы и стресс: зачем говорить «нет»
@@ -227,6 +242,7 @@ reading_time: "19"
 
 ### **Когда стоит эскалировать или передавать задачу?**  
 Если запрос выходит за рамки роли/компетенции, конфликтует с приоритетами или требует ресурсов, которых нет. Эскалация — не агрессия, а маршрут согласования.
+
 
 
 
