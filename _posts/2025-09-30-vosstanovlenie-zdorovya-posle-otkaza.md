@@ -241,7 +241,8 @@ isPartOf:
 
 ## По теме
 
-- [Календарь отказа от курения: изменения и опоры по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)  
+- [Календарь отказа от курения: изменения и опоры по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
+- [Нейробиология зависимости: как мозг перестраивается при отказе от никотина](/blog/privychki/neyrobiologiya-nikotinovoy-zavisimosti/)  
 - [Первые 72 часа без сигарет](/blog/privychki/pervye-72-chasa-bez-sigaret/)  
 - [Первая неделя и первые 14 дней](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
 - [Дыхание вместо затяжки: микропрактики](/blog/privychki/dyhanie-vmesto-zatyazhki/)  
@@ -289,6 +290,7 @@ isPartOf:
 
 
 ---
+
 
 
 
