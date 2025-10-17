@@ -9,7 +9,8 @@ author:
   url: "https://vnutriapps.ru/about-vnutri-apps"
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
-date: 2025-10-18
+date: 2025-10-17
+dateUpdated: 2025-10-17
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/brain-nicotine.webp
@@ -355,4 +356,5 @@ isPartOf:
 - Cochrane Library: [Neuroscience of tobacco addiction and cessation](https://www.cochranelibrary.com)
 
 ---
+
 
