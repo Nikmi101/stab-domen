@@ -190,7 +190,8 @@ isPartOf:
 
 ## По теме (перелинковка к кластеру)
 
-- [Восстановление здоровья после отказа: по системам](/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/)  
+- [Восстановление здоровья после отказа: по системам](/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/)
+- [Нейробиология зависимости: как мозг перестраивается при отказе от никотина](/blog/privychki/neyrobiologiya-nikotinovoy-zavisimosti/)  
 - [HALT: четыре лица тяги](/blog/privychki/halt-chetyre-triggera/)  
 - [Дыхание вместо затяжки](/blog/privychki/dyhanie-vmesto-zatyazhki/)  
 - [Первые 72 часа без сигарет](/blog/privychki/pervye-72-chasa-bez-sigaret/)
@@ -236,6 +237,7 @@ isPartOf:
 - Cochrane Library: Nicotine withdrawal and neurocognitive effects — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
