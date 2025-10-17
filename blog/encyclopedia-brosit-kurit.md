@@ -116,6 +116,7 @@ structured_data:
   {% include article-card-in-list.html permalink="/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/psihologiya-zavisimosti/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/sindrom-otmeny-nikotina/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/neyrobiologiya-nikotinovoy-zavisimosti/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/lovushki-vozvrata-k-kureniyu/" %}
 </ul>
