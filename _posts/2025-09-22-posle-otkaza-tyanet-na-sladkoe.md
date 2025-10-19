@@ -460,6 +460,7 @@ isPartOf:
 
 ## Еще статьи по теме отказа от курения
 
+- [Набор веса после отказа от сигарет: как стабилизировать питание и не вернуть зависимость](/blog/privychki/ves-posle-otkaza-bez-diet/)  
 - [Кофе и никотин: сладкая парочка, которую стоит разлучить](/blog/privychki/kofe-i-nikotin-razvesti-privychki/)  
 - [Алкоголь после отказа от сигарет: ловушки и как их обойти](/blog/privychki/alkogol-posle-otkaza-ot-sigaret/)  
 - [10 привычек, которые мешают отказаться от сигарет](/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/)
@@ -481,6 +482,7 @@ isPartOf:
 - American Psychological Association (APA): *Emotional eating and behavioral replacement after smoking cessation* — [apa.org](https://www.apa.org)  
 - European Network for Smoking and Tobacco Prevention (ENSP): *Weight management and craving regulation after quitting* — [ensp.network](https://ensp.network)  
 - Национальный институт здравоохранения Великобритании (NHS): *Managing appetite and sugar cravings after quitting smoking* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
+
 
 
 
