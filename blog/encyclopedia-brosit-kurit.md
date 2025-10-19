@@ -161,6 +161,7 @@ structured_data:
   {% include article-card-in-list.html permalink="/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/kashel-posle-otkaza-norma/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/davlenie-posle-otkaza-ot-kureniya/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/ves-posle-otkaza-bez-diet/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/serdtse-i-sosudy-posle-otkaza/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/ochistit-legkie-posle-kureniya/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/nervnaya-sistema-posle-otkaza/" %}
