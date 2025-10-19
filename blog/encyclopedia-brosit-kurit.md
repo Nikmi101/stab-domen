@@ -11,7 +11,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-10-12
-dateUpdated: 2025-10-13
+dateUpdated: 2025-10-20
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/encyclopedia-kuril-brosil.webp
