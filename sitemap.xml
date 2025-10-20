@@ -222,7 +222,7 @@ layout: none
 
    <url>
     <loc>https://vnutriapps.ru/blog/privychki/21-den-privychka-mif-ili-realnost/</loc>
-    <lastmod>2025-09-22</lastmod>
+     <lastmod>{{ site.posts | where: "permalink", "/blog/privychki/21-den-privychka-mif-ili-realnost/" | first | dig: "dateUpdated" | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
