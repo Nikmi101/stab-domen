@@ -81,7 +81,7 @@ layout: none
 
  <url>
     <loc>https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/</loc>
-    <lastmod>{{ site.pages | where: "permalink", "/blog/encyclopedia-brosit-kurit/" | first | dig: "dateUpdated" | date: "%Y-%m-%d" }}</lastmod>
+    <lastmod><![CDATA[{{ all_docs | where: "permalink", "/blog/encyclopedia-brosit-kurit/" | first | dig: "dateUpdated" | date: "%Y-%m-%d" }}]]></lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
