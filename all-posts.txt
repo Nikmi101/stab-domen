@@ -1,6 +1,7 @@
 ---
 layout: null
 permalink: /all-posts.txt
+robots: noindex, nofollow
 ---
 
 {% assign posts = site.posts | where_exp: "p", "p.published != false" | reverse %}
