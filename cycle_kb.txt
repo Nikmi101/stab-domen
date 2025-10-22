@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /cycle_kb.txt
+robots: noindex, nofollow
+---
+
+{% assign target_url = page.target_url | default: 'https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/' %}
+{% assign filtered_posts = site.posts 
+  | where_exp: "p", "p.published != false" 
+  | where_exp: "p", "p.isPartOf.url == target_url"
+  | reverse 
+%}
+
+{% assign counter = 0 %}
+
+{% for post in filtered_posts %}
+{% assign counter = counter | plus: 1 %}
+{{ counter }}. Title: "{{ post.title | strip }}"
+Description: "{% if post.description %}{{ post.description | strip }}{% else %}{{ post.content | strip_html | truncate: 180 }}{% endif %}"
+Tags: {% if post.tags %}{{ post.tags | join: ", " }}{% else %}-{% endif %}
+URL: {{ site.url }}{{ post.url }}
+
+{% endfor %}
