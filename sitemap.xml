@@ -81,7 +81,7 @@ layout: none
 
  <url>
     <loc>https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2025-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -644,6 +644,15 @@ layout: none
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+   <url>
+    <loc>https://vnutriapps.ru/blog/privychki/kak-brosit-kurit-esli-vokrug-vse-kuryat/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  
   
 
 </urlset>
