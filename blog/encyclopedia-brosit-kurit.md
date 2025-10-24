@@ -11,7 +11,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-10-12
-dateUpdated: 2025-10-20
+dateUpdated: 2025-10-25
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/encyclopedia-kuril-brosil.webp
@@ -192,6 +192,7 @@ structured_data:
 
 <ul class="blog-posts">
   {% include article-card-in-list.html permalink="/blog/privychki/sryv-posle-otkaza-ot-kureniya/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/kak-brosit-kurit-esli-vokrug-vse-kuryat/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/halt-chetyre-triggera/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/alkogol-posle-otkaza-ot-sigaret/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/posle-otkaza-tyanet-na-sladkoe/" %}
