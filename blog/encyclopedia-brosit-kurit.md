@@ -219,10 +219,11 @@ structured_data:
 как выстраивать личные границы и как попросить поддержку от близких.
 
 <ul class="blog-posts">
-  {% include article-card-in-list.html permalink="/blog/privychki/dom-bez-dyma/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/podderzhat-blizkogo-kotoryy-brosaet-kurit/" %}
   {% include article-card-in-list.html permalink="/blog/emotsii/granitsy-i-stress-zachem-govorit-net/" %}
   {% include article-card-in-list.html permalink="/blog/emotsii/stress-i-otnosheniya-kak-ne-poteryat-blizost/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/dom-bez-dyma/" %}
 </ul>
 
 > 💡 **Совет:** меняйте окружение мягко, но осознанно.  
