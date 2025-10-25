@@ -652,7 +652,12 @@ layout: none
     <priority>0.7</priority>
   </url>
 
-  
+   <url>
+    <loc>https://vnutriapps.ru/blog/privychki/podderzhat-blizkogo-kotoryy-brosaet-kurit/</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
   
 
 </urlset>
