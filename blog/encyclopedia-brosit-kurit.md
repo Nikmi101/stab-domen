@@ -143,7 +143,8 @@ structured_data:
   {% include article-card-in-list.html permalink="/blog/privychki/vechernyaya-tyaga-pered-snom/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/utrenniy-ritual-bez-sigarety/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/trevoga-posle-otkaza-ot-kureniya/" %}
-
+  {% include article-card-in-list.html permalink="/blog/privychki/razdrazhitelnost-posle-otkaza/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/depressiya-posle-otkaza-ot-kureniya/" %}
 </ul>
 
 > ⚡ **Важно:** первые недели — это не испытание, а процесс восстановления.  
