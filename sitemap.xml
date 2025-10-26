@@ -658,6 +658,15 @@ layout: none
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <url>
+    <loc>https://vnutriapps.ru/blog/privychki/trevoga-posle-otkaza-ot-kureniya/</loc>
+    <lastmod>2025-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  
   
 
 </urlset>
