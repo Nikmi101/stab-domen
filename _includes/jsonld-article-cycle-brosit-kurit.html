@@ -10,10 +10,9 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "articleType": "EncyclopediaEntry",
+  "@type": "CollectionPage",
   "genre": ["Энциклопедия", "Руководство", "Гайд"],
-  "@id": "{{ page.url | absolute_url }}#article",
+  "@id": "{{ page.url | absolute_url }}#page",
   "headline": {{ page.title | jsonify }},
   {% if page.banner.title %}"alternativeHeadline": {{ page.banner.title | jsonify }},{% endif %}
   "name": {{ page.title | jsonify }},
@@ -45,11 +44,10 @@
     "url": "https://vnutriapps.ru/"
   },
   "copyrightHolder": {
-  "@type": "Organization",
-  "name": "Vnutri Apps",
-  "url": "https://vnutriapps.ru/"
-  },
-  {% if has_img > 0 %}
+    "@type": "Organization",
+    "name": "Vnutri Apps",
+    "url": "https://vnutriapps.ru/"
+  }{% if has_img > 0 %},
   "image": {
     "@type": "ImageObject",
     "url": "{{ img_url | absolute_url }}",
@@ -58,16 +56,14 @@
     "height": {{ img_h }},
     "caption": {{ page.banner.title | default: page.title | jsonify }}
   },
-  "thumbnailUrl": "{{ img_url | absolute_url }}",
-  {% endif %}
+  "thumbnailUrl": "{{ img_url | absolute_url }}"{% endif %},
   "url": "{{ page.url | absolute_url }}",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
-  "mainEntity": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
   "datePublished": "{{ page.date | date_to_xmlschema }}"{% if page.dateUpdated %},
   "dateModified": "{{ page.dateUpdated | date_to_xmlschema }}"{% endif %},
-  "articleBody": {{ page.content | strip_html | truncate: 2500 | strip_newlines | jsonify }},
-  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }}{% if page.articleSection or page.tema %},
-  "articleSection": {{ page.articleSection | default: page.tema | jsonify }}{% endif %},
+  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }}{% comment %}
+    articleBody и articleSection убраны — это свойства Article, не CollectionPage
+  {% endcomment %},
   "wordCount": {{ page.content | strip_html | strip_newlines | split: " " | size }}{% if page.tags and page.tags.size > 0 %},
   "keywords": [{% for tag in page.tags %}{{ tag | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.faq and page.faq.size > 0 %},
   "hasPart": [
