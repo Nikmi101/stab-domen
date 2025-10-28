@@ -41,7 +41,7 @@ faq:
   - q: "Можно ли через отказ от курения прийти к более глубокой трансформации?"
     a: "Да. Этот процесс становится символом внутреннего очищения, возвращения к чувствительности, зрелости и опоре на себя. Отказ от никотина — лишь первая ступень к свободе в целом."
 banner:
-  image: "/images/blog-images/blog-header-filosofiya.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "философия отказа от курения — путь к внутренней свободе"
   title: "Философия отказа от курения: тишина, свобода и возвращение к себе"
   width: 1200
@@ -414,5 +414,6 @@ sources:
 - National Institute on Drug Abuse (NIDA): *Mindfulness and Internal Recovery Mechanisms* — [nida.nih.gov](https://nida.nih.gov)  
 - Cochrane Library: *Psychological, Behavioral and Meaning-Based Approaches to Smoking Cessation* — [cochranelibrary.com](https://www.cochranelibrary.com)  
 - Минздрав РФ — *Психологические аспекты зависимости и внутреннее восстановление при отказе от никотина* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
+
 
 ---
