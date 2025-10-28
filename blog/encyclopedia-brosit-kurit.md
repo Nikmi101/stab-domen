@@ -11,7 +11,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-10-12
-dateUpdated: 2025-10-25
+dateUpdated: 2025-10-28
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/encyclopedia-kuril-brosil.webp
@@ -224,9 +224,9 @@ structured_data:
 <ul class="blog-posts">
   {% include article-card-in-list.html permalink="/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/podderzhat-blizkogo-kotoryy-brosaet-kurit/" %}
-  {% include article-card-in-list.html permalink="/blog/emotsii/granitsy-i-stress-zachem-govorit-net/" %}
-  {% include article-card-in-list.html permalink="/blog/emotsii/stress-i-otnosheniya-kak-ne-poteryat-blizost/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/dom-bez-dyma/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/vechernyaya-tyaga-pered-snom/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/utrenniy-ritual-bez-sigarety/" %}
 </ul>
 
 > 💡 **Совет:** меняйте окружение мягко, но осознанно.  
@@ -243,7 +243,6 @@ structured_data:
 <ul class="blog-posts">
   {% include article-card-in-list.html permalink="/blog/privychki/malenkie-shagi/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/21-den-privychka-mif-ili-realnost/" %}
-  {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-otpusk-ne-lechit-stress/" %}
   {% include article-card-in-list.html permalink="/blog/emotsii/kak-bystro-snizit-stress/" %}
   {% include article-card-in-list.html permalink="/blog/emotsii/rol-dyhaniya-v-snizhenii-trevogi/" %}
   {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevogu-nelzya-otognat/" %}
@@ -264,6 +263,11 @@ structured_data:
 Они помогают пережить внутреннюю тишину, вдохновиться и сохранить чувство опоры.
 
 <ul class="blog-posts">
+  {% include article-card-in-list.html permalink="/blog/privychki/filosofiya-otkaza-ot-kureniya/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/tishina-posle-dyma/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/kto-ya-bez-sigaret/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/svoboda-bez-nikotina/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/chto-prihodit-na-mesto-sigaret/" %}
   {% include article-card-in-list.html permalink="/blog/filosofiya/chelovek-odinok/" %}
   {% include article-card-in-list.html permalink="/blog/filosofiya/ot-fromma-do-kamyu-chto-filosofy-govorili-ob-odinochestve/" %}
   {% include article-card-in-list.html permalink="/blog/filosofiya/byt-interesnym-sebe/" %}
