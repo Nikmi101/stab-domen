@@ -38,7 +38,7 @@ faq:
   - q: "Как понять, что вы действительно изменились?"
     a: "Когда сигарета перестаёт быть частью образа 'я', и появляется простое ощущение: 'мне спокойно без неё'. Это не борьба — это интеграция."
 banner:
-  image: "/images/blog-images/blog-header-filosofiya.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "кто я без сигарет — переоценка себя"
   title: "Кто я без сигарет? Переоценка себя после отказа"
   width: 1200
@@ -319,5 +319,6 @@ sources:
 - National Institute on Drug Abuse (NIDA): *Behavioral Identity and Post-Dependence Adaptation* — [nida.nih.gov](https://nida.nih.gov)  
 - Cochrane Library: *Psychological Transformation after Smoking Cessation* — [cochranelibrary.com](https://www.cochranelibrary.com)  
 - Минздрав РФ — *Психологические изменения и восстановление самоощущения после отказа от курения* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
+
 
 ---
