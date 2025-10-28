@@ -37,7 +37,7 @@ faq:
   - q: "Как почувствовать свободу без борьбы?"
     a: "Свобода приходит не от усилия, а от расслабления. Когда вы перестаёте контролировать процесс и просто дышите, тело само возвращается в естественный ритм без никотина."
 banner:
-  image: "/images/blog-images/blog-header-filosofiya.webp"
+  image: "/images/blog-images/blog-header-kurilbrosil.webp"
   alt: "свобода без никотина — внутренняя опора"
   title: "Свобода без никотина: как перестать искать опору во внешнем"
   width: 1200
@@ -335,4 +335,5 @@ sources:
 - National Institute on Drug Abuse (NIDA): *Internal Motivation and Recovery Pathways* — [nida.nih.gov](https://nida.nih.gov)  
 - Cochrane Library: *Behavioral and Meaning-Based Strategies for Smoking Cessation* — [cochranelibrary.com](https://www.cochranelibrary.com)  
 - Минздрав РФ — *Психологическая устойчивость и формирование внутренней опоры при отказе от никотина* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
+
 
