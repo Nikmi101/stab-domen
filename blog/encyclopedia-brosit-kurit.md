@@ -11,7 +11,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-10-12
-dateUpdated: 2025-10-28
+dateUpdated: 2025-10-31
 articleSection: "Бросить курить"
 tema: "Бросить курить — системный гид и энциклопедия отказа от сигарет"
 categories: [privychki]
@@ -117,6 +117,7 @@ structured_data:
   {% include article-card-in-list.html permalink="/blog/privychki/neyrobiologiya-nikotinovoy-zavisimosti/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/lovushki-vozvrata-k-kureniyu/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/nikotinzamestitelnaya-terapiya-nzt/" %}
 </ul>
 
 > 💡 **Совет:** начните именно с этого раздела — он объясняет, *почему бросить курить трудно* и как сделать, чтобы этот процесс стал понятным и управляемым.
