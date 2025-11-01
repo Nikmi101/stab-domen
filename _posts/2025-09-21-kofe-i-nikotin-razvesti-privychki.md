@@ -4,10 +4,7 @@ ready: yes
 title: "Кофе и никотин: как работают вместе и почему мешают бросить курить"
 description: "Почему кофе и сигареты так связаны, как кофеин усиливает тягу к никотину и что помогает разорвать эту пару, не отказываясь от кофе. Физиология, психология, замены и 30-дневный план адаптации."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-21
 dateUpdated: 2025-10-21
@@ -80,14 +77,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Кофе и никотин: как работают вместе и почему мешают бросить курить
@@ -414,6 +406,7 @@ isPartOf:
 - Минздрав РФ — *Клинические рекомендации по лечению никотиновой зависимости* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
