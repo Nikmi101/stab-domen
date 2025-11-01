@@ -11,7 +11,7 @@ author:
   qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
 medical_disclaimer: true
 date: 2025-10-12
-dateUpdated: 2025-10-31
+dateUpdated: 2025-11-01
 articleSection: "Бросить курить"
 tema: "Бросить курить — системный гид и энциклопедия отказа от сигарет"
 categories: [privychki]
