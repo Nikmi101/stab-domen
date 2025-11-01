@@ -4,10 +4,7 @@ ready: yes
 title: "Сила маленьких шагов: психология устойчивых изменений и привычек"
 description: "Как работают маленькие шаги: психология устойчивых изменений, механизм формирования новых привычек и как удержаться без срывов. Почему маленькие шаги помогают мозгу и психике закреплять изменения без стресса."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-08-28
 dateUpdated: 2025-10-15
@@ -78,14 +75,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization" 
 ---
 
 # Сила маленьких шагов: как формировать и закреплять новые привычки
@@ -427,6 +419,7 @@ isPartOf:
 - Минздрав РФ — [minzdrav.gov.ru](https://minzdrav.gov.ru)  
 - Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ) — [nmic.ru](https://nmic.ru)  
 - Национальный институт здравоохранения Великобритании (NHS): *Small steps and mental health* — [nhs.uk](https://www.nhs.uk/live-well)
+
 
 
 
