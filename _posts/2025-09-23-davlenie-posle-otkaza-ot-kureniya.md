@@ -4,10 +4,7 @@ ready: yes
 title: "Бросил курить — давление скачет: что норма, а что к врачу"
 description: "Почему после отказа от курения могут меняться давление и пульс, сколько это длится и как отличить норму адаптации от симптомов, с которыми стоит идти к врачу."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-23
 dateUpdated: 2025-09-23
@@ -52,14 +49,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Бросил курить — давление скачет: что норма, а что к врачу
@@ -242,6 +234,7 @@ isPartOf:
 
 ### **Можно ли в этот период заниматься спортом?**  
 Да, но мягко: ходьба, растяжка, лёгкое кардио. Наращивайте постепенно, следите за самочувствием. При хронических заболеваниях — согласовывайте план с врачом.
+
 
 
 
