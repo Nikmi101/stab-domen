@@ -4,10 +4,7 @@ ready: yes
 title: "Алкоголь после отказа от сигарет: почему тянет курить и как избежать срыва"
 description: "Почему после алкоголя тянет закурить и как избежать срыва после отказа от курения. Поведенческие ловушки, психологические триггеры, безопасные сценарии и 30-дневный план восстановления контроля."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-20
 dateUpdated: 2025-10-11
@@ -81,14 +78,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Почему тянет курить после алкоголя: ловушки, причины и как избежать срыва
@@ -377,6 +369,7 @@ isPartOf:
 - Национальный институт здравоохранения Великобритании (NHS): *Alcohol and relapse risk during smoking cessation* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
