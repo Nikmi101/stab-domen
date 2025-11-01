@@ -50,14 +50,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Как очистить лёгкие после курения: что реально работает (без «чудо-средств»)
@@ -203,6 +198,7 @@ isPartOf:
 
 ### **Когда нужно обратиться к врачу?**  
 Если появляется выраженная одышка в покое, боль в груди, высокая температура, свисты при дыхании или длительное ухудшение самочувствия.
+
 
 
 
