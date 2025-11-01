@@ -50,14 +50,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # «Только одна» и другие когнитивные ловушки: как не сорваться при отказе от курения
@@ -194,6 +189,7 @@ isPartOf:
 
 ### **Зачем вести дневник ловушек?**  
 Повторяющиеся мысли и сцены становятся видны и очевидны. Тогда легче поставить защиту: изменить предметы и место, заранее подготовить альтернативы и фразы.
+
 
 
 
