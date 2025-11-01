@@ -39,57 +39,691 @@
     <meta property="og:image" content="https://vnutriapps.ru/images/image.jpg" />
     <meta property="og:url" content="https://vnutriapps.ru/about-vnutri-apps" />
 
-    <!-- JSON-LD -->
    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+
     {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://vnutriapps.ru/#organization",
+      "@type": "Organization",
+      "@id": "https://vnutriapps.ru/#organization",
+      "name": "Vnutri Apps",
+"foundingDate": "2017-04-18",
+"inLanguage": "ru",
+"founder": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+"brand": {
+  "@type": "Brand",
   "name": "Vnutri Apps",
-  "url": "https://vnutriapps.ru/",
-  "logo": "https://vnutriapps.ru/images/favicon.png",
-  "sameAs": [
-    "https://t.me/vnutriapps",
-    "https://vk.com/vnutriapps",
-    "https://www.youtube.com/@VnutriApps",
-    "https://dzen.ru/vnutriapps",
-    "https://ok.ru/group/70000039792868",
-    "https://boosty.to/vnutri_apps",
-    "https://www.instagram.com/vnutriapps/"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "vnutri_apps@mail.ru",
-    "contactType": "customer support",
-    "availableLanguage": "ru"
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Никита Митяев",
-    "jobTitle": "Автор и разработчик приложений Vnutri Apps",
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
-  }
+  "url": "https://vnutriapps.ru"
 },
+      "url": "https://vnutriapps.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vnutriapps.ru/images/favicon.png",
+        "width": 192,
+        "height": 192
+      },
+      "sameAs": [
+        "https://t.me/vnutriapps",
+        "https://vk.com/vnutriapps",
+        "https://www.youtube.com/@VnutriApps",
+        "https://dzen.ru/vnutriapps",
+        "https://ok.ru/group/70000039792868",
+        "https://boosty.to/vnutri_apps",
+        "https://www.instagram.com/vnutriapps/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "vnutri_apps@mail.ru",
+        "contactType": "customer support",
+        "availableLanguage": "ru"
+      },
+      "publishingPrinciples": "https://vnutriapps.ru/publishing-principles",
+      "verificationFactCheckingPolicy": "https://vnutriapps.ru/fact-checking",
+      "correctionsPolicy": "https://vnutriapps.ru/corrections",
+      "ethicsPolicy": "https://vnutriapps.ru/ethics"
+    },
+
+    {
+      "@type": "EducationalOccupationalProgram",
+      "@id": "https://vnutriapps.ru/about-vnutri-apps#ms-org-psych",
+      "name": "Магистратура — Организационная психология",
+      "description": "Обучается на программе магистратуры «Организационная психология». Статус: в процессе.",
+      "educationalLevel": "Master's",
+      "programType": "graduate",
+      "provider": {
+        "@type": "CollegeOrUniversity",
+        "name": "МФПУ «Синергия»", 
+	"url": "https://synergy.ru"
+      },
+      "endDate": "2026-05-31",
+      "inLanguage": "ru"
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev",
+      "name": "Никита Митяев",
+  "givenName": "Nikita",
+  "familyName": "Mityaev",
+  "alternateName": ["Nikita Mityaev", "Nikita Mitiaev", "Никита Митяев"],
+  "identifier": [
+    { "@type": "PropertyValue", "propertyID": "transliteration_en_primary", "value": "Nikita Mityaev" },
+    { "@type": "PropertyValue", "propertyID": "transliteration_en_variant", "value": "Nikita Mitiaev" },
+    { "@type": "PropertyValue", "propertyID": "coursera_profile_name", "value": "Nikita Mitiaev" }
+  ],
+      "url": "https://vnutriapps.ru/about-vnutri-apps",
+      "mainEntityOfPage": "https://vnutriapps.ru/about-vnutri-apps",
+"hasOccupation": {
+  "@type": "Occupation",
+  "name": "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps",
+  "occupationLocation": { "@type": "AdministrativeArea", "name": "Worldwide" },
+  "description": "Работает в сфере психологического консультирования, экзистенциальной и гештальт-терапии, специализируется на теме зависимого поведения и эмоциональной регуляции."
+},
+      "image": [
+  {
+    "@type": "ImageObject",
+    "url": "https://vnutriapps.ru/images/nikita-mityaev-200.webp",
+    "contentUrl": "https://vnutriapps.ru/images/nikita-mityaev-200.webp",
+    "width": 200,
+    "height": 200,
+    "encodingFormat": "image/webp",
+    "caption": "Никита Митяев",
+    "representativeOfPage": true
+  },
+  {
+    "@type": "ImageObject",
+    "url": "https://vnutriapps.ru/images/nikita-mityaev-400.webp",
+    "contentUrl": "https://vnutriapps.ru/images/nikita-mityaev-400.webp",
+    "width": 400,
+    "height": 400,
+    "encodingFormat": "image/webp",
+    "caption": "Никита Митяев"
+  },
+  {
+    "@type": "ImageObject",
+    "url": "https://vnutriapps.ru/images/nikita-mityaev-800.webp",
+    "contentUrl": "https://vnutriapps.ru/images/nikita-mityaev-800.webp",
+    "width": 800,
+    "height": 800,
+    "encodingFormat": "image/webp",
+    "caption": "Никита Митяев"
+  }
+],
+      "jobTitle": "Гештальт-терапевт, психолог-консультант, специалист по экзистенциальной терапии",
+      "worksFor": { "@id": "https://vnutriapps.ru/#organization" },
+      "memberOf": { "@id": "https://vnutriapps.ru/#organization" },
+      "sameAs": [
+        "https://t.me/vnutriapps",
+        "https://vk.com/vnutriapps",
+        "https://www.youtube.com/@VnutriApps",
+        "https://dzen.ru/vnutriapps",
+        "https://ok.ru/group/70000039792868",
+        "https://boosty.to/vnutri_apps",
+        "https://www.instagram.com/vnutriapps/"
+      ],
+"knowsLanguage": ["ru", "en", "it", "es"],
+      "knowsAbout": [
+        "отказ от курения", "никотиновая зависимость", "психология изменений",
+        "нейробиология зависимости", "стресс и саморегуляция",
+        "экзистенциальная терапия", "гештальт-подход", "дыхательные практики"
+      ],
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "ГБОУ высшего образования города Москвы «Московский городской педагогический университет»", "url": "https://www.mgpu.ru/" }
+      ],
+      "affiliation": [
+        { "@type": "CollegeOrUniversity", "name": "МФПУ «Синергия»", "url": "https://synergy.ru" }
+      ],
+      "subjectOf": [
+        { "@id": "https://vnutriapps.ru/about-vnutri-apps#ms-org-psych" }
+      ],
+
+      "hasCredential": [
+
+       {
+  "@type": "EducationalOccupationalCredential",
+  "name": "Бакалавр: Лингвистика — теория и практика межкультурной коммуникации",
+  "description": "Высшее образование по направлению «Лингвистика. Теория и практика межкультурной коммуникации».",
+  "credentialCategory": "Bachelor's degree",
+  "educationalLevel": "Bachelor",
+  "awardDate": "2015-07-20",
+  "dateCreated": "2015-07-20",
+  "inLanguage": "ru",
+  "validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+"recognizedBy": [
+  { "@type": "CollegeOrUniversity", "name": "ГБОУ высшего образования города Москвы «Московский городской педагогический университет»", "url": "https://www.mgpu.ru/" },
+  { "@type": "GovernmentOrganization", "name": "Рособрнадзор — Федеральный реестр сведений о документах об образовании (ФРДО)", "url": "https://obrnadzor.gov.ru/" }
+],
+  "verificationMethod": "Запись в сервисе проверки ФРДО подтверждена.",
+  "verificationService": {
+    "@type": "WebSite",
+    "name": "Федеральный реестр сведений о документах об образовании (ФРДО)",
+    "url": "https://obrnadzor.gov.ru/gosudarstvennye-uslugi-i-funkczii/7701537808-gosfunction/formirovanie-i-vedenie-federalnogo-reestra-svedenij-o-dokumentah-ob-obrazovanii-i-ili-o-kvalifikaczii-dokumentah-ob-obuchenii/"
+  },
+  "url": "https://vnutriapps.ru/certs/ba-linguistics-mkk.pdf"
+},
+
+{
+  "@type": "EducationalOccupationalCredential",
+  "name": "Психологическое консультирование и психодиагностика",
+  "description": "Диплом о профессиональной переподготовке. Право на деятельность в сфере «Психологическое консультирование и психодиагностика». Квалификация: «Психолог-консультант».",
+  "credentialCategory": "Диплом о профессиональной переподготовке",
+  "educationalLevel": "Профессиональная переподготовка",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Номер диплома",
+    "value": "772417034618"
+  },
+  "timeRequired": "PT836H",
+  "awardDate": "2023-12-05",
+  "dateCreated": "2023-12-05",
+  "inLanguage": "ru",
+  "validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+"recognizedBy": [
+  { "@type": "EducationalOrganization", "name": "НАНО «Институт профессионального образования»", "url": "https://ipo.msk.ru/" },
+  { "@type": "GovernmentOrganization", "name": "Рособрнадзор — Федеральный реестр сведений о документах об образовании (ФРДО)", "url": "https://obrnadzor.gov.ru/" }
+],
+  "verificationMethod": "Запись в сервисе проверки ФРДО подтверждена.",
+  "verificationService": {
+    "@type": "WebSite",
+    "name": "Федеральный реестр сведений о документах об образовании (ФРДО)",
+    "url": "https://obrnadzor.gov.ru/gosudarstvennye-uslugi-i-funkczii/7701537808-gosfunction/formirovanie-i-vedenie-federalnogo-reestra-svedenij-o-dokumentah-ob-obrazovanii-i-ili-o-kvalifikaczii-dokumentah-ob-obuchenii/"
+  },
+  "url": "https://vnutriapps.ru/certs/ipo-psihologicheskoe-konsultirovanie-2023-12-05-836.pdf"
+},
+
+{
+  "@type": "EducationalOccupationalCredential",
+  "name": "Гештальт-терапия в практике психолога",
+  "description": "Диплом. Право на деятельность в сфере «Практическая психология». Квалификация: «Гештальт-терапевт».",
+  "credentialCategory": "Диплом о профессиональной переподготовке",
+  "educationalLevel": "Профессиональная переподготовка",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Номер диплома",
+    "value": "772420962031"
+  },
+  "timeRequired": "PT692H",
+  "awardDate": "2024-08-20",
+  "dateCreated": "2024-08-20",
+  "inLanguage": "ru",
+  "validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+"recognizedBy": [
+  { "@type": "EducationalOrganization", "name": "НАНО «Институт профессионального образования»", "url": "https://ipo.msk.ru/" },
+  { "@type": "GovernmentOrganization", "name": "Рособрнадзор — Федеральный реестр сведений о документах об образовании (ФРДО)", "url": "https://obrnadzor.gov.ru/" }
+],
+  "verificationMethod": "Запись в сервисе проверки ФРДО подтверждена.",
+  "verificationService": {
+    "@type": "WebSite",
+    "name": "Федеральный реестр сведений о документах об образовании (ФРДО)",
+    "url": "https://obrnadzor.gov.ru/gosudarstvennye-uslugi-i-funkczii/7701537808-gosfunction/formirovanie-i-vedenie-federalnogo-reestra-svedenij-o-dokumentah-ob-obrazovanii-i-ili-o-kvalifikaczii-dokumentah-ob-obuchenii/"
+  },
+  "url": "https://vnutriapps.ru/certs/ipo-gestalt-terapiya-2024-08-20-692.pdf"
+},
+
+{
+  "@type": "EducationalOccupationalCredential",
+  "name": "Экзистенциальный подход в психологическом консультировании",
+  "description": "Диплом. Право на деятельность в сфере «Практическая психология, психологическое консультирование и психологическая диагностика». Квалификация: «Психолог-консультант».",
+  "credentialCategory": "Диплом о профессиональной переподготовке",
+  "educationalLevel": "Профессиональная переподготовка",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Номер диплома",
+    "value": "772420960963"
+  },
+  "timeRequired": "PT454H",
+  "awardDate": "2024-05-20",
+  "dateCreated": "2024-05-20",
+  "inLanguage": "ru",
+  "validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+"recognizedBy": [
+  { "@type": "EducationalOrganization", "name": "НАНО «Институт профессионального образования»", "url": "https://ipo.msk.ru/" },
+  { "@type": "GovernmentOrganization", "name": "Рособрнадзор — Федеральный реестр сведений о документах об образовании (ФРДО)", "url": "https://obrnadzor.gov.ru/" }
+],
+  "verificationMethod": "Запись в сервисе проверки ФРДО подтверждена.",
+  "verificationService": {
+    "@type": "WebSite",
+    "name": "Федеральный реестр сведений о документах об образовании (ФРДО)",
+    "url": "https://obrnadzor.gov.ru/gosudarstvennye-uslugi-i-funkczii/7701537808-gosfunction/formirovanie-i-vedenie-federalnogo-reestra-svedenij-o-dokumentah-ob-obrazovanii-i-ili-o-kvalifikaczii-dokumentah-ob-obuchenii/"
+  },
+  "url": "https://vnutriapps.ru/certs/ipo-ekzistencialnyj-podhod-2024-05-20-454.pdf"
+},
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Когнитивно-поведенческая терапия при аддиктивном/суицидальном поведении и тревожно-депрессивных расстройствах",
+          "description": "Удостоверение о повышении квалификации (108 часов).",
+          "credentialCategory": "Удостоверение о повышении квалификации",
+          "educationalLevel": "Повышение квалификации",
+          "recognizedBy": { "@type": "EducationalOrganization", "name": "Национальный исследовательский институт дополнительного образования и профессионального обучения (АНО «НИИДПО»)" },
+          "awardDate": "2023-11-03",
+          "dateCreated": "2023-11-03",
+          "timeRequired": "PT108H",
+          "inLanguage": "ru",
+"validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+          "url": "https://vnutriapps.ru/certs/niidpo-kognitivno-povedencheskaya-terapiya-2023-11-03-108h.pdf"
+        },
+
+        {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Psicología Specialization / Специализация: Психология",
+    "description": "Coursera Specialization (5 курсов: общая психология; психология восприятия; познание/мышление/язык; психология обучения; введение в нейронауки).",
+    "credentialCategory": "Coursera Specialization (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universidad de Palermo", "url": "https://www.palermo.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-17",
+    "dateCreated": "2024-01-17",
+    "timeRequired": "P16W",
+    "inLanguage": "es",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-palermo-psicologia-specialization-2024-01-17.pdf",
+    "verificationService": {
+      "@type": "WebPage",
+      "name": "Coursera Verify — Universidad de Palermo Specialization",
+      "url": "https://coursera.org/verify/specialization/Q48A6ANC82EH"
+    },
+    "hasPart": [
+      { "@type": "EducationalOccupationalCredential", "name": "Psicologia", "url": "https://vnutriapps.ru/certs/coursera-palermo-psicologia.pdf", "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/MK2RC3Q4YS49" }, "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+  "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universidad de Palermo", "url": "https://www.palermo.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-16",
+    "dateCreated": "2024-01-16" },
+      { "@type": "EducationalOccupationalCredential", "name": "Psicología de la Percepción", "url": "https://vnutriapps.ru/certs/coursera-palermo-percepcion.pdf", "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/UJAKN3ZKG7YV" }, "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+  "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universidad de Palermo", "url": "https://www.palermo.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-16",
+    "dateCreated": "2024-01-16" },
+      { "@type": "EducationalOccupationalCredential", "name": "Cognición, Pensamiento y Lenguaje", "url": "https://vnutriapps.ru/certs/coursera-palermo-cognicion.pdf", "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/GNPVTN3ZXSE4" }, "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+  "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universidad de Palermo", "url": "https://www.palermo.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-16",
+    "dateCreated": "2024-01-16" },
+      { "@type": "EducationalOccupationalCredential", "name": "Psicologia del Aprendizaje", "url": "https://vnutriapps.ru/certs/coursera-palermo-aprendizaje.pdf", "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/DUYCPY4HDYFH" }, "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+  "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universidad de Palermo", "url": "https://www.palermo.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-17",
+    "dateCreated": "2024-01-17" },
+      { "@type": "EducationalOccupationalCredential", "name": "Introduccion a la Neurociencia", "url": "https://vnutriapps.ru/certs/coursera-palermo-neurociencia.pdf", "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/KBLY6BC6F7UK" }, "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+  "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universidad de Palermo", "url": "https://www.palermo.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-16",
+    "dateCreated": "2024-01-16" }
+    ]
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Positive Psychology / Позитивная психология",
+    "credentialCategory": "Coursera Course (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "The University of North Carolina at Chapel Hill", "url": "https://www.unc.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-16",
+    "dateCreated": "2024-01-16",
+    "timeRequired": "P6W",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-unc-positive-psychology-2024-01-16.pdf",
+    "verificationService": { "@type": "WebPage", "name": "Coursera Verify", "url": "https://coursera.org/verify/V3LRPPT4T8DV" }
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Abnormal Psychology Specialization / Специализация: Патопсихология",
+    "description": "3 курса: Introduction to Abnormal Psychology; History of Mental Illness; Creating Behavioral Change.",
+    "credentialCategory": "Coursera Specialization (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Wesleyan University", "url": "https://www.wesleyan.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-17",
+    "dateCreated": "2024-01-17",
+    "timeRequired": "P14W",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-wesleyan-abnormal-psychology-specialization-2024-01-17.pdf",
+    "verificationService": { "@type": "WebPage", "name": "Coursera Verify — Wesleyan Specialization", "url": "https://coursera.org/verify/specialization/E2NDHFTG4TVD" },
+    "hasPart": [
+      { "@type": "EducationalOccupationalCredential", "name": "Introduction to Abnormal Psychology", "url": "https://vnutriapps.ru/certs/coursera-wesleyan-intro-abnormal.pdf", "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/LPV3Y7DU9NUP" }, "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+  "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Wesleyan University", "url": "https://www.wesleyan.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-17",
+    "dateCreated": "2024-01-17" },
+      { "@type": "EducationalOccupationalCredential", "name": "History of Mental Illness", "url": "https://vnutriapps.ru/certs/coursera-wesleyan-history-mental-illness.pdf", "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/DYEZZK5FU9CZ" }, "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+  "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Wesleyan University", "url": "https://www.wesleyan.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-17",
+    "dateCreated": "2024-01-17" },
+      { "@type": "EducationalOccupationalCredential", "name": "Creating Behavioral Change", "url": "https://vnutriapps.ru/certs/coursera-wesleyan-behavioral-change.pdf", "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/55V73TNL9BZ2" }, "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+  "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Wesleyan University", "url": "https://www.wesleyan.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-15",
+    "dateCreated": "2024-01-15" }
+    ]
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Psychological First Aid / Психологическая первая помощь",
+    "credentialCategory": "Coursera Course (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Johns Hopkins University", "url": "https://www.jhu.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-15",
+    "dateCreated": "2024-01-15",
+    "timeRequired": "P5W",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-jhu-psychological-first-aid-2024-01-15.pdf",
+    "verificationService": { "@type": "WebPage", "name": "Coursera Verify", "url": "https://www.coursera.org/verify/DX6KB4N6VP5H" }
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Addiction Treatment / Лечение зависимостей",
+    "credentialCategory": "Coursera Course (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Yale University", "url": "https://www.yale.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-15",
+    "dateCreated": "2024-01-15",
+    "timeRequired": "P8W",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-yale-addiction-treatment-2024-01-15.pdf",
+    "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/ST8NEAAE2FS3" }
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "The Addicted Brain / Зависимый мозг",
+    "credentialCategory": "Coursera Course (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Emory University", "url": "https://www.emory.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-14",
+    "dateCreated": "2024-01-14",
+    "timeRequired": "P8W",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-emory-the-addicted-brain-2024-01-14.pdf",
+    "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/UALHHMW7GYBX" }
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Biohacking Your Brain's Health / Биохакинг здоровья мозга",
+    "credentialCategory": "Coursera Course (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Emory University", "url": "https://www.emory.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-20",
+    "dateCreated": "2024-01-20",
+    "timeRequired": "P4W",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-emory-biohacking-brain-2024-01-20.pdf",
+    "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/HPZ8B7SVZ8BH" }
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Managing Emotions in Times of Uncertainty & Stress / Управление эмоциями в стрессовых ситуациях",
+    "credentialCategory": "Coursera Course (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Yale University", "url": "https://www.yale.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-19",
+    "dateCreated": "2024-01-19",
+    "timeRequired": "P8W",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-yale-managing-emotions-2024-01-19.pdf",
+    "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/FSLULCJPWSGK" }
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Know Thyself: The Unconscious / Самопознание: Бессознательное",
+    "credentialCategory": "Coursera Course (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "The University of Edinburgh", "url": "https://www.ed.ac.uk" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-16",
+    "dateCreated": "2024-01-16",
+    "timeRequired": "P4W",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-edinburgh-know-thyself-2024-01-16.pdf",
+    "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/NRV9W4JC65XX" }
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Tobacco Control / Борьба с табаком",
+    "credentialCategory": "Coursera Course (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Imperial College London", "url": "https://www.imperial.ac.uk" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-17",
+    "dateCreated": "2024-01-17",
+    "timeRequired": "P3W",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-imperial-tobacco-control-2024-01-17.pdf",
+    "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/NLQJERANW6VE" }
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Reign of Pain / Царство боли",
+    "credentialCategory": "Coursera Course (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Michigan State University", "url": "https://msu.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-20",
+    "dateCreated": "2024-01-20",
+    "timeRequired": "P7W",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-msu-reign-of-pain-2024-01-20.pdf",
+    "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/Y9W7HK799MG7" }
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Mindfulness: An Approach to Stress Reduction / Осознанность: подход к снижению стресса",
+    "credentialCategory": "Coursera Course (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "KAIST", "url": "https://www.kaist.ac.kr" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-20",
+    "dateCreated": "2024-01-20",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-kaist-mindfulness-2024-01-20.pdf",
+    "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/K7XDVK3CLKEL" }
+  },
+
+  {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Vital Signs: Understanding What the Body Is Telling Us",
+    "credentialCategory": "Coursera Course (non-credit)",
+    "recognizedBy": { "@type": "CollegeOrUniversity", "name": "University of Pennsylvania", "url": "https://www.upenn.edu" },
+    "provider": { "@type": "Organization", "name": "Coursera", "url": "https://www.coursera.org" },
+    "awardDate": "2024-01-23",
+    "dateCreated": "2024-01-23",
+    "inLanguage": "en",
+    "validIn": { "@type": "AdministrativeArea", "name": "Worldwide" },
+    "url": "https://vnutriapps.ru/certs/coursera-upenn-vital-signs-2024-01-23.pdf",
+    "verificationService": { "@type": "WebPage", "url": "https://www.coursera.org/verify/DKLAJK4QPZXK" }
+  },
+
+
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Практическая психология",
+          "credentialCategory": "Сертификат (повышение квалификации)",
+          "recognizedBy": { "@type": "EducationalOrganization", "name": "МФПУ «Синергия»", "url": "https://synergy.ru" },
+          "awardDate": "2025-09-12",
+          "dateCreated": "2025-09-12",
+          "timeRequired": "PT72H",
+          "inLanguage": "ru",
+"validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+          "url": "https://vnutriapps.ru/certs/synergy-prakticheskaya-psihologiya-2025-09-12-72h.pdf"
+        },
+
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Психодиагностическая работа психолога",
+          "credentialCategory": "Сертификат (повышение квалификации)",
+          "recognizedBy": { "@type": "EducationalOrganization", "name": "МФПУ «Синергия»", "url": "https://synergy.ru" },
+          "awardDate": "2025-09-12",
+          "dateCreated": "2025-09-12",
+          "timeRequired": "PT72H",
+          "inLanguage": "ru",
+"validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+          "url": "https://vnutriapps.ru/certs/synergy-psihodiagnostika-2025-09-12-72h.pdf"
+        },
+
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Психология самооценки",
+          "credentialCategory": "Сертификат (повышение квалификации)",
+          "recognizedBy": { "@type": "EducationalOrganization", "name": "МФПУ «Синергия»", "url": "https://synergy.ru" },
+          "awardDate": "2024-01-02",
+          "dateCreated": "2024-01-02",
+          "timeRequired": "PT72H",
+          "inLanguage": "ru",
+"validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+          "url": "https://vnutriapps.ru/certs/synergy-samoocenka-2024-01-02-72h.pdf"
+        },
+
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Стратегии психологического исследования",
+          "credentialCategory": "Сертификат (повышение квалификации)",
+          "recognizedBy": { "@type": "EducationalOrganization", "name": "МФПУ «Синергия»", "url": "https://synergy.ru" },
+          "awardDate": "2023-12-14",
+          "dateCreated": "2023-12-14",
+          "timeRequired": "PT72H",
+          "inLanguage": "ru",
+"validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+          "url": "https://vnutriapps.ru/certs/synergy-strategii-issledovaniya-2023-12-14-72h.pdf"
+        },
+
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Методологические проблемы психологии",
+          "credentialCategory": "Сертификат (повышение квалификации)",
+          "recognizedBy": { "@type": "EducationalOrganization", "name": "МФПУ «Синергия»", "url": "https://synergy.ru" },
+          "awardDate": "2024-01-12",
+          "dateCreated": "2024-01-12",
+          "timeRequired": "PT72H",
+          "inLanguage": "ru",
+"validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+          "url": "https://vnutriapps.ru/certs/synergy-metodologicheskie-problemy-2024-01-12-72h.pdf"
+        },
+
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Качественные и количественные методы анализа психологических данных",
+          "credentialCategory": "Сертификат (повышение квалификации)",
+          "recognizedBy": { "@type": "EducationalOrganization", "name": "МФПУ «Синергия»", "url": "https://synergy.ru" },
+          "awardDate": "2024-05-13",
+          "dateCreated": "2024-05-13",
+          "timeRequired": "PT72H",
+          "inLanguage": "ru",
+"validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+          "url": "https://vnutriapps.ru/certs/synergy-kachestvennye-kolichestvennye-metody-2024-05-13-72h.pdf"
+        },
+
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Профилактические психолого-педагогические программы",
+          "credentialCategory": "Сертификат (повышение квалификации)",
+          "recognizedBy": { "@type": "EducationalOrganization", "name": "МФПУ «Синергия»", "url": "https://synergy.ru" },
+          "awardDate": "2024-01-13",
+          "dateCreated": "2024-01-13",
+          "timeRequired": "PT72H",
+          "inLanguage": "ru",
+"validIn": {
+    "@type": "AdministrativeArea",
+    "name": "Российская Федерация"
+  },
+          "url": "https://vnutriapps.ru/certs/synergy-profilakticheskie-programmy-2024-01-13-72h.pdf"
+        }
+
+      ]
+    },
+
     {
       "@type": "WebPage",
       "url": "https://vnutriapps.ru/about-vnutri-apps",
       "name": "О Vnutri Apps — психологические приложения для самопомощи",
       "description": "Vnutri Apps — живое пространство, где психология превращается в практический опыт. Каждое приложение — путь внутрь себя: к спокойствию, вдохновению и внутренней опоре.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Vnutri Apps",
-        "logo": "https://vnutriapps.ru/images/favicon.png"
+      "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+      "inLanguage": "ru",
+      "author": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+      "mainEntity": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" }
+    },
+
+{
+  "@type": "AboutPage",
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#aboutpage",
+  "name": "О Vnutri Apps — проекте и авторе Никите Митяеве",
+  "url": "https://vnutriapps.ru/about-vnutri-apps",
+  "description": "Страница о проекте Vnutri Apps и его создателе Никите Митяеве, психологе и гештальт-терапевте.",
+  "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+  "author": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+  "mainEntity": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+  "inLanguage": "ru",
+  "mainEntityOfPage": "https://vnutriapps.ru/about-vnutri-apps"
+},
+
+    {
+      "@type": "WebSite",
+      "@id": "https://vnutriapps.ru/#website",
+      "url": "https://vnutriapps.ru/",
+      "name": "Vnutri Apps",
+      "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+      "author": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://vnutriapps.ru/search?q={query}",
+        "query-input": "required name=query"
       }
     },
+
     {
       "@type": "FAQPage",
+      "inLanguage": "ru",
       "mainEntityOfPage": "https://vnutriapps.ru/about-vnutri-apps",
       "mainEntity": [
         {
           "@type": "Question",
+          "mainEntityOfPage": { "@id": "https://vnutriapps.ru/about-vnutri-apps" },
           "name": "Что такое психологическое приложение для самопомощи?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -98,6 +732,7 @@
         },
         {
           "@type": "Question",
+          "mainEntityOfPage": { "@id": "https://vnutriapps.ru/about-vnutri-apps" },
           "name": "Чем Vnutri Apps отличается от обычных приложений для психологии?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -106,6 +741,7 @@
         },
         {
           "@type": "Question",
+          "mainEntityOfPage": { "@id": "https://vnutriapps.ru/about-vnutri-apps" },
           "name": "Можно ли использовать приложение вместо психолога?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -114,6 +750,7 @@
         },
         {
           "@type": "Question",
+          "mainEntityOfPage": { "@id": "https://vnutriapps.ru/about-vnutri-apps" },
           "name": "Подходит ли Vnutri Apps, если у меня нет опыта в психологии?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -122,6 +759,7 @@
         },
         {
           "@type": "Question",
+          "mainEntityOfPage": { "@id": "https://vnutriapps.ru/about-vnutri-apps" },
           "name": "Для кого будут полезны психологические приложения?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -129,36 +767,28 @@
           }
         }
       ]
-    }
-  ]
-}
-</script>
-
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "item": {
-        "@id": "https://vnutriapps.ru/",
-        "name": "Vnutri Apps"
-      }
     },
+
     {
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@id": "https://vnutriapps.ru/about-vnutri-apps",
-        "name": "О проекте Vnutri Apps"
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": { "@id": "https://vnutriapps.ru/", "name": "Vnutri Apps" }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": { "@id": "https://vnutriapps.ru/about-vnutri-apps", "name": "О проекте Vnutri Apps" }
+        }
+      ]
     }
+
   ]
 }
 </script>
+
 
 
     
@@ -388,7 +1018,7 @@ letter-spacing: 0.5px;
 <section id="apps" class="wrapper">
   <div class="inner">
     <header class="align-center">
-      <h1>Vnutri Apps — психологические приложения для самопомощи и саморазвития</h1>
+      <h1>Vnutri Apps — психологические приложения для самопомощи и внутреннего роста</h1>
     </header>
 
     <!-- Шапка Vnutri Apps -->
@@ -397,7 +1027,7 @@ letter-spacing: 0.5px;
         <div class="app-header">
           <img src="images/icons/ic_vnutriapps.png" alt="Vnutri Apps иконка">
           <div>
-            <h2>Твои приложения для внутренней гармонии</h2>
+            <h2>Ваши приложения для внутренней гармонии</h2>
             <a href="https://www.rustore.ru/catalog/developer/da397d8e?_rsc=e6wss" target="_blank" class="download-btn">
               <img src="images/rustore-icon.png" alt="Скачать в RuStore"> Vnutri Apps в RuStore
             </a>
@@ -423,10 +1053,6 @@ letter-spacing: 0.5px;
       <li><a href="#faq">Часто задаваемые вопросы (FAQ)</a></li>
     </ul>
   </nav>
-
-  <header class="align-center">
-    <h1>Vnutri Apps — психологические приложения для самопомощи и психологии</h1>
-  </header>
 
   <p><strong>Vnutri Apps</strong> — это современные психологические приложения для самопомощи, управления стрессом и саморазвития. Каждое приложение помогает укреплять ментальное здоровье, находить внутреннюю опору и осознанность. Они родились из простого, но глубокого желания превратить психологию в живой опыт — тот, который можно не только понять умом, но и почувствовать телом, прожить сердцем. Это не сухие инструкции и не абстрактные схемы, а пространство, где ты встречаешь самого себя и открываешь новые источники спокойствия и уверенности.</p>
 
@@ -503,6 +1129,51 @@ letter-spacing: 0.5px;
      
 </section>
 
+<section class="mainAuthor-wrap">
+  <div id="nikita-mityaev" class="mainAuthor">
+    <div class="mainAuthor-photo">
+      <img src="images/nikita-mityaev-animated.webp"
+           alt="Никита Митяев — автор проекта Vnutri Apps"
+           width="180" height="180" loading="lazy" decoding="async">
+    </div>
+
+    <div class="mainAuthor-content">
+      <h2>Здравствуйте,<br>меня зовут Никита Митяев</h2>
+
+      <p>Я — автор и создатель <strong>Vnutri Apps</strong> — проекта, где психология становится личным опытом, а технологии помогают слышать себя.  
+      Я никогда не планировал делать «приложения» — просто собирал то, что действительно работает: дыхание, смыслы, структуру, опыт.  
+      Переводил это в живой формат, при котором перемены происходят естественно, а не под давлением.  
+      Так появились мои приложения <em>Курил-бросил</em>, <em>Нет тревоге: Путь к спокойствию</em>, <em>Одиночество: Точки опоры</em>, <em>Творчество: Пламя внутри</em>, а также этот сайт, блог Vnutri Apps, Энциклопедия отказа от курения и другие направления проекта.</p>
+
+      <p>В работе я опираюсь на гештальт-подход и экзистенциальную психотерапию, а также использую элементы аналитической, когнитивно-поведенческой и телесно-ориентированной терапии.  
+      Для меня психология — не метод, а способ быть в честном контакте с собой и жизнью.</p>
+
+      <p>В процессе работы над Vnutri Apps последние 9 лет я собираю опыт, учусь и исследую современные подходы — от психологии зависимостей, стресс-менеджмента и нейробиологии поведения до патопсихологии, осознанности и телесных практик.  
+      Особое внимание уделяю темам эмоциональной регуляции, хронических психофизиологических состояний, работе с тревожностью, саморегуляции и внутренним источникам устойчивости.  
+      Мне важно не просто изучать теорию, а соединять психотерапию, нейронауку и философию так, чтобы всё это можно было применить в реальной жизни.</p>
+
+      <p>Я проходил обучение и международные курсы в ведущих университетах мира — <strong>Yale</strong>, <strong>Johns Hopkins</strong>, <strong>University of Edinburgh</strong>, <strong>Emory</strong>, <strong>Imperial College London</strong>, <strong>Michigan State</strong>, <strong>University of Pennsylvania</strong>, <strong>Wesleyan University</strong>, <strong>University of North Carolina at Chapel Hill</strong>, <strong>Universidad de Palermo</strong> и <strong>Korea Advanced Institute of Science and Technology (KAIST)</strong>.  
+      Эти программы дали мне возможность взглянуть на психологию немного шире — не просто как профессию, а как способ исследования человеческой природы, где есть место и для науки, и для глубины.</p>
+
+      <p><strong>Если коротко:</strong> в проекте Vnutri Apps я стараюсь создавать пространства, где можно остановиться, вдохнуть и почувствовать, что внутри уже есть всё нужное.</p>
+
+      <p>Сейчас я уже почти не занимаюсь индивидуальным психологическим консультированием — Vnutri Apps требует много времени и сил.<br>
+      Но я всегда открыт для общения — не с целью «научить» или «посоветовать», а чтобы помочь найти направление, которое действительно откликается.<br> 
+      В этом смысле мои приложения делают то же самое.</p>
+	<p> С уважением и теплом.</p>
+
+
+      <div class="mainAuthor-links">
+        <a href="https://t.me/vnu_apps">Telegram</a>
+        <a href="mailto:vnutri_apps@mail.ru">Почта</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 
     
 <!-- Internal Links -->
@@ -518,23 +1189,6 @@ letter-spacing: 0.5px;
   </div>
 </section>
 
-
-<!-- Two: О проекте -->
-<section id="about" class="wrapper style3">
-  <div class="inner">
-    <header class="align-center">
-      <h2>О проекте Vnutri Apps</h2>
-      <p><strong>Vnutri Apps</strong> — это живое пространство, где психология превращается в практический опыт.<br>Здесь каждый шаг можно почувствовать телом и прожить сердцем, открывая новые возможности для себя.</p>
-      <p><strong>Каждое приложение</strong> — это свой путь внутрь себя: к спокойствию, вдохновению, свободе и внутренней опоре.<br>Всё, что нужно, чтобы услышать себя и жить ближе к настоящему.</p>
-
-        
-         <div class="details-button-container">
-    <a href="about-vnutri-apps.html" class="details-button" title="Подробная информация про проект Vnutri Apps" style="color: #f5f5f5; margin-top: 20px;">🧭 Что такое Vnutri Apps?</a>
-</div>
-
-    </header>
-  </div>
-</section>
 
 <!-- Footer -->
 <footer id="footer">
