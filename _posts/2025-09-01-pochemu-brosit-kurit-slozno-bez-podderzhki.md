@@ -4,13 +4,10 @@ ready: yes
 title: "Почему бросить курить сложно без поддержки: психология зависимости и роль окружения"
 description: "Почему большинству людей трудно отказаться от сигарет в одиночку. Психологические и физиологические причины зависимости, синдром отмены и роль поддержки в отказе от курения."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-01
-dateUpdated: 2025-10-07
+dateUpdated: 2025-11-01
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/podderzka-kurenie.webp
@@ -80,14 +77,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Почему бросить курить сложно без поддержки: психология, привычки и роль окружения
@@ -381,6 +373,7 @@ isPartOf:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking with support — how to find help that works* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
