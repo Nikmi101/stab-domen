@@ -33,6 +33,27 @@
         {% endfor %}
       </div>
     {% endif %}
+
+    <!-- JSON-LD блок для автора и издателя -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "@id": "{{ post.url | absolute_url }}#card",
+      "headline": "{{ post.title | escape }}",
+      "author": {
+        "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
+      },
+      "publisher": {
+        "@id": "https://vnutriapps.ru/#organization"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ post.url | absolute_url }}"
+      },
+      "datePublished": "{{ post.date | date_to_xmlschema }}"
+    }
+    </script>
   </li>
 {% else %}
   <li class="post-item missing">
