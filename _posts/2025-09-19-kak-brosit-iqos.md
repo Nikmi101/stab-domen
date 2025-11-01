@@ -4,13 +4,10 @@ ready: yes
 title: "IQOS, glo и стики: как отказаться, если ритуал сильнее никотина"
 description: "План отказа от IQOS: как работает зависимость от нагреваемого табака, чем она отличается от сигарет/вейпа, что делать с ритуалами и как пройти первые недели без срывов."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-19
-dateUpdated: 2025-10-16
+dateUpdated: 2025-11-01
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/brosit-iqos.webp
@@ -91,14 +88,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # IQOS, glo и стики: как отказаться, если ритуал сильнее никотина
@@ -380,6 +372,7 @@ IQOS и glo формируют особенно прочную цепочку: *
 - Национальный институт здравоохранения Великобритании (NHS): *Quitting Heated Tobacco Devices (IQOS, Glo)* — [nhs.uk](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
