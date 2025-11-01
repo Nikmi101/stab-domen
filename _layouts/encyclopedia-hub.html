@@ -260,7 +260,7 @@
     </article>
 
      <!-- Автор и дата / E-E-A-T -->
-{% if __is_article %}
+
 <div class="blog-author">
   <strong>
     <a href="https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" rel="author">Никита Митяев</a><br>
@@ -276,7 +276,7 @@
   </p>
   {% endif %}
 </div>
-{% endif %}
+
 
     {% if page.recommended_apps and page.recommended_apps.size > 0 %}
       <h2 class="blog-title">Решения от<br> Vnutri Apps:</h2>
@@ -297,9 +297,9 @@
     {% endfor %}
 
     <!-- JSON-LD -->
-    {% if __is_article %}
-      {% include jsonld-article-cycle-brosit-kurit.html %}
-    {% endif %}
+    
+    {% include jsonld-article-cycle-brosit-kurit.html %}
+   
     {% include jsonld-breadcrumbs-ld.html %}
   </div>
 </main>
