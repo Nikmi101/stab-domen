@@ -51,14 +51,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Кашель после отказа от сигарет: когда это норма и что помогает
@@ -227,6 +222,7 @@ isPartOf:
 
 ### **Когда обязательно обращаться за медицинской помощью?**  
 При высокой температуре, свистящем дыхании, сильной боли в груди, выраженной одышке, обмороках или если кашель не уходит месяцами.
+
 
 
 
