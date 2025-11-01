@@ -53,14 +53,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 sources:
   - "@type": "CreativeWork"
     name: "World Health Organization (WHO): Psychological Recovery and Inner Resources in Smoking Cessation"
@@ -335,5 +330,6 @@ sources:
 - National Institute on Drug Abuse (NIDA): *Internal Motivation and Recovery Pathways* — [nida.nih.gov](https://nida.nih.gov)  
 - Cochrane Library: *Behavioral and Meaning-Based Strategies for Smoking Cessation* — [cochranelibrary.com](https://www.cochranelibrary.com)  
 - Минздрав РФ — *Психологическая устойчивость и формирование внутренней опоры при отказе от никотина* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
+
 
 
