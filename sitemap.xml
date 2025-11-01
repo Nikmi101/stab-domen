@@ -7,7 +7,7 @@ layout: none
   <!-- Главная -->
   <url>
     <loc>https://vnutriapps.ru/</loc>
-    <lastmod>2025-10-15</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -59,7 +59,7 @@ layout: none
   <!-- Приложение Курил-бросил -->
   <url>
     <loc>https://vnutriapps.ru/brosit-kurit</loc>
-    <lastmod>2025-10-15</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -68,7 +68,7 @@ layout: none
   <!-- Приложение Нет тревоге -->
   <url>
     <loc>https://vnutriapps.ru/snizit-trevogu</loc>
-    <lastmod>2025-09-07</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -76,7 +76,7 @@ layout: none
   <!-- Приложение Одиночество: Точки опоры -->
   <url>
     <loc>https://vnutriapps.ru/kak-borotsya-s-odinochestvom</loc>
-    <lastmod>2025-10-22</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -84,7 +84,7 @@ layout: none
   <!-- Приложение Творчество: Пламя внутри -->
   <url>
     <loc>https://vnutriapps.ru/razvitie-tvorchestva</loc>
-    <lastmod>2025-09-22</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -92,7 +92,7 @@ layout: none
     <!-- RSS Feed -->
   <url>
     <loc>https://vnutriapps.ru/rss.xml</loc>
-    <lastmod>2025-10-12</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -157,7 +157,7 @@ layout: none
   </url>
   <url>
     <loc>https://vnutriapps.ru/blog/privychki/psihologiya-zavisimosti/</loc>
-    <lastmod>2025-10-15</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
