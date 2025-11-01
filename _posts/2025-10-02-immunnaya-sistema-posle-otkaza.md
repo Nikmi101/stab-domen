@@ -80,14 +80,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Иммунитет после отказа от курения: фоновое воспаление, частые простуды и что обычно меняется
@@ -225,6 +220,7 @@ isPartOf:
 - Cochrane Tobacco Addiction Group — [cochranelibrary.com](https://www.cochranelibrary.com/topic/tobacco-addiction)  
 
 ---
+
 
 
 
