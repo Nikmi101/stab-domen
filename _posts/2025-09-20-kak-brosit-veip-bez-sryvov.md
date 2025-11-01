@@ -4,10 +4,7 @@ ready: yes
 title: "Как бросить вейп и электронные сигареты: когда капельное поступление никотина сильнее ритуала"
 description: "Разбираем, как развивается зависимость от вейпов: капельное насыщение никотином, влияние вкусов, почему переход на электронку — не всегда путь к отказу. Сценарии замены, план первых дней и ловушки срыва."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-16
 dateUpdated: 2025-10-16
@@ -89,14 +86,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 # Как бросить вейп и электронные сигареты: когда капельное поступление никотина сильнее ритуала
 
@@ -496,6 +488,7 @@ isPartOf:
 - E-Cigarettes — [Wikipedia](https://en.wikipedia.org/wiki/Electronic_cigarette)
 
 ---
+
 
 
 
