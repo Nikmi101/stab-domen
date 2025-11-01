@@ -19,24 +19,7 @@
   "description": {{ page.description | default: site.description | jsonify }},
   "inLanguage": "ru-RU",
   "isAccessibleForFree": true,
-  "author": {
-    "@type": "Person",
-    "name": {{ page.author.name | default: "Никита Митяев" | jsonify }},
-    "jobTitle": {{ page.author.jobTitle | default: 'Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps' | jsonify }},
-    "url": {{ page.author.url | default: "https://vnutriapps.ru/about-vnutri-apps" | jsonify }},
-    "@id": {{ page.author.url | default: page.url | absolute_url | jsonify }},
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Vnutri Apps",
-      "url": "https://vnutriapps.ru"
-    },
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://vnutriapps.ru/favicon192.png",
-      "width": 192,
-      "height": 192
-    }
-  },
+  "author": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
   "publisher": {
     "@id": "https://vnutriapps.ru/#organization",
     "@type": "Organization",
