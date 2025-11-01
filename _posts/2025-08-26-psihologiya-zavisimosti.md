@@ -6,7 +6,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-08-26
-dateUpdated: 2025-10-15
+dateUpdated: 2025-11-01
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/petlya-privychki.webp
@@ -16,13 +16,13 @@ tags:
   - психология привычек
   - как менять привычки
   - привычки и зависимость
+  - никотиновая зависимость
+  - как бросить курить
   - сила воли и привычки
   - психология зависимости
   - устойчивость привычек
   - как избавиться от вредных привычек
-  - поведение и мозг
-  - бросить курить
-  - зависимость
+  - поведение и мозг  
   - привычки и мотивация
 faq:
   - q: "Почему привычки такие устойчивые?"
@@ -425,5 +425,6 @@ isPartOf:
 - Национальный институт здравоохранения Великобритании (NHS): *How to change habits and manage addiction* — [nhs.uk](https://www.nhs.uk/live-well/)
 
 ---
+
 
 
