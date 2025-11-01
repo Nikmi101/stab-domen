@@ -4,10 +4,7 @@ ready: yes
 title: "Почему после отказа от сигарет тянет на сладкое — и как не набрать вес"
 description: "Выясняем, почему после отказа от сигарет усиливается тяга к сладкому. Разбираем физиологию, дофамин, питание и психологию. Мягкий 30-дневный план без диет и без лишних килограммов."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-22
 dateUpdated: 2025-10-19
@@ -84,14 +81,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Бросил курить — тянет на сладкое: как не поменять сигареты на сахар
@@ -482,6 +474,7 @@ isPartOf:
 - American Psychological Association (APA): *Emotional eating and behavioral replacement after smoking cessation* — [apa.org](https://www.apa.org)  
 - European Network for Smoking and Tobacco Prevention (ENSP): *Weight management and craving regulation after quitting* — [ensp.network](https://ensp.network)  
 - Национальный институт здравоохранения Великобритании (NHS): *Managing appetite and sugar cravings after quitting smoking* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
+
 
 
 
