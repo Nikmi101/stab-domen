@@ -259,18 +259,24 @@
       {{ content }}
     </article>
 
-    <!-- Автор и дата / E-E-A-T -->
-    {% if __is_article and page.author %}
-    <div class="blog-author" itemscope itemtype="https://schema.org/Person">
-      <strong itemprop="name">{{ page.author.name | default: "Vnutri Apps" }}<br></strong>
-      {% if page.author.title %}<span itemprop="jobTitle"> · {{ page.author.title }}<br></span>{% endif %}
-      {% if page.author.url %} · <a href="{{ page.author.url }}" itemprop="url" rel="author">О проекте</a>{% endif %}
-      {% if page.date %}<br>{{ page.date | date: "%d.%m.%Y" }}{% endif %}
-      {% if page.medical_disclaimer %}
-      <p class="disclaimer">Материал носит информационный характер и не заменяет консультацию специалиста.</p>
-      {% endif %}
-    </div>
-    {% endif %}
+     <!-- Автор и дата / E-E-A-T -->
+{% if __is_article %}
+<div class="blog-author">
+  <strong>
+    <a href="https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" rel="author">Никита Митяев</a><br>
+  </strong>
+  <span>Психолог-консультант, специалист по экзистенциальной и гештальт-терапии<br></span>
+  <span>Основатель и разработчик Vnutri Apps</span><br>
+  {% if page.date %}
+  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%m.%Y" }}</time>
+  {% endif %}
+  {% if page.medical_disclaimer %}
+  <p class="disclaimer">
+    Материал носит информационный характер и не заменяет консультацию специалиста.
+  </p>
+  {% endif %}
+</div>
+{% endif %}
 
     {% if page.recommended_apps and page.recommended_apps.size > 0 %}
       <h2 class="blog-title">Решения от<br> Vnutri Apps:</h2>
