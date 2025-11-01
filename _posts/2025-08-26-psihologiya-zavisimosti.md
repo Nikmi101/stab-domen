@@ -3,10 +3,7 @@ layout: post
 title: "Почему привычки так трудно менять: психология зависимости и механизм изменений"
 description: "Почему привычки такие устойчивые, как формируются зависимости и почему сила воли не помогает. Психология привычек, зависимостей и реальные способы их изменения — без мифов и стереотипов."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-08-26
 dateUpdated: 2025-10-15
@@ -84,15 +81,10 @@ isPartOf:
   "name": "Энциклопедия отказа от курения — Курил-бросил"
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+  author:
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization" 
 ---
 
 # Почему привычки так трудно менять: психология зависимости и механизм повторений
@@ -433,3 +425,4 @@ isPartOf:
 - Национальный институт здравоохранения Великобритании (NHS): *How to change habits and manage addiction* — [nhs.uk](https://www.nhs.uk/live-well/)
 
 ---
+
