@@ -51,14 +51,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Пассивное курение и дом без дыма: как перестроить пространство для жизни без сигарет
@@ -234,6 +229,7 @@ isPartOf:
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
