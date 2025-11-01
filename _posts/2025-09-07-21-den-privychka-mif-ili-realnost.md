@@ -4,10 +4,7 @@ ready: yes
 title: "Как формируются новые привычки: 21 день или миф?"
 description: "Откуда взялся миф про 21 день для привычки, что на самом деле происходит в мозге и сколько времени нужно, чтобы закрепить изменения. Пошаговый план, чек-листы и частые ошибки."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-07
 dateUpdated: 2025-09-22
@@ -49,14 +46,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Как формируются новые привычки: 21 день или миф?
@@ -290,6 +282,7 @@ isPartOf:
 👉 Для поддержания регулярности и видимости прогресса удобно использовать приложение **«Курил-бросил»**: краткие практики, полезные в отказе от сигарет мысли и установки, которые помогают закреплять реальное новое поведение, а не гоняться за магическими сроками.
 
 ---
+
 
 
 
