@@ -4,10 +4,7 @@ ready: yes
 title: "Герой и одиночество: почему путь всегда одинок"
 description: "Архетип пути героя от Юнга и Кэмпбелла, психологический смысл одиночества на поворотных этапах, отличие уединения от изоляции, практики внутренней опоры и план на 14 дней."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 date: 2025-09-10
 dateUpdated: 2025-09-22
 articleSection: "Философия и глубина"
@@ -51,14 +48,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Герой и одиночество: почему путь всегда одинок
@@ -229,6 +221,7 @@ isPartOf:
 Есть новая формулировка смысла, появилась энергия к действию и хотя бы один результат, которым можно поделиться с другими — пора интегрировать опыт в обычную жизнь.
 
 ---
+
 
 
 
