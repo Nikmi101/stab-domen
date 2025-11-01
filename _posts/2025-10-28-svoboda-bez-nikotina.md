@@ -4,10 +4,7 @@ ready: yes
 title: "Свобода без никотина: как перестать искать опору во внешнем"
 description: "Экзистенциальный взгляд на зависимость: как перестать искать поддержку во внешних стимулах и курении, вернуть внутреннюю опору и почувствовать свободу без никотина."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: false
 date: 2025-10-28
 dateUpdated: 2025-10-28
@@ -330,6 +327,7 @@ sources:
 - National Institute on Drug Abuse (NIDA): *Internal Motivation and Recovery Pathways* — [nida.nih.gov](https://nida.nih.gov)  
 - Cochrane Library: *Behavioral and Meaning-Based Strategies for Smoking Cessation* — [cochranelibrary.com](https://www.cochranelibrary.com)  
 - Минздрав РФ — *Психологическая устойчивость и формирование внутренней опоры при отказе от никотина* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
+
 
 
 
