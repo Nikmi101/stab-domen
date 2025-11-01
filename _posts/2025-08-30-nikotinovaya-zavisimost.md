@@ -4,10 +4,7 @@ ready: yes
 title: "Никотиновая зависимость: мифы, правда и почему бросить курить кажется трудным"
 description: "Мифы и правда о никотиновой зависимости: почему бросить курить сложно, как формируется зависимость от никотина, что на самом деле делает никотин с мозгом и как освободиться от иллюзий."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-08-30
 dateUpdated: 2025-10-31
@@ -92,14 +89,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Никотиновая зависимость: мифы, правда и как освободиться от иллюзий курения
@@ -484,6 +476,7 @@ isPartOf:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — understanding addiction* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
