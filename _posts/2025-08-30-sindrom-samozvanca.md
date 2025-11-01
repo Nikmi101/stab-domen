@@ -4,13 +4,10 @@ ready: yes
 title: "Синдром самозванца и как он убивает креативность"
 description: "Что такое синдром самозванца, почему он мешает творчеству и как перестать сомневаться в себе. Психология неуверенности и пути её преодоления."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-08-30
-dateUpdated: 2025-09-22
+dateUpdated: 2025-11-01
 articleSection: "Творчество и креативность"
 preload_images:
   - /images/blog-images/sindrom-samozvanca.webp
@@ -163,6 +160,7 @@ permalink: "/blog/tvorchestvo/sindrom-samozvanca/"
 👉 Для этого создано приложение **[«Творчество: Пламя внутри»](/razvitie-tvorchestva)**. Оно помогает преодолеть внутренние блоки и почувствовать радость от создания нового.  
 
 ---
+
 
 
 
