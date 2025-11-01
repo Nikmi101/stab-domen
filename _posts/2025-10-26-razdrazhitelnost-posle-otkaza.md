@@ -56,14 +56,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 sources:
   - "@type": "CreativeWork"
     name: "Всемирная организация здравоохранения (ВОЗ): Emotional regulation during tobacco withdrawal"
@@ -339,5 +334,6 @@ sources:
 - National Institute on Drug Abuse (NIDA): *Neuroadaptation and Emotional Stability After Quitting Smoking* — [nida.nih.gov](https://nida.nih.gov)  
 - Cochrane Library: *Behavioral and lifestyle interventions for mood regulation after quitting smoking* — [cochranelibrary.com](https://www.cochranelibrary.com)  
 - Минздрав РФ — *Клинические рекомендации по сопровождению пациентов с синдромом отмены никотина* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
+
 
 ---
