@@ -4,10 +4,7 @@ ready: yes
 title: "Набор веса после отказа от сигарет: как стабилизировать питание и не вернуть зависимость"
 description: "Почему после отказа от курения меняется аппетит и растёт вес. Как работает метаболизм, когда возвращается вкус, и как стабилизировать питание без диет, стресса и возврата к сигаретам."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-24
 dateUpdated: 2025-10-20
@@ -81,14 +78,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Набор веса после отказа от сигарет: как стабилизировать питание и вернуть телу баланс
@@ -455,5 +447,6 @@ isPartOf:
 - Национальный институт здравоохранения Великобритании (NHS): *Healthy eating and weight stability after quitting smoking* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
