@@ -4,10 +4,7 @@ ready: yes
 title: "Синдром отмены при отказе от курения: симптомы, сроки и как пережить без срывов"
 description: "Синдром отмены курения: сколько он длится, какие симптомы бывают и что делать в первые дни без сигарет. Таймлайн по дням, план на 14 дней и практические советы, чтобы пережить тягу без срывов."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-02
 dateUpdated: 2025-10-07
@@ -408,6 +405,7 @@ isPartOf:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — withdrawal symptoms and how to cope* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
