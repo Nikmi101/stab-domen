@@ -4,10 +4,7 @@ ready: yes
 title: "Первая неделя и две недели без сигарет — симптомы, ошибки и как удержаться без срывов"
 description: "Симптомы и ощущения в первую неделю после отказа от курения. Что происходит с телом, когда проходит тяга, ошибки, стресс и как удержаться без срывов и никотина."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-15
 dateUpdated: 2025-10-10
@@ -83,14 +80,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Первая неделя без сигарет: адаптация, симптомы и как удержаться без срывов
@@ -340,6 +332,7 @@ width="1200" height="675" %}
 - Национальный институт здравоохранения Великобритании (NHS): *What happens when you quit — first weeks timeline and coping strategies* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
