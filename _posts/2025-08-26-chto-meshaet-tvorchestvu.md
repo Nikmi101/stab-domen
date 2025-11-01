@@ -3,10 +3,9 @@ layout: post
 title: "Что мешает творчеству: внутренние блоки и страхи"
 description: "Разбираем, почему внутренние страхи и установки мешают творить. Как психологические блоки разрушают креативность и что с этим делать."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
+publisher:
+    "@id": "https://vnutriapps.ru/#organization" 
 medical_disclaimer: true
 ready: yes
 date: 2025-08-26
@@ -156,6 +155,7 @@ permalink: "/blog/tvorchestvo/chto-meshaet-tvorchestvu/"
 👉 В этом помогает приложение **«Творчество: Пламя внутри»**. Оно шаг за шагом снимает внутренние блоки, развивает креативное мышление и возвращает уверенность в себе.
 
 ---
+
 
 
 
