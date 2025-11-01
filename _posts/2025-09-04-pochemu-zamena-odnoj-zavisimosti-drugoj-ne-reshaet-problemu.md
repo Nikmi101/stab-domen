@@ -4,10 +4,7 @@ ready: yes
 title: "Замена одной зависимости другой после отказа от курения: сладкое, алкоголь, гаджеты"
 description: "Почему замена сигарет сладким, алкоголем, кофе или гаджетами не решает проблему. Опасность переноса зависимости и что делать вместо: план на 14 дней, чек-листы и практики."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-04
 dateUpdated: 2025-10-07
@@ -83,14 +80,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Почему замена одной зависимости другой не помогает бросить курить
@@ -340,6 +332,7 @@ isPartOf:
 - Национальный институт здравоохранения Великобритании (NHS): *Healthy substitutions and post-cessation behavior* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
