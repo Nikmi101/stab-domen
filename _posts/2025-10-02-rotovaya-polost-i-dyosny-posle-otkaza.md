@@ -4,10 +4,7 @@ ready: yes
 title: "Зубы и дёсны после отказа от курения: налёт, запах, сухость — что обычно меняется"
 description: "Информационная статья: как курение влияет на ротовую полость, почему после отказа может усилиться кровоточивость, что происходит с налётом, запахом и сухостью, и какие сигналы — к стоматологу."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-02
 dateUpdated: 2025-10-13
@@ -215,6 +212,7 @@ isPartOf:
 - Cochrane Library: Smoking cessation and periodontal health — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
