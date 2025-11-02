@@ -4,10 +4,7 @@ ready: yes
 title: "Нервная система после отказа от курения: внимание, сон и «туман»"
 description: "Информационный обзор: как никотин влияет на нервную систему и что обычно меняется после отказа. Концентрация и память, раздражительность и настроение, сон и вегетативные реакции — аккуратные ориентиры по времени."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-01
 dateUpdated: 2025-10-13
@@ -232,6 +229,7 @@ isPartOf:
 - Cochrane Library: Nicotine withdrawal and neurocognitive effects — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
