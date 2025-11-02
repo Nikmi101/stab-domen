@@ -4,10 +4,7 @@ ready: yes
 title: "Сердце и сосуды после отказа от курения: как снижается нагрузка и стабилизируется ритм"
 description: "Информационный разбор: что курение делает с сердцем и сосудами и что обычно меняется после отказа. Давление и пульс, сосудистый тонус и выносливость — примерные ориентиры по времени."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-30
 dateUpdated: 2025-10-13
@@ -217,6 +214,7 @@ isPartOf:
 - CDC: Smoking and Heart Disease — [cdc.gov](https://www.cdc.gov)
 
 ---
+
 
 
 
