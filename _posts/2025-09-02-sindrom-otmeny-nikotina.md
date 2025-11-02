@@ -1,13 +1,13 @@
 ---
 layout: post
 ready: yes
-title: "Синдром отмены при отказе от курения: симптомы, сроки и как пережить без срывов"
+title: "Синдром отмены никотина при отказе от курения: симптомы, сроки и как пережить без срывов"
 description: "Синдром отмены курения: сколько он длится, какие симптомы бывают и что делать в первые дни без сигарет. Таймлайн по дням, план на 14 дней и практические советы, чтобы пережить тягу без срывов."
 author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-02
-dateUpdated: 2025-10-07
+dateUpdated: 2025-11-02
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/sindrom-otmeny.webp
@@ -17,6 +17,7 @@ tags:
   - синдром отмены курения
   - бросить курить последствия
   - симптомы после отказа от сигарет
+  - как бросить курить легко без ломки
   - тяга к сигаретам что делать
   - как пережить первые дни без сигарет
   - план бросить курить 14 дней
@@ -85,14 +86,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Как работает синдром отмены: что ждёт после отказа от сигарет
@@ -355,7 +351,7 @@ isPartOf:
 
 ---
 
-## Еще статьи по теме
+## Еще статьи по теме отказа от курения
 
 - [Календарь отказа от курения: изменения и опоры по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
 - [Первая неделя и первые 14 дней без сигарет: опоры, ошибки и моменты правды](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
@@ -405,6 +401,7 @@ isPartOf:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — withdrawal symptoms and how to cope* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
