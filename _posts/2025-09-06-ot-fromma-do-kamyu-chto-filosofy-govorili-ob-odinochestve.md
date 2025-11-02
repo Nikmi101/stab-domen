@@ -4,12 +4,9 @@ ready: yes
 title: "От Фромма до Камю: что философы говорили об одиночестве"
 description: "Взгляды Фромма, Камю, Шопенгауэра, Сартра, Франкла, Кьеркегора и Арендт на одиночество: чем отличается уединение от изоляции, почему чувство отдельности — не ошибка, и как превратить одиночество в опору."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 date: 2025-09-06
-dateUpdated: 2025-09-22
+dateUpdated: 2025-11-02
 articleSection: "Философия и глубина"
 preload_images:
   - /images/blog-images/philosophy-solitude.webp
@@ -48,14 +45,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # От Фромма до Камю: что философы говорили об одиночестве
@@ -207,6 +199,7 @@ isPartOf:
 Фромм «Иметь или быть?», Камю «Миф о Сизифе», Шопенгауэр «Афоризмы житейской мудрости», Сартр «Экзистенциализм — это гуманизм», Франкл «Сказать жизни „Да!“», Кьеркегор «Страх и трепет», Арендт «Vita activa». 
 
 ---
+
 
 
 
