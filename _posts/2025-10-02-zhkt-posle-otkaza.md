@@ -4,10 +4,7 @@ ready: yes
 title: "ЖКТ и пищеварение после отказа от курения: слизистые, кислотность, микробиота"
 description: "Информационный обзор: как курение влияет на желудочно-кишечный тракт (слизистая, кислотность, моторика, микробиота) и что обычно меняется после отказа. Ориентиры по времени и когда уместна консультация врача."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-02
 dateUpdated: 2025-10-13
@@ -209,6 +206,7 @@ isPartOf:
 - Cochrane Library: Smoking cessation and gut health — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
