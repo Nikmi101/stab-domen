@@ -4,10 +4,7 @@ ready: yes
 title: "Первые 72 часа без сигарет: синдром отмены, волны тяги и как пережить без срывов"
 description: "Симптомы синдрома отмены никотина и волны тяги в первые 72 часа после отказа от сигарет. Подробный план, что помогает, как пережить кризис и не сорваться."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-25
 dateUpdated: 2025-10-09
@@ -405,6 +402,7 @@ isPartOf:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — withdrawal symptoms and how to cope* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
