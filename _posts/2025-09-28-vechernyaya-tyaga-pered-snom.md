@@ -4,10 +4,7 @@ ready: yes
 title: "Ночная тяга к сигаретам: что делать, если хочется курить перед сном"
 description: "Почему вечером и ночью особенно тянет курить, как справиться с никотиновой тягой перед сном, избежать срывов и наладить сон после отказа от сигарет. Пошаговые советы, дыхание, замены и ритуалы восстановления."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-28
 dateUpdated: 2025-10-17
@@ -351,6 +348,7 @@ isPartOf:
 - European Network for Smoking and Tobacco Prevention (ENSP): *Night cravings in smoking cessation* — [ensp.network](https://ensp.network)
 
 ---
+
 
 
 
