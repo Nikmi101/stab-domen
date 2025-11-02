@@ -4,10 +4,7 @@ ready: yes
 title: "Онкориски после отказа от курения: как снижается риск рака со временем"
 description: "Информационная статья: как курение повышает онкологические риски и что обычно происходит с риском рака после отказа. Горизонты по времени, факторы, которые ускоряют пользу отказа от сигарет."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-02
 dateUpdated: 2025-10-13
@@ -215,6 +212,7 @@ isPartOf:
 - Cochrane Library: Smoking cessation and cancer prevention — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
