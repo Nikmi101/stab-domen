@@ -4,10 +4,7 @@ ready: yes
 title: "Пассивное курение и дом без дыма: как перестроить пространство для жизни без сигарет"
 description: "Пошаговый план, как превратить квартиру в зону без табачного дыма: воздух, поверхности и договорённости. Что делать в первые 72 часа, как убрать запах и о чём договориться с близкими и гостями."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-29
 dateUpdated: 2025-09-30
@@ -229,6 +226,7 @@ isPartOf:
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
