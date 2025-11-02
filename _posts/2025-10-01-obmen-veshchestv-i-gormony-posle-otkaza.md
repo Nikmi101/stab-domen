@@ -4,10 +4,7 @@ ready: yes
 title: "Обмен веществ и гормональный фон после отказа от курения: что меняется и в какие сроки"
 description: "Информационный разбор: как курение влияет на метаболизм и гормональные регуляции (аппетит, инсулин, кортизол, лептин/грелин) и что обычно происходит после отказа. Почему сначала тянет на сладкое и как со временем стабилизируется вес."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-01
 dateUpdated: 2025-10-13
@@ -238,6 +235,7 @@ isPartOf:
 - Cochrane Library: Smoking cessation and weight gain — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
