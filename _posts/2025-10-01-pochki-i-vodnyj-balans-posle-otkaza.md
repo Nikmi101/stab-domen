@@ -4,10 +4,7 @@ ready: yes
 title: "Почки и водный баланс после отказа от курения: почему чувствительность к воде повышается"
 description: "Информационный обзор: как курение связано с водно-электролитным балансом и работой почек, и что обычно меняется после отказа. Без страшилок: ориентиры по времени, нормальные «волны» адаптации и когда уместна консультация врача."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-01
 dateUpdated: 2025-10-13
@@ -204,6 +201,7 @@ isPartOf:
 - Cochrane Library: Smoking and pancreatic disorders — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
