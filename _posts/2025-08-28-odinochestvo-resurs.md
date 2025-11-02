@@ -4,10 +4,7 @@ ready: yes
 title: "Одиночество как ресурс: почему это не враг"
 description: "Объясняем, почему одиночество не всегда негативно. Как научиться видеть в нём ресурс для развития и внутренней опоры."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-08-28
 dateUpdated: 2025-09-22
@@ -53,14 +50,9 @@ isPartOf:
   "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
   "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
   "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
   "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+    "@id": "https://vnutriapps.ru/#organization"
 ---
 
 # Одиночество как ресурс: почему это не враг
@@ -239,6 +231,7 @@ isPartOf:
 👉 Именно этому посвящено приложение **«Одиночество: Точки опоры»**. Оно помогает прожить одиночество осознанно и превратить его в ресурс внутреннего развития.
 
 ---
+
 
 
 
