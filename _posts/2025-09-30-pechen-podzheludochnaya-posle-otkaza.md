@@ -4,10 +4,7 @@ ready: yes
 title: "Печень, поджелудочная и желчевыводящая система после отказа от курения: что меняется"
 description: "Информационный обзор: как курение связано с функцией печени, желчевыводящей системы и поджелудочной железы — и что обычно улучшается после отказа. Аккуратные ориентиры по времени и сигналы, когда уместна консультация врача."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-30
 dateUpdated: 2025-10-13
@@ -216,6 +213,7 @@ isPartOf:
 - Cochrane Library: Smoking and pancreatic disorders — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
