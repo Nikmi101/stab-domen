@@ -4,10 +4,7 @@ ready: yes
 title: "Восстановление внешности после отказа от курения: кожа, волосы, глаза, зубы"
 description: "Информационный обзор: как курение влияет на внешность и что обычно меняется после отказа. Кожа и цвет лица, волосы и глаза, зубы и дёсны, запах одежды и дыхания — примерные сроки и ориентиры."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-30
 dateUpdated: 2025-10-13
@@ -218,6 +215,7 @@ isPartOf:
 - Cochrane Library: Smoking cessation and dermatological outcomes — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
