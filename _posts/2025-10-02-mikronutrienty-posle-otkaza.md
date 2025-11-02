@@ -4,10 +4,7 @@ ready: yes
 title: "Микронутриенты после отказа от курения: витамины и минералы без мифов"
 description: "Информационный обзор: как курение связано со статусом витаминов и минералов (витамин C, фолаты, витамины группы B, витамин D, каротиноиды, магний, цинк, селен) и что обычно меняется после отказа. Аккуратные ориентиры по времени и когда уместны анализы."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-02
 dateUpdated: 2025-10-13
@@ -247,6 +244,7 @@ isPartOf:
 - Cochrane Library: Smoking and micronutrient metabolism — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
