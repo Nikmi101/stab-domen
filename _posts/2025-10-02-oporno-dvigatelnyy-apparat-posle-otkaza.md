@@ -4,10 +4,7 @@ ready: yes
 title: "Кости, мышцы и выносливость после отказа от курения: что меняется в опорно-двигательном аппарате"
 description: "Информационный разбор: как курение влияет на костную плотность, мышцы, связки и выносливость; что обычно меняется после отказа, ориентиры по времени и когда стоит обратиться к врачу."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-02
 dateUpdated: 2025-10-13
@@ -225,6 +222,7 @@ isPartOf:
 - Cochrane Library: Smoking cessation and bone density — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
