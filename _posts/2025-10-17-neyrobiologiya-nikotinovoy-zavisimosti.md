@@ -4,10 +4,7 @@ ready: yes
 title: "Нейробиология зависимости: как мозг перестраивается при отказе от никотина"
 description: "Что происходит с мозгом, когда человек бросает курить: как формируется зависимость, как работает дофамин, и почему нейропластичность — главный союзник на пути к свободе от никотина."
 author:
-  name: "Никита Митяев"
-  jobTitle: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии, Основатель и разработчик Vnutri Apps"
-  url: "https://vnutriapps.ru/about-vnutri-apps"
-  qualification: "Гештальт-терапевт, Психолог-консультант, Специалист по экзистенциальной терапии"
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-17
 dateUpdated: 2025-10-17
@@ -351,6 +348,7 @@ isPartOf:
 - Cochrane Library: [Neuroscience of tobacco addiction and cessation](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
