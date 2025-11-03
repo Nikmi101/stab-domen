@@ -40,6 +40,9 @@ recommended_apps:
   - stress
 permalink: "/blog/emotsii/stress-pered-ekzamenom-i-sobesedovaniem/"
 reading_time: "19"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Экзамены, дедлайны, собеседования: как управлять стрессом до, во время и после
@@ -207,6 +210,7 @@ reading_time: "19"
 
 ### **Как восстановиться после экзамена/собеседования?**  
 Короткий разбор 10–15 минут: что получилось/что улучшить, затем переключение — движение, еда, сон. Обратную связь читать на следующий день, чтобы не застревать в самокритике.
+
 
 
 
