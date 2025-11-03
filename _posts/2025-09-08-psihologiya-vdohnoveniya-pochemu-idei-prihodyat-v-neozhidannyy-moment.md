@@ -41,6 +41,10 @@ recommended_apps:
   - tvorchestvo
 permalink: "/blog/tvorchestvo/psihologiya-vdohnoveniya-pochemu-idei-prihodyat-v-neozhidannyy-moment/"
 reading_time: "17"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/tvorchestvo/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Психология вдохновения: почему идеи приходят в неожиданный момент
@@ -220,6 +224,7 @@ reading_time: "17"
 
 ### **Как не утонуть в идеях?**  
 Один вход для фиксации, ежедневная пятиминутная сортировка и правило: **1 идея в работу**, остальные — в «банк».
+
 
 
 
