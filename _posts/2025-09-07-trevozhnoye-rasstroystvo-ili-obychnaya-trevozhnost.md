@@ -40,6 +40,10 @@ recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevozhnoye-rasstroystvo-ili-obychnaya-trevozhnost/"
 reading_time: "15"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Как отличить тревожное расстройство от обычной тревожности
@@ -226,6 +230,7 @@ reading_time: "15"
 
 ### **К кому обращаться: психолог, психотерапевт или психиатр?**  
 Для первичной оценки подойдёт психолог/психотерапевт. При выраженных симптомах или вопросах о лекарствах — к психиатру.  
+
 
 
 
