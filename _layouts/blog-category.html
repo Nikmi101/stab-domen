@@ -75,10 +75,10 @@ layout: default
     {
       "@type": "ListItem",
       "position": {{ forloop.index }},
-      "url": "{{ post.url | absolute_url }}",
       "item": {
         "@id": "{{ post.url | absolute_url }}#article",
         "@type": "Article",
+        "url": "{{ post.url | absolute_url }}",
         "headline": {{ post.title | jsonify }},
         "datePublished": "{{ post.date | date_to_xmlschema }}"{% if post.dateUpdated %},
         "dateModified": "{{ post.dateUpdated | date_to_xmlschema }}"{% endif %}
@@ -86,7 +86,7 @@ layout: default
     }{%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
 ]
-    },
+    }
   ]
 }
 </script>
