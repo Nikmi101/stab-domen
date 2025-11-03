@@ -38,6 +38,10 @@ recommended_apps:
   - tvorchestvo
 permalink: "/blog/tvorchestvo/kreativnost-i-disciplina-vragi-ili-soyuzniki/"
 reading_time: "17"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/tvorchestvo/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Креативность и дисциплина: враги или союзники
@@ -239,6 +243,7 @@ reading_time: "17"
 
 ### **Как совместить свободу и порядок?**  
 Определить форму (слот времени, ограничения), а содержание оставлять свободным — эксперименты внутри рамки.
+
 
 
 
