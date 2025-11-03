@@ -39,6 +39,9 @@ banner:
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/pochemu-voznikaet-trevoga/"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Что такое тревога и почему она возникает
@@ -173,6 +176,7 @@ permalink: "/blog/emotsii/pochemu-voznikaet-trevoga/"
 👉 Именно для этого создано приложение **«Нет тревоге: Путь к спокойствию»**. Оно ведёт через пошаговую работу с тревогой: от понимания её природы до формирования устойчивых навыков внутреннего спокойствия.
 
 ---
+
 
 
 
