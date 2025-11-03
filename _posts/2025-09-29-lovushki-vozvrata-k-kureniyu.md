@@ -7,17 +7,18 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-29
-dateUpdated: 2025-09-30
-articleSection: "Бросить курить с поддержкой"
+dateUpdated: 2025-11-03
+articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/blog-header.webp
-tema: "Когнитивные ловушки при отказе"
+tema: "Бросить курить"
 categories: [privychki]
 tags:
-  - как не сорваться
-  - когнитивные ловушки курение
+  - как не сорваться на сигарету
+  - бросил курить как не сорваться
   - одна сигарета рецидив
-  - правило 90 секунд
+  - сорвался покурил
+  - мозг и курение
   - как бросить курить
 faq:
   - q: "Почему мысль «только одну сигарету» может казаться такой убедительной?"
@@ -35,21 +36,18 @@ banner:
   alt: "когнитивные ловушки при отказе от курения"
   width: 1200
   height: 630
-  title: "«Только одна» и другие ловушки"
+  title: "«Только одна сигарета» и другие ловушки"
 recommended_apps:
   - brosit_kurit
 permalink: "/blog/privychki/lovushki-vozvrata-k-kureniyu/"
 reading_time: "22"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#page"
+  - "@id": "https://vnutriapps.ru/blog/privychki/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # «Только одна» и другие когнитивные ловушки: как не сорваться при отказе от курения
@@ -161,6 +159,8 @@ isPartOf:
 - [Утренний ритуал без сигареты](/blog/privychki/utrenniy-ritual-bez-sigarety/)  
 - [HALT: четыре лица тяги](/blog/privychki/halt-chetyre-triggera/)  
 - [Как работает синдром отмены](/blog/privychki/sindrom-otmeny-nikotina/)
+- [10 привычек, мешающих бросить курить](/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/)
+- [Срыв после отказа от курения: что делать](/blog/privychki/sryv-posle-otkaza-ot-kureniya/)
 
 ---
 
@@ -186,6 +186,7 @@ isPartOf:
 
 ### **Зачем вести дневник ловушек?**  
 Повторяющиеся мысли и сцены становятся видны и очевидны. Тогда легче поставить защиту: изменить предметы и место, заранее подготовить альтернативы и фразы.
+
 
 
 
