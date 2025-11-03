@@ -35,6 +35,9 @@ banner:
 recommended_apps:
   - tvorchestvo
 permalink: "/blog/tvorchestvo/chto-meshaet-tvorchestvu/"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/tvorchestvo/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Что мешает творчеству: внутренние блоки и страхи
@@ -155,6 +158,7 @@ permalink: "/blog/tvorchestvo/chto-meshaet-tvorchestvu/"
 👉 В этом помогает приложение **«Творчество: Пламя внутри»**. Оно шаг за шагом снимает внутренние блоки, развивает креативное мышление и возвращает уверенность в себе.
 
 ---
+
 
 
 
