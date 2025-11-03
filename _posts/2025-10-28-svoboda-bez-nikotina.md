@@ -44,15 +44,12 @@ recommended_apps:
 permalink: "/blog/privychki/svoboda-bez-nikotina/"
 reading_time: "15"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#page"
+  - "@id": "https://vnutriapps.ru/blog/privychki/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 sources:
   - "@type": "CreativeWork"
     name: "World Health Organization (WHO): Psychological Recovery and Inner Resources in Smoking Cessation"
@@ -327,6 +324,7 @@ sources:
 - National Institute on Drug Abuse (NIDA): *Internal Motivation and Recovery Pathways* — [nida.nih.gov](https://nida.nih.gov)  
 - Cochrane Library: *Behavioral and Meaning-Based Strategies for Smoking Cessation* — [cochranelibrary.com](https://www.cochranelibrary.com)  
 - Минздрав РФ — *Психологическая устойчивость и формирование внутренней опоры при отказе от никотина* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
+
 
 
 
