@@ -40,15 +40,11 @@ recommended_apps:
   - odinochestvo
 permalink: "/blog/filosofiya/chelovek-odinok/"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization" 
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/filosofiya/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Экзистенциальный взгляд: человек всегда один
@@ -213,6 +209,7 @@ isPartOf:
 Оно помогает прожить одиночество осознанно и превратить его в ресурс силы и внутренней устойчивости.
 
 ---
+
 
 
 
