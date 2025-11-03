@@ -40,6 +40,9 @@ recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-i-son-kak-spravitsya-s-nochnymi-myslyami/"
 reading_time: "15"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Тревога и сон: как справиться с ночными мыслями
@@ -227,6 +230,7 @@ ______________________________________________
 Решение принимает врач. Часто помогают поведенческие и когнитивные техники, настройка режима и среды; медикаменты используют по показаниям.
 
 ---
+
 
 
 
