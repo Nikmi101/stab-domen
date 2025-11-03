@@ -72,15 +72,12 @@ sources:
     name: "Национальный институт здравоохранения Великобритании (NHS): Как управлять эмоциями и привычками после отказа от курения"
     url: "https://www.nhs.uk/live-well/quit-smoking/"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#page"
+  - "@id": "https://vnutriapps.ru/blog/privychki/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # HALT: четыре лица тяги — голод, злость, одиночество, усталость
@@ -280,6 +277,7 @@ isPartOf:
 - Национальный институт здравоохранения Великобритании (NHS): *Как управлять эмоциями и привычками после отказа от курения* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
