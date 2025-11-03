@@ -41,15 +41,12 @@ recommended_apps:
 permalink: "/blog/privychki/dyhanie-vmesto-zatyazhki/"
 reading_time: "20"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#page"
+  - "@id": "https://vnutriapps.ru/blog/privychki/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Дыхание вместо затяжки: микропрактики на 1–3 минуты
@@ -221,6 +218,7 @@ isPartOf:
 
 ### **Что делать, если дыхание не помогает?**  
 Добавьте шаги: вода, смена позиции тела, 100–200 шагов, контакт с близким человеком. Проверьте HALT (голод, злость, одиночество, усталость) — возможно, нужна забота о причине, а не о «симптоме».
+
 
 
 
