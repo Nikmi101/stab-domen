@@ -39,6 +39,9 @@ recommended_apps:
   - stress
 permalink: "/blog/emotsii/roditelstvo-i-stress-kak-ne-sryvatsya/"
 reading_time: "19"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Родительский стресс: как не срываться на близких, когда сил впритык
@@ -218,6 +221,7 @@ reading_time: "19"
 
 ### **Когда обращаться за поддержкой специалиста?**  
 Если срывы происходят регулярно, в семье сохраняется высокий конфликтный фон, ухудшается сон/аппетит, растёт употребление алкоголя/успокоительных — стоит обратиться за очной помощью.
+
 
 
 
