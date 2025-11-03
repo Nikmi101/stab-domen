@@ -6,7 +6,7 @@ description: "Простая карта: что такое хронически�
 author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 date: 2025-08-27
-dateUpdated: 2025-09-22
+dateUpdated: 2025-11-03
 articleSection: "Стресс и устойчивость"
 preload_images:
   - /images/blog-images/blog-header.webp
@@ -39,6 +39,9 @@ recommended_apps:
   - stress
 permalink: "/blog/emotsii/hronicheskiy-stress-otlichie-ot-ustalosti/"
 reading_time: "18"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Что такое хронический стресс и чем он отличается от обычной усталости
@@ -198,6 +201,7 @@ reading_time: "18"
 
 ### **Когда обращаться к специалисту?**  
 Если симптомы держатся больше 4–6 недель, нарушают сон и работу, усиливаются панические/депрессивные проявления, растёт употребление алкоголя/таблеток — стоит обратиться за очной консультацией.
+
 
 
 
