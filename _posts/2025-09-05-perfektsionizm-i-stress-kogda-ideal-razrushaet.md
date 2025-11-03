@@ -39,6 +39,10 @@ recommended_apps:
   - stress
 permalink: "/blog/emotsii/perfektsionizm-i-stress-kogda-ideal-razrushaet/"
 reading_time: "20"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Перфекционизм и стресс: когда «сделать идеально» разрушает силы
@@ -222,6 +226,7 @@ v0.1 (черновик), v0.9 (релиз-кандидат), v1.0 (релиз). 
 
 ### **Когда стоит обратиться за профессиональной помощью?**  
 Если самокритика и страх ошибки мешают стартовать, возникают срывы сроков, бессонница, навязчивые проверki и руминации — необходима очная консультация специалиста.
+
 
 
 
