@@ -35,6 +35,9 @@ banner:
 recommended_apps:
   - tvorchestvo
 permalink: "/blog/tvorchestvo/poisk-vdohnoveniya/"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/tvorchestvo/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Вдохновение как процесс, а не случайность
@@ -160,6 +163,7 @@ permalink: "/blog/tvorchestvo/poisk-vdohnoveniya/"
 👉 Именно этому посвящено приложение **«Творчество: Пламя внутри»**. Оно помогает шаг за шагом развивать креативность, отслеживать прогресс и находить вдохновение в повседневной жизни.  
 
 ---
+
 
 
 
