@@ -43,15 +43,12 @@ recommended_apps:
 permalink: "/blog/privychki/chto-proishodit-posle-otkaza-kalendar/"
 reading_time: "30"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#page"
+  - "@id": "https://vnutriapps.ru/blog/privychki/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Что происходит с организмом после отказа от курения: полный календарь по дням, неделям и месяцам
@@ -285,6 +282,7 @@ isPartOf:
 
 ### **Какие признаки — повод обратиться к врачу?**  
 Высокая температура, боль в груди, выраженная одышка в покое, обмороки, длительное ухудшение сна/самочувствия, обострения хронических заболеваний.
+
 
 
 
