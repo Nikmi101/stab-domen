@@ -39,6 +39,9 @@ recommended_apps:
   - stress
 permalink: "/blog/emotsii/yazyk-i-stress-kak-slova-usilivayut-napryazhenie/"
 reading_time: "18"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Язык и стресс: почему слова «катастрофа» и «все против меня» делают хуже
@@ -204,6 +207,7 @@ reading_time: "18"
 
 ### **Поможет ли «держать эмоции при себе»?**  
 Речь не про подавление, а про точность. Эмоции можно называть экологично: «я злюсь/мне тревожно», дальше — факт и запрос. Это снижает напряжение и делает разговор предметным.
+
 
 
 
