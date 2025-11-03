@@ -49,6 +49,16 @@ layout: default
         "target": "{{ page.url | absolute_url }}"
       }
     },
+   "hasPart": [
+{%- for post in items -%}
+    {
+      "@type": "WebPage",
+      "@id": "{{ post.url | absolute_url }}#webpage"
+    }{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
+  ],
+ 
+  
 
     {%- comment -%} Список статей раздела как ItemList {%- endcomment -%}
     {
