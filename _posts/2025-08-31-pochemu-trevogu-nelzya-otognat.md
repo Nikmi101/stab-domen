@@ -42,20 +42,11 @@ recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/pochemu-trevogu-nelzya-otognat/"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@type": "Person"
-    "name": "Никита Митяев"
-    "jobTitle": "Гештальт-терапевт, Психолог-консультант, Основатель и разработчик Vnutri Apps"
-    "url": "https://vnutriapps.ru/about-vnutri-apps"
-  "publisher":
-    "@type": "Organization"
-    "name": "Vnutri Apps"
-    "url": "https://vnutriapps.ru/"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Почему тревогу нельзя отогнать: главный принцип работы с эмоциями
@@ -212,6 +203,7 @@ isPartOf:
 👉 Именно на этом принципе построено приложение **[«Нет тревоге: Путь к спокойствию»](/snizit-trevogu)**. Оно ведёт через 7 этапов: от понимания природы тревоги до навыков принятия и обретения внутреннего спокойствия.  
 
 ---
+
 
 
 
