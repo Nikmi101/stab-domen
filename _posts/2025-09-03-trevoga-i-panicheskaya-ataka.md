@@ -41,6 +41,10 @@ recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-i-panicheskaya-ataka/"
 reading_time: "13"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Тревога и паническая атака: в чём разница
@@ -214,6 +218,7 @@ reading_time: "13"
 
 ### **Когда обращаться к специалисту?**  
 При повторяющихся приступах, заметном ухудшении качества жизни или сомнениях в природе симптомов — нужна очная консультация.
+
 
 
 
