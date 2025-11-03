@@ -40,15 +40,12 @@ recommended_apps:
 permalink: "/blog/privychki/21-den-privychka-mif-ili-realnost/"
 reading_time: "14"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#page"
+  - "@id": "https://vnutriapps.ru/blog/privychki/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Как формируются новые привычки: 21 день или миф?
@@ -282,6 +279,7 @@ isPartOf:
 👉 Для поддержания регулярности и видимости прогресса удобно использовать приложение **«Курил-бросил»**: краткие практики, полезные в отказе от сигарет мысли и установки, которые помогают закреплять реальное новое поведение, а не гоняться за магическими сроками.
 
 ---
+
 
 
 
