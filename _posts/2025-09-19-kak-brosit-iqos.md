@@ -82,15 +82,12 @@ sources:
     name: "Национальный институт здравоохранения Великобритании (NHS): Quitting Heated Tobacco Devices (IQOS, Glo)"
     url: "https://www.nhs.uk/live-well/quit-smoking/"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#page"
+  - "@id": "https://vnutriapps.ru/blog/privychki/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # IQOS, glo и стики: как отказаться, если ритуал сильнее никотина
@@ -372,6 +369,7 @@ IQOS и glo формируют особенно прочную цепочку: *
 - Национальный институт здравоохранения Великобритании (NHS): *Quitting Heated Tobacco Devices (IQOS, Glo)* — [nhs.uk](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
