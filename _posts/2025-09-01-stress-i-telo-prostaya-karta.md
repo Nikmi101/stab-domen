@@ -40,6 +40,10 @@ recommended_apps:
   - stress
 permalink: "/blog/emotsii/stress-i-telo-prostaya-karta/"
 reading_time: "18"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Как стресс влияет на тело: зажимы, дыхание, сон, ЖКТ — простая карта
@@ -226,6 +230,7 @@ reading_time: "18"
 
 ### **Чем отличаются телесные эффекты стресса от усталости?**  
 При усталости помогает сон/выходной. При хроническом стрессе фон 6–7/10, поверхностное дыхание, раздражительность и «туман в голове» сохраняются неделями.
+
 
 
 
