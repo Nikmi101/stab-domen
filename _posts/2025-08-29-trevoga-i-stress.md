@@ -39,6 +39,10 @@ banner:
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-i-stress/"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Тревога и стресс: в чем разница
@@ -217,6 +221,7 @@ permalink: "/blog/emotsii/trevoga-i-stress/"
 👉 Именно для работы с тревожностью создано приложение **«Нет тревоге: Путь к спокойствию»**. Оно помогает шаг за шагом снижать уровень тревоги, учиться жить в балансе и восстанавливать внутреннее спокойствие.
 
 ---
+
 
 
 
