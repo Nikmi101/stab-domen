@@ -40,6 +40,9 @@ recommended_apps:
   - stress
 permalink: "/blog/emotsii/informatsionnyy-shum-i-trevoga-kak-novosti-voruyut-spokoystvie/"
 reading_time: "20"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Информационный шум и тревога: как новости, мессенджеры и соцсети воруют спокойствие
@@ -235,6 +238,7 @@ SLA ответов и «ворота» задач: срочное — звоно
 
 ### **Когда стоит обращаться к специалисту?**  
 Если тревога/бессонница держатся неделями, появились панические эпизоды, выраженная раздражительность, навязчивые проверки новостей, снижена работоспособность — нужна очная консультация.
+
 
 
 
