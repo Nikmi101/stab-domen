@@ -40,17 +40,36 @@
     <meta property="og:url" content="https://vnutriapps.ru/snizit-trevogu" />
 
     <!-- JSON-LD -->
+  <!-- JSON-LD: Organization + ItemList (ссылка на единый MobileApplication по @id) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://vnutriapps.ru/#organization"
+      },
+      {
+        "@type": "ItemList",
+        "name": "Приложения Vnutri Apps",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": { "@id": "https://vnutriapps.ru/#net-trevoge" }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
 
+
+	  <!-- JSON-LD: MobileApplication (единый объект с @id) -->
     <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://vnutriapps.ru/#organization"
-    },
-   {
+      "@context": "https://schema.org",
       "@type": "MobileApplication",
 	  "@id": "https://vnutriapps.ru/#net-trevoge",
       "name": "Нет тревоге: Путь к спокойствию",
@@ -65,7 +84,7 @@
       "operatingSystem": "ANDROID",
       "inLanguage": "ru-RU",
 	  "publisher": { "@id": "https://vnutriapps.ru/#organization" },
-		"creator": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+	  "creator": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
       "applicationCategory": "https://schema.org/HealthApplication",
       "description": "Нет тревоге — приложение для снятия тревоги, снижения стресса и восстановления внутреннего спокойствия. Пошаговые практики, дыхание, медитации и дневник помогут вернуть гармонию и контакт с собой.",
       "image": "https://vnutriapps.ru/images/image_nettrevoge.webp",
@@ -77,10 +96,25 @@
   }
     
 	}
-  ]
-}
 	</script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://vnutriapps.ru/snizit-trevogu#webpage",
+  "url": "https://vnutriapps.ru/snizit-trevogu",
+  "name": "Нет тревоге — приложение, чтобы снять тревогу, справиться с внутренним стрессом и восстановить спокойствие",
+  "headline": "«Нет тревоге: Путь к спокойствию» — приложение для снятия тревоги и восстановления внутреннего равновесия",
+  "isPartOf": [
+    { "@id": "https://vnutriapps.ru/#webpage" },
+    { "@id": "https://vnutriapps.ru/#website" }
+  ],
+  "mainEntity": { "@id": "https://vnutriapps.ru/#net-trevoge" },
+  "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+  "breadcrumb": { "@id": "https://vnutriapps.ru/snizit-trevogu#breadcrumbs" }
+}
+</script>
 
 
 
@@ -89,6 +123,8 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": "https://vnutriapps.ru/snizit-trevogu#breadcrumbs",
+  "isPartOf": { "@id": "https://vnutriapps.ru/snizit-trevogu#webpage" },
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -109,6 +145,7 @@
   ]
 }
 </script>
+
 
 <style>
 /* Основной текст контента */
