@@ -49,6 +49,7 @@ layout: default
         "target": "{{ page.url | absolute_url }}"
       },
   "hasPart": [
+       { "@id": "{{ page.url | absolute_url }}#list" },
 {%- for post in items -%}
     {
       "@type": "WebPage",
@@ -65,6 +66,7 @@ layout: default
     {
       "@type": "ItemList",
       "@id": "{{ page.url | absolute_url }}#list",
+      "isPartOf": { "@id": "{{ page.url | absolute_url }}#page" },
       "name": "Список статей раздела",
       "numberOfItems": {{ items | size }},
       "itemListOrder": "http://schema.org/ItemListOrderDescending",
