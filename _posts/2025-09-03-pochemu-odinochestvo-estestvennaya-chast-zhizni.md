@@ -40,6 +40,10 @@ recommended_apps:
   - odinochestvo
 permalink: "/blog/filosofiya/pochemu-odinochestvo-estestvennaya-chast-zhizni/"
 reading_time: "16"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/filosofiya/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Почему одиночество — естественная часть жизни
@@ -183,6 +187,7 @@ reading_time: "16"
 
 ### **Как одиночество связано с творчеством?**  
 Тишина внимания — питательная среда для идей. Уединение увеличивает «слышимость» и помогает переводить внутренние смыслы в форму.
+
 
 
 
