@@ -37,6 +37,10 @@ banner:
 recommended_apps:
   - tvorchestvo
 permalink: "/blog/tvorchestvo/sindrom-samozvanca/"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/tvorchestvo/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Синдром самозванца и как он убивает креативность
@@ -160,6 +164,7 @@ permalink: "/blog/tvorchestvo/sindrom-samozvanca/"
 👉 Для этого создано приложение **[«Творчество: Пламя внутри»](/razvitie-tvorchestva)**. Оно помогает преодолеть внутренние блоки и почувствовать радость от создания нового.  
 
 ---
+
 
 
 
