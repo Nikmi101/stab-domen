@@ -15,7 +15,7 @@ layout: none
   <!-- Страница о Vnutri Apps -->
   <url>
     <loc>https://vnutriapps.ru/about-vnutri-apps</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -100,7 +100,7 @@ layout: none
   <!-- Блог -->
   <url>
     <loc>https://vnutriapps.ru/blog/</loc>
-    <lastmod>2025-10-12</lastmod>
+    <lastmod>2025-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -117,28 +117,28 @@ layout: none
   
   <url>
     <loc>https://vnutriapps.ru/blog/tvorchestvo/</loc>
-    <lastmod>2025-09-22</lastmod>
+    <lastmod>2025-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://vnutriapps.ru/blog/privychki/</loc>
-    <lastmod>2025-09-27</lastmod>
+    <lastmod>2025-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://vnutriapps.ru/blog/emotsii/</loc>
-    <lastmod>2025-09-22</lastmod>
+    <lastmod>2025-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://vnutriapps.ru/blog/filosofiya/</loc>
-    <lastmod>2025-09-22</lastmod>
+    <lastmod>2025-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
