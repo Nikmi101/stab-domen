@@ -38,6 +38,9 @@ recommended_apps:
   - tvorchestvo
 permalink: "/blog/tvorchestvo/tvorcheskiy-krizis-pochemu-voznikayet-i-kak-proyti/"
 reading_time: "18"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/tvorchestvo/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Творческий кризис: почему он возникает и как его пройти
@@ -222,6 +225,7 @@ reading_time: "18"
 Начать с узкого круга или закрытого канала, показывать **фрагменты**, а не «готовую вещь». Вопрос формулировать заранее: «Как читается ритм?».
 
 ---
+
 
 
 
