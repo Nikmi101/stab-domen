@@ -304,9 +304,8 @@
     "height": {{ img_h }},
     "caption": {{ page.banner.title | default: page.title | jsonify }}
   }{% endif %},
-  "mainEntity": { "@id": "{{ page.url | absolute_url }}#series" }{% comment %}
+  "mainEntity": { "@id": "{{ page.url | absolute_url }}#series" }
   , "isPartOf": [{ "@id": "https://vnutriapps.ru/#website" }]
-  (раскомментировать, если есть WebSite-узел)
-  {% endcomment %}
+  
 }
 </script>
