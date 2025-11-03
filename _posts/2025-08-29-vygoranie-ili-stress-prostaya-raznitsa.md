@@ -39,6 +39,10 @@ recommended_apps:
   - stress
 permalink: "/blog/emotsii/vygoranie-ili-stress-prostaya-raznitsa/"
 reading_time: "18"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Выгорание или стресс? Простая разница, чтобы не лечить не то
@@ -185,6 +189,7 @@ reading_time: "18"
 
 ### **Когда обращаться к специалисту?**  
 Если в течение 4–6 недель держатся бессонница, опустошение, потеря интереса к жизни, выраженная тревога/панические эпизоды или нарастает употребление алкоголя/таблеток — стоит обратиться за очной помощью.
+
 
 
 
