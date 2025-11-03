@@ -75,15 +75,12 @@ sources:
     name: "Национальный институт здравоохранения Великобритании (NHS): Managing appetite and sugar cravings after quitting smoking"
     url: "https://www.nhs.uk/live-well/quit-smoking/"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#page"
+  - "@id": "https://vnutriapps.ru/blog/privychki/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Бросил курить — тянет на сладкое: как не поменять сигареты на сахар
@@ -474,6 +471,7 @@ isPartOf:
 - American Psychological Association (APA): *Emotional eating and behavioral replacement after smoking cessation* — [apa.org](https://www.apa.org)  
 - European Network for Smoking and Tobacco Prevention (ENSP): *Weight management and craving regulation after quitting* — [ensp.network](https://ensp.network)  
 - Национальный институт здравоохранения Великобритании (NHS): *Managing appetite and sugar cravings after quitting smoking* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
+
 
 
 
