@@ -7,11 +7,11 @@
 {% assign img_h   = page.banner.height | default: 630 %}
 {% assign has_img = img_url | default: "" | size | plus: 0 %}
 
+<!-- 1) Хаб как страница-коллекция -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "genre": ["Энциклопедия", "Руководство", "Гайд"],
   "@id": "{{ page.url | absolute_url }}#page",
   "headline": {{ page.title | jsonify }},
   {% if page.banner.title %}"alternativeHeadline": {{ page.banner.title | jsonify }},{% endif %}
@@ -19,8 +19,11 @@
   "description": {{ page.description | default: site.description | jsonify }},
   "inLanguage": "ru-RU",
   "isAccessibleForFree": true,
-  "author": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+  "author": { 
+    "@type": "Person",
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
   "publisher": {
+    "@type": "Organization",
     "@id": "https://vnutriapps.ru/#organization",
     "url": "https://vnutriapps.ru/"
   },
@@ -39,83 +42,84 @@
   },
   "thumbnailUrl": "{{ img_url | absolute_url }}"{% endif %},
   "url": "{{ page.url | absolute_url }}",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
+  
+  "mainEntity": { "@id": "{{ page.url | absolute_url }}#series" },
+
   "datePublished": "{{ page.date | date_to_xmlschema }}"{% if page.dateUpdated %},
   "dateModified": "{{ page.dateUpdated | date_to_xmlschema }}"{% endif %},
-  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }}{% comment %}
-    articleBody и articleSection убраны — это свойства Article, не CollectionPage
-  {% endcomment %},
+  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }},
   "wordCount": {{ page.content | strip_html | strip_newlines | split: " " | size }}{% if page.tags and page.tags.size > 0 %},
-  "keywords": [{% for tag in page.tags %}{{ tag | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.faq and page.faq.size > 0 %},
+  "keywords": [{% for tag in page.tags %}{{ tag | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %},
   "hasPart": [
-  { "@type": "FAQPage", "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#faq" },
-  { "@type": "Article", "headline": "Никотиновая зависимость: мифы, правда и почему бросить курить кажется трудным", "url": "https://vnutriapps.ru/blog/privychki/nikotinovaya-zavisimost/" },
-  { "@type": "Article", "headline": "Почему бросить курить сложно без поддержки: психология зависимости и роль окружения", "url": "https://vnutriapps.ru/blog/privychki/pochemu-brosit-kurit-slozhno-bez-podderzhki/" },
-  { "@type": "Article", "headline": "Почему привычки так трудно менять: психология зависимости", "url": "https://vnutriapps.ru/blog/privychki/psihologiya-zavisimosti/" },
-  { "@type": "Article", "headline": "Синдром отмены при отказе от курения: симптомы, сроки и как пережить без срывов", "url": "https://vnutriapps.ru/blog/privychki/sindrom-otmeny-nikotina/" },
-  { "@type": "Article", "headline": "10 привычек, мешающих бросить курить: главные триггеры и как их заменить", "url": "https://vnutriapps.ru/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/" },
-  { "@type": "Article", "headline": "«Только одна» и другие когнитивные ловушки: как не сорваться при отказе от курения", "url": "https://vnutriapps.ru/blog/privychki/lovushki-vozvrata-k-kureniyu/" },
-  { "@type": "Article", "headline": "Первые 72 часа без сигарет: синдром отмены, волны тяги и как пережить без срывов", "url": "https://vnutriapps.ru/blog/privychki/pervye-72-chasa-bez-sigaret/" },
-  { "@type": "Article", "headline": "Первая неделя и две недели без сигарет — симптомы, ошибки и как удержаться без срывов", "url": "https://vnutriapps.ru/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/" },
-  { "@type": "Article", "headline": "Календарь отказа от курения: изменения и опоры по дням, неделям и месяцам", "url": "https://vnutriapps.ru/blog/privychki/chto-proishodit-posle-otkaza-kalendar/" },
-  { "@type": "Article", "headline": "Почему хочется курить после отказа: HALT", "url": "https://vnutriapps.ru/blog/privychki/halt-chetyre-triggera/" },
-  { "@type": "Article", "headline": "Никотинзаместительная терапия", "url": "https://vnutriapps.ru/blog/privychki/nikotinzamestitelnaya-terapiya-nzt/" },
-  { "@type": "Article", "headline": "Дыхание вместо затяжки: микропрактики на 1–3 минуты", "url": "https://vnutriapps.ru/blog/privychki/dyhanie-vmesto-zatyazhki/" },
-  { "@type": "Article", "headline": "Ночное «хочу курить»: что делать, когда тянет курить перед сном", "url": "https://vnutriapps.ru/blog/privychki/vechernyaya-tyaga-pered-snom/" },
-  { "@type": "Article", "headline": "Утренний ритуал без сигареты", "url": "https://vnutriapps.ru/blog/privychki/utrenniy-ritual-bez-sigarety/" },
-  { "@type": "Article", "headline": "Тревога после отказа от курения: что происходит и как успокоиться", "url": "https://vnutriapps.ru/blog/privychki/trevoga-posle-otkaza-ot-kureniya/" },
-  { "@type": "Article", "headline": "Раздражительность и перепады настроения после отказа от сигарет", "url": "https://vnutriapps.ru/blog/privychki/razdrazhitelnost-posle-otkaza/" },
-  { "@type": "Article", "headline": "Депрессия после отказа от курения", "url": "https://vnutriapps.ru/blog/privychki/depressiya-posle-otkaza-ot-kureniya/" },
-  { "@type": "Article", "headline": "Восстановление здоровья после отказа от курения", "url": "https://vnutriapps.ru/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/" },
-  { "@type": "Article", "headline": "Кашель после отказа от сигарет", "url": "https://vnutriapps.ru/blog/privychki/kashel-posle-otkaza-norma/" },
-  { "@type": "Article", "headline": "Давление после отказа от курения", "url": "https://vnutriapps.ru/blog/privychki/davlenie-posle-otkaza-ot-kureniya/" },
-  { "@type": "Article", "headline": "Набор веса после отказа от сигарет: как стабилизировать питание и не вернуть зависимость", "url": "https://vnutriapps.ru/blog/privychki/ves-posle-otkaza-bez-diet/" },
-  { "@type": "Article", "headline": "Сердце и сосуды после отказа от курения", "url": "https://vnutriapps.ru/blog/privychki/serdtse-i-sosudy-posle-otkaza/" },
-  { "@type": "Article", "headline": "Как очистить лёгкие после курения", "url": "https://vnutriapps.ru/blog/privychki/ochistit-legkie-posle-kureniya/" },
-  { "@type": "Article", "headline": "Нервная система после отказа от курения", "url": "https://vnutriapps.ru/blog/privychki/nervnaya-sistema-posle-otkaza/" },
-  { "@type": "Article", "headline": "Обмен веществ и гормональный фон", "url": "https://vnutriapps.ru/blog/privychki/obmen-veshchestv-i-gormony-posle-otkaza/" },
-  { "@type": "Article", "headline": "Иммунитет после отказа от курения", "url": "https://vnutriapps.ru/blog/privychki/immunnaya-sistema-posle-otkaza/" },
-  { "@type": "Article", "headline": "Почки и водный баланс", "url": "https://vnutriapps.ru/blog/privychki/pochki-i-vodnyj-balans-posle-otkaza/" },
-  { "@type": "Article", "headline": "ЖКТ и пищеварение", "url": "https://vnutriapps.ru/blog/privychki/zhkt-posle-otkaza/" },
-  { "@type": "Article", "headline": "Печень, поджелудочная и желчевыводящая система", "url": "https://vnutriapps.ru/blog/privychki/pechen-podzheludochnaya-posle-otkaza/" },
-  { "@type": "Article", "headline": "Кости, мышцы и выносливость", "url": "https://vnutriapps.ru/blog/privychki/oporno-dvigatelnyy-apparat-posle-otkaza/" },
-  { "@type": "Article", "headline": "Микронутриенты после отказа", "url": "https://vnutriapps.ru/blog/privychki/mikronutrienty-posle-otkaza/" },
-  { "@type": "Article", "headline": "Онкориски после отказа от курения", "url": "https://vnutriapps.ru/blog/privychki/onkoriziki-posle-otkaza/" },
-  { "@type": "Article", "headline": "Восстановление внешности", "url": "https://vnutriapps.ru/blog/privychki/vosstanovlenie-vneshnosti-posle-otkaza/" },
-  { "@type": "Article", "headline": "Зубы и дёсны после отказа", "url": "https://vnutriapps.ru/blog/privychki/rotovaya-polost-i-dyosny-posle-otkaza/" },
-  { "@type": "Article", "headline": "Срыв после отказа от курения: что делать, если снова закурил и как вернуться без вины", "url": "https://vnutriapps.ru/blog/privychki/sryv-posle-otkaza-ot-kureniya/" },
-  { "@type": "Article", "headline": "Алкоголь после отказа", "url": "https://vnutriapps.ru/blog/privychki/alkogol-posle-otkaza-ot-sigaret/" },
-  { "@type": "Article", "headline": "Бросил курить — тянет на сладкое", "url": "https://vnutriapps.ru/blog/privychki/posle-otkaza-tyanet-na-sladkoe/" },
-  { "@type": "Article", "headline": "Как бросить курить, если вокруг все курят", "url": "https://vnutriapps.ru/blog/privychki/kak-brosit-kurit-esli-vokrug-vse-kuryat/" },
-  { "@type": "Article", "headline": "Кофе и никотин", "url": "https://vnutriapps.ru/blog/privychki/kofe-i-nikotin-razvesti-privychki/" },
-  { "@type": "Article", "headline": "IQOS, glo и стики", "url": "https://vnutriapps.ru/blog/privychki/kak-brosit-iqos/" },
-  { "@type": "Article", "headline": "Как бросить вейп", "url": "https://vnutriapps.ru/blog/privychki/kak-brosit-veip-bez-sryvov/" },
-  { "@type": "Article", "headline": "Замена одной зависимости другой", "url": "https://vnutriapps.ru/blog/privychki/pochemu-zamena-odnoj-zavisimosti-drugoj-ne-reshaet-problemu/" },
-  { "@type": "Article", "headline": "Дом без дыма", "url": "https://vnutriapps.ru/blog/privychki/dom-bez-dyma/" },
-  { "@type": "Article", "headline": "Как поддержать близкого, который бросает курить", "url": "https://vnutriapps.ru/blog/privychki/podderzhat-blizkogo-kotoryy-brosaet-kurit/" },
-  { "@type": "Article", "headline": "Границы и стресс: зачем говорить «нет»", "url": "https://vnutriapps.ru/blog/emotsii/granitsy-i-stress-zachem-govorit-net/" },
-  { "@type": "Article", "headline": "Стресс и отношения: как не потерять близость", "url": "https://vnutriapps.ru/blog/emotsii/stress-i-otnosheniya-kak-ne-poteryat-blizost/" },
-  { "@type": "Article", "headline": "Сила маленьких шагов", "url": "https://vnutriapps.ru/blog/privychki/malenkie-shagi/" },
-  { "@type": "Article", "headline": "Как формируются привычки: 21 день", "url": "https://vnutriapps.ru/blog/privychki/21-den-privychka-mif-ili-realnost/" },
-  { "@type": "Article", "headline": "Почему отпуск не лечит стресс", "url": "https://vnutriapps.ru/blog/emotsii/pochemu-otpusk-ne-lechit-stress/" },
-  { "@type": "Article", "headline": "Как быстро снизить стресс", "url": "https://vnutriapps.ru/blog/emotsii/kak-bystro-snizit-stress/" },
-  { "@type": "Article", "headline": "Роль дыхания в снижении тревоги", "url": "https://vnutriapps.ru/blog/emotsii/rol-dyhaniya-v-snizhenii-trevogi/" },
-  { "@type": "Article", "headline": "Почему тревогу нельзя отогнать", "url": "https://vnutriapps.ru/blog/emotsii/pochemu-trevogu-nelzya-otognat/" },
-  { "@type": "Article", "headline": "Философия отказа от курения: тишина, свобода и возвращение к себе", "url": "https://vnutriapps.ru/blog/privychki/filosofiya-otkaza-ot-kureniya/" },
-  { "@type": "Article", "headline": "Тишина после дыма: философия очищения и возвращение чувств", "url": "https://vnutriapps.ru/blog/privychki/tishina-posle-dyma/" },
-  { "@type": "Article", "headline": "Кто я без сигарет? Переоценка себя после отказа от никотина", "url": "https://vnutriapps.ru/blog/privychki/kto-ya-bez-sigaret/" },
-  { "@type": "Article", "headline": "Свобода без никотина: как перестать искать опору во внешнем", "url": "https://vnutriapps.ru/blog/privychki/svoboda-bez-nikotina/" },
-  { "@type": "Article", "headline": "Что приходит на место сигарет: пустота, покой и новое дыхание", "url": "https://vnutriapps.ru/blog/privychki/chto-prihodit-na-mesto-sigaret/" },
-  { "@type": "Article", "headline": "Одиночество как ресурс", "url": "https://vnutriapps.ru/blog/filosofiya/odinochestvo-resurs/" },
-  { "@type": "Article", "headline": "Свобода и разъединение", "url": "https://vnutriapps.ru/blog/filosofiya/svoboda-i-razzedineniye-kak-odinochestvo-pomogaet-stat-soboy/" },
-  { "@type": "Article", "headline": "Герой и одиночество", "url": "https://vnutriapps.ru/blog/filosofiya/geroy-i-odinochestvo-pochemu-put-vsegda-odinok/" },
-  { "@type": "Article", "headline": "Экзистенциальный взгляд: человек всегда один", "url": "https://vnutriapps.ru/blog/filosofiya/chelovek-odinok/" },
-  { "@type": "Article", "headline": "От Фромма до Камю", "url": "https://vnutriapps.ru/blog/filosofiya/ot-fromma-do-kamyu-chto-filosofy-govorili-ob-odinochestve/" },
-  { "@type": "Article", "headline": "Нейробиология зависимости: как мозг перестраивается при отказе от никотина", "url": "https://vnutriapps.ru/blog/privychki/neyrobiologiya-nikotinovoy-zavisimosti/" },
-  { "@type": "Article", "headline": "Почему важно быть интересным самому себе", "url": "https://vnutriapps.ru/blog/filosofiya/byt-interesnym-sebe/" }
-],
-  "citation": [{% for s in page.sources %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}
- {% if page.about or page.tags %}
+  {% if page.faq and page.faq.size > 0 %}
+  { "@type": "FAQPage", "@id": "{{ page.url | absolute_url }}#faq" }{% if page.faq and page.faq.size > 0 %},{% endif %}
+{% endif %}
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/nikotinovaya-zavisimost/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/pochemu-brosit-kurit-slozhno-bez-podderzhki/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/psihologiya-zavisimosti/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/sindrom-otmeny-nikotina/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/lovushki-vozvrata-k-kureniyu/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/pervye-72-chasa-bez-sigaret/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/chto-proishodit-posle-otkaza-kalendar/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/halt-chetyre-triggera/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/nikotinzamestitelnaya-terapiya-nzt/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/dyhanie-vmesto-zatyazhki/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/vechernyaya-tyaga-pered-snom/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/utrenniy-ritual-bez-sigarety/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/trevoga-posle-otkaza-ot-kureniya/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/razdrazhitelnost-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/depressiya-posle-otkaza-ot-kureniya/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/kashel-posle-otkaza-norma/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/davlenie-posle-otkaza-ot-kureniya/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/ves-posle-otkaza-bez-diet/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/serdtse-i-sosudy-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/ochistit-legkie-posle-kureniya/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/nervnaya-sistema-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/obmen-veshchestv-i-gormony-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/immunnaya-sistema-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/pochki-i-vodnyj-balans-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/zhkt-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/pechen-podzheludochnaya-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/oporno-dvigatelnyy-apparat-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/mikronutrienty-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/onkoriziki-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/vosstanovlenie-vneshnosti-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/rotovaya-polost-i-dyosny-posle-otkaza/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/sryv-posle-otkaza-ot-kureniya/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/alkogol-posle-otkaza-ot-sigaret/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/posle-otkaza-tyanet-na-sladkoe/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/kak-brosit-kurit-esli-vokrug-vse-kuryat/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/kofe-i-nikotin-razvesti-privychki/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/kak-brosit-iqos/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/kak-brosit-veip-bez-sryvov/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/pochemu-zamena-odnoj-zavisimosti-drugoj-ne-reshaet-problemu/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/dom-bez-dyma/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/podderzhat-blizkogo-kotoryy-brosaet-kurit/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/granitsy-i-stress-zachem-govorit-net/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/stress-i-otnosheniya-kak-ne-poteryat-blizost/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/malenkie-shagi/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/21-den-privychka-mif-ili-realnost/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-otpusk-ne-lechit-stress/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/kak-bystro-snizit-stress/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/rol-dyhaniya-v-snizhenii-trevogi/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevogu-nelzya-otognat/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/filosofiya-otkaza-ot-kureniya/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/tishina-posle-dyma/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/kto-ya-bez-sigaret/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/svoboda-bez-nikotina/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/chto-prihodit-na-mesto-sigaret/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/filosofiya/odinochestvo-resurs/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/filosofiya/svoboda-i-razzedineniye-kak-odinochestvo-pomogaet-stat-soboy/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/filosofiya/geroy-i-odinochestvo-pochemu-put-vsegda-odinok/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/filosofiya/chelovek-odinok/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/filosofiya/ot-fromma-do-kamyu-chto-filosofy-govorili-ob-odinochestve/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/neyrobiologiya-nikotinovoy-zavisimosti/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/filosofiya/byt-interesnym-sebe/#webpage" }
+  ]{% if page.sources and page.sources.size > 0 %},
+  "citation": [{% for s in page.sources %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.about or page.tags %}
 , "about": [
   {% if page.about %}
     {% for a in page.about %}
@@ -126,8 +130,7 @@
       { "@type": "Thing", "name": {{ tag | jsonify }} }{% unless forloop.last %}, {% endunless %}
     {% endfor %}
   {% endif %}
-]
-{% endif %},
+]{% endif %},
   "potentialAction": {
     "@type": "ReadAction",
     "target": {
@@ -138,7 +141,124 @@
 }
 </script>
 
-{% comment %} _includes/jsonld-faq.html {% endcomment %}
+<!-- 2) Собственно серия как отдельная сущность -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWorkSeries",
+  "@id": "{{ page.url | absolute_url }}#series",
+  "name": {{ page.cycle_title | jsonify }},
+  "headline": {{ page.cycle_title | jsonify }},
+  "genre": ["Энциклопедия", "Руководство", "Гайд"],
+  "description": {{ page.cycle_description | default: site.description | jsonify }},
+  "inLanguage": "ru-RU",
+  "isAccessibleForFree": true,
+  "url": "{{ page.url | absolute_url }}",
+   "author": { 
+    "@type": "Person",
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://vnutriapps.ru/#organization",
+    "url": "https://vnutriapps.ru/"
+  }{% if has_img > 0 %},
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ img_url | absolute_url }}",
+    "contentUrl": "{{ img_url | absolute_url }}",
+    "width": {{ img_w }},
+    "height": {{ img_h }},
+    "caption": {{ page.banner.title | default: page.title | jsonify }}
+  }{% endif %},
+  "hasPart": [
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/nikotinovaya-zavisimost/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/pochemu-brosit-kurit-slozhno-bez-podderzhki/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/psihologiya-zavisimosti/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/sindrom-otmeny-nikotina/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/lovushki-vozvrata-k-kureniyu/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/pervye-72-chasa-bez-sigaret/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/chto-proishodit-posle-otkaza-kalendar/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/halt-chetyre-triggera/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/nikotinzamestitelnaya-terapiya-nzt/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/dyhanie-vmesto-zatyazhki/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/vechernyaya-tyaga-pered-snom/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/utrenniy-ritual-bez-sigarety/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/trevoga-posle-otkaza-ot-kureniya/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/razdrazhitelnost-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/depressiya-posle-otkaza-ot-kureniya/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/vosstanovlenie-zdorovya-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/kashel-posle-otkaza-norma/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/davlenie-posle-otkaza-ot-kureniya/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/ves-posle-otkaza-bez-diet/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/serdtse-i-sosudy-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/ochistit-legkie-posle-kureniya/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/nervnaya-sistema-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/obmen-veshchestv-i-gormony-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/immunnaya-sistema-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/pochki-i-vodnyj-balans-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/zhkt-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/pechen-podzheludochnaya-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/oporno-dvigatelnyy-apparat-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/mikronutrienty-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/onkoriziki-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/vosstanovlenie-vneshnosti-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/rotovaya-polost-i-dyosny-posle-otkaza/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/sryv-posle-otkaza-ot-kureniya/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/alkogol-posle-otkaza-ot-sigaret/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/posle-otkaza-tyanet-na-sladkoe/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/kak-brosit-kurit-esli-vokrug-vse-kuryat/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/kofe-i-nikotin-razvesti-privychki/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/kak-brosit-iqos/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/kak-brosit-veip-bez-sryvov/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/pochemu-zamena-odnoj-zavisimosti-drugoj-ne-reshaet-problemu/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/dom-bez-dyma/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/podderzhat-blizkogo-kotoryy-brosaet-kurit/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/granitsy-i-stress-zachem-govorit-net/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/stress-i-otnosheniya-kak-ne-poteryat-blizost/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/malenkie-shagi/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/21-den-privychka-mif-ili-realnost/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-otpusk-ne-lechit-stress/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/kak-bystro-snizit-stress/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/rol-dyhaniya-v-snizhenii-trevogi/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevogu-nelzya-otognat/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/filosofiya-otkaza-ot-kureniya/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/tishina-posle-dyma/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/kto-ya-bez-sigaret/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/svoboda-bez-nikotina/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/chto-prihodit-na-mesto-sigaret/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/filosofiya/odinochestvo-resurs/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/filosofiya/svoboda-i-razzedineniye-kak-odinochestvo-pomogaet-stat-soboy/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/filosofiya/geroy-i-odinochestvo-pochemu-put-vsegda-odinok/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/filosofiya/chelovek-odinok/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/filosofiya/ot-fromma-do-kamyu-chto-filosofy-govorili-ob-odinochestve/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/neyrobiologiya-nikotinovoy-zavisimosti/#article" },
+  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/filosofiya/byt-interesnym-sebe/#article" }
+  ]{% if page.sources_cycle and page.sources_cycle.size > 0 %},
+  "citation": [{% for s in page.sources_cycle %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.about_cycle or page.tags_cycle %}
+, "about": [
+  {% if page.about_cycle and page.about_cycle.size > 0 %}
+    {% for a in page.about_cycle %}
+      { "@type": "Thing", "name": {{ a | jsonify }} }{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  {% elsif page.tags_cycle and page.tags_cycle.size > 0 %}
+    {% for tag in page.tags_cycle %}
+      { "@type": "Thing", "name": {{ tag | jsonify }} }{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  {% endif %}
+]{% endif %},
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ page.url | absolute_url }}"
+    }
+  }
+}
+</script>
+
+{% comment %} _includes/jsonld-faq.html (без изменений) {% endcomment %}
 {% if page.faq and page.faq.size > 0 %}
 <script type="application/ld+json">
 {
@@ -162,3 +282,31 @@
 </script>
 {% endif %}
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ page.url | absolute_url }}#webpage",
+  "url": "{{ page.url | absolute_url }}",
+  "name": {{ page.title | jsonify }},
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }},
+  "inLanguage": "ru-RU",
+  "isAccessibleForFree": true,
+  "breadcrumb": { "@id": "{{ page.url | absolute_url }}#breadcrumbs" },
+  "datePublished": "{{ page.date | date_to_xmlschema }}"{% if page.dateUpdated %},
+  "dateModified": "{{ page.dateUpdated | date_to_xmlschema }}"{% endif %}{% if has_img > 0 %},
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "{{ img_url | absolute_url }}",
+    "contentUrl": "{{ img_url | absolute_url }}",
+    "width": {{ img_w }},
+    "height": {{ img_h }},
+    "caption": {{ page.banner.title | default: page.title | jsonify }}
+  }{% endif %},
+  "mainEntity": { "@id": "{{ page.url | absolute_url }}#series" }{% comment %}
+  , "isPartOf": [{ "@id": "https://vnutriapps.ru/#website" }]
+  (раскомментировать, если есть WebSite-узел)
+  {% endcomment %}
+}
+</script>
