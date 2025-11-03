@@ -47,15 +47,12 @@ recommended_apps:
 permalink: "/blog/privychki/depressiya-posle-otkaza-ot-kureniya/"
 reading_time: "17"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#page"
+  - "@id": "https://vnutriapps.ru/blog/privychki/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 sources:
   - "@type": "CreativeWork"
     name: "Всемирная организация здравоохранения (ВОЗ): Mental health recovery after nicotine withdrawal"
@@ -330,5 +327,6 @@ sources:
 - Минздрав РФ — *Клинические рекомендации по сопровождению синдрома отмены и восстановлению эмоционального фона* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
