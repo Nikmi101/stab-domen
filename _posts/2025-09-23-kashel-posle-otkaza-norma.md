@@ -42,15 +42,12 @@ recommended_apps:
 permalink: "/blog/privychki/kashel-posle-otkaza-norma/"
 reading_time: "20"
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#page"
+  - "@id": "https://vnutriapps.ru/blog/privychki/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Кашель после отказа от сигарет: когда это норма и что помогает
@@ -219,6 +216,7 @@ isPartOf:
 
 ### **Когда обязательно обращаться за медицинской помощью?**  
 При высокой температуре, свистящем дыхании, сильной боли в груди, выраженной одышке, обмороках или если кашель не уходит месяцами.
+
 
 
 
