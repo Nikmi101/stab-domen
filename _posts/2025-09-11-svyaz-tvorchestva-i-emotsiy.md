@@ -35,6 +35,9 @@ recommended_apps:
   - tvorchestvo
 permalink: "/blog/tvorchestvo/svyaz-tvorchestva-i-emotsiy/"
 reading_time: "18"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/tvorchestvo/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Связь творчества и эмоций: как использовать чувства в работе
@@ -215,6 +218,7 @@ reading_time: "18"
 Да, но лучше по принципу «доминирующая + акцент»: одна ведущая эмоция и 10–20% контрастного оттенка для объёма.
 
 ---
+
 
 
 
