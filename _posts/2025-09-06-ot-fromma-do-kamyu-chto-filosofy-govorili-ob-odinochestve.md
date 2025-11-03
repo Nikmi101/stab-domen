@@ -38,16 +38,13 @@ recommended_apps:
   - odinochestvo
 permalink: "/blog/filosofiya/ot-fromma-do-kamyu-chto-filosofy-govorili-ob-odinochestve/"
 reading_time: "17"
+
 isPartOf:
-  "@type": ["CreativeWorkSeries", "WebPage"]
-  "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "name": "Энциклопедия отказа от курения — Курил-бросил"
-  "url": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/"
-  "headline": "Энциклопедия отказа от курения — как бросить курить спокойно и навсегда"
-  "author":
-    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
-  "publisher":
-    "@id": "https://vnutriapps.ru/#organization"
+  - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/filosofiya/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # От Фромма до Камю: что философы говорили об одиночестве
@@ -199,6 +196,7 @@ isPartOf:
 Фромм «Иметь или быть?», Камю «Миф о Сизифе», Шопенгауэр «Афоризмы житейской мудрости», Сартр «Экзистенциализм — это гуманизм», Франкл «Сказать жизни „Да!“», Кьеркегор «Страх и трепет», Арендт «Vita activa». 
 
 ---
+
 
 
 
