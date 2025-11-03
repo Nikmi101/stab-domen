@@ -37,6 +37,9 @@ recommended_apps:
   - stress
 permalink: "/blog/emotsii/stress-i-son-kak-usnut/"
 reading_time: "18"
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Стресс и сон: почему «ложусь — и мозг включается» и что с этим делать
@@ -184,6 +187,7 @@ reading_time: "18"
 
 ### **Когда стоит обратиться к специалисту по сну?**  
 Если проблемы со сном держатся 4 недели и более, есть частые ночные пробуждения с паникой, выраженная дневная сонливость или храп с остановками дыхания — нужна очная консультация.
+
 
 
 
