@@ -41,6 +41,10 @@ recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/pochemu-trevoga-usilivaetsya-vecherom/"
 reading_time: "14"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/emotsii/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Почему тревога усиливается вечером
@@ -235,6 +239,7 @@ reading_time: "14"
 
 ### **Когда нужна очная помощь?**  
 Если вечерняя тревога длится неделями, сопровождается паническими эпизодами или заметно ухудшает жизнь — стоит обратиться к специалисту.
+
 
 
 
