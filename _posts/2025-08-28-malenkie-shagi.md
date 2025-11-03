@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-08-28
-dateUpdated: 2025-10-15
+dateUpdated: 2025-11-03
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/malenkie-shagi.webp
@@ -416,6 +416,7 @@ isPartOfWeb:
 - Минздрав РФ — [minzdrav.gov.ru](https://minzdrav.gov.ru)  
 - Национальный медицинский исследовательский центр терапии и профилактической медицины (НМИЦ) — [nmic.ru](https://nmic.ru)  
 - Национальный институт здравоохранения Великобритании (NHS): *Small steps and mental health* — [nhs.uk](https://www.nhs.uk/live-well)
+
 
 
 
