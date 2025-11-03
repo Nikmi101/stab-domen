@@ -38,6 +38,10 @@ recommended_apps:
   - tvorchestvo
 permalink: "/blog/tvorchestvo/kak-nayti-svoye-tvorchestvo-esli-kazhetsya-chto-talanta-net/"
 reading_time: "16"
+
+isPartOfWeb:
+  - "@id": "https://vnutriapps.ru/blog/tvorchestvo/#page"
+  - "@id": "https://vnutriapps.ru/#website"
 ---
 
 # Как найти своё творчество, если кажется, что таланта нет
@@ -236,6 +240,7 @@ reading_time: "16"
 Лучше микро-публикации: частая, доброжелательная обратная связь ускоряет рост гораздо сильнее редких «перфектных» релизов.
 
 ---
+
 
 
 
