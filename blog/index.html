@@ -157,6 +157,24 @@ pinned_slugs:
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://vnutriapps.ru/blog/#page",
+  "url": "https://vnutriapps.ru/blog/",
+  "name": "Главная страница блога Vnutri Apps",
+  "headline": "Все статьи, разделы и подборки блога Vnutri Apps",
+  "inLanguage": "ru-RU",
+  "isPartOf": [
+    { "@id": "https://vnutriapps.ru/#webpage" },
+    { "@id": "https://vnutriapps.ru/#website" }
+  ],
+  "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+  "breadcrumb": { "@id": "https://vnutriapps.ru/blog/#breadcrumbs" }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "ItemList",
   "itemListElement": [
     {% for post in collection %}
@@ -165,6 +183,7 @@ pinned_slugs:
   ]
 }
 </script>
+
 
 
 
