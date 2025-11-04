@@ -44,7 +44,34 @@
     <meta property="og:image" content="https://vnutriapps.ru/images/image_tvorchestvo.jpg" />
     <meta property="og:url" content="https://vnutriapps.ru/razvitie-tvorchestva" />
 
-    <!-- JSON-LD -->
+
+
+	
+        <!-- JSON-LD -->
+  <!-- JSON-LD: Organization + ItemList (ссылка на единый MobileApplication по @id) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://vnutriapps.ru/#organization"
+      },
+      {
+        "@type": "ItemList",
+        "name": "Приложения Vnutri Apps",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": { "@id": "https://vnutriapps.ru/#app-tvorchestvo" }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+	
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,7 +101,7 @@
 	"creator": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
   "offers": {
     "@type": "Offer",
-    "price": "0",
+    "price": "0.00",
     "priceCurrency": "RUB",
     "url": "https://www.rustore.ru/catalog/app/ru.vnutriapps.tvorchestvo_vnutri_apps"
   }
@@ -84,10 +111,32 @@
 </script>
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://vnutriapps.ru/razvitie-tvorchestva#webpage",
+  "url": "https://vnutriapps.ru/razvitie-tvorchestva",
+  "name": "Приложение «Творчество: Пламя внутри» от Vnutri Apps",
+  "headline": "«Творчество: Пламя внутри» — приложение для тех, кто хочет услышать свой внутренний огонь и дать ему форму.",
+  "inLanguage": "ru-RU",
+  "isPartOf": [
+    { "@id": "https://vnutriapps.ru/#webpage" },
+    { "@id": "https://vnutriapps.ru/#website" }
+  ],
+  "mainEntity": { "@id": "https://vnutriapps.ru/#app-tvorchestvo" },
+  "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+  "breadcrumb": { "@id": "https://vnutriapps.ru/razvitie-tvorchestva#breadcrumbs" }
+}
+</script>
+
+	
 	  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": "https://vnutriapps.ru/razvitie-tvorchestva#breadcrumbs",
+  "isPartOf": { "@id": "https://vnutriapps.ru/razvitie-tvorchestva#webpage" },
   "itemListElement": [
     {
       "@type": "ListItem",
