@@ -55,16 +55,11 @@
   "slogan": "Психологические приложения, которые ведут внутрь себя",
   "description": "Психологический проект и независимое цифровое пространство, созданное Никитой Митяевым для внутреннего развития, самопомощи и эмоциональной устойчивости.",
 "foundingDate": "2017-04-18",
-"inLanguage": "ru",
 "founder": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
 "employee": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
-"hasCredential": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+"mainEntityOfPage": { "@id": "https://vnutriapps.ru/about-vnutri-apps#webpage" },
+"areaServed": "Worldwide",
 "foundingLocation": { "@type": "Place", "name": "Москва, Россия" },
-"location": {
-    "@type": "VirtualLocation",
-    "name": "Online",
-    "url": "https://vnutriapps.ru"
-},   
 "brand": {
   "@type": "Brand",
   "name": "Vnutri Apps",
@@ -216,23 +211,23 @@
 	   "motive": "Помогать людям возвращаться к себе — через осознанность, дыхание, внутренний диалог и творчество. Делать психологию доступной, живой и человечной.",
 "seeks": [
   {
-    "@type": "Thing",
+    "@type": "Demand",
     "name": "Внутреннее равновесие и ясность"
   },
   {
-    "@type": "Thing",
+    "@type": "Demand",
     "name": "Осознанное отношение к эмоциям и зависимостям"
   },
   {
-    "@type": "Thing",
+    "@type": "Demand",
     "name": "Создание цифровых инструментов для самопомощи и внутреннего роста"
   },
   {
-    "@type": "Thing",
+    "@type": "Demand",
     "name": "Мир, в котором психология становится языком заботы и вдохновения"
   },
   {
-    "@type": "Thing",
+    "@type": "Demand",
     "name": "Гармонию между наукой, интуицией и технологией"
   }
 ],
@@ -752,46 +747,27 @@
         }
 
       ]
+	  
     },
 
-    {
-      "@type": "WebPage",
-      "url": "https://vnutriapps.ru/about-vnutri-apps",
-      "name": "О Vnutri Apps — психологические приложения для самопомощи",
-      "description": "Vnutri Apps — живое пространство, где психология превращается в практический опыт. Каждое приложение — путь внутрь себя: к спокойствию, вдохновению и внутренней опоре.",
-      "publisher": { "@id": "https://vnutriapps.ru/#organization" },
-      "inLanguage": "ru",
-      "author": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
-      "mainEntity": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" }
-    },
+	   { "@type": "WebSite", "@id": "https://vnutriapps.ru/#website" },
 
 {
-  "@type": "AboutPage",
-  "@id": "https://vnutriapps.ru/about-vnutri-apps#aboutpage",
-  "name": "О Vnutri Apps — проекте и авторе Никите Митяеве",
+  "@type": ["WebPage", "AboutPage"],
+  "@id": "https://vnutriapps.ru/about-vnutri-apps#webpage",
   "url": "https://vnutriapps.ru/about-vnutri-apps",
+  "name": "О проекте Vnutri Apps и авторе Никите Митяеве",
   "description": "Страница о проекте Vnutri Apps и его создателе Никите Митяеве, психологе и гештальт-терапевте.",
+  "inLanguage": "ru-RU",
+  "isPartOf": [
+    { "@id": "https://vnutriapps.ru/#webpage" },
+    { "@id": "https://vnutriapps.ru/#website" }
+      ],
   "publisher": { "@id": "https://vnutriapps.ru/#organization" },
   "author": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
   "mainEntity": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
-  "inLanguage": "ru",
-  "mainEntityOfPage": "https://vnutriapps.ru/about-vnutri-apps"
+  "breadcrumb": { "@id": "https://vnutriapps.ru/about-vnutri-apps#breadcrumbs" }
 },
-
-    {
-      "@type": "WebSite",
-      "@id": "https://vnutriapps.ru/#website",
-      "url": "https://vnutriapps.ru/",
-      "name": "Vnutri Apps",
-	  "about": { "@id": "https://vnutriapps.ru/#organization" },
-      "publisher": { "@id": "https://vnutriapps.ru/#organization" },
-      "author": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://vnutriapps.ru/search?q={query}",
-        "query-input": "required name=query"
-      }
-    },
 
     {
       "@type": "FAQPage",
@@ -848,6 +824,8 @@
 
     {
       "@type": "BreadcrumbList",
+	  "@id": "https://vnutriapps.ru/about-vnutri-apps#breadcrumbs",
+      "isPartOf": { "@id": "https://vnutriapps.ru/about-vnutri-apps#webpage" },
       "itemListElement": [
         {
           "@type": "ListItem",
