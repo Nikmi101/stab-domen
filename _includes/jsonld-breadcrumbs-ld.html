@@ -3,12 +3,41 @@
 {% capture encyclopedia_url %}{{ "/blog/encyclopedia-brosit-kurit/" | absolute_url }}{% endcapture %}
 {% capture page_url %}{{ page.url | absolute_url }}{% endcapture %}
 
-{% if page.recommended_apps contains "brosit_kurit" %}
+{% if page.url == "/blog/" or page.url == "/blog/index.html" %}
+<!-- Хлебные крошки для главной страницы блога -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "@id": "{{ page.url | absolute_url }}#breadcrumbs",
+  "@id": "{{ blog_url }}#breadcrumbs",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": {{ home_url | jsonify }},
+        "name": "Vnutri Apps"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": {{ blog_url | jsonify }},
+        "name": "Блог"
+      }
+    }
+  ]
+}
+</script>
+
+{% elsif page.recommended_apps contains "brosit_kurit" %}
+<!-- Хлебные крошки для энциклопедии "Бросить курить" -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "{{ page_url }}#breadcrumbs",
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -45,12 +74,14 @@
   ]
 }
 </script>
+
 {% else %}
+<!-- Хлебные крошки для обычных статей блога -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "@id": "{{ page.url | absolute_url }}#breadcrumbs",
+  "@id": "{{ page_url }}#breadcrumbs",
   "itemListElement": [
     {
       "@type": "ListItem",
