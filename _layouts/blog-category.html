@@ -18,6 +18,36 @@ layout: default
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}#webpage",
+      "url": "{{ page.url | absolute_url }}",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | default: site.description | jsonify }},
+      "inLanguage": "ru-RU",
+      "isPartOf": [
+        { "@id": "https://vnutriapps.ru/blog/#page" },
+        { "@id": "https://vnutriapps.ru/#website" }
+      ],
+      "breadcrumb": { "@id": "{{ page.url | absolute_url }}#breadcrumbs" },
+      "author": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+      "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+      {% if has_img > 0 %}
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "{{ img_url | absolute_url }}",
+        "contentUrl": "{{ img_url | absolute_url }}",
+        "width": {{ img_w }},
+        "height": {{ img_h }},
+        "caption": {{ page.banner.title | default: page.title | jsonify }}
+      },
+      {% endif %}
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": "{{ page.url | absolute_url }}"
+      }
+    },
+
+    {
       "@type": "CollectionPage",
       "@id": "{{ page.url | absolute_url }}#page",
       "url": "{{ page.url | absolute_url }}",
@@ -48,21 +78,17 @@ layout: default
         "@type": "ReadAction",
         "target": "{{ page.url | absolute_url }}"
       },
-  "hasPart": [
-       { "@id": "{{ page.url | absolute_url }}#list" },
-{%- for post in items -%}
-    {
-      "@type": "WebPage",
-      "@id": "{{ post.url | absolute_url }}#webpage"
-    }{%- unless forloop.last -%},{%- endunless -%}
-  {%- endfor -%}
-  ]
+      "hasPart": [
+        { "@id": "{{ page.url | absolute_url }}#list" },
+        {%- for post in items -%}
+        {
+          "@type": "WebPage",
+          "@id": "{{ post.url | absolute_url }}#webpage"
+        }{%- unless forloop.last -%},{%- endunless -%}
+        {%- endfor -%}
+      ]
     },
-   
- 
-  
 
-    {%- comment -%} Список статей раздела как ItemList {%- endcomment -%}
     {
       "@type": "ItemList",
       "@id": "{{ page.url | absolute_url }}#list",
@@ -71,21 +97,21 @@ layout: default
       "numberOfItems": {{ items | size }},
       "itemListOrder": "http://schema.org/ItemListOrderDescending",
       "itemListElement": [
-  {%- for post in items -%}
-    {
-      "@type": "ListItem",
-      "position": {{ forloop.index }},
-      "item": {
-        "@id": "{{ post.url | absolute_url }}#article",
-        "@type": "Article",
-        "url": "{{ post.url | absolute_url }}",
-        "headline": {{ post.title | jsonify }},
-        "datePublished": "{{ post.date | date_to_xmlschema }}"{% if post.dateUpdated %},
-        "dateModified": "{{ post.dateUpdated | date_to_xmlschema }}"{% endif %}
-      }
-    }{%- unless forloop.last -%},{%- endunless -%}
-  {%- endfor -%}
-]
+        {%- for post in items -%}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "item": {
+            "@id": "{{ post.url | absolute_url }}#article",
+            "@type": "Article",
+            "url": "{{ post.url | absolute_url }}",
+            "headline": {{ post.title | jsonify }},
+            "datePublished": "{{ post.date | date_to_xmlschema }}"{% if post.dateUpdated %},
+            "dateModified": "{{ post.dateUpdated | date_to_xmlschema }}"{% endif %}
+          }
+        }{%- unless forloop.last -%},{%- endunless -%}
+        {%- endfor -%}
+      ]
     }
   ]
 }
