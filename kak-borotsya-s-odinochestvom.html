@@ -45,7 +45,31 @@
     <meta property="og:image" content="https://vnutriapps.ru/images/image_odinochestvo.jpg" />
     <meta property="og:url" content="https://vnutriapps.ru/kak-borotsya-s-odinochestvom" />
 
-    <!-- JSON-LD -->
+       <!-- JSON-LD -->
+  <!-- JSON-LD: Organization + ItemList (ссылка на единый MobileApplication по @id) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://vnutriapps.ru/#organization"
+      },
+      {
+        "@type": "ItemList",
+        "name": "Приложения Vnutri Apps",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": { "@id": "https://vnutriapps.ru/#app-odinochestvo" }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -70,7 +94,7 @@
 	"creator": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
   "offers": {
     "@type": "Offer",
-    "price": "0",
+    "price": "0.00",
     "priceCurrency": "RUB",
     "url": "https://www.rustore.ru/catalog/app/ru.vnutriapps.odinochestvo_vnutri_apps"
   },
@@ -85,10 +109,32 @@
 </script>
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://vnutriapps.ru/kak-borotsya-s-odinochestvom#webpage",
+  "url": "https://vnutriapps.ru/kak-borotsya-s-odinochestvom",
+  "name": "Приложение «Одиночество: Точки опоры» от Vnutri Apps",
+  "headline": "«Одиночество: Точки опоры» — это приложение, которое помогает перестать бояться одиночества и увидеть в нём пространство силы и глубины.",
+  "inLanguage": "ru-RU",
+  "isPartOf": [
+    { "@id": "https://vnutriapps.ru/#webpage" },
+    { "@id": "https://vnutriapps.ru/#website" }
+  ],
+  "mainEntity": { "@id": "https://vnutriapps.ru/#app-odinochestvo" },
+  "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+  "breadcrumb": { "@id": "https://vnutriapps.ru/kak-borotsya-s-odinochestvom#breadcrumbs" }
+}
+</script>
+	
+	
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": "https://vnutriapps.ru/kak-borotsya-s-odinochestvom#breadcrumbs",
+  "isPartOf": { "@id": "https://vnutriapps.ru/kak-borotsya-s-odinochestvom#webpage" },
   "itemListElement": [
     {
       "@type": "ListItem",
