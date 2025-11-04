@@ -43,28 +43,38 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-   {
   "@type": "Organization",
   "@id": "https://vnutriapps.ru/#organization"
-},
-    {
-      "@type": "WebPage",
-      "url": "https://vnutriapps.ru/links",
-      "name": "Все ресурсы Vnutri Apps — ссылки, соцсети и приложения для самопомощи",
-      "description": "Страница со всеми ресурсами Vnutri Apps: приложения, соцсети, полезные ссылки для самопомощи и внутреннего развития.",
-      "publisher": { "@id": "https://vnutriapps.ru/#organization" }
-    }
-  ]
 }
 </script>
 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://vnutriapps.ru/links#webpage",
+  "url": "https://vnutriapps.ru/links",
+  "name": "Все ресурсы Vnutri Apps — ссылки, соцсети и приложения для самопомощи",
+  "headline": "Страница со всеми ресурсами Vnutri Apps: приложения, соцсети, полезные ссылки для самопомощи и внутреннего развития.",
+  "inLanguage": "ru-RU",
+  "isPartOf": [
+    { "@id": "https://vnutriapps.ru/#webpage" },
+    { "@id": "https://vnutriapps.ru/#website" }
+  ],
+  "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+  "breadcrumb": { "@id": "https://vnutriapps.ru/links#breadcrumbs" }
+}
+</script>
+	
+    
       <!-- JSON-LD: Хлебные крошки -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": "https://vnutriapps.ru/links#breadcrumbs",
+  "isPartOf": { "@id": "https://vnutriapps.ru/links#webpage" },
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -356,6 +366,7 @@
 
 </body>
 </html>
+
 
 
 
