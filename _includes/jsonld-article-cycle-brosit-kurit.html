@@ -305,7 +305,11 @@
     "caption": {{ page.banner.title | default: page.title | jsonify }}
   }{% endif %},
   "mainEntity": { "@id": "{{ page.url | absolute_url }}#series" }
-  , "isPartOf": [{ "@id": "https://vnutriapps.ru/#website" }]
+  , "isPartOf": [
+    { "@id": "https://vnutriapps.ru/#webpage" },
+    { "@id": "https://vnutriapps.ru/#website" },
+    { "@id": "https://vnutriapps.ru/brosit-kurit#webpage" }
+  ]
   
 }
 </script>
