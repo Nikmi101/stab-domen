@@ -232,7 +232,7 @@ sources:
 
 🧭 Смежно: [«Как поддержать близкого, который бросает курить: без давления и морали»](/blog/privychki/podderzhat-blizkogo-kotoryy-brosaet-kurit/),
 
-[«Почему бросить курить сложно без поддержки»](/blog/privychki/pochemu-brosit-kurit-slozhno-bez-podderzhki/)
+[«Почему бросить курить сложно без поддержки»](/blog/privychki/pochemu-brosit-kurit-slozno-bez-podderzhki/)
 
 ---
 
@@ -327,6 +327,7 @@ sources:
 - Минздрав РФ — *Клинические рекомендации по сопровождению синдрома отмены и восстановлению эмоционального фона* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
