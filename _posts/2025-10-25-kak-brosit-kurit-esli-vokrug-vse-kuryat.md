@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-25
-dateUpdated: 2025-10-25
+dateUpdated: 2025-12-05
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/vokrug-vse-kuryat.webp
@@ -391,6 +391,7 @@ sources:
 - Минздрав РФ — *Клинические рекомендации по лечению никотиновой зависимости и социальной реабилитации* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
