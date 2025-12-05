@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-21
-dateUpdated: 2025-10-21
+dateUpdated: 2025-12-05
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/sryv.webp
@@ -405,6 +405,7 @@ sources:
 - Минздрав РФ — *Клинические рекомендации по лечению никотиновой зависимости и профилактике рецидивов* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
