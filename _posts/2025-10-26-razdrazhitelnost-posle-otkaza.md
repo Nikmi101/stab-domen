@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-26
-dateUpdated: 2025-10-26
+dateUpdated: 2025-12-05
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/razdrazhitelnost-posle-otkaza.webp
@@ -281,7 +281,7 @@ sources:
 
 ---
 
-👉 Приложения **[«Курил-бросил»](/brosit-kurit)** и **[«Нет тревоги»](/net-trevogi)** от Vnutri Apps помогают стабилизировать состояние при отказе от курения.  
+👉 Приложения **[«Курил-бросил»](/brosit-kurit)** и **[«Нет тревоге»](/snizit-trevogu)** от Vnutri Apps помогают стабилизировать состояние при отказе от курения.  
 
 --- 
 
@@ -331,5 +331,6 @@ sources:
 
 
 ---
+
 
 
