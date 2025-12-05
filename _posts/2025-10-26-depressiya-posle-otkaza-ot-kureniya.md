@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-26
-dateUpdated: 2025-10-26
+dateUpdated: 2025-12-05
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/depressiya-posle-otkaza.webp
@@ -327,6 +327,7 @@ sources:
 - Минздрав РФ — *Клинические рекомендации по сопровождению синдрома отмены и восстановлению эмоционального фона* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
