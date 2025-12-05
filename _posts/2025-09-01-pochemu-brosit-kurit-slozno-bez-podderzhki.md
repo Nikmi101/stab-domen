@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-01
-dateUpdated: 2025-11-01
+dateUpdated: 2025-12-05
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/podderzka-kurenie.webp
@@ -370,6 +370,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking with support — how to find help that works* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
