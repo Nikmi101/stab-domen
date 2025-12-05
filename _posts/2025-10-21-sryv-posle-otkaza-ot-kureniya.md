@@ -278,7 +278,7 @@ sources:
 Если рядом есть кто-то, кто понимает, — мозгу проще пережить спад без самообвинений.  
 
 🧭 Смежные статьи:  
-[«HALT: четыре лица тяги»](/blog/privychki/chetire-lichiny-tyagi/),  
+[«HALT: четыре лица тяги»](/blog/privychki/halt-chetyre-triggera/),  
 [«Дыхание вместо затяжки»](/blog/privychki/dyhanie-vmesto-zatyazhki/)
 
 ---
@@ -405,6 +405,7 @@ sources:
 - Минздрав РФ — *Клинические рекомендации по лечению никотиновой зависимости и профилактике рецидивов* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
