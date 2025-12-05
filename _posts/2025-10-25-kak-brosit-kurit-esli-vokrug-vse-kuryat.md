@@ -220,7 +220,7 @@ sources:
 ---
 
 🧭 **Читайте также:**
-- [«Энциклопедия отказа от курения»](/blog/privychki/encyclopedia-brosit-kurit/)
+- [«Энциклопедия отказа от курения»](/blog/encyclopedia-brosit-kurit/)
 
 
 - [«Срыв после отказа от курения: что делать, если снова закурил»](/blog/privychki/sryv-posle-otkaza-ot-kureniya/)
@@ -391,6 +391,7 @@ sources:
 - Минздрав РФ — *Клинические рекомендации по лечению никотиновой зависимости и социальной реабилитации* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
