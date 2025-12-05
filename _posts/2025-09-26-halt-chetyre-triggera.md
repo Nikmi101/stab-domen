@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-26
-dateUpdated: 2025-10-11
+dateUpdated: 2025-12-05
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/halt.webp
@@ -277,6 +277,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Как управлять эмоциями и привычками после отказа от курения* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
