@@ -7,7 +7,7 @@ layout: none
   <!-- Главная -->
   <url>
     <loc>https://vnutriapps.ru/</loc>
-    <lastmod>2025-11-04</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,10 +15,19 @@ layout: none
   <!-- Страница о Vnutri Apps -->
   <url>
     <loc>https://vnutriapps.ru/about-vnutri-apps</loc>
-    <lastmod>2025-11-04</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <url>
+    <loc>https://vnutriapps.ru/consultations</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  
 
    <url>
     <loc>https://vnutriapps.ru/publishing-principles</loc>
