@@ -278,10 +278,10 @@
   {% endif %}
 </div>
 {% endif %}
-    {% if page.recommended_apps and page.recommended_apps.size > 0 %}
-      <h2 class="blog-title">Решения от<br> Vnutri Apps:</h2>
-    {% endif %}
-
+     <!-- JSON-LD {% if page.recommended_apps and page.recommended_apps.size > 0 %}
+      
+    {% endif %} --> 
+<h2 class="blog-title">Решения от<br> Vnutri Apps:</h2>
     <!-- Рекомендуемое приложение -->
     {% for app in page.recommended_apps %}
       {% case app %}
@@ -295,6 +295,8 @@
           {% include app_tvorchestvo.html %}
       {% endcase %}
     {% endfor %}
+
+    {% include consult.html %}
 
     <!-- JSON-LD -->
     {% if __is_article %}
@@ -412,6 +414,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 
