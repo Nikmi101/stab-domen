@@ -34,6 +34,158 @@
     <meta property="og:image" content="https://vnutriapps.ru/images/image.jpg" />
     <meta property="og:url" content="https://vnutriapps.ru/consulting" />
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Organization",
+      "@id": "https://vnutriapps.ru/#organization",
+      "name": "Vnutri Apps",
+      "url": "https://vnutriapps.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vnutriapps.ru/favicon192.png",
+        "width": 192,
+        "height": 192
+      }
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev",
+      "name": "Никита Митяев",
+      "url": "https://vnutriapps.ru/about-vnutri-apps",
+      "jobTitle": "Гештальт-терапевт, психолог-консультант, специалист по экзистенциальной терапии",
+      "worksFor": { "@id": "https://vnutriapps.ru/#organization" }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://vnutriapps.ru/#website",
+      "url": "https://vnutriapps.ru/",
+      "name": "Vnutri Apps — психологические приложения для самопомощи и внутреннего роста",
+      "publisher": { "@id": "https://vnutriapps.ru/#organization" }
+    },
+
+    {
+      "@type": ["WebPage", "ProfilePage"],
+      "@id": "https://vnutriapps.ru/consultations#webpage",
+      "url": "https://vnutriapps.ru/consultations",
+      "name": "Индивидуальные психологические консультации — Vnutri Apps",
+      "description": "Индивидуальные онлайн-консультации по вопросам тревоги, стресса, зависимого поведения, одиночества и внутренних конфликтов. Спокойный, бережный формат работы.",
+      "inLanguage": "ru-RU",
+      "isPartOf": { "@id": "https://vnutriapps.ru/#website" },
+      "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+      "author": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+      "mainEntity": { "@id": "https://vnutriapps.ru/consultations#service" },
+      "breadcrumb": { "@id": "https://vnutriapps.ru/consultations#breadcrumbs" }
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://vnutriapps.ru/consultations#service",
+      "name": "Индивидуальные психологические консультации онлайн",
+      "description": "Индивидуальные консультации с психологом Никитой Митяевым по вопросам тревоги, стресса, зависимостей, одиночества, самооценки и внутренних конфликтов. Работа онлайн, в бережном и спокойном формате.",
+      "provider": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+      "providerMobility": "dynamic",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Worldwide"
+      },
+      "serviceType": [
+        "Психологическое консультирование онлайн",
+        "Гештальт-терапия",
+        "Экзистенциальная терапия",
+        "Консультирование по вопросам зависимостей и отказа от курения",
+        "Работа с тревогой, стрессом и выгоранием"
+      ],
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://t.me/vnu_apps",
+        "name": "Запись на консультацию через Telegram"
+      }
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://vnutriapps.ru/consultations#faq",
+      "inLanguage": "ru",
+      "mainEntityOfPage": { "@id": "https://vnutriapps.ru/consultations#webpage" },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько консультаций обычно нужно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это зависит от вашего запроса. Иногда достаточно нескольких встреч, чтобы прояснить ситуацию и наметить опору. В других случаях работа становится глубже и продолжается дольше. Мы обсуждаем это честно по ходу процесса — без скрытых обязательств."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Подходит ли мне формат онлайн?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Онлайн-консультации хорошо подходят для большинства запросов. Важно, чтобы у вас было более-менее тихое пространство и стабильный интернет. Если вы сомневаетесь, можно начать с одной встречи и ориентироваться на собственные ощущения."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Работаете ли вы только с курением и зависимостями?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Хотя тема зависимостей и привычек — важная часть моего опыта, я также работаю с тревогой, стрессом, выгоранием, одиночеством, самооценкой, внутренними конфликтами и поиском опоры."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли совмещать консультации и приложения Vnutri Apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Вы можете использовать приложения параллельно с терапией. Иногда я могу рекомендовать отдельные практики из приложений как поддержку между сессиями — если это подходит именно вам и помогает удерживать движение."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если я не уверен(а), что мне вообще нужна консультация?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сомневаться — нормально. Вы можете прийти на одну встречу и отнестись к ней как к возможности спокойно посмотреть на свою жизнь вместе с другим человеком. Уже после первой сессии обычно становится чуть понятнее — нужен ли вам этот формат сейчас."
+          }
+        }
+      ]
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vnutriapps.ru/consultations#breadcrumbs",
+      "isPartOf": { "@id": "https://vnutriapps.ru/consultations#webpage" },
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://vnutriapps.ru/",
+            "name": "Vnutri Apps"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://vnutriapps.ru/consultations",
+            "name": "Индивидуальные психологические консультации"
+          }
+        }
+      ]
+    }
+
+  ]
+}
+</script>
+
+    
 <style>
 /* Основной текст контента */
 .content, .content p, .content li {
@@ -262,7 +414,7 @@
 <section id="apps" class="wrapper">
   <div class="inner">
     <header class="align-center">
-      <h2>Vnutri Apps — психологические приложения для самопомощи и внутреннего роста</h1>
+      <h2>Vnutri Apps — психологические приложения для самопомощи и внутреннего роста</h2>
     </header>
 
     <div class="inner">
