@@ -1,10 +1,6 @@
 ---
 layout: encyclopedia-hub
 ---
-
-{% capture H1CLOSE %}</h1>{% endcapture %}
-{% assign _html = content %}
-
 {% comment %}
   Блок CTA
 {% endcomment %}
@@ -14,6 +10,10 @@ layout: encyclopedia-hub
   <a href="https://vnutriapps.ru/consultations" class="vnutri-badge">💬 Консультации</a>
 </div>
 {% endcapture %}
+
+{% capture H1CLOSE %}</h1>{% endcapture %}
+{% assign _html = content %}
+
 
 {% if page.toc != false %}
   {% assign _parts = _html | split: H1CLOSE %}
