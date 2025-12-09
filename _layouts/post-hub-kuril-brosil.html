@@ -5,8 +5,8 @@ layout: encyclopedia-hub
 .vnutri-top-cta {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin: 4px 0 16px 0;
+  gap: 10px;
+  margin: 14px 0 20px 0;
 }
 
 .vnutri-badge {
@@ -14,23 +14,28 @@ layout: encyclopedia-hub
   align-items: center;
   gap: 6px;
 
-  padding: 7px 14px;
-  border-radius: 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
 
-  background: rgba(0, 0, 0, 0.04); /* лёгкая тень под белый фон */
-  border: 1px solid rgba(0, 0, 0, 0.22); /* серый контур */
+  /* почти незаметный фон */
+  background: rgba(0, 0, 0, 0.015);
 
-  color: #444 !important; /* ЧЕТКИЙ тёмно-серый текст */
-  font-size: 15px;
-  font-weight: 500;
+  /* деликатная, неяркая рамка */
+  border: 1px solid rgba(0, 0, 0, 0.12);
+
+  /* мягкий, но читаемый текст */
+  color: #666 !important;
+
+  font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
 
   transition: background 0.25s ease, border-color 0.25s ease;
 }
 
 .vnutri-badge:hover {
-  background: rgba(0, 0, 0, 0.08);
-  border-color: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.18);
 }
 </style>
 
