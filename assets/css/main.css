@@ -372,23 +372,26 @@ article table::-webkit-scrollbar-thumb {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 10px 0 20px 0;
+  margin: 8px 0 18px 0;
 }
 
 .vnutri-badge {
   display: inline-block;
-  padding: 8px 14px;
-  background: #1e1e1e;
-  border: 1px solid #333;
+  padding: 6px 12px;
   border-radius: 8px;
-  color: #fff !important;
-  font-size: 15px;
+
+  background: rgba(255, 255, 255, 0.06);  /* мягкий светлый акцент */
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  color: #e0e0e0 !important;
+  font-size: 14px;
   text-decoration: none;
-  transition: 0.25s ease;
+
+  transition: background 0.25s ease, border-color 0.25s ease;
 }
 
 .vnutri-badge:hover {
-  background: #292929;
-  border-color: #444;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
