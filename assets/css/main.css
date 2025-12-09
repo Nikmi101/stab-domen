@@ -375,27 +375,27 @@ article table::-webkit-scrollbar-thumb {
   margin: 8px 0 18px 0;
 }
 
-/* Аккуратнее, контрастнее, лучше читаемость */
+/* Более контрастные, но всё ещё мягкие */
 .vnutri-badge {
   display: inline-block;
   padding: 6px 12px;
   border-radius: 8px;
 
-  background: rgba(255, 255, 255, 0.05);        /* чуть темнее, мягче */
-  border: 1px solid rgba(255, 255, 255, 0.22);  /* обводка заметнее, но не кричащая */
+  background: rgba(255, 255, 255, 0.08);     /* Чуть заметнее */
+  border: 1px solid rgba(255, 255, 255, 0.28); /* Тонкая, но читаемая обводка */
 
-  color: #f2f2f2 !important;                    /* немного ярче текста */
+  color: #f5f5f5 !important;  /* Текст каплю ярче */
   font-size: 14px;
-  text-decoration: none;
-  font-weight: 500;                              /* лёгкое усиление читаемости */
+  font-weight: 500;
 
+  text-decoration: none;
   transition: background 0.25s ease, border-color 0.25s ease;
 }
 
-/* Hover — чуть теплее, но не светится */
+/* Естественный hover — не слишком яркий */
 .vnutri-badge:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.38);
 }
 
 
