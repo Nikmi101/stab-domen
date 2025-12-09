@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-26
-dateUpdated: 2025-12-05
+dateUpdated: 2025-12-09
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/halt.webp
@@ -169,6 +169,9 @@ isPartOfWeb:
 > 💡 **Совет:** одиночество — не признак слабости, а сигнал о потребности в контакте.  
 > Замечая это, вы учитесь заботиться о себе по-настоящему.
 
+> ℹ️ Одно из направлений работы **Vnutri Apps** — индивидуальные онлайн-консультации.  
+> Подробнее о формате встреч: [индивидуальные консультации](/consultations).
+
 🧭 Смежно: [«Алкоголь после отказа: ловушки и как их обойти»](/blog/privychki/alkogol-posle-otkaza-ot-sigaret/),  
 [«Дом без дыма: как защитить себя и близких»](/blog/privychki/dom-bez-dyma/).
 
@@ -277,6 +280,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Как управлять эмоциями и привычками после отказа от курения* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
