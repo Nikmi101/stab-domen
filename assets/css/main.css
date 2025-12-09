@@ -395,3 +395,34 @@ article table::-webkit-scrollbar-thumb {
   border-color: rgba(255, 255, 255, 0.18);
 }
 
+.vnutri-top-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 8px 0 18px 0;
+}
+
+/* Аккуратнее, контрастнее, лучше читаемость */
+.vnutri-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.05);        /* чуть темнее, мягче */
+  border: 1px solid rgba(255, 255, 255, 0.22);  /* обводка заметнее, но не кричащая */
+
+  color: #f2f2f2 !important;                    /* немного ярче текста */
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;                              /* лёгкое усиление читаемости */
+
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+/* Hover — чуть теплее, но не светится */
+.vnutri-badge:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+
