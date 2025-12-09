@@ -372,7 +372,7 @@ article table::-webkit-scrollbar-thumb {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 8px 0 18px 0;
+  margin: 2px 0 18px 0;
 }
 
 /* Более контрастные, но всё ещё мягкие */
