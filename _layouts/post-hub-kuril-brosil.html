@@ -5,16 +5,33 @@ layout: encyclopedia-hub
 {% capture H1CLOSE %}</h1>{% endcapture %}
 {% assign _html = content %}
 
+{% comment %}
+  Блок CTA
+{% endcomment %}
+{% capture top_cta %}
+<div class="vnutri-top-cta">
+  <a href="https://vnutriapps.ru/brosit-kurit" class="vnutri-badge">🚭 Курил-бросил</a>
+  <a href="https://vnutriapps.ru/consultations" class="vnutri-badge">💬 Консультации</a>
+</div>
+{% endcapture %}
+
 {% if page.toc != false %}
   {% assign _parts = _html | split: H1CLOSE %}
   {% if _parts.size > 1 %}
-    {{ _parts[0] }}{{ H1CLOSE }}
+    {{ _parts[0] }}
+    {{ top_cta }}
+    {{ H1CLOSE }}
+
     {% include toc.html html=_html h_min=2 h_max=2 title="Содержание" class="toc" ordered="false" %}
+
     {{ _parts | slice: 1, _parts.size | join: H1CLOSE }}
   {% else %}
+    {{ top_cta }}
     {% include toc.html html=_html h_min=2 h_max=2 title="Содержание" class="toc" ordered="false" %}
     {{ _html }}
   {% endif %}
 {% else %}
+  {{ top_cta }}
   {{ _html }}
 {% endif %}
+
