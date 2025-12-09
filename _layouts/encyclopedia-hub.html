@@ -279,9 +279,9 @@
 </div>
 
 
-    {% if page.recommended_apps and page.recommended_apps.size > 0 %}
+
       <h2 class="blog-title">Решения от<br> Vnutri Apps:</h2>
-    {% endif %}
+
 
     <!-- Рекомендуемое приложение -->
     {% for app in page.recommended_apps %}
@@ -297,6 +297,7 @@
       {% endcase %}
     {% endfor %}
 
+    {% include consult.html %}
     <!-- JSON-LD -->
     
     {% include jsonld-article-cycle-brosit-kurit.html %}
