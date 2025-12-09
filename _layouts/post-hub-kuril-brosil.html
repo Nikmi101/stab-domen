@@ -14,13 +14,11 @@ layout: encyclopedia-hub
 {% capture H1CLOSE %}</h1>{% endcapture %}
 {% assign _html = content %}
 
-
 {% if page.toc != false %}
   {% assign _parts = _html | split: H1CLOSE %}
   {% if _parts.size > 1 %}
-    {{ _parts[0] }}
     {{ top_cta }}
-    {{ H1CLOSE }}
+    {{ _parts[0] }}{{ H1CLOSE }}
 
     {% include toc.html html=_html h_min=2 h_max=2 title="Содержание" class="toc" ordered="false" %}
 
@@ -34,4 +32,3 @@ layout: encyclopedia-hub
   {{ top_cta }}
   {{ _html }}
 {% endif %}
-
