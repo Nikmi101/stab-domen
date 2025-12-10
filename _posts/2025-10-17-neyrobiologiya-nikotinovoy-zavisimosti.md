@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-17
-dateUpdated: 2025-10-17
+dateUpdated: 2025-12-10
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/brain-nicotine.webp
@@ -84,6 +84,12 @@ isPartOfWeb:
 > Освобождение — тоже обучение, только в обратную сторону.
 
 <small>Тема интересная, сложная, некоторые механизмы, описанные в статье, намеренно упрощены, чтобы сделать материал яснее — без искажения научных смыслов.</small>
+
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
    src="/images/blog-images/brain-nicotine.webp"
@@ -345,6 +351,7 @@ isPartOfWeb:
 - Cochrane Library: [Neuroscience of tobacco addiction and cessation](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
