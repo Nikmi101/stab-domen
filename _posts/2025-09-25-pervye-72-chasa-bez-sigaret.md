@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-25
-dateUpdated: 2025-10-09
+dateUpdated: 2025-12-10
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/72-chasa.webp
@@ -95,6 +95,12 @@ isPartOfWeb:
 Эта статья — **ваша карта первых 72 часов**: что происходит с телом и психикой,  
 как действовать во время тяги, какие замены реально помогают и чего стоит избегать.  
 Главное — понимать, что кризис краткосрочен, а восстановление начинается уже в первые часы.  
+
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
    src="/images/blog-images/72-chasa.webp"
@@ -399,6 +405,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — withdrawal symptoms and how to cope* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
