@@ -109,6 +109,8 @@ isPartOfWeb:
 
 Разобравшись в этом, вы увидите: зависимость не сильнее вас — она просто хорошо замаскирована.
 
+{% include cta-kurilbrosil.html %}
+
 ---
 
 {% include img.html
@@ -116,10 +118,6 @@ isPartOfWeb:
    alt="Никотиновая зависимость и мифы о курении: иллюзия контроля и путь к свободе от сигарет"
    title="Мифы и правда о никотиновой зависимости — почему бросить курить трудно и как освободиться"
    width="1200" height="675" %}
-
----
-
-{% include cta-kurilbrosil.html %}
 
 ---
 
@@ -478,6 +476,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — understanding addiction* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
