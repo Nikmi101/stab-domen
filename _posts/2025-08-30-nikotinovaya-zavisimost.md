@@ -109,6 +109,8 @@ isPartOfWeb:
 
 Разобравшись в этом, вы увидите: зависимость не сильнее вас — она просто хорошо замаскирована.
 
+---
+
 {% include cta-kurilbrosil.html %}
 
 ---
@@ -476,6 +478,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — understanding addiction* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
