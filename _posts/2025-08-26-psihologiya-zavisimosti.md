@@ -100,6 +100,12 @@ isPartOfWeb:
 - почему сила воли часто не помогает;
 - и какие шаги реально работают для перестройки.
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 {% include img.html
    src="/images/blog-images/petlya-privychki.webp"
    alt="Как формируется привычка в мозге — петля привычки, дофамин и вознаграждение"
@@ -425,6 +431,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *How to change habits and manage addiction* — [nhs.uk](https://www.nhs.uk/live-well/)
 
 ---
+
 
 
 
