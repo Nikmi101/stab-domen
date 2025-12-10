@@ -52,6 +52,10 @@ isPartOfWeb:
 
 ---
 
+{% include cta-tvorchestvo.html %}
+
+---
+
 {% include img.html
    src="/images/blog-images/bloki-v-tvorchestve.webp"
    alt="Творческие блоки"
@@ -158,6 +162,7 @@ isPartOfWeb:
 👉 В этом помогает приложение **«Творчество: Пламя внутри»**. Оно шаг за шагом снимает внутренние блоки, развивает креативное мышление и возвращает уверенность в себе.
 
 ---
+
 
 
 
