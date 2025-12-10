@@ -118,6 +118,8 @@ isPartOfWeb:
    width="1200" height="675" %}
 
 ---
+{% include cta-kurilbrosil.html %}
+---
 
 ## Как формируется никотиновая зависимость: что делает никотин с мозгом и эмоциями
 
@@ -474,6 +476,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — understanding addiction* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
