@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-30
-dateUpdated: 2025-10-13
+dateUpdated: 2025-12-10
 articleSection: "Бросить курить с поддержкой"
 preload_images:
   - /images/blog-images/blog-header.webp
@@ -87,6 +87,10 @@ isPartOfWeb:
 > Все факты взяты из **открытых надёжных источников** (ВОЗ, Минздрав РФ, CDC и др.),  
 > чтобы вы видели объективную картину без страшилок и мифов.  
 
+---
+
+{% include cta-kurilbrosil.html %}
+
 <!--
 {% include img.html
    src="/images/blog-images/blog-header.webp"
@@ -95,8 +99,8 @@ isPartOfWeb:
    width="1200" height="675" %}
 
 
-<small>🔑 Ключи: *кожа после отказа от курения, цвет лица, дёсны и зубы после курения, сухость глаз, волосы после отказа*.</small>
 -->
+
 ---
 
 ## Кожа и цвет лица: сосудистый тонус, влажность и «оттенок усталости»
@@ -212,6 +216,7 @@ isPartOfWeb:
 - Cochrane Library: Smoking cessation and dermatological outcomes — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
