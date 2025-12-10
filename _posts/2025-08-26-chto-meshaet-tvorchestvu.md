@@ -9,7 +9,7 @@ publisher:
 medical_disclaimer: true
 ready: yes
 date: 2025-08-26
-dateUpdated: 2025-09-22
+dateUpdated: 2025-12-10
 articleSection: "Творчество"
 preload_images:
   - /images/blog-images/bloki-v-tvorchestve.webp
@@ -18,6 +18,7 @@ categories: [tvorchestvo]
 tags:
   - страх творчества
   - творческие блоки
+  - развитие креативности
   - психология креативности
   - внутренние блоки
   - страхи
@@ -162,6 +163,7 @@ isPartOfWeb:
 👉 В этом помогает приложение **«Творчество: Пламя внутри»**. Оно шаг за шагом снимает внутренние блоки, развивает креативное мышление и возвращает уверенность в себе.
 
 ---
+
 
 
 
