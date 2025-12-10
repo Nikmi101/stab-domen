@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-15
-dateUpdated: 2025-10-10
+dateUpdated: 2025-12-10
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/pervaya-nedelya-bez-sigaret.webp
@@ -94,6 +94,12 @@ isPartOfWeb:
 Эта статья — не про силу воли и героизм.
 Она о бережном способе пройти первую и вторую недели без курения:
 с пониманием, поддержкой и конкретными шагами, которые помогут удержаться без срывов и вернуть внутреннее спокойствие.
+
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
 src="/images/blog-images/pervaya-nedelya-bez-sigaret.webp"
@@ -329,6 +335,7 @@ width="1200" height="675" %}
 - Национальный институт здравоохранения Великобритании (NHS): *What happens when you quit — first weeks timeline and coping strategies* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
