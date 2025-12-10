@@ -90,6 +90,12 @@ isPartOfWeb:
 
 Именно поэтому **тяга к курению без причины** — это не случайность, а сигнал о скрытом внутреннем дисбалансе, который можно научиться распознавать.
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 {% include img.html src="/images/blog-images/halt.webp" alt="Четыре лица тяги покурить. Метод HALT." title="Четыре лица тяги покурить. Метод HALT." width="1200" height="675" %}
 
 ---
@@ -280,6 +286,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Как управлять эмоциями и привычками после отказа от курения* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
