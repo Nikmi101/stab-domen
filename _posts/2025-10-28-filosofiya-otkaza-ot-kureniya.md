@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: false
 date: 2025-10-28
-dateUpdated: 2025-10-28
+dateUpdated: 2025-12-11
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/filosofiya-otkaza.webp
@@ -84,6 +84,12 @@ sources:
 Часто можно услышать мысль, что бросить курить — значит лишить себя удовольствия.  
 На самом деле — это про возвращение способности **ощущать жизнь без посредников**.  
 Когда дым рассеивается, начинают проявляться забытые вещи: вкус, дыхание, покой, тишина, настоящее.
+
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
    src="/images/blog-images/filosofiya-otkaza.webp"
@@ -412,6 +418,7 @@ sources:
 
 
 ---
+
 
 
 
