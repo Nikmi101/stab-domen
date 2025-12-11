@@ -87,6 +87,12 @@ isPartOfWeb:
 > Здесь собраны данные о том, как курение влияет на иммунную систему и уровень фонового воспаления, и что меняется после отказа.  
 > Информация взята из **открытых источников** (ВОЗ, Минздрав РФ, CDC, Cochrane).  
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 <!--
 {% include img.html
    src="/images/blog-images/blog-header.webp"
@@ -97,7 +103,6 @@ isPartOfWeb:
 
 <small>🔑 Ключи: *иммунитет после отказа от курения, воспаление низкой степени, простуды и курение, восстановление после отказа*.</small>
 -->
----
 
 ## Как курение влияет на иммунную систему
 
@@ -214,6 +219,7 @@ isPartOfWeb:
 - Cochrane Tobacco Addiction Group — [cochranelibrary.com](https://www.cochranelibrary.com/topic/tobacco-addiction)  
 
 ---
+
 
 
 
