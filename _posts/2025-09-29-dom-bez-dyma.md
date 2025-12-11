@@ -56,6 +56,12 @@ isPartOfWeb:
 
 Эта статья — о том, как **в реальности** перестроить дом в зону без дыма: без головной боли, конфликтов или ультиматумов, но с чёткими шагами и простыми договорённостями.
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 {% include img.html
    src="/images/blog-images/chistiy-dom.webp"
    alt="Дом без табачного дыма"
@@ -223,6 +229,7 @@ isPartOfWeb:
 - Cochrane Library — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
