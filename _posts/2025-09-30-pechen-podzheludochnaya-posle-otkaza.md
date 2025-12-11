@@ -86,6 +86,11 @@ isPartOfWeb:
 > Здесь собраны данные о том, как курение влияет на печень, поджелудочную железу и систему пищеварительных ферментов, и что постепенно меняется в организме после отказа от сигарет.  
 > Все сведения — из **надёжных источников** (ВОЗ, Минздрав РФ, CDC, Cochrane).
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 <!--
 {% include img.html
    src="/images/blog-images/blog-header.webp"
@@ -96,7 +101,6 @@ isPartOfWeb:
 
 <small>🔑 Ключи: *печень и курение, поджелудочная и курение, желчевыводящая система, инсулиновая чувствительность, ферменты печени*.</small>
 -->
----
 
 ## Как курение влияет на печень и желчевыводящую систему
 
@@ -210,6 +214,7 @@ isPartOfWeb:
 - Cochrane Library: Smoking and pancreatic disorders — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
