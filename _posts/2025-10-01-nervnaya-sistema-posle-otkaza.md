@@ -85,6 +85,12 @@ isPartOfWeb:
 > Его цель — показать, как никотин влияет на работу нервной системы, и как она перестраивается после отказа.  
 > Основано на данных **ВОЗ, Минздрава РФ, CDC и Cochrane**.  
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 <!--
 {% include img.html
    src="/images/blog-images/blog-header.webp"
@@ -95,7 +101,6 @@ isPartOfWeb:
 
 <small>🔑 Ключи: *нервная система и никотин, внимание после отказа, раздражительность и отмена, сон после отказа от курения*.</small>
 -->
----
 
 ## Как никотин меняет нервную систему
 
@@ -226,6 +231,7 @@ isPartOfWeb:
 - Cochrane Library: Nicotine withdrawal and neurocognitive effects — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
