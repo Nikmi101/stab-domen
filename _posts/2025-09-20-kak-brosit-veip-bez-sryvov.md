@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-16
-dateUpdated: 2025-10-16
+dateUpdated: 2025-12-11
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/brosit-veip.webp
@@ -101,6 +101,10 @@ isPartOfWeb:
 В этой статье — чёткий план, как выйти из этой петли:  
 что делать с «капельной» тягой, как справиться со вкусами, что помогает в первые дни,
 и как перестроить поведение, если вейп стал привычной частью каждого дня.
+
+---
+
+{% include cta-kurilbrosil.html %}
 
 ---
 
@@ -485,6 +489,7 @@ isPartOfWeb:
 - E-Cigarettes — [Wikipedia](https://en.wikipedia.org/wiki/Electronic_cigarette)
 
 ---
+
 
 
 
