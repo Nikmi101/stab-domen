@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-25
-dateUpdated: 2025-10-25
+dateUpdated: 2025-12-11
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/podderzhka-blizkogo.webp
@@ -86,6 +86,12 @@ sources:
 
 > 💬 **Главная формула поддержки:** меньше слов — больше принятия.  
 > Не подталкивайте, а сопровождайте. Не оценивайте — интересуйтесь.
+
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
    src="/images/blog-images/podderzhka-blizkogo.webp"
@@ -377,6 +383,7 @@ sources:
 - Минздрав РФ — *Клинические рекомендации по поддержке пациентов при отказе от курения* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
