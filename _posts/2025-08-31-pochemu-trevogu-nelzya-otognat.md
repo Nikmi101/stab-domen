@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-08-31
-dateUpdated: 2025-09-22
+dateUpdated: 2025-12-11
 articleSection: "Эмоции и психология"
 preload_images:
   - /images/blog-images/prinyatie-emotsii.webp
@@ -58,6 +58,10 @@ isPartOfWeb:
 Но чем больше усилий, тем сильнее тревога возвращается.  
 
 В этом и заключается парадокс: **борьба с тревогой её усиливает**.  
+
+---
+
+{% include cta-nettrevoge.html %}
 
 ---
 
@@ -203,6 +207,7 @@ isPartOfWeb:
 👉 Именно на этом принципе построено приложение **[«Нет тревоге: Путь к спокойствию»](/snizit-trevogu)**. Оно ведёт через 7 этапов: от понимания природы тревоги до навыков принятия и обретения внутреннего спокойствия.  
 
 ---
+
 
 
 
