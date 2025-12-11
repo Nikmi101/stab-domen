@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-08-30
-dateUpdated: 2025-11-01
+dateUpdated: 2025-12-11
 articleSection: "Философия и психология"
 preload_images:
   - /images/blog-images/ekzistentsionalism-i-odinochestvo.webp
@@ -59,6 +59,10 @@ isPartOfWeb:
 Но именно в признании этого факта рождается внутренняя сила.  
 
 В этой статье разберём, что значит экзистенциальное одиночество, как о нём писали философы и как это знание может помочь каждому из нас.
+
+---
+
+{% include cta-odinochestvo.html %}
 
 ---
 
@@ -209,6 +213,7 @@ isPartOfWeb:
 Оно помогает прожить одиночество осознанно и превратить его в ресурс силы и внутренней устойчивости.
 
 ---
+
 
 
 
