@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-10-26
-dateUpdated: 2025-10-26
+dateUpdated: 2025-12-11
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/trevoga-posle-otkaza.webp
@@ -88,6 +88,12 @@ sources:
 
 > 💬 **Важно помнить:** тревога после отказа от курения — часть процесса восстановления.  
 > Это сигнал, что организм возвращает себе способность успокаиваться самостоятельно.
+
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
    src="/images/blog-images/trevoga-posle-otkaza.webp"
@@ -352,6 +358,7 @@ sources:
 - Минздрав РФ — *Клинические рекомендации по лечению никотиновой зависимости и сопровождению синдрома отмены* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
