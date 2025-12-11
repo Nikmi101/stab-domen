@@ -90,6 +90,12 @@ isPartOfWeb:
 Тело снова начинает слышать сигналы голода, а мозг — воспринимать вкус и удовольствие от еды без стимуляторов.  
 И если подойти к этому осознанно, **вес можно стабилизировать без диет и без стресса**.
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 {% include img.html
    src="/images/blog-images/ves.webp"
    alt="Набор веса после отказа от курения — почему это происходит"
@@ -444,6 +450,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Healthy eating and weight stability after quitting smoking* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
