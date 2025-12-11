@@ -82,6 +82,12 @@ sources:
 > 💬 **Свобода без никотина — это не результат силы воли.**  
 > Это состояние, когда опора снова внутри, а не в сигарете или внешнем обстоятельстве.
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 {% include img.html
    src="/images/blog-images/svoboda-bez-nikotina.webp"
    alt="свобода без никотина и внешней зависимости"
@@ -324,6 +330,7 @@ sources:
 - National Institute on Drug Abuse (NIDA): *Internal Motivation and Recovery Pathways* — [nida.nih.gov](https://nida.nih.gov)  
 - Cochrane Library: *Behavioral and Meaning-Based Strategies for Smoking Cessation* — [cochranelibrary.com](https://www.cochranelibrary.com)  
 - Минздрав РФ — *Психологическая устойчивость и формирование внутренней опоры при отказе от никотина* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
+
 
 
 
