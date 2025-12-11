@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-02
-dateUpdated: 2025-11-02
+dateUpdated: 2025-12-11
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/sindrom-otmeny.webp
@@ -94,6 +94,11 @@ isPartOfWeb:
 Острые ощущения обычно длятся **3–5 дней**, заметные — **1–2 недели**, а затем идут на спад.  
 Главное — знать **что именно** происходит и **что делать в момент тяги**: это резко повышает шансы пройти этап без срывов.
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
    src="/images/blog-images/sindrom-otmeny.webp"
@@ -398,6 +403,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — withdrawal symptoms and how to cope* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
