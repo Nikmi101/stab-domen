@@ -57,6 +57,10 @@ isPartOfWeb:
 
 ---
 
+{% include cta-odinochestvo.html %}
+
+---
+
 {% include img.html
    src="/images/blog-images/samopoznanie.webp"
    alt="Самопознание и одиночество"
@@ -155,6 +159,7 @@ isPartOfWeb:
 А приложение **[«Творчество: Пламя внутри»](/razvitie-tvorchestva)** показывает, как интерес к себе рождает новые идеи и вдохновение.  
 
 ---
+
 
 
 
