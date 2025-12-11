@@ -86,6 +86,12 @@ isPartOfWeb:
 > Её цель — объяснить, как курение влияет на работу почек и водно-электролитный баланс, и что постепенно улучшается после отказа от сигарет.  
 > Основано на фактах из **ВОЗ, Минздрава РФ, CDC, Cochrane**.  
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 <!--
 {% include img.html
    src="/images/blog-images/blog-header.webp"
@@ -96,7 +102,6 @@ isPartOfWeb:
 
 <small>🔑 Ключи: *почки после отказа от курения, водный баланс, гидратация, электролиты, частое мочеиспускание после отказа*.</small>
 -->
----
 
 ## Как курение влияет на почки и баланс жидкости
 
@@ -198,6 +203,7 @@ isPartOfWeb:
 - Cochrane Library: Smoking and pancreatic disorders — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
