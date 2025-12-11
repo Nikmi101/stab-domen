@@ -87,6 +87,12 @@ isPartOfWeb:
 > Здесь собраны факты о том, как курение и отказ от него связаны с обменом веществ, гормональным фоном и весом.  
 > Все сведения основаны на **надёжных источниках** (ВОЗ, Минздрав РФ, CDC, Cochrane). 
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 <!--
 {% include img.html
    src="/images/blog-images/blog-header.webp"
@@ -97,7 +103,6 @@ isPartOfWeb:
 
 <small>🔑 Ключи: *обмен веществ после отказа от курения, гормональный фон и курение, аппетит после отказа, вес после отказа, тяга на сладкое*.</small>
 -->
----
 
 ## Как курение влияет на метаболизм и гормоны
 
@@ -232,6 +237,7 @@ isPartOfWeb:
 - Cochrane Library: Smoking cessation and weight gain — [cochranelibrary.com](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
