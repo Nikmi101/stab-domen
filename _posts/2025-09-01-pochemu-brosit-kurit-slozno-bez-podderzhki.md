@@ -97,6 +97,12 @@ isPartOfWeb:
 > 💡 **Главная мысль:** сила воли нужна, чтобы начать,  
 > но **поддержка** — чтобы уверенно дойти до результата.
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 {% include img.html
    src="/images/blog-images/podderzka-kurenie.webp"
    alt="Почему без поддержки сложно бросить курить: психологическая помощь, привычки и окружение"
@@ -370,6 +376,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking with support — how to find help that works* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
