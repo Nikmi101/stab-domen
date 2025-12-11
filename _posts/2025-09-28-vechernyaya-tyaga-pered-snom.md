@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-28
-dateUpdated: 2025-10-17
+dateUpdated: 2025-12-11
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/noch.webp
@@ -86,6 +86,12 @@ isPartOfWeb:
 
 Хорошая новость — вечернюю тягу можно **перенаправить в сторону сна**,  
 если заранее знать, что происходит с телом и как мягко помочь ему переключиться.
+
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
    src="/images/blog-images/noch.webp"
@@ -345,6 +351,7 @@ isPartOfWeb:
 - European Network for Smoking and Tobacco Prevention (ENSP): *Night cravings in smoking cessation* — [ensp.network](https://ensp.network)
 
 ---
+
 
 
 
