@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-21
-dateUpdated: 2025-10-21
+dateUpdated: 2025-12-11
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/kofe-i-nikotin.webp
@@ -90,6 +90,12 @@ isPartOfWeb:
 
 > ☕ Эта статья — про то, **как кофе и никотин усиливают друг друга на уровне нейрохимии и привычек**,  
 > и как мягко разорвать эту пару, не отказываясь от кофе совсем.
+
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
    src="/images/blog-images/kofe-i-nikotin.webp"
@@ -403,6 +409,7 @@ isPartOfWeb:
 - Минздрав РФ — *Клинические рекомендации по лечению никотиновой зависимости* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
