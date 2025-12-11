@@ -93,6 +93,12 @@ isPartOfWeb:
 Тяга к сладкому — это сигнал, что тело и мозг ищут новый способ поддерживать уровень дофамина и энергии.  
 Если чётко понимать, **почему тянет на сладкое** и как мягко перестроить питание, можно пройти этот этап спокойно — без набора веса и без возвращения к сигаретам.  
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 {% include img.html
    src="/images/blog-images/sladkoe.webp"
    alt="Почему после отказа от сигарет тянет на сладкое"
@@ -471,6 +477,7 @@ isPartOfWeb:
 - American Psychological Association (APA): *Emotional eating and behavioral replacement after smoking cessation* — [apa.org](https://www.apa.org)  
 - European Network for Smoking and Tobacco Prevention (ENSP): *Weight management and craving regulation after quitting* — [ensp.network](https://ensp.network)  
 - Национальный институт здравоохранения Великобритании (NHS): *Managing appetite and sugar cravings after quitting smoking* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
+
 
 
 
