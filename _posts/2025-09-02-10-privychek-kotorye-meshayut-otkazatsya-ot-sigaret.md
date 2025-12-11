@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-02
-dateUpdated: 2025-10-06
+dateUpdated: 2025-12-11
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/10-habits-smoking.webp
@@ -98,6 +98,12 @@ isPartOfWeb:
 
 Чтобы действительно освободиться, важно не просто «бросить курить», а **заменить старые привычки новыми — осознанными и живыми**.  
 Эта статья поможет увидеть 10 таких скрытых якорей, понять, как они работают, и подобрать замены, которые реально работают.  
+
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
    src="/images/blog-images/10-habits-smoking.webp"
@@ -663,6 +669,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking support and habit change techniques* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
