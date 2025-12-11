@@ -56,6 +56,10 @@ isPartOfWeb:
 
 ---
 
+{% include cta-tvorchestvo.html %}
+
+---
+
 {% include img.html
    src="/images/blog-images/sindrom-samozvanca.webp"
    alt="Синдром самозванца и творчество"
@@ -164,6 +168,7 @@ isPartOfWeb:
 👉 Для этого создано приложение **[«Творчество: Пламя внутри»](/razvitie-tvorchestva)**. Оно помогает преодолеть внутренние блоки и почувствовать радость от создания нового.  
 
 ---
+
 
 
 
