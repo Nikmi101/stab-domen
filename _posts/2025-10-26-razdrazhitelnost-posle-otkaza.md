@@ -88,6 +88,12 @@ sources:
 > 💬 **Важно:** раздражительность — не знак срыва и не слабость воли.  
 > Это временная реакция адаптации, когда мозг заново учится успокаиваться сам.
 
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
+
 {% include img.html
    src="/images/blog-images/razdrazhitelnost-posle-otkaza.webp"
    alt="раздражительность после отказа от курения"
@@ -331,6 +337,7 @@ sources:
 
 
 ---
+
 
 
 
