@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-20
-dateUpdated: 2025-10-11
+dateUpdated: 2025-12-11
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/alkogol-posle-otkaza.webp
@@ -89,6 +89,12 @@ isPartOfWeb:
 После нескольких глотков включаются автоматические паттерны, в которых сигарета была частью привычного сценария «расслабления».  
 Именно поэтому **алкоголь — главный триггер срыва после отказа от сигарет**.  
 Понимание механизма помогает не бороться с собой, а осознанно перестроить ситуацию: поменять контекст, подготовить альтернативу и удержать новую траекторию.  
+
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
    src="/images/blog-images/alkogol-posle-otkaza.webp"
@@ -366,6 +372,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Alcohol and relapse risk during smoking cessation* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
