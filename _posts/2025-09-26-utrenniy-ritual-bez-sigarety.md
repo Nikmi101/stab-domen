@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-26
-dateUpdated: 2025-10-21
+dateUpdated: 2025-12-11
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/utrenniy-ritual.webp
@@ -82,6 +82,12 @@ sources:
 Если не изменить утренний сценарий, он **втянет обратно в зависимость**, даже когда желание курить уже ослабло.  
 Но если пересобрать утро — чуть сместить и настроить последовательность, ощущения, вкусы и предметы — то тяга постепенно исчезает.  
 И каждое утро становится новым началом — буквально.
+
+---
+
+{% include cta-kurilbrosil.html %}
+
+---
 
 {% include img.html
    src="/images/blog-images/utrenniy-ritual.webp"
@@ -331,6 +337,7 @@ sources:
 - Минздрав РФ — *Клинические рекомендации по лечению никотиновой зависимости* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
