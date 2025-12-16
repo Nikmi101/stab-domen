@@ -379,6 +379,7 @@ sources_cycle:
 <ul class="blog-posts">
   {% include article-card-in-list.html permalink="/blog/privychki/sryv-posle-otkaza-ot-kureniya/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/kak-brosit-kurit-esli-vokrug-vse-kuryat/" %}
+  {% include article-card-in-list.html permalink="/blog/privychki/ne-kuryu-s-novogo-goda/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/halt-chetyre-triggera/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/alkogol-posle-otkaza-ot-sigaret/" %}
   {% include article-card-in-list.html permalink="/blog/privychki/posle-otkaza-tyanet-na-sladkoe/" %}
