@@ -4,18 +4,31 @@ permalink: /cycle_kb.txt
 robots: noindex, nofollow
 ---
 
+
 {% assign series_id = "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series" %}
-
-{% assign posts = site.posts
-  | where_exp: "p", "p.published != false"
-  | where_exp: "p", "p.isPartOf"
-  | where_exp: "p", "p.isPartOf | where_exp: 'x', 'x[\"@id\"] == series_id' | size > 0"
-  | reverse
-%}
-
 {% assign counter = 0 %}
 
-{% for post in posts %}
+{% for post in site.posts %}
+  {% if post.published == false %}
+    {% continue %}
+  {% endif %}
+
+  {% assign ok = false %}
+
+  {%- if post.isPartOf -%}
+    {%- for part in post.isPartOf -%}
+      {%- assign part_text = part | jsonify -%}
+      {%- if part_text contains series_id -%}
+        {%- assign ok = true -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+  {% unless ok %}
+    {% continue %}
+  {% endunless %}
+
   {% assign counter = counter | plus: 1 %}
 {{ counter }}. Title: "{{ post.title | strip }}"
 Description: "{% if post.description %}{{ post.description | strip }}{% else %}{{ post.content | strip_html | truncate: 180 }}{% endif %}"
