@@ -23,6 +23,13 @@
       --radius-lg: 18px;
       --radius-md: 12px;
       --shadow-soft: 0 14px 30px rgba(0, 0, 0, 0.07);
+
+      /* Theme badge palettes */
+      --anxiety-bg: #ede7ff;   --anxiety-fg: #3a1a8a; /* purple */
+      --stress-bg:  #ffe2ef;   --stress-fg:  #8a1a4f; /* pink */
+      --lonely-bg:  #dff3ff;   --lonely-fg:  #0b4c73; /* light blue */
+      --creative-bg:#ffe9d6;   --creative-fg:#7a3a00; /* orange */
+      --smoke-bg:   #e3f7e9;   --smoke-fg:   #0f5b2f; /* green */
     }
 
     * { box-sizing: border-box; }
@@ -243,17 +250,25 @@
       font-weight: 700;
     }
 
+    /* Base badge */
     .badge {
       display: inline-flex;
       align-items: center;
-      padding: 3px 10px;
-      font-size: 0.78rem;
+      padding: 4px 10px;
+      font-size: 0.82rem;
       border-radius: 999px;
-      background: var(--accent-soft);
-      color: #0f2a64;
       white-space: nowrap;
-      font-weight: 600;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      border: 1px solid rgba(0,0,0,0.04);
     }
+
+    /* Themed badges */
+    .badge-anxiety { background: var(--anxiety-bg); color: var(--anxiety-fg); }
+    .badge-stress  { background: var(--stress-bg);  color: var(--stress-fg); }
+    .badge-lonely  { background: var(--lonely-bg);  color: var(--lonely-fg); }
+    .badge-creative{ background: var(--creative-bg);color: var(--creative-fg); }
+    .badge-smoke   { background: var(--smoke-bg);   color: var(--smoke-fg); }
 
     .schedule-table {
       width: 100%;
@@ -266,7 +281,7 @@
       padding: 10px 10px;
       border-bottom: 1px solid var(--border);
       text-align: left;
-      vertical-align: top;
+      vertical-align: middle;
     }
 
     .schedule-table th {
@@ -276,9 +291,6 @@
       letter-spacing: 0.04em;
       color: var(--muted);
     }
-
-    .schedule-topic { font-weight: 700; }
-    .schedule-meta { font-size: 0.9rem; color: var(--muted); margin-top: 2px; }
 
     .routes-grid {
       display: grid;
@@ -386,7 +398,6 @@
       justify-content: space-between;
     }
     .sticky-cta .btn { width: 100%; }
-    .sticky-cta .btn-outline { width: auto; }
 
     @media (max-width: 860px) {
       .sticky-cta { display: block; }
@@ -491,7 +502,7 @@
       </div>
     </section>
 
-    <!-- NEW: About / Who leads -->
+    <!-- About -->
     <section class="card" id="about" style="margin-bottom:28px;">
       <h2 class="section-title">Кто ведёт</h2>
       <div class="about">
@@ -522,7 +533,6 @@
       </p>
     </section>
 
-    <!-- NEW: What happens on the meeting -->
     <section class="card" id="format" style="margin-bottom:28px;">
       <h2 class="section-title">Что будет на встрече (структура 90 минут)</h2>
       <p class="section-sub" style="margin-bottom:12px;">
@@ -536,7 +546,6 @@
       </ul>
     </section>
 
-    <!-- NEW: Rules -->
     <section class="card" id="rules" style="margin-bottom:28px;">
       <h2 class="section-title">Правила участия (коротко)</h2>
       <div class="grid-2">
@@ -562,7 +571,6 @@
       </p>
     </section>
 
-    <!-- NEW: Who might not fit -->
     <section class="card" id="notfit" style="margin-bottom:28px;">
       <h2 class="section-title">Кому лучше выбрать другой формат</h2>
       <p class="section-sub" style="margin-bottom:12px;">
@@ -590,54 +598,33 @@
               <th>День</th>
               <th>Время (МСК)</th>
               <th>Тема</th>
-              <th>Формат</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Среда</td>
               <td>19:00–20:30</td>
-              <td>
-                <div class="schedule-topic">Тревога</div>
-                <div class="schedule-meta">каждую неделю — шаг 1/2/3/4/5 по циклу</div>
-              </td>
-              <td><span class="badge">Онлайн • 1–10</span></td>
+              <td><span class="badge badge-anxiety">Тревога</span></td>
             </tr>
             <tr>
               <td>Четверг</td>
               <td>19:00–20:30</td>
-              <td>
-                <div class="schedule-topic">Стресс</div>
-                <div class="schedule-meta">каждую неделю — шаг 1/2/3/4/5 по циклу</div>
-              </td>
-              <td><span class="badge">Онлайн • 1–10</span></td>
+              <td><span class="badge badge-stress">Стресс</span></td>
             </tr>
             <tr>
               <td>Пятница</td>
               <td>19:00–20:30</td>
-              <td>
-                <div class="schedule-topic">Одиночество</div>
-                <div class="schedule-meta">каждую неделю — шаг 1/2/3/4/5 по циклу</div>
-              </td>
-              <td><span class="badge">Онлайн • 1–10</span></td>
+              <td><span class="badge badge-lonely">Одиночество</span></td>
             </tr>
             <tr>
               <td>Суббота</td>
               <td>16:00–17:30</td>
-              <td>
-                <div class="schedule-topic">Творчество</div>
-                <div class="schedule-meta">каждую неделю — шаг 1/2/3/4/5 по циклу</div>
-              </td>
-              <td><span class="badge">Онлайн • 1–10</span></td>
+              <td><span class="badge badge-creative">Творчество</span></td>
             </tr>
             <tr>
               <td>Воскресенье</td>
               <td>19:00–20:30</td>
-              <td>
-                <div class="schedule-topic">Бросить курить</div>
-                <div class="schedule-meta">каждую неделю — шаг 1/2/3/4/5 по циклу</div>
-              </td>
-              <td><span class="badge">Онлайн • 1–10</span></td>
+              <td><span class="badge badge-smoke">Курил-бросил</span></td>
             </tr>
           </tbody>
         </table>
@@ -769,7 +756,6 @@
           <div class="faq-a"><strong>700 ₽</strong> за одну встречу. Оплата по встречам.</div>
         </div>
 
-        <!-- NEW FAQ -->
         <div class="faq-item">
           <div class="faq-q">Как оплатить?</div>
           <div class="faq-a">Напишите в Telegram — я пришлю реквизиты/варианты оплаты. После оплаты отправляю ссылку на Яндекс Телемост.</div>
@@ -820,15 +806,4 @@
     <footer>
       <div>© Vnutri Apps. Формат встреч — тематические группы поддержки и практики. Время в расписании — МСК.</div>
     </footer>
-  </div>
-
-  <!-- Sticky mobile CTA -->
-  <div class="sticky-cta" aria-hidden="false">
-    <div class="sticky-cta-inner">
-      <a class="btn btn-primary" href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">
-        Записаться в Telegram
-      </a>
-    </div>
-  </div>
-</body>
-</html>
+  <
