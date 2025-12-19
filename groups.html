@@ -1,18 +1,15 @@
-
-
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Групповые онлайн-встречи Vnutri Apps — 5 встреч, 5 шагов</title>
-    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-  <meta name="yandex" content="noindex, nofollow, noarchive, noimageindex">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Групповые онлайн-встречи Vnutri Apps — цикл 5 недель (5 шагов)</title>
 
-  <meta name="description" content="Групповые онлайн-встречи Vnutri Apps по темам тревоги, стресса, одиночества, творчества и отказа от курения. Небольшие группы 7–10 человек, регулярные встречи, тёплая атмосфера. Запись через Telegram @vnu_apps." />
-  <meta name="robots" content="index, follow" />
-  <meta name="yandex" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Групповые онлайн-встречи Vnutri Apps по темам тревоги, стресса, одиночества, творчества и отказа от курения. Цикл 5 недель (5 шагов) идёт нонстопом. 1–10 участников. 700 ₽ за встречу. Запись через Telegram @vnu_apps." />
+
+  <!-- Черновик/тест: оставь noindex. Когда запустишь — просто удали этот блок -->
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+  <meta name="yandex" content="noindex, nofollow, noarchive, noimageindex">
 
   <style>
     :root {
@@ -53,6 +50,7 @@
       align-items: center;
       gap: 16px;
       margin-bottom: 24px;
+      flex-wrap: wrap;
     }
 
     .logo {
@@ -71,33 +69,36 @@
     }
 
     nav a { margin-left: 16px; font-size: 0.95rem; }
+    nav { display:flex; flex-wrap: wrap; gap: 10px; }
 
     .hero {
       background: radial-gradient(circle at top left, #e0ebff 0, #f5f5f7 45%, #ffffff 100%);
       border-radius: 28px;
       padding: 32px 24px 28px;
       box-shadow: var(--shadow-soft);
-      margin-bottom: 32px;
+      margin-bottom: 24px;
     }
 
     .hero-inner {
       display: grid;
       grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-      gap: 24px;
+      gap: 22px;
       align-items: center;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 860px) {
       .hero-inner { grid-template-columns: 1fr; }
+      nav a { margin-left: 0; }
     }
 
     .hero h1 {
-      margin: 0 0 12px;
+      margin: 0 0 10px;
       font-size: 2rem;
+      line-height: 1.2;
     }
 
     .hero p.lead {
-      margin: 0 0 16px;
+      margin: 0 0 14px;
       font-size: 1.05rem;
       color: var(--muted);
     }
@@ -106,21 +107,22 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
     }
 
     .pill {
       padding: 4px 10px;
       border-radius: 999px;
       background: rgba(0, 0, 0, 0.04);
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       color: var(--muted);
+      white-space: nowrap;
     }
 
     .pill-strong {
       background: var(--accent-soft);
       color: #0f2a64;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .cta-row {
@@ -128,6 +130,7 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 12px;
+      margin-top: 6px;
     }
 
     .btn {
@@ -140,9 +143,9 @@
       border: none;
       cursor: pointer;
       font-size: 0.95rem;
-      font-weight: 500;
+      font-weight: 600;
       text-decoration: none;
-      transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.1s ease;
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
       white-space: nowrap;
     }
 
@@ -165,8 +168,9 @@
     }
 
     .hero-note {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: var(--muted);
+      margin-top: 10px;
     }
 
     .hero-aside {
@@ -184,21 +188,21 @@
     .hero-aside ul {
       margin: 0;
       padding-left: 18px;
-      font-size: 0.9rem;
+      font-size: 0.93rem;
       color: var(--muted);
     }
 
-    section { margin-bottom: 32px; }
+    section { margin-bottom: 28px; }
 
     h2.section-title {
-      font-size: 1.3rem;
-      margin-bottom: 12px;
+      font-size: 1.28rem;
+      margin: 0 0 10px;
     }
 
     .section-sub {
-      font-size: 0.95rem;
+      font-size: 0.98rem;
       color: var(--muted);
-      margin-bottom: 16px;
+      margin: 0 0 14px;
     }
 
     .card {
@@ -212,10 +216,10 @@
     .grid-2 {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
+      gap: 16px;
     }
 
-    @media (max-width: 800px) { .grid-2 { grid-template-columns: 1fr; } }
+    @media (max-width: 860px) { .grid-2 { grid-template-columns: 1fr; } }
 
     ul.clean {
       list-style: none;
@@ -227,7 +231,7 @@
       padding-left: 18px;
       position: relative;
       margin-bottom: 6px;
-      font-size: 0.95rem;
+      font-size: 0.98rem;
     }
 
     ul.clean li::before {
@@ -236,83 +240,87 @@
       left: 4px;
       top: 0;
       color: var(--accent);
+      font-weight: 700;
     }
 
     .badge {
       display: inline-flex;
       align-items: center;
-      padding: 2px 8px;
-      font-size: 0.75rem;
+      padding: 3px 10px;
+      font-size: 0.78rem;
       border-radius: 999px;
       background: var(--accent-soft);
       color: #0f2a64;
-      margin-left: 6px;
+      white-space: nowrap;
+      font-weight: 600;
     }
 
     .schedule-table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.95rem;
+      font-size: 0.98rem;
     }
 
     .schedule-table th,
     .schedule-table td {
-      padding: 8px 10px;
+      padding: 10px 10px;
       border-bottom: 1px solid var(--border);
       text-align: left;
+      vertical-align: top;
     }
 
     .schedule-table th {
-      font-weight: 600;
-      font-size: 0.85rem;
+      font-weight: 700;
+      font-size: 0.82rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       color: var(--muted);
     }
 
-    .schedule-topic { font-weight: 500; }
-    .schedule-meta { font-size: 0.85rem; color: var(--muted); }
+    .schedule-topic { font-weight: 700; }
+    .schedule-meta { font-size: 0.9rem; color: var(--muted); margin-top: 2px; }
 
     .routes-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
+      gap: 16px;
     }
 
     @media (max-width: 900px) { .routes-grid { grid-template-columns: 1fr; } }
 
     .route-card h3 {
-      margin: 0 0 4px;
+      margin: 0 0 6px;
       font-size: 1.05rem;
     }
 
     .route-tagline {
-      font-size: 0.9rem;
+      font-size: 0.94rem;
       color: var(--muted);
-      margin-bottom: 10px;
+      margin: 0 0 10px;
     }
 
     .route-steps {
       list-style: none;
       margin: 0;
       padding: 0;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: var(--muted);
     }
 
-    .route-steps li { margin-bottom: 2px; }
+    .route-steps li { margin-bottom: 4px; }
 
     .route-footer {
       margin-top: 10px;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
+      font-weight: 600;
     }
 
-    .lead-small { font-size: 0.95rem; }
+    .lead-small { font-size: 0.98rem; }
 
     .about {
       display: grid;
       grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
-      gap: 18px;
+      gap: 16px;
     }
 
     @media (max-width: 900px) { .about { grid-template-columns: 1fr; } }
@@ -325,16 +333,29 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: var(--muted);
     }
 
-    .faq-item { margin-bottom: 10px; }
-    .faq-q { font-weight: 500; font-size: 0.95rem; margin-bottom: 2px; }
-    .faq-a { font-size: 0.9rem; color: var(--muted); }
+    .faq-item { margin-bottom: 12px; }
+    .faq-q { font-weight: 800; font-size: 0.98rem; margin-bottom: 3px; }
+    .faq-a { font-size: 0.95rem; color: var(--muted); }
+
+    .mini-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px dashed rgba(31, 111, 235, 0.35);
+      background: rgba(31, 111, 235, 0.04);
+      padding: 14px 14px;
+      border-radius: 14px;
+      margin-top: 12px;
+    }
 
     footer {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: var(--muted);
       margin-top: 24px;
       border-top: 1px solid var(--border);
@@ -352,8 +373,9 @@
       </div>
       <nav>
         <a href="#schedule">Расписание</a>
-        <a href="#routes">Темы встреч</a>
-        <a href="#about">О ведущем</a>
+        <a href="#how">Как это работает</a>
+        <a href="#routes">Темы и шаги</a>
+        <a href="#faq">FAQ</a>
         <a href="#signup">Записаться</a>
       </nav>
     </header>
@@ -361,109 +383,93 @@
     <section class="hero" id="top">
       <div class="hero-inner">
         <div>
-          <h1>Групповые онлайн-встречи&nbsp;Vnutri Apps<br>по&nbsp;5 шагов</h1>
+          <h1>Онлайн-встречи Vnutri Apps<br>цикл 5 недель (5 шагов) — нонстоп</h1>
+
           <p class="lead">
-            Тревога, стресс, одиночество, творчество и отказ от&nbsp;курения —
-            в формате регулярных онлайн-встреч в небольших группах.
-            Пять встреч, понятный маршрут и тёплая атмосфера проекта Vnutri Apps.
+            Каждую неделю проходит <strong>один шаг</strong> по каждой теме.
+            Цикл из 5 недель повторяется снова и снова — вы можете прийти <strong>на любой шаг</strong>.
           </p>
 
           <div class="hero-highlights">
-            <span class="pill pill-strong">5 встреч &nbsp;•&nbsp; 5 шагов</span>
-            <span class="pill">7–10 участников</span>
-            <span class="pill">Онлайн, 1 раз в неделю, 1,5 часа</span>
-            <span class="pill">700 ₽ за встречу</span>
+            <span class="pill pill-strong">Цикл: 5 недель • 5 шагов</span>
+            <span class="pill">Участников: 1–10</span>
+            <span class="pill">Длительность: 1,5 часа</span>
+            <span class="pill">Цена: 700 ₽</span>
           </div>
 
           <div class="cta-row">
             <a class="btn btn-primary" href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">
-              Записаться в Telegram
+              Написать в Telegram
             </a>
-            <a class="btn btn-outline" href="#routes">Посмотреть темы встреч</a>
+            <a class="btn btn-outline" href="#schedule">Смотреть расписание</a>
           </div>
 
           <p class="hero-note">
-            Запись и все вопросы — через Telegram:
-            <strong><a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">@vnu_apps</a></strong>
+            Просто напиши в Telegram: <strong>«Какая сейчас неделя цикла?»</strong><br>
+            и/или <strong>«Хочу (тема) — шаг (номер)»</strong>. Я сориентирую и запишу.
           </p>
         </div>
 
         <aside class="hero-aside">
-          <h2>Для кого эти встречи</h2>
+          <h2>Кому подходит</h2>
           <ul>
-            <li>Вы устали справляться с тревогой, стрессом или одиночеством в одиночку.</li>
-            <li>Хотите не только «знать теорию», а прожить изменения в безопасном пространстве.</li>
-            <li>Интересен мягкий, человеческий формат без оценок и морализаторства.</li>
-            <li>Проходили приложения Vnutri Apps и хотите живой формат.</li>
+            <li>Хочется поддержки и ясного шага, но без “глубокой личной терапии”.</li>
+            <li>Нужно спокойное пространство: практика + обмен + тёплая атмосфера.</li>
+            <li>Хотите двигаться маленькими шагами и возвращаться к теме снова.</li>
+            <li>Знакомы с Vnutri Apps и хотите живой формат.</li>
           </ul>
         </aside>
       </div>
     </section>
 
-    <!-- Разграничение с индивидуальными консультациями -->
-    <section class="card" style="margin-bottom:32px;">
-      <p class="lead-small">
-        <strong>Важно:</strong> групповые встречи — это <strong>не индивидуальная психологическая консультация</strong>.
-      </p>
-      <p class="lead-small">
-        Это формат тематических онлайн-встреч в тёплой и бережной атмосфере Vnutri Apps,
-        где мы вместе исследуем одну конкретную тему, ищем опоры и направления движения.
-      </p>
-      <p class="lead-small">
-        Здесь нет глубокой личной терапии один на один, диагностики или индивидуального терапевтического контракта.
-        Если вам нужна персональная работа с вашим запросом — для этого существуют индивидуальные консультации.
-      </p>
-    </section>
-
-    <!-- Связь с философией Vnutri Apps -->
-    <section class="card" style="margin-bottom:32px;">
-      <p class="lead-small">
-        Групповые онлайн-встречи — это живое продолжение философии Vnutri Apps.
-        Тот же маршрут, те же темы и подход, но в формате совместного движения.
-      </p>
-      <p class="lead-small">
-        Если в приложениях вы идёте путь внутри себя, то здесь вы проживаете его рядом с другими людьми —
-        не ради сравнения, а ради ощущения, что вы не одни.
-      </p>
-    </section>
-
-    <section id="format">
-      <h2 class="section-title">Как устроены встречи</h2>
-      <p class="section-sub">
-        Встреча — это не лекция и не «разбор». Это живой маршрут из 5 шагов, который вы проходите в своём темпе вместе с людьми,
-        которые переживают похожие состояния.
-      </p>
+    <section class="card" id="how" style="margin-bottom:28px;">
+      <h2 class="section-title">Как это работает — максимально просто</h2>
 
       <div class="grid-2">
-        <div class="card">
-          <h3>Формат</h3>
+        <div>
           <ul class="clean">
-            <li>5 онлайн-встреч по 1,5 часа — один законченный путь по выбранной теме.</li>
-            <li>Группа собирается 1 раз в неделю в одно и то же время.</li>
-            <li>Размер группы — 7–10 человек.</li>
-            <li>Формат: онлайн-встречи (видеосвязь), ссылка отправляется перед началом.</li>
-            <li>Если записался один человек — встреча всё равно проводится в формате один на один по теме группы.</li>
+            <li><strong>Есть расписание</strong> (дни/время не меняются).</li>
+            <li><strong>Есть цикл 5 недель</strong>: неделя 1 = шаг 1, …, неделя 5 = шаг 5.</li>
+            <li><strong>Цикл идёт нонстоп</strong>: после недели 5 снова неделя 1.</li>
+            <li><strong>На встрече 1–10 человек</strong> — сколько записалось.</li>
           </ul>
         </div>
 
-        <div class="card">
-          <h3>Что происходит на встрече</h3>
+        <div>
           <ul class="clean">
-            <li>Короткое вступление и настройка на тему встречи.</li>
-            <li>Небольшое объяснение — что сегодня делаем и зачем.</li>
-            <li>Практика: телесная, дыхательная, когнитивная или творческая.</li>
-            <li>Обмен: вы можете говорить, а можете оставаться молча — это всегда ваш выбор.</li>
-            <li>Завершение: дыхание/маленький ритуал, чтобы мягко выйти в повседневность.</li>
+            <li><strong>Можно прийти на любой шаг</strong> (каждый шаг самодостаточен).</li>
+            <li>Если хочешь “весь путь” — просто ходишь каждую неделю, и за 5 недель пройдёшь цикл целиком.</li>
+            <li>Если хочешь “точечно” — записываешься на нужный шаг, я подскажу ближайшую неделю.</li>
+            <li><strong>Цена:</strong> 700 ₽ за встречу.</li>
           </ul>
         </div>
       </div>
+
+      <div class="mini-cta">
+        <div class="lead-small" style="color:var(--muted);">
+          <strong>Формула сообщения в Telegram:</strong><br>
+          «Какая сейчас неделя?» / «Хочу Тревога — шаг 3» / «Хочу ходить каждую неделю по циклу».
+        </div>
+        <a class="btn btn-primary" href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">
+          Написать @vnu_apps
+        </a>
+      </div>
+    </section>
+
+    <section class="card" style="margin-bottom:28px;">
+      <h2 class="section-title">Важно: это не индивидуальная консультация</h2>
+      <p class="lead-small" style="margin:0;">
+        Эти встречи — не индивидуальная психологическая консультация и не личная терапия один на один.
+        Это <strong>тематические онлайн-встречи</strong>: практика + поддержка + направление движения.
+        Если нужна персональная работа с вашим индивидуальным запросом — это другой формат (индивидуальные консультации).
+      </p>
     </section>
 
     <section id="schedule">
-      <h2 class="section-title">Расписание встреч</h2>
+      <h2 class="section-title">Расписание (дни и время постоянные)</h2>
       <p class="section-sub">
-        Каждый путь идёт 5 недель. Старт новых потоков объявляется по мере набора. Если хотите забронировать место —
-        напишите в Telegram, указав тему встречи, которая вам откликается.
+        Меняется только <strong>неделя цикла</strong> (какой сейчас шаг: 1–5).
+        Хотите конкретный шаг — напишите, я подскажу ближайшую дату.
       </p>
 
       <div class="card">
@@ -472,7 +478,7 @@
             <tr>
               <th>День</th>
               <th>Время</th>
-              <th>Тема встречи</th>
+              <th>Тема</th>
               <th>Формат</th>
             </tr>
           </thead>
@@ -481,290 +487,190 @@
               <td>Среда</td>
               <td>19:00–20:30</td>
               <td>
-                <span class="schedule-topic">Тревога</span><br>
-                <span class="schedule-meta">5 шагов от «меня накрывает» к внутренней опоре</span>
+                <div class="schedule-topic">Тревога</div>
+                <div class="schedule-meta">каждую неделю — шаг 1/2/3/4/5 по циклу</div>
               </td>
-              <td><span class="badge">Онлайн, 7–10 человек</span></td>
+              <td><span class="badge">Онлайн • 1–10</span></td>
             </tr>
             <tr>
               <td>Четверг</td>
               <td>19:00–20:30</td>
               <td>
-                <span class="schedule-topic">Стресс</span><br>
-                <span class="schedule-meta">учимся разгружать нервную систему без надрыва</span>
+                <div class="schedule-topic">Стресс</div>
+                <div class="schedule-meta">каждую неделю — шаг 1/2/3/4/5 по циклу</div>
               </td>
-              <td><span class="badge">Онлайн, 7–10 человек</span></td>
+              <td><span class="badge">Онлайн • 1–10</span></td>
             </tr>
             <tr>
               <td>Пятница</td>
               <td>19:00–20:30</td>
               <td>
-                <span class="schedule-topic">Одиночество</span><br>
-                <span class="schedule-meta">быть с собой и с другими без внутренней пустоты</span>
+                <div class="schedule-topic">Одиночество</div>
+                <div class="schedule-meta">каждую неделю — шаг 1/2/3/4/5 по циклу</div>
               </td>
-              <td><span class="badge">Онлайн, 7–10 человек</span></td>
+              <td><span class="badge">Онлайн • 1–10</span></td>
             </tr>
             <tr>
               <td>Суббота</td>
               <td>16:00–17:30</td>
               <td>
-                <span class="schedule-topic">Творчество</span><br>
-                <span class="schedule-meta">разрешить себе создавать и жить как автор</span>
+                <div class="schedule-topic">Творчество</div>
+                <div class="schedule-meta">каждую неделю — шаг 1/2/3/4/5 по циклу</div>
               </td>
-              <td><span class="badge">Онлайн, 7–10 человек</span></td>
+              <td><span class="badge">Онлайн • 1–10</span></td>
             </tr>
             <tr>
               <td>Воскресенье</td>
               <td>19:00–20:30</td>
               <td>
-                <span class="schedule-topic">Бросить курить</span><br>
-                <span class="schedule-meta">меняем сценарий «сигарета вместо опоры»</span>
+                <div class="schedule-topic">Бросить курить</div>
+                <div class="schedule-meta">каждую неделю — шаг 1/2/3/4/5 по циклу</div>
               </td>
-              <td><span class="badge">Онлайн, 7–10 человек</span></td>
+              <td><span class="badge">Онлайн • 1–10</span></td>
             </tr>
           </tbody>
         </table>
 
-        <p class="lead-small" style="margin-top: 10px;">
-          Стоимость участия: <strong>700 ₽ за одну онлайн-встречу</strong>. Оплата по встречам.
-          Если группа не набралась и записан один участник — встреча проводится индивидуально, в рамках темы группы.
+        <p class="lead-small" style="margin-top: 12px;">
+          <strong>Стоимость:</strong> 700 ₽ за встречу. <strong>Оплата по встречам.</strong>
         </p>
-      </div>
-    </section>
 
-    <section id="routes">
-      <h2 class="section-title">Пять маршрутов по вашим темам</h2>
-      <p class="section-sub">
-        Каждый путь — это цепочка из 5 встреч, где мы идём от понимания проблемы к новым способам быть с собой и миром.
-      </p>
-
-      <div class="routes-grid">
-        <div class="card route-card">
-          <h3>Группа «Тревога»</h3>
-          <p class="route-tagline">От «меня накрывает» к чувству опоры и способности оставаться с собой.</p>
-          <ul class="route-steps">
-            <li>Шаг 1 — Встреча с тревогой в теле.</li>
-            <li>Шаг 2 — Страх перед страхом и сопротивление чувствам.</li>
-            <li>Шаг 3 — Мысли, которые разгоняют тревогу.</li>
-            <li>Шаг 4 — Личные границы и чувство безопасности.</li>
-            <li>Шаг 5 — Спокойствие как навык, а не случайность.</li>
-          </ul>
-          <div class="route-footer">
-            <a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">Записаться в «Тревога» →</a>
+        <div class="mini-cta">
+          <div class="lead-small" style="color:var(--muted);">
+            Хочешь попасть на конкретный шаг? Напиши: <strong>«(тема) — шаг (номер)»</strong>.
           </div>
-        </div>
-
-        <div class="card route-card">
-          <h3>Группа «Стресс»</h3>
-          <p class="route-tagline">Когда кажется, что вы всё «тащите», а тело давно просит паузы.</p>
-          <ul class="route-steps">
-            <li>Шаг 1 — Карта напряжения: где живёт стресс.</li>
-            <li>Шаг 2 — Усталость, которую сложно признать.</li>
-            <li>Шаг 3 — Контроль и перегруз: что в моей власти, а что нет.</li>
-            <li>Шаг 4 — Здоровые способы разгружать нервную систему.</li>
-            <li>Шаг 5 — Жизнь полегче: маленькие опоры в повседневности.</li>
-          </ul>
-          <div class="route-footer">
-            <a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">Записаться в «Стресс» →</a>
-          </div>
-        </div>
-
-        <div class="card route-card">
-          <h3>Группа «Одиночество»</h3>
-          <p class="route-tagline">Про ощущение «я один», даже если вокруг есть люди.</p>
-          <ul class="route-steps">
-            <li>Шаг 1 — Что за моим одиночеством на самом деле.</li>
-            <li>Шаг 2 — Невысказанное и замолчанные чувства.</li>
-            <li>Шаг 3 — Страх близости и желания быть рядом.</li>
-            <li>Шаг 4 — Умение опираться на себя.</li>
-            <li>Шаг 5 — Возвращение к миру без предательства себя.</li>
-          </ul>
-          <div class="route-footer">
-            <a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">Записаться в «Одиночество» →</a>
-          </div>
-        </div>
-
-        <div class="card route-card">
-          <h3>Группа «Творчество»</h3>
-          <p class="route-tagline">Для тех, кто чувствует в себе огонь, но откладывает «на потом».</p>
-          <ul class="route-steps">
-            <li>Шаг 1 — Разрешение себе быть творческим.</li>
-            <li>Шаг 2 — Знакомство с внутренним критиком.</li>
-            <li>Шаг 3 — Поиск собственных источников вдохновения.</li>
-            <li>Шаг 4 — Малые действия вместо больших планов.</li>
-            <li>Шаг 5 — Жить как автор, а не только выполнять задачи.</li>
-          </ul>
-          <div class="route-footer">
-            <a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">Записаться в «Творчество» →</a>
-          </div>
-        </div>
-
-        <div class="card route-card">
-          <h3>Группа «Бросить курить»</h3>
-          <p class="route-tagline">Про отношения с сигаретой: не только про привычку, но и про внутреннюю опору.</p>
-          <ul class="route-steps">
-            <li>Шаг 1 — Зачем мне сигарета на самом деле.</li>
-            <li>Шаг 2 — Как работают мои триггеры и автоматизмы.</li>
-            <li>Шаг 3 — Что делать с тревогой без сигареты.</li>
-            <li>Шаг 4 — Новый ритуал вместо старого.</li>
-            <li>Шаг 5 — Свобода как новая норма жизни.</li>
-          </ul>
-          <div class="route-footer">
-            <a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">Записаться в «Бросить курить» →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2 class="section-title">О ведущем</h2>
-      <div class="about card">
-        <div>
-          <p class="lead-small">
-            Меня зовут Никита Митяев. Я автор и создатель <strong>Vnutri Apps</strong> — психологических приложений-путешествий из 5–7 шагов,
-            которые помогают справляться с тревогой, привычками, одиночеством и внутренней растерянностью.
-          </p>
-          <p class="lead-small">
-            В группах я не выступаю «гуру» или «экспертом сверху». Моя роль — быть рядом, создавать ясное и тёплое пространство,
-            где вы можете заметить себя, свои реакции и новые способы жить. Без осуждения, без давления, без обещаний «волшебных результатов» —
-            только честный путь маленькими шагами.
-          </p>
-          <p class="lead-small">
-            Я опираюсь на гештальт-подход, телесные и когнитивные практики, опыт работы с людьми через приложения и живой формат.
-            Для меня важно, чтобы у вас было место, куда можно прийти, когда тревожно, одиноко или просто хочется
-            чуть больше жизни внутри.
-          </p>
-        </div>
-        <div>
-          <div class="avatar-placeholder">Здесь может быть ваше фото / иллюстрация</div>
-          <p style="font-size: 0.85rem; color: var(--muted); margin-top: 8px;">
-            Если вы проходили приложения Vnutri Apps, на встречах вы встретите знакомую атмосферу:
-            путь, практики, дыхание и ощущение живого проводника рядом.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="signup">
-      <h2 class="section-title">Как записаться</h2>
-      <div class="card">
-        <ol class="lead-small">
-          <li>Выберите тему встречи, которая вам откликается.</li>
-          <li>Напишите в Telegram:
-            <strong><a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">@vnu_apps</a></strong>
-            — укажите тему и удобный день.</li>
-          <li>Я отвечу, расскажу о ближайшем старте и забронирую место.</li>
-          <li>Перед первой встречей вы получите ссылку на онлайн-встречу и небольшие рекомендации, как подготовиться.</li>
-        </ol>
-        <div class="cta-row" style="margin-top: 12px;">
           <a class="btn btn-primary" href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">
-            Написать в Telegram и записаться
+            Записаться
           </a>
         </div>
       </div>
     </section>
 
-    <section id="faq">
-      <h2 class="section-title">Частые вопросы</h2>
-      <div class="card">
-        <div class="faq-item">
-          <div class="faq-q">Что, если я никогда не был(а) на группах и стесняюсь?</div>
-          <div class="faq-a">
-            Это нормально. Большинство участников приходят впервые. Никто не обязан делиться тем, к чему не готов —
-            можно говорить столько, сколько комфортно, или оставаться в тишине. Ваша задача — быть с собой, а не «произвести впечатление».
+    <section id="routes">
+      <h2 class="section-title">Темы и шаги (повторяются по неделям)</h2>
+      <p class="section-sub">
+        Это “карта цикла”. Каждый шаг самодостаточен — можно прийти сразу на шаг 3 или 4, а потом добрать остальное в следующих неделях.
+      </p>
+
+      <div class="routes-grid">
+        <div class="card route-card">
+          <h3>Тревога</h3>
+          <p class="route-tagline">От «меня накрывает» к чувству опоры и способности оставаться с собой.</p>
+          <ul class="route-steps">
+            <li><strong>Шаг 1</strong> — Встреча с тревогой в теле.</li>
+            <li><strong>Шаг 2</strong> — Страх перед страхом и сопротивление чувствам.</li>
+            <li><strong>Шаг 3</strong> — Мысли, которые разгоняют тревогу.</li>
+            <li><strong>Шаг 4</strong> — Личные границы и чувство безопасности.</li>
+            <li><strong>Шаг 5</strong> — Спокойствие как навык, а не случайность.</li>
+          </ul>
+          <div class="route-footer">
+            <a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">Записаться на шаг по тревоге →</a>
           </div>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-q">Можно ли присоединиться, если путь уже начался?</div>
-          <div class="faq-a">
-            В некоторые группы можно войти на 1–2 шаге, дальше — только в новый поток.
-            Лучше всего написать в Telegram и уточнить по конкретной теме.
+        <div class="card route-card">
+          <h3>Стресс</h3>
+          <p class="route-tagline">Когда кажется, что вы всё «тащите», а тело давно просит паузы.</p>
+          <ul class="route-steps">
+            <li><strong>Шаг 1</strong> — Карта напряжения: где живёт стресс.</li>
+            <li><strong>Шаг 2</strong> — Усталость, которую сложно признать.</li>
+            <li><strong>Шаг 3</strong> — Контроль и перегруз: что в моей власти, а что нет.</li>
+            <li><strong>Шаг 4</strong> — Здоровые способы разгружать нервную систему.</li>
+            <li><strong>Шаг 5</strong> — Жизнь полегче: маленькие опоры в повседневности.</li>
+          </ul>
+          <div class="route-footer">
+            <a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">Записаться на шаг по стрессу →</a>
           </div>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-q">Нужен ли опыт терапии или знаний по психологии?</div>
-          <div class="faq-a">
-            Нет. Всё, что нужно — живой интерес к себе и готовность честно смотреть на свои состояния.
-            Формат выстроен так, чтобы было понятно без специальной подготовки.
+        <div class="card route-card">
+          <h3>Одиночество</h3>
+          <p class="route-tagline">Про ощущение «я один», даже если вокруг есть люди.</p>
+          <ul class="route-steps">
+            <li><strong>Шаг 1</strong> — Что за моим одиночеством на самом деле.</li>
+            <li><strong>Шаг 2</strong> — Невысказанное и замолчанные чувства.</li>
+            <li><strong>Шаг 3</strong> — Страх близости и желания быть рядом.</li>
+            <li><strong>Шаг 4</strong> — Умение опираться на себя.</li>
+            <li><strong>Шаг 5</strong> — Возвращение к миру без предательства себя.</li>
+          </ul>
+          <div class="route-footer">
+            <a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">Записаться на шаг по одиночеству →</a>
           </div>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-q">Это терапия?</div>
-          <div class="faq-a">
-            Нет. Это не индивидуальная терапия и не лечебный процесс. Это групповые онлайн-встречи по конкретной теме:
-            сочетание объяснений, упражнений, дыхания и обмена опытом в спокойной и поддерживающей атмосфере.
+        <div class="card route-card">
+          <h3>Творчество</h3>
+          <p class="route-tagline">Для тех, кто чувствует в себе огонь, но откладывает «на потом».</p>
+          <ul class="route-steps">
+            <li><strong>Шаг 1</strong> — Разрешение себе быть творческим.</li>
+            <li><strong>Шаг 2</strong> — Знакомство с внутренним критиком.</li>
+            <li><strong>Шаг 3</strong> — Поиск собственных источников вдохновения.</li>
+            <li><strong>Шаг 4</strong> — Малые действия вместо больших планов.</li>
+            <li><strong>Шаг 5</strong> — Жить как автор, а не только выполнять задачи.</li>
+          </ul>
+          <div class="route-footer">
+            <a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">Записаться на шаг по творчеству →</a>
           </div>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-q">Что если на встречу записался только один человек?</div>
-          <div class="faq-a">
-            Встреча всё равно проводится — в формате один на один, в рамках темы группы.
-            Вы проходите тот же шаг и те же практики, просто без группы.
+        <div class="card route-card">
+          <h3>Бросить курить</h3>
+          <p class="route-tagline">Про отношения с сигаретой: не только про привычку, но и про внутреннюю опору.</p>
+          <ul class="route-steps">
+            <li><strong>Шаг 1</strong> — Зачем мне сигарета на самом деле.</li>
+            <li><strong>Шаг 2</strong> — Как работают мои триггеры и автоматизмы.</li>
+            <li><strong>Шаг 3</strong> — Что делать с тревогой без сигареты.</li>
+            <li><strong>Шаг 4</strong> — Новый ритуал вместо старого.</li>
+            <li><strong>Шаг 5</strong> — Свобода как новая норма жизни.</li>
+          </ul>
+          <div class="route-footer">
+            <a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">Записаться на шаг по курению →</a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div>
-        © Vnutri Apps, групповые онлайн-встречи. Запись и вопросы — в Telegram:
-        <a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">@vnu_apps</a>
-      </div>
-    </footer>
-  </div>
+    <section id="faq">
+      <h2 class="section-title">FAQ</h2>
+      <div class="card">
+        <div class="faq-item">
+          <div class="faq-q">На какой неделе сейчас цикл?</div>
+          <div class="faq-a">Напишите в Telegram — я отвечу, какая сейчас неделя (какой шаг: 1–5), и сориентирую по ближайшей дате нужного шага.</div>
+        </div>
 
-  <!-- FAQ-разметка для поисковиков -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Что, если я никогда не был(а) на группах и стесняюсь?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Это нормально. Большинство участников приходят впервые. Никто не обязан делиться тем, к чему не готов — можно говорить столько, сколько комфортно, или оставаться в тишине."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Можно ли присоединиться, если путь уже начался?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "В некоторые группы можно войти на 1–2 шаге, дальше — только в новый поток. Лучше всего написать в Telegram и уточнить по конкретной теме."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Нужен ли опыт терапии или знаний по психологии?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Нет. Формат выстроен так, чтобы было понятно без специальной подготовки. Важно только желание лучше понимать себя."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Это терапия?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Нет. Это не индивидуальная терапия и не лечебный процесс. Это групповые онлайн-встречи по конкретной теме: объяснения, упражнения, дыхание и обмен опытом в поддерживающей атмосфере."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Что если на встречу записался только один человек?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Встреча всё равно проводится — в формате один на один, в рамках темы группы."
-        }
-      }
-    ]
-  }
-  </script>
-</body>
-</html>
+        <div class="faq-item">
+          <div class="faq-q">Можно прийти сразу на шаг 3 или 4?</div>
+          <div class="faq-a">Да. Каждый шаг самодостаточен. Если захочется — остальные шаги можно добрать в следующих неделях.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Сколько людей бывает на встрече?</div>
+          <div class="faq-a">От 1 до 10 — сколько записалось на конкретный день.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Это терапия?</div>
+          <div class="faq-a">Это не индивидуальная терапия и не консультация. Это тематические онлайн-встречи: практика, поддержка и направление движения.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Сколько стоит?</div>
+          <div class="faq-a"><strong>700 ₽</strong> за одну встречу. Оплата по встречам.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="signup">
+      <h2 class="section-title">Записаться</h2>
+      <div class="card">
+        <p class="lead-small" style="margin-top:0;">
+          Напишите в Telegram: <strong><a href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">@vnu_apps</a></strong>
+        </p>
+        <ul class="clean">
+          <li>«Какая сейчас неделя цикла?»</li>
+          <li>«Хочу (Тревога/Стресс/Одиночество/Творчество/Курение) — шаг (1–5)»</li>
+          <li>или «Хочу ходить каждую неделю по циклу»</li>
+        </ul>
+
+        <div class="cta-row" style="margin-top: 12px;">
+          <a class
