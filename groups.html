@@ -335,6 +335,8 @@
       justify-content: center;
       font-size: 0.9rem;
       color: var(--muted);
+      text-align: center;
+      padding: 10px;
     }
 
     .faq-item { margin-bottom: 12px; }
@@ -361,6 +363,35 @@
       border-top: 1px solid var(--border);
       padding-top: 12px;
     }
+
+    /* Sticky CTA for mobile */
+    .sticky-cta {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 10px 12px;
+      background: rgba(245, 245, 247, 0.86);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(0,0,0,0.06);
+      z-index: 999;
+      display: none;
+    }
+    .sticky-cta-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sticky-cta .btn { width: 100%; }
+    .sticky-cta .btn-outline { width: auto; }
+
+    @media (max-width: 860px) {
+      .sticky-cta { display: block; }
+      body { padding-bottom: 74px; } /* space for sticky bar */
+    }
   </style>
 </head>
 
@@ -374,6 +405,8 @@
       <nav>
         <a href="#schedule">Расписание</a>
         <a href="#how">Как это работает</a>
+        <a href="#format">Что будет на встрече</a>
+        <a href="#rules">Правила участия</a>
         <a href="#routes">Темы и шаги</a>
         <a href="#faq">FAQ</a>
         <a href="#signup">Записаться</a>
@@ -395,6 +428,7 @@
             <span class="pill">Участников: 1–10</span>
             <span class="pill">Длительность: 1,5 часа</span>
             <span class="pill">Цена: 700 ₽</span>
+            <span class="pill">Оплата: по встречам</span>
           </div>
 
           <div class="cta-row">
@@ -405,7 +439,8 @@
           </div>
 
           <p class="hero-note">
-            Просто напиши в Telegram: <strong>«Какая сейчас неделя цикла?»</strong><br>
+            Платить за весь цикл не нужно — можно приходить на <strong>одну встречу</strong> или ходить каждую неделю.<br>
+            Просто напиши в Telegram: <strong>«Какая сейчас неделя цикла?»</strong>
             и/или <strong>«Хочу (тема) — шаг (номер)»</strong>. Я сориентирую и запишу.
           </p>
         </div>
@@ -456,7 +491,29 @@
       </div>
     </section>
 
-    <section class="card" style="margin-bottom:28px;">
+    <!-- NEW: About / Who leads -->
+    <section class="card" id="about" style="margin-bottom:28px;">
+      <h2 class="section-title">Кто ведёт</h2>
+      <div class="about">
+        <div>
+          <p class="lead-small" style="margin:0 0 10px;">
+            Я — <strong>Никита</strong>, автор проекта Vnutri Apps. Эти встречи — формат “живого пути”:
+            без давления, без “правильности”, с ясной структурой и бережным пространством.
+          </p>
+          <ul class="clean">
+            <li>Я веду по шагам: <strong>практика → обсуждение → что взять в неделю</strong>.</li>
+            <li>Тут нет обещаний “исцелить за 1 раз”. Есть <strong>поддержка</strong> и понятное движение.</li>
+            <li>Можно говорить, можно молчать, можно быть “наблюдателем” — это нормально.</li>
+          </ul>
+        </div>
+        <div class="avatar-placeholder">
+          Здесь можно поставить фото/иллюстрацию<br>
+          (или оставить как есть)
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="important" style="margin-bottom:28px;">
       <h2 class="section-title">Важно: это не индивидуальная консультация</h2>
       <p class="lead-small" style="margin:0;">
         Эти встречи — не индивидуальная психологическая консультация и не личная терапия один на один.
@@ -465,11 +522,65 @@
       </p>
     </section>
 
+    <!-- NEW: What happens on the meeting -->
+    <section class="card" id="format" style="margin-bottom:28px;">
+      <h2 class="section-title">Что будет на встрече (структура 90 минут)</h2>
+      <p class="section-sub" style="margin-bottom:12px;">
+        Чтобы было спокойно: встреча идёт по простой и понятной схеме.
+      </p>
+      <ul class="clean">
+        <li><strong>10 минут</strong> — вход, настройка, правила бережности и безопасности.</li>
+        <li><strong>20 минут</strong> — практика/упражнение по теме шага.</li>
+        <li><strong>40 минут</strong> — обсуждение, вопросы, разбор типичных ситуаций.</li>
+        <li><strong>20 минут</strong> — интеграция: что забираю в неделю, маленькое домашнее действие (по желанию).</li>
+      </ul>
+    </section>
+
+    <!-- NEW: Rules -->
+    <section class="card" id="rules" style="margin-bottom:28px;">
+      <h2 class="section-title">Правила участия (коротко)</h2>
+      <div class="grid-2">
+        <div>
+          <ul class="clean">
+            <li><strong>Оплата:</strong> 700 ₽ за встречу, <strong>по одной</strong>. Реквизиты пришлю в Telegram.</li>
+            <li><strong>Ссылка на Яндекс Телемост</strong> приходит участникам <strong>после оплаты</strong>.</li>
+            <li><strong>Время:</strong> указано по <strong>МСК</strong>.</li>
+            <li><strong>Записи встреч</strong> не ведутся (чтобы сохранять доверие и безопасность).</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="clean">
+            <li><strong>Перенос:</strong> если предупреждаете заранее (например, за 24 часа) — перенесу оплату на другую встречу.</li>
+            <li><strong>Конфиденциальность:</strong> чужие истории не выносим наружу, бережно относимся друг к другу.</li>
+            <li><strong>Можно молчать:</strong> участие возможно в формате “слушаю/наблюдаю”.</li>
+            <li><strong>Ссылку на встречу</strong> просим не пересылать третьим лицам.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="lead-small" style="margin:10px 0 0; color:var(--muted);">
+        (Если хочешь — заменишь условия переноса на свои точные правила. Главное — чтобы они были зафиксированы.)
+      </p>
+    </section>
+
+    <!-- NEW: Who might not fit -->
+    <section class="card" id="notfit" style="margin-bottom:28px;">
+      <h2 class="section-title">Кому лучше выбрать другой формат</h2>
+      <p class="section-sub" style="margin-bottom:12px;">
+        Это не “отказ”, а забота о том, чтобы вы получили подходящую поддержку.
+      </p>
+      <ul class="clean">
+        <li>Если сейчас острое кризисное состояние (сильные панические приступы “прямо сейчас”, риск самоповреждения, тяжёлая дезорганизация) — лучше индивидуально и/или к врачу.</li>
+        <li>Если нужна строгая конфиденциальность 1:1 — групповая встреча может не подойти.</li>
+        <li>Если вы хотите глубокую длительную терапию “вглубь личности” — это другой формат, не про эти встречи.</li>
+      </ul>
+    </section>
+
     <section id="schedule">
       <h2 class="section-title">Расписание (дни и время постоянные)</h2>
       <p class="section-sub">
         Меняется только <strong>неделя цикла</strong> (какой сейчас шаг: 1–5).
         Хотите конкретный шаг — напишите, я подскажу ближайшую дату.
+        <strong>Время указано по МСК.</strong>
       </p>
 
       <div class="card">
@@ -477,7 +588,7 @@
           <thead>
             <tr>
               <th>День</th>
-              <th>Время</th>
+              <th>Время (МСК)</th>
               <th>Тема</th>
               <th>Формат</th>
             </tr>
@@ -657,6 +768,27 @@
           <div class="faq-q">Сколько стоит?</div>
           <div class="faq-a"><strong>700 ₽</strong> за одну встречу. Оплата по встречам.</div>
         </div>
+
+        <!-- NEW FAQ -->
+        <div class="faq-item">
+          <div class="faq-q">Как оплатить?</div>
+          <div class="faq-a">Напишите в Telegram — я пришлю реквизиты/варианты оплаты. После оплаты отправляю ссылку на Яндекс Телемост.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Где проходит встреча и что нужно технически?</div>
+          <div class="faq-a">В <strong>Яндекс Телемост</strong>. Достаточно телефона/ноутбука и стабильного интернета. Камера — по желанию, микрофон пригодится для участия.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Можно ли просто слушать и почти не говорить?</div>
+          <div class="faq-a">Да. Можно участвовать в формате “наблюдаю/слушаю”. Если захотите — включитесь в разговор позже.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Ведётся ли запись?</div>
+          <div class="faq-a">Нет. Встречи не записываются — это помогает сохранять безопасность и доверие в группе.</div>
+        </div>
       </div>
     </section>
 
@@ -673,4 +805,30 @@
         </ul>
 
         <div class="cta-row" style="margin-top: 12px;">
-          <a class
+          <a class="btn btn-primary" href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">
+            Написать в Telegram
+          </a>
+          <a class="btn btn-outline" href="#schedule">К расписанию</a>
+        </div>
+
+        <p class="hero-note" style="margin-bottom:0;">
+          После сообщения я уточню неделю цикла, свободные места и пришлю инструкцию по оплате/подключению.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© Vnutri Apps. Формат встреч — тематические группы поддержки и практики. Время в расписании — МСК.</div>
+    </footer>
+  </div>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta" aria-hidden="false">
+    <div class="sticky-cta-inner">
+      <a class="btn btn-primary" href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">
+        Записаться в Telegram
+      </a>
+    </div>
+  </div>
+</body>
+</html>
