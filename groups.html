@@ -11,6 +11,201 @@
   <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
   <meta name="yandex" content="noindex, nofollow, noarchive, noimageindex">
 
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Organization",
+      "@id": "https://vnutriapps.ru/#organization",
+      "name": "Vnutri Apps",
+      "url": "https://vnutriapps.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vnutriapps.ru/favicon192.png",
+        "width": 192,
+        "height": 192
+      }
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev",
+      "name": "Никита Митяев",
+      "url": "https://vnutriapps.ru/about-vnutri-apps",
+      "jobTitle": "Гештальт-терапевт, психолог-консультант, специалист по экзистенциальной терапии",
+      "worksFor": { "@id": "https://vnutriapps.ru/#organization" }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://vnutriapps.ru/#website",
+      "url": "https://vnutriapps.ru/",
+      "name": "Vnutri Apps — психологические приложения для самопомощи и внутреннего роста",
+      "publisher": { "@id": "https://vnutriapps.ru/#organization" }
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://vnutriapps.ru/groups#webpage",
+      "url": "https://vnutriapps.ru/groups",
+      "name": "Групповые онлайн-встречи Vnutri Apps — цикл 5 недель (5 шагов)",
+      "description": "Групповые онлайн-встречи Vnutri Apps по темам тревоги, стресса, одиночества, творчества и отказа от курения. Цикл 5 недель (5 шагов) идёт нонстопом. 1–10 участников. 700 ₽ за встречу. Запись через Telegram @vnu_apps.",
+      "inLanguage": "ru-RU",
+      "isPartOf": { "@id": "https://vnutriapps.ru/#website" },
+      "publisher": { "@id": "https://vnutriapps.ru/#organization" },
+      "author": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+      "mainEntity": { "@id": "https://vnutriapps.ru/groups#service" },
+      "breadcrumb": { "@id": "https://vnutriapps.ru/groups#breadcrumbs" }
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://vnutriapps.ru/groups#service",
+      "name": "Групповые онлайн-встречи Vnutri Apps (цикл 5 недель / 5 шагов)",
+      "description": "Тематические групповые онлайн-встречи Vnutri Apps: практика, поддержка и направление движения. Темы: тревога, стресс, одиночество, творчество и отказ от курения. Цикл из 5 шагов повторяется нонстопом — можно прийти на любой шаг. 1–10 участников. Длительность 90 минут. Стоимость 700 ₽ за встречу. Запись через Telegram @vnu_apps. Встречи проходят в Яндекс Телемост.",
+      "provider": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+      "providerMobility": "dynamic",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Worldwide"
+      },
+      "serviceType": [
+        "Групповые онлайн-встречи психологической поддержки",
+        "Гештальт-подход (групповой формат)",
+        "Экзистенциальный подход (групповой формат)",
+        "Группы по снижению тревоги и стресса",
+        "Группы по работе с одиночеством и внутренней опорой",
+        "Группы по творчеству и самовыражению",
+        "Группы по отказу от курения и работе с привычками"
+      ],
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://t.me/vnu_apps",
+        "name": "Запись на групповые встречи через Telegram"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Участие в одной групповой встрече",
+          "price": "700",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://vnutriapps.ru/groups"
+        }
+      ]
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://vnutriapps.ru/groups#faq",
+      "inLanguage": "ru",
+      "mainEntityOfPage": { "@id": "https://vnutriapps.ru/groups#webpage" },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "На какой неделе сейчас цикл?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Напишите в Telegram — я отвечу, какая сейчас неделя (какой шаг: 1–5), и сориентирую по ближайшей дате нужного шага."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно прийти сразу на шаг 3 или 4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Каждый шаг самодостаточен. Если захочется — остальные шаги можно добрать в следующих неделях."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько людей бывает на встрече?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "От 1 до 10 — сколько записалось на конкретный день."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Это терапия?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это не индивидуальная терапия и не консультация. Это тематические онлайн-встречи: практика, поддержка и направление движения."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько стоит?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "700 ₽ за одну встречу. Оплата по встречам."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как оплатить?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Напишите в Telegram — я пришлю реквизиты/варианты оплаты. После оплаты отправляю ссылку на Яндекс Телемост."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где проходит встреча и что нужно технически?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В Яндекс Телемост. Достаточно телефона/ноутбука и стабильного интернета. Камера — по желанию, микрофон пригодится для участия."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли просто слушать и почти не говорить?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Можно участвовать в формате «наблюдаю/слушаю». Если захотите — включитесь в разговор позже."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ведётся ли запись?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Встречи не записываются — это помогает сохранять безопасность и доверие в группе."
+          }
+        }
+      ]
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vnutriapps.ru/groups#breadcrumbs",
+      "isPartOf": { "@id": "https://vnutriapps.ru/groups#webpage" },
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://vnutriapps.ru/",
+            "name": "Vnutri Apps"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://vnutriapps.ru/groups",
+            "name": "Групповые онлайн-встречи"
+          }
+        }
+      ]
+    }
+
+  ]
+}
+</script>
+
   
   <style>
     :root {
