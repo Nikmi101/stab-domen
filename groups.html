@@ -404,6 +404,122 @@
       .sticky-cta { display: block; }
       body { padding-bottom: 74px; } /* space for sticky bar */
     }
+
+    
+  #footer{
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  #footer .container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 0 18px;
+  }
+
+  /* Icons row */
+  #footer .icons{
+    list-style: none;
+    margin: 0 0 14px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: center;
+  }
+
+  #footer .icons li{
+    margin: 0;
+    padding: 0;
+  }
+
+  #footer .icons a{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.06);
+    background: rgba(255,255,255,0.65);
+    color: var(--text);
+    text-decoration: none;
+    transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.08s ease;
+  }
+
+  #footer .icons a:hover{
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-soft);
+    background: rgba(255,255,255,0.9);
+  }
+
+  #footer .icon-svg{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    opacity: 0.9;
+  }
+
+  #footer .label{
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  /* Button */
+  #footer .details-button-container{
+    margin: 12px 0 14px;
+  }
+
+  #footer .details-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: rgba(31, 111, 235, 0.08);
+    border: 1px dashed rgba(31, 111, 235, 0.35);
+    color: var(--text);
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.08s ease;
+  }
+
+  #footer .details-button:hover{
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 12px 22px rgba(31, 111, 235, 0.18);
+    background: rgba(31, 111, 235, 0.12);
+  }
+
+  /* Copyright */
+  #footer .copyright{
+    margin: 0;
+    font-size: 0.86rem;
+    color: var(--muted);
+  }
+
+  /* Mobile: center footer elements */
+  @media (max-width: 860px){
+    #footer .icons{
+      justify-content: center;
+    }
+    #footer .details-button-container{
+      text-align: center;
+    }
+    #footer .copyright{
+      text-align: center;
+    }
+  }
+
+  /* Optional: if svg icons have dark fill issues in some themes */
+  @media (prefers-color-scheme: dark){
+    /* твоя страница светлая, но на всякий случай */
+  }
   </style>
 </head>
 
