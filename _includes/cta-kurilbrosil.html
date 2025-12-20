@@ -15,7 +15,6 @@
 }
 
 .vnutri-top-cta-label {
-  /* label заметнее */
   width: 100%;
   font-size: 15px;
   font-weight: 600;
@@ -24,8 +23,8 @@
   margin-bottom: 2px;
 }
 
+/* базовая кнопка */
 .vnutri-badge {
-  /* “кнопки” */
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -42,12 +41,13 @@
   text-decoration: none;
 
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-  transition: transform 0.12s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.12s ease,
+              background 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease;
 }
 
 .vnutri-badge:hover {
-  background: rgba(0, 0, 0, 0.02);
-  border-color: rgba(0, 0, 0, 0.22);
   box-shadow: 0 4px 14px rgba(0,0,0,0.10);
   transform: translateY(-1px);
 }
@@ -62,7 +62,39 @@
   outline-offset: 2px;
 }
 
-/* на узких экранах — кнопки в столбик, чтобы читалось */
+/* === цветовые варианты === */
+
+/* Приложение — голубоватый */
+.vnutri-badge.app {
+  background: rgba(90, 150, 255, 0.10);
+  border-color: rgba(90, 150, 255, 0.30);
+}
+.vnutri-badge.app:hover {
+  background: rgba(90, 150, 255, 0.16);
+  border-color: rgba(90, 150, 255, 0.45);
+}
+
+/* Консультации — зеленоватый */
+.vnutri-badge.one {
+  background: rgba(80, 180, 130, 0.10);
+  border-color: rgba(80, 180, 130, 0.30);
+}
+.vnutri-badge.one:hover {
+  background: rgba(80, 180, 130, 0.16);
+  border-color: rgba(80, 180, 130, 0.45);
+}
+
+/* Группы — розоватый */
+.vnutri-badge.group {
+  background: rgba(230, 110, 160, 0.10);
+  border-color: rgba(230, 110, 160, 0.30);
+}
+.vnutri-badge.group:hover {
+  background: rgba(230, 110, 160, 0.16);
+  border-color: rgba(230, 110, 160, 0.45);
+}
+
+/* мобильная адаптация */
 @media (max-width: 520px) {
   .vnutri-badge {
     width: 100%;
@@ -74,13 +106,22 @@
 <div class="vnutri-top-cta" markdown="0">
 
   <span class="vnutri-top-cta-label">
-    {{ include.label | default: "Если не получается бросить курить — практические решения от Vnutri Apps:" }}
+    Если не получается бросить курить — выбери формат поддержки:
   </span>
-  <a href="https://vnutriapps.ru/brosit-kurit" class="vnutri-badge">
-    {{ include.app_text | default: "🚭 «Курил-бросил» — приложение, чтобы бросить курить" }}
+
+  <a href="https://vnutriapps.ru/brosit-kurit"
+     class="vnutri-badge app">
+    🚭 Приложение «Курил-бросил»
   </a>
-  <a href="https://vnutriapps.ru/consultations" class="vnutri-badge">
-    {{ include.consult_text | default: "💬 Личная поддержка в отказе от курения" }}
+
+  <a href="https://vnutriapps.ru/consultations"
+     class="vnutri-badge one">
+    💬 Vnutri.One — личные консультации
+  </a>
+
+  <a href="https://vnutriapps.ru/groups"
+     class="vnutri-badge group">
+    👥 Vnutri.Groups — группы (5 шагов)
   </a>
 
 </div>
