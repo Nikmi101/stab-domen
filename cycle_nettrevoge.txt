@@ -1,0 +1,38 @@
+---
+layout: null
+permalink: /cycle_nettrevoge.txt
+robots: noindex, nofollow
+---
+
+
+{% assign series_id = "https://vnutriapps.ru/blog/cycle-snizit-trevogu/#series" %}
+{% assign counter = 0 %}
+
+{% for post in site.posts %}
+  {% if post.published == false %}
+    {% continue %}
+  {% endif %}
+
+  {% assign ok = false %}
+
+  {%- if post.isPartOf -%}
+    {%- for part in post.isPartOf -%}
+      {%- assign part_text = part | jsonify -%}
+      {%- if part_text contains series_id -%}
+        {%- assign ok = true -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+  {% unless ok %}
+    {% continue %}
+  {% endunless %}
+
+  {% assign counter = counter | plus: 1 %}
+{{ counter }}. Title: "{{ post.title | strip }}"
+Description: "{% if post.description %}{{ post.description | strip }}{% else %}{{ post.content | strip_html | truncate: 180 }}{% endif %}"
+Ключи: {% if post.tags %}{{ post.tags | join: ", " }}{% else %}-{% endif %}
+URL: {{ site.url }}{{ post.url }}
+
+{% endfor %}
