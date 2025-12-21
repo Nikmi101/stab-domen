@@ -5,8 +5,7 @@
   <title>Групповые онлайн-встречи Vnutri Apps — цикл 5 недель (5 шагов)</title>
   <link rel="canonical" href="https://vnutriapps.ru/groups" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Групповые онлайн-встречи Vnutri Apps по темам тревоги, стресса, одиночества, творчества и отказа от курения. Цикл 5 недель (5 шагов) идёт нонстопом. 1–10 участников. 700 ₽ за встречу. Запись через Telegram @vnu_apps." />
-
+  <meta name="description" content="Групповые онлайн-встречи Vnutri Apps по темам тревоги, стресса, одиночества, творчества и отказа от курения. Цикл 5 недель (5 шагов). 1–10 участников. 700 ₽ за встречу. Запись через Telegram @vnu_apps." />
 
   <script type="application/ld+json">
 {
@@ -48,7 +47,7 @@
       "@id": "https://vnutriapps.ru/groups#webpage",
       "url": "https://vnutriapps.ru/groups",
       "name": "Групповые онлайн-встречи Vnutri Apps — цикл 5 недель (5 шагов)",
-      "description": "Групповые онлайн-встречи Vnutri Apps по темам тревоги, стресса, одиночества, творчества и отказа от курения. Цикл 5 недель (5 шагов) идёт нонстопом. 1–10 участников. 700 ₽ за встречу. Запись через Telegram @vnu_apps.",
+      "description": "Групповые онлайн-встречи Vnutri Apps по темам тревоги, стресса, одиночества, творчества и отказа от курения. Цикл 5 недель (5 шагов). 1–10 участников. 700 ₽ за встречу. Запись через Telegram @vnu_apps.",
       "inLanguage": "ru-RU",
       "isPartOf": { "@id": "https://vnutriapps.ru/#website" },
       "publisher": { "@id": "https://vnutriapps.ru/#organization" },
@@ -61,7 +60,7 @@
       "@type": "Service",
       "@id": "https://vnutriapps.ru/groups#service",
       "name": "Групповые онлайн-встречи Vnutri Apps (цикл 5 недель / 5 шагов)",
-      "description": "Тематические групповые онлайн-встречи Vnutri Apps: практика, поддержка и направление движения. Темы: тревога, стресс, одиночество, творчество и отказ от курения. Цикл из 5 шагов повторяется нонстопом — можно прийти на любой шаг. 1–10 участников. Длительность 90 минут. Стоимость 700 ₽ за встречу. Запись через Telegram @vnu_apps. Встречи проходят в Яндекс Телемост.",
+      "description": "Тематические групповые онлайн-встречи Vnutri Apps: практика, поддержка и направление движения. Темы: тревога, стресс, одиночество, творчество и отказ от курения. Цикл состоит из 5 шагов — можно записаться на интересующий шаг. 1–10 участников. Длительность 90 минут. Стоимость 700 ₽ за встречу. Запись через Telegram @vnu_apps. Встречи проходят в Яндекс Телемост.",
       "provider": { "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
       "providerMobility": "dynamic",
       "areaServed": {
@@ -105,7 +104,7 @@
           "name": "На какой неделе сейчас цикл?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Напишите в Telegram — я отвечу, какая сейчас неделя (какой шаг: 1–5), и сориентирую по ближайшей дате нужного шага."
+            "text": "Напишите в Telegram — я отвечу, какая сейчас неделя (какой шаг: 1–5), и сориентирую по формату и ближайшей группе."
           }
         },
         {
@@ -113,7 +112,7 @@
           "name": "Можно прийти сразу на шаг 3 или 4?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Да. Каждый шаг самодостаточен. Если захочется — остальные шаги можно добрать в следующих неделях."
+            "text": "Да. Каждый шаг самодостаточен. Если захочется — остальные шаги можно добрать в следующих встречах/группах."
           }
         },
         {
@@ -203,7 +202,6 @@
 }
 </script>
 
-  
   <style>
     :root {
       --bg: #f5f5f7;
@@ -597,7 +595,6 @@
       body { padding-bottom: 74px; } /* space for sticky bar */
     }
 
-    
   #footer{
     margin-top: 24px;
     padding-top: 18px;
@@ -660,6 +657,23 @@
     font-weight: 700;
     letter-spacing: 0.01em;
   }
+
+  /* Rules/info box inside cards */
+  .rules-box{
+    margin-top: 12px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.08);
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .rules-box strong{ color: var(--text); }
+  .rules-box ul{
+    margin: 8px 0 0;
+    padding-left: 18px;
+  }
+  .rules-box li{ margin: 4px 0; }
 
   /* Button */
   #footer .details-button-container{
@@ -734,11 +748,11 @@
     <section class="hero" id="top">
       <div class="hero-inner">
         <div>
-          <h1>Онлайн-встречи Vnutri Apps<br>цикл 5 недель (5 шагов) — нонстоп</h1>
+          <h1>Онлайн-встречи Vnutri Apps<br>цикл 5 недель (5 шагов)</h1>
 
           <p class="lead">
-            Каждую неделю проходит <strong>один шаг</strong> по каждой теме.
-            Цикл из 5 недель повторяется снова и снова — вы можете прийти <strong>на любой шаг</strong>.
+            Цикл состоит из <strong>5 шагов</strong> по каждой теме.
+            Вы можете <strong>записаться на интересующий шаг</strong> — я сориентирую по формату и ближайшей группе.
           </p>
 
           <div class="hero-highlights">
@@ -757,9 +771,9 @@
           </div>
 
           <p class="hero-note">
-            Платить за весь цикл не нужно — можно приходить на <strong>одну встречу</strong> или ходить каждую неделю.<br>
+            Платить за весь цикл не нужно — можно приходить на <strong>одну встречу</strong> или выбирать шаги под свой запрос.<br>
             Просто напиши в Telegram: <strong>«Какая сейчас неделя цикла?»</strong>
-            и/или <strong>«Хочу (тема) — шаг (номер)»</strong>. Я сориентирую и запишу.
+            и/или <strong>«Хочу (тема) — шаг (номер)»</strong>. Я сориентирую по формату, наличию группы и ближайшей дате.
           </p>
         </div>
 
@@ -839,7 +853,7 @@
     <section id="routes">
       <h2 class="section-title">Темы и шаги (повторяются по неделям)</h2>
       <p class="section-sub">
-        Это “карта цикла”. Каждый шаг самодостаточен — можно прийти сразу на шаг 3 или 4, а потом добрать остальное в следующих неделях.
+        Это “карта цикла”. Каждый шаг самодостаточен — можно прийти сразу на шаг 3 или 4, а потом добрать остальное в следующих встречах/группах.
       </p>
 
       <div class="routes-grid">
@@ -919,7 +933,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="card" id="how" style="margin-bottom:28px;">
       <h2 class="section-title">Как это работает — максимально просто</h2>
 
@@ -928,7 +942,7 @@
           <ul class="clean">
             <li><strong>Есть расписание</strong> (дни/время не меняются).</li>
             <li><strong>Есть цикл 5 недель</strong>: неделя 1 = шаг 1, …, неделя 5 = шаг 5.</li>
-            <li><strong>Цикл идёт нонстоп</strong>: после недели 5 снова неделя 1.</li>
+            <li><strong>Цикл состоит из 5 шагов</strong>, которые проходят в групповом формате.</li>
             <li><strong>На встрече 1–10 человек</strong> — сколько записалось.</li>
           </ul>
         </div>
@@ -936,19 +950,17 @@
         <div>
           <ul class="clean">
             <li><strong>Можно прийти на любой шаг</strong> (каждый шаг самодостаточен).</li>
-            <li>Если хочешь “весь путь” — просто ходишь каждую неделю, и за 5 недель пройдёшь цикл целиком.</li>
-            <li>Если хочешь “точечно” — записываешься на нужный шаг, я подскажу ближайшую неделю.</li>
+            <li>Если хочешь “весь путь” — можно проходить шаги последовательно, по мере проведения встреч.</li>
+            <li>Если хочешь “точечно” — записываешься на нужный шаг, я подскажу ближайшую дату/группу.</li>
             <li><strong>Цена:</strong> 700 ₽ за встречу.</li>
           </ul>
         </div>
       </div>
 
-      
-
       <div class="mini-cta">
         <div class="lead-small" style="color:var(--muted);">
           <strong>Формула сообщения в Telegram:</strong><br>
-          «Какая сейчас неделя?» / «Хочу Тревога — шаг 3» / «Хочу ходить каждую неделю по циклу».
+          «Какая сейчас неделя?» / «Хочу Тревога — шаг 3» / «Хочу ходить по шагам».
         </div>
         <a class="btn btn-primary" href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">
           Написать @vnu_apps
@@ -956,7 +968,7 @@
       </div>
     </section>
 
-     <section class="card" id="format" style="margin-bottom:28px;">
+    <section class="card" id="format" style="margin-bottom:28px;">
       <h2 class="section-title">Что будет на встрече (структура 90 минут)</h2>
       <p class="section-sub" style="margin-bottom:12px;">
         Чтобы было спокойно: встреча идёт по простой и понятной схеме.
@@ -968,33 +980,6 @@
         <li><strong>20 минут</strong> — интеграция: что забираю в неделю, маленькое домашнее действие (по желанию).</li>
       </ul>
     </section>
-
-    <!--
-    <section class="card" id="rules" style="margin-bottom:28px;">
-      <h2 class="section-title">Правила участия</h2>
-      <div class="grid-2">
-        <div>
-          <ul class="clean">
-            <li><strong>Оплата:</strong> 700 ₽ за встречу, <strong>по одной</strong>. Реквизиты пришлю в Telegram.</li>
-            <li><strong>Ссылка на Яндекс Телемост</strong> приходит участникам <strong>после оплаты</strong>.</li>
-            <li><strong>Время:</strong> указано по <strong>МСК</strong>.</li>
-            <li><strong>Записи встреч</strong> не ведутся (чтобы сохранять доверие и безопасность).</li>
-          </ul>
-        </div>
-        <div>
-          <ul class="clean">
-            <li><strong>Перенос:</strong> если предупреждаете заранее (например, за 24 часа) — перенесу оплату на другую встречу.</li>
-            <li><strong>Конфиденциальность:</strong> чужие истории не выносим наружу, бережно относимся друг к другу.</li>
-            <li><strong>Можно молчать:</strong> участие возможно в формате “слушаю/наблюдаю”.</li>
-            <li><strong>Ссылку на встречу</strong> просим не пересылать третьим лицам.</li>
-          </ul>
-        </div>
-      </div>
-      <p class="lead-small" style="margin:10px 0 0; color:var(--muted);">
-        (Если хочешь — заменишь условия переноса на свои точные правила. Главное — чтобы они были зафиксированы.)
-      </p>
-    </section>
-    -->
 
     <!-- About -->
     <section class="card" id="about" style="margin-bottom:28px;">
@@ -1011,12 +996,6 @@
             <li>Можно говорить, можно молчать, можно быть “наблюдателем” — это нормально.</li>
           </ul>
         </div>
-        <!--
-        <div class="avatar-placeholder">
-          Здесь можно поставить фото/иллюстрацию<br>
-          (или оставить как есть)
-        </div>
-        -->
       </div>
     </section>
 
@@ -1029,9 +1008,6 @@
       </p>
     </section>
 
-   
-
-
     <section class="card" id="notfit" style="margin-bottom:28px;">
       <h2 class="section-title">Кому лучше выбрать другой формат</h2>
       <p class="section-sub" style="margin-bottom:12px;">
@@ -1043,19 +1019,17 @@
       </ul>
     </section>
 
-
-
     <section id="faq">
       <h2 class="section-title">FAQ</h2>
       <div class="card">
         <div class="faq-item">
           <div class="faq-q">На какой неделе сейчас цикл?</div>
-          <div class="faq-a">Напишите в Telegram — я отвечу, какая сейчас неделя (какой шаг: 1–5), и сориентирую по ближайшей дате нужного шага.</div>
+          <div class="faq-a">Напишите в Telegram — я отвечу, какая сейчас неделя (какой шаг: 1–5), и сориентирую по формату и ближайшей группе.</div>
         </div>
 
         <div class="faq-item">
           <div class="faq-q">Можно прийти сразу на шаг 3 или 4?</div>
-          <div class="faq-a">Да. Каждый шаг самодостаточен. Если захочется — остальные шаги можно добрать в следующих неделях.</div>
+          <div class="faq-a">Да. Каждый шаг самодостаточен. Если захочется — остальные шаги можно добрать в следующих встречах/группах.</div>
         </div>
 
         <div class="faq-item">
@@ -1104,7 +1078,7 @@
         <ul class="clean">
           <li>«Какая сейчас неделя цикла?»</li>
           <li>«Хочу (Тревога/Стресс/Одиночество/Творчество/Курение) — шаг (1–5)»</li>
-          <li>или «Хочу ходить каждую неделю по циклу»</li>
+          <li>или «Хочу ходить по шагам»</li>
         </ul>
 
         <div class="cta-row" style="margin-top: 12px;">
@@ -1115,67 +1089,64 @@
         </div>
 
         <p class="hero-note" style="margin-bottom:0;">
-          После сообщения я уточню неделю цикла, свободные места и пришлю инструкцию по оплате/подключению.
+          После сообщения я сориентирую по формату, наличию группы, свободным местам и пришлю инструкцию по оплате/подключению.
         </p>
       </div>
     </section>
 
     <!-- Footer -->
-<footer id="footer">
-    <div class="container">
-       <ul class="icons">
-  <li>
-    <a href="mailto:vnutri_apps@mail.ru"
-       title="Email поддержки Vnutri Apps — психологическая помощь, снижение тревоги, самопомощь">
-      <img src="/images/icons/envelope.svg"
-           alt="Email поддержки Vnutri Apps — психологическая помощь, снижение тревоги, самопомощь"
-           class="icon-svg">
-      <span class="label">Email</span>
-    </a>
-  </li>
+    <footer id="footer">
+      <div class="container">
+        <ul class="icons">
+          <li>
+            <a href="mailto:vnutri_apps@mail.ru"
+               title="Email поддержки Vnutri Apps — психологическая помощь, снижение тревоги, самопомощь">
+              <img src="/images/icons/envelope.svg"
+                   alt="Email поддержки Vnutri Apps — психологическая помощь, снижение тревоги, самопомощь"
+                   class="icon-svg">
+              <span class="label">Email</span>
+            </a>
+          </li>
 
-  <li>
-    <a href="https://t.me/vnutriapps"
-       title="Телеграм канал Vnutri Apps — психологическая поддержка, советы по внутреннему развитию">
-      <img src="/images/icons/telegram.svg"
-           alt="Телеграм канал Vnutri Apps — психологическая поддержка, советы по внутреннему развитию"
-           class="icon-svg">
-      <span class="label">Telegram</span>
-    </a>
-  </li>
+          <li>
+            <a href="https://t.me/vnutriapps"
+               title="Телеграм канал Vnutri Apps — психологическая поддержка, советы по внутреннему развитию">
+              <img src="/images/icons/telegram.svg"
+                   alt="Телеграм канал Vnutri Apps — психологическая поддержка, советы по внутреннему развитию"
+                   class="icon-svg">
+              <span class="label">Telegram</span>
+            </a>
+          </li>
 
-  <li>
-    <a href="https://m.vk.com/vnutriapps"
-       title="VK Vnutri Apps — психология, медитации, развитие внутренней опоры и креативности">
-      <img src="/images/icons/vk.svg"
-           alt="VK Vnutri Apps — психология, медитации, развитие внутренней опоры и креативности"
-           class="icon-svg">
-      <span class="label">VK</span>
-    </a>
-  </li>
-</ul>
+          <li>
+            <a href="https://m.vk.com/vnutriapps"
+               title="VK Vnutri Apps — психология, медитации, развитие внутренней опоры и креативности">
+              <img src="/images/icons/vk.svg"
+                   alt="VK Vnutri Apps — психология, медитации, развитие внутренней опоры и креативности"
+                   class="icon-svg">
+              <span class="label">VK</span>
+            </a>
+          </li>
+        </ul>
 
         <div class="details-button-container">
-            <a href="/links" class="details-button" 
-               title="Все ссылки и соцсети Vnutri Apps"
-               >🌐 Все ссылки и соцсети Vnutri Apps</a>
+          <a href="/links" class="details-button"
+             title="Все ссылки и соцсети Vnutri Apps">🌐 Все ссылки и соцсети Vnutri Apps</a>
         </div>
 
         <p class="copyright">
-            &copy; <span >Vnutri Apps</span>, Россия. Все права защищены.
+          &copy; <span>Vnutri Apps</span>, Россия. Все права защищены.
         </p>
+      </div>
+    </footer>
 
-    
-       
-    </div>
-</footer>
-
-     <!-- Sticky mobile CTA -->
-  <div class="sticky-cta" aria-hidden="false">
-    <div class="sticky-cta-inner">
-      <a class="btn btn-primary" href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">
-        Записаться в Telegram
-      </a>
+    <!-- Sticky mobile CTA -->
+    <div class="sticky-cta" aria-hidden="false">
+      <div class="sticky-cta-inner">
+        <a class="btn btn-primary" href="https://t.me/vnu_apps" target="_blank" rel="noopener noreferrer">
+          Записаться в Telegram
+        </a>
+      </div>
     </div>
   </div>
 </body>
