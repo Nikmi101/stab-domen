@@ -1,0 +1,29 @@
+{% comment %}
+Инклюд: карточка "статья в работе" (без ссылки и без JSON-LD)
+
+Пример вызова:
+{% include article-card-in-list-draft.html
+   title="Тревога — эмоция или состояние"
+   description="Разберём, чем отличается эмоция от состояния и почему это важно для понимания тревоги."
+%}
+
+Параметры:
+- title (обязательный)
+- description (опционально)
+{% endcomment %}
+
+{% assign t = include.title | default: "" | strip %}
+{% assign d = include.description | default: "" | strip_html | strip %}
+
+<li class="post-item missing" markdown="0">
+  <div class="post-main">
+    <span class="post-title">
+      <span>{{ t }} (статья в работе)</span>
+    </span>
+    <span class="date">—</span>
+  </div>
+
+  {% if d != "" %}
+    <p class="post-desc">{{ d }}</p>
+  {% endif %}
+</li>
