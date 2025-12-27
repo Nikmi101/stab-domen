@@ -120,9 +120,12 @@
     "caption": {{ page.banner.title | default: page.title | jsonify }}
   }{% endif %},
   "hasPart": [
-  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/nikotinovaya-zavisimost/#article" },
-  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/pochemu-brosit-kurit-slozhno-bez-podderzhki/#article" },
-  { "@type": "Article", "@id": "https://vnutriapps.ru/blog/privychki/psihologiya-zavisimosti/#article" }
+
+   {% comment %}
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/nikotinovaya-zavisimost/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/pochemu-brosit-kurit-slozhno-bez-podderzhki/#webpage" },
+  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/psihologiya-zavisimosti/#webpage" }
+{% endcomment %}
 
   ]{% if page.sources_cycle and page.sources_cycle.size > 0 %},
   "citation": [{% for s in page.sources_cycle %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.about_cycle or page.tags_cycle %}
