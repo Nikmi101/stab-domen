@@ -56,9 +56,9 @@ banner:
   title: "Цикл статей «Путь к спокойствию» — как снизить тревогу и вернуть внутреннее равновесие"
 
 recommended_apps:
-  - snizit_trevogu
+  - trevoga
 
-permalink: "/blog/put-k-spokoystviyu/"
+permalink: "/blog/cycle-snizit-trevogu/"
 reading_time: "9"
 
 sources:
@@ -798,5 +798,6 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
