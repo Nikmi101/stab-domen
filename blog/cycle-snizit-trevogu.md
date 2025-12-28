@@ -230,75 +230,16 @@ sources_cycle:
 Этот раздел помогает узнать симптомы и выйти из круга «симптомы пугают → тревога растёт».
 
 <ul class="blog-posts">
- {% include article-card-in-list-draft.html
-   title="Симптомы тревоги в теле: как тревога проявляется физически"
-   description="Какие бывают телесные симптомы тревоги: напряжение, сердцебиение, дыхание, усталость. Как тело реагирует на тревожное состояние."
-   tags="симптомы тревоги в теле, телесные симптомы тревоги, тревога и тело, физические симптомы тревоги"
-   permalink="/blog/emotsii/simptomy-trevogi-v-tele/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и учащённое сердцебиение: почему колотится сердце"
-   description="Почему при тревоге учащается сердцебиение, появляется тахикардия и ощущение опасности. Связь тревоги и работы сердца."
-   tags="тревога и сердцебиение, тахикардия при тревоге, тревога и сердце, учащённое сердцебиение тревога"
-   permalink="/blog/emotsii/trevoga-i-uchashchyonnoe-serdtsebienie/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Ком в горле и тревога: почему возникает это ощущение"
-   description="Ком в горле при тревоге — частый симптом. Почему он появляется, с чем связан и как тревожное состояние влияет на горло."
-   tags="ком в горле и тревога, тревога и горло, ощущение кома в горле тревога"
-   permalink="/blog/emotsii/kom-v-gorle-i-trevoga/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и нехватка воздуха: почему становится трудно дышать"
-   description="Почему при тревоге появляется ощущение нехватки воздуха и трудности с дыханием. Как тревога влияет на дыхательную систему."
-   tags="тревога и нехватка воздуха, тревога и дыхание, трудно дышать при тревоге"
-   permalink="/blog/emotsii/trevoga-i-nekhvatka-vozdukha/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и головокружение: причины и связь с тревожным состоянием"
-   description="Почему при тревоге возникает головокружение, слабость и ощущение нереальности. Телесные реакции тревожного состояния."
-   tags="тревога и головокружение, головокружение при тревоге, тревожное состояние симптомы"
-   permalink="/blog/emotsii/trevoga-i-golovokruzhenie/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и напряжение мышц: почему тело не расслабляется"
-   description="Почему тревога вызывает постоянное мышечное напряжение, боли и скованность. Как тревожное состояние отражается в теле."
-   tags="тревога и напряжение мышц, мышечное напряжение тревога, тревога и тело"
-   permalink="/blog/emotsii/trevoga-i-napryazhenie-myshts/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и боли без причины: почему болит тело"
-   description="Почему при тревоге возникают боли без видимой причины. Связь тревоги с психосоматическими симптомами."
-   tags="тревога и боли, боли без причины тревога, психосоматика тревога"
-   permalink="/blog/emotsii/trevoga-i-boli-bez-prichiny/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и проблемы с ЖКТ: живот, кишечник и тревожность"
-   description="Как тревога влияет на желудок и кишечник: боли, спазмы, расстройства пищеварения и связь с нервной системой."
-   tags="тревога и жкт, тревога и желудок, кишечник и тревога"
-   permalink="/blog/emotsii/trevoga-i-problemy-s-zhkt/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и постоянная усталость: почему нет сил"
-   description="Почему тревожное состояние приводит к хронической усталости, слабости и истощению. Как тревога расходует ресурсы организма."
-   tags="тревога и усталость, постоянная усталость тревога, тревожное истощение"
-   permalink="/blog/emotsii/trevoga-i-postoyannaya-ustalost/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Почему симптомы тревоги пугают сильнее самой тревоги"
-   description="Почему телесные симптомы тревоги часто пугают сильнее, чем само чувство тревоги. Как формируется замкнутый круг симптомов."
-   tags="симптомы тревоги пугают, страх симптомов тревоги, тревога и панические симптомы"
-   permalink="/blog/emotsii/pochemu-simptomy-trevogi-pugayut/"
-%}
+{% include article-card-in-list.html permalink="/blog/emotsii/simptomy-trevogi-v-tele/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-uchashchyonnoe-serdtsebienie/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/kom-v-gorle-i-trevoga/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-nekhvatka-vozdukha/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-golovokruzhenie/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-napryazhenie-myshts/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-boli-bez-prichiny/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-problemy-s-zhkt/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-postoyannaya-ustalost/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/pochemu-simptomy-trevogi-pugayut/" %}
 </ul>
 
 > ⚡ **Важно:** симптомы тревоги — не приговор. Чем яснее Вы их понимаете, тем меньше у них власти.
@@ -757,6 +698,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
