@@ -208,13 +208,7 @@ sources_cycle:
 
 <ul class="blog-posts">
 {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-voznikaet-trevoga/" %}
-
-{% include article-card-in-list-draft.html
-   title="Чем тревога отличается от страха: основные различия и причины"
-   description="Чем тревога отличается от страха? Узнайте, в чём разница между этими двумя состояниями и как они влияют на психику человека."
-   tags="тревога, страх, тревога и страх, психология тревоги, разница тревоги и страха"
-   permalink="/blog/emotsii/chem-trevoga-otlichaetsya-ot-strakha/"
-%}
+{% include article-card-in-list.html permalink="/blog/emotsii/chem-trevoga-otlichaetsya-ot-strakha/" %}
 
 {% include article-card-in-list-draft.html
    title="Тревога как эмоция или состояние? Психологическое объяснение"
@@ -811,6 +805,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
