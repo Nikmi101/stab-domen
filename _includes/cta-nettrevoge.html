@@ -1,6 +1,5 @@
 <style>
 .vnutri-top-cta {
-  /* карточка */
   padding: 14px 14px;
   margin: 14px 0 20px 0;
   border-radius: 14px;
@@ -23,7 +22,6 @@
   margin-bottom: 2px;
 }
 
-/* базовая кнопка */
 .vnutri-badge {
   display: inline-flex;
   align-items: center;
@@ -62,9 +60,6 @@
   outline-offset: 2px;
 }
 
-/* === цветовые варианты === */
-
-/* Приложение — голубоватый */
 .vnutri-badge.app {
   background: rgba(90, 150, 255, 0.10);
   border-color: rgba(90, 150, 255, 0.30);
@@ -74,7 +69,6 @@
   border-color: rgba(90, 150, 255, 0.45);
 }
 
-/* Консультации — зеленоватый */
 .vnutri-badge.one {
   background: rgba(80, 180, 130, 0.10);
   border-color: rgba(80, 180, 130, 0.30);
@@ -84,7 +78,6 @@
   border-color: rgba(80, 180, 130, 0.45);
 }
 
-/* Группы — розоватый */
 .vnutri-badge.group {
   background: rgba(230, 110, 160, 0.10);
   border-color: rgba(230, 110, 160, 0.30);
@@ -94,7 +87,6 @@
   border-color: rgba(230, 110, 160, 0.45);
 }
 
-/* мобильная адаптация */
 @media (max-width: 520px) {
   .vnutri-badge {
     width: 100%;
@@ -103,10 +95,30 @@
 }
 </style>
 
-<div class="vnutri-top-cta" markdown="0">
+{% assign cta_type = include.type | default: "" %}
 
+{% capture cta_label %}
+{% case cta_type %}
+  {% when "1" %}
+    Если важно понять, что именно с вами происходит — и вернуть ясность: практические решения от Vnutri Apps:
+  {% when "2" %}
+    Если тревога ощущается телом (сердце, дыхание, напряжение) — бережные инструменты Vnutri Apps:
+  {% when "3" %}
+    Если тревожные мысли не отпускают и «голова не выключается» — практические решения от Vnutri Apps:
+  {% when "4" %}
+    Если тревога усиливается утром/вечером/ночью или в тишине — поддержка и инструменты Vnutri Apps:
+  {% when "5" %}
+    Если тревога влияет на решения, отношения и жизнь — практические решения от Vnutri Apps:
+  {% when "6" %}
+    Если нужен понятный способ работать с тревогой (без магии и давления) — инструменты Vnutri Apps:
+  {% else %}
+    Если тревожность не отступает — практические решения от Vnutri Apps:
+{% endcase %}
+{% endcapture %}
+
+<div class="vnutri-top-cta" markdown="0">
   <span class="vnutri-top-cta-label">
-    Если тревожность не отступает —  практические решения от Vnutri Apps:
+    {{ cta_label | strip }}
   </span>
 
   <a href="https://vnutriapps.ru/snizit-trevogu"
@@ -123,8 +135,4 @@
      class="vnutri-badge group">
     👥 Vnutri.Groups — группы (5 шагов)
   </a>
-
 </div>
-
-
-
