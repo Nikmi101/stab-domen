@@ -211,6 +211,9 @@ sources_cycle:
 {% include article-card-in-list.html permalink="/blog/emotsii/chem-trevoga-otlichaetsya-ot-strakha/" %}
 {% include article-card-in-list.html permalink="/blog/emotsii/trevoga-emotsiya-ili-sostoyanie/" %}
 {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevoga-voznikayet-bez-prichiny/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/kak-formiruetsya-trevozhnoe-sostoyanie/" %}
+
+
 
 {% include article-card-in-list-draft.html
    title="Как формируется тревожное состояние и что с ним делать?"
@@ -793,6 +796,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
