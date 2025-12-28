@@ -229,10 +229,10 @@ isPartOfWeb:
 - [Весь цикл статей «Путь к спокойствию» от Vnutri Apps](/blog/cycle-snizit-trevogu/)
 
 {% include article-link-by-permalink.html permalink="/blog/emotsii/pochemu-voznikaet-trevoga/" %}  
-{% include article-link-by-permalink.html permalink="/blog/emotsii/kak-formiruetsya-trevozhnoe-sostoyanie/" %}  
+{% include article-link-by-permalink.html permalink="/blog/emotsii/pochemu-trevoga-voznikayet-bez-prichiny/" %}  
+{% include article-link-by-permalink.html permalink="/blog/emotsii/trevoga-i-stress/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/simptomy-trevogi-v-tele/" %}  
-{% include article-link-by-permalink.html permalink="/blog/emotsii/trevoga-po-utram-prichiny/" %}  
-{% include article-link-by-permalink.html permalink="/blog/emotsii/chto-usilivaet-trevogu/" %}  
+{% include article-link-by-permalink.html permalink="/blog/emotsii/zamknutyy-krug-trevozhnykh-mysley/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/chto-deystvitelno-pomogaet-snizit-trevogu/" %}  
 
 ---
@@ -272,5 +272,6 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
