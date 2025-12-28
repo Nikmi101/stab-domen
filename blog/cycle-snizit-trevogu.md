@@ -209,13 +209,8 @@ sources_cycle:
 <ul class="blog-posts">
 {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-voznikaet-trevoga/" %}
 {% include article-card-in-list.html permalink="/blog/emotsii/chem-trevoga-otlichaetsya-ot-strakha/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-emotsiya-ili-sostoyanie/" %}
 
-{% include article-card-in-list-draft.html
-   title="Тревога как эмоция или состояние? Психологическое объяснение"
-   description="Тревога — это эмоция или состояние? Узнайте, как тревога влияет на психологическое и физиологическое состояние человека."
-   tags="тревога, эмоция, тревога как эмоция, тревога как состояние, психология тревоги"
-   permalink="/blog/emotsii/trevoga-emotsiya-ili-sostoyanie/"
-%}
 
 {% include article-card-in-list-draft.html
    title="Почему тревога возникает без причины и как с этим справляться"
@@ -805,6 +800,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
