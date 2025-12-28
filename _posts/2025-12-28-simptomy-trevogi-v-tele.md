@@ -247,12 +247,12 @@ isPartOfWeb:
 
 - [Весь цикл статей «Путь к спокойствию» от Vnutri Apps](/blog/cycle-snizit-trevogu/)
 
+{% include article-link-by-permalink.html permalink="/blog/emotsii/trevoga-i-uchashchyonnoe-serdtsebienie/" %}  
+{% include article-link-by-permalink.html permalink="/blog/emotsii/trevoga-i-nekhvatka-vozdukha/" %}  
+{% include article-link-by-permalink.html permalink="/blog/emotsii/trevoga-i-napryazhenie-myshts/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/pochemu-voznikaet-trevoga/" %}  
-{% include article-link-by-permalink.html permalink="/blog/emotsii/kogda-trevoga-schitaetsya-normalnoy/" %}  
-{% include article-link-by-permalink.html permalink="/blog/emotsii/pochemu-trevoga-suzhaet-zhizn/" %}  
-{% include article-link-by-permalink.html permalink="/blog/emotsii/pochemu-trevoga-meshaet-zhit/" %}  
+{% include article-link-by-permalink.html permalink="/blog/emotsii/rabota-s-trevogoy-cherez-telo/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/chto-deystvitelno-pomogaet-snizit-trevogu/" %}  
-{% include article-link-by-permalink.html permalink="/blog/emotsii/kogda-stoit-obrashchatsya-za-pomoshchyu/" %}  
 
 ---
 
