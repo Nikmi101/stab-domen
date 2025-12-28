@@ -213,13 +213,7 @@ sources_cycle:
 {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevoga-voznikayet-bez-prichiny/" %}
 {% include article-card-in-list.html permalink="/blog/emotsii/kak-formiruetsya-trevozhnoe-sostoyanie/" %}
 {% include article-card-in-list.html permalink="/blog/emotsii/polezna-li-trevoga-i-zachem-ona-nuzhna/" %}
-
-{% include article-card-in-list-draft.html
-   title="Почему тревога стала нормой в современном мире: причины и последствия"
-   description="Почему тревога стала постоянным спутником современного человека? Узнайте о причинах тревоги в современном мире и её влиянии на повседневную жизнь."
-   tags="тревога, тревога в современном мире, причины тревоги, тревога как норма, психология тревоги"
-   permalink="/blog/emotsii/pochemu-trevoga-stala-normoy-v-sovremennom-mire/"
-%}
+{% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevoga-stala-normoy-v-sovremennom-mire/" %}
 
 {% include article-card-in-list-draft.html
    title="Тревога и стресс: в чём разница и как они влияют на психику"
@@ -781,6 +775,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
