@@ -212,22 +212,7 @@ sources_cycle:
 {% include article-card-in-list.html permalink="/blog/emotsii/trevoga-emotsiya-ili-sostoyanie/" %}
 {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevoga-voznikayet-bez-prichiny/" %}
 {% include article-card-in-list.html permalink="/blog/emotsii/kak-formiruetsya-trevozhnoe-sostoyanie/" %}
-
-
-
-{% include article-card-in-list-draft.html
-   title="Как формируется тревожное состояние и что с ним делать?"
-   description="Как развивается тревожное состояние? Узнайте о психологических и физиологических аспектах тревоги и методах её преодоления."
-   tags="тревога, тревожное состояние, как формируется тревога, психология тревоги, как преодолеть тревогу"
-   permalink="/blog/emotsii/kak-formiruetsya-trevozhnoe-sostoyanie/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Полезна ли тревога? Зачем она нужна и как использовать её в своих интересах"
-   description="Тревога может быть полезной! Узнайте, как использовать тревогу как сигнал для принятия решений и защиты себя в опасных ситуациях."
-   tags="тревога, полезность тревоги, психология тревоги, роль тревоги, тревога как сигнал"
-   permalink="/blog/emotsii/polezna-li-trevoga-i-zachem-ona-nuzhna/"
-%}
+{% include article-card-in-list.html permalink="/blog/emotsii/polezna-li-trevoga-i-zachem-ona-nuzhna/" %}
 
 {% include article-card-in-list-draft.html
    title="Почему тревога стала нормой в современном мире: причины и последствия"
@@ -796,6 +781,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
