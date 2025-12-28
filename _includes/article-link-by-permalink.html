@@ -29,7 +29,7 @@
 
 {%- if found_post -%}
   {%- assign title = found_post.title | default: include.title_fallback -%}
-  <li>
+  <li markdown="0">
     <a href="{{ found_post.url }}">{{ title }}</a>
   </li>
 {%- endif -%}
