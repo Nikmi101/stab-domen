@@ -1,0 +1,35 @@
+{%- assign target = include.permalink | strip -%}
+
+{%- comment -%}
+  Ищем среди постов:
+  - Сравниваем с post.url (Jekyll генерирует его всегда)
+  - Если у поста явно задан front-matter permalink, то post.url всё равно будет равен ему.
+{%- endcomment -%}
+
+{%- assign found_post = nil -%}
+{%- for p in site.posts -%}
+  {%- if p.url == target -%}
+    {%- assign found_post = p -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}
+  (Опционально) если у тебя есть НЕ _posts, а страницы-статьи в /blog/...,
+  можно поискать и в site.pages:
+{%- endcomment -%}
+{%- if found_post == nil and include.search_pages == true -%}
+  {%- for pg in site.pages -%}
+    {%- if pg.url == target -%}
+      {%- assign found_post = pg -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- if found_post -%}
+  {%- assign title = found_post.title | default: include.title_fallback -%}
+  <li>
+    <a href="{{ found_post.url }}">{{ title }}</a>
+  </li>
+{%- endif -%}
