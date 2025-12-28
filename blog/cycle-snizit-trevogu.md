@@ -214,27 +214,9 @@ sources_cycle:
 {% include article-card-in-list.html permalink="/blog/emotsii/kak-formiruetsya-trevozhnoe-sostoyanie/" %}
 {% include article-card-in-list.html permalink="/blog/emotsii/polezna-li-trevoga-i-zachem-ona-nuzhna/" %}
 {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevoga-stala-normoy-v-sovremennom-mire/" %}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и стресс: в чём разница и как они влияют на психику"
-   description="Каковы основные различия между тревогой и стрессом? Узнайте, как эти состояния влияют на психику и тело, и что с ними делать."
-   tags="тревога, стресс, разница между тревогой и стрессом, психология тревоги, стресс и тревога"
-   permalink="/blog/emotsii/trevoga-i-stress-v-chyom-raznitsa/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Когда тревога считается нормальной и как отличить её от патологии"
-   description="Что считается нормальной тревогой, и в каких ситуациях тревога является естественной реакцией организма. Психология тревоги и её адаптивность."
-   tags="тревога, нормальная тревога, тревога как норма, тревожные расстройства, психология тревоги"
-   permalink="/blog/emotsii/kogda-trevoga-schitaetsya-normalnoy/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Когда тревога становится проблемой: как распознать тревожные расстройства"
-   description="Когда тревога выходит за рамки нормы и становится проблемой. Как отличить нормальную тревогу от патологической, что с этим делать."
-   tags="тревога, тревожные расстройства, когда тревога становится проблемой, психология тревоги, лечение тревоги"
-   permalink="/blog/emotsii/kogda-trevoga-stanovitsya-problemoj/"
-%}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-stress/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/kogda-trevoga-schitaetsya-normalnoy/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/kogda-trevoga-stanovitsya-problemoj/" %}
 </ul>
 
 > 💡 **Совет:** начните именно с этого раздела — он даёт ясность и снимает часть внутреннего напряжения уже за счёт понимания.
@@ -775,6 +757,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
