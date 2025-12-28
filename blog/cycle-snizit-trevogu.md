@@ -210,14 +210,7 @@ sources_cycle:
 {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-voznikaet-trevoga/" %}
 {% include article-card-in-list.html permalink="/blog/emotsii/chem-trevoga-otlichaetsya-ot-strakha/" %}
 {% include article-card-in-list.html permalink="/blog/emotsii/trevoga-emotsiya-ili-sostoyanie/" %}
-
-
-{% include article-card-in-list-draft.html
-   title="Почему тревога возникает без причины и как с этим справляться"
-   description="Почему тревога может возникать без видимой причины? Узнайте о психологии тревоги, её механизмах и способах уменьшить её влияние."
-   tags="тревога, тревога без причины, причины тревоги, психология тревоги, как справиться с тревогой"
-   permalink="/blog/emotsii/pochemu-trevoga-voznikayet-bez-prichiny/"
-%}
+{% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevoga-voznikayet-bez-prichiny/" %}
 
 {% include article-card-in-list-draft.html
    title="Как формируется тревожное состояние и что с ним делать?"
@@ -800,6 +793,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
