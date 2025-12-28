@@ -33,7 +33,7 @@ faq:
   - q: "Когда тревога становится поводом для обращения за помощью?"
     a: "Если тревога мешает жить, работать, спать, общаться или сопровождается постоянными телесными симптомами, стоит обратиться за профессиональной помощью."
 banner:
-  image: "/images/blog-images/blog-header-snizit-trevogu.webp"
+  image: "/images/blog-images/blog-header-nettrevoge.webp"
   alt: "что такое тревога"
   width: 1200
   height: 675
@@ -257,6 +257,7 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
 
