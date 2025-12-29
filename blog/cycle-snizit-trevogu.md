@@ -253,75 +253,16 @@ sources_cycle:
 Здесь — тексты о том, почему логика иногда не помогает и как разомкнуть круг тревожного мышления.
 
 <ul class="blog-posts">
-{% include article-card-in-list-draft.html
-   title="Тревожные мысли: что это такое и почему они возникают"
-   description="Что такое тревожные мысли, как они появляются и почему разум застревает в тревожном мышлении. Простое объяснение психологического механизма."
-   tags="тревожные мысли, что такое тревожные мысли, тревожное мышление, психология тревоги"
-   permalink="/blog/emotsii/chto-takoe-trevozhnye-mysli/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Почему тревожные мысли повторяются и не отпускают"
-   description="Почему тревожные мысли возвращаются снова и снова. Как формируется зацикливание и почему разум не может остановиться."
-   tags="тревожные мысли повторяются, навязчивое мышление тревога, зацикливание мыслей"
-   permalink="/blog/emotsii/pochemu-trevozhnye-mysli-povtoryayutsya/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Навязчивые мысли и тревога: какая между ними связь"
-   description="Как связаны навязчивые мысли и тревога. Почему тревожное состояние усиливает мыслительную навязчивость."
-   tags="навязчивые мысли и тревога, навязчивые мысли, тревожные расстройства мышление"
-   permalink="/blog/emotsii/navyazchivye-mysli-i-trevoga/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Почему невозможно перестать думать при тревоге"
-   description="Почему при тревоге невозможно «выключить» мысли. Что происходит с вниманием и контролем мышления."
-   tags="невозможно перестать думать, тревога и мысли, остановить мысли тревога"
-   permalink="/blog/emotsii/pochemu-nevozmozhno-perestat-dumat/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Катастрофизация: главный механизм тревожных мыслей"
-   description="Что такое катастрофизация и почему именно она лежит в основе тревожных мыслей и ожидания худшего."
-   tags="катастрофизация, тревожные мысли катастрофизация, ожидание худшего тревога"
-   permalink="/blog/emotsii/katastrofizatsiya-mekhanizm-trevogi/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Ожидание худшего: как тревога искажает мышление"
-   description="Почему тревожность заставляет ожидать худшего сценария. Как формируется негативное прогнозирование."
-   tags="ожидание худшего, тревожное прогнозирование, тревога и будущее"
-   permalink="/blog/emotsii/ozhidanie-khudshogo-i-trevozhnost/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и контроль: почему мысли становятся навязчивыми"
-   description="Как стремление всё контролировать усиливает тревожные мысли и внутреннее напряжение."
-   tags="тревога и контроль, навязчивый контроль тревога, тревожное мышление"
-   permalink="/blog/emotsii/trevoga-i-kontrol/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Почему разум не успокаивает тревогу, а усиливает её"
-   description="Почему логические рассуждения не снимают тревогу, а иногда делают её сильнее."
-   tags="разум и тревога, логика и тревога, почему мысли усиливают тревогу"
-   permalink="/blog/emotsii/pochemu-razum-ne-uspokaivaet-trevogu/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Замкнутый круг тревожных мыслей: как он формируется"
-   description="Как тревожные мысли образуют замкнутый круг и поддерживают тревожное состояние."
-   tags="замкнутый круг тревоги, тревожные мысли круг, цикл тревожных мыслей"
-   permalink="/blog/emotsii/zamknutyy-krug-trevozhnykh-mysley/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Почему логика не помогает при тревоге"
-   description="Почему попытки логически успокоить себя не работают при тревоге. Разница между рациональным мышлением и тревожным состоянием."
-   tags="логика не помогает тревога, тревожное мышление, рационализация тревоги"
-   permalink="/blog/emotsii/pochemu-logika-ne-pomogaet-pri-trevoge/"
-%}
+{% include article-card-in-list.html permalink="/blog/emotsii/chto-takoe-trevozhnye-mysli/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevozhnye-mysli-povtoryayutsya/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/navyazchivye-mysli-i-trevoga/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/pochemu-nevozmozhno-perestat-dumat/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/katastrofizatsiya-mekhanizm-trevogi/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/ozhidanie-khudshogo-i-trevozhnost/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-kontrol/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/pochemu-razum-ne-uspokaivaet-trevogu/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/zamknutyy-krug-trevozhnykh-mysley/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/pochemu-logika-ne-pomogaet-pri-trevoge/" %}
 </ul>
 
 > 💡 **Совет:** этот раздел особенно полезен, если «всё понимаю головой», но внутри всё равно штормит.
@@ -698,6 +639,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
