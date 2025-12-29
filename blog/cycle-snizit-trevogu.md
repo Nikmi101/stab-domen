@@ -402,12 +402,7 @@ sources_cycle:
    permalink="/blog/emotsii/oshibki-pri-rabote-s-trevogoy/"
 %}
 
-{% include article-card-in-list-draft.html
-   title="Что действительно помогает снизить тревогу: рабочие подходы"
-   description="Какие подходы действительно помогают снизить тревогу и восстановить устойчивость без магии и быстрых обещаний."
-   tags="как снизить тревогу, что помогает при тревоге, снижение тревожности"
-   permalink="/blog/emotsii/chto-deystvitelno-pomogaet-snizit-trevogu/"
-%}
+{% include article-card-in-list.html permalink="/blog/emotsii/chto-deystvitelno-pomogaet-snizit-trevogu/" %}
 
 {% include article-card-in-list-draft.html
    title="Почему фраза «успокойся» не работает при тревоге"
@@ -416,19 +411,8 @@ sources_cycle:
    permalink="/blog/emotsii/pochemu-uspokoysya-ne-rabotaet/"
 %}
 
-{% include article-card-in-list-draft.html
-   title="Работа с тревогой через тело: как снизить напряжение"
-   description="Как работа с телом помогает снизить тревогу: дыхание, заземление, расслабление и телесная регуляция."
-   tags="работа с тревогой через тело, телесные практики тревога, тревога и тело"
-   permalink="/blog/emotsii/rabota-s-trevogoy-cherez-telo/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Работа с тревогой через внимание: куда направлять фокус"
-   description="Как внимание влияет на тревогу и почему смена фокуса помогает ослабить тревожное состояние."
-   tags="работа с тревогой через внимание, тревога и внимание, фокус внимания тревога"
-   permalink="/blog/emotsii/rabota-s-trevogoy-cherez-vnimanie/"
-%}
+{% include article-card-in-list.html permalink="/blog/emotsii/rabota-s-trevogoy-cherez-telo/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/rabota-s-trevogoy-cherez-vnimanie/" %}
 
 {% include article-card-in-list-draft.html
    title="Принятие тревоги: что это значит и как это работает"
@@ -444,12 +428,7 @@ sources_cycle:
    permalink="/blog/emotsii/kak-postepenno-snizit-trevozhnost/"
 %}
 
-{% include article-card-in-list-draft.html
-   title="Когда стоит обращаться за помощью при тревоге"
-   description="В каких случаях тревога требует помощи специалиста и как понять, что самостоятельно уже не справиться."
-   tags="когда обращаться за помощью тревога, тревожные расстройства помощь, тревога специалист"
-   permalink="/blog/emotsii/kogda-stoit-obrashchatsya-za-pomoshchyu/"
-%}
+{% include article-card-in-list.html permalink="/blog/emotsii/kogda-stoit-obrashchatsya-za-pomoshchyu/" %}
 </ul>
 
 
@@ -580,6 +559,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
