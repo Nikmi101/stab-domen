@@ -268,23 +268,9 @@ layout: none
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <url>
-    <loc>https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-usilivaetsya-vecherom/</loc>
-    <lastmod>2025-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
   <url>
     <loc>https://vnutriapps.ru/blog/emotsii/trevozhnoye-rasstroystvo-ili-obychnaya-trevozhnost/</loc>
-    <lastmod>2025-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://vnutriapps.ru/blog/emotsii/trevoga-i-son-kak-spravitsya-s-nochnymi-myslyami/</loc>
     <lastmod>2025-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
