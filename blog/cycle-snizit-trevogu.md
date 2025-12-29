@@ -10,7 +10,7 @@ author:
 
 medical_disclaimer: true
 date: 2025-12-27
-dateUpdated: 2025-12-27
+dateUpdated: 2025-12-29
 
 articleSection: "Эмоции и состояние"
 tema: "Тревога — системный цикл статей «Путь к спокойствию»"
@@ -299,75 +299,16 @@ sources_cycle:
 Этот раздел помогает увидеть, где тревога управляет поведением, и вернуть себе выбор.
 
 <ul class="blog-posts">
-  {% include article-card-in-list-draft.html
-   title="Как тревога влияет на принятие решений и выбор"
-   description="Как тревога искажает принятие решений, усиливает сомнения и мешает делать выбор. Почему тревожность парализует действия."
-   tags="тревога и решения, принятие решений тревога, тревога и выбор"
-   permalink="/blog/emotsii/kak-trevoga-vliyaet-na-resheniya/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Избегание как следствие тревоги: почему хочется уйти и спрятаться"
-   description="Почему тревога приводит к избеганию ситуаций, людей и решений. Как формируется поведенческий паттерн избегания."
-   tags="избегание тревога, тревожное избегание, тревога и избегание"
-   permalink="/blog/emotsii/izbeganie-kak-sledstvie-trevogi/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Почему тревога сужает жизнь и ограничивает возможности"
-   description="Как тревожность постепенно сужает жизнь: меньше действий, меньше контактов, меньше свободы."
-   tags="тревога сужает жизнь, тревожные ограничения, тревога и жизнь"
-   permalink="/blog/emotsii/pochemu-trevoga-suzhaet-zhizn/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и прокрастинация: почему сложно начать и закончить"
-   description="Почему тревога лежит в основе прокрастинации. Как страх ошибок и перегрузка мешают действовать."
-   tags="тревога и прокрастинация, прокрастинация из-за тревоги, тревога и действия"
-   permalink="/blog/emotsii/trevoga-i-prokrastinatsiya/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и социальное напряжение: почему тяжело с людьми"
-   description="Как тревога влияет на общение, вызывает напряжение и избегание социальных ситуаций."
-   tags="тревога и общение, социальная тревога, напряжение при общении тревога"
-   permalink="/blog/emotsii/trevoga-i-sotsialnoe-napryazhenie/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и отношения: как тревожность влияет на близость"
-   description="Как тревога отражается на отношениях: недоверие, контроль, дистанция и страх потери."
-   tags="тревога и отношения, тревожность в отношениях, тревога и близость"
-   permalink="/blog/emotsii/trevoga-i-otnosheniya/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и работа: почему становится сложнее справляться"
-   description="Как тревога влияет на работу, концентрацию и уверенность. Почему тревожность мешает профессиональной реализации."
-   tags="тревога и работа, тревога на работе, тревожность и карьера"
-   permalink="/blog/emotsii/trevoga-i-rabota/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога и постоянная проверка: контроль как способ справиться"
-   description="Почему тревога приводит к постоянным проверкам, перепроверке и навязчивому контролю."
-   tags="тревога и контроль, постоянная проверка тревога, навязчивый контроль тревога"
-   permalink="/blog/emotsii/trevoga-i-postoyannaya-proverka/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Как тревога управляет выбором и поведением"
-   description="Как тревога незаметно управляет выбором, решениями и жизненными сценариями."
-   tags="тревога управляет поведением, влияние тревоги на выбор, тревожные сценарии"
-   permalink="/blog/emotsii/kak-trevoga-upravlyaet-vyborom/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Почему тревога мешает жить, даже когда внешне всё нормально"
-   description="Почему тревога может разрушать качество жизни даже без внешних проблем и кризисов."
-   tags="тревога мешает жить, внутренняя тревога, хроническая тревожность"
-   permalink="/blog/emotsii/pochemu-trevoga-meshaet-zhit/"
-%}
+  {% include article-card-in-list.html permalink="/blog/emotsii/kak-trevoga-vliyaet-na-resheniya/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/izbeganie-kak-sledstvie-trevogi/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevoga-suzhaet-zhizn/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-prokrastinatsiya/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-sotsialnoe-napryazhenie/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-otnosheniya/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-rabota/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-postoyannaya-proverka/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/kak-trevoga-upravlyaet-vyborom/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevoga-meshaet-zhit/" %}
 </ul>
 
 > ⚡ **Важно:** тревога сильна там, где она незаметна. Осознание возвращает свободу действий.
@@ -381,56 +322,17 @@ sources_cycle:
 И отдельный важный узел: когда стоит обращаться за помощью.
 
 <ul class="blog-posts">
-{% include article-card-in-list-draft.html
-   title="Почему тревогу нельзя подавлять и к чему это приводит"
-   description="Почему попытки подавить тревогу усиливают её. Что происходит с психикой и телом при борьбе с тревожным состоянием."
-   tags="подавление тревоги, нельзя подавлять тревогу, борьба с тревогой"
-   permalink="/blog/emotsii/pochemu-trevogu-nelzya-podavlyat/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Что усиливает тревогу: действия и ошибки, которые делают хуже"
-   description="Какие привычки, реакции и способы мышления усиливают тревогу и поддерживают тревожное состояние."
-   tags="что усиливает тревогу, факторы тревоги, усиление тревожности"
-   permalink="/blog/emotsii/chto-usilivaet-trevogu/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Ошибки при работе с тревогой: почему становится только хуже"
-   description="Самые распространённые ошибки при попытках справиться с тревогой и почему они не работают."
-   tags="ошибки при тревоге, работа с тревогой ошибки, тревога что не работает"
-   permalink="/blog/emotsii/oshibki-pri-rabote-s-trevogoy/"
-%}
-
-{% include article-card-in-list.html permalink="/blog/emotsii/chto-deystvitelno-pomogaet-snizit-trevogu/" %}
-
-{% include article-card-in-list-draft.html
-   title="Почему фраза «успокойся» не работает при тревоге"
-   description="Почему призывы успокоиться не снижают тревогу и что на самом деле происходит в этот момент."
-   tags="успокойся не работает, тревога и советы, почему не могу успокоиться"
-   permalink="/blog/emotsii/pochemu-uspokoysya-ne-rabotaet/"
-%}
-
-{% include article-card-in-list.html permalink="/blog/emotsii/rabota-s-trevogoy-cherez-telo/" %}
-{% include article-card-in-list.html permalink="/blog/emotsii/rabota-s-trevogoy-cherez-vnimanie/" %}
-
-{% include article-card-in-list-draft.html
-   title="Принятие тревоги: что это значит и как это работает"
-   description="Что означает принятие тревоги на практике и почему именно принятие снижает интенсивность тревожных состояний."
-   tags="принятие тревоги, принятие эмоций тревога, как принять тревогу"
-   permalink="/blog/emotsii/prinyatie-trevogi-chto-eto-znachit/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Как постепенно снизить тревожность без резких методов"
-   description="Как снижать тревожность шаг за шагом, без давления на себя и ожидания мгновенного результата."
-   tags="как снизить тревожность, постепенное снижение тревоги, тревожность что делать"
-   permalink="/blog/emotsii/kak-postepenno-snizit-trevozhnost/"
-%}
-
-{% include article-card-in-list.html permalink="/blog/emotsii/kogda-stoit-obrashchatsya-za-pomoshchyu/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevogu-nelzya-podavlyat/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/chto-usilivaet-trevogu/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/oshibki-pri-rabote-s-trevogoy/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/chto-deystvitelno-pomogaet-snizit-trevogu/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-uspokoysya-ne-rabotaet/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/rabota-s-trevogoy-cherez-telo/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/rabota-s-trevogoy-cherez-vnimanie/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/prinyatie-trevogi-chto-eto-znachit/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/kak-postepenno-snizit-trevozhnost/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/kogda-stoit-obrashchatsya-za-pomoshchyu/" %}
 </ul>
-
 
 > 💡 **Совет:** работайте с тревогой как с процессом, а не как с врагом. Это меняет всё.
 
@@ -443,43 +345,12 @@ sources_cycle:
 Этот раздел — о внутренней опоре, внимании, тишине и смысле: не про «борьбу с тревогой», а про возвращение к себе и к жизни.
 
 <ul class="blog-posts">
-{% include article-card-in-list-draft.html
-   title="Что приходит после тревоги: пустота, тишина или опора"
-   description="Что происходит внутри, когда тревога ослабевает. Почему тишина может пугать и как она постепенно становится опорой."
-   tags="что после тревоги, тишина после тревоги, внутренняя опора"
-   permalink="/blog/emotsii/chto-prikhodit-posle-trevogi/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Внутренняя опора: что это такое и как она формируется"
-   description="Что такое внутренняя опора и почему она важнее контроля и борьбы с эмоциями. Как формируется устойчивость."
-   tags="внутренняя опора, психологическая устойчивость, опора внутри себя"
-   permalink="/blog/emotsii/vnutrennyaya-opora-chto-eto/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Почему тишина пугает и как научиться быть с ней"
-   description="Почему отсутствие мыслей и тревоги вызывает дискомфорт. Как постепенно научиться выдерживать тишину."
-   tags="тишина пугает, страх тишины, быть наедине с собой"
-   permalink="/blog/emotsii/pochemu-tishina-pugaet/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Внимание как ресурс: куда направлять себя, когда тревоги меньше"
-   description="Как внимание становится ресурсом после снижения тревоги. Почему важно не заполнять тишину новым напряжением."
-   tags="внимание как ресурс, осознанность внимание, присутствие в моменте"
-   permalink="/blog/emotsii/vnimanie-kak-resurs/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Спокойствие — не отсутствие тревоги, а другой способ жить"
-   description="Почему спокойствие — это не идеальное состояние, а живая способность быть в контакте с собой и жизнью."
-   tags="что такое спокойствие, внутреннее спокойствие, жизнь без тревоги"
-   permalink="/blog/emotsii/spokoystvie-kak-sposob-zhit/"
-%}
+  {% include article-card-in-list.html permalink="/blog/emotsii/chto-prikhodit-posle-trevogi/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/vnutrennyaya-opora-chto-eto/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/pochemu-tishina-pugaet/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/vnimanie-kak-resurs/" %}
+  {% include article-card-in-list.html permalink="/blog/emotsii/spokoystvie-kak-sposob-zhit/" %}
 </ul>
-
-
 
 ---
 
@@ -559,6 +430,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
