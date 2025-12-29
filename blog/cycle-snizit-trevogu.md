@@ -276,75 +276,16 @@ sources_cycle:
 Раздел о том, почему тревога усиливается в определённых условиях и как с этим обходиться бережно и практично.
 
 <ul class="blog-posts">
-{% include article-card-in-list-draft.html
-   title="Тревога по утрам: причины и почему она возникает сразу после пробуждения"
-   description="Почему тревога появляется по утрам, сразу после пробуждения. Связь утренней тревоги с телом, гормонами и мыслями."
-   tags="тревога по утрам, утренняя тревога, причины утренней тревоги"
-   permalink="/blog/emotsii/trevoga-po-utram-prichiny/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Почему тревога усиливается вечером и к концу дня"
-   description="Почему к вечеру тревога становится сильнее. Как усталость, снижение контроля и накопленное напряжение усиливают тревожность."
-   tags="тревога вечером, тревога усиливается вечером, вечерняя тревога"
-   permalink="/blog/emotsii/pochemu-trevoga-usilivaetsya-vecherom/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога перед сном: почему сложно расслабиться и уснуть"
-   description="Почему тревога усиливается перед сном и мешает засыпанию. Связь тревожных мыслей, тела и ночного покоя."
-   tags="тревога перед сном, тревога и сон, не могу уснуть тревога"
-   permalink="/blog/emotsii/trevoga-pered-snom/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога ночью и внезапные пробуждения: что происходит"
-   description="Почему тревога возникает ночью и приводит к внезапным пробуждениям. Как работает тревожная активация в ночное время."
-   tags="тревога ночью, ночные пробуждения тревога, ночная тревожность"
-   permalink="/blog/emotsii/trevoga-nochyu-i-probuzhdeniya/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога в тишине: почему она усиливается без внешних раздражителей"
-   description="Почему тревога становится сильнее в тишине и покое. Как отсутствие стимулов усиливает внутренний диалог."
-   tags="тревога в тишине, тревога без отвлечений, внутренняя тревога"
-   permalink="/blog/emotsii/trevoga-v-tishine/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога без внешних причин: почему возникает ощущение опасности"
-   description="Почему тревога появляется без видимых причин. Как внутренние процессы запускают тревожное состояние."
-   tags="тревога без причины, тревога без внешних причин, внезапная тревога"
-   permalink="/blog/emotsii/trevoga-bez-vneshnikh-prichin/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога в одиночестве: почему становится тяжелее наедине с собой"
-   description="Почему тревога усиливается в одиночестве. Как отсутствие контакта и поддержки влияет на тревожное состояние."
-   tags="тревога в одиночестве, тревожность одиночество, тревога наедине"
-   permalink="/blog/emotsii/trevoga-v-odinochestve/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога в период неопределённости: когда будущее пугает"
-   description="Почему неопределённость усиливает тревогу. Как отсутствие ясности запускает тревожные сценарии."
-   tags="тревога неопределенность, тревога из-за будущего, неопределенность и тревога"
-   permalink="/blog/emotsii/trevoga-v-period-neopredelyonnosti/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Тревога на фоне усталости: как истощение усиливает тревожность"
-   description="Почему тревога усиливается при усталости и переутомлении. Связь тревоги с истощением ресурсов."
-   tags="тревога и усталость, тревога при переутомлении, истощение и тревога"
-   permalink="/blog/emotsii/trevoga-na-fone-ustalosti/"
-%}
-
-{% include article-card-in-list-draft.html
-   title="Почему тревога приходит на пустом месте и без предупреждения"
-   description="Почему тревога может возникать внезапно, без видимых причин и триггеров. Как это объясняется с точки зрения психологии."
-   tags="внезапная тревога, тревога на пустом месте, неожиданная тревога"
-   permalink="/blog/emotsii/pochemu-trevoga-prikhodit-na-pustom-meste/"
-%}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-po-utram-prichiny/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevoga-usilivaetsya-vecherom/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-i-son-kak-spravitsya-s-nochnymi-myslyami/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-nochyu-i-probuzhdeniya/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-v-tishine/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-bez-vneshnikh-prichin/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-v-odinochestve/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-v-period-neopredelyonnosti/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/trevoga-na-fone-ustalosti/" %}
+{% include article-card-in-list.html permalink="/blog/emotsii/pochemu-trevoga-prikhodit-na-pustom-meste/" %}
 </ul>
 
 > 💡 **Совет:** если тревога приходит «на пустом месте», начните с этого блока — он собирает контекст и возвращает устойчивость.
@@ -639,6 +580,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
