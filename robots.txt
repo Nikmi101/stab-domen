@@ -6,6 +6,8 @@ Allow: /
 
 Sitemap: https://vnutriapps.ru/sitemap.xml
 Sitemap: https://vnutriapps.ru/sitemap-brosit-kurit.xml
+Sitemap: https://vnutriapps.ru/sitemap-snizit-trevogu.xml
+
 
 Host: https://vnutriapps.ru
 
