@@ -17,9 +17,10 @@ description: "Как тревога влияет на отношения и бл
 tags:
   - тревога и отношения
   - тревожность в отношениях
+  - страх потери
+  - контроль в отношениях
   - тревога и близость
-  - тревога
-  - психология тревоги
+  - ревность и тревога
 
 faq:
   - q: "Почему тревога так сильно проявляется именно в отношениях?"
@@ -37,10 +38,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Тревога и отношения"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Тревога и отношения"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-i-otnosheniya/"
@@ -296,5 +297,6 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
