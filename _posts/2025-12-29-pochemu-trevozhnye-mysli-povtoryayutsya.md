@@ -36,10 +36,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: ""Почему тревожные мысли повторяются"
+  alt: "Почему тревожные мысли повторяются"
   width: 1200
   height: 675
-  title: ""Почему тревожные мысли повторяются"
+  title: "Почему тревожные мысли повторяются"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/pochemu-trevozhnye-mysli-povtoryayutsya/"
@@ -280,6 +280,7 @@ isPartOfWeb:
 - Российское общество психиатров — https://psychiatr.ru
 
 ---
+
 
 
 
