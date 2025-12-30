@@ -18,8 +18,9 @@ tags:
   - работа с тревогой через тело
   - телесные практики тревога
   - тревога и тело
-  - тревога
+  - телесное снятие напряжения
   - психология тревоги
+  - дыхание и тревога
 
 faq:
   - q: "Почему при тревоге важно работать именно с телом?"
@@ -37,10 +38,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: ""Работа с тревогой через тело"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: ""Работа с тревогой через тело"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/rabota-s-trevogoy-cherez-telo/"
@@ -274,5 +275,6 @@ isPartOfWeb:
 - НМИЦ психиатрии и наркологии им. В.П. Сербского — https://serbsky.ru
 
 ---
+
 
 
