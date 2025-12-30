@@ -18,6 +18,9 @@ tags:
   - тревога и контроль
   - навязчивый контроль тревога
   - тревожное мышление
+  - контроль усиливает тревогу
+  - навязчивые мысли
+  - всё держать под контролем
 
 faq:
   - q: "Почему при тревоге возникает потребность всё контролировать?"
@@ -35,10 +38,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Тревога и контроль"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Тревога и контроль"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-i-kontrol/"
@@ -279,5 +282,6 @@ isPartOfWeb:
 - Российское общество психиатров — https://psychiatr.ru
 
 ---
+
 
 
