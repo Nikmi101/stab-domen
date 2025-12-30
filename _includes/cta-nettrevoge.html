@@ -52,39 +52,21 @@
 
 .vnutri-badge:active {
   transform: translateY(0px);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-}
-
-.vnutri-badge:focus-visible {
-  outline: 3px solid rgba(0, 0, 0, 0.18);
-  outline-offset: 2px;
 }
 
 .vnutri-badge.app {
   background: rgba(90, 150, 255, 0.10);
   border-color: rgba(90, 150, 255, 0.30);
 }
-.vnutri-badge.app:hover {
-  background: rgba(90, 150, 255, 0.16);
-  border-color: rgba(90, 150, 255, 0.45);
-}
 
 .vnutri-badge.one {
   background: rgba(80, 180, 130, 0.10);
   border-color: rgba(80, 180, 130, 0.30);
 }
-.vnutri-badge.one:hover {
-  background: rgba(80, 180, 130, 0.16);
-  border-color: rgba(80, 180, 130, 0.45);
-}
 
 .vnutri-badge.group {
   background: rgba(230, 110, 160, 0.10);
   border-color: rgba(230, 110, 160, 0.30);
-}
-.vnutri-badge.group:hover {
-  background: rgba(230, 110, 160, 0.16);
-  border-color: rgba(230, 110, 160, 0.45);
 }
 
 @media (max-width: 520px) {
@@ -95,44 +77,62 @@
 }
 </style>
 
-{% assign cta_type = include.type | default: "" %}
+{% assign cta_type = include.type | default: "unknown" %}
 
 {% capture cta_label %}
 {% case cta_type %}
-  {% when "1" %}
-    Если важно понять, что именно с вами происходит — и вернуть ясность: практические решения от Vnutri Apps:
-  {% when "2" %}
-    Если тревога ощущается телом (сердце, дыхание, напряжение) — бережные инструменты Vnutri Apps:
-  {% when "3" %}
-    Если тревожные мысли не отпускают и «голова не выключается» — практические решения от Vnutri Apps:
-  {% when "4" %}
-    Если тревога усиливается утром/вечером/ночью или в тишине — поддержка и инструменты Vnutri Apps:
-  {% when "5" %}
-    Если тревога влияет на решения, отношения и жизнь — практические решения от Vnutri Apps:
-  {% when "6" %}
-    Если нужен понятный способ работать с тревогой (без магии и давления) — инструменты Vnutri Apps:
-  {% else %}
-    Если тревожность не отступает — практические решения от Vnutri Apps:
+  {% when "1" %}Если важно понять, что именно с вами происходит — и вернуть ясность:
+  {% when "2" %}Если тревога ощущается телом (сердце, дыхание, напряжение):
+  {% when "3" %}Если тревожные мысли не отпускают и «голова не выключается»:
+  {% when "4" %}Если тревога усиливается утром, вечером или в тишине:
+  {% when "5" %}Если тревога влияет на решения, отношения и жизнь:
+  {% when "6" %}Если нужен понятный способ работать с тревогой:
+  {% else %}Если тревожность не отступает:
 {% endcase %}
 {% endcapture %}
 
 <div class="vnutri-top-cta" markdown="0">
   <span class="vnutri-top-cta-label">
-    {{ cta_label | strip }}
+    {{ cta_label | strip }} практические решения от Vnutri Apps:
   </span>
 
   <a href="https://vnutriapps.ru/snizit-trevogu"
-     class="vnutri-badge app">
+     class="vnutri-badge app"
+     data-cta="app"
+     data-app="net_trevoge"
+     data-cta-type="{{ cta_type }}">
     🌊 Приложение «Нет тревоге»
   </a>
 
   <a href="https://vnutriapps.ru/consultations"
-     class="vnutri-badge one">
+     class="vnutri-badge one"
+     data-cta="consultation"
+     data-app="vnutri_one"
+     data-cta-type="{{ cta_type }}">
     💬 Vnutri.One — личные консультации
   </a>
 
   <a href="https://vnutriapps.ru/groups"
-     class="vnutri-badge group">
+     class="vnutri-badge group"
+     data-cta="group"
+     data-app="vnutri_groups"
+     data-cta-type="{{ cta_type }}">
     👥 Vnutri.Groups — группы (5 шагов)
   </a>
 </div>
+
+<script>
+document.addEventListener('click', function (e) {
+  const el = e.target.closest('[data-cta]');
+  if (!el) return;
+  if (typeof ym !== 'function') return;
+
+  ym(103903501, 'reachGoal', 'cta_click', {
+    cta: el.dataset.cta,
+    app: el.dataset.app,
+    cta_type: el.dataset.ctaType,
+    page: window.location.pathname
+  });
+});
+</script>
+
