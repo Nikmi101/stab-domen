@@ -18,8 +18,9 @@ tags:
   - тревога по утрам
   - утренняя тревога
   - причины утренней тревоги
-  - тревога
-  - психология тревоги
+  - кортизол и тревога
+  - тревога после пробуждения
+  - психология тревожность
 
 faq:
   - q: "Почему тревога появляется сразу после пробуждения?"
@@ -37,10 +38,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Тревога по утрам"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Тревога по утрам"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-po-utram-prichiny/"
@@ -271,5 +272,6 @@ isPartOfWeb:
 - Научный центр психического здоровья — https://mental-health.ru
 
 ---
+
 
 
