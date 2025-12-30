@@ -35,10 +35,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Почему логика не помогает при тревожности"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Почему логика не помогает при тревожности"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/pochemu-logika-ne-pomogaet-pri-trevoge/"
@@ -275,5 +275,6 @@ isPartOfWeb:
 - Российское общество психиатров — https://psychiatr.ru
 
 ---
+
 
 
