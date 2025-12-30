@@ -38,10 +38,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Внутренняя опора при тревоге"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Внутренняя опора при тревоге"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/vnutrennyaya-opora-chto-eto/"
@@ -286,6 +286,7 @@ isPartOfWeb:
 - НМИЦ психиатрии и наркологии им. В.П. Сербского — https://serbsky.ru
 
 ---
+
 
 
 
