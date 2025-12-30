@@ -38,10 +38,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: ""Работа с тревогой через тело"
+  alt: "Работа с тревогой через тело"
   width: 1200
   height: 675
-  title: ""Работа с тревогой через тело"
+  title: "Работа с тревогой через тело"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/rabota-s-trevogoy-cherez-telo/"
@@ -275,6 +275,7 @@ isPartOfWeb:
 - НМИЦ психиатрии и наркологии им. В.П. Сербского — https://serbsky.ru
 
 ---
+
 
 
 
