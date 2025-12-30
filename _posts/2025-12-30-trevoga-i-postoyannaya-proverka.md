@@ -18,8 +18,9 @@ tags:
   - тревога и контроль
   - постоянная проверка тревога
   - навязчивый контроль тревога
-  - тревога
-  - психология тревоги
+  - перепроверка
+  - проверяю по много раз
+  - тревожные проверки
 
 faq:
   - q: "Почему при тревоге возникает потребность всё проверять?"
@@ -37,10 +38,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Тревога и постоянная проверка"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Тревога и постоянная проверка"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-i-postoyannaya-proverka/"
@@ -286,5 +287,6 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
