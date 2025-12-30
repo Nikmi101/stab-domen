@@ -35,10 +35,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Почему невозможно перестать думать при тревоге"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Почему невозможно перестать думать при тревоге"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/pochemu-nevozmozhno-perestat-dumat/"
@@ -272,5 +272,6 @@ isPartOfWeb:
 - Российское общество психиатров — https://psychiatr.ru
 
 ---
+
 
 
