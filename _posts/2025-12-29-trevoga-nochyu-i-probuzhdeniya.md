@@ -18,8 +18,11 @@ tags:
   - тревога ночью
   - ночные пробуждения тревога
   - ночная тревожность
-  - тревога
-  - психология тревоги
+  - бессонница и тревожность
+  - тревожные мысли ночью
+  - проблемы со сном
+  - просыпаюсь ночью и тревожно
+
 
 faq:
   - q: "Почему я просыпаюсь ночью с тревогой?"
@@ -37,10 +40,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Тревожность ночью"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Тревожность ночью"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-nochyu-i-probuzhdeniya/"
@@ -264,5 +267,6 @@ isPartOfWeb:
 - Научный центр психического здоровья — https://mental-health.ru
 
 ---
+
 
 
