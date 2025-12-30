@@ -35,10 +35,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Навязчивые мысли и тревога"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Навязчивые мысли и тревога"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/navyazchivye-mysli-i-trevoga/"
@@ -281,5 +281,6 @@ isPartOfWeb:
 - Российское общество психиатров — https://psychiatr.ru
 
 ---
+
 
 
