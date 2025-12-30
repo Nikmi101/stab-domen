@@ -35,10 +35,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Ожидание худшего и тревожность"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Ожидание худшего и тревожность"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/ozhidanie-khudshogo-i-trevozhnost/"
@@ -276,5 +276,6 @@ isPartOfWeb:
 - Российское общество психиатров — https://psychiatr.ru
 
 ---
+
 
 
