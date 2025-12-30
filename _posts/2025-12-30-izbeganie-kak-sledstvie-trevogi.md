@@ -18,8 +18,10 @@ tags:
   - избегание тревога
   - тревожное избегание
   - тревога и избегание
-  - тревога
-  - психология тревоги
+  - как перестать избегать
+  - страх ситуаций
+  - избегаю людей
+
 
 faq:
   - q: "Почему при тревоге возникает сильное желание избегать?"
@@ -37,10 +39,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Избегание как следствие тревоги"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Избегание как следствие тревоги"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/izbeganie-kak-sledstvie-trevogi/"
@@ -297,5 +299,6 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
