@@ -35,10 +35,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Почему разум не успокаивает тревогу"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Почему разум не успокаивает тревогу"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/pochemu-razum-ne-uspokaivaet-trevogu/"
@@ -287,5 +287,6 @@ isPartOfWeb:
 - Российское общество психиатров — https://psychiatr.ru
 
 ---
+
 
 
