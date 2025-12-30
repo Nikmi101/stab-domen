@@ -17,9 +17,10 @@ description: "Почему тревога лежит в основе прокр�
 tags:
   - тревога и прокрастинация
   - прокрастинация из-за тревоги
+  - сложно начать дело
+  - страх ошибок
+  - перфекционизм и тревога
   - тревога и действия
-  - тревога
-  - психология тревоги
 
 faq:
   - q: "Почему я откладываю дела, хотя понимаю их важность?"
@@ -37,10 +38,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Тревога и прокрастинация"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Тревога и прокрастинация"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-i-prokrastinatsiya/"
@@ -286,5 +287,6 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
