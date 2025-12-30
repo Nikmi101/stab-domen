@@ -50,23 +50,38 @@
   transform: translateY(-1px);
 }
 
-.vnutri-badge:active {
-  transform: translateY(0px);
+.vnutri-badge:active { transform: translateY(0px); }
+
+.vnutri-badge:focus-visible {
+  outline: 3px solid rgba(0, 0, 0, 0.18);
+  outline-offset: 2px;
 }
 
 .vnutri-badge.app {
   background: rgba(90, 150, 255, 0.10);
   border-color: rgba(90, 150, 255, 0.30);
 }
+.vnutri-badge.app:hover {
+  background: rgba(90, 150, 255, 0.16);
+  border-color: rgba(90, 150, 255, 0.45);
+}
 
 .vnutri-badge.one {
   background: rgba(80, 180, 130, 0.10);
   border-color: rgba(80, 180, 130, 0.30);
 }
+.vnutri-badge.one:hover {
+  background: rgba(80, 180, 130, 0.16);
+  border-color: rgba(80, 180, 130, 0.45);
+}
 
 .vnutri-badge.group {
   background: rgba(230, 110, 160, 0.10);
   border-color: rgba(230, 110, 160, 0.30);
+}
+.vnutri-badge.group:hover {
+  background: rgba(230, 110, 160, 0.16);
+  border-color: rgba(230, 110, 160, 0.45);
 }
 
 @media (max-width: 520px) {
@@ -96,43 +111,24 @@
     {{ cta_label | strip }} практические решения от Vnutri Apps:
   </span>
 
+  <!-- CTA — Приложение (Тревога) -->
   <a href="https://vnutriapps.ru/snizit-trevogu"
      class="vnutri-badge app"
-     data-cta="app"
-     data-app="net_trevoge"
-     data-cta-type="{{ cta_type }}">
+     onclick="try{ if(typeof ym==='function'){ ym(103903501,'reachGoal','cta_anxiety_app'); } }catch(e){} return true;">
     🌊 Приложение «Нет тревоге»
   </a>
 
+  <!-- CTA — Консультации (Тревога) -->
   <a href="https://vnutriapps.ru/consultations"
      class="vnutri-badge one"
-     data-cta="consultation"
-     data-app="vnutri_one"
-     data-cta-type="{{ cta_type }}">
+     onclick="try{ if(typeof ym==='function'){ ym(103903501,'reachGoal','cta_anxiety_consult'); } }catch(e){} return true;">
     💬 Vnutri.One — личные консультации
   </a>
 
+  <!-- CTA — Группы (Тревога) -->
   <a href="https://vnutriapps.ru/groups"
      class="vnutri-badge group"
-     data-cta="group"
-     data-app="vnutri_groups"
-     data-cta-type="{{ cta_type }}">
+     onclick="try{ if(typeof ym==='function'){ ym(103903501,'reachGoal','cta_anxiety_groups'); } }catch(e){} return true;">
     👥 Vnutri.Groups — группы (5 шагов)
   </a>
 </div>
-
-<script>
-document.addEventListener('click', function (e) {
-  const el = e.target.closest('[data-cta]');
-  if (!el) return;
-  if (typeof ym !== 'function') return;
-
-  ym(103903501, 'reachGoal', 'cta_click', {
-    cta: el.dataset.cta,
-    app: el.dataset.app,
-    cta_type: el.dataset.ctaType,
-    page: window.location.pathname
-  });
-});
-</script>
-
