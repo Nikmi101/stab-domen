@@ -37,10 +37,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Почему тревога приходит на пустом месте"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Почему тревога приходит на пустом месте"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/pochemu-trevoga-prikhodit-na-pustom-meste/"
@@ -264,5 +264,6 @@ isPartOfWeb:
 - Научный центр психического здоровья — https://mental-health.ru
 
 ---
+
 
 
