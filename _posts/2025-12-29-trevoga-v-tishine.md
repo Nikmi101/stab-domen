@@ -17,9 +17,10 @@ description: "Почему тревога усиливается в тишине
 tags:
   - тревога в тишине
   - тревога без отвлечений
+  - тревожные мысли в покое
+  - самонаблюдение
   - внутренняя тревога
-  - тревога
-  - психология тревоги
+  - тревожность
 
 faq:
   - q: "Почему тревога усиливается именно в тишине?"
@@ -37,10 +38,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Тревога в тишине"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Тревога в тишине"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-v-tishine/"
@@ -268,5 +269,6 @@ isPartOfWeb:
 - Научный центр психического здоровья — https://mental-health.ru
 
 ---
+
 
 
