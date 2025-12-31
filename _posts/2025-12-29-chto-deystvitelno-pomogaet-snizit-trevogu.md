@@ -37,10 +37,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Что помогает снизить тревогу"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Что помогает снизить тревогу"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/chto-deystvitelno-pomogaet-snizit-trevogu/"
@@ -300,5 +300,6 @@ isPartOfWeb:
 - НМИЦ психиатрии и наркологии им. В.П. Сербского — https://serbsky.ru
 
 ---
+
 
 
