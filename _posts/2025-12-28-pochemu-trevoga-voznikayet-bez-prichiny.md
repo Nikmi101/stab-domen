@@ -37,10 +37,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Почему тревога возникает"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Почему тревога возникает"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/pochemu-trevoga-voznikayet-bez-prichiny/"
@@ -274,6 +274,7 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
 
