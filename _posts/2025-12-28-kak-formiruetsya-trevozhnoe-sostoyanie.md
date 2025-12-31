@@ -37,10 +37,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Как формируется тревожное состояние"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Как формируется тревожное состояние"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/kak-formiruetsya-trevozhnoe-sostoyanie/"
@@ -272,6 +272,7 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
 
