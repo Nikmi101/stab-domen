@@ -37,10 +37,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Полезна ли тревога?"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Полезна ли тревога?"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/polezna-li-trevoga-i-zachem-ona-nuzhna/"
@@ -272,5 +272,6 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
