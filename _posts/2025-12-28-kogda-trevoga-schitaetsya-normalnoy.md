@@ -37,10 +37,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Когда тревога считается нормальной"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Когда тревога считается нормальной"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/kogda-trevoga-schitaetsya-normalnoy/"
@@ -273,5 +273,6 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
