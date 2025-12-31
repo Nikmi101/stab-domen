@@ -37,10 +37,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Тревога как эмоция или состояние"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Тревога как эмоция или состояние"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-emotsiya-ili-sostoyanie/"
@@ -275,5 +275,6 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
