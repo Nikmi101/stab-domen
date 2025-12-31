@@ -37,10 +37,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Почему тревога стала нормой"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Почему тревога стала нормой"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/pochemu-trevoga-stala-normoy-v-sovremennom-mire/"
@@ -263,5 +263,6 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
