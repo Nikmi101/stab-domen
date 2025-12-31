@@ -35,10 +35,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Тревога и нехватка воздуха"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Тревога и нехватка воздуха"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-i-nekhvatka-vozdukha/"
@@ -280,5 +280,6 @@ isPartOfWeb:
 - НМИЦ психиатрии и наркологии им. В.П. Сербского — https://serbsky.ru
 
 ---
+
 
 
