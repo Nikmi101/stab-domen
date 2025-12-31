@@ -37,10 +37,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Тревога перед сном"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Тревога перед сном"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/trevoga-i-son-kak-spravitsya-s-nochnymi-myslyami/"
@@ -265,5 +265,6 @@ isPartOfWeb:
 - Научный центр психического здоровья — https://mental-health.ru
 
 ---
+
 
 
