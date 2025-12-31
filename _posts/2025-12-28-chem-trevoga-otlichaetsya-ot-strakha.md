@@ -37,10 +37,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Чем тревога отличается от страха"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Чем тревога отличается от страха"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/chem-trevoga-otlichaetsya-ot-strakha/"
@@ -291,5 +291,6 @@ isPartOfWeb:
 - Большая российская энциклопедия — https://bigenc.ru
 
 ---
+
 
 
