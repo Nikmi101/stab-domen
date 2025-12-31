@@ -35,10 +35,10 @@ faq:
 
 banner:
   image: "/images/blog-images/blog-header-nettrevoge.webp"
-  alt: "что такое тревога"
+  alt: "Катастрофизация"
   width: 1200
   height: 675
-  title: "Что такое тревога"
+  title: "Катастрофизация"
 recommended_apps:
   - trevoga
 permalink: "/blog/emotsii/katastrofizatsiya-mekhanizm-trevogi/"
@@ -275,5 +275,6 @@ isPartOfWeb:
 - Российское общество психиатров — https://psychiatr.ru
 
 ---
+
 
 
