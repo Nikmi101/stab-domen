@@ -1,0 +1,340 @@
+{% comment %}
+  Требования:
+  - фронт-маттер: title, description, date, (опц.) banner.image/width/height, (опц.) dateUpdated, (опц.) tema/articleSection, (опц.) tags, (опц.) sources (массив ссылок)
+{% endcomment %}
+{% assign img_url = page.banner.image | default: nil %}
+{% assign img_w   = page.banner.width  | default: 1200 %}
+{% assign img_h   = page.banner.height | default: 630 %}
+{% assign has_img = img_url | default: "" | size | plus: 0 %}
+
+<!-- 1) Хаб как страница-коллекция -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ page.url | absolute_url }}#page",
+  "headline": {{ page.title | jsonify }},
+  {% if page.banner.title %}"alternativeHeadline": {{ page.banner.title | jsonify }},{% endif %}
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }},
+  "inLanguage": "ru-RU",
+  "isAccessibleForFree": true,
+  "author": { 
+    "@type": "Person",
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://vnutriapps.ru/#organization",
+    "url": "https://vnutriapps.ru/"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "@id": "https://vnutriapps.ru/#organization",
+    "url": "https://vnutriapps.ru/"
+  }{% if has_img > 0 %},
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ img_url | absolute_url }}",
+    "contentUrl": "{{ img_url | absolute_url }}",
+    "width": {{ img_w }},
+    "height": {{ img_h }},
+    "caption": {{ page.banner.title | default: page.title | jsonify }}
+  },
+  "thumbnailUrl": "{{ img_url | absolute_url }}"{% endif %},
+  "url": "{{ page.url | absolute_url }}",
+  
+  "mainEntity": { "@id": "{{ page.url | absolute_url }}#series" },
+
+  "datePublished": "{{ page.date | date_to_xmlschema }}"{% if page.dateUpdated %},
+  "dateModified": "{{ page.dateUpdated | date_to_xmlschema }}"{% endif %},
+  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }},
+  "wordCount": {{ page.content | strip_html | strip_newlines | split: " " | size }}{% if page.tags and page.tags.size > 0 %},
+  "keywords": [{% for tag in page.tags %}{{ tag | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %},
+  "hasPart": [
+  {% if page.faq and page.faq.size > 0 %}
+  { "@type": "FAQPage", "@id": "{{ page.url | absolute_url }}#faq" }{% if page.faq and page.faq.size > 0 %},{% endif %}
+{% endif %}
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/ekzistentsialnoe-odinochestvo/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-sredi-lyudey/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/strakh-odinochestva/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kak-nauchitsya-byt-odnomu/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-ne-polomka/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-i-blizost/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/pochemu-tishina-pugaet/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-posle-rasstavaniya/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-i-depressiya/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-kak-resurs/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/ne-znayu-chego-khochu/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/strakh-vybora/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/prokrastinatsiya-i-otvetstvennost/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/perfektsionizm-kontrol/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/svoboda-pugaet/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/otvetstvennost-bez-viny/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/zhizn-prokhodit-mimo/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/zastrevanie/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kak-zhit-v-neopredelyonnosti/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kontrol-kak-zavisimost/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/net-smysla-zhit-chto-delat/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/pustota-vnutri/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/apatiya-ili-istoshchenie/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/smysl-kak-protsess/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kak-ponyat-tsennosti/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/ekzistentsialnyy-krizis/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/otchuzhdenie-ot-sebya/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/styd-i-zhizn/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/samokritika-vnutrenniy-kritik/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/emotsionalnaya-onemelost/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/strakh-smerti/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/panika-i-strakh-umret/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/konechnost-i-vkus-zhizni/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/trevoga-za-blizkikh/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/gore-i-utrata/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/navyazchivye-mysli-o-smerti/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/strakh-stareniya/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/ekzistentsialnaya-trevoga/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/pochemu-logika-ne-uspokaivaet/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/opora-bez-illyuziy/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/tvorchestvo-kak-sposob-zhit/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/net-vdokhnoveniya/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/tvorcheskiy-krizis/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/sindrom-samozvantsa/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/strakh-otsenki/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/tvorchestvo-i-pustota/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/potok-i-kontrol/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/tvorchestvo-i-distsiplina/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/tvorchestvo-i-samotsennost/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-i-tvorchestvo/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/vnutrenniy-dialog/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/samotsennost/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/prisutstvie-zdes-i-seychas/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kontakt-s-soboy/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/lichnye-granitsy/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/blizost-bez-sliyaniya/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/byt-soboy/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/otvetstvennost-za-zhizn/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/vnutrennyaya-opora/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/prinyatie-zhizni/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/pustota-posle-krizisa/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kogda-nuzhna-pomoshch-psikhologa/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/ekzistentsialnyy-put/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-kak-opora/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/vozvrashchenie-k-sebe/#webpage" }
+
+  
+  ]{% if page.sources and page.sources.size > 0 %},
+  "citation": [{% for s in page.sources %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.about or page.tags %}
+, "about": [
+  {% if page.about %}
+    {% for a in page.about %}
+      { "@type": "Thing", "name": {{ a | jsonify }} }{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  {% elsif page.tags and page.tags.size > 0 %}
+    {% for tag in page.tags %}
+      { "@type": "Thing", "name": {{ tag | jsonify }} }{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  {% endif %}
+]{% endif %},
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ page.url | absolute_url }}"
+    }
+  },
+  "isPartOf": [
+    { "@id": "https://vnutriapps.ru/#webpage" },
+    { "@id": "https://vnutriapps.ru/#website" },
+    { "@id": "https://vnutriapps.ru/snizit-trevogu#webpage" }
+  ]
+}
+</script>
+
+<!-- 2) Собственно серия как отдельная сущность -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWorkSeries",
+  "@id": "{{ page.url | absolute_url }}#series",
+  "name": {{ page.cycle_title | jsonify }},
+  "headline": {{ page.cycle_title | jsonify }},
+  "genre": ["Энциклопедия", "Руководство", "Цикл статей"],
+  "description": {{ page.cycle_description | default: site.description | jsonify }},
+  "inLanguage": "ru-RU",
+  "isAccessibleForFree": true,
+  "url": "{{ page.url | absolute_url }}",
+   "author": { 
+    "@type": "Person",
+    "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://vnutriapps.ru/#organization",
+    "url": "https://vnutriapps.ru/"
+  }{% if has_img > 0 %},
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ img_url | absolute_url }}",
+    "contentUrl": "{{ img_url | absolute_url }}",
+    "width": {{ img_w }},
+    "height": {{ img_h }},
+    "caption": {{ page.banner.title | default: page.title | jsonify }}
+  }{% endif %},
+  "hasPart": [
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/ekzistentsialnoe-odinochestvo/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-sredi-lyudey/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/strakh-odinochestva/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kak-nauchitsya-byt-odnomu/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-ne-polomka/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-i-blizost/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/pochemu-tishina-pugaet/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-posle-rasstavaniya/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-i-depressiya/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-kak-resurs/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/ne-znayu-chego-khochu/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/strakh-vybora/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/prokrastinatsiya-i-otvetstvennost/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/perfektsionizm-kontrol/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/svoboda-pugaet/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/otvetstvennost-bez-viny/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/zhizn-prokhodit-mimo/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/zastrevanie/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kak-zhit-v-neopredelyonnosti/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kontrol-kak-zavisimost/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/net-smysla-zhit-chto-delat/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/pustota-vnutri/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/apatiya-ili-istoshchenie/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/smysl-kak-protsess/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kak-ponyat-tsennosti/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/ekzistentsialnyy-krizis/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/otchuzhdenie-ot-sebya/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/styd-i-zhizn/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/samokritika-vnutrenniy-kritik/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/emotsionalnaya-onemelost/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/strakh-smerti/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/panika-i-strakh-umret/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/konechnost-i-vkus-zhizni/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/trevoga-za-blizkikh/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/gore-i-utrata/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/navyazchivye-mysli-o-smerti/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/strakh-stareniya/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/ekzistentsialnaya-trevoga/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/pochemu-logika-ne-uspokaivaet/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/opora-bez-illyuziy/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/tvorchestvo-kak-sposob-zhit/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/net-vdokhnoveniya/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/tvorcheskiy-krizis/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/sindrom-samozvantsa/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/strakh-otsenki/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/tvorchestvo-i-pustota/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/potok-i-kontrol/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/tvorchestvo-i-distsiplina/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/tvorchestvo-i-samotsennost/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-i-tvorchestvo/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/vnutrenniy-dialog/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/samotsennost/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/prisutstvie-zdes-i-seychas/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kontakt-s-soboy/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/lichnye-granitsy/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/blizost-bez-sliyaniya/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/byt-soboy/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/otvetstvennost-za-zhizn/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/vnutrennyaya-opora/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/prinyatie-zhizni/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/pustota-posle-krizisa/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/kogda-nuzhna-pomoshch-psikhologa/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/ekzistentsialnyy-put/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/odinochestvo-kak-opora/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/ekzistentsialnye-tochki-opory/vozvrashchenie-k-sebe/#article" }
+
+  
+  ]{% if page.sources_cycle and page.sources_cycle.size > 0 %},
+  "citation": [{% for s in page.sources_cycle %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.about_cycle or page.tags_cycle %}
+, "about": [
+  {% if page.about_cycle and page.about_cycle.size > 0 %}
+    {% for a in page.about_cycle %}
+      { "@type": "Thing", "name": {{ a | jsonify }} }{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  {% elsif page.tags_cycle and page.tags_cycle.size > 0 %}
+    {% for tag in page.tags_cycle %}
+      { "@type": "Thing", "name": {{ tag | jsonify }} }{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  {% endif %}
+]{% endif %},
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ page.url | absolute_url }}"
+    }
+  }
+}
+</script>
+
+{% comment %} _includes/jsonld-faq.html (без изменений) {% endcomment %}
+{% if page.faq and page.faq.size > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{ page.url | absolute_url }}#faq",
+  "isPartOf": { "@id": "{{ page.url | absolute_url }}#page" },
+  "mainEntity": [
+    {% for item in page.faq %}
+    {
+      "@type": "Question",
+      "name": {{ item.q | strip_html | strip_newlines | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | strip_newlines | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ page.url | absolute_url }}#webpage",
+  "url": "{{ page.url | absolute_url }}",
+  "name": {{ page.title | jsonify }},
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }},
+  "inLanguage": "ru-RU",
+  "isAccessibleForFree": true,
+  "breadcrumb": { "@id": "{{ page.url | absolute_url }}#breadcrumbs" },
+  "datePublished": "{{ page.date | date_to_xmlschema }}"{% if page.dateUpdated %},
+  "dateModified": "{{ page.dateUpdated | date_to_xmlschema }}"{% endif %}{% if has_img > 0 %},
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "{{ img_url | absolute_url }}",
+    "contentUrl": "{{ img_url | absolute_url }}",
+    "width": {{ img_w }},
+    "height": {{ img_h }},
+    "caption": {{ page.banner.title | default: page.title | jsonify }}
+  }{% endif %},
+  "mainEntity": { "@id": "{{ page.url | absolute_url }}#series" }
+  , "isPartOf": [
+    { "@id": "https://vnutriapps.ru/#webpage" },
+    { "@id": "https://vnutriapps.ru/#website" },
+    { "@id": "https://vnutriapps.ru/ekzistentsialnye-tochki-opory#webpage" }
+  ]
+  
+}
+</script>
