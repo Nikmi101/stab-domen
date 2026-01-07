@@ -24,7 +24,7 @@
   {%- if include.as_li == true -%}
     <li><a href="{{ href }}" rel="bookmark">{{ title }}</a></li>
   {%- else -%}
-    <div class="article-link-item">
+    <div class="article-link-item" markdown="0">
       <a href="{{ href }}" rel="bookmark">{{ title }}</a>
     </div>
   {%- endif -%}
