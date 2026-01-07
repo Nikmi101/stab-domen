@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="ru" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+<head>
+  <meta charset="utf-8" />
+  <link rel="alternate" href="{{ page.url | absolute_url }}" hreflang="ru">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  
+  <title>{{ page.title }} — Vnutri Apps</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="author" content="Никита Митяев">
+  <meta property="article:author" content="https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  
+
+
+    <!-- Favicon -->
+{% for app in page.recommended_apps %}
+  {% case app %}
+    {% when "brosit_kurit" %}
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-kurilbrosil.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-kurilbrosil.png">
+      <link rel="icon" type="image/x-icon" href="/favicon-kurilbrosil.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-kurilbrosil.png">
+
+    {% when "trevoga" %}
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/x-icon" href="/favicon.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    {% when "odinochestvo" %}
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/x-icon" href="/favicon.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    {% when "tvorchestvo" %}
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/x-icon" href="/favicon.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    {% else %}
+      <!-- дефолтная фавиконка -->
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/x-icon" href="/favicon.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  {% endcase %}
+{% endfor %}
+  
+
+
+    
+
+
+  
+  <meta name="theme-color" content="#111111" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Vnutri Apps" href="https://vnutriapps.ru/rss.xml">
+
+{%- comment -%} Определяем: это статья или нет {%- endcomment -%}
+{%- assign __is_article = page.is_article -%}
+{%- if __is_article == nil -%}
+  {%- assign __is_article = false -%}
+  {%- if page.collection == 'posts' or page.layout == 'post' or page.layout == 'encyclopedia-hub' -%}
+    {%- assign __is_article = true -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} Итоговый og:type: приоритет у page.og_type {%- endcomment -%}
+{%- if page.og_type -%}
+  {%- assign __og_type = page.og_type -%}
+{%- else -%}
+  {%- if __is_article -%}
+    {%- assign __og_type = 'article' -%}
+  {%- else -%}
+    {%- assign __og_type = 'website' -%}
+  {%- endif -%}
+{%- endif -%}
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ page.title }} — Vnutri Apps">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:type" content="article">
+
+
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="Vnutri Apps">
+  <meta property="og:locale" content="ru_RU">
+  {% if page.banner.image %}
+  <meta property="og:image" content="{{ page.banner.image | absolute_url }}">
+  <meta property="og:image:secure_url" content="{{ page.banner.image | absolute_url }}">
+  <meta property="og:image:width" content="{{ page.banner.width | default: 1200 }}">
+  <meta property="og:image:height" content="{{ page.banner.height | default: 630 }}">
+  <meta property="og:image:alt" content="{{ page.banner.alt | default: page.title }}">
+  <!-- Дополнительно: указать тип картинки -->
+  {% assign __url_no_q = page.banner.image | split:'?' | first %}
+  {% assign __ext = __url_no_q | split:'.' | last | downcase %}
+  {% if __ext == 'webp' %}
+  <meta property="og:image:type" content="image/webp">
+  {% elsif __ext == 'jpg' or __ext == 'jpeg' %}
+  <meta property="og:image:type" content="image/jpeg">
+  {% elsif __ext == 'png' %}
+  <meta property="og:image:type" content="image/png">
+  {% endif %}
+  {% endif %}
+
+  {%- comment -%} ---- Open Graph: article extras ---- {%- endcomment -%}
+  {%- if __is_article -%}
+    {%- if page.date -%}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    {%- endif -%}
+    {%- if page.dateUpdated -%}
+    <meta property="article:modified_time" content="{{ page.dateUpdated | date_to_xmlschema }}">
+    {%- endif -%}
+
+    {%- comment -%} Автор: URL если есть, иначе имя {%- endcomment -%}
+    {%- if page.author and page.author.url -%}
+    <meta property="article:author" content="{{ page.author.url }}">
+    {%- elsif page.author and page.author.name -%}
+    <meta property="article:author" content="{{ page.author.name }}">
+    {%- endif -%}
+
+    {%- comment -%} Раздел: тема -> articleSection -> маппинг категории {%- endcomment -%}
+    {%- assign __section = page.tema | default: page.articleSection -%}
+    {%- if __section == nil or __section == "" -%}
+      {%- assign __cat = page.categories | first | default: "" -%}
+      {%- case __cat -%}
+        {%- when "privychki" -%}{%- assign __section = "Привычки и изменения" -%}
+        {%- when "emotsii" -%}{%- assign __section = "Эмоции и состояние" -%}
+        {%- when "tvorchestvo" -%}{%- assign __section = "Творчество и саморазвитие" -%}
+        {%- when "filosofiya" -%}{%- assign __section = "Философия и глубина" -%}
+        {%- when "VnutriApps" -%}{%- assign __section = "Проект Vnutri Apps" -%}
+        {%- else -%}{%- assign __section = __cat -%}
+      {%- endcase -%}
+    {%- endif -%}
+    {%- if __section and __section != "" -%}
+    <meta property="article:section" content="{{ __section }}">
+    {%- endif -%}
+
+    {%- comment -%} Теги {%- endcomment -%}
+    {%- if page.tags and page.tags.size > 0 -%}
+      {%- for t in page.tags -%}
+    <meta property="article:tag" content="{{ t }}">
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }} — Vnutri Apps">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  {% if page.banner.image %}
+  <meta name="twitter:image" content="{{ page.banner.image | absolute_url }}">
+  <meta name="twitter:image:alt" content="{{ page.banner.alt | default: page.title }}">
+  {% if page.banner.title %}<meta name="twitter:image:title" content="{{ page.banner.title }}">{% endif %}
+  {% endif %}
+
+  {%- comment -%} ===== Preload для hero + опционально ещё изображений ===== {%- endcomment -%}
+  {% if page.banner and page.banner.image %}
+    {% assign __url_no_q = page.banner.image | split:'?' | first %}
+    {% assign __ext = __url_no_q | split:'.' | last | downcase %}
+    <link rel="preload"
+          as="image"
+          href="{{ page.banner.image | absolute_url }}"
+          imagesizes="100vw"
+          {% if __ext == 'webp' %}type="image/webp"{% elsif __ext == 'jpg' or __ext == 'jpeg' %}type="image/jpeg"{% elsif __ext == 'png' %}type="image/png"{% endif %}>
+  {% endif %}
+  {% if page.preload_images and page.preload_images.size > 0 %}
+    {% for img in page.preload_images %}
+      {% assign __img_no_q = img | split:'?' | first %}
+      {% assign __img_ext = __img_no_q | split:'.' | last | downcase %}
+      <link rel="preload"
+            as="image"
+            href="{{ img | absolute_url }}"
+            {% if __img_ext == 'webp' %}type="image/webp"{% elsif __img_ext == 'jpg' or __img_ext == 'jpeg' %}type="image/jpeg"{% elsif __img_ext == 'png' %}type="image/png"{% endif %}>
+    {% endfor %}
+  {% endif %}
+
+  {% include jsonld-organization.html %}
+
+  <!-- CSS -->
+  
+  <link rel="stylesheet" href="/assets/css/main.css" />
+ 
+
+</head>
+<body>
+
+<!-- Header -->
+<header id="header" class="alt">
+  <div class="logo">
+    <a href="/">
+      <img src="/images/icons/ic_vnutriapps_withouttext.webp" 
+           alt="Логотип Vnutri Apps — психологические приложения для Android" 
+           style="height:24px; vertical-align:middle; margin-right:8px;">
+      <span>Vnutri Apps</span>
+    </a>
+  </div>
+
+  <!-- Иконка меню (SVG вместо текста) -->
+  <a href="#menu" class="menu-icon" title="Открыть меню">
+    <img src="/images/icons/bars.svg" 
+         alt="Меню" 
+         class="icon-svg">
+  </a>
+</header>
+    
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        <li>
+            <a href="/">
+                <span>- Главная — психологические Android-приложения Vnutri Apps</span>
+            </a>
+        </li>
+        <li>
+            <a href="/">
+                <span>- Приложения — все приложения Vnutri Apps для самопомощи</span>
+            </a>
+            <ul class="submenu">
+                <li><a href="/brosit-kurit"><span>- Курил-бросил: бросить курить</span></a></li>
+                <li><a href="/snizit-trevogu"><span>- Нет тревоге: путь к спокойствию</span></a></li>
+                <li><a href="/kak-borotsya-s-odinochestvom"><span>- Одиночество: Точки опоры</span></a></li>
+                <li><a href="/razvitie-tvorchestva"><span>- Творчество: Пламя внутри</span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/about-vnutri-apps">
+                <span>- О проекте Vnutri Apps — живое пространство для психологии и внутреннего роста</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+  <!-- Hero (full-bleed) -->
+<section class="blog-hero">
+  {% if page.banner.image %}
+  <figure class="blog-header-banner">
+    <img
+      src="{{ page.banner.image | absolute_url }}"
+      alt="{{ page.banner.alt | default: page.title }}"
+      width="{{ page.banner.width | default: 1200 }}"
+      height="{{ page.banner.height | default: 630 }}"
+      fetchpriority="high"
+      decoding="async"
+      class="blog-hero-img">
+  </figure>
+  {% endif %}
+</section>
+
+<main class="wrapper">
+  <div class="blog-container">
+
+    <!-- Основное содержимое -->
+    <article class="blog-article">
+      {{ content }}
+    </article>
+
+     <!-- Автор и дата / E-E-A-T -->
+
+<div class="blog-author">
+  <strong>
+    <a href="https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev" rel="author">Никита Митяев</a><br>
+  </strong>
+  <span>Психолог-консультант, специалист по экзистенциальной и гештальт-терапии<br></span>
+  <span>Основатель и разработчик Vnutri Apps</span><br>
+  {% if page.date %}
+  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%m.%Y" }}</time>
+  {% endif %}
+  {% if page.medical_disclaimer %}
+  <p class="disclaimer">
+    Материал носит информационный характер и не заменяет консультацию специалиста.
+  </p>
+  {% endif %}
+</div>
+
+
+
+      <h2 class="blog-title">Решения от<br> Vnutri Apps:</h2>
+
+
+    <!-- Рекомендуемое приложение -->
+    {% for app in page.recommended_apps %}
+      {% case app %}
+        {% when "brosit_kurit" %}
+          {% include app_brosit_kurit.html %}
+        {% when "trevoga" %}
+          {% include app_nettrevoge.html %}
+        {% when "odinochestvo" %}
+          {% include app_odinochestvo.html %}
+        {% when "tvorchestvo" %}
+          {% include app_tvorchestvo.html %}
+      {% endcase %}
+    {% endfor %}
+
+    {% include consult.html %}
+    <!-- JSON-LD -->
+    
+    {% include jsonld-article-cycle-exist.html %}
+   
+    {% include jsonld-breadcrumbs-ld.html %}
+  </div>
+</main>
+
+<!-- Internal Links -->
+<section class="apps-section">
+  <div class="inner">
+    <p>Подробнее о каждом приложении Vnutri Apps:</p>
+    <ul>
+      <li><a href="https://vnutriapps.ru/brosit-kurit">«Курил-бросил» — приложение, чтобы бросить курить</a></li>
+      <li><a href="https://vnutriapps.ru/snizit-trevogu">«Нет тревоге: Путь к спокойствию» — приложение для снижения уровня тревожности</a></li>
+      <li><a href="https://vnutriapps.ru/kak-borotsya-s-odinochestvom">«Одиночество: Точки опоры» — поиск внутренней тишины и источников</a></li>
+      <li><a href="https://vnutriapps.ru/razvitie-tvorchestva">«Творчество: Пламя внутри» — приложение для раскрытия творческого потенциала</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Two: О проекте -->
+<section id="about" class="wrapper style3">
+  <div class="inner">
+    <header class="align-center">
+      <h2>О проекте Vnutri Apps</h2>
+      <p><strong>Vnutri Apps</strong> — это живое пространство, где психология превращается в практический опыт...</p>
+      <div class="details-button-container">
+        <a href="/about-vnutri-apps" class="details-button" title="Подробная информация про проект Vnutri Apps" style="color:#f5f5f5;margin-top:20px;">
+           🧭 Что такое Vnutri Apps?
+        </a>
+      </div>
+    </header>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+       <ul class="icons">
+  <li>
+    <a href="mailto:vnutri_apps@mail.ru"
+       title="Email поддержки Vnutri Apps — психологическая помощь, снижение тревоги, самопомощь">
+      <img src="/images/icons/envelope.svg"
+           alt="Email поддержки Vnutri Apps — психологическая помощь, снижение тревоги, самопомощь"
+           class="icon-svg">
+      <span class="label">Email</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://t.me/vnutriapps"
+       title="Телеграм канал Vnutri Apps — психологическая поддержка, советы по внутреннему развитию">
+      <img src="/images/icons/telegram.svg"
+           alt="Телеграм канал Vnutri Apps — психологическая поддержка, советы по внутреннему развитию"
+           class="icon-svg">
+      <span class="label">Telegram</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://m.vk.com/vnutriapps"
+       title="VK Vnutri Apps — психология, медитации, развитие внутренней опоры и креативности">
+      <img src="/images/icons/vk.svg"
+           alt="VK Vnutri Apps — психология, медитации, развитие внутренней опоры и креативности"
+           class="icon-svg">
+      <span class="label">VK</span>
+    </a>
+  </li>
+</ul>
+
+        <div class="details-button-container">
+            <a href="/links" class="details-button" 
+               title="Все ссылки и соцсети Vnutri Apps"
+               >🌐 Все ссылки и соцсети Vnutri Apps</a>
+        </div>
+
+        <p class="copyright">
+             &copy; <span >Vnutri Apps</span>, Россия. Все права защищены.<br>
+			ИП Митяев Никита Игоревич
+        </p>
+
+    
+       
+    </div>
+</footer>
+
+   <!-- Yandex.Metrika -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=103903501', 'ym');
+
+        ym(103903501, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/103903501" style="position:absolute; left:-9999px;" alt="счетчик метрики" /></div></noscript>
+
+<!-- Top.Mail.Ru counter -->
+<script type="text/javascript">
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "3725112", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "tmr-code");
+</script>
+<noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3725112;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+<!-- /Top.Mail.Ru counter -->
+
+
+  
+<!-- Scripts -->
+<script>
+// Lazy-load для контентных изображений + снижение риска CLS
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('article.blog-article img').forEach(function(img){
+    if(!img.hasAttribute('loading')) img.setAttribute('loading','lazy');
+    if(!img.hasAttribute('decoding')) img.setAttribute('decoding','async');
+  });
+});
+</script>
+<script src="/assets/js/jquery.min.js" defer></script>
+<script src="/assets/js/jquery.scrollex.min.js" defer></script>
+<script src="/assets/js/skel.min.js" defer></script>
+<script src="/assets/js/util.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
