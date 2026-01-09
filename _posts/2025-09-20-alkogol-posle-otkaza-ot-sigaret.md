@@ -323,7 +323,7 @@ isPartOfWeb:
 
 ---
 
-## FAQ: часто задаваемые вопросы
+## FAQ: часто задаваемые вопросы {#faq}
 
 ### **Почему после алкоголя тянет курить?**  
 Алкоголь снижает контроль, усиливает импульсивность и активирует старые привычные контексты  
@@ -372,6 +372,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Alcohol and relapse risk during smoking cessation* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
