@@ -170,7 +170,7 @@ isPartOfWeb:
 
 ---
 
-## FAQ: часто задаваемые вопросы
+## FAQ: часто задаваемые вопросы {#faq}
 
 ### **Почему после отказа чаще хочется пить?**  
 Организм перестраивает водно-электролитный баланс, вкусы и слюноотделение; при более активной гидратации жажда постепенно снижается.
@@ -203,6 +203,7 @@ isPartOfWeb:
 - Cochrane Library: Smoking and pancreatic disorders — [cochranelibrary.com](https://www.cochranelibrary.com)  
 
 ---
+
 
 
 
