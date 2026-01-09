@@ -47,7 +47,7 @@
 
   "datePublished": "{{ page.date | date_to_xmlschema }}"{% if page.dateUpdated %},
   "dateModified": "{{ page.dateUpdated | date_to_xmlschema }}"{% endif %},
-  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }},
+ "text": {{ "Системный гид по жизни без сигарет. Без морали, без лозунгов — только ясность, опыт и понимание. Здесь собраны материалы проекта «Курил-бросил» от Vnutri Apps — приложения, которое помогает бросить курить спокойно и навсегда. Это не лекции о вреде, а живая карта пути: от зависимости — к внутренней свободе, ясности и здоровью." | jsonify }},
   "wordCount": {{ page.content | strip_html | strip_newlines | split: " " | size }}{% if page.tags and page.tags.size > 0 %},
   "keywords": [{% for tag in page.tags %}{{ tag | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %},
   "hasPart": [
