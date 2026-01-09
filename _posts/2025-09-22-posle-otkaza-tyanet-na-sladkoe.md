@@ -425,7 +425,7 @@ isPartOfWeb:
 
 ---
 
-## FAQ: часто задаваемые вопросы
+## FAQ: часто задаваемые вопросы {#faq}
 
 ### **Почему после отказа от сигарет тянет на сладкое?**  
 Никотин подавлял аппетит и ускорял обмен веществ. После отказа мозг ищет быстрый источник дофамина — сладкое.  
@@ -477,6 +477,7 @@ isPartOfWeb:
 - American Psychological Association (APA): *Emotional eating and behavioral replacement after smoking cessation* — [apa.org](https://www.apa.org)  
 - European Network for Smoking and Tobacco Prevention (ENSP): *Weight management and craving regulation after quitting* — [ensp.network](https://ensp.network)  
 - Национальный институт здравоохранения Великобритании (NHS): *Managing appetite and sugar cravings after quitting smoking* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
+
 
 
 
