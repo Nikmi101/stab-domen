@@ -10,7 +10,7 @@ author:
 
 medical_disclaimer: true
 date: 2025-12-27
-dateUpdated: 2025-12-29
+dateUpdated: 2026-01-09
 
 articleSection: "Эмоции и состояние"
 tema: "Тревога — системный цикл статей «Путь к спокойствию»"
@@ -430,6 +430,7 @@ sources_cycle:
 - [Большая российская энциклопедия](https://bigenc.ru)
 
 ---
+
 
 
 
