@@ -10,7 +10,7 @@ author:
 
 medical_disclaimer: true
 date: 2026-01-07
-dateUpdated: 2026-01-07
+dateUpdated: 2026-01-09
 
 articleSection: "Психология, философия, эмоции и состояние"
 tema: "Экзистенциальная психология — системный цикл статей «Экзистенциальные точки опоры»"
@@ -466,5 +466,6 @@ sources_cycle:
 
 
 ---
+
 
 
