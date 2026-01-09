@@ -295,7 +295,7 @@ sources:
 
 ---
 
-## FAQ: часто задаваемые вопросы о внутренней свободе и опоре
+## FAQ: часто задаваемые вопросы о внутренней свободе и опоре {#faq}
 
 ### **Что значит свобода без никотина?**  
 Это не просто физическое освобождение от зависимости,  
@@ -330,6 +330,7 @@ sources:
 - National Institute on Drug Abuse (NIDA): *Internal Motivation and Recovery Pathways* — [nida.nih.gov](https://nida.nih.gov)  
 - Cochrane Library: *Behavioral and Meaning-Based Strategies for Smoking Cessation* — [cochranelibrary.com](https://www.cochranelibrary.com)  
 - Минздрав РФ — *Психологическая устойчивость и формирование внутренней опоры при отказе от никотина* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
+
 
 
 
