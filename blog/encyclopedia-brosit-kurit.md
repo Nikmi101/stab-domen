@@ -10,7 +10,7 @@ author:
 
 medical_disclaimer: true
 date: 2025-10-12
-dateUpdated: 2025-12-05
+dateUpdated: 2026-01-09
 
 articleSection: "Бросить курить"
 tema: "Бросить курить — системный гид и энциклопедия отказа от сигарет"
