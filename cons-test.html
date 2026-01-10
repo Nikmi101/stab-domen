@@ -185,108 +185,71 @@
 </script>
 
 <style>
-/* =========================================
-   CLEAN DARK BANDS (NO CARDS)
-   Полноширинные полосы + белый текст
-   ========================================= */
+/* ==========================================================
+   CLEAN DARK BANDS v2 (NO CARDS)
+   Полосы во всю ширину + белый текст + корректные отступы
+   ========================================================== */
 
 :root{
   --bg0:#0f1012;
-  --bg1:#131417;
-  --bg2:#16181c;
-  --bg3:#14161a;   /* мягкий акцент (CTA/FAQ) */
+  --bg1:#121316;
+  --bg2:#15171b;
+  --bg3:#101216;
 
   --text:rgba(255,255,255,.92);
   --muted:rgba(255,255,255,.74);
 
   --link:rgba(154,193,255,.92);
-  --linkHover:rgba(255,255,255,.96);
 
-  --maxw:980px;
-  --pad:22px;
-  --padM:14px;
+  /* коридор текста */
+  --maxw: 980px;
+
+  /* боковой отступ (адаптивный, но не мелкий) */
+  --pad: clamp(18px, 3.4vw, 44px);
 }
 
+/* База */
 html, body{
   background: var(--bg0);
   color: var(--text);
-  overflow-x: hidden; /* чтобы 100vw не давал горизонтальный скролл */
 }
 
-/* Типографика */
+/* Типографика (спокойная, читабельная) */
 .content, .content p, .content li{
-  font-size:16px;
-  line-height:1.75;
-  letter-spacing:.15px;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: .15px;
 }
-.content p{ color: var(--muted); margin: 0 0 12px 0; }
+
+.content p{
+  color: var(--muted);
+  margin: 0 0 12px 0;
+}
 .content strong{ color: var(--text); }
 
 .content h1, .content h2, .content h3{
   color: var(--text);
-  letter-spacing:.2px;
+  letter-spacing: .2px;
 }
-.content h2{ margin: 22px 0 10px 0; }
-.content h3{ margin: 16px 0 8px 0; }
+.content h2{ margin: 18px 0 10px 0; }
+.content h3{ margin: 14px 0 8px 0; }
 
 /* Ссылки */
 .content a{
   color: var(--link);
-  text-decoration:none;
-  border-bottom:1px solid rgba(154,193,255,.22);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(154,193,255,.25);
 }
 .content a:hover{
-  color: var(--linkHover);
-  border-bottom-color: rgba(255,255,255,.24);
+  border-bottom-color: rgba(255,255,255,.25);
 }
 
-/* -----------------------------------------
-   КЛЮЧ: .content вырываем из ограничений .inner
-   чтобы фоны секций шли на всю ширину экрана
-   ----------------------------------------- */
-.content{
-  width: 100vw;
-  margin-left: calc(50% - 50vw); /* breakout */
-  margin-right: calc(50% - 50vw);
-  padding: 0;
-}
-
-/* Секции/CTA/FAQ: это ПОЛОСЫ, не карточки */
-.section-block,
-.cta-block,
-.faq-section{
-  margin: 0;
-  border: 0;
-  box-shadow: none;
-  border-radius: 0;
-  background: transparent;
-}
-
-/* Полосы секций: вертикальный ритм */
-.content > .section-block{ padding: 34px 0; }
-
-/* Чередование оттенков по порядку секций */
-.content > .section-block:nth-of-type(odd){ background: var(--bg1); }
-.content > .section-block:nth-of-type(even){ background: var(--bg2); }
-
-/* Если где-то используешь subtle — просто чуть другой оттенок */
-.content > .section-block.section-block--subtle{ background: var(--bg3); }
-
-/* Внутреннее выравнивание текста: max-width + естественные боковые отступы */
-.section-block > *{
-  max-width: var(--maxw);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--pad);
-  padding-right: var(--pad);
-}
-
-/* -----------------------------------------
-   Списки: нормальный отступ (НЕ margin-left)
-   ----------------------------------------- */
-.content ul{
-  margin: 10px 0 14px 0;
-  padding-left: 22px; /* стабильный indent под маркеры */
+/* Списки — чтобы НЕ прилипали и были предсказуемые */
+.content ul,
+.content ol{
+  margin: 10px 0 14px 0;        /* без левого марджина, он часто ломается темой */
+  padding-left: 1.2em;          /* indent нормальный */
+  list-style-position: outside;
 }
 .content li{
   margin: 0 0 8px 0;
@@ -296,12 +259,53 @@ html, body{
   color: rgba(154,193,255,.75);
 }
 
-/* -----------------------------------------
-   CTA: тоже полоса, чуть выделенная
-   ----------------------------------------- */
+/* ----------------------------------------------------------
+   ВАЖНО: контейнер контента НЕ ограничивает ширину полос
+   ---------------------------------------------------------- */
+.content{
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Общий стиль полос */
+.section-block,
+.cta-block,
+.faq-section{
+  /* растягиваем каждый блок на всю ширину экрана,
+     даже если родитель узкий/центрированный */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+
+  padding: 34px 0;
+}
+
+/* Чередование фонов у секций (полосы) */
+.content > .section-block:nth-of-type(odd){  background: var(--bg1); }
+.content > .section-block:nth-of-type(even){ background: var(--bg2); }
+
+/* Вариант “subtle” — отдельный оттенок */
+.content > .section-block.section-block--subtle{ background: #14161a; }
+
+/* Внутренний коридор — одинаково для всех элементов внутри секции */
+.section-block > *{
+  max-width: var(--maxw);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+}
+
+/* ----------------------------------------------------------
+   CTA: тоже полоса (не карточка), но с лёгким отличием
+   ---------------------------------------------------------- */
 .cta-block{
   background: var(--bg3);
-  padding: 34px 0;
   text-align: center;
 }
 .cta-block > *{
@@ -316,12 +320,11 @@ html, body{
   margin: 0 0 10px 0;
 }
 
-/* -----------------------------------------
-   FAQ: полоса + details без карточек
-   ----------------------------------------- */
+/* ----------------------------------------------------------
+   FAQ: полоса, а details — без карточек
+   ---------------------------------------------------------- */
 .faq-section{
   background: var(--bg1);
-  padding: 34px 0;
 }
 .faq-section > *{
   max-width: var(--maxw);
@@ -363,7 +366,9 @@ details.details-edu summary{
   padding: 10px 0;
 }
 
-/* Кнопка: простая, без “пластмассы” */
+/* ----------------------------------------------------------
+   Кнопки — не липнут, но и не “кирпич” на десктопе
+   ---------------------------------------------------------- */
 .details-button{
   display: inline-flex;
   align-items: center;
@@ -377,32 +382,36 @@ details.details-edu summary{
   border: 0;
   box-shadow: none;
   font-weight: 700;
-}
-.details-button:hover{ filter: brightness(1.05); }
 
-.details-button--ghost{
-  color: var(--text) !important;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.10);
+  margin-top: 12px;
 }
 
-/* Мобилка */
+/* В CTA на десктопе кнопка НЕ должна быть 100% */
+@media (min-width: 769px){
+  .details-button{ width: auto; }
+}
+
+/* На мобилке — 100% и спокойно */
 @media (max-width: 768px){
-  .section-block > *,
-  .cta-block > *,
-  .faq-section > *{
-    padding-left: var(--padM);
-    padding-right: var(--padM);
-  }
   .content, .content p, .content li{ font-size: 15.5px; }
-  .details-button{ width: 100%; }
+
+  .section-block,
+  .cta-block,
+  .faq-section{
+    padding: 28px 0;
+  }
+
+  .details-button{
+    width: 100%;
+  }
 }
 
-/* Footer — чтобы не “проваливался” */
+/* Footer — чтобы не “плыли” цвета */
 #footer, #footer p, #footer a{
   color: rgba(255,255,255,.72);
 }
 </style>
+
 
 
 
