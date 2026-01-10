@@ -434,7 +434,101 @@ details.details-edu summary {
 #footer, #footer p, #footer a { color: rgba(234,234,234,.72); }
 </style>
 
+<style>
+/* =========================================
+   PATCH: меньше "карточек", больше воздуха
+   CTA оставляем карточками, остальное упрощаем
+   ========================================= */
 
+/* 1) Общий контейнер контента — делаем менее "карточным" */
+.content {
+  background: rgba(255,255,255,.02);          /* вместо плотной панели */
+  border: 1px solid rgba(255,255,255,.04);     /* очень мягко */
+  box-shadow: none;                            /* убираем сильную тень */
+  padding: 22px 18px;                          /* меньше */
+  border-radius: 14px;
+}
+
+/* 2) Секции: больше не карточки */
+.section-block {
+  margin: 14px 0;                 /* было 26px */
+  padding: 10px 6px;              /* компактно */
+  background: transparent;         /* ВАЖНО: не карточка */
+  border: 0;
+  box-shadow: none;
+  position: static;
+}
+
+/* убираем декоративную линию сверху у секций */
+.section-block:before { display: none; }
+
+/* 3) Фон-секции как "полоса" — лёгкая смена оттенков */
+.section-block {
+  border-radius: 12px;
+}
+
+/* Чуть-чуть подложки (не карточка): */
+.section-block--subtle {
+  background: rgba(255,255,255,.02);
+  padding: 14px 14px;
+}
+
+/* 4) Автоматическая “шахматка” оттенков по секциям
+      (работает, если .section-block идёт потоком в .content) */
+.content > .section-block:nth-of-type(odd) {
+  background: rgba(255,255,255,.015);
+  padding: 14px 14px;
+}
+.content > .section-block:nth-of-type(even) {
+  background: rgba(255,255,255,.03);
+  padding: 14px 14px;
+}
+
+/* но subtle пусть остаётся subtle */
+.content > .section-block.section-block--subtle {
+  background: rgba(255,255,255,.02);
+}
+
+/* 5) Типографика и отступы — сжимаем */
+.content p { margin: 0 0 10px 0; }
+.content h2 { margin: 18px 0 10px 0; }
+.content h3 { margin: 14px 0 8px 0; }
+
+.content ul { margin: 10px 0 14px 18px; }
+.content li { margin: 0 0 8px 0; }
+
+/* 6) CTA — оставляем карточками, но тоже чуть компактнее */
+.cta-block {
+  margin: 18px 0;
+  padding: 18px 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 18px rgba(0,0,0,.28); /* мягче */
+}
+.cta-block p { margin: 0 0 10px 0; }
+
+/* 7) FAQ — тоже не делаем “плиткой плитку” */
+.faq-section {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 6px 6px 28px 6px;
+}
+.faq-section details {
+  box-shadow: none;
+  border: 1px solid rgba(255,255,255,.06);
+  background: rgba(255,255,255,.02);
+}
+
+/* 8) Мобилка — ещё плотнее */
+@media (max-width: 768px) {
+  .content { padding: 18px 14px; }
+  .content > .section-block:nth-of-type(odd),
+  .content > .section-block:nth-of-type(even),
+  .section-block--subtle {
+    padding: 12px 12px;
+  }
+  .cta-block { padding: 16px 14px; }
+}
+</style>
 
   
 </head>
