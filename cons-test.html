@@ -320,6 +320,75 @@
     line-height: 1.6;
 }
 </style>
+ <style>
+    /* Основной текст контента */
+    .content, .content p, .content li {
+      color: #eaeaea;
+      line-height: 1.8;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+    }
+    .wrapper h1 { color: #585858; }
+
+    /* Заголовки внутри блока контента (h2 и h3) */
+    .content h2 {
+      color: #ffffff;
+      margin-top: 1.5em;
+      margin-bottom: 0.7em;
+    }
+    .content h3 {
+      color: #dceeff;
+      margin-top: 1.2em;
+      margin-bottom: 0.5em;
+    }
+    .content strong { color: #f0f8ff; font-weight: bold; letter-spacing: 0.5px; }
+    .content ul { padding-left: 20px; margin-bottom: 1em; }
+
+    /* Футер */
+    #footer, #footer p, #footer a { color: #ccc; }
+
+    /* Шапка с иконкой и кнопкой */
+    .app-header {
+      display: flex; align-items: center; justify-content: center;
+      gap: 20px; margin: 40px auto; max-width: 720px; flex-wrap: wrap;
+    }
+    .app-header img { width: 85px; height: 85px; border-radius: 10px; }
+    .app-header h2 { margin: 0; font-size: 22px; color: #ffffff; }
+    .app-header .download-btn {
+      display: inline-block; margin-top: 12px; padding: 12px 16px;
+      background: #0085ff; color: #fff; border-radius: 10px;
+      text-decoration: none; font-weight: bold;
+    }
+    .app-header .download-btn img {
+      width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;
+    }
+
+    /* Галерея скриншотов */
+    .screenshots-wrapper { margin: 30px 0; display: flex; align-items: center; justify-content: center; }
+    .screenshots {
+      display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 10px 0;
+    }
+    .screenshots img {
+      height: 180px; border-radius: 12px; flex-shrink: 0; cursor: pointer;
+      scroll-snap-align: start; transition: transform 0.2s ease;
+    }
+    .screenshots img:hover { transform: scale(1.05); }
+
+    /* Lightbox */
+    .lightbox {
+      display: none; position: fixed; z-index: 9999; padding-top: 50px; left: 0; top: 0;
+      width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.9);
+    }
+    .lightbox-content { margin: auto; display: block; max-width: 90%; max-height: 80%; }
+    .close { position: absolute; top: 20px; right: 40px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; }
+
+    /* Видимые хлебные крошки */
+    .breadcrumbs { font-size: 14px; margin: 16px 0 8px; opacity: .85; }
+    .breadcrumbs a { color: #cfe3ff; text-decoration: underline; }
+    .byline { font-size: 14px; opacity: .85; margin: 8px 0 20px; }
+  </style>
+
+	
 </head>
 
 <body>
@@ -449,22 +518,21 @@ _tmr.push({id: "3725112", type: "pageView", start: (new Date()).getTime()});
 <!-- One: Vnutri Apps -->
 <section id="apps" class="wrapper">
   <div class="inner" style="margin:0 10px">
-    <header class="align-center">
-      <h2>Vnutri Apps — приложения и индивидуальная поддержка</h2>
-    </header>
 
-    <div class="inner">
-      <div class="app-header">
-        <img src="images/icons/ic_vnutriapps.png" alt="Vnutri Apps иконка">
-        <div>
-          <h2>Личные консультации<br>от Vnutri Apps</h2>
-            <p> </p>
-        <a href="https://t.me/vnu_apps" class="details-button" target="_blank">
-          Узнать о встречах<br>(отвечаю лично)
-        </a>
-        </div>
-      </div>
-    </div>
+<div class="app-header">
+             <img src="images/photo1.webp"
+         alt="Никита Митяев — разработчик психологических приложений для внутреннего роста, снижения тревоги и отказа от курения"
+         title="Никита Митяев — автор Vnutri Apps, психологические приложения для самопомощи"
+         class="author-photo">
+            <div>
+              <h2>Личные консультации<br>от Vnutri Apps</h2>
+              <a href="https://t.me/vnu_apps" target="_blank" rel="noopener" class="download-btn" aria-label="Скачать приложение Курил-бросил на RuStore">
+                <img src="images/icons/telegram.svg" alt="Телеграм Vnutri Apps — психологические консультации, поддержка, советы по внутреннему развитию" class="icon-svg"> Узнать о встречах<br>(отвечаю лично)
+              </a>
+            </div>
+          </div>
+	  
+
   </div>
 </section>
 
