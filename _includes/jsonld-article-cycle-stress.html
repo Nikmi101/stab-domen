@@ -47,7 +47,7 @@
 
   "datePublished": "{{ page.date | date_to_xmlschema }}"{% if page.dateUpdated %},
   "dateModified": "{{ page.dateUpdated | date_to_xmlschema }}"{% endif %},
-  "text": {{ page.content | strip_html | truncate: 1000 | strip_newlines | jsonify }},
+"text": {{ "Системный гид по тревоге и внутреннему равновесию. Этот цикл — не просто статьи о тревоге. Это маршрут: от непонимания и симптомов — к устойчивости, внутренней опоре и спокойствию. Здесь собраны материалы проекта «Нет тревоге: Путь к спокойствию» от Vnutri Apps — приложения, которое помогает снижать тревожность и возвращать внутреннюю опору. Это не «успокойтесь и дышите», а живая карта пути: от тревоги — к ясности, устойчивости и спокойствию." | jsonify }},
   "wordCount": {{ page.content | strip_html | strip_newlines | split: " " | size }}{% if page.tags and page.tags.size > 0 %},
   "keywords": [{% for tag in page.tags %}{{ tag | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %},
   "hasPart": [
@@ -55,11 +55,78 @@
   { "@type": "FAQPage", "@id": "{{ page.url | absolute_url }}#faq" }{% if page.faq and page.faq.size > 0 %},{% endif %}
 {% endif %}
 
-  {% comment %}
-  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/nikotinovaya-zavisimost/#webpage" },
-  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/pochemu-brosit-kurit-slozhno-bez-podderzhki/#webpage" },
-  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/psihologiya-zavisimosti/#webpage" }
-{% endcomment %}
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-voznikaet-trevoga/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/chem-trevoga-otlichaetsya-ot-strakha/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-emotsiya-ili-sostoyanie/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-voznikayet-bez-prichiny/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/kak-formiruetsya-trevozhnoe-sostoyanie/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/polezna-li-trevoga-i-zachem-ona-nuzhna/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-stala-normoy-v-sovremennom-mire/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-stress/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/kogda-trevoga-schitaetsya-normalnoy/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/kogda-trevoga-stanovitsya-problemoj/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/simptomy-trevogi-v-tele/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-uchashchyonnoe-serdtsebienie/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/kom-v-gorle-i-trevoga/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-nekhvatka-vozdukha/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-golovokruzhenie/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-napryazhenie-myshts/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-boli-bez-prichiny/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-problemy-s-zhkt/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-postoyannaya-ustalost/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-simptomy-trevogi-pugayut/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/chto-takoe-trevozhnye-mysli/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevozhnye-mysli-povtoryayutsya/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/navyazchivye-mysli-i-trevoga/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-nevozmozhno-perestat-dumat/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/katastrofizatsiya-mekhanizm-trevogi/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/ozhidanie-khudshogo-i-trevozhnost/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-kontrol/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-razum-ne-uspokaivaet-trevogu/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/zamknutyy-krug-trevozhnykh-mysley/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-logika-ne-pomogaet-pri-trevoge/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-po-utram-prichiny/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-usilivaetsya-vecherom/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-son-kak-spravitsya-s-nochnymi-myslyami/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-nochyu-i-probuzhdeniya/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-v-tishine/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-bez-vneshnikh-prichin/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-v-odinochestve/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-v-period-neopredelyonnosti/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-na-fone-ustalosti/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-prikhodit-na-pustom-meste/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/kak-trevoga-vliyaet-na-resheniya/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/izbeganie-kak-sledstvie-trevogi/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-suzhaet-zhizn/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-prokrastinatsiya/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-sotsialnoe-napryazhenie/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-otnosheniya/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-rabota/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-postoyannaya-proverka/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/kak-trevoga-upravlyaet-vyborom/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-meshaet-zhit/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevogu-nelzya-podavlyat/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/chto-usilivaet-trevogu/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/oshibki-pri-rabote-s-trevogoy/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/chto-deystvitelno-pomogaet-snizit-trevogu/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-uspokoysya-ne-rabotaet/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/rabota-s-trevogoy-cherez-telo/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/rabota-s-trevogoy-cherez-vnimanie/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/prinyatie-trevogi-chto-eto-znachit/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/kak-postepenno-snizit-trevozhnost/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/kogda-stoit-obrashchatsya-za-pomoshchyu/#webpage" },
+
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/chto-prikhodit-posle-trevogi/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/vnutrennyaya-opora-chto-eto/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-tishina-pugaet/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/vnimanie-kak-resurs/#webpage" },
+{ "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/emotsii/spokoystvie-kak-sposob-zhit/#webpage" }
+
   
   ]{% if page.sources and page.sources.size > 0 %},
   "citation": [{% for s in page.sources %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.about or page.tags %}
@@ -120,11 +187,78 @@
   }{% endif %},
   "hasPart": [
 
- {% comment %}
-  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/nikotinovaya-zavisimost/#webpage" },
-  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/pochemu-brosit-kurit-slozhno-bez-podderzhki/#webpage" },
-  { "@type": "WebPage", "@id": "https://vnutriapps.ru/blog/privychki/psihologiya-zavisimosti/#webpage" }
-{% endcomment %}
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-voznikaet-trevoga/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/chem-trevoga-otlichaetsya-ot-strakha/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-emotsiya-ili-sostoyanie/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-voznikayet-bez-prichiny/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/kak-formiruetsya-trevozhnoe-sostoyanie/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/polezna-li-trevoga-i-zachem-ona-nuzhna/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-stala-normoy-v-sovremennom-mire/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-stress/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/kogda-trevoga-schitaetsya-normalnoy/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/kogda-trevoga-stanovitsya-problemoj/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/simptomy-trevogi-v-tele/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-uchashchyonnoe-serdtsebienie/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/kom-v-gorle-i-trevoga/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-nekhvatka-vozdukha/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-golovokruzhenie/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-napryazhenie-myshts/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-boli-bez-prichiny/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-problemy-s-zhkt/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-postoyannaya-ustalost/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-simptomy-trevogi-pugayut/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/chto-takoe-trevozhnye-mysli/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevozhnye-mysli-povtoryayutsya/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/navyazchivye-mysli-i-trevoga/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-nevozmozhno-perestat-dumat/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/katastrofizatsiya-mekhanizm-trevogi/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/ozhidanie-khudshogo-i-trevozhnost/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-kontrol/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-razum-ne-uspokaivaet-trevogu/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/zamknutyy-krug-trevozhnykh-mysley/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-logika-ne-pomogaet-pri-trevoge/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-po-utram-prichiny/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-usilivaetsya-vecherom/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-son-kak-spravitsya-s-nochnymi-myslyami/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-nochyu-i-probuzhdeniya/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-v-tishine/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-bez-vneshnikh-prichin/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-v-odinochestve/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-v-period-neopredelyonnosti/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-na-fone-ustalosti/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-prikhodit-na-pustom-meste/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/kak-trevoga-vliyaet-na-resheniya/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/izbeganie-kak-sledstvie-trevogi/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-suzhaet-zhizn/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-prokrastinatsiya/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-sotsialnoe-napryazhenie/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-otnosheniya/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-rabota/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/trevoga-i-postoyannaya-proverka/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/kak-trevoga-upravlyaet-vyborom/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevoga-meshaet-zhit/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-trevogu-nelzya-podavlyat/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/chto-usilivaet-trevogu/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/oshibki-pri-rabote-s-trevogoy/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/chto-deystvitelno-pomogaet-snizit-trevogu/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-uspokoysya-ne-rabotaet/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/rabota-s-trevogoy-cherez-telo/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/rabota-s-trevogoy-cherez-vnimanie/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/prinyatie-trevogi-chto-eto-znachit/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/kak-postepenno-snizit-trevozhnost/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/kogda-stoit-obrashchatsya-za-pomoshchyu/#article" },
+
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/chto-prikhodit-posle-trevogi/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/vnutrennyaya-opora-chto-eto/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/pochemu-tishina-pugaet/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/vnimanie-kak-resurs/#article" },
+{ "@type": "Article", "@id": "https://vnutriapps.ru/blog/emotsii/spokoystvie-kak-sposob-zhit/#article" }
+
   
   ]{% if page.sources_cycle and page.sources_cycle.size > 0 %},
   "citation": [{% for s in page.sources_cycle %}{{ s | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.about_cycle or page.tags_cycle %}
