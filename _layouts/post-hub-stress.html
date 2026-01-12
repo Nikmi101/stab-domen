@@ -1,0 +1,75 @@
+---
+layout: cycle-stress-hub
+---
+<style>
+.vnutri-top-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 2px 0 20px 0;
+}
+
+.vnutri-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+  border-radius: 8px;
+
+  /* почти незаметный фон */
+  background: rgba(0, 0, 0, 0.012);
+
+  /* деликатная, неяркая рамка */
+  border: 1px solid rgba(0, 0, 0, 0.11);
+
+  /* мягкий, но читаемый текст */
+  color: #7d7d7d !important;
+
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.vnutri-badge:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.18);
+}
+</style>
+
+
+
+{% comment %}
+  Блок CTA
+
+{% capture top_cta %}
+<div class="vnutri-top-cta">
+  <a href="https://vnutriapps.ru/brosit-kurit" class="vnutri-badge">🚭 «Курил-бросил» — приложение, чтобы бросить курить</a>
+  <a href="https://vnutriapps.ru/consultations" class="vnutri-badge">💬 Личная консультация по отказу от курения</a>
+</div>
+{% endcapture %}
+{% endcomment %}
+
+{% capture H1CLOSE %}</h1>{% endcapture %}
+{% assign _html = content %}
+
+{% if page.toc != false %}
+  {% assign _parts = _html | split: H1CLOSE %}
+  {% if _parts.size > 1 %}
+    {{ top_cta }}
+    {{ _parts[0] }}{{ H1CLOSE }}
+
+    {% include toc.html html=_html h_min=2 h_max=2 title="Содержание" class="toc" ordered="false" %}
+
+    {{ _parts | slice: 1, _parts.size | join: H1CLOSE }}
+  {% else %}
+    {{ top_cta }}
+    {% include toc.html html=_html h_min=2 h_max=2 title="Содержание" class="toc" ordered="false" %}
+    {{ _html }}
+  {% endif %}
+{% else %}
+  {{ top_cta }}
+  {{ _html }}
+{% endif %}
