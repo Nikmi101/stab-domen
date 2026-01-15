@@ -103,23 +103,55 @@
 }
 </style>
 
+{% assign cta_type = include.type | default: "unknown" %}
+
+{% capture cta_label %}
+{% case cta_type %}
+  {% when "iqos" %}Если тяжело отказаться от стиков — есть решения:
+  {% when "nikotin-zavisimost" %}Если тревога ощущается телом (сердце, дыхание, напряжение):
+  {% else %}Если не получается бросить курить — решения от Vnutri Apps:
+{% endcase %}
+{% endcapture %}
+
+{% capture app_label %}
+{% case cta_type %}
+  {% when "iqos" %}🚭 Приложение: “трек + поддержка”
+  {% when "nikotin-zavisimost" %}Если тревога ощущается телом (сердце, дыхание, напряжение):
+  {% else %}🚭 Приложение «Курил-бросил»
+{% endcase %}
+{% endcapture %}
+
+{% capture consult_label %}
+{% case cta_type %}
+  {% when "iqos" %}💬 Личная поддержка - настроиться и не сорваться
+  {% when "nikotin-zavisimost" %}Если тревога ощущается телом (сердце, дыхание, напряжение):
+  {% else %}💬 Vnutri.One — личная поддержка
+{% endcase %}
+{% endcapture %}
+
+
 <div class="vnutri-top-cta" markdown="0">
 
-  <span class="vnutri-top-cta-label">
-    Если не получается бросить курить — практические решения от Vnutri Apps:
+ <span class="vnutri-top-cta-label">
+    {{ cta_label | strip }}
   </span>
 
   <a href="https://vnutriapps.ru/brosit-kurit"
      class="vnutri-badge app"
      onclick="try{ if(typeof ym==='function'){ ym(103903501,'reachGoal','cta_smoking_app'); } }catch(e){} return true;">
-    🚭 Приложение «Курил-бросил»
+    {{ app_label | strip }}
   </a>
 
   <a href="https://vnutriapps.ru/consultations"
      class="vnutri-badge one"
      onclick="try{ if(typeof ym==='function'){ ym(103903501,'reachGoal','cta_smoking_consult'); } }catch(e){} return true;">
-    💬 Vnutri.One — личная поддержка
+    {{ consult_label | strip }}
   </a>
+
+
+</div>
+
+
 <!-- 
   <a href="https://vnutriapps.ru/groups"
      class="vnutri-badge group"
@@ -127,4 +159,3 @@
     👥 Vnutri.Groups — группы (5 шагов)
   </a>
 -->
-</div>
