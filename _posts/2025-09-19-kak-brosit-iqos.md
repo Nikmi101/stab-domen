@@ -102,7 +102,7 @@ IQOS и glo формируют особенно прочную цепочку: *
 
 ---
 
-{% include cta-kurilbrosil.html %}
+{% include cta-kurilbrosil.html type="iqos" %}
 
 ---
 
@@ -380,6 +380,7 @@ IQOS и glo формируют особенно прочную цепочку: *
 - Национальный институт здравоохранения Великобритании (NHS): *Quitting Heated Tobacco Devices (IQOS, Glo)* — [nhs.uk](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
