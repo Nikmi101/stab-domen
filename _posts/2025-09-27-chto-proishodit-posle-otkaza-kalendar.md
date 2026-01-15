@@ -57,7 +57,7 @@ isPartOfWeb:
 
 ---
 
-{% include cta-kurilbrosil.html %}
+{% include cta-kurilbrosil.html type="kalendar" %}
 
 ---
 
@@ -252,8 +252,11 @@ isPartOfWeb:
 
 ---
 
-## По теме
+- [🧭 Вся „Энциклопедия отказа от курения“ от проекта Курил-бросил — Vnutri Apps](/blog/encyclopedia-brosit-kurit/)
 
+---
+
+## Еще статьи по теме
 - [Первые 72 часа без сигарет](/blog/privychki/pervye-72-chasa-bez-sigaret/)  
 - [Первая неделя и 14 дней: чек-поинты и ошибки](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
 - [Как очистить лёгкие после курения: что работает](/blog/privychki/ochistit-legkie-posle-kureniya/)
@@ -261,11 +264,6 @@ isPartOfWeb:
 - [Дыхание вместо затяжки: микропрактики на 1–3 минуты](/blog/privychki/dyhanie-vmesto-zatyazhki/) 
 - [Алкоголь после отказа: ловушки и как их обойти](/blog/privychki/alkogol-posle-otkaza-ot-sigaret/)
 
-<!--
- 
-- [Когда возвращается выносливость и дыханка](/blog/privychki/vynoslivost-i-dyhanie-taymlayn/)  
-- [Сон и отказ от никотина](/blog/privychki/son-posle-otkaza/) 
--->
 ---
 
 ## Заключение
@@ -290,6 +288,7 @@ isPartOfWeb:
 
 ### **Какие признаки — повод обратиться к врачу?**  
 Высокая температура, боль в груди, выраженная одышка в покое, обмороки, длительное ухудшение сна/самочувствия, обострения хронических заболеваний.
+
 
 
 
