@@ -348,6 +348,10 @@ isPartOfWeb:
 
 ---
 
+- [🧭 Вся „Энциклопедия отказа от курения“ от проекта Курил-бросил — Vnutri Apps](/blog/encyclopedia-brosit-kurit/)  
+
+---
+
 ## Полезные материалы по теме: отказ от сигарет, алкоголь и самоконтроль
 
 - [Кофе и никотин: сладкая парочка, которую стоит разлучить](/blog/privychki/kofe-i-nikotin-razvesti-privychki/)  
@@ -372,6 +376,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Alcohol and relapse risk during smoking cessation* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
