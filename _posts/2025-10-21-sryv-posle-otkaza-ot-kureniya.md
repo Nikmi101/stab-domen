@@ -91,7 +91,7 @@ sources:
 
 ---
 
-{% include cta-kurilbrosil.html %}
+{% include cta-kurilbrosil.html type="sryv" %}
 
 ---
 
@@ -358,8 +358,10 @@ sources:
 
 ---
 
-🧭 **Читайте также по теме отказа от курения:**
-- [Энциклопедия отказа от курения](/blog/encyclopedia-brosit-kurit/)
+- [🧭 Вся Энциклопедия отказа от курения от проекта Курил-бросил — Vnutri Apps](/blog/encyclopedia-brosit-kurit/)  
+
+
+**Читайте также по теме отказа от курения:**
 
 - [Почему привычки так трудно менять: психология зависимости](/blog/privychki/psihologiya-zavisimosti/)
 - [10 привычек, мешающих бросить курить](/blog/privychki/10-privychek-kotorye-meshayut-otkazatsya-ot-sigaret/)
@@ -411,6 +413,7 @@ sources:
 - Минздрав РФ — *Клинические рекомендации по лечению никотиновой зависимости и профилактике рецидивов* — [minzdrav.gov.ru](https://minzdrav.gov.ru)
 
 ---
+
 
 
 
