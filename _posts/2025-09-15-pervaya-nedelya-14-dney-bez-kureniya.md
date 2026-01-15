@@ -97,7 +97,7 @@ isPartOfWeb:
 
 ---
 
-{% include cta-kurilbrosil.html %}
+{% include cta-kurilbrosil.html type="kalendar" %}
 
 ---
 
@@ -269,7 +269,11 @@ width="1200" height="675" %}
 
 ---
 
-## По теме (внутренняя перелинковка)
+- [🧭 Вся „Энциклопедия отказа от курения“ от проекта Курил-бросил — Vnutri Apps](/blog/encyclopedia-brosit-kurit/)  
+
+---
+
+## Связанные статьи по теме отказа от курения
 
 - [Первые 72 часа без сигарет](/blog/privychki/pervye-72-chasa-bez-sigaret/)  
 - [Как работает синдром отмены: что ждёт после отказа](/blog/privychki/sindrom-otmeny-nikotina/)
@@ -335,6 +339,7 @@ width="1200" height="675" %}
 - Национальный институт здравоохранения Великобритании (NHS): *What happens when you quit — first weeks timeline and coping strategies* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
