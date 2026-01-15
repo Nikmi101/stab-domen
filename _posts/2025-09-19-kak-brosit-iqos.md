@@ -356,7 +356,7 @@ IQOS и glo формируют особенно прочную цепочку: *
 
 ## Еще статьи по теме отказа от курения
 
-- [Энциклопедия отказа от курения от проекта Курил-бросил | Vnutri Apps](/blog/encyclopedia-brosit-kurit/)
+- [Энциклопедия отказа от курения от проекта Курил-бросил — Vnutri Apps](/blog/encyclopedia-brosit-kurit/)
   
 - [Как работает синдром отмены: что ждёт после отказа](/blog/privychki/sindrom-otmeny-nikotina/)  
 - [Никотиновая зависимость: мифы и правда](/blog/privychki/nikotinovaya-zavisimost/)
@@ -380,6 +380,7 @@ IQOS и glo формируют особенно прочную цепочку: *
 - Национальный институт здравоохранения Великобритании (NHS): *Quitting Heated Tobacco Devices (IQOS, Glo)* — [nhs.uk](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
