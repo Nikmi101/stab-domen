@@ -87,7 +87,7 @@ isPartOfWeb:
 
 ---
 
-{% include cta-kurilbrosil.html %}
+{% include cta-kurilbrosil.html type="kalendar" %}
 
 ---
 
@@ -327,6 +327,10 @@ isPartOfWeb:
 
 ---
 
+- [🧭 Вся Энциклопедия отказа от курения от проекта Курил-бросил — Vnutri Apps](/blog/encyclopedia-brosit-kurit/)
+
+---
+
 ## Другие статьи по теме отказа от курения
 
 
@@ -351,6 +355,7 @@ isPartOfWeb:
 - Cochrane Library: [Neuroscience of tobacco addiction and cessation](https://www.cochranelibrary.com)
 
 ---
+
 
 
 
