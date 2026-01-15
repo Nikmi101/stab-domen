@@ -98,7 +98,7 @@ isPartOfWeb:
 
 ---
 
-{% include cta-kurilbrosil.html %}
+{% include cta-kurilbrosil.html type="kalendar" %}
 
 ---
 
@@ -355,6 +355,10 @@ isPartOfWeb:
 
 ---
 
+- [🧭 Вся „Энциклопедия отказа от курения“ от проекта Курил-бросил — Vnutri Apps](/blog/encyclopedia-brosit-kurit/)  
+
+---
+
 ## Еще статьи по теме отказа от курения:
 
 - [Как работает синдром отмены: что ждёт после отказа](/blog/privychki/sindrom-otmeny-nikotina/)
@@ -405,6 +409,7 @@ isPartOfWeb:
 - Национальный институт здравоохранения Великобритании (NHS): *Stop smoking — withdrawal symptoms and how to cope* — [nhs.uk/live-well/quit-smoking](https://www.nhs.uk/live-well/quit-smoking/)
 
 ---
+
 
 
 
