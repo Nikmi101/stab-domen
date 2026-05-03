@@ -421,56 +421,74 @@
 </footer>
 
 <script>
-function setService(serviceName) {
-  const formCard = document.getElementById('form-card');
-
-  // показать форму
-  formCard.style.display = 'block';
-  formCard.classList.add('show');
-
-  // записать услугу
-  document.getElementById('service-input').value = serviceName;
-
-  // текст
-  document.getElementById('form-title').innerText =
-    "Вы выбрали: " + serviceName;
-
-  // скролл
-  formCard.scrollIntoView({
-    behavior: 'smooth',
-    block: 'center'
-  });
-}
-
-// отправка формы (СТАБИЛЬНАЯ ВЕРСИЯ ДЛЯ МОБИЛОК)
 window.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("main-form");
+  const button = form.querySelector("button");
+
+  const formCard = document.getElementById("form-card");
+  const success = document.getElementById("form-success");
+  const error = document.getElementById("form-error");
+
+  let isSending = false;
 
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    document.getElementById("form-error").style.display = "none";
+    // защита от повторных отправок
+    if (isSending) return;
+    isSending = true;
+
+    // UI: блокируем кнопку
+    button.disabled = true;
+    button.innerText = "Отправка...";
+
+    // чистим старые статусы
+    error.style.display = "none";
 
     const data = new FormData(form);
 
     try {
       const res = await fetch("https://formspree.io/f/xdabarrg", {
         method: "POST",
-        body: data
+        body: data,
+        headers: {
+          "Accept": "application/json"
+        }
       });
 
-      if (res.status >= 200 && res.status < 300) {
-        document.getElementById("form-card").style.display = "none";
-        document.getElementById("form-success").style.display = "block";
+      if (res.ok) {
+        // скрываем форму правильно (без display hack)
+        formCard.classList.remove("show");
+
+        // показываем успех
+        success.style.display = "block";
+
+        // очищаем форму
         form.reset();
+
+        // убираем возможность повторного спама
+        button.innerText = "Отправлено";
       } else {
-        throw new Error("bad response");
+        throw new Error("Bad response from server");
       }
 
     } catch (err) {
       console.log(err);
-      document.getElementById("form-error").style.display = "block";
+      error.style.display = "block";
+
+      // вернуть кнопку
+      button.disabled = false;
+      button.innerText = "Отправить заявку";
+
+      isSending = false;
+      return;
     }
+
+    // финальный unlock (после успеха не даём спамить)
+    setTimeout(() => {
+      button.disabled = false;
+      isSending = false;
+    }, 5000);
   });
 });
 </script>
