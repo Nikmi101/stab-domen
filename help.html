@@ -167,10 +167,10 @@
   transform: translateY(-2px);
 }
 
-   #form-card {
+#form-card {
   max-width: 720px;
- margin: 0 auto;
-      padding: 24px 16px 40px;
+  margin: 0 auto;
+  margin-top: 12px;
 
   opacity: 0;
   transform: translateY(12px);
@@ -354,12 +354,12 @@
       });
     });
   </script>
-<!-- КАРТОЧКА ФОРМЫ (СКРЫТА ПО УМОЛЧАНИЮ) -->
-<div class="card" id="form-card">
+<!-- КАРТОЧКА ФОРМЫ -->
+<div class="card" id="form-card" style="display:none;">
 
   <div class="card-header">
     <div class="card-title">Оставить заявку</div>
-    <div class="card-price">это быстро</div>
+    <div class="card-price">быстро</div>
   </div>
 
   <div class="card-content" style="display:block;">
@@ -424,47 +424,51 @@
 function setService(serviceName) {
   const formCard = document.getElementById('form-card');
 
-  // показать форму (через класс, без display)
+  // показать форму
+  formCard.style.display = 'block';
   formCard.classList.add('show');
 
-  // записать выбранную услугу
+  // записать услугу
   document.getElementById('service-input').value = serviceName;
 
-  // обновить текст внутри формы
+  // текст
   document.getElementById('form-title').innerText =
     "Вы выбрали: " + serviceName;
 
-  // плавный скролл
+  // скролл
   formCard.scrollIntoView({
     behavior: 'smooth',
     block: 'center'
   });
 }
 
-// отправка формы
+// отправка формы (СТАБИЛЬНАЯ ВЕРСИЯ ДЛЯ МОБИЛОК)
 window.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("main-form");
 
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
 
+    document.getElementById("form-error").style.display = "none";
+
     const data = new FormData(form);
 
     try {
       const res = await fetch("https://formspree.io/f/xdabarrg", {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" }
+        body: data
       });
 
-      if (res.ok) {
+      if (res.status >= 200 && res.status < 300) {
         document.getElementById("form-card").style.display = "none";
         document.getElementById("form-success").style.display = "block";
+        form.reset();
       } else {
-        document.getElementById("form-error").style.display = "block";
+        throw new Error("bad response");
       }
 
     } catch (err) {
+      console.log(err);
       document.getElementById("form-error").style.display = "block";
     }
   });
