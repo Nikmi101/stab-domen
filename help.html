@@ -158,6 +158,22 @@
   border-color: #4c8cff;
   transform: translateY(-2px);
 }
+
+    #form-card {
+  margin-top: 8px;
+}
+
+#main-form input,
+#main-form textarea {
+  outline: none;
+  transition: 0.2s;
+}
+
+#main-form input:focus,
+#main-form textarea:focus {
+  border-color: #4c8cff;
+  box-shadow: 0 0 0 2px rgba(76,140,255,0.15);
+}
   </style>
 
 
@@ -311,32 +327,48 @@
       });
     });
   </script>
-<!-- ФОРМА -->
-<form id="main-form" style="margin-top:20px; display:flex; flex-direction:column; gap:8px;">
+<!-- КАРТОЧКА ФОРМЫ -->
+<div class="card" id="form-card">
 
-  <input type="hidden" name="service" id="service-input" value="Письменный разбор">
+  <div class="card-header">
+    <div class="card-title">Оставить заявку</div>
+    <div class="card-price">быстро</div>
+  </div>
 
-  <input 
-    type="email" 
-    name="email" 
-    placeholder="Ваш email" 
-    required
-    style="padding:10px; border-radius:8px; border:none;"
-  >
+  <div class="card-content" style="display:block;">
 
-  <textarea 
-    name="message" 
-    placeholder="Коротко опишите ситуацию"
-    required
-    style="padding:10px; border-radius:8px; border:none; min-height:80px;"
-  ></textarea>
+    <div id="form-title" style="font-size:13px; color:#9aa1b2; margin-bottom:10px;">
+      Выберите услугу выше
+    </div>
 
-  <button type="submit"
-    style="padding:12px; border:none; border-radius:8px; background:#4c8cff; color:#fff; font-weight:600;">
-    Отправить заявку
-  </button>
+    <form id="main-form" style="display:flex; flex-direction:column; gap:10px;">
 
-</form>
+      <input type="hidden" name="service" id="service-input" value="Письменный разбор">
+
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Ваш email" 
+        required
+        style="padding:12px; border-radius:10px; border:1px solid #2a2f3d; background:#11131a; color:#fff;"
+      >
+
+      <textarea 
+        name="message" 
+        placeholder="Коротко опишите ситуацию"
+        required
+        style="padding:12px; border-radius:10px; border:1px solid #2a2f3d; background:#11131a; color:#fff; min-height:90px;"
+      ></textarea>
+
+      <button type="submit"
+        style="padding:12px; border:none; border-radius:10px; background:#4c8cff; color:#fff; font-weight:600;">
+        Отправить заявку
+      </button>
+
+    </form>
+
+  </div>
+</div>
 
 <!-- СТАТУСЫ -->
 <div id="form-success" style="display:none; margin-top:10px; color:#4caf50;">
@@ -347,13 +379,18 @@
   Ошибка отправки. Попробуйте ещё раз.
 </div>
 
-  <script>
+<script>
 function setService(serviceName) {
   document.getElementById('service-input').value = serviceName;
-  document.getElementById('main-form').scrollIntoView({ behavior: 'smooth' });
+
+  document.getElementById('form-title').innerText =
+    "Вы выбрали: " + serviceName;
+
+  document.getElementById('form-card')
+    .scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
-// Formspree AJAX
+// Formspree отправка
 window.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("main-form");
 
@@ -370,7 +407,7 @@ window.addEventListener("DOMContentLoaded", function () {
       });
 
       if (res.ok) {
-        form.style.display = "none";
+        document.getElementById("form-card").style.display = "none";
         document.getElementById("form-success").style.display = "block";
       } else {
         document.getElementById("form-error").style.display = "block";
