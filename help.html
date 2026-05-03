@@ -175,6 +175,17 @@
   border-color: #4c8cff;
   box-shadow: 0 0 0 2px rgba(76,140,255,0.15);
 }
+
+    #form-card {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.25s ease;
+}
+
+#form-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
   </style>
 
 
@@ -328,8 +339,8 @@
       });
     });
   </script>
-<!-- КАРТОЧКА ФОРМЫ -->
-<div class="card" id="form-card">
+<!-- КАРТОЧКА ФОРМЫ (СКРЫТА ПО УМОЛЧАНИЮ) -->
+<div class="card" id="form-card" style="display:none;">
 
   <div class="card-header">
     <div class="card-title">Оставить заявку</div>
@@ -344,7 +355,7 @@
 
     <form id="main-form" style="display:flex; flex-direction:column; gap:10px;">
 
-      <input type="hidden" name="service" id="service-input" value="Письменный разбор">
+      <input type="hidden" name="service" id="service-input" value="">
 
       <input 
         type="email" 
@@ -382,13 +393,20 @@
 
 <script>
 function setService(serviceName) {
+  const formCard = document.getElementById('form-card');
+
+  // показываем форму
+  formCard.style.display = 'block';
+formCard.classList.add('show');
+  // обновляем услугу
   document.getElementById('service-input').value = serviceName;
 
+  // обновляем текст
   document.getElementById('form-title').innerText =
     "Вы выбрали: " + serviceName;
 
-  document.getElementById('form-card')
-    .scrollIntoView({ behavior: 'smooth', block: 'center' });
+  // плавный скролл
+  formCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 // Formspree отправка
