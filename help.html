@@ -159,6 +159,8 @@
   transform: translateY(-2px);
 }
   </style>
+
+
 </head>
 
 <body>
@@ -204,8 +206,10 @@
           <div class="highlight">
             Спокойный разбор с конкретными выводами и шагами
           </div>
-
-          <a href="#" class="cta">Получить разбор — 890 ₽</a>
+<a href="#main-form" class="cta" onclick="setService('Письменный разбор — 890 ₽')">
+  Получить разбор — 890 ₽
+</a>
+         
           <div class="meta">Ответ в течение 24 часов • Без созвонов</div>
         </div>
       </div>
@@ -304,6 +308,78 @@
       });
     });
   </script>
+<!-- ФОРМА -->
+<form id="main-form" style="margin-top:20px; display:flex; flex-direction:column; gap:8px;">
 
+  <input type="hidden" name="service" id="service-input" value="Письменный разбор">
+
+  <input 
+    type="email" 
+    name="email" 
+    placeholder="Ваш email" 
+    required
+    style="padding:10px; border-radius:8px; border:none;"
+  >
+
+  <textarea 
+    name="message" 
+    placeholder="Коротко опишите ситуацию"
+    required
+    style="padding:10px; border-radius:8px; border:none; min-height:80px;"
+  ></textarea>
+
+  <button type="submit"
+    style="padding:12px; border:none; border-radius:8px; background:#4c8cff; color:#fff; font-weight:600;">
+    Отправить заявку
+  </button>
+
+</form>
+
+<!-- СТАТУСЫ -->
+<div id="form-success" style="display:none; margin-top:10px; color:#4caf50;">
+  Заявка отправлена. Ответ придёт в течение 24 часов.
+</div>
+
+<div id="form-error" style="display:none; margin-top:10px; color:#ff6b6b;">
+  Ошибка отправки. Попробуйте ещё раз.
+</div>
+
+  <script>
+function setService(serviceName) {
+  document.getElementById('service-input').value = serviceName;
+  document.getElementById('main-form').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Formspree AJAX
+window.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("main-form");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch("https://formspree.io/f/xdabarrg", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" }
+      });
+
+      if (res.ok) {
+        form.style.display = "none";
+        document.getElementById("form-success").style.display = "block";
+      } else {
+        document.getElementById("form-error").style.display = "block";
+      }
+
+    } catch (err) {
+      document.getElementById("form-error").style.display = "block";
+    }
+  });
+});
+</script>
+
+  
 </body>
 </html>
