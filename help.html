@@ -107,6 +107,57 @@
       font-size: 13px;
       color: #9aa1b2;
     }
+
+    .card {
+  position: relative;
+  background: #171923;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid #262a36;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+/* цветная линия слева */
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+}
+
+/* разные цвета */
+.card:nth-child(1)::before { background: #4c8cff; } /* синий */
+.card:nth-child(2)::before { background: #7b61ff; } /* фиолет */
+.card:nth-child(3)::before { background: #00c2a8; } /* бирюза */
+.card:nth-child(4)::before { background: #ff7a5c; } /* оранжевый */
+
+/* активная карточка чуть ярче */
+.card.active {
+  background: #1c2030;
+  border-color: #3a4060;
+}
+
+    .card-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+    .card:hover {
+  border-color: #4c8cff;
+  transform: translateY(-2px);
+}
   </style>
 </head>
 
@@ -124,10 +175,16 @@
 
       <!-- 1 -->
       <div class="card active">
-        <div class="card-header">
-          <div class="card-title">Почему не получается бросить</div>
-          <div class="card-price">890 ₽</div>
-        </div>
+
+        
+      
+<div class="card-header">
+  <div class="card-left">
+    <img src="/images/icons/ic_nettrevoge.webp" class="card-icon" />
+    <div class="card-title">Почему не получается бросить</div>
+  </div>
+  <div class="card-price">890 ₽</div>
+</div>
         <div class="card-content">
           Вы уже пытались.<br/>
           Но не получается или происходит возврат к курению.
