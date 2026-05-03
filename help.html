@@ -175,7 +175,7 @@
   opacity: 0;
   transform: translateY(12px);
 
-  height: 0;
+  max-height: 0;
   overflow: hidden;
 
   padding: 0;
@@ -188,7 +188,7 @@
   opacity: 1;
   transform: translateY(0);
 
-  height: auto;
+  max-height: 600px;
 
   padding: 16px;
   border: 1px solid #262a36;
@@ -355,7 +355,7 @@
     });
   </script>
 <!-- КАРТОЧКА ФОРМЫ -->
-<div class="card" id="form-card" style="display:none;">
+<div class="card" id="form-card">
 
   <div class="card-header">
     <div class="card-title">Оставить заявку</div>
@@ -421,6 +421,23 @@
 </footer>
 
 <script>
+function setService(serviceName) {
+  const formCard = document.getElementById('form-card');
+
+  formCard.style.display = "block";
+  formCard.classList.add('show');
+
+  document.getElementById('service-input').value = serviceName;
+
+  document.getElementById('form-title').innerText =
+    "Вы выбрали: " + serviceName;
+
+  formCard.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+}
+
 window.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("main-form");
   const button = form.querySelector("button");
@@ -434,15 +451,12 @@ window.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    // защита от повторных отправок
     if (isSending) return;
     isSending = true;
 
-    // UI: блокируем кнопку
     button.disabled = true;
     button.innerText = "Отправка...";
 
-    // чистим старые статусы
     error.style.display = "none";
 
     const data = new FormData(form);
@@ -457,26 +471,24 @@ window.addEventListener("DOMContentLoaded", function () {
       });
 
       if (res.ok) {
-        // скрываем форму правильно (без display hack)
         formCard.classList.remove("show");
 
-        // показываем успех
-        success.style.display = "block";
+        setTimeout(() => {
+          formCard.style.display = "none";
+        }, 250);
 
-        // очищаем форму
+        success.style.display = "block";
         form.reset();
 
-        // убираем возможность повторного спама
         button.innerText = "Отправлено";
       } else {
-        throw new Error("Bad response from server");
+        throw new Error("bad response");
       }
 
     } catch (err) {
       console.log(err);
       error.style.display = "block";
 
-      // вернуть кнопку
       button.disabled = false;
       button.innerText = "Отправить заявку";
 
@@ -484,7 +496,6 @@ window.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // финальный unlock (после успеха не даём спамить)
     setTimeout(() => {
       button.disabled = false;
       isSending = false;
