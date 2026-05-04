@@ -1,0 +1,115 @@
+<script>
+(function () {
+
+  // ====== ГЛАВНЫЙ ПЕРЕКЛЮЧАТЕЛЬ ======
+  const LIVE_ENABLED = false; // ← МЕНЯЕШЬ ТУТ (true / false)
+
+  if (!LIVE_ENABLED) return;
+
+  const LIVE_URL = "https://live.vkvideo.ru/kurilbrosil";
+
+  const SHOW_DELAY = 5000;
+  const SHOW_ON_SCROLL = true;
+  const REPEAT_HOURS = 1;
+
+  const lastClosed = localStorage.getItem('vnutri_live_closed');
+  if (lastClosed && (Date.now() - lastClosed < REPEAT_HOURS * 60 * 60 * 1000)) {
+    return;
+  }
+
+  function createPopup() {
+    const popup = document.createElement('div');
+
+    popup.innerHTML = `
+      <div id="vnutri-live-popup" style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 340px;
+        max-width: calc(100% - 20px);
+        background: linear-gradient(135deg, #111, #1a1a1a);
+        color: #fff;
+        padding: 18px;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        z-index: 9999;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: all 0.35s ease;
+      ">
+
+        <div style="display:flex; align-items:center; gap:8px; font-size:13px; opacity:0.75; margin-bottom:8px;">
+          <span style="color:#ff3b30;">●</span>
+          Vnutri Apps • сейчас в эфире
+        </div>
+
+        <div style="font-size:17px; font-weight:600; line-height:1.3; margin-bottom:12px;">
+          Напиши в чат — разберем твою ситуацию
+        </div>
+
+        <div style="display:flex; gap:10px;">
+          <a href="${LIVE_URL}" target="_blank"
+            style="
+              flex:1;
+              text-align:center;
+              background:#4CAF50;
+              color:#fff;
+              padding:10px;
+              border-radius:10px;
+              text-decoration:none;
+              font-weight:600;
+            ">
+            Перейти →
+          </a>
+
+          <button id="vnutri-close"
+            style="
+              background:#2a2a2a;
+              color:#aaa;
+              border:none;
+              padding:10px 12px;
+              border-radius:10px;
+              cursor:pointer;
+            ">
+            ✕
+          </button>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(popup);
+
+    const box = document.getElementById('vnutri-live-popup');
+
+    requestAnimationFrame(() => {
+      box.style.transform = "translateY(0)";
+      box.style.opacity = "1";
+    });
+
+    document.getElementById('vnutri-close').onclick = () => {
+      box.style.opacity = "0";
+      box.style.transform = "translateY(20px)";
+      setTimeout(() => popup.remove(), 300);
+      localStorage.setItem('vnutri_live_closed', Date.now());
+    };
+  }
+
+  function init() {
+    setTimeout(createPopup, SHOW_DELAY);
+  }
+
+  if (SHOW_ON_SCROLL) {
+    let triggered = false;
+    window.addEventListener('scroll', () => {
+      if (!triggered) {
+        triggered = true;
+        init();
+      }
+    });
+  } else {
+    init();
+  }
+
+})();
+</script>
