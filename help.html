@@ -218,7 +218,7 @@
 
         
       
-<div class="card-header">
+<div class="card" id="plan">
   <div class="card-left">
     <div class="card-title">🧩 Почему не получается бросить </br> + личный план отказа</div>
   </div>
@@ -251,7 +251,7 @@
       </div>
 
       <!-- 2 -->
-      <div class="card">
+ <div class="card" id="talk">
         <div class="card-header">
             <div class="card-left">
     <div class="card-title">🎤 Разобрать ситуацию в разговоре </br> + личный план отказа</div>
@@ -282,8 +282,12 @@
         </div>
       </div>
 
+
+
+
+      
       <!-- 3 -->
-      <div class="card">
+   <div class="card" id="support">
           <div class="card-header">
             <div class="card-left">
 
@@ -314,7 +318,8 @@
       </div>
 
 
-<div class="card">
+<div class="card" id="motivation">
+
   <div class="card-header">
     <div class="card-left">
       <div class="card-title">
@@ -371,9 +376,10 @@
   </div>
 </div>
 
+
       
       <!-- 4 -->
-      <div class="card">
+    <div class="card" id="deep">
          <div class="card-header">
             <div class="card-left">
     <div class="card-title">🧠 Разобраться глубже, чем «просто бросить»</div>
@@ -401,16 +407,53 @@
     </div>
   </div>
 
-  <script>
-    const cards = document.querySelectorAll('.card');
+<script>
+const cards = document.querySelectorAll('.card');
 
-    cards.forEach(card => {
-      card.querySelector('.card-header').addEventListener('click', () => {
-        cards.forEach(c => c.classList.remove('active'));
-        card.classList.add('active');
-      });
-    });
-  </script>
+function openCard(card) {
+  cards.forEach(c => c.classList.remove('active'));
+  card.classList.add('active');
+}
+
+cards.forEach(card => {
+  const header = card.querySelector('.card-header');
+
+  if (!header) return;
+
+  header.addEventListener('click', () => {
+    openCard(card);
+
+    // обновляем URL без перезагрузки
+    if (card.id) {
+      history.replaceState(null, null, '#' + card.id);
+    }
+  });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash;
+
+  if (hash) {
+    const target = document.querySelector(hash);
+
+    if (target && target.classList.contains('card')) {
+      openCard(target);
+
+      setTimeout(() => {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      }, 100);
+    }
+
+  } else {
+    // дефолт — первая карточка
+    const first = document.querySelector('.card');
+    if (first) openCard(first);
+  }
+});
+</script>
 <!-- КАРТОЧКА ФОРМЫ -->
 <div class="card" id="form-card">
 
