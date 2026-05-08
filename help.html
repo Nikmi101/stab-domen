@@ -476,6 +476,76 @@
   </div>
 </footer>
 
+
+<div style="
+  max-width:720px;
+  margin:30px auto 10px;
+  padding:16px;
+  background:#171923;
+  border:1px solid #262a36;
+  border-radius:14px;
+  color:#cfd3dc;
+  font-size:14px;
+  line-height:1.6;
+">
+
+  Связаться можно как через форму заявки выше,
+  так и напрямую по почте проекта:
+  <br/><br/>
+
+  <div style="
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+  ">
+
+    <div
+      onclick="copyMail()"
+      style="
+        background:#11131a;
+        border:1px solid #2a2f3d;
+        padding:10px 14px;
+        border-radius:10px;
+        cursor:pointer;
+        user-select:all;
+        color:#fff;
+        font-weight:600;
+      "
+    >
+      vnutri_apps@mail.ru
+    </div>
+
+    <a
+      href="mailto:vnutri_apps@mail.ru?subject=Помощь%20в%20отказе%20от%20курения"
+      style="
+        background:#4c8cff;
+        color:#fff;
+        text-decoration:none;
+        padding:10px 14px;
+        border-radius:10px;
+        font-weight:600;
+      "
+    >
+      ← Тык
+    </a>
+
+  </div>
+
+  <div
+    id="copy-mail-success"
+    style="
+      display:none;
+      margin-top:10px;
+      color:#4caf50;
+      font-size:13px;
+    "
+  >
+    Почта скопирована
+  </div>
+
+</div>
+  
 <script>
 function setService(serviceName) {
   const formCard = document.getElementById('form-card');
@@ -585,6 +655,20 @@ window.addEventListener("DOMContentLoaded", function () {
   })(document, window, "tmr-code");
 </script>
 <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3725112;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+
+<script>
+function copyMail() {
+  navigator.clipboard.writeText("vnutri_apps@mail.ru");
+
+  const msg = document.getElementById("copy-mail-success");
+
+  msg.style.display = "block";
+
+  setTimeout(() => {
+    msg.style.display = "none";
+  }, 2000);
+}
+</script>
   
 </body>
 </html>
