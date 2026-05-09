@@ -7,7 +7,7 @@ author:
   "@id": "https://vnutriapps.ru/about-vnutri-apps#nikita-mityaev"
 medical_disclaimer: true
 date: 2025-09-19
-dateUpdated: 2025-05-09
+dateUpdated: 2026-05-09
 articleSection: "Бросить курить"
 preload_images:
   - /images/blog-images/brosit-iqos.webp
