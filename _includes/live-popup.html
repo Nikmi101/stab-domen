@@ -5,15 +5,19 @@
 
   const SHOW_DELAY = 5000;
   const SHOW_ON_SCROLL = true;
-  const REPEAT_HOURS = 1;
 
-  const CHECK_INTERVAL = 12000; // ⬅️ каждые 12 секунд
+  const REPEAT_MINUTES = 4;          // ⬅️ повтор не чаще чем раз в 4 минуты
+  const CHECK_INTERVAL = 12000;      // ⬅️ проверка статуса каждые 12 секунд
 
   let LIVE_URL = null;
-  let popupShown = false;
-  let pollingStarted = false;
 
-  // 1. проверка статуса
+  let popupShown = false;      // уже показали popup
+  let initialized = false;     // защита от повторного init
+  let pollingStarted = false;  // защита от двойного polling
+
+  // -----------------------------
+  // 1. Проверка статуса стрима
+  // -----------------------------
   function checkStatus() {
     fetch(STATUS_URL, { cache: "no-store" })
       .then(r => r.json())
@@ -27,7 +31,7 @@
 
         if (
           lastClosed &&
-          (Date.now() - lastClosed < REPEAT_HOURS * 60 * 60 * 1000)
+          (Date.now() - lastClosed < REPEAT_MINUTES * 60 * 1000)
         ) {
           return;
         }
@@ -35,10 +39,14 @@
         init();
 
       })
-      .catch(() => {});
+      .catch(() => {
+        // молча игнорим ошибки сети
+      });
   }
 
-  // старт polling (один раз)
+  // -----------------------------
+  // 2. Запуск polling
+  // -----------------------------
   function startPolling() {
     if (pollingStarted) return;
     pollingStarted = true;
@@ -47,8 +55,12 @@
     setInterval(checkStatus, CHECK_INTERVAL);
   }
 
-  // 2. основной запуск
+  // -----------------------------
+  // 3. Основная инициализация
+  // -----------------------------
   function init() {
+    if (initialized) return;
+    initialized = true;
 
     function createPopup() {
       if (popupShown) return;
@@ -127,6 +139,7 @@
         box.style.opacity = "0";
         box.style.transform = "translateY(20px)";
         setTimeout(() => popup.remove(), 300);
+
         localStorage.setItem('vnutri_live_closed', Date.now());
       };
     }
@@ -137,18 +150,21 @@
 
     if (SHOW_ON_SCROLL) {
       let triggered = false;
+
       window.addEventListener('scroll', () => {
-        if (!triggered) {
-          triggered = true;
-          start();
-        }
+        if (triggered) return;
+        triggered = true;
+        start();
       });
+
     } else {
       start();
     }
   }
 
-  // стартуем polling сразу
+  // -----------------------------
+  // старт системы
+  // -----------------------------
   startPolling();
 
 })();
