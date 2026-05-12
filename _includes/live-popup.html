@@ -7,33 +7,53 @@
   const SHOW_ON_SCROLL = true;
   const REPEAT_HOURS = 1;
 
+  const CHECK_INTERVAL = 12000; // ⬅️ каждые 12 секунд
+
   let LIVE_URL = null;
+  let popupShown = false;
+  let pollingStarted = false;
 
-  // 1. Сначала проверяем статус
-  fetch(STATUS_URL, { cache: "no-store" })
-    .then(r => r.json())
-    .then(data => {
+  // 1. проверка статуса
+  function checkStatus() {
+    fetch(STATUS_URL, { cache: "no-store" })
+      .then(r => r.json())
+      .then(data => {
 
-      if (!data.live) return;
+        if (!data.live || popupShown) return;
 
-      LIVE_URL = data.url;
-      init();
+        LIVE_URL = data.url;
 
-    })
-    .catch(() => {
-      // если файл недоступен — просто молча выходим
-    });
+        const lastClosed = localStorage.getItem('vnutri_live_closed');
 
+        if (
+          lastClosed &&
+          (Date.now() - lastClosed < REPEAT_HOURS * 60 * 60 * 1000)
+        ) {
+          return;
+        }
+
+        init();
+
+      })
+      .catch(() => {});
+  }
+
+  // старт polling (один раз)
+  function startPolling() {
+    if (pollingStarted) return;
+    pollingStarted = true;
+
+    checkStatus();
+    setInterval(checkStatus, CHECK_INTERVAL);
+  }
 
   // 2. основной запуск
   function init() {
 
-    const lastClosed = localStorage.getItem('vnutri_live_closed');
-    if (lastClosed && (Date.now() - lastClosed < REPEAT_HOURS * 60 * 60 * 1000)) {
-      return;
-    }
-
     function createPopup() {
+      if (popupShown) return;
+      popupShown = true;
+
       const popup = document.createElement('div');
 
       popup.innerHTML = `
@@ -127,6 +147,9 @@
       start();
     }
   }
+
+  // стартуем polling сразу
+  startPolling();
 
 })();
 </script>
