@@ -68,6 +68,10 @@ sources:
   - "@type": "CreativeWork"
     name: "Cochrane Library: Neuroscience of tobacco addiction and cessation"
     url: "https://www.cochranelibrary.com"
+  - "@type": "CreativeWork"
+    name: "The Addicted Brain: Why We Abuse Drugs, Alcohol, and Nicotine"
+    author: "Michael Kuhar"
+    note: "Neuroscience of addiction; used in Johns Hopkins University educational programs"
 isPartOf:
   - "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#series"
 
