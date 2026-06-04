@@ -86,7 +86,16 @@
       { "@id": "https://vnutriapps.ru/groups#webpage" },
 	  { "@id": "https://vnutriapps.ru/blog/cycle-snizit-trevogu/#webpage" },
 	  { "@id": "https://vnutriapps.ru/blog/encyclopedia-brosit-kurit/#webpage" },
-      { "@id": "https://vnutriapps.ru/blog/#page" }
+      { "@id": "https://vnutriapps.ru/blog/#page" },
+	  { "@id": "https://vnutriapps.ru/publishing-principles#webpage" },
+	  { "@id": "https://vnutriapps.ru/fact-checking#webpage" },
+	  { "@id": "https://vnutriapps.ru/corrections#webpage" },
+	  { "@id": "https://vnutriapps.ru/ethics#webpage" },
+	  { "@id": "https://vnutriapps.ru/privacy#webpage" },
+	  { "@id": "https://vnutriapps.ru/cookies#webpage" },
+	  { "@id": "https://vnutriapps.ru/personal-data-consent#webpage" },
+	  { "@id": "https://vnutriapps.ru/terms#webpage" },
+	  { "@id": "https://vnutriapps.ru/disclaimer#webpage" }
     ],
     "sameAs": [
       "https://t.me/vnutriapps",
@@ -161,6 +170,95 @@
     /* Optional: align spacing between grid blocks on dark section */
     #live .grid-style{
       margin-top: 0.5rem;
+    }
+
+
+	.footer-docs {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 0.9em;
+      line-height: 1.7;
+    }
+
+    .footer-docs p {
+      margin: 8px 0;
+    }
+
+    .footer-docs strong {
+      color: #ffffff;
+    }
+
+    .footer-docs a {
+      color: #9ad0ff;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-docs a:hover {
+      color: #6bb6ff;
+      text-decoration: underline;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      margin: 20px 0;
+    }
+
+    /* Блок поддержки проекта */
+    .support-project {
+      background: linear-gradient(135deg, rgba(255,107,53,0.08), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,107,53,0.25);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 30px;
+    }
+
+    .support-project h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .support-project p {
+      margin: 12px 0;
+    }
+
+    .support-project a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #ff6b35;
+      color: #fff;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 12px;
+      transition: filter 0.2s;
+    }
+
+    .support-project a:hover {
+      filter: brightness(1.08);
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 30px;
+      opacity: 0.7;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* Адаптивность для мобильных */
+    @media (max-width: 600px) {
+
+
+      .support-project {
+        padding: 16px;
+      }
+
+      .support-project a {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 	
@@ -811,6 +909,66 @@ Author -->
       &copy; <span >Vnutri Apps</span>, Россия. Все права защищены. 2026<br>
     </p>
   </div>
+	 <div class="footer-docs">
+
+    <p><strong>Правила Vnutri Apps</strong></p>
+
+    <p>
+      <a href="/publishing-principles">Редакционные принципы</a>   ·
+      <a href="/fact-checking">Факт-чекинг и проверка источников</a>   ·
+      <a href="/corrections">Исправления и обновления</a>   ·
+      <a href="/ethics">Этические принципы</a>
+    </p>
+
+    <p><strong>Документы</strong></p>
+
+    <p>
+      <a href="/privacy">Политика обработки персональных данных</a>   ·
+      <a href="/personal-data-consent">Согласие на обработку персональных данных</a>   ·
+      <a href="/terms">Пользовательское соглашение</a>   ·
+      <a href="/disclaimer">Отказ от медицинских гарантий</a>   ·
+      <a href="/cookies">Политика использования файлов cookies</a>
+    </p>
+
+    <p><strong>О проекте</strong></p>
+
+    <p>
+      <a href="/about-vnutri-apps">О проекте Vnutri Apps</a>   ·
+      <a href="/about-vnutri-apps#nikita-mityaev">Автор проекта</a>   ·
+      <a href="/links">Контакты</a>
+    </p>
+
+    <hr>
+
+    <section class="support-project">
+      <h2>Поддержка проекта<br> Vnutri Apps</h2>
+      <p>🇷🇺 Vnutri Apps — это независимый российский проект одного человека.<br>Я самостоятельно создаю приложения, пишу статьи, отвечаю пользователям, развиваю сайт и выпускаю новые материалы.</p>
+      <p>Если сайт или приложения оказались для вас полезными, вы можете поддержать дальнейшее развитие проекта.<br>Это помогает выпускать новые приложения, улучшать существующие продукты и сохранять материалы доступными для всех.</p>
+      <p>
+        <a href="https://donate.stream/kuril_brosil" target="_blank" rel="noopener noreferrer">
+          Поддержать через Donate.Stream
+        </a>
+      </p>
+      <h3>Реквизиты для поддержки</h3>
+      <p><strong>Получатель:</strong><br>Индивидуальный предприниматель Митяев Никита Игоревич</p>
+      <p><strong>ИНН:</strong> 771993055390<br><strong>ОГРНИП:</strong> 325774600892642</p>
+      <p><strong>Расчётный счёт:</strong> 40802810900009190603<br><strong>Банк:</strong> АО «ТБанк»<br><strong>БИК:</strong> 044525974<br><strong>Корреспондентский счёт:</strong> 30101810145250000974</p>
+      <p style="font-size:0.9em;color:#aaa;">
+        Поддержка проекта является добровольной.<br>
+        Перевод средств не является приобретением товара или услуги и не предоставляет дополнительных прав или привилегий.<br>
+        Полученные средства направляются на поддержание запасов молотого кофе и развитие проекта Vnutri Apps: создание новых материалов и поддержку существующих приложений.
+      </p>
+    </section>
+<p> </p>
+    <p> </p>
+    <p class="copyright">
+      © 2026 Vnutri Apps. Россия 🇷🇺<br>
+      ИП Митяев Никита Игоревич<br>
+      Все права защищены
+    </p>
+
+  </div>
+
 </footer>
 
 <!-- Scripts -->
