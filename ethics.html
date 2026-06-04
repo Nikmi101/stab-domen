@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
+   <meta charset="utf-8">
   <title>Этические принципы | Vnutri Apps</title>
   <meta name="description" content="Этические принципы Vnutri Apps: уважение, конфиденциальность и гуманистический подход.">
   <link rel="canonical" href="https://vnutriapps.ru/ethics">
@@ -22,29 +22,318 @@
     "publisher": { "@id": "https://vnutriapps.ru/#organization" }
   }
   </script>
+
+  <style>
+    /* Общие стили страницы */
+    body.page {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #0f1115;
+      color: #e8e8e8;
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    header#header {
+      padding: 10px 18px;
+      background: #0b0d10;
+    }
+
+    header#header a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+
+    header#header a:hover {
+      opacity: 1;
+    }
+
+    main.content.wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      margin-top: 18px;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #6bb6ff;
+      transition: opacity 0.2s;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    footer#footer {
+      background: #0b0d10;
+      margin-top: 60px;
+      padding: 40px 24px;
+    }
+
+    .footer-docs {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 0.9em;
+      line-height: 1.7;
+    }
+
+    .footer-docs p {
+      margin: 8px 0;
+    }
+
+    .footer-docs strong {
+      color: #ffffff;
+    }
+
+    .footer-docs a {
+      color: #9ad0ff;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-docs a:hover {
+      color: #6bb6ff;
+      text-decoration: underline;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      margin: 20px 0;
+    }
+
+    /* Блок поддержки проекта */
+    .support-project {
+      background: linear-gradient(135deg, rgba(255,107,53,0.08), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,107,53,0.25);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 30px;
+    }
+
+    .support-project h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .support-project p {
+      margin: 12px 0;
+    }
+
+    .support-project a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #ff6b35;
+      color: #fff;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 12px;
+      transition: filter 0.2s;
+    }
+
+    .support-project a:hover {
+      filter: brightness(1.08);
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 30px;
+      opacity: 0.7;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* Адаптивность для мобильных */
+    @media (max-width: 600px) {
+      main.content.wrapper {
+        padding: 24px 16px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .support-project {
+        padding: 16px;
+      }
+
+      .support-project a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "@id":"https://vnutriapps.ru/#organization",
+    "name":"Vnutri Apps",
+    "url":"https://vnutriapps.ru/",
+    "founder":"Митяев Никита Игоревич",
+    "email":"vnutri_apps@mail.ru"
+  }
+  </script>
+
 </head>
 
 <body class="page">
-<header id="header"><a href="/">← Vnutri Apps</a></header>
 
-<section class="content wrapper">
-  <h1>Этические принципы Vnutri Apps</h1>
-  <p>Мы придерживаемся принципов честности, уважения и ответственности. Всё, что публикуется в проекте Vnutri Apps, создаётся с заботой о пользователях и этическим подходом к психологической информации.</p>
+<header id="header">
+  <a href="/">← Vnutri Apps</a>
+</header>
 
-  <h2>Основные принципы</h2>
-  <ul>
-    <li><strong>Уважение к личности.</strong> Мы избегаем оценочных формулировок и не даём директивных советов.</li>
-    <li><strong>Конфиденциальность.</strong> Vnutri Apps не собирает личные данные без согласия пользователя и не передаёт их третьим лицам.</li>
-    <li><strong>Ответственность.</strong> Контент не заменяет терапию и не используется для медицинских диагнозов.</li>
-    <li><strong>Нейтральность.</strong> Мы не публикуем дискриминационный, религиозный или политически окрашенный контент.</li>
-    <li><strong>Бережность.</strong> Тон публикаций направлен на поддержку, а не давление.</li>
-  </ul>
+<main class="content wrapper">
+ <p> </p>
+   <p> </p>
+ <h1>Этические принципы Vnutri Apps</h1>
 
-  <p>Этика — это форма заботы. Мы открыты к обратной связи: <a href="mailto:vnutri_apps@mail.ru">vnutri_apps@mail.ru</a>.</p>
-</section>
+<p>
+  Vnutri Apps стремится создавать материалы, основанные на уважении к человеку,
+  ответственном отношении к информации и бережном подходе к сложным жизненным темам.
+  Настоящие принципы определяют общие ориентиры проекта при подготовке статей,
+  приложений и иных материалов.
+</p>
+
+<h2>Основные принципы</h2>
+
+<ul>
+  <li>
+    <strong>Уважение к личности.</strong>
+    Материалы создаются с уважением к человеческому достоинству, индивидуальному опыту,
+    взглядам и жизненным обстоятельствам каждого человека.
+  </li>
+
+  <li>
+    <strong>Ответственное информирование.</strong>
+    При подготовке контента приоритет отдаётся достоверной информации,
+    проверенным источникам и добросовестной интерпретации данных.
+  </li>
+
+  <li>
+    <strong>Бережность подачи.</strong>
+    Проект стремится избегать унижающих, обвиняющих или намеренно провоцирующих
+    формулировок. Цель материалов — поддержка понимания и осознанности, а не давление на читателя.
+  </li>
+
+  <li>
+    <strong>Профессиональные границы.</strong>
+    Материалы проекта носят информационный и образовательный характер и не являются
+    медицинской диагностикой, лечением или заменой индивидуальной помощи специалиста.
+  </li>
+
+  <li>
+    <strong>Открытость к исправлениям.</strong>
+    Замечания о фактических ошибках, неточностях или спорных формулировках рассматриваются
+    и могут служить основанием для корректировки материалов.
+  </li>
+
+  <li>
+    <strong>Независимость.</strong>
+    Содержание материалов формируется независимо от коммерческих, политических
+    или иных внешних интересов.
+  </li>
+</ul>
+
+<p>
+  Вопросы, замечания и предложения, связанные с содержанием материалов,
+  можно направлять по адресу
+  <a href="mailto:vnutri_apps@mail.ru">vnutri_apps@mail.ru</a>.
+</p>
+
+</main>
 
 <footer id="footer">
-  <p>© Vnutri Apps</p>
+
+  <div class="footer-docs">
+
+    <p><strong>Правила Vnutri Apps</strong></p>
+
+    <p>
+      <a href="/publishing-principles">Редакционные принципы</a> ·
+      <a href="/fact-checking">Факт-чекинг и проверка источников</a> ·
+      <a href="/corrections">Исправления и обновления</a> ·
+      <a href="/ethics">Этические принципы</a>
+    </p>
+
+    <p><strong>Документы</strong></p>
+
+    <p>
+      <a href="/privacy">Политика обработки персональных данных</a> ·
+      <a href="/personal-data-consent">Согласие на обработку персональных данных</a> ·
+      <a href="/terms">Пользовательское соглашение</a> ·
+      <a href="/disclaimer">Отказ от медицинских гарантий</a>
+    </p>
+
+    <p><strong>О проекте</strong></p>
+
+    <p>
+      <a href="/about-vnutri-apps">О проекте Vnutri Apps</a> ·
+      <a href="/about-vnutri-apps#nikita-mityaev">Автор проекта</a> ·
+      <a href="/links">Контакты</a>
+    </p>
+
+    <hr>
+
+    <section class="support-project">
+      <h2>Поддержка проекта<br> Vnutri Apps</h2>
+      <p>🇷🇺 Vnutri Apps — это независимый российский проект одного человека.<br>Я самостоятельно создаю приложения, пишу статьи, отвечаю пользователям, развиваю сайт и выпускаю новые материалы.</p>
+      <p>Если сайт или приложения оказались для вас полезными, вы можете поддержать дальнейшее развитие проекта.<br>Это помогает выпускать новые приложения, улучшать существующие продукты и сохранять материалы доступными для всех.</p>
+      <p>
+        <a href="https://donate.stream/kuril_brosil" target="_blank" rel="noopener noreferrer">
+          Поддержать через Donate.Stream
+        </a>
+      </p>
+      <h3>Реквизиты для поддержки</h3>
+      <p><strong>Получатель:</strong><br>Индивидуальный предприниматель Митяев Никита Игоревич</p>
+      <p><strong>ИНН:</strong> 771993055390<br><strong>ОГРНИП:</strong> 325774600892642</p>
+      <p><strong>Расчётный счёт:</strong> 40802810900009190603<br><strong>Банк:</strong> АО «ТБанк»<br><strong>БИК:</strong> 044525974<br><strong>Корреспондентский счёт:</strong> 30101810145250000974</p>
+      <p style="font-size:0.9em;color:#aaa;">
+        Поддержка проекта является добровольной.<br>
+        Перевод средств не является приобретением товара или услуги и не предоставляет дополнительных прав или привилегий.<br>
+        Полученные средства направляются на поддержание запасов молотого кофе и развитие проекта Vnutri Apps: создание новых материалов и поддержку существующих приложений.
+      </p>
+    </section>
+<p> </p>
+    <p> </p>
+    <p class="copyright">
+      © 2026 Vnutri Apps. Россия 🇷🇺<br>
+      ИП Митяев Никита Игоревич<br>
+      Все права защищены
+    </p>
+
+  </div>
+
 </footer>
+
 </body>
 </html>
