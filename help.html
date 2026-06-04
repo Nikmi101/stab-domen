@@ -579,29 +579,7 @@ cards.forEach(card => {
   });
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  const hash = window.location.hash;
 
-  if (hash) {
-    const target = document.querySelector(hash);
-
-    if (target && target.classList.contains('card')) {
-      openCard(target);
-
-      setTimeout(() => {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center'
-        });
-      }, 100);
-    }
-
-  } else {
-    // дефолт — первая карточка
-    const first = document.querySelector('.card');
-    if (first) openCard(first);
-  }
-});
 </script>
 
 <!-- КАРТОЧКА КОНТАКТОВ (БЕЗ ФОРМЫ) -->
@@ -747,84 +725,22 @@ window.addEventListener('DOMContentLoaded', () => {
 function setService(serviceName) {
   const formCard = document.getElementById('form-card');
 
+  // показать блок контактов
   formCard.style.display = "block";
   formCard.classList.add('show');
 
-  document.getElementById('service-input').value = serviceName;
-
+  // обновить текст выбора
   document.getElementById('form-title').innerText =
     "Вы выбрали: " + serviceName;
 
-  formCard.scrollIntoView({
-    behavior: 'smooth',
-    block: 'center'
-  });
+  // скролл к блоку контактов
+  setTimeout(() => {
+    formCard.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    });
+  }, 100);
 }
-
-window.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("main-form");
-  const button = form.querySelector("button");
-
-  const formCard = document.getElementById("form-card");
-  const success = document.getElementById("form-success");
-  const error = document.getElementById("form-error");
-
-  let isSending = false;
-
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    if (isSending) return;
-    isSending = true;
-
-    button.disabled = true;
-    button.innerText = "Отправка...";
-
-    error.style.display = "none";
-
-    const data = new FormData(form);
-
-    try {
-      const res = await fetch("https://formspree.io/f/xdabarrg", {
-        method: "POST",
-        body: data,
-        headers: {
-          "Accept": "application/json"
-        }
-      });
-
-      if (res.ok) {
-        formCard.classList.remove("show");
-
-        setTimeout(() => {
-          formCard.style.display = "none";
-        }, 250);
-
-        success.style.display = "block";
-        form.reset();
-
-        button.innerText = "Отправлено";
-      } else {
-        throw new Error("bad response");
-      }
-
-    } catch (err) {
-      console.log(err);
-      error.style.display = "block";
-
-      button.disabled = false;
-      button.innerText = "Отправить заявку";
-
-      isSending = false;
-      return;
-    }
-
-    setTimeout(() => {
-      button.disabled = false;
-      isSending = false;
-    }, 5000);
-  });
-});
 </script>
 <!-- Yandex.Metrika -->
 <script type="text/javascript">
