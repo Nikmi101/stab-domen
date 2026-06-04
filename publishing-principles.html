@@ -11,152 +11,173 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   <style>
-  body.page{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    background:#0f1115;
-    color:#e8e8e8;
-    margin:0;
-    line-height:1.65;
-  }
-
-  header#header{
-    padding:18px 24px;
-  }
-
-  header#header a{
-    color:#ffffff;
-    text-decoration:none;
-    font-weight:600;
-    opacity:0.85;
-  }
-
-  main.content.wrapper{
-    max-width:900px;
-    margin:0 auto;
-    padding:40px 24px;
-  }
-
-  h1{
-    font-size:2.2rem;
-    line-height:1.25;
-    margin-bottom:18px;
-  }
-
-  h2{
-    margin-top:30px;
-    font-size:1.4rem;
-  }
-
-  ul{
-    padding-left:20px;
-  }
-
-  li{
-    margin-bottom:10px;
-  }
-
-  a{
-    color:#6bb6ff;
-  }
-
-  a:hover{
-    opacity:0.8;
-  }
-
-  footer#footer{
-    background:#0b0d10;
-    margin-top:60px;
-    padding:40px 24px;
-  }
-
-  .footer-docs{
-    max-width:900px;
-    margin:0 auto;
-  }
-
-  .footer-docs p{
-    margin:10px 0;
-  }
-
-  .footer-docs strong{
-    color:#ffffff;
-  }
-
-  .footer-docs a{
-    color:#9ad0ff;
-    text-decoration:none;
-  }
-
-  .footer-docs a:hover{
-    text-decoration:underline;
-  }
-
-  hr{
-    border:0;
-    border-top:1px solid rgba(255,255,255,0.08);
-  }
-
-  .support-project{
-    background:linear-gradient(135deg, rgba(255,107,53,0.08), rgba(255,255,255,0.02));
-    border:1px solid rgba(255,107,53,0.25);
-    border-radius:14px;
-    padding:22px;
-    margin-top:20px;
-  }
-
-  .support-project h2{
-    margin-top:0;
-    font-size:1.5rem;
-  }
-
-  .support-project h3{
-    margin-top:18px;
-    font-size:1.1rem;
-  }
-
-  .support-project p{
-    margin:10px 0;
-  }
-
-  .support-project a{
-    display:inline-block;
-    padding:12px 18px;
-    background:#ff6b35;
-    color:#fff;
-    border-radius:10px;
-    font-weight:600;
-    text-decoration:none;
-    margin-top:10px;
-  }
-
-  .support-project a:hover{
-    filter:brightness(1.05);
-  }
-
-  .copyright{
-    text-align:center;
-    margin-top:30px;
-    opacity:0.7;
-    font-size:0.9rem;
-  }
-
-  /* мобилка */
-  @media (max-width:600px){
-    main.content.wrapper{
-      padding:24px 16px;
+    /* Общие стили страницы */
+    body.page {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #0f1115;
+      color: #e8e8e8;
+      margin: 0;
+      line-height: 1.65;
     }
 
-    h1{
-      font-size:1.6rem;
+    header#header {
+      padding: 18px 24px;
+      background: #0b0d10;
     }
 
-    .support-project{
-      padding:16px;
+    header#header a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      opacity: 0.85;
+      transition: opacity 0.2s;
     }
-  }
-</style>
 
-  <!-- WebPage -->
+    header#header a:hover {
+      opacity: 1;
+    }
+
+    main.content.wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      margin-top: 18px;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #6bb6ff;
+      transition: opacity 0.2s;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    footer#footer {
+      background: #0b0d10;
+      margin-top: 60px;
+      padding: 40px 24px;
+    }
+
+    .footer-docs {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 0.9em;
+      line-height: 1.7;
+    }
+
+    .footer-docs p {
+      margin: 8px 0;
+    }
+
+    .footer-docs strong {
+      color: #ffffff;
+    }
+
+    .footer-docs a {
+      color: #9ad0ff;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-docs a:hover {
+      color: #6bb6ff;
+      text-decoration: underline;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      margin: 20px 0;
+    }
+
+    /* Блок поддержки проекта */
+    .support-project {
+      background: linear-gradient(135deg, rgba(255,107,53,0.08), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,107,53,0.25);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 30px;
+    }
+
+    .support-project h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .support-project p {
+      margin: 12px 0;
+    }
+
+    .support-project a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #ff6b35;
+      color: #fff;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 12px;
+      transition: filter 0.2s;
+    }
+
+    .support-project a:hover {
+      filter: brightness(1.08);
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 30px;
+      opacity: 0.7;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* Адаптивность для мобильных */
+    @media (max-width: 600px) {
+      main.content.wrapper {
+        padding: 24px 16px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .support-project {
+        padding: 16px;
+      }
+
+      .support-project a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <!-- WebPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -172,7 +193,7 @@
   }
   </script>
 
-  <!-- Organization -->
+  <!-- Organization Schema -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -225,7 +246,7 @@
 
 <footer id="footer">
 
-  <div class="footer-docs" style="margin-top:30px;font-size:0.9em;line-height:1.8;">
+  <div class="footer-docs">
 
     <p><strong>Правила Vnutri Apps</strong></p>
 
@@ -253,20 +274,35 @@
       <a href="/contacts">Контакты</a>
     </p>
 
-    <hr style="margin:18px 0;opacity:0.3;">
+    <hr>
 
-    <section class="support-project"> <h2>Поддержать проект Vnutri Apps</h2> 
-      <p> 🇷🇺 Vnutri Apps — это независимый российский проект одного человека.<br> Я самостоятельно создаю приложения, пишу статьи, отвечаю пользователям, развиваю сайт и выпускаю новые материалы. </p> 
-      <p> Если сайт или приложения оказались для вас полезными, вы можете поддержать дальнейшее развитие проекта.<br> Это помогает выпускать 
-        новые приложения, улучшать существующие продукты и сохранять материалы доступными для всех. </p> 
-      <p> <a href="https://donate.stream/kuril_brosil" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 24px;background:#ff6b35;color:#fff;text-decoration:none;border-radius:8px;font-weight:bold;"
-            > Поддержать через Donate.Stream </a> </p> <h3>Реквизиты для поддержки</h3> <p> <strong>Получатель:</strong><br> Индивидуальный предприниматель Митяев Никита Игоревич </p> <p> <strong>ИНН:</strong> 771993055390<br> <strong>ОГРНИП:</strong> 325774600892642 </p> <p> <strong>Расчётный счёт:</strong> 40802810900009190603<br> <strong>Банк:</strong> АО «ТБанк»<br> <strong>БИК:</strong> 044525974<br> <strong>Корреспондентский счёт:</strong> 30101810145250000974 </p> <p style="font-size:0.9em;color:#666;"> Поддержка проекта является добровольной.<br> Перевод средств не является приобретением товара или услуги и не предоставляет дополнительных прав или привилегий.<br> Полученные средства направляются на поддержание запасов молотого кофе и развитие проекта Vnutri Apps, создание новых материалов и поддержку существующих приложений. </p> </section>
+    <section class="support-project">
+      <h2>Поддержать проект Vnutri Apps</h2>
+      <p>🇷🇺 Vnutri Apps — это независимый российский проект одного человека.<br>Я самостоятельно создаю приложения, пишу статьи, отвечаю пользователям, развиваю сайт и выпускаю новые материалы.</p>
+      <p>Если сайт или приложения оказались для вас полезными, вы можете поддержать дальнейшее развитие проекта.<br>Это помогает выпускать новые приложения, улучшать существующие продукты и сохранять материалы доступными для всех.</p>
+      <p>
+        <a href="https://donate.stream/kuril_brosil" target="_blank" rel="noopener noreferrer">
+          Поддержать через Donate.Stream
+        </a>
+      </p>
+      <h3>Реквизиты для поддержки</h3>
+      <p><strong>Получатель:</strong><br>Индивидуальный предприниматель Митяев Никита Игоревич</p>
+      <p><strong>ИНН:</strong> 771993055390<br><strong>ОГРНИП:</strong> 325774600892642</p>
+      <p><strong>Расчётный счёт:</strong> 40802810900009190603<br><strong>Банк:</strong> АО «ТБанк»<br><strong>БИК:</strong> 044525974<br><strong>Корреспондентский счёт:</strong> 30101810145250000974</p>
+      <p style="font-size:0.9em;color:#aaa;">
+        Поддержка проекта является добровольной.<br>
+        Перевод средств не является приобретением товара или услуги и не предоставляет дополнительных прав или привилегий.<br>
+        Полученные средства направляются на поддержание запасов молотого кофе и развитие проекта Vnutri Apps: создание новых материалов и поддержку существующих приложений.
+      </p>
+    </section>
 
-  <p class="copyright">
-    © 2026 Vnutri Apps. Россия 🇷🇺<br>
-    ИП Митяев Никита Игоревич<br>
-    Все права защищены
-  </p>
+    <p class="copyright">
+      © 2026 Vnutri Apps. Россия 🇷🇺<br>
+      ИП Митяев Никита Игоревич<br>
+      Все права защищены
+    </p>
+
+  </div>
 
 </footer>
 
