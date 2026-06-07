@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Бесплатная встреча с Vnutri Apps</title>
+  <link rel="canonical" href="https://vnutriapps.ru/help-day" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/mobile.css" />
+  <style>
+    body { margin:0; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background:#0f1115; color:#e7e9ee; line-height:1.5; }
+    .container { max-width:720px; margin:0 auto; padding:24px 16px 40px; }
+    .intro { font-size:18px; margin-bottom:32px; color:#cfd3dc; }
+    .cta-main { display:inline-block; margin-top:16px; padding:12px 18px; background:#4c8cff; color:#fff; border-radius:10px; text-decoration:none; font-weight:600; }
+    #form-card { max-width:720px; margin:0 auto; margin-top:12px; opacity:0; transform:translateY(12px); max-height:0; overflow:hidden; padding:0; border:0; transition: all 0.25s ease; }
+    #form-card.show { opacity:1; transform:translateY(0); max-height:600px; padding:16px; border:1px solid #262a36; }
+    .card { background:#171923; border-radius:14px; padding:16px; border:1px solid #262a36; transition:0.2s; overflow:hidden; }
+    .card-header { display:flex; justify-content:space-between; align-items:center; cursor:pointer; }
+    .card-title { font-size:16px; font-weight:600; }
+    .card-content { margin-top:14px; display:block; font-size:14px; color:#cfd3dc; }
+    .cta { display:inline-block; margin-top:14px; padding:11px 16px; background:linear-gradient(135deg,#4c8cff,#6aa6ff); color:#fff; border-radius:10px; text-decoration:none; font-size:14px; font-weight:600; border:1px solid rgba(255,255,255,0.08); box-shadow:0 6px 18px rgba(76,140,255,0.25); transition:0.2s ease; }
+    .cta:hover { transform:translateY(-1px); box-shadow:0 10px 24px rgba(76,140,255,0.35); }
+    .footer-docs { max-width:900px; margin:0 auto; font-size:0.9em; line-height:1.7; }
+    .footer-docs a { color:#9ad0ff; text-decoration:none; transition:color 0.2s; }
+    .footer-docs a:hover { color:#6bb6ff; text-decoration:underline; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+<header id="header" class="alt">
+  <div class="logo">
+    <a href="/"><img src="images/icons/ic_vnutriapps_withouttext.webp" alt="Логотип Vnutri Apps" style="height:24px; vertical-align:middle; margin-right:8px;"><span>Vnutri Apps</span></a>
+  </div>
+</header>
+
+<div class="intro">
+  <h1>Бесплатная встреча с создателем Vnutri Apps</h1>
+  <p>Меня зовут Никита Митяев.<br/>
+     Я автор и создатель проекта Vnutri Apps. Моему проекту более 10 лет, и для меня это часть каждого дня — приложения, сайт, статьи, ответы пользователям, разбор ситуаций.</p>
+  <p>В качестве психолога каждый день я стараюсь выделять время для одной бесплатной встречи. <strong>Без продажи услуг, без обязательств, без записи заранее.</strong> Просто разговор по тематике проекта.</p>
+  <p>Сегодня свободно место на <strong>20:00 по МСК</strong>.</p>
+  <p>Встреча предназначена для людей с вопросами по темам проекта:</p>
+  <ul>
+    <li>Отказ от курения и никотина</li>
+    <li>Тревога и стресс</li>
+    <li>Одиночество</li>
+    <li>Творчество и личные жизненные трудности</li>
+  </ul>
+  <p>Если вам подходит, просто напишите мне:</p>
+  <a href="#form-card" class="cta" onclick="document.getElementById('form-card').classList.add('show'); document.getElementById('form-card').scrollIntoView({behavior:'smooth', block:'center'});">Написать Никите</a>
+</div>
+
+<!-- Контакты -->
+<div class="card" id="form-card">
+  <div class="card-header"><div class="card-title">Договориться можно тут:</div></div>
+  <div class="card-content">
+    <div style="display:flex; flex-direction:column; gap:10px;">
+      <a href="https://t.me/vnu_apps" target="_blank" class="cta">Telegram</a>
+      <a href="https://max.ru/u/f9LHodD0cOL6bkftL2k-1ZQkbqrZr-DlIbSIhRLa-BSMynuSQD0UenvPtZQ" target="_blank" class="cta">MAX</a>
+      <a href="mailto:vnutri_apps@mail.ru?subject=Заявка%20Vnutri%20Apps" class="cta">Email: vnutri_apps@mail.ru</a>
+    </div>
+    <p style="margin-top:12px; font-size:12px; color:#8f96a8;">Отвечаю лично</p>
+  </div>
+</div>
+
+
+   <!-- Footer -->
+<footer id="footer">
+
+
+    <div class="details-button-container">
+      <a href="/" class="details-button" title="Сайт Vnutri Apps">🌐 Сайт Vnutri Apps</a>
+    </div>
+
+     </div>
+	 <div class="footer-docs">
+
+    <p><strong>Правила Vnutri Apps</strong></p>
+
+    <p>
+      <a href="/publishing-principles">Редакционные принципы</a>   ·
+      <a href="/fact-checking">Факт-чекинг и проверка источников</a>   ·
+      <a href="/corrections">Исправления и обновления</a>   ·
+      <a href="/ethics">Этические принципы</a>
+    </p>
+
+    <p><strong>Документы</strong></p>
+
+    <p>
+      <a href="/privacy">Политика обработки персональных данных</a>   ·
+      <a href="/personal-data-consent">Согласие на обработку персональных данных</a>   ·
+      <a href="/terms">Пользовательское соглашение</a>   ·
+      <a href="/disclaimer">Отказ от медицинских гарантий</a>   ·
+      <a href="/cookies">Политика использования файлов cookies</a>
+    </p>
+
+    <p><strong>О проекте</strong></p>
+
+    <p>
+      <a href="/about-vnutri-apps">О проекте Vnutri Apps</a>   ·
+      <a href="/about-vnutri-apps#nikita-mityaev">Автор проекта</a>   ·
+      <a href="/links">Контакты</a>
+    </p>
+
+    <hr>
+
+   
+<p> </p>
+    <p> </p>
+    <p class="copyright">
+      © 2026 Vnutri Apps. Россия 🇷🇺<br>
+      ИП Митяев Никита Игоревич<br>
+	  ИНН: 771993055390  ОГРНИП: 325774600892642<br>
+      Все права защищены
+    </p>
+
+  </div>
+  </div>
+</footer>
+  
+<script>
+function setService(serviceName) {
+  const formCard = document.getElementById('form-card');
+
+  // показать блок контактов
+  formCard.style.display = "block";
+  formCard.classList.add('show');
+
+  // обновить текст выбора
+  document.getElementById('form-title').innerText =
+    "Вы выбрали: " + serviceName;
+
+  // скролл к блоку контактов
+  setTimeout(() => {
+    formCard.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    });
+  }, 100);
+}
+</script>
+<!-- Yandex.Metrika -->
+<script type="text/javascript">
+  (function(m,e,t,r,i,k,a){
+    m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+  })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=103903501', 'ym');
+
+  ym(103903501, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/103903501" style="position:absolute; left:-9999px;" alt="счетчик метрики" /></div></noscript>
+
+<!-- Top.Mail.Ru counter -->
+<script type="text/javascript">
+  var _tmr = window._tmr || (window._tmr = []);
+  _tmr.push({id: "3725112", type: "pageView", start: (new Date()).getTime()});
+  (function (d, w, id) {
+    if (d.getElementById(id)) return;
+    var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+    ts.src = "https://top-fwz1.mail.ru/js/code.js";
+    var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+    if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+  })(document, window, "tmr-code");
+</script>
+<noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3725112;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+
+<script>
+function copyMail() {
+  navigator.clipboard.writeText("vnutri_apps@mail.ru");
+
+  const msg = document.getElementById("copy-mail-success");
+
+  msg.style.display = "block";
+
+  setTimeout(() => {
+    msg.style.display = "none";
+  }, 2000);
+}
+</script>
+  
+</body>
+</html>
