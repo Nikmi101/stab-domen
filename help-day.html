@@ -35,6 +35,7 @@
   </style>
 </head>
 <body>
+	
 <div class="container">
 
 <header id="header" class="alt">
@@ -50,7 +51,7 @@
   <p>Меня зовут Никита Митяев.<br/>
      Я автор и создатель проекта Vnutri Apps. Моему проекту более 10 лет, и для меня это часть каждого дня — приложения, сайт, статьи, ответы пользователям, разбор ситуаций и консультации.</p>
   <p>В качестве психолога почти каждый день я стараюсь выделять время для одной бесплатной онлайн-встречи. <strong>Без продажи услуг, без формальностей, без записи заранее.</strong> Просто разговор по тематике проекта.</p>
-  <p>Сегодня свободно место на <strong>20:00 по МСК</strong>.</p>
+  <p id="meeting-status"></p>
   <p>Встреча предназначена для людей с вопросами по темам проекта:</p>
   <ul>
     <li>Отказ от курения и никотина</li>
@@ -124,7 +125,33 @@
   </div>
   </div>
 </footer>
-  
+
+	<script>
+async function loadStatus() {
+  try {
+    const res = await fetch('/free-help-status.json', { cache: 'no-store' });
+    const data = await res.json();
+
+    const el = document.getElementById('meeting-status');
+
+    if (!data.live) {
+      el.innerHTML = 'Сегодня по бесплатной встрече уже договорился. Но я всегда открыт к общению — можете написать в любое время.';
+      return;
+    }
+
+    if (data.time) {
+      el.innerHTML = `Сегодня свободно время на <strong>${data.time} по МСК</strong>.`;
+    } else {
+      el.innerHTML = 'Сегодня есть свободное время для встречи.';
+    }
+
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+loadStatus();
+</script>
 
 <!-- Yandex.Metrika -->
 <script type="text/javascript">
@@ -153,6 +180,7 @@
 </script>
 <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3725112;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
 
+	
   
 </body>
 </html>
