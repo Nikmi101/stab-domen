@@ -51,13 +51,11 @@
     <li>Одиночество</li>
     <li>Творчество и личные жизненные трудности</li>
   </ul>
-  <p>Если вам подходит, просто напишите мне:</p>
-  <a href="#form-card" class="cta" onclick="document.getElementById('form-card').classList.add('show'); document.getElementById('form-card').scrollIntoView({behavior:'smooth', block:'center'});">Написать Никите</a>
-</div>
+  </div>
 
 <!-- Контакты -->
 <div class="card" id="form-card">
-  <div class="card-header"><div class="card-title">Договориться можно тут:</div></div>
+  <div class="card-header"><div class="card-title">Если вам подходит, просто напишите мне:</div></div>
   <div class="card-content">
     <div style="display:flex; flex-direction:column; gap:10px;">
       <a href="https://t.me/vnu_apps" target="_blank" class="cta">Telegram</a>
@@ -123,27 +121,7 @@
   </div>
 </footer>
   
-<script>
-function setService(serviceName) {
-  const formCard = document.getElementById('form-card');
 
-  // показать блок контактов
-  formCard.style.display = "block";
-  formCard.classList.add('show');
-
-  // обновить текст выбора
-  document.getElementById('form-title').innerText =
-    "Вы выбрали: " + serviceName;
-
-  // скролл к блоку контактов
-  setTimeout(() => {
-    formCard.scrollIntoView({
-      behavior: 'smooth',
-      block: 'center'
-    });
-  }, 100);
-}
-</script>
 <!-- Yandex.Metrika -->
 <script type="text/javascript">
   (function(m,e,t,r,i,k,a){
@@ -171,19 +149,6 @@ function setService(serviceName) {
 </script>
 <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3725112;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
 
-<script>
-function copyMail() {
-  navigator.clipboard.writeText("vnutri_apps@mail.ru");
-
-  const msg = document.getElementById("copy-mail-success");
-
-  msg.style.display = "block";
-
-  setTimeout(() => {
-    msg.style.display = "none";
-  }, 2000);
-}
-</script>
   
 </body>
 </html>
