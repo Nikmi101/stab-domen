@@ -135,12 +135,12 @@ async function loadStatus() {
     const el = document.getElementById('meeting-status');
 
     if (!data.live) {
-      el.innerHTML = 'Сегодня по бесплатной встрече уже договорился. Но я всегда открыт к общению — можете написать в любое время.';
+      el.innerHTML = 'Сегодня по бесплатнам встречам уже договорился. Но я всегда открыт к общению — можете написать в любое время.';
       return;
     }
 
     if (data.time) {
-      el.innerHTML = `Сегодня свободно время на <strong>${data.time} по МСК</strong>.`;
+      el.innerHTML = `Сегодня (${data.date}) свободно время на <strong>${data.time} по МСК</strong>.`;
     } else {
       el.innerHTML = 'Сегодня есть свободное время для встречи.';
     }
