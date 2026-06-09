@@ -129,18 +129,28 @@
   {% when "iqos" %}🚭 Приложение: трек + поддержка
   {% when "kalendar" %}🚭 Приложение: трек + поддержка
   {% when "sryv" %}🚭 Приложение: мотивация + поддержка
-  {% when "nikotin-zavisimost" %}Если тревога ощущается телом (сердце, дыхание, напряжение):
+  {% when "nikotin-zavisimost" %}🚭 Приложение: трек + поддержка
   {% else %}🚭 Приложение «Курил-бросил»
 {% endcase %}
 {% endcapture %}
 
 {% capture consult_label %}
 {% case cta_type %}
-  {% when "iqos" %}💬 Помощь в отказе
-  {% when "kalendar" %}💬 Помощь в отказе
-  {% when "sryv" %}💬 Помощь в отказе
-  {% when "nikotin-zavisimost" %}💬 Помощь в отказе
+  {% when "iqos" %}💬 Помощь в избавлении от айкоса
+  {% when "kalendar" %}💬 Помощь в отказе от курения
+  {% when "sryv" %}💬 Помощь в отказе от сигарет
+  {% when "nikotin-zavisimost" %}💬 Помощь в отказе от никотина
   {% else %}💬 Помощь в отказе
+{% endcase %}
+{% endcapture %}
+
+{% capture free_help_label %}
+{% case cta_type %}
+  {% when "iqos" %}🎁 Бесплатно обсудить отказ от IQOS
+  {% when "kalendar" %}🎁 Бесплатно обсудить ваш этап отказа
+  {% when "sryv" %}🎁 Бесплатно разобрать причины срывов
+  {% when "nikotin-zavisimost" %}🎁 Бесплатно разобраться в зависимости
+  {% else %}🎁 Бесплатная встреча от Vnutri Apps
 {% endcase %}
 {% endcapture %}
 
@@ -165,8 +175,8 @@
 
   <a href="https://vnutriapps.ru/help-day.html"
    class="vnutri-badge free"
-   onclick="try{ if(typeof ym==='function'){ ym(103903501,'reachGoal','cta_anxiety_free'); } }catch(e){} return true;">
-  🎁 Бесплатная встреча
+   onclick="try{ if(typeof ym==='function'){ ym(103903501,'reachGoal','cta_smoking_free'); } }catch(e){} return true;">
+    {{ free_help_label | strip }}
 </a>
 
 
