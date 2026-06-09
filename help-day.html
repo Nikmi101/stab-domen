@@ -15,6 +15,11 @@
     body { margin:0; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background:#0f1115; color:#e7e9ee; line-height:1.5; }
     .container { max-width:720px; margin:0 auto; padding:24px 16px 40px; }
     .intro { font-size:18px; margin-bottom:32px; color:#cfd3dc; }
+	  .intro strong {
+  color: #f0f8ff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
     .cta-main { margin-top:16px; padding:12px 18px; background:#4c8cff; color:#fff; border-radius:10px; text-decoration:none; font-weight:600; }
    #form-card {
   opacity: 1;
@@ -146,9 +151,9 @@ async function loadStatus() {
     }
 
     if (data.time) {
-      el.innerHTML = `Сегодня (${data.date}) свободно время на <strong>${data.time} по МСК</strong>.`;
+      el.innerHTML = `<strong>Сегодня (${data.date})</strong> свободно время на <strong>${data.time} по МСК</strong>.`;
     } else {
-      el.innerHTML = 'Сегодня есть свободное время для встречи.';
+      el.innerHTML = '<strong>Сегодня</strong> есть свободное время для встречи.';
     }
 
   } catch (e) {
