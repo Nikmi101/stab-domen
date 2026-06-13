@@ -178,23 +178,35 @@
   </div>
 </footer>
 
-	<script>
+<script>
 async function loadStatus() {
   try {
-    const res = await fetch('/free-help-status.json', { cache: 'no-store' });
-    const data = await res.json();
+    const res = await fetch('/free-help-status.json', {
+      cache: 'no-store'
+    });
 
+    const data = await res.json();
     const el = document.getElementById('meeting-status');
 
+    // сегодняшняя дата по МСК
+    const todayMsk = new Intl.DateTimeFormat('ru-RU', {
+      timeZone: 'Europe/Moscow',
+      day: 'numeric',
+      month: 'long'
+    }).format(new Date());
+
     if (!data.live) {
-      el.innerHTML = 'Сегодня по встречам уже договорился. Но я всегда открыт к общению — можете написать в любое время.';
+      el.innerHTML =
+        `Сегодня (${todayMsk}) по встречам уже договорился. Но я всегда открыт к общению — можете написать в любое время.`;
       return;
     }
 
     if (data.time) {
-      el.innerHTML = `<strong>Сегодня (${data.date})</strong> свободно время на <strong>${data.time} по МСК</strong>.`;
+      el.innerHTML =
+        `<strong>Сегодня (${todayMsk})</strong> свободно время на <strong>${data.time} по МСК</strong>.`;
     } else {
-      el.innerHTML = '<strong>Сегодня</strong> есть свободное время для встречи.';
+      el.innerHTML =
+        `<strong>Сегодня (${todayMsk})</strong> есть свободное время для встречи.`;
     }
 
   } catch (e) {
