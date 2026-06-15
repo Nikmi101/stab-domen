@@ -482,6 +482,81 @@ article table::-webkit-scrollbar-thumb {
       }
     }
 
+/* Возрастное ограничение и дисклеймер */
+.age-disclaimer{
+  max-width: 900px;
+  margin: 28px auto 0;
+  padding: 18px 20px;
+
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+
+  background: rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:14px;
+
+  color:#b8b8b8;
+}
+
+.age-badge{
+  flex-shrink:0;
+
+  width:64px;
+  height:64px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  font-size:1.3rem;
+  font-weight:700;
+
+  color:#ffcf8a;
+
+  border:2px solid rgba(255,207,138,.35);
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255,180,80,.14),
+      rgba(255,180,80,.04)
+    );
+}
+
+.age-text strong{
+  display:block;
+  color:#f5f5f5;
+  margin-bottom:8px;
+}
+
+.age-text{
+  line-height:1.65;
+}
+
+.age-text p{
+  margin:0;
+}
+
+@media (max-width:600px){
+
+  .age-disclaimer{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:16px;
+  }
+
+  .age-badge{
+    width:58px;
+    height:58px;
+    font-size:1.2rem;
+  }
+
+}
+
 
 
 
