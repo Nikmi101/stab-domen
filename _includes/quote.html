@@ -1,0 +1,166 @@
+{% assign quotes = site.data.quotes[include.group] %}
+
+{% if quotes %}
+
+  {% assign quote_index = include.index | default: 0 %}
+  {% assign quote = quotes[quote_index] %}
+
+  {% if quote %}
+
+<style>
+
+.vnutri-quote{
+margin:42px 0;
+
+padding:28px 30px;
+
+background:
+linear-gradient(
+180deg,
+rgba(250,248,243,.95),
+rgba(247,244,237,.95)
+);
+
+border-left:4px solid #9b7a4b;
+
+border-radius:14px;
+
+position:relative;
+
+overflow:hidden;
+}
+
+.vnutri-quote::before{
+content:"“";
+
+position:absolute;
+
+top:-18px;
+left:18px;
+
+font-size:92px;
+
+line-height:1;
+
+opacity:.08;
+
+font-family:Georgia, serif;
+
+pointer-events:none;
+}
+
+.vnutri-quote__text{
+
+margin:0;
+
+font-size:1.15rem;
+
+line-height:1.9;
+
+font-style:italic;
+
+color:#2b2b2b;
+
+position:relative;
+
+z-index:2;
+}
+
+.vnutri-quote__author{
+
+margin-top:18px;
+
+font-size:.95rem;
+
+font-weight:600;
+
+letter-spacing:.03em;
+
+color:#6a6a6a;
+}
+
+.vnutri-quote__comment{
+
+margin-top:18px;
+
+padding-top:18px;
+
+border-top:1px solid rgba(0,0,0,.08);
+
+font-size:.98rem;
+
+line-height:1.8;
+
+color:#474747;
+}
+
+@media (max-width:768px){
+
+.vnutri-quote{
+
+padding:22px;
+}
+
+.vnutri-quote__text{
+
+font-size:1.05rem;
+}
+
+}
+
+@media (prefers-color-scheme: dark){
+
+.vnutri-quote{
+
+background:
+linear-gradient(
+180deg,
+rgba(40,40,40,.95),
+rgba(34,34,34,.95)
+);
+
+border-left-color:#c89c60;
+}
+
+.vnutri-quote__text{
+
+color:#f3f3f3;
+}
+
+.vnutri-quote__author{
+
+color:#bfbfbf;
+}
+
+.vnutri-quote__comment{
+
+color:#dddddd;
+
+border-top-color:
+rgba(255,255,255,.08);
+}
+
+}
+
+</style>
+
+<aside class="vnutri-quote">
+
+<blockquote class="vnutri-quote__text">
+{{ quote.text }}
+</blockquote>
+
+<div class="vnutri-quote__author">
+— {{ quote.author }}
+</div>
+
+{% if include.comment %}
+<div class="vnutri-quote__comment">
+{{ include.comment }}
+</div>
+{% endif %}
+
+</aside>
+
+{% endif %}
+{% endif %}
