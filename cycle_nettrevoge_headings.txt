@@ -35,30 +35,29 @@ robots: noindex, nofollow
 
 url: {{ site.url }}{{ post.url }}
 
-description: {% if post.description %}{{ post.description | strip }}{% else %}{{ post.content | strip_html | truncate: 220 }}{% endif %}
+description:
+{% if post.description %}
+{{ post.description | strip }}
+{% else %}
+{{ post.content | strip_html | truncate: 220 }}
+{% endif %}
 
-tags: {% if post.tags %}{{ post.tags | join: ", " }}{% else %}-{% endif %}
+tags:
+{% if post.tags %}
+{{ post.tags | join: ", " }}
+{% else %}
+-
+{% endif %}
 
 h1:
-{% assign html = post.content %}
-
-{% assign h1parts = html | split: '<h1' %}
-
-{% for p in h1parts %}
-  {% if p contains '</h1>' %}
-    {% assign title = p | split: '>' | last | split: '</h1>' | first %}
-h1: {{ title | strip_html | strip }}
-  {% endif %}
-{% endfor %}
+h1: {{ post.title }}
 
 h2:
-{% assign h2parts = html | split: '<h2' %}
+{% assign parts = post.content | split: "## " %}
 
-{% for p in h2parts %}
-  {% if p contains '</h2>' %}
-    {% assign title = p | split: '>' | last | split: '</h2>' | first %}
-h2: {{ title | strip_html | strip }}
-  {% endif %}
+{% for p in parts offset: 1 %}
+h2: {{ p | split: "
+" | first | strip }}
 {% endfor %}
 
 ---
