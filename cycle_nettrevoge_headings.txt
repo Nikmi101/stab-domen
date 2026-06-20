@@ -40,18 +40,22 @@ description: {% if post.description %}{{ post.description | strip }}{% else %}{{
 tags: {% if post.tags %}{{ post.tags | join: ", " }}{% else %}-{% endif %}
 
 h1:
-{% for line in post.content %}
-  {% assign text = line | strip %}
-  {% if text contains "# " and text contains "## " == false %}
-h1: {{ text | remove: "# " }}
+{% assign html = post.content | markdownify %}
+
+{% assign parts = html | split: '<h1>' %}
+
+{% for p in parts %}
+  {% if p contains '</h1>' %}
+h1: {{ p | split: '</h1>' | first | strip_html }}
   {% endif %}
 {% endfor %}
 
 h2:
-{% for line in post.content %}
-  {% assign text = line | strip %}
-  {% if text contains "## " %}
-h2: {{ text | remove: "## " }}
+{% assign h2parts = html | split: '<h2>' %}
+
+{% for p in h2parts %}
+  {% if p contains '</h2>' %}
+h2: {{ p | split: '</h2>' | first | strip_html }}
   {% endif %}
 {% endfor %}
 
