@@ -53,11 +53,14 @@ h1:
 h1: {{ post.title }}
 
 h2:
-{% assign parts = post.content | split: "## " %}
+{% assign html = post.output %}
+
+{% assign parts = html | split: "<h2" %}
 
 {% for p in parts offset: 1 %}
-h2: {{ p | split: "
-" | first | strip }}
+  {% if p contains "</h2>" %}
+h2: {{ p | split: ">" | last | split: "</h2>" | first | strip_html | strip }}
+  {% endif %}
 {% endfor %}
 
 ---
