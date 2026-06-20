@@ -32,19 +32,41 @@ robots: noindex, nofollow
 
   {% assign html = post.content %}
 
-  {%- comment -%} ===== H1 ===== {%- endcomment -%}
+  {%- comment -%} =========================
+      H1 (очищенный от id="...")
+  ========================== {%- endcomment -%}
   {% assign h1_part = html | split: "<h1" %}
   {% assign h1_raw = h1_part[1] | split: "</h1>" | first %}
-  {% assign h1 = h1_raw | strip_html | strip %}
 
-  {%- comment -%} ===== H2 LIST ===== {%- endcomment -%}
+  {% assign h1_clean = h1_raw
+    | remove: 'id="'
+    | remove: "id="
+    | split: ">"
+    | last
+    | strip_html
+    | strip
+  %}
+
+  {% assign h1 = h1_clean %}
+
+  {%- comment -%} =========================
+      H2 LIST (очищенный)
+  ========================== {%- endcomment -%}
   {% assign h2_blocks = html | split: "<h2" %}
 
   {% assign h2_list = "" %}
 
   {% for block in h2_blocks offset:1 %}
-    {% assign h2_text = block | split: "</h2>" | first %}
-    {% assign h2_clean = h2_text | strip_html | strip %}
+    {% assign h2_raw = block | split: "</h2>" | first %}
+
+    {% assign h2_clean = h2_raw
+      | remove: 'id="'
+      | remove: "id="
+      | split: ">"
+      | last
+      | strip_html
+      | strip
+    %}
 
     {% if h2_clean != "" %}
       {% assign h2_list = h2_list | append: "- " | append: h2_clean | append: " | " %}
