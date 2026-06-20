@@ -69,13 +69,13 @@ robots: noindex, nofollow
     %}
 
     {% if h2_clean != "" %}
-      {% assign h2_list = h2_list | append: " " | append: h2_clean | append: ";" %}
+      {% assign h2_list = h2_list | append: "" | append: h2_clean | append: "; " %}
     {% endif %}
   {% endfor %}
 
-{{ counter }}. Title: "{{ post.title | strip }}"
-Description: "{% if post.description %}{{ post.description | strip }}{% else %}{{ post.content | strip_html | truncate: 180 }}{% endif %}"
-H1: "{{ h1 }}"
+{{ counter }}. Title: {{ post.title | strip }}
+Description: {% if post.description %}{{ post.description | strip }}{% else %}{{ post.content | strip_html | truncate: 180 }}{% endif %}
+H1: {{ h1 }}
 H2: {{ h2_list }}
 Tags: {% if post.tags %}{{ post.tags | join: ", " }}{% else %}-{% endif %}
 
