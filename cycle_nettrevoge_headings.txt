@@ -1,0 +1,65 @@
+---
+layout: null
+permalink: /cycle_nettrevoge_headings.txt
+robots: noindex, nofollow
+---
+
+{% assign series_id = "https://vnutriapps.ru/blog/cycle-snizit-trevogu/#series" %}
+{% assign counter = 0 %}
+
+{% for post in site.posts %}
+
+  {% if post.published == false %}
+    {% continue %}
+  {% endif %}
+
+  {% assign ok = false %}
+
+  {% if post.isPartOf %}
+    {% for part in post.isPartOf %}
+      {% assign part_text = part | jsonify %}
+      {% if part_text contains series_id %}
+        {% assign ok = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% unless ok %}
+    {% continue %}
+  {% endunless %}
+
+  {% assign counter = counter | plus: 1 %}
+
+{{ counter }}. {{ post.title }}
+
+url: {{ site.url }}{{ post.url }}
+
+description: {% if post.description %}{{ post.description | strip }}{% else %}{{ post.content | strip_html | truncate: 220 }}{% endif %}
+
+tags: {% if post.tags %}{{ post.tags | join: ", " }}{% else %}-{% endif %}
+
+h1:
+{% assign lines = post.content | split: "
+" %}
+
+{% for line in lines %}
+  {% assign clean = line | strip %}
+
+  {% if clean contains "# " and clean contains "## " == false %}
+h1: {{ clean | remove: "# " }}
+  {% endif %}
+{% endfor %}
+
+h2:
+{% for line in lines %}
+  {% assign clean = line | strip %}
+
+  {% if clean contains "## " %}
+h2: {{ clean | remove: "## " }}
+  {% endif %}
+{% endfor %}
+
+---
+
+{% endfor %}
