@@ -40,22 +40,24 @@ description: {% if post.description %}{{ post.description | strip }}{% else %}{{
 tags: {% if post.tags %}{{ post.tags | join: ", " }}{% else %}-{% endif %}
 
 h1:
-{% assign html = post.content | markdownify %}
+{% assign html = post.content %}
 
-{% assign parts = html | split: '<h1>' %}
+{% assign h1parts = html | split: '<h1' %}
 
-{% for p in parts %}
+{% for p in h1parts %}
   {% if p contains '</h1>' %}
-h1: {{ p | split: '</h1>' | first | strip_html }}
+    {% assign title = p | split: '>' | last | split: '</h1>' | first %}
+h1: {{ title | strip_html | strip }}
   {% endif %}
 {% endfor %}
 
 h2:
-{% assign h2parts = html | split: '<h2>' %}
+{% assign h2parts = html | split: '<h2' %}
 
 {% for p in h2parts %}
   {% if p contains '</h2>' %}
-h2: {{ p | split: '</h2>' | first | strip_html }}
+    {% assign title = p | split: '>' | last | split: '</h2>' | first %}
+h2: {{ title | strip_html | strip }}
   {% endif %}
 {% endfor %}
 
