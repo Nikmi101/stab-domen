@@ -234,8 +234,9 @@ isPartOfWeb:
 
 🧭 **Читайте также по теме снижения тревожности:**
 
-- [Весь цикл статей «Путь к спокойствию» от Vnutri Apps](/blog/cycle-snizit-trevogu/)
+- [Открыть → Весь цикл статей «Путь к спокойствию» от Vnutri Apps](/blog/cycle-snizit-trevogu/)
 
+Связанные статьи:  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/katastrofizatsiya-mekhanizm-trevogi/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/trevoga-v-period-neopredelyonnosti/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/kak-trevoga-vliyaet-na-resheniya/" %}  
