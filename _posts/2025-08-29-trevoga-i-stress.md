@@ -244,6 +244,7 @@ subtitle="Пошаговый путь снижения тревожности"
 gradient="purple"
 %}
 
+Связанные статьи:
 {% include article-link-by-permalink.html permalink="/blog/emotsii/pochemu-voznikaet-trevoga/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/chem-trevoga-otlichaetsya-ot-strakha/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/pochemu-trevoga-stala-normoy-v-sovremennom-mire/" %}  
