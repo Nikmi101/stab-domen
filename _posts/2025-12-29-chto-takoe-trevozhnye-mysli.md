@@ -242,9 +242,14 @@ isPartOfWeb:
 
 🧭 **Читайте также по теме снижения тревожности:**
 
-- [Открыть → Весь цикл статей «Путь к спокойствию» от Vnutri Apps](/blog/cycle-snizit-trevogu/)
+{% include nettrevoge-cycle-link.html
+title="Весь цикл «Нет тревоге: Путь к спокойствию»"
+url="/blog/cycle-snizit-trevogu/"
+subtitle="Пошаговый путь снижения тревожности"
+gradient="purple"
+%}
 
-Связанные статьи:  
+Связанные статьи:   
 {% include article-link-by-permalink.html permalink="/blog/emotsii/pochemu-trevozhnye-mysli-povtoryayutsya/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/navyazchivye-mysli-i-trevoga/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/pochemu-nevozmozhno-perestat-dumat/" %}  
