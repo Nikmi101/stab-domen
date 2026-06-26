@@ -234,8 +234,14 @@ isPartOfWeb:
 
 🧭 **Читайте также по теме снижения тревожности:**
 
-- [Весь цикл статей «Путь к спокойствию» от Vnutri Apps](/blog/cycle-snizit-trevogu/)
+{% include nettrevoge-cycle-link.html
+title="Весь цикл «Нет тревоге: Путь к спокойствию»"
+url="/blog/cycle-snizit-trevogu/"
+subtitle="Пошаговый путь снижения тревожности"
+gradient="purple"
+%}
 
+Связанные статьи:  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/trevoga-i-son-kak-spravitsya-s-nochnymi-myslyami/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/trevoga-v-tishine/" %}  
 {% include article-link-by-permalink.html permalink="/blog/emotsii/kak-postepenno-snizit-trevozhnost/" %}  
