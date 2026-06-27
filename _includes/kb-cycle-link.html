@@ -1,0 +1,109 @@
+<div markdown="0">
+<a href="{{ include.url }}" class="cycle-link cycle-link--{{ include.gradient }}">
+
+<div class="cycle-link__label">
+    ✨ Vnutri Apps
+</div>
+
+<div class="cycle-link__title">
+    {{ include.title }}
+</div>
+
+{% if include.subtitle %}
+
+<div class="cycle-link__subtitle">
+    {{ include.subtitle }}
+</div>
+{% endif %}
+
+<div class="cycle-link__cta">
+    Открыть весь цикл статей →
+</div>
+
+</a>
+
+<style>
+.cycle-link{
+    display:block;
+    text-decoration:none;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    margin:36px 0;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f4cff 0%,
+            #1b82ff 42%,
+            #ff8a1f 100%
+        );
+
+    box-shadow:
+        0 16px 40px rgba(24,96,255,.28);
+
+    transition:
+        transform .22s ease,
+        box-shadow .22s ease;
+}
+
+.cycle-link:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 22px 55px rgba(255,138,31,.28);
+}
+
+.cycle-link__label{
+    font-size:.85rem;
+
+    opacity:.92;
+
+    margin-bottom:10px;
+
+    letter-spacing:.02em;
+}
+
+.cycle-link__title{
+    font-size:1.45rem;
+
+    font-weight:800;
+
+    line-height:1.3;
+}
+
+.cycle-link__subtitle{
+    margin-top:10px;
+
+    color:rgba(255,255,255,.92);
+
+    line-height:1.6;
+}
+
+.cycle-link__cta{
+    margin-top:18px;
+
+    font-weight:700;
+
+    opacity:.96;
+}
+
+@media (max-width:700px){
+
+    .cycle-link{
+        padding:22px;
+    }
+
+    .cycle-link__title{
+        font-size:1.2rem;
+    }
+
+}
+
+</style>
+
+</div>
