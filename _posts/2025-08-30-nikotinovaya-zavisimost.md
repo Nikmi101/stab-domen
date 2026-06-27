@@ -454,8 +454,16 @@ isPartOfWeb:
 -->
 ---
 
-## Еще статьи по теме
+## Еще статьи по теме 
 
+{% include kb-cycle-link.html
+title="Вся «Энциклопедия отказа от курения»"
+url="/blog/encyclopedia-brosit-kurit/"
+subtitle="Пошаговый путь отказа от курения"
+gradient="purple"
+%}
+
+Связанные статьи:  
 - [Календарь отказа от курения: изменения и опоры по дням, неделям и месяцам](/blog/privychki/chto-proishodit-posle-otkaza-kalendar/)
 - [Первая неделя и первые 14 дней без сигарет: опоры, ошибки и моменты правды](/blog/privychki/pervaya-nedelya-14-dney-bez-kureniya/)  
 - [Как работает синдром отмены: что ждёт после отказа от сигарет](/blog/privychki/sindrom-otmeny-nikotina/)
